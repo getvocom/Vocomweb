@@ -51,6 +51,8 @@ const products = defineCollection({
     typicalUse: z.string().optional(),
     description: z.string().optional(),
     image: image.optional(),
+    metaTitle: z.string().optional(), // overrides the page <title>
+    metaDescription: z.string().optional(), // overrides the meta description
   }),
 });
 

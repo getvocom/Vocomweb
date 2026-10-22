@@ -109,6 +109,7 @@ Bodies are plain text; a blank line starts a new paragraph.
 
 1. Copy a file in `src/content/products/`.
 2. Fields: `name`, `category`, `codes`, `fiberCounts`, `construction`, `typicalUse`, `description`, `image`.
+   - Optional `metaTitle` / `metaDescription` set that page's own SEO title and description (they override the captured ones).
 3. `category` must be one of the existing category names exactly, because catalog sections filter on it.
 
 ## Shared components (keep pages consistent)

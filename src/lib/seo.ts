@@ -11,5 +11,5 @@ export function blogSeo(path: string, entry: { data: any }) {
 
 export function productSeo(path: string, entry: { data: any }) {
   const d = entry.data;
-  return { title: `${d.name} | Fiber Optic Cable | Vocom`, description: d.description ?? "", image: abs(d.image?.src), canonical: SITE + encodeURI(path) };
+  return { title: d.metaTitle ?? `${d.name} | Fiber Optic Cable | Vocom`, description: d.metaDescription ?? d.description ?? "", image: abs(d.image?.src), canonical: SITE + encodeURI(path), override: { title: d.metaTitle, description: d.metaDescription } };
 }

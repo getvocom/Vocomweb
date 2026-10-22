@@ -19,14 +19,27 @@ export const headKey = (path: string) => (path === "/" ? "index" : decodeURIComp
 
 const SITE = "https://www.vocom.ai";
 
-type Seo = Partial<HeadData> & { description?: string; image?: string; canonical?: string; blogPosting?: boolean };
+// `override` replaces the captured title/description (and their OG/Twitter copies) when a
+// content entry sets metaTitle/metaDescription, e.g. a product page needing its own title.
+type Seo = Partial<HeadData> & { description?: string; image?: string; canonical?: string; blogPosting?: boolean; override?: { title?: string; description?: string } };
 
 export function headFor(path: string, seo?: Seo): HeadData {
   const base = byKey[headKey(path)];
   if (base && !seo) return base;
-  const head = build(path, base, seo);
+  const head = applyOverride(build(path, base, seo), seo?.override);
   if (seo?.blogPosting) head.jsonld = [...head.jsonld, blogPosting(head)];
   return head;
+}
+
+function applyOverride(h: HeadData, o?: { title?: string; description?: string }): HeadData {
+  if (!o?.title && !o?.description) return h;
+  const meta = h.meta.map((m) => {
+    const k = "name" in m ? m.name : m.property;
+    if (o.title && (k === "og:title" || k === "twitter:title")) return { ...m, content: o.title };
+    if (o.description && (k === "description" || k === "og:description" || k === "twitter:description")) return { ...m, content: o.description };
+    return m;
+  });
+  return { ...h, title: o.title ?? h.title, meta };
 }
 
 // Same object the live site injects with JavaScript on /blog/* pages, rendered statically.

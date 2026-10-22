@@ -3,6 +3,8 @@ https://:project.pages.dev/*
   X-Robots-Tag: noindex
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex
+https://:worker.:account.workers.dev/*
+  X-Robots-Tag: noindex
 
 # Long cache for fingerprinted/static assets
 /_astro/*

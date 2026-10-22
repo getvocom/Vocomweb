@@ -14,11 +14,17 @@ const { question, answer, open = false } = Astro.props;
 
 <style>
   .faq-item {
+    position: relative;
     display: flex; flex-direction: column; gap: 4px; width: 100%;
     padding: 8px 16px; background: var(--white); border-radius: 8px;
     overflow: hidden; cursor: pointer; transition: background-color 0.2s ease;
   }
   .faq-item[open] { background: rgb(247, 247, 248); }
+  /* 1px grey outline drawn inside the box, as on the live site */
+  .faq-item::after {
+    content: ""; position: absolute; inset: 0; border: 1px solid rgb(207, 209, 213);
+    border-radius: inherit; pointer-events: none;
+  }
   .faq-q { display: flex; align-items: center; gap: 16px; list-style: none; }
   .faq-q::-webkit-details-marker { display: none; }
   .faq-q p, .faq-a p {

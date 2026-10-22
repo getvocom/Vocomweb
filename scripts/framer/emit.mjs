@@ -100,6 +100,10 @@ export class Emitter {
     }
     const d = frameCSS(a, parentAttrs, { root, block: true });
     if (!d.display) d.display = "block";
+    if (n.type === "FormPlainTextInputNode" || n.type === "FormSelectNode") {
+      Object.assign(d, textCSS(a));
+      if (a.formInputPlaceholderColor) d["--ph"] = color(a.formInputPlaceholderColor);
+    }
     if (d._fitImage) {
       // Framer "fit image": the frame takes the image's aspect ratio
       const src = typeof a.fill === "string" ? a.fill : a.fill?.src;
@@ -435,11 +439,23 @@ export class Emitter {
       expr += `.slice().sort((a, b) => String(a.data.${key}).localeCompare(String(b.data.${key}))${s.direction === "desc" ? " * -1" : ""})`;
     }
     if (cl.limit) expr += `.slice(0, ${Number(cl.limit)})`;
+    // The repeated child is the card; any other child is Framer's "empty state",
+    // shown only when the list has no items.
+    const kids = n.children || [];
+    const isRepeat = (ch) => ch.key.split("/").pop() === cl.repeatedDescendantId;
+    const repeat = kids.some(isRepeat) ? kids.filter(isRepeat) : kids;
+    const empty = kids.filter((ch) => !repeat.includes(ch));
     this.cmsStack.push({ collection: coll, v });
     let body = "";
-    for (const ch of n.children || []) body += this.emit(ch, childCtx(ch));
+    for (const ch of repeat) body += this.emit(ch, childCtx(ch));
     this.cmsStack.pop();
-    return `{${expr}.map((${v}) => (${body}))}`;
+    let emptyMarkup = "";
+    for (const ch of empty) emptyMarkup += this.emit(ch, childCtx(ch));
+    if (!emptyMarkup) return `{${expr}.map((${v}) => (${body}))}`;
+    const list = `list${this.cmsStack.length}`;
+    // on /search the page filters client-side, so keep the empty state as a template too
+    const tpl = this.page === "/search" ? `<template data-cl-empty>${emptyMarkup}</template>` : "";
+    return `{(() => { const ${list} = ${expr}; return ${list}.length ? ${list}.map((${v}) => (<>${body}</>)) : (<>${emptyMarkup}</>); })()}${tpl}`;
   }
 
   // CSS for tap-switched variants: diff each node of the alternate variant against the

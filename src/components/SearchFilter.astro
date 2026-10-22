@@ -7,13 +7,27 @@
   const cards = [...document.querySelectorAll<HTMLAnchorElement>("a[href^='/blog/'], a[href^='/products/']")].filter((a) => !a.closest("header, footer, .header-slot, .footer-slot"));
   const norm = (u: string) => decodeURI(u.replace(/\.html$/, "").replace(/\/$/, ""));
   let pagefind: any = null;
+  // Framer's "nothing found" message for each list, shown only when that list has no matches
+  function emptyStates() {
+    document.querySelectorAll<HTMLTemplateElement>("template[data-cl-empty]").forEach((tpl) => {
+      const grid = tpl.parentElement!;
+      grid.querySelectorAll("[data-cl-empty-shown]").forEach((e) => e.remove());
+      const any = cards.some((c) => grid.contains(c) && c.style.display !== "none");
+      if (!any) {
+        const frag = tpl.content.cloneNode(true) as DocumentFragment;
+        [...frag.children].forEach((el) => el.setAttribute("data-cl-empty-shown", ""));
+        grid.appendChild(frag);
+      }
+    });
+  }
   async function run(q: string) {
-    if (!q.trim()) { cards.forEach((c) => (c.style.display = "")); return; }
+    if (!q.trim()) { cards.forEach((c) => (c.style.display = "")); emptyStates(); return; }
     const pf = "/pagefind/pagefind.js";
     pagefind ||= await import(/* @vite-ignore */ pf);
     const res = await pagefind.search(q);
     const urls = new Set((await Promise.all(res.results.map((r: any) => r.data()))).map((d: any) => norm(d.url)));
     cards.forEach((c) => (c.style.display = urls.has(norm(new URL(c.href).pathname)) ? "" : "none"));
+    emptyStates();
   }
   if (input) {
     input.setAttribute("type", "search");

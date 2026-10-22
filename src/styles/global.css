@@ -53,10 +53,34 @@ img, video, svg { display: block; max-width: none; }
 svg.icon { overflow: visible; }
 
 /* Dropdown overlays (Framer "show overlay on hover"). */
+.has-overlay { overflow: visible !important; }
 .has-overlay > .overlay { display: none; }
 .has-overlay:hover > .overlay,
 .has-overlay:focus-within > .overlay { display: flex; }
 .overlay::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+
+/* The desktop header must not clip its dropdown menus. */
+@media (min-width: 1200px) {
+  header.navigation-bar-2 { overflow: visible; }
+}
+
+/* Form fields: pseudo-element borders don't render on inputs, so use real borders
+   (same width/colour as Framer), and keep select text from being clipped. */
+.field {
+  border-width: var(--bw, 1px); border-style: var(--bs, solid); border-color: var(--bc, rgba(136, 136, 136, 0.1));
+  outline: none; font-family: var(--font-sans);
+}
+.field:focus { border-color: rgb(0, 153, 255); }
+/* typed text is dark for readability; placeholders stay grey */
+input.field, textarea.field { color: var(--ink-900); }
+.field::placeholder { color: var(--ph, rgb(153, 153, 153)); opacity: 1; }
+textarea.field { resize: none; }
+select.field {
+  -webkit-appearance: none; appearance: none; padding-top: 0; padding-bottom: 0; padding-right: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 12px center; background-size: 16px;
+}
+select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 
 /* Masonry grids (Framer "masonry"): Base.astro's script sets row spans where CSS masonry is unsupported. */
 .masonry.masonry-on { grid-auto-rows: 8px !important; grid-template-rows: none !important; }

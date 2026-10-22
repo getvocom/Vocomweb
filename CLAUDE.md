@@ -43,7 +43,7 @@ public/
   assets/           self-hosted images and videos (map: data/asset-map.csv)
   fonts/            self-hosted Inter, Inter Display, Manrope, Lexend, DM Sans (OFL)
   _redirects        Cloudflare 301s
-  _headers          noindex on *.pages.dev previews, cache headers
+  _headers          cache headers (HTML charset rules are appended at build by scripts/html-headers.mjs)
   robots.txt        byte-identical copy of the live robots.txt
 apps-script/Code.gs Google Apps Script backend for the quote form
 scripts/            capture, conversion and QA tools (see README)

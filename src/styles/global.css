@@ -168,7 +168,7 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
   .x4ilrju { width: 100% !important; max-width: 100%; }
 }
 /* /fiber-optic-cable-catalog hero: grid columns were at least 380px, wider than a phone. */
-.xcfkpf2 { grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)) !important; max-width: none !important; }
+.xcfkpf2 { grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)) !important; }
 /* /pricing-vocomai: the 960px content block made the page scroll sideways on tablet and phone. */
 @media (max-width: 1199.98px) {
   .x43rzd6 { width: 100% !important; padding-left: 20px !important; padding-right: 20px !important; }

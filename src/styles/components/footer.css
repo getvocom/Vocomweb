@@ -26,3 +26,9 @@
 .xhco7u1{display:grid;grid-template-columns:repeat(2, minmax(1px, 1fr));grid-auto-rows:auto;grid-template-rows:masonry;gap:60px 40px;justify-items:center;align-items:start;width:100%;flex-direction:initial;justify-content:initial}
 .xdmmxvz{width:100%}
 }
+/* Contact details (name, address, phone, email). Must match the LocalBusiness schema and the
+   Google Business Profile exactly. */
+.footer-contact { font-style: normal; display: flex; flex-direction: column; gap: 12px; }
+.fc-office { display: flex; flex-direction: column; gap: 2px; }
+.fc-name { font-weight: 600; }
+.footer-contact a { text-decoration: underline; text-underline-offset: 2px; }

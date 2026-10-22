@@ -121,3 +121,7 @@ Page text lives in `scripts/framer/extra-pages.json`, except the carrier pages' 
 When Use Case is "Fiber Optic", the form asks for Fiber count, Fiber type, Rating, Footage and Needed by. `apps-script/Code.gs` stores them in new columns after "Page" and adds them to the alert email. **Tom: paste the updated Code.gs into Apps Script and redeploy (Manage deployments → edit → New version) so the new answers are saved.** Until then they are sent but ignored.
 
 - Company Size options jump from "1-50" to "250-500" (no 51-249), as on live. Add a "51-249" option?
+
+## Contact details (2026-10-23)
+
+Tom: website leads go only to kevin@getvocom.com (the one inbox he manages). The schema on every page (LocalBusiness email) and the /vocom-international FAQ were changed from sales@vocom.com / kevin@vocom.com to kevin@getvocom.com. The footer now shows both offices (El Monte and Taipei, with phone numbers) and kevin@getvocom.com, matching the LocalBusiness schema. Keep these identical to the Google Business Profile.

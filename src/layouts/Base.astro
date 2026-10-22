@@ -4,6 +4,7 @@
 // from the live Framer site). CMS templates pass `seo` to override per entry.
 import "../styles/global.css";
 import CookieBanner from "../components/CookieBanner.astro";
+import NewsletterPopup from "../components/NewsletterPopup.astro";
 import { headFor, splitJsonLd, type HeadData } from "../lib/head";
 
 interface Props {
@@ -61,6 +62,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   <body>
     <slot />
     <CookieBanner />
+    <NewsletterPopup />
     <script is:inline>
       // Tap-to-switch component variants: [data-set-variant] sets data-variant on the nearest [data-variants] root.
       (function () {

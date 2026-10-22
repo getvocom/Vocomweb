@@ -41,21 +41,34 @@ QA helpers:
 
 **File size limit:** Cloudflare Pages rejects files over 25 MiB. Two videos are larger (see `notes/flags.md`) and must be hosted elsewhere or re-encoded before the first deploy.
 
-## Quote form
+## Forms (quote form + newsletter popup)
 
-The `/contact-vocomai` form posts to a Google Apps Script web app. The script appends a row to a Google Sheet and emails a notification, the same pattern as the Hash Brown site.
+Both forms post to one Google Apps Script web app (`apps-script/Code.gs`). It writes to one Google Sheet: quote requests go to a **Quotes** tab, newsletter sign-ups to a **Newsletter** tab. Each tab is created automatically on first use.
 
-1. Create a Google Sheet. Copy its ID from the URL.
-2. Extensions → Apps Script, then paste `apps-script/Code.gs`. Set `SHEET_ID` and `NOTIFY_EMAIL`.
-3. Deploy → New deployment → Web app:
+1. Create a Google Sheet (e.g. "vocom.ai website leads"). Copy its ID from the URL: the long string between `/d/` and `/edit`.
+2. In the sheet: Extensions → Apps Script. Delete the sample code, paste `apps-script/Code.gs`, and set:
+   - `SHEET_ID`: the ID from step 1;
+   - `NOTIFY_EMAIL`: where quote requests are emailed;
+   - `NOTIFY_ON_NEWSLETTER`: `true` if you also want an email per sign-up.
+3. Deploy → New deployment → type **Web app**:
    - Execute as: **Me**
    - Who has access: **Anyone**
-4. Authorise. The "unverified app" warning is expected: Advanced → Go to project → Allow.
-5. Paste the `/exec` URL into `QUOTE_FORM_URL` in `src/config.ts` and deploy.
-6. When you edit `Code.gs` later: Deploy → Manage deployments → edit the existing deployment → New version. That keeps the same URL; a brand new deployment changes it.
-7. Test it end to end: the green "Thank you", a new row in the sheet and the email should all happen within a minute.
+4. Authorise. The "unverified app" warning is expected for your own script: Advanced → Go to project → Allow.
+5. Copy the `/exec` URL into `FORMS_URL` in `src/config.ts`, then deploy the site.
+6. Test end to end:
+   - Quote form: the green "Thank you", a row in **Quotes**, and the email.
+   - Newsletter: the success message and a row in **Newsletter**.
+7. When you edit `Code.gs` later: Deploy → Manage deployments → edit the existing deployment → Version: New version. That keeps the same URL; a brand new deployment changes it.
 
-The form has a hidden honeypot field, browser validation and server-side validation. Successful submissions push a `form-submission` event to the dataLayer, the same tracking ID the Framer form used.
+**Newsletter popup settings** are in `NEWSLETTER` in `src/config.ts`: on/off, copy, delay, scroll depth, snooze days and excluded pages.
+- It's a bottom-left card on desktop and a bottom sheet on phones. It isn't a full-screen interstitial, which Google penalises on mobile.
+- It never appears on top of the cookie banner.
+- Closing it hides it for 30 days; subscribing hides it for good.
+- Sign-ups push a `newsletter_signup` dataLayer event.
+- Each row stores the consent wording the person agreed to.
+- To send newsletters, export the Newsletter tab to your email tool, or connect the sheet with Zapier/Make. Honour unsubscribes by setting Status to "Unsubscribed".
+
+Both forms have a hidden honeypot field, browser validation and server-side validation. Successful quote submissions push a `form-submission` event, the same tracking ID the Framer form used.
 
 ## How this was built
 

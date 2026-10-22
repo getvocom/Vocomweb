@@ -34,8 +34,17 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
    - the LinkedIn conversion fires on every page view;
    - consent doesn't gate tags;
    - GA4 may be double-loaded via GTM.
-5. **The cookie banner's policy link points to Framer's legal page** (`framer.com/legal/policy`), not a Vocom policy. Keep it, or point it to `/vocom-privacy-policy`?
+5. ~~**The cookie banner's policy link points to Framer's legal page**~~ **Done:** it now points to `/vocom-privacy-policy` (Tom, 2026-10-22).
+   Original note: (`framer.com/legal/policy`), not a Vocom policy. Keep it, or point it to `/vocom-privacy-policy`?
 6. **Desktop nav on tablet/phone.** On `/marketing-alliance` and `/vocom-privacy-policy` the live site keeps the full desktop navigation at tablet and phone widths, where it overflows off-screen. The rebuild shows the normal responsive (hamburger) header there instead. Say if you want the live behaviour kept.
+
+7a. **Newsletter popup (new, not on the live site).** It's built but switched off.
+   - Copy is a draft for your approval, in `src/config.ts` → `NEWSLETTER`:
+     - heading "Get Vocom Insights in Your Inbox";
+     - body "Fiber optic cable lead times, specification guides and AI infrastructure news for network builders.";
+     - consent "I agree to receive emails from Vocom. I can unsubscribe at any time."
+   - To switch it on: approve or edit the copy, set `FORMS_URL`, then set `enabled: true`.
+   - Your privacy policy should mention newsletter emails and how people unsubscribe.
 
 ## Content oddities (copied exactly; not changed)
 

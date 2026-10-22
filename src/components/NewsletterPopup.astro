@@ -1,0 +1,141 @@
+---
+// Newsletter sign-up popup. Settings and copy live in src/config.ts (NEWSLETTER).
+// Shows after a delay or scroll depth, never on excluded pages, and remembers a close
+// (snoozeDays) or a sign-up (forever) in localStorage. Posts to the same Apps Script as
+// the quote form with form=newsletter; rows land in the "Newsletter" tab.
+// Desktop: small card bottom-left. Phone: bottom sheet (not a full-screen interstitial).
+import { FORMS_URL, NEWSLETTER as N } from "../config";
+---
+{N.enabled && (
+  <div class="nl" role="dialog" aria-modal="false" aria-labelledby="nl-heading" hidden
+    data-endpoint={FORMS_URL} data-delay={N.delaySeconds} data-scroll={N.scrollPercent}
+    data-snooze={N.snoozeDays} data-exclude={N.excludePaths.join("|")}>
+    <button type="button" class="nl-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+    </button>
+    <p id="nl-heading" class="nl-heading">{N.heading}</p>
+    <p class="nl-body">{N.body}</p>
+    <form class="nl-form" novalidate>
+      <div class="nl-row">
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" name="Email" required autocomplete="email" placeholder={N.placeholder} />
+        <button type="submit" class="nl-submit">{N.button}</button>
+      </div>
+      <label class="nl-consent">
+        <input type="checkbox" name="consent" value="yes" required />
+        <span>{N.consent + " "}<a href="/vocom-privacy-policy">Privacy Policy</a></span>
+      </label>
+      <input class="nl-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <p class="nl-msg" aria-live="polite" data-success={N.success} data-error={N.error}></p>
+    </form>
+  </div>
+)}
+
+<style>
+  .nl {
+    position: fixed; left: 20px; bottom: 20px; z-index: 11; width: 380px; max-width: calc(100vw - 40px);
+    display: flex; flex-direction: column; gap: 10px; padding: 24px;
+    background: var(--white); border: 1px solid var(--brand-pink-border); border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card), 0 20px 40px rgba(20, 10, 15, 0.12);
+    font-family: var(--font-sans); color: var(--ink-900);
+    animation: nl-in 0.35s cubic-bezier(0.44, 0, 0.56, 1);
+  }
+  .nl[hidden] { display: none; }
+  @keyframes nl-in { from { opacity: 0; transform: translateY(16px); } }
+  .nl-close {
+    position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; display: grid; place-items: center;
+    border: 0; border-radius: var(--radius-pill); background: transparent; cursor: pointer;
+  }
+  .nl-close:hover { background: var(--brand-pink-50); }
+  .nl-close svg { width: 18px; height: 18px; fill: none; stroke: var(--ink-600); stroke-width: 2; stroke-linecap: round; }
+  .nl-heading { padding-right: 32px; font-family: var(--font-display); font-weight: 700; font-size: 22px; line-height: 1.15; letter-spacing: -0.02em; color: var(--ink-heading); }
+  .nl-body { font-size: 14px; line-height: 1.55; color: var(--gray-600); }
+  .nl-form { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+  .nl-row { display: flex; gap: 8px; }
+  .nl-row input {
+    flex: 1 0 0; min-width: 0; height: 44px; padding: 0 14px;
+    border: 1px solid var(--brand-pink-border); border-radius: var(--radius-pill); background: var(--brand-pink-50);
+    font-size: 14px;
+  }
+  .nl-row input:focus { outline: 2px solid var(--color-vocom-cta-1); outline-offset: 1px; }
+  .nl-submit {
+    flex: none; height: 44px; padding: 0 18px; border: 0; border-radius: var(--radius-pill); cursor: pointer;
+    background: var(--color-vocom-cta-1); color: var(--white); font-weight: 600; font-size: 14px;
+  }
+  .nl-submit:hover { background: var(--color-vocom); }
+  .nl-submit[disabled] { opacity: 0.6; cursor: progress; }
+  .nl-consent { display: flex; gap: 8px; align-items: flex-start; font-size: 12px; line-height: 1.45; color: var(--gray-500); cursor: pointer; }
+  .nl-consent input { margin-top: 2px; accent-color: var(--color-vocom-cta-1); }
+  .nl-consent a { text-decoration: underline; }
+  .nl-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .nl-msg { font-size: 13px; line-height: 1.4; }
+  .nl-msg:empty { display: none; }
+  .nl-msg.ok { color: rgb(8, 61, 27); }
+  .nl-msg.err { color: rgb(200, 30, 50); }
+  @media (max-width: 809.98px) {
+    .nl { left: 0; right: 0; bottom: 0; width: 100%; max-width: none; border-radius: var(--radius-lg) var(--radius-lg) 0 0; padding: 22px 20px calc(20px + env(safe-area-inset-bottom)); }
+  }
+</style>
+
+<script>
+  const box = document.querySelector<HTMLElement>(".nl");
+  const KEY = "vocom-newsletter";
+  const read = () => { try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch { return null; } };
+  const write = (v: unknown) => { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch {} };
+  if (box) {
+    const state = read();
+    const day = 86400000;
+    const excluded = (box.dataset.exclude || "").split("|").includes(location.pathname);
+    const snoozed = state && (state.subscribed || Date.now() - state.closedAt < Number(box.dataset.snooze) * day);
+    if (!excluded && !snoozed) {
+      let shown = false;
+      const show = () => {
+        if (shown) return;
+        // don't stack on top of the cookie banner; try again shortly
+        const cb = document.querySelector<HTMLElement>(".cookie-banner");
+        if (cb && !cb.hidden) { setTimeout(show, 5000); return; }
+        shown = true; box.hidden = false;
+        (window as any).dataLayer?.push({ event: "newsletter_popup_shown" });
+      };
+      setTimeout(show, Number(box.dataset.delay) * 1000);
+      const onScroll = () => {
+        const max = document.documentElement.scrollHeight - innerHeight;
+        if (max > 0 && (scrollY / max) * 100 >= Number(box.dataset.scroll)) { show(); removeEventListener("scroll", onScroll); }
+      };
+      addEventListener("scroll", onScroll, { passive: true });
+    }
+    const close = () => { box.hidden = true; if (!read()?.subscribed) write({ closedAt: Date.now() }); };
+    box.querySelector(".nl-close")!.addEventListener("click", close);
+    addEventListener("keydown", (e) => { if (e.key === "Escape" && !box.hidden) close(); });
+
+    const form = box.querySelector<HTMLFormElement>(".nl-form")!;
+    const msg = box.querySelector<HTMLElement>(".nl-msg")!;
+    const btn = box.querySelector<HTMLButtonElement>(".nl-submit")!;
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const fd = new FormData(form);
+      if (fd.get("website")) { msg.textContent = msg.dataset.success!; msg.className = "nl-msg ok"; return; }
+      const endpoint = box.dataset.endpoint;
+      const fail = () => { msg.textContent = msg.dataset.error!; msg.className = "nl-msg err"; btn.disabled = false; };
+      if (!endpoint) return fail();
+      btn.disabled = true;
+      const data = new URLSearchParams({
+        form: "newsletter",
+        Email: String(fd.get("Email")),
+        consent: "yes",
+        consentText: box.querySelector(".nl-consent span")!.textContent!.trim(),
+        page: location.pathname,
+      });
+      try {
+        await fetch(endpoint, { method: "POST", mode: "no-cors", body: data });
+        msg.textContent = msg.dataset.success!; msg.className = "nl-msg ok";
+        form.querySelector(".nl-row")!.remove();
+        box.querySelector(".nl-consent")!.remove();
+        write({ subscribed: true });
+        (window as any).dataLayer?.push({ event: "newsletter_signup" });
+        setTimeout(() => (box.hidden = true), 3500);
+      } catch { fail(); }
+    });
+  }
+</script>

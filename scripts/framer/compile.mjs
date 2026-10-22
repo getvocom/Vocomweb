@@ -85,7 +85,7 @@ for (const p of pages) {
     if (em.collections.has("Products")) data.push("const products = await getProducts();");
   }
   if (markup.includes("searchTerm")) data.push('const searchTerm = ""; // filtering happens client-side (SearchFilter)');
-  let finalMarkup = markup;
+  let finalMarkup = unifySpecPanels(markup, imports, rel);
   if (route === "/search") { imports.push(`import SearchFilter from "${rel}components/SearchFilter.astro";`); finalMarkup += "\n<SearchFilter />"; }
   // only blog posts and products are indexed for /search
   if (isTemplate) finalMarkup = finalMarkup.replace(/^<div class="/, '<div data-pagefind-body class="');
@@ -117,3 +117,29 @@ for (const p of pages) {
 }
 fs.mkdirSync("capture/compile", { recursive: true });
 fs.writeFileSync(`capture/compile/report${ONLY ? "-" + ONLY.replace(/\W/g, "_") : ""}.json`, JSON.stringify(report, null, 1));
+
+// Fiber pages: replace each hero spec box with the shared SpecPanel component so every page
+// shows an identical box (Tom, 2026-10-22). Text is taken from the page unchanged.
+function unifySpecPanels(markup, imports, rel) {
+  const open = '<div class="technical-summary-panel ';
+  let out = markup, i;
+  while ((i = out.indexOf(open)) !== -1) {
+    let depth = 0, j = i;
+    const re = /<(\/?)div\b[^>]*>/g;
+    re.lastIndex = i;
+    let m;
+    while ((m = re.exec(out))) { depth += m[1] ? -1 : 1; if (depth === 0) { j = re.lastIndex; break; } }
+    const block = out.slice(i, j);
+    const text = (h) => h.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").trim();
+    const title = text((block.match(/<h2[^>]*>([\s\S]*?)<\/h2>/) || [])[1] || "");
+    const chipsHtml = (block.match(/<div class="cable-chips[^"]*">([\s\S]*)<\/div><div class="x[a-z0-9]+"><p/) || [])[1] || "";
+    const chips = [...chipsHtml.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)].map((x) => text(x[1]));
+    const ps = [...block.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)].map((x) => text(x[1]));
+    const note = ps[ps.length - 1] || "";
+    const q = (v) => JSON.stringify(v);
+    out = out.slice(0, i) + `<SpecPanel title={${q(title)}} chips={${q(chips)}} note={${q(note)}} />` + out.slice(j);
+    const imp = `import SpecPanel from "${rel}components/SpecPanel.astro";`;
+    if (!imports.includes(imp)) imports.push(imp);
+  }
+  return out;
+}

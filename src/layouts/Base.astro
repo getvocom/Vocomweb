@@ -22,6 +22,10 @@ const { page: pageLd, site: siteLd } = splitJsonLd(head.jsonld);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{head.title}</title>
+    <!-- Preload the core Latin font files used above the fold -->
+    <link rel="preload" href="/fonts/inter-400-776ea07d.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-600-a113a1cb.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-display-800-0af4310e.woff2" as="font" type="font/woff2" crossorigin />
     {head.links.filter((l) => l.rel === "canonical").map((l) => <link rel="canonical" href={l.href} />)}
     {head.meta.map((m) => ("name" in m ? <meta name={m.name} content={m.content} /> : <meta property={m.property} content={m.content} />))}
     {head.links.filter((l) => l.rel !== "canonical").map((l) => <link rel={l.rel} href={l.href} media={l.media} />)}
@@ -76,6 +80,21 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         }
         document.addEventListener("click", function (e) { var t = e.target.closest("[data-set-variant]"); if (t) { if (t.tagName !== "A") e.preventDefault(); go(t); } });
         document.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && e.target.matches && e.target.matches("[data-set-variant]")) { e.preventDefault(); go(e.target); } });
+      })();
+      // Videos: attach the source and play only while on screen (saves megabytes per page).
+      (function () {
+        var vids = document.querySelectorAll("video[data-src]");
+        if (!vids.length) return;
+        function load(v) { if (!v.src) { v.src = v.getAttribute("data-src"); v.preload = "auto"; } }
+        if (!("IntersectionObserver" in window)) { vids.forEach(function (v) { load(v); if (v.hasAttribute("data-autoplay")) v.play().catch(function () {}); }); return; }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            var v = e.target;
+            if (e.isIntersecting) { load(v); if (v.hasAttribute("data-autoplay")) v.play().catch(function () {}); }
+            else if (!v.paused) v.pause();
+          });
+        }, { rootMargin: "200px 0px" });
+        vids.forEach(function (v) { io.observe(v); });
       })();
       // Masonry grids: pack items into the shortest column like Framer does.
       (function () {

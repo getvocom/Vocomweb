@@ -7,4 +7,6 @@ export default defineConfig({
   trailingSlash: "never",
   build: { format: "file", inlineStylesheets: "auto" },
   compressHTML: true,
+  // Preload a page when its link is hovered/tapped, so navigation feels instant (as on Framer).
+  prefetch: { prefetchAll: true, defaultStrategy: "hover" },
 });

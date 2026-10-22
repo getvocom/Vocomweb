@@ -1,7 +1,7 @@
 ---
 // Quote form submit button + submit handler (replaces Framer's form + "Button 5").
 // States match the live button: Disabled until required fields are filled, Loading
-// spinner, "Thank you" on success, "Something went wrong" on error.
+// spinner, "Thank you" on success (then redirect to /resources), "Something went wrong" on error.
 // Submissions POST to the Google Apps Script in src/config.ts (QUOTE_FORM_URL).
 import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
 ---
@@ -77,6 +77,8 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
         live.textContent = "Thank you";
         window.dispatchEvent(new CustomEvent("quote-form-submitted"));
         (window as any).dataLayer?.push({ event: "form-submission" });
+        // after a successful quote request, send the visitor to the resources page (Tom, 2026-10-22)
+        setTimeout(() => { location.href = "/resources"; }, 1200);
       } catch {
         btn.dataset.state = "error";
         live.textContent = "Something went wrong";

@@ -28,7 +28,8 @@ const parseJSON = (s) => { try { return typeof s === "string" ? JSON.parse(s) : 
 export const registry = {
   "Navigation Bar 2"(n, c) {
     this.imports.add('import Header from "@/components/Header.astro";');
-    return `<div class="${c} header-slot" data-pagefind-ignore><Header /></div>`;
+    // One header size/position on every page (the Framer pages each had their own widths).
+    return `<div class="site-header-slot header-slot" data-pagefind-ignore><Header /></div>`;
   },
   "Simple Footer 2"(n, c) {
     this.imports.add('import Footer from "@/components/Footer.astro";');
@@ -54,7 +55,10 @@ export const registry = {
     const flags = [k.playing !== false && k.playing !== "false" ? "autoplay" : "", k.loop !== false && k.loop !== "false" ? "loop" : "", k.muted !== false && k.muted !== "false" ? "muted" : "", "playsinline", k.controls === true || k.controls === "true" ? "controls" : ""].filter(Boolean).join(" ");
     const fit = (k.fit || "Cover").toLowerCase();
     const radius = k.radius ? `border-radius:${k.radius};` : "";
-    return `<div class="${c}"><video class="video-fill" src="${attr(local)}"${poster ? ` poster="${poster}"` : ""} ${flags} preload="auto" style="object-fit:${fit};${radius}"></video></div>`;
+    // Videos load and play only when on screen (Base.astro script), like Framer's player.
+    const lazyFlags = flags.replace("autoplay", "").replace(/\s+/g, " ").trim();
+    const auto = flags.includes("autoplay") ? " data-autoplay" : "";
+    return `<div class="${c}"><video class="video-fill" data-src="${attr(local)}"${auto}${poster ? ` poster="${poster}"` : ""} ${lazyFlags} preload="none" style="object-fit:${fit};${radius}"></video></div>`;
   },
 
   Phosphor(n, c) {

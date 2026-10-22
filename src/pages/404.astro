@@ -8,7 +8,7 @@ const seo = { title: "Page Not Found | Vocom", description: "", canonical: "http
 ---
 <Base path="/404" seo={seo} noindex>
   <div class="nf-page">
-    <div class="nf-header"><Header /></div>
+    <div class="site-header-slot"><Header /></div>
     <main class="nf-main">
       <h1>Page not found</h1>
       <p>This page doesn’t exist or has moved.</p>
@@ -20,7 +20,6 @@ const seo = { title: "Page Not Found | Vocom", description: "", canonical: "http
 
 <style>
   .nf-page { display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: linear-gradient(180deg, var(--white) 0%, var(--color-vocom-white) 100%); }
-  .nf-header { position: sticky; top: 10px; z-index: 10; width: 1000px; max-width: calc(100% - 32px); }
   .nf-main { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 160px 24px; text-align: center; }
   .nf-main h1 { font-family: var(--font-display); font-weight: 800; font-size: 64px; line-height: 1.08; letter-spacing: -0.05em; color: var(--ink-heading); }
   .nf-main p { font-size: 18px; line-height: 1.55; color: var(--gray-600); }

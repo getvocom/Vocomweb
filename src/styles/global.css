@@ -59,6 +59,15 @@ svg.icon { overflow: visible; }
 .has-overlay:focus-within > .overlay { display: flex; }
 .overlay::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
 
+/* Site header: identical size and position on every page.
+   Desktop 1000px wide; tablet and phone full width minus side margins; always 10px from the top. */
+.site-header-slot {
+  position: sticky; top: 10px; z-index: 10; flex: none; align-self: center;
+  width: 1000px; max-width: calc(100% - 40px); height: auto;
+}
+@media (max-width: 1199.98px) { .site-header-slot { width: calc(100% - 40px); max-width: 960px; } }
+@media (max-width: 809.98px) { .site-header-slot { width: calc(100% - 32px); } }
+
 /* The desktop header must not clip its dropdown menus. */
 @media (min-width: 1200px) {
   header.navigation-bar-2 { overflow: visible; }

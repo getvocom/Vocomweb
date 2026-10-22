@@ -178,3 +178,9 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 @media (max-width: 809.98px) {
   .xxk9dfa > .xpm4o71 { flex: 1 1 100% !important; width: 100% !important; }
 }
+/* /vocomai-vocam features grid: "fit content" width with fluid columns collapsed it to ~40px on
+   desktop. Live renders it 1040px wide (two 500px columns). */
+@media (min-width: 1200px) { .xzusfzp { width: 1040px !important; max-width: 100%; } }
+/* Footer always last: pages whose sections carry per-breakpoint `order` values (1, 2, 3…)
+   pushed the footer (order 0) above the hero. */
+.footer-slot { order: 9999; }

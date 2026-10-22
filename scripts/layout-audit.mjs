@@ -4,6 +4,8 @@
 //   - text running past the right edge of the screen
 //   - content spilling out of the bottom of a fixed-height box and covering the next one
 //   - images that failed to load
+//   - text squeezed into a column a few pixels wide
+//   - a footer that isn't the last thing on the page
 // Usage: node scripts/layout-audit.mjs [--base http://localhost:4321] [--only /a,/b] [--widths 390]
 import fs from "node:fs";
 import { chromium } from "playwright";
@@ -46,6 +48,16 @@ function inspect() {
     let maxBottom = r.bottom;
     for (const c of box.children) { if (!visible(c) || getComputedStyle(c).position === "absolute" || getComputedStyle(c).position === "fixed") continue; maxBottom = Math.max(maxBottom, c.getBoundingClientRect().bottom); }
     if (maxBottom - r.bottom > 24 && box.parentElement && getComputedStyle(box.parentElement).display.includes("grid")) issues.push(`content spills ${Math.round(maxBottom - r.bottom)}px out of card: "${label(box)}"`);
+  }
+  // Footer must be the last thing on the page.
+  const foot = document.querySelector(".footer-slot");
+  if (foot && visible(foot)) { const fb = foot.getBoundingClientRect().bottom + scrollY; if (document.documentElement.scrollHeight - fb > 200) issues.push(`footer is not at the bottom (${Math.round(document.documentElement.scrollHeight - fb)}px of content below it)`); }
+  // Text squeezed into a sliver (e.g. a grid that collapsed to a few px wide).
+  for (const e of document.querySelectorAll("h1,h2,h3,h4,p")) {
+    if (!visible(e) || e.closest("header,nav,[data-pagefind-ignore]")) continue;
+    const t = (e.innerText || "").trim();
+    const r = e.getBoundingClientRect();
+    if (t.length > 20 && r.width > 0 && r.width < 40) issues.push(`text squeezed to ${Math.round(r.width)}px wide: "${label(e)}"`);
   }
   for (const img of document.querySelectorAll("img")) {
     if (!visible(img)) continue;

@@ -21,6 +21,7 @@ npm run parity     # SEO/content parity vs the live site -> notes/parity-report.
 QA helpers:
 - `node scripts/visual-diff.mjs [--only /path] [--widths 1440,768,390]`: screenshot comparison against `capture/screens`.
 - `node scripts/faq-schema.mjs [--write]`: rebuilds each page's FAQPage JSON-LD from the FAQs on the built page (run after `npm run build`, then build again).
+- `node scripts/nav-check.mjs [base URL]`: hovers every header dropdown on every page at 1280/1440/1920 and moves down onto a link, as a person would. Should print "all dropdowns OK".
 - `node scripts/layout-audit.mjs [--base URL] [--only /path] [--widths 390]`: flags sideways scrolling, text cut off at the screen edge, cards overlapping and broken images on every page. Should report 0 issues.
 - `node scripts/check-links.mjs`: broken-link check on `dist/`.
 - `node scripts/check-redirects.mjs <base-url>`: verifies every rule in `public/_redirects` returns a 301 to the right target.

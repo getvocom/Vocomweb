@@ -33,7 +33,7 @@ function inspect() {
     const r = e.getBoundingClientRect();
     if (r.width && r.right > vw + 2 && e.scrollWidth > 0) {
       const clip = hiddenByAncestor(e);
-      issues.push(`text past screen edge${clip ? " (cut off)" : ""}: "${label(e)}" right=${Math.round(r.right)}`);
+      issues.push(`text past screen edge${clip ? " (cut off)" : ""}: "${label(e)}" <${e.tagName.toLowerCase()} class="${e.className}"> parent "${e.parentElement.className}"`);
     }
   }
   // Children spilling out of the bottom of a fixed-height box (and overlapping the next box).

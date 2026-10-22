@@ -57,7 +57,12 @@ svg.icon { overflow: visible; }
 .has-overlay > .overlay { display: none; }
 .has-overlay:hover > .overlay,
 .has-overlay:focus-within > .overlay { display: flex; }
-.overlay::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+/* Hover bridge over the gap between a menu button and its dropdown, so the menu stays open
+   while the mouse moves down to it. It hangs off the button: the dropdown clips its own
+   overflow, so a bridge on the dropdown would be cut off. */
+.has-overlay:hover::before {
+  content: ""; position: absolute; left: -40px; right: -40px; top: 100%; height: 24px; z-index: 1;
+}
 
 /* Site header: identical size and position on every page.
    Desktop 1000px wide; tablet and phone full width minus side margins; always 10px from the top. */
@@ -149,7 +154,18 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 /* Tablet and phone: single-line ("auto width") text from Framer never wraps, so long titles
    and buttons ran off the screen. Let text wrap inside its container (line breaks kept). */
 @media (max-width: 1199.98px) {
-  body :is(h1, h2, h3, h4, h5, h6, p, label) { white-space: pre-wrap !important; max-width: 100%; overflow-wrap: break-word; }
+  /* Single-line ("auto width") Framer text that ran off the screen on phones: blog card titles,
+     the hero intro on the Vocom AI pages, and two button labels. Only these wrap; pills and
+     buttons elsewhere keep their one-line look. */
+  .xqbkdlg, .xzkcmc2, .x9grsbv, .xky1noh, .xvfnrda, .xaewjja, .xjazvom p {
+    white-space: pre-wrap !important; max-width: 100%; overflow-wrap: break-word;
+  }
+  /* their fixed-width wrappers (600px, 518px…) shrink to the screen */
+  .xj5ipim, .x4dkn3g, .xxtutsl, .xjxfbwc, .xjazvom { max-width: 100% !important; }
+  /* hero button rows wrap instead of pushing the second button off screen */
+  .xdyurkq, .xldmwog { flex-wrap: wrap !important; max-width: 100%; }
+  /* contact form: the Company Size field was wider than the form */
+  .x4ilrju { width: 100% !important; max-width: 100%; }
 }
 /* /fiber-optic-cable-catalog hero: grid columns were at least 380px, wider than a phone. */
 .xcfkpf2 { grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)) !important; max-width: none !important; }

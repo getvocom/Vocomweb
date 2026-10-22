@@ -10,6 +10,8 @@ const STATIC = [
   "/vocom-services", "/about", "/vocom-privacy-policy", "/blog", "/vocomai-consultancy", "/marketing-alliance", "/fiber-optic-cables",
   "/loose-tube-fiber-optic-cable", "/ribbon-fiber-optic-cable", "/data-center-fiber-cabling", "/air-blown-micro-fiber-cable",
   "/ftth-drop-cable", "/adss-aerial-fiber-cable", "/fiber-optic-cable-catalog",
+  // added 2026-10-22 (blocked on Framer by the plan's page limit)
+  "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners",
 ];
 
 export async function GET() {

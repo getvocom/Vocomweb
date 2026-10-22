@@ -16,3 +16,16 @@ Each page keeps its **first** H1. Extra H1s are changed to H2 when they are sect
 | /vocomai-vocam | Up and running in about 10 minutes. | h1 | p |
 
 The blog post template applies the same rule to every post: the post's card title stays the H1, and the "Fifth Section Title" (a second H1 on the live site) becomes an H2.
+
+## Heading count trim (2026-10-22, after an SEO audit flagged 40 headings on the homepage)
+
+Small card labels became paragraphs. The words, class and look are unchanged, and the page outline is now section titles, case studies and FAQ questions only.
+
+| Page | Text | Live tag | New tag |
+|---|---|---|---|
+| / | Outdoor Fiber Cable, Ribbon Fiber Cable, Stranded & Central Tube, Single Mode & Multimode, Patch Cords & Connectors, Custom Specifications ("What we supply" tiles) | h3 | p |
+| / | Send requirements, Quote & lead time, Production & QC, Global delivery, Quote-to-shipment route (process steps) | h3 | p |
+| / | IEPL / IPLC, IP Transit, Local Loop & Voice Termination, IDC / Data Center Services (service tiles) | h3 | p |
+| /blog | Product label on each card (e.g. "MPO and MTP Trunks") | h4 | p |
+
+Homepage: 40 → 25 headings. /blog: 84 → 43. Done in `scripts/framer/compile.mjs` (`DEMOTE`) and `capture/cms-field-tags.json`, so a re-run keeps it.

@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site dist && node scripts/html-headers.mjs",
     "preview": "astro preview",
     "capture": "node scripts/capture.mjs",
     "parity": "node scripts/parity-check.mjs"

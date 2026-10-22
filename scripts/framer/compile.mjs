@@ -20,6 +20,40 @@ const PAGES_DIR = "capture/framer/pages";
 const pageFiles = fs.readdirSync(PAGES_DIR).filter((f) => f.endsWith(".json"));
 const pages = pageFiles.map((f) => JSON.parse(fs.readFileSync(path.join(PAGES_DIR, f), "utf8")));
 
+// Extra pages (scripts/framer/extra-pages.json): copies of an existing page layout with its
+// text layers replaced in order. Used for pages Framer's plan limit blocked.
+const EXTRA = fs.existsSync("scripts/framer/extra-pages.json") ? JSON.parse(fs.readFileSync("scripts/framer/extra-pages.json", "utf8")).pages : [];
+for (const x of EXTRA) {
+  const src = pages.find((p) => p.attributes.path === x.from);
+  const page = JSON.parse(JSON.stringify(src));
+  page.attributes.path = x.path;
+  page.attributes.metadata = { ...page.attributes.metadata, title: x.title, description: x.description };
+  const prim = page.children.find((c) => c.$isPrimary);
+  // text layers of the primary breakpoint in order, skipping instances and CMS-bound text
+  const order = [];
+  (function w(n) {
+    if (n.type === "ComponentInstanceNode") return;
+    if (n.type === "RichTextNode") { if (!String(n.attributes?.text ?? "").startsWith("var(")) order.push(n.id); return; }
+    (n.children || []).forEach(w);
+  })(prim);
+  if (order.length !== x.texts.length) throw new Error(`${x.path}: ${order.length} text layers vs ${x.texts.length} texts`);
+  const repl = new Map(order.map((id, i) => [id, x.texts[i]]));
+  for (const bp of page.children.filter((c) => c.$mediaQuery)) {
+    const pre = bp.$isPrimary ? "" : bp.id;
+    (function w(n) {
+      const orig = n.$originalId || (pre && n.id?.startsWith(pre) ? n.id.slice(pre.length) : n.id);
+      if (n.type === "RichTextNode" && repl.has(orig) && repl.get(orig) !== null) {
+        const b = n.children?.[0], r = b?.children?.find((c) => c.type === "TextRun");
+        n.children = [{ ...b, children: [{ ...r, attributes: { ...(r?.attributes || {}), text: repl.get(orig) } }] }];
+        return;
+      }
+      if (x.productFilter && n.attributes?.collectionList?.filters?.[0]?.transforms?.[0]) n.attributes.collectionList.filters[0].transforms[0].value = x.productFilter;
+      (n.children || []).forEach(w);
+    })(bp);
+  }
+  pages.push(page);
+}
+
 // pages whose extra H1s are demoted (Tom: "use SEO best practice")
 const headingLog = [];
 
@@ -85,7 +119,7 @@ for (const p of pages) {
     if (em.collections.has("Products")) data.push("const products = await getProducts();");
   }
   if (markup.includes("searchTerm")) data.push('const searchTerm = ""; // filtering happens client-side (SearchFilter)');
-  let finalMarkup = unifySpecPanels(markup, imports, rel);
+  let finalMarkup = demoteHeadings(route, addCategoryLinks(route, unifySpecPanels(markup, imports, rel)));
   if (route === "/search") { imports.push(`import SearchFilter from "${rel}components/SearchFilter.astro";`); finalMarkup += "\n<SearchFilter />"; }
   // only blog posts and products are indexed for /search
   if (isTemplate) finalMarkup = finalMarkup.replace(/^<div class="/, '<div data-pagefind-body class="');
@@ -142,4 +176,34 @@ function unifySpecPanels(markup, imports, rel) {
     if (!imports.includes(imp)) imports.push(imp);
   }
   return out;
+}
+
+// Links to the distributor, indoor and referral pages, as added in the Framer session on
+// 2026-10-21 (removed there only because of the page limit). Same wording.
+// Small card labels that Framer marked as headings become paragraphs (same class, same look),
+// so the page outline is section titles only. Tom approved 2026-10-22; see notes/heading-changes.md.
+const DEMOTE = {
+  "/": ["Outdoor Fiber Cable", "Ribbon Fiber Cable", "Stranded &amp; Central Tube", "Single Mode &amp; Multimode", "Patch Cords &amp; Connectors", "Custom Specifications",
+    "Send requirements", "Quote &amp; lead time", "Production &amp; QC", "Global delivery", "Quote-to-shipment route",
+    "IEPL / IPLC", "IP Transit", "Local Loop &amp; Voice Termination", "IDC / Data Center Services"],
+};
+function demoteHeadings(route, markup) {
+  for (const t of DEMOTE[route] || []) {
+    const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    markup = markup.replace(new RegExp(`<h([2-6])( class="[^"]*")?>(${esc})</h\\1>`, "g"), "<p$2>$3</p>");
+  }
+  return markup;
+}
+
+function addCategoryLinks(route, markup) {
+  const a = (href, t) => `<a href="${href}" class="text-link">${t}</a>`;
+  const all = `For distributors, see ${a("/fiber-optic-cable-for-distributors", "second-source supply")}. For in-building runs, see ${a("/indoor-fiber-optic-cable", "indoor OFNP and OFNR cable")}. Duct makers and consultants can ${a("/fiber-optic-cable-referral-partners", "refer an inquiry")}.`;
+  const indoor = `For in-building runs beyond the data hall, see ${a("/indoor-fiber-optic-cable", "indoor OFNP and OFNR cable")}.`;
+  const jobs = { "/fiber-optic-cables": [/expedited air freight available\.<\/p>/, all], "/fiber-optic-cable-catalog": [/expedited air freight available\.<\/p>/, all], "/data-center-fiber-cabling": [/(<p class="[^"]*">Factory-terminated MPO and MTP trunks[^<]*)<\/p>/, indoor] };
+  const j = jobs[route];
+  if (!j) return markup;
+  return markup.replace(j[0], (m) => {
+    const cls = (m.match(/^<p class="([^"]*)">/) || markup.slice(0, markup.indexOf(m)).match(/<p class="([^"]*)">[^<]*$/) || [])[1] || "";
+    return `${m}<p class="${cls} hero-links">${j[1]}</p>`;
+  });
 }

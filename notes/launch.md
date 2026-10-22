@@ -11,7 +11,7 @@
 - [ ] Repo pushed to GitHub and connected to Cloudflare Pages (see README). The production branch is `main`.
 - [ ] On the Cloudflare preview URL (`https://<hash>.<project>.pages.dev`):
   - [ ] `node scripts/check-redirects.mjs https://<preview-url>`: all OK.
-  - [ ] `curl -sI https://<preview-url>/ | grep -i x-robots-tag`: shows `noindex`.
+  - [ ] `curl -sI https://<preview-url>/ | grep -i content-type`: shows `text/html; charset=utf-8`. (Preview hosts are no longer noindexed, at Tom's request; canonicals point to www.vocom.ai.)
   - [ ] `npm run parity -- --base https://<preview-url>`: no unexpected issues.
   - [ ] Submit the quote form once on the preview, then confirm the sheet row, the email and "Thank you".
   - [ ] Click through the header menus on desktop and phone, the FAQ, tabs and search.
@@ -56,7 +56,7 @@
   10. `/blog/ai%E2%80%99s-real-impact-on-work`
 - [ ] `http://vocom.ai/about`, `https://vocom.ai/about` and `https://www.vocom.ai/about/` each **301** to `https://www.vocom.ai/about`.
 - [ ] A random path such as `/xyz` returns **404** with the Vocom 404 page.
-- [ ] `https://www.vocom.ai/sitemap.xml` returns 113 URLs, and `robots.txt` is unchanged.
+- [ ] `https://www.vocom.ai/sitemap.xml` returns 116 URLs, and `robots.txt` is unchanged.
 
 ### 3. Redirect test on production
 

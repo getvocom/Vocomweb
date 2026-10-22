@@ -1,10 +1,5 @@
-# Keep Cloudflare preview deployments out of search engines. Production (www.vocom.ai) is unaffected.
-https://:project.pages.dev/*
-  X-Robots-Tag: noindex
-https://:version.:project.pages.dev/*
-  X-Robots-Tag: noindex
-https://:worker.:account.workers.dev/*
-  X-Robots-Tag: noindex
+# No X-Robots-Tag rules: Tom asked (2026-10-22) for preview hosts to be crawlable too.
+# Every page's canonical points at https://www.vocom.ai, so search engines treat that as the original.
 
 # Long cache for fingerprinted/static assets
 /_astro/*

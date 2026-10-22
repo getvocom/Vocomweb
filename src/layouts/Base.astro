@@ -25,6 +25,7 @@ const { page: pageLd, site: siteLd } = splitJsonLd(head.jsonld);
     {head.links.filter((l) => l.rel === "canonical").map((l) => <link rel="canonical" href={l.href} />)}
     {head.meta.map((m) => ("name" in m ? <meta name={m.name} content={m.content} /> : <meta property={m.property} content={m.content} />))}
     {head.links.filter((l) => l.rel !== "canonical").map((l) => <link rel={l.rel} href={l.href} media={l.media} />)}
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     {noindex && <meta name="robots" content="noindex" />}
     {pageLd.map((j) => <script type="application/ld+json" set:html={j} />)}
 

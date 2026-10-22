@@ -20,3 +20,18 @@ These are the scripts found on all 114 live pages. They're carried over with the
 2. **Does GTM load anything extra?** It may fire additional tags (Ads, Meta, etc.) that can't be seen from outside. They'll keep working, but please check the GTM container for any trigger that relies on Framer-specific DOM or URL patterns.
 3. **Cookie consent:** the Framer banner has no GTM ID set, so on the live site analytics and LinkedIn fire before and regardless of the visitor's choice. The rebuild behaves the same way and pushes a `cookie_consent` dataLayer event with the choice. If you want consent to actually gate the tags (advisable for EU visitors), I can wire up Google Consent Mode.
 4. **GA4 is loaded twice:** directly (gtag) and possibly again via GTM if GTM has a GA4 tag. Please check GTM, otherwise page views are double-counted.
+
+## Framer custom code: carried over (checked 2026-10-22 against Framer's Code list)
+
+| Framer item | Pages | Rebuild |
+|---|---|---|
+| Google Tag Manager | All | `Base.astro` `<head>` |
+| TAG MANAGER 2 (gtag G-YYWN6PCL75) | /contact-vocomai | Already loaded on every page by `Base.astro`. Not added twice, which would double-count contact page views |
+| Metricool | All | `Base.astro` end of `<body>` |
+| Linkedin / Linkedin Tag | All | Insight Tag once in `<head>` (the two Framer copies were identical) |
+| LinkedAD 02 (conversion pixel) | All | `Base.astro` end of `<body>` |
+| Google Key Events | /contact-vocomai | **Not on the published site, and Framer's API doesn't expose per-page code.** Tom to paste its contents |
+| Vocom Schema Graph, BlogPosting schema | All | Site-wide graph in `src/data/head/*.json`; BlogPosting rendered statically on posts |
+| Product+FAQ, Service, FAQPage, CollectionPage, Catalog schemas | Per page | `src/data/head/<page>.json` |
+
+JSON-LD was compared against the live site on all 114 pages: identical. The quote form also pushes `form-submission` to the dataLayer on success, then redirects to /resources.

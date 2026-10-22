@@ -7,7 +7,7 @@ import { getPosts, getProducts } from "../lib/cms";
 
 const SITE = "https://www.vocom.ai";
 const SECTIONS: [string, string[]][] = [
-  ["Fiber optic cable", ["/fiber-optic-cables", "/fiber-optic-cable-catalog", "/loose-tube-fiber-optic-cable", "/ribbon-fiber-optic-cable", "/data-center-fiber-cabling", "/air-blown-micro-fiber-cable", "/ftth-drop-cable", "/adss-aerial-fiber-cable"]],
+  ["Fiber optic cable", ["/fiber-optic-cables", "/fiber-optic-cable-catalog", "/loose-tube-fiber-optic-cable", "/ribbon-fiber-optic-cable", "/data-center-fiber-cabling", "/air-blown-micro-fiber-cable", "/ftth-drop-cable", "/adss-aerial-fiber-cable", "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners"]],
   ["Telecom services (Vocom International)", ["/vocom-international", "/vocom-services"]],
   ["Vocom AI", ["/vocom-ai", "/vocom-ai-agents", "/vocom-ai-servers", "/vocomai-gpu-solutions", "/vocomai-supply-chain", "/vocomai-coach-hub", "/vocomai-vocam", "/vocomai-manufacturing", "/vocomai-consultancy", "/pricing-vocomai"]],
   ["Company", ["/about", "/contact-vocomai", "/marketing-alliance", "/resources", "/blog", "/vocom-privacy-policy"]],

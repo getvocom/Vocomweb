@@ -35,8 +35,8 @@
  },
  "/blog": {
   "Blog Thumbnail Title": "h3",
-  "Product": "h4",
-  "Industry": "h4"
+  "Product": "p",
+  "Industry": "p"
  },
  "/fiber-optic-cable-catalog": {
   "Industry": "p",

@@ -137,3 +137,28 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 
 /* Logo component: Framer's "Small" logo variant uses a contained (never cropped) image. */
 .elements-logo .fill-img { object-fit: contain; }
+
+/* Hero link line on the fiber hub, catalog and data center pages */
+.hero-links { margin-top: 12px; }
+
+/* ---- Layout fixes (found by scripts/layout-audit.mjs; most also exist on the Framer site) ---- */
+/* /blog cards: Framer fixed the row height (600/450/300px) but the square image plus title is
+   taller, so cards overlapped the next one. Let each card take its natural height. */
+.xwqa03j { grid-auto-rows: auto !important; }
+.case-thumbnail.xd0kq3e { height: auto !important; }
+/* Tablet and phone: single-line ("auto width") text from Framer never wraps, so long titles
+   and buttons ran off the screen. Let text wrap inside its container (line breaks kept). */
+@media (max-width: 1199.98px) {
+  body :is(h1, h2, h3, h4, h5, h6, p, label) { white-space: pre-wrap !important; max-width: 100%; overflow-wrap: break-word; }
+}
+/* /fiber-optic-cable-catalog hero: grid columns were at least 380px, wider than a phone. */
+.xcfkpf2 { grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)) !important; max-width: none !important; }
+/* /pricing-vocomai: the 960px content block made the page scroll sideways on tablet and phone. */
+@media (max-width: 1199.98px) {
+  .x43rzd6 { width: 100% !important; padding-left: 20px !important; padding-right: 20px !important; }
+  .x43rzd6 > *, .x43rzd6 .xwfdbdf { width: 100% !important; max-width: 100%; }
+}
+/* /vocom-services: the infrastructure column was squeezed to 70px on phones and its text cut off. */
+@media (max-width: 809.98px) {
+  .xxk9dfa > .xpm4o71 { flex: 1 1 100% !important; width: 100% !important; }
+}

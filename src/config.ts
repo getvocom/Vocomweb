@@ -3,7 +3,7 @@
 // FORMS_URL: the Google Apps Script web app (apps-script/Code.gs) that receives both the
 // quote form (/contact-vocomai) and the newsletter popup. See README "Forms".
 // Leave empty until the script is deployed: the forms then show their error state.
-export const FORMS_URL = "";
+export const FORMS_URL = "https://script.google.com/macros/s/AKfycbyfh7K69zH0bQ_EOfG8rMyosU6iKPJcME7hlN1YsntPGpMTNscQ2pPzLElhJTjO3NQv/exec";
 export const QUOTE_FORM_URL = FORMS_URL;
 export const QUOTE_FORM_FALLBACK_EMAIL = "";
 

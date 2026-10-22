@@ -1,0 +1,118 @@
+https://events.framer.com/script?v=2
+
+https://framerusercontent.com/sites/2qmIIVOCTCvnwo21RhEY5t/script_main.BdCtICbK.mjs
+
+https://www.googletagmanager.com/gtag/js?id=G-YYWN6PCL75
+
+inline:!function(){var w="framer_variant";function u(a,r){let e=r.indexOf("#"),t=e===-1?r:r.substring(0,e),o=e===-1?"":r.substring(e),n=t.indexOf("?"),h=n===-1?t:t.substring(0,n),d=n===-1?"":t.substring(n),s=new URLSearchParams(d),m=new URLSearchParams(a);for(let[i,l]of m)s.has(i)||i!==w&&s.append(i,l);let
+
+inline:(()=>{function p(){function s(e){let t=new URL(e);return`${t.origin}${t.pathname}`.replace(/\/$/u,"")}function c(e){return e.split("-")[0]}function g(){let e=window.location.hostname,t=new Map;return document.querySelectorAll('link[rel="alternate"]').forEach(n=>{let r=n.getAttribute("hreflang"),o=n.
+
+inline:(()=>{function u(){function n(t,e,i){let r=document.createElement("a");r.href=t,r.target=i,r.rel=e,document.body.appendChild(r),r.click(),r.remove()}function o(t){if(this.dataset.hydrated){this.removeEventListener("click",o);return}t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href
+
+inline:((s,k,r)=>{let a=new Set,l=new Set,c=!1;function F(){c=!1;let e=[...l];l.clear();for(let n of e)n()}function w(e){l.add(e),!c&&(c=!0,requestAnimationFrame(F))}function D(){for(;a.size;){let e=a.values().next().value;a.delete(e),e()}}let M="scheduler"in s&&"postTask"in scheduler?e=>{scheduler.postTas
+
+inline:(function () {
+  var path = window.location.pathname;
+  if (!/^\/blog\/[^\/]+\/?$/.test(path)) return;
+
+  function metaContent(selector) {
+    var el = document.querySelector(selector);
+    return el ? (el.content || el.href || "") : "";
+  }
+
+  function inject() {
+    var title = document.
+
+inline:(function ui(e,t){let n=document.currentScript?.parentElement;n&&n.addEventListener(`submit`,r=>{n.hasAttribute(e)||(r.preventDefault(),n.setAttribute(t,``))})})("data-framer-form-hydrated","data-framer-form-pending-submit")
+
+inline:(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insig
+
+inline:(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,
+
+inline:[{"0":1,"1":145},["Map",2,3],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"go1u8xCkr\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"go1u8xCkr\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"
+
+inline:[{"0":1,"1":2},["Map"],["Map",3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72],"getSlugByRecordId|Fy3muR0Mj|default|E_dPSNHbd","loose-tube-strand
+
+inline:[{"0":1,"1":2},["Map"],["Map",3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],"getSlugByRecordId|Fy3muR0Mj|default|E_dPSNHbd","loose-tube-stranded-dielectric","getSlugByRecordId|Fy3muR0Mj|default|MMrVTuT35","loose-tube-stranded-armored","getSlugByRecor
+
+inline:[{"0":1,"1":33},["Map",2,3],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"XGt4jmEZu\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"XGt4jmEZu\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"}
+
+inline:[{"0":1,"1":33},["Map",2,3],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"jOmrD7Z01\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"jOmrD7Z01\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"}
+
+inline:[{"0":1,"1":40},["Map",2,3],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"JySFTrqh4\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"JySFTrqh4\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"}
+
+inline:[{"0":1,"1":47},["Map",2,3],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"B3jWpPYzv\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"B3jWpPYzv\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"}
+
+inline:[{"0":1,"1":47},["Map",2,3],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"BwOvIHnfR\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"BwOvIHnfR\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"}
+
+inline:[{"0":1,"1":55},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":565},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"limit\":{\"type\":\"LiteralValue\",\"value\":5001},\"select\":[{\"collection\":\"uMgix3Bbw\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"uMgix3Bbw\",\"name\":\"MSZWmOUa4\",\"type\":\"Identifier\"
+
+inline:[{"0":1,"1":56},["Map",2,3,28,29],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"select\":[{\"collection\":\"IuFAdRGoP\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"llF9GrUYm\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"eGZZA
+
+inline:[{"0":1,"1":56},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":57},["Map",2,3,29,30],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"select\":[{\"collection\":\"IuFAdRGoP\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"llF9GrUYm\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"eGZZA
+
+inline:[{"0":1,"1":57},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":58},["Map",2,3,28,29],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"select\":[{\"collection\":\"IuFAdRGoP\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"llF9GrUYm\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"eGZZA
+
+inline:[{"0":1,"1":58},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":59},["Map",2,3,29,30],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"select\":[{\"collection\":\"IuFAdRGoP\",\"name\":\"g6g11fGQB\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"llF9GrUYm\",\"type\":\"Identifier\"},{\"collection\":\"IuFAdRGoP\",\"name\":\"eGZZA
+
+inline:[{"0":1,"1":59},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":61},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":62},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":63},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":64},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":65},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":76},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":77},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":78},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":817},["Map",2,3,460,461],"{\"from\":\"192939c1-a512-4e49-b64c-7c288ff9e1f3\",\"select\":[{\"collection\":\"D4UxDxRbW\",\"name\":\"Khzaw2vzz\",\"type\":\"Identifier\"},{\"collection\":\"D4UxDxRbW\",\"name\":\"llF9GrUYm\",\"type\":\"Identifier\"},{\"collection\":\"D4UxDxRbW\",\"name\":\"g6
+
+inline:[{"0":1,"1":83},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:[{"0":1,"1":90},["Map",2,3],"{\"from\":\"4714906b-904a-4963-b53a-fc09fd369e6e\",\"select\":[{\"collection\":\"tFRvCIrQ3\",\"name\":\"y34GyoiDi\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"KM6vLSrCh\",\"type\":\"Identifier\"},{\"collection\":\"tFRvCIrQ3\",\"name\":\"usvkqQZmR\"
+
+inline:_linkedin_partner_id = "8874748";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+inline:try{if(localStorage.getItem("__framer_force_showing_editorbar_since")){const n=document.createElement("link");n.rel="modulepreload";n.href="https://framer.com/edit/init.mjs";document.head.appendChild(n)}}catch(e){}
+
+inline:typeof document<"u"&&(window.process={...window.process,env:{...window.process?.env,NODE_ENV:"production"}});
+
+inline:window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YYWN6PCL75');
+
+inline:window.dataLayer = window.dataLayer || [];
+	  function gtag(){window.dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-YYWN6PCL75');

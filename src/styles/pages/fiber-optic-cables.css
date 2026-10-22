@@ -1,0 +1,163 @@
+/* Converted from Framer. Breakpoints: desktop >=1200, tablet 810-1199, phone <810. */
+.xnhnwib{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;padding:0px 20px 0px 20px;background:var(--white);overflow:clip;min-height:100vh}
+.xopns2k{display:block;position:sticky;top:10px;flex:none;width:1000px;height:min-content;z-index:10}
+.xsrypl0{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:36px;position:relative;flex:none;width:100%;height:min-content;padding:84px 0px 72px 0px}
+.xs9zhz3{display:grid;grid-template-columns:repeat(auto-fill, minmax(380px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:32px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content;max-width:1160px}
+.xplihyf{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:22px;position:relative;flex:none;width:100%;height:min-content}
+.xbmqmdr{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:min-content;height:min-content;padding:8px 12px 8px 12px;border-radius:999px;background:var(--brand-pink-50);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.16)}
+.xcm7p0z{position:relative;flex:none;width:16px;height:16px;display:block}
+.xy2sshp{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:13px;letter-spacing:0.02em;line-height:1.1em;color:rgb(138, 23, 76);text-align:left;white-space:pre}
+.xgitgkv{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:700;font-size:64px;letter-spacing:-0.02em;line-height:1.05em;color:var(--ink-900);text-align:left;text-wrap:balance;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xpyvxfj{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:19px;letter-spacing:-0.01em;line-height:1.55em;color:var(--ink-600);text-align:left;text-wrap:balance;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xuiwve6{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:center;align-content:center;gap:12px;position:relative;flex:none;width:100%;height:min-content}
+.xlhk6xe{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:9px;position:relative;flex:none;width:min-content;height:min-content;padding:14px 22px 14px 22px;border-radius:999px;background:var(--brand-gradient);cursor:pointer}
+.x44fioc{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:15px;letter-spacing:0;line-height:1em;color:var(--white);text-align:left;white-space:pre}
+.xkmi4bm{position:relative;flex:none;width:17px;height:17px;display:block}
+.xgtbd5e{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:9px;position:relative;flex:none;width:min-content;height:min-content;padding:14px 20px 14px 20px;border-radius:999px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(127, 23, 63, 0.18);cursor:pointer}
+.xvzof4o{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:15px;letter-spacing:0;line-height:1em;color:var(--brand-crimson);text-align:left;white-space:pre}
+.xtkhhax{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:18px;position:relative;flex:none;width:100%;height:min-content;padding:24px;border-radius:28px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14)}
+.xrgqjdv{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:12px;position:relative;flex:none;width:100%;height:min-content}
+.xpw226t{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:46px;height:46px;border-radius:14px;background:#FFF0F7}
+.xfh04zm{position:relative;flex:none;width:24px;height:24px;display:block}
+.xedko1w{position:relative;flex:1 0 0px;width:1px;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:24px;letter-spacing:-0.03em;line-height:1.12em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xsfy8dt{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:center;align-content:center;gap:10px;position:relative;flex:none;width:100%;height:min-content}
+.xbfssv8{display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;flex:none;width:min-content;height:min-content;padding:10px 12px 10px 12px;border-radius:999px;background:var(--brand-pink-50)}
+.x2bilgo{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:14px;letter-spacing:0;line-height:1.25em;color:var(--brand-crimson);text-align:center;white-space:pre}
+.xcwj5dh{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:min-content;padding:0px 0px 0px 12px;background:rgba(0,0,0,0)}
+.x3fb8a8{position:relative;flex:1 0 0px;width:1px;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:14px;letter-spacing:0;line-height:1.3em;color:var(--brand-crimson);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xetno7s{display:grid;grid-template-columns:repeat(4, minmax(1px, 1fr));grid-auto-rows:minmax(0, 1fr);grid-template-rows:repeat(1, minmax(0, 1fr));gap:1px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content;padding:10px;border-radius:24px;background:rgba(255,255,255,0.72);--bw:1px;--bs:solid;--bc:var(--brand-pink-border);overflow:clip}
+.xl6zyf8{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;position:relative;flex:none;width:100%;height:100%;align-self:start;padding:18px 12px 18px 12px;border-radius:16px;background:var(--white);overflow:clip}
+.xiu97z5{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:44px;letter-spacing:-0.02em;line-height:1em;color:var(--color-vocom-cta-1);text-align:center;white-space:pre}
+.xamll3i{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:12px;letter-spacing:0;line-height:1.3em;color:var(--gray-500);text-align:center;white-space:pre}
+.xt49p2x{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:0px 0px 24px 0px}
+.x8x6075{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:520px;border-radius:28px;--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14);overflow:clip}
+.xskwkwe{display:block;position:relative;flex:1 0 0px;width:100%;height:1px}
+.xsfmpvw{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:28px;border-radius:24px;background:linear-gradient(135deg, var(--brand-red) 0%, #D82D7C 100%)}
+.xyxogkm{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:22px;letter-spacing:-0.02em;line-height:1.2em;color:var(--white);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xeuodx6{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:14px;letter-spacing:0.02em;line-height:1.3em;color:rgba(255, 255, 255, 0.82);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xoxls24{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:100%;height:min-content;max-width:1180px;padding:48px 32px 48px 32px}
+.xhawjdc{display:block;position:relative;flex:1 0 0px;width:1px;height:1px;background:var(--brand-pink-border)}
+.xkuqrqs{display:block;position:relative;flex:none;width:7px;height:7px;border-radius:999px;background:var(--brand-red-alt)}
+.xryeakd{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:20px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:24px 0px 0px 0px}
+.xhxgi4h{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:26px;letter-spacing:-0.02em;line-height:1.15em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xiabd9x{display:grid;grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:14px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content}
+.xsj4rfp{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:12px;position:relative;flex:none;width:100%;height:100%;align-self:start;padding:18px;border-radius:20px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.12);cursor:pointer}
+.xvvz6kl{display:block;position:relative;flex:none;width:100%;height:4px;border-radius:2px;background:var(--brand-gradient)}
+.xk29rfv{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:40px;height:40px;border-radius:12px;background:var(--brand-pink-50)}
+.xjrsrsd{position:relative;flex:none;width:20px;height:20px;display:block}
+.xucdken{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:14px;letter-spacing:0;line-height:1.3em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xe4kcvg{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:14px;position:relative;flex:none;width:820px;height:min-content;max-width:100%;padding:24px 0px 24px 0px}
+.xlo36pu{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:30px;letter-spacing:-0.02em;line-height:1.15em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xtnb6tg{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:1.55em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xq7yimt{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:15px;letter-spacing:0;line-height:1.5em;color:var(--brand-crimson);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xtqtrpg{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:24px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:78px 0px 78px 0px}
+.xgkzsa5{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:12px;position:relative;flex:none;width:820px;height:min-content;max-width:100%}
+.x6awgik{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:42px;letter-spacing:-0.035em;line-height:1.08em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xlffj3m{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:17px;letter-spacing:0;line-height:1.5em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xesyeey{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:28px;position:relative;flex:none;width:100%;height:min-content}
+.xgpa4cm{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:12px;position:relative;flex:none;width:100%;height:min-content}
+.x28gvtd{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center;align-content:center;position:relative;flex:none;width:100%;height:min-content}
+.x66sfk5{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:20px;letter-spacing:-0.02em;line-height:1.2em;color:var(--ink-900);text-align:left;white-space:pre}
+.xlz8agx{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:14px;letter-spacing:0;line-height:1.2em;color:var(--brand-crimson);text-align:left;white-space:pre}
+.xmg3ym3{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:min-content;border-radius:16px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14);overflow:clip}
+.xczntnz{display:grid;grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:12px;justify-items:start;align-items:start;position:relative;flex:none;width:100%;height:min-content;padding:12px 16px 12px 16px;background:var(--brand-pink-50);--bs:solid;--bc:rgba(136, 18, 67, 0.18);--bw:0px 0px 1px 0px;cursor:pointer}
+.x2jpvbk{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:11px;letter-spacing:0.04em;line-height:1.4em;color:var(--brand-crimson);text-align:left;text-transform:uppercase;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x8px2hb{display:grid;grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:12px;justify-items:start;align-items:start;position:relative;flex:none;width:100%;height:min-content;padding:12px 16px 12px 16px;background:var(--white);--bs:solid;--bc:rgba(136, 18, 67, 0.12);--bw:0px 0px 1px 0px;cursor:pointer}
+.xicxqal{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:13px;letter-spacing:0;line-height:1.4em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x7s0au5{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:13px;letter-spacing:0;line-height:1.4em;color:var(--ink-800);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xlgauc8{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:20px;letter-spacing:-0.02em;line-height:1.2em;color:var(--ink-900);text-align:left;white-space:pre}
+.xqvjeor{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:100%;height:min-content;padding:8px 0px 0px 0px}
+.x9zepwi{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:15px;letter-spacing:0;line-height:1.3em;color:var(--brand-crimson);text-align:left;white-space:pre}
+.xuq1adp{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:24px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:0px 0px 24px 0px}
+.xprqz8q{display:grid;grid-template-columns:repeat(3, minmax(1px, 1fr));grid-auto-rows:minmax(0, 1fr);grid-template-rows:repeat(1, minmax(0, 1fr));gap:20px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content}
+.xvb3cef{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:14px;position:relative;flex:none;width:100%;height:min-content;padding:16px;border-radius:22px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.12);overflow:clip}
+.xj1qa6p{display:block;position:relative;flex:none;width:100%;height:160px;border-radius:16px;overflow:clip;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xnjgtpj{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:18px;letter-spacing:-0.02em;line-height:1.2em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xyhckbu{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:14px;letter-spacing:0;line-height:1.45em;color:var(--ink-600);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xlzrmeu{display:grid;grid-template-columns:repeat(5, minmax(1px, 1fr));grid-auto-rows:min-content;gap:12px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:8px 0px 24px 0px}
+.xxuq6ko{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:100%;height:min-content;padding:14px;border-radius:14px;background:var(--brand-pink-50);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.12)}
+.x6mhl0l{position:relative;flex:none;width:18px;height:18px;display:block}
+.xhyiwpw{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:13px;letter-spacing:0;line-height:1.3em;color:var(--ink-800);text-align:left;white-space:pre}
+.xbtqyf0{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:30px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:24px 0px 24px 0px}
+.xyfvjmk{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.03em;line-height:1.1em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xrbkrpz{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:1.5em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x0zcnya{display:grid;grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:18px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content}
+.xe5ljvn{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:12px;position:relative;flex:none;width:100%;height:100%;align-self:start;padding:20px;border-radius:22px;background:var(--brand-pink-50);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.12)}
+.xittsga{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:48px;height:48px;border-radius:12px;background:#FFF0F6;overflow:clip}
+.xsfirzq{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:14px;letter-spacing:0;line-height:1.4em;color:var(--brand-crimson);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xxhhggf{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:14px;letter-spacing:0;line-height:1.45em;color:var(--ink-800);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xtxikjs{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;gap:16px;position:relative;flex:none;width:100%;height:min-content}
+.xvuptk1{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:15px;letter-spacing:0;line-height:1.4em;color:var(--ink-600);text-align:left;white-space:pre}
+.xr2ljj3{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:9px;position:relative;flex:none;width:min-content;height:min-content;padding:12px 20px 12px 20px;border-radius:999px;background:var(--brand-gradient);cursor:pointer}
+.xx8ete8{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:14px;letter-spacing:0;line-height:1em;color:var(--white);text-align:left;white-space:pre}
+.xphg3xo{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:20px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:0px 0px 24px 0px}
+.xo2uzpf{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;position:relative;flex:none;width:640px;height:360px;max-width:100%;border-radius:20px;--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14);overflow:clip}
+.xbrpt6a{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:24px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:24px 0px 24px 0px}
+.xvtkojt{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:min-content;border-radius:20px;--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14);overflow:hidden}
+.x4tkegk{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;position:relative;flex:none;width:100%;height:min-content;background:var(--color-vocom-cta-1)}
+.xpx3c8u{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:1 0 0px;width:1px;height:min-content;padding:18px 20px 18px 20px}
+.xehzbkn{position:relative;flex:1 0 0px;width:1px;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:16px;letter-spacing:0;line-height:1.2em;color:var(--white);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xw5wegs{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;position:relative;flex:none;width:100%;height:min-content;background:var(--white)}
+.xdbhhf9{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:1 0 0px;width:1px;height:min-content;padding:16px 20px 16px 20px}
+.xeuva4f{position:relative;flex:1 0 0px;width:1px;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:14px;letter-spacing:0;line-height:1.2em;color:var(--color-vocom-cta-1);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x95npfr{position:relative;flex:1 0 0px;width:1px;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:14px;letter-spacing:0;line-height:1.4em;color:rgb(60, 50, 60);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x3lh22k{display:none}
+.xmo3sy2{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;position:relative;flex:none;width:100%;height:min-content;background:var(--brand-pink-50)}
+.xco9t8h{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:14px;letter-spacing:0;line-height:1.5em;color:rgb(102, 102, 102);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xsevupm{display:grid;grid-template-columns:repeat(4, minmax(1px, 1fr));grid-auto-rows:minmax(0, 1fr);grid-template-rows:repeat(1, minmax(0, 1fr));gap:16px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content}
+.xhzxyxw{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:8px;position:relative;flex:none;width:100%;height:100%;align-self:start;padding:18px;border-radius:18px;background:var(--brand-pink-50);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.12)}
+.xeb4wi7{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:14px;letter-spacing:0;line-height:1.3em;color:var(--brand-crimson);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xurex9d{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:14px;letter-spacing:0;line-height:1.4em;color:var(--ink-600);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xysyof5{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:14px;letter-spacing:0;line-height:1.4em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xckvkrd{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:24px;position:relative;flex:none;width:820px;height:min-content;max-width:100%;padding:24px 0px 24px 0px}
+.xtv2frl{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:1.4em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xousmhh{display:block;position:relative;flex:none;width:100%;height:min-content}
+.xewiu4z{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:12px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:34px;border-radius:30px;background:linear-gradient(135deg, #FFF4F9 0%, var(--white) 100%);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14)}
+.x07kli4{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:28px;letter-spacing:-0.02em;line-height:1.15em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xjvjuiw{position:relative;flex:none;width:100%;height:auto;max-width:600px;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:1.5em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xrathlz{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:30px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:78px 0px 78px 0px;overflow:clip}
+.x2b1t0h{display:grid;grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:14px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content}
+.xbxtb0n{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:14px;position:relative;flex:none;width:100%;height:100%;align-self:start;padding:20px;border-radius:22px;background:var(--brand-pink-50);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.12)}
+.xioc0ho{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:15px;letter-spacing:0;line-height:1.45em;color:var(--ink-800);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xlkfxwk{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:18px;position:relative;flex:none;width:100%;height:min-content;max-width:1160px;padding:34px;border-radius:30px;background:linear-gradient(135deg, #FFF4F9 0%, var(--white) 100%);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14)}
+.x9txrrw{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:42px;letter-spacing:-0.02em;line-height:1.1em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xsv21hd{display:block;position:relative;flex:none;width:100%;height:min-content}
+.xj1qa6p:hover{transform:scale(1.04)}
+@media (min-width: 1439px){
+.xnhnwib{min-height:0}
+.xopns2k{width:100%}
+}
+@media (min-width: 810px) and (max-width: 1199.98px){
+.xnhnwib{gap:16px;overflow:visible;min-height:0}
+.xopns2k{width:100%}
+.xs9zhz3{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;grid-template-columns:initial;grid-auto-rows:auto;justify-items:initial}
+.xetno7s{grid-template-columns:repeat(2, minmax(1px, 1fr))}
+.x28gvtd{flex-direction:column;justify-content:flex-start;align-items:flex-start;align-content:flex-start;gap:4px}
+.xsevupm{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:flex-start;align-content:flex-start;grid-template-columns:initial;grid-auto-rows:auto;grid-template-rows:none;justify-items:initial}
+.xhzxyxw{width:360px;height:min-content;align-self:auto}
+}
+@media (max-width: 809.98px){
+.xnhnwib{gap:16px;overflow:visible;min-height:0}
+.xopns2k{width:100%}
+.xs9zhz3{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;grid-template-columns:initial;grid-auto-rows:auto;justify-items:initial}
+.xgitgkv{font-size:38px}
+.xpyvxfj{font-size:16px}
+.xetno7s{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:8px;grid-template-columns:initial;grid-auto-rows:auto;grid-template-rows:none;justify-items:initial}
+.xl6zyf8{height:min-content;align-self:auto}
+.x28gvtd{flex-direction:column;justify-content:flex-start;align-items:flex-start;align-content:flex-start;gap:4px}
+.xlgauc8{width:100%;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xprqz8q{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;grid-template-columns:initial;grid-auto-rows:auto;grid-template-rows:none;justify-items:initial}
+.xlzrmeu{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:center;align-content:center;grid-template-columns:initial;grid-auto-rows:auto;justify-items:initial}
+.xxuq6ko{width:min-content}
+.xvuptk1{width:100%;text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x4tkegk{display:none}
+.xw5wegs{flex-direction:column;align-items:flex-start;gap:4px;padding:16px 20px 16px 20px}
+.xdbhhf9{flex:none;width:100%}
+.xeuva4f{text-align:left}
+.x95npfr{text-align:left}
+.xog3e4r{display:none}
+.x3lh22k{display:block}
+.xmo3sy2{flex-direction:column;align-items:flex-start;gap:4px;padding:16px 20px 16px 20px}
+.xsevupm{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;grid-template-columns:initial;grid-auto-rows:auto;grid-template-rows:none;justify-items:initial}
+.xhzxyxw{height:min-content;align-self:auto}
+}

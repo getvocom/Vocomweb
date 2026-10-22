@@ -1,0 +1,195 @@
+/* Converted from Framer. Breakpoints: desktop >=1200, tablet 810-1199, phone <810. */
+.x18jjgv{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;background:var(--white);overflow:clip;min-height:100vh}
+.xxhaate{display:block;position:sticky;top:10px;flex:none;width:1000px;height:min-content;z-index:10}
+.xkmmtoj{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:40px;position:relative;flex:none;width:100%;height:min-content;padding:48px 24px 32px 24px;background:var(--white)}
+.xiiwd3n{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:10px;position:relative;flex:none;width:auto;height:720px;max-width:100%;padding:0px 45px 80px 45px;border-radius:20px;aspect-ratio:1366 / 768}
+.xxtutsl{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:30px;position:relative;flex:none;width:min-content;height:min-content;overflow:clip}
+.x3p3zd7{position:relative;flex:none;width:613px;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:700;font-size:64px;letter-spacing:-0.02em;line-height:1.05em;text-align:left;font-feature-settings:"cv01" 1, "cv09" 1, "cv11" 1, "cv05" 1, "ss03" 1;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x7ocnby{color:var(--color-vocom-dark)}
+.xlwr2vq{color:var(--color-vocom-cta-1)}
+.xvfnrda{position:relative;flex:none;width:auto;height:auto;max-width:600px;z-index:1;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:20px;letter-spacing:0;line-height:170%;color:var(--color-vocom-dark);text-align:left;text-wrap:balance;white-space:pre}
+.xytgghw{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:min-content;height:min-content;padding:12px 24px 12px 24px;border-radius:26px;background:var(--color-vocom-cta-1);z-index:1;cursor:pointer;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xl4u3rf{position:relative;flex:none;width:auto;height:auto;user-select:none;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:16px;letter-spacing:0;line-height:170%;color:var(--white);text-align:left;white-space:pre}
+.x1vqqt3{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:min-content;height:min-content;padding:10px 16px 10px 16px;border-radius:26px;background:var(--white);--bw:1px;--bs:solid;--bc:rgb(207, 209, 213);cursor:pointer;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xaewjja{position:relative;flex:none;width:auto;height:auto;user-select:none;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:16px;letter-spacing:0;line-height:170%;color:rgb(24, 28, 35);text-align:left;white-space:pre}
+.xr0jxaf{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:24px;position:relative;flex:none;width:100%;height:min-content;padding:48px 24px 48px 24px;background:var(--white);overflow:hidden}
+.xmrk5jj{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:none;width:100%;height:min-content;padding:0px 0px 24px 0px;background:var(--white);overflow:hidden}
+.xxcptog{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:16px;position:relative;flex:none;width:100%;height:min-content;background:var(--white);z-index:1}
+.x78w5gt{display:block;position:relative;flex:1 0 0px;width:1px;height:2px;border-radius:8px;background:var(--color-shadow);--bw:3px;--bs:dotted;--bc:var(--color-shadow);overflow:hidden;opacity:0.5}
+.xklf1rv{position:relative;flex:1.5 0 0px;width:1px;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:150%;color:var(--black);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xxnobcr{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;gap:30px;position:relative;flex:none;width:100%;height:min-content;background:var(--white);z-index:1}
+.xeqs1tm{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;gap:30px;position:relative;flex:none;width:100%;height:min-content;background:var(--white);overflow:hidden;opacity:0.9}
+.x1zycko{display:block;position:relative;flex:none;width:60px;height:auto;aspect-ratio:1;overflow:hidden;opacity:0.7;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xk5l9or{display:block;position:relative;flex:none;width:118px;height:auto;aspect-ratio:1.97;overflow:hidden;opacity:0.7}
+.x0ca6w1{display:block;position:relative;flex:none;width:101.25px;height:auto;aspect-ratio:1.69;overflow:hidden;opacity:0.7}
+.xljmqbv{display:block;position:relative;flex:none;width:150px;height:33px;overflow:hidden;opacity:0.7}
+.xm0p1kr{display:block;position:relative;flex:none;width:200px;height:30px;overflow:hidden;opacity:0.7}
+.xvfe9n3{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:66px;height:42px}
+.xe52lyi{display:block;position:relative;flex:none;width:876px;height:472px}
+.xbstc8l{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:100%;height:min-content;max-width:1180px;padding:48px 32px 48px 32px}
+.x2h0iev{display:block;position:relative;flex:1 0 0px;width:1px;height:1px;background:var(--brand-pink-border)}
+.xqo6eaw{display:block;position:relative;flex:none;width:7px;height:7px;border-radius:999px;background:var(--brand-red-alt)}
+.xdmhrml{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:none;width:100%;height:min-content;padding:80px 24px 80px 24px;background:var(--white);overflow:hidden}
+.xjvpl7t{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;gap:20px;position:relative;flex:none;width:100%;height:min-content;padding:0px 20px 0px 20px;background:var(--white);overflow:hidden}
+.xkdwttw{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;gap:20px;position:relative;flex:1 0 0px;width:1px;height:min-content;max-width:1200px}
+.xnlanpx{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px;position:relative;flex:1 0 0px;width:1px;height:min-content;background:var(--white);overflow:hidden}
+.xzuolzo{display:block;position:relative;flex:none;width:307px;height:307px;overflow:clip;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.x0unlkv{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;position:relative;flex:none;width:100%;height:min-content}
+.xicdpc9{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:26px;height:26px;border-radius:999px;background:var(--brand-red)}
+.xqaig03{display:block;position:relative;flex:none;width:14px;height:14px}
+.xv3na1r{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:650;font-variation-settings:"opsz" 32, "wght" 650;font-size:24px;letter-spacing:-0.02em;line-height:1em;color:var(--black);text-align:center;font-feature-settings:"cv01" 1, "cv09" 1, "cv11" 1, "cv05" 1, "ss03" 1;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xxl60t5{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:500;font-variation-settings:"opsz" 32, "wght" 500;font-size:20px;letter-spacing:-0.01em;line-height:1.2em;color:rgb(153, 153, 153);text-align:center;text-wrap:balance;font-feature-settings:"cv09" 1, "cv01" 1, "cv05" 1, "ss03" 1;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xzgyarx{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px;position:relative;flex:1 0 0px;width:1px;height:min-content;overflow:hidden}
+.xt7zt6x{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:307px;height:auto;border-radius:20px;aspect-ratio:1080 / 1080;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xdnjpgm{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;position:relative;flex:none;width:100%;height:min-content}
+.xkzccca{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:none;width:100%;height:min-content;padding:80px 20px 80px 20px;background:var(--white);overflow:hidden}
+.xlumqmq{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:960px;height:min-content;max-width:100%;overflow:hidden}
+.xxeo6fz{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:22px;position:relative;flex:1 0 0px;width:1px;height:min-content;order:0}
+.xxodgcs{position:relative;flex:none;width:auto;height:auto;max-width:100%;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:700;font-variation-settings:"opsz" 32, "wght" 700;font-size:32px;letter-spacing:-0.03em;line-height:1em;color:var(--black);text-align:left;font-feature-settings:"cv01" 1, "cv09" 1, "cv05" 1, "ss03" 1;white-space:pre}
+.xjqvhuw{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:16px;letter-spacing:0;line-height:1.4em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xpfskxn{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:14px;position:relative;flex:none;width:100%;height:min-content}
+.x6xv7tr{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;gap:12px;position:relative;flex:none;width:100%;height:min-content}
+.x2g1nd3{display:block;position:relative;flex:none;width:3px;height:36px;border-radius:2px;background:var(--brand-red)}
+.xm3o5fp{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:2px;position:relative;flex:1 0 0px;width:1px;height:min-content}
+.xuwatzm{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:15px;letter-spacing:0;line-height:1.3em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xweekzq{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:14px;letter-spacing:0;line-height:1.4em;color:rgb(102, 102, 102);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xxo7dyk{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:1 0 0px;width:1px;height:auto;aspect-ratio:1;border-radius:20px;order:1;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xovb7fr{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:960px;height:min-content;max-width:100%;overflow:hidden}
+.xpew4sh{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:1 0 0px;width:1px;height:auto;aspect-ratio:1;border-radius:20px;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xolmadm{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:22px;position:relative;flex:1 0 0px;width:1px;height:min-content}
+.xkl1vs3{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:80px;position:relative;flex:none;width:100%;height:min-content;padding:40px 20px 80px 20px;background:var(--color-vocom-white);overflow:clip}
+.x7pknfx{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:100%;height:min-content}
+.xrgbzsq{position:relative;flex:none;width:auto;height:auto;max-width:100%;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:800;font-variation-settings:"opsz" 32, "wght" 800;font-size:48px;letter-spacing:-0.03em;line-height:1em;color:var(--black);text-align:left;font-feature-settings:"cv01" 1, "cv09" 1, "cv05" 1, "ss03" 1;white-space:pre}
+.x2jrgmy{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:48px;position:relative;flex:none;width:960px;height:295px;max-width:100%;overflow:hidden}
+.xnulbaw{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:1 0 0px;width:1px;height:min-content;order:0}
+.xjrpyxc{position:relative;flex:none;width:100%;height:auto;max-width:100%;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:700;font-variation-settings:"opsz" 32, "wght" 700;font-size:32px;letter-spacing:-0.03em;line-height:1em;color:var(--black);text-align:left;font-feature-settings:"cv01" 1, "cv09" 1, "cv05" 1, "ss03" 1;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xi6mfab{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:392px;height:auto;border-radius:20px;aspect-ratio:934 / 702;order:1;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xus7oap{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:48px;position:relative;flex:none;width:960px;height:min-content;max-width:100%;overflow:clip}
+.xlygjjb{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;flex:none;width:376px;height:auto;border-radius:20px;z-index:1;aspect-ratio:1024 / 797;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xtnrxtf{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:1 0 0px;width:1px;height:min-content}
+.xvfvjtd{position:relative;flex:none;width:auto;height:auto;max-width:100%;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:700;font-variation-settings:"opsz" 32, "wght" 700;font-size:32px;letter-spacing:-0.03em;line-height:1em;color:var(--black);text-align:left;font-feature-settings:"cv01" 1, "cv09" 1, "cv05" 1, "ss03" 1;white-space:pre}
+.xxtx3ak{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:48px;position:relative;flex:none;width:960px;height:min-content;max-width:100%;overflow:hidden}
+.xa6na0w{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:1 0 0px;width:1px;height:min-content;order:0}
+.x1qvffd{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:477px;height:auto;border-radius:20px;aspect-ratio:1024 / 422;order:1;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xmkejxq{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:328px;height:auto;border-radius:20px;aspect-ratio:1024 / 613;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.x1e4u6b{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:32px;position:relative;flex:1 0 0px;width:1px;height:min-content}
+.xtn4nog{position:relative;flex:none;width:auto;height:auto;max-width:100%;display:block;font-family:"Inter Variable", "Inter", sans-serif;font-weight:700;font-variation-settings:"opsz" 32, "wght" 700;font-size:32px;letter-spacing:-0.03em;line-height:1em;color:var(--black);text-align:left;font-feature-settings:"cv01" 1, "cv09" 1, "cv05" 1, "ss03" 1;white-space:pre}
+.xcobq8p{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:378px;height:auto;border-radius:20px;aspect-ratio:1024 / 532;order:1;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xh2uytg{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:40px;position:relative;flex:none;width:100%;height:min-content;padding:80px 24px 80px 24px;background:var(--white)}
+.xlsdbpm{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:100%;height:min-content;max-width:1200px;overflow:hidden}
+.xrebnwx{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;position:relative;flex:1 0 0px;width:1px;height:min-content;max-width:620px;overflow:hidden}
+.xjhvv17{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:48px;letter-spacing:-0.04em;line-height:120%;color:var(--black);text-align:center;text-wrap:balance;font-feature-settings:"blwf" 1, "cv09" 1, "cv03" 1, "cv04" 1, "cv11" 1;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xq9pbwc{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:18px;letter-spacing:0;line-height:170%;color:rgb(64, 66, 69);text-align:center;text-wrap:balance;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xhlnyqu{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;gap:24px;position:relative;flex:none;width:100%;height:min-content;max-width:1200px}
+.xbagphu{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;align-items:center;align-content:center;gap:32px;position:relative;flex:none;width:100%;height:min-content;min-width:300px;overflow:hidden}
+.x8acsca{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;position:relative;flex:1 0 0px;width:1px;height:200px;min-width:200px;padding:24px;border-radius:16px;overflow:hidden;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xjowjde{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px;position:relative;flex:1 0 0px;width:1px;height:min-content;min-width:200px;overflow:hidden}
+.xzzn7mt{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;position:relative;flex:none;width:100%;height:min-content}
+.xt5x8uo{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:18px;letter-spacing:0;line-height:170%;color:rgb(38, 44, 55);text-align:left;text-wrap:balance;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xomojjw{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:170%;color:rgb(64, 66, 69);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xctiiw2{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:56px;position:relative;flex:none;width:100%;height:min-content;padding:80px 24px 80px 24px;background:var(--white)}
+.xirfgyp{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:100%;height:min-content;max-width:600px}
+.xzkh4c6{display:block;position:relative;flex:none;width:100%;height:min-content}
+.xcezkca{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:40px;position:relative;flex:none;width:100%;height:min-content;padding:24px;background:var(--white)}
+.xighwjk{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:40px;position:relative;flex:none;width:100%;height:min-content;max-width:1200px;padding:80px 24px 80px 24px;border-radius:24px;background:var(--color-vocom-light);overflow:hidden}
+.x6idugm{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:100%;height:min-content;overflow:hidden}
+.xptnlxu{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;position:relative;flex:1 0 0px;width:1px;height:min-content;max-width:620px;overflow:hidden}
+.xzqzhdy{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:800;font-size:48px;letter-spacing:-0.04em;line-height:120%;color:var(--color-white);text-align:center;text-wrap:balance;font-feature-settings:"blwf" 1, "cv09" 1, "cv03" 1, "cv04" 1, "cv11" 1;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xhh80e0{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:18px;letter-spacing:0;line-height:170%;color:var(--color-gray-4);text-align:center;text-wrap:balance;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xhzxqa8{display:none}
+.xldmwog{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:12px;position:relative;flex:none;width:min-content;height:min-content}
+.x1ae8fl{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:10px;position:relative;flex:none;width:min-content;height:min-content;padding:12px 24px 12px 24px;border-radius:26px;background:rgb(15, 15, 15);cursor:pointer;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xzxrxrs{display:block;position:relative;flex:none;width:100%;height:min-content}
+.xytgghw:hover{background:rgb(28, 28, 28);box-shadow:0px 6px 16px 0px rgba(20, 10, 15, 0.18)}
+.x1vqqt3:hover{background:rgb(247, 247, 248);box-shadow:0px 6px 16px 0px rgba(20, 10, 15, 0.18)}
+.x1zycko:hover{transform:scale(1.1)}
+.xzuolzo:hover{transform:scale(1.1)}
+.xt7zt6x:hover{transform:scale(1.04)}
+.xxo7dyk:hover{transform:scale(1.04)}
+.xpew4sh:hover{transform:scale(1.04)}
+.xi6mfab:hover{transform:scale(1.04)}
+.xlygjjb:hover{transform:scale(1.04)}
+.x1qvffd:hover{transform:scale(1.04)}
+.xmkejxq:hover{transform:scale(1.04)}
+.xcobq8p:hover{transform:scale(1.04)}
+.x8acsca:hover{transform:scale(1.04)}
+.x1ae8fl:hover{background:rgb(28, 28, 28);box-shadow:0px 6px 16px 0px rgba(20, 10, 15, 0.18)}
+@media (min-width: 810px) and (max-width: 1199.98px){
+.x18jjgv{min-height:0}
+.xxhaate{width:767px}
+.xiiwd3n{padding:0px 32px 80px 32px}
+.xxtutsl{gap:24px}
+.x3p3zd7{width:400px;font-size:38px}
+.xvfnrda{font-size:16px}
+.xe52lyi{width:696px;height:min-content}
+.xnlanpx{flex:none;width:min-content}
+.xzuolzo{width:200px;height:auto;aspect-ratio:1}
+.x0unlkv{gap:8px;width:227px}
+.xv3na1r{font-size:18px}
+.xxl60t5{font-size:14px}
+.xt7zt6x{width:200px;aspect-ratio:1}
+.xdnjpgm{gap:8px}
+.xlumqmq{gap:10px}
+.xxodgcs{font-size:24px}
+.xrgbzsq{font-size:38px}
+.xjrpyxc{font-size:28px}
+.xvfvjtd{font-size:28px}
+.xtn4nog{font-size:28px}
+.xjhvv17{font-size:38px}
+.xq9pbwc{font-size:16px}
+.xzqzhdy{font-size:45px}
+.xhh80e0{font-size:16px;line-height:1.2em;color:var(--black);text-align:left}
+.xniwfyb{display:none}
+.xhzxqa8{display:block}
+}
+@media (max-width: 809.98px){
+.x18jjgv{min-height:0}
+.xxhaate{width:360px}
+.xiiwd3n{padding:0px 45px 120px 14px}
+.xxtutsl{gap:22px}
+.x3p3zd7{width:211px;font-size:32px}
+.xvfnrda{font-size:14px}
+.xklf1rv{flex:5 0 0px;font-size:14px}
+.xe52lyi{width:330px;height:min-content}
+.xdmhrml{padding:30px 24px 30px 24px}
+.xkdwttw{flex-direction:column}
+.xnlanpx{flex:none;width:100%}
+.xzuolzo{width:289px;height:auto;aspect-ratio:1080 / 1080}
+.xxl60t5{font-size:16px}
+.xzgyarx{flex:none;width:100%}
+.xt7zt6x{width:289px}
+.xlumqmq{flex-direction:column;gap:30px}
+.xxeo6fz{flex:none;width:100%;order:1}
+.xxodgcs{font-size:22px}
+.xxo7dyk{flex:none;width:100%;order:0}
+.xovb7fr{flex-direction:column;gap:30px}
+.xpew4sh{flex:none;width:100%}
+.xolmadm{flex:none;width:100%}
+.xkl1vs3{gap:50px}
+.xrgbzsq{font-size:36px;text-align:center}
+.x2jrgmy{flex-direction:column;width:min-content;height:min-content}
+.xnulbaw{flex:none;width:350px;order:1}
+.xjrpyxc{font-size:26px;text-align:center}
+.xi6mfab{width:346px;order:0}
+.xus7oap{flex-direction:column}
+.xlygjjb{width:346px}
+.xtnrxtf{flex:none;width:100%}
+.xvfvjtd{font-size:26px;text-align:center}
+.xxtx3ak{flex-direction:column}
+.xa6na0w{flex:none;width:100%;order:1}
+.x1qvffd{width:350px;order:0}
+.xmkejxq{width:346px}
+.x1e4u6b{flex:none;width:100%}
+.xtn4nog{width:100%;font-size:26px;text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xcobq8p{width:346px;order:0}
+.xjhvv17{font-size:36px}
+.xq9pbwc{font-size:14px}
+.xhlnyqu{gap:38px 24px}
+.xbagphu{gap:16px 32px}
+.xt5x8uo{font-size:16px}
+.xomojjw{font-size:14px}
+.xzqzhdy{font-size:32px}
+.xhh80e0{font-size:16px;line-height:1.2em;color:var(--black);text-align:left}
+.xniwfyb{display:none}
+.xhzxqa8{display:block}
+}

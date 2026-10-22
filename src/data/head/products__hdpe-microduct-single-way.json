@@ -1,0 +1,69 @@
+{
+ "title": "HDPE microduct, single way | Fiber Optic Cable | Vocom",
+ "lang": "en",
+ "meta": [
+  {
+   "property": "og:url",
+   "content": "https://www.vocom.ai/products/hdpe-microduct-single-way"
+  },
+  {
+   "name": "description",
+   "content": "HDPE microduct, single way. Supplied under codes Microduct. Construction: 5mm to 27mm OD. Typical use: Single route placement."
+  },
+  {
+   "property": "og:type",
+   "content": "website"
+  },
+  {
+   "property": "og:title",
+   "content": "HDPE microduct, single way | Fiber Optic Cable | Vocom"
+  },
+  {
+   "property": "og:description",
+   "content": "HDPE microduct, single way. Supplied under codes Microduct. Construction: 5mm to 27mm OD. Typical use: Single route placement."
+  },
+  {
+   "property": "og:image",
+   "content": "https://www.vocom.ai/assets/img/fiber-optic-cable-reel-9731cb.png"
+  },
+  {
+   "name": "twitter:card",
+   "content": "summary_large_image"
+  },
+  {
+   "name": "twitter:title",
+   "content": "HDPE microduct, single way | Fiber Optic Cable | Vocom"
+  },
+  {
+   "name": "twitter:description",
+   "content": "HDPE microduct, single way. Supplied under codes Microduct. Construction: 5mm to 27mm OD. Typical use: Single route placement."
+  },
+  {
+   "name": "twitter:image",
+   "content": "https://www.vocom.ai/assets/img/fiber-optic-cable-reel-9731cb.png"
+  },
+  {
+   "name": "robots",
+   "content": "max-image-preview:large"
+  }
+ ],
+ "links": [
+  {
+   "rel": "canonical",
+   "href": "https://www.vocom.ai/products/hdpe-microduct-single-way"
+  },
+  {
+   "href": "https://www.vocom.ai/assets/img/og-about-6ca24b.png",
+   "rel": "icon",
+   "media": "(prefers-color-scheme: light)"
+  },
+  {
+   "href": "https://www.vocom.ai/assets/img/og-about-96f99e.png",
+   "rel": "icon",
+   "media": "(prefers-color-scheme: dark)"
+  }
+ ],
+ "jsonld": [
+  "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Organization\",\n      \"@id\": \"https://www.vocom.ai/#organization\",\n      \"name\": \"Vocom\",\n      \"legalName\": \"Vocom International\",\n      \"url\": \"https://www.vocom.ai\",\n      \"logo\": \"https://www.vocom.ai/assets/img/og-about-7b6127.png\",\n      \"foundingDate\": \"1998\",\n      \"description\": \"Vocom supplies bulk outdoor, ADSS and FTTH drop fiber optic cable to network builders across the US and California, plus cross-Pacific connectivity for carriers and enterprises, backed by 27 years in telecommunications.\",\n      \"department\": [\n        { \"@id\": \"https://www.vocom.ai/#vocom-fiber\" },\n        { \"@id\": \"https://www.vocom.ai/#vocom-connectivity\" },\n        { \"@id\": \"https://www.vocom.ai/#vocom-ai\" }\n      ]\n    },\n    {\n      \"@type\": \"Organization\",\n      \"@id\": \"https://www.vocom.ai/#vocom-fiber\",\n      \"name\": \"Vocom Fiber\",\n      \"url\": \"https://www.vocom.ai/fiber-optic-cables\",\n      \"parentOrganization\": { \"@id\": \"https://www.vocom.ai/#organization\" },\n      \"description\": \"Vocom's fiber optic cable supply division: build-to-order loose-tube, ADSS, ribbon and high-count fiber optic cable sourced from tier 1 manufacturers, 6 to 8 weeks standard lead time.\"\n    },\n    {\n      \"@type\": \"Organization\",\n      \"@id\": \"https://www.vocom.ai/#vocom-connectivity\",\n      \"name\": \"Vocom Connectivity\",\n      \"url\": \"https://www.vocom.ai/vocom-services\",\n      \"parentOrganization\": { \"@id\": \"https://www.vocom.ai/#organization\" },\n      \"description\": \"Vocom's telecom services division: wholesale voice termination, IP transit, IEPL/IPLC private circuits and data center connectivity across the Asia-Pacific and cross-Pacific corridors.\"\n    },\n    {\n      \"@type\": \"Organization\",\n      \"@id\": \"https://www.vocom.ai/#vocom-ai\",\n      \"name\": \"Vocom AI\",\n      \"url\": \"https://www.vocom.ai/vocom-ai\",\n      \"parentOrganization\": { \"@id\": \"https://www.vocom.ai/#organization\" },\n      \"description\": \"Vocom's AI division, matching a range of proven enterprise AI tools to telecom and operations use cases, including agents, real-time analytics, predictive maintenance and supply chain intelligence, added through partnerships.\"\n    },\n    {\n      \"@type\": \"WebSite\",\n      \"@id\": \"https://www.vocom.ai/#website\",\n      \"url\": \"https://www.vocom.ai\",\n      \"name\": \"Vocom\",\n      \"publisher\": { \"@id\": \"https://www.vocom.ai/#organization\" },\n      \"potentialAction\": {\n        \"@type\": \"SearchAction\",\n        \"target\": \"https://www.vocom.ai/search?q={search_term_string}\",\n        \"query-input\": \"required name=search_term_string\"\n      }\n    },\n    {\n      \"@type\": \"LocalBusiness\",\n      \"@id\": \"https://www.vocom.ai/#location-us\",\n      \"name\": \"Vocom International Telecommunication, Inc.\",\n      \"url\": \"https://www.vocom.ai\",\n      \"parentOrganization\": { \"@id\": \"https://www.vocom.ai/#organization\" },\n      \"telephone\": \"+1-213-627-8999\",\n      \"faxNumber\": \"+1-213-627-9919\",\n      \"email\": [\"sales@vocom.com\", \"kevin@vocom.com\"],\n      \"address\": {\n        \"@type\": \"PostalAddress\",\n        \"streetAddress\": \"9550 Flair Dr. #512\",\n        \"addressLocality\": \"El Monte\",\n        \"addressRegion\": \"CA\",\n        \"postalCode\": \"91731\",\n        \"addressCountry\": \"US\"\n      }\n    },\n    {\n      \"@type\": \"LocalBusiness\",\n      \"@id\": \"https://www.vocom.ai/#location-tw\",\n      \"name\": \"Vocom Taiwan\",\n      \"url\": \"https://www.vocom.ai\",\n      \"parentOrganization\": { \"@id\": \"https://www.vocom.ai/#location-us\" },\n      \"telephone\": \"+886-2-2709-5559\",\n      \"faxNumber\": \"+886-2-2709-9923\",\n      \"address\": {\n        \"@type\": \"PostalAddress\",\n        \"streetAddress\": \"11F-2 No.245, Sec.1, Fuxing S. Rd.\",\n        \"addressLocality\": \"Taipei City\",\n        \"postalCode\": \"106\",\n        \"addressCountry\": \"TW\"\n      }\n    }\n  ]\n}"
+ ]
+}

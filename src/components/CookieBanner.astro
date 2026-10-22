@@ -1,0 +1,77 @@
+---
+// Cookie banner, rebuilt from the Framer "Cookie Banner" component settings.
+// Framer showed it only to EU visitors (IP based). On Cloudflare we read the visitor's
+// country from /cdn-cgi/trace. Copy, colours and layout match the Framer settings.
+// NOTE (see notes/flags.md): as on the live site, the choice is stored but does not
+// block GA4/GTM/LinkedIn, and the policy link points to framer.com.
+---
+<div class="cookie-banner" role="dialog" aria-label="Cookie Settings" hidden>
+  <div class="cb-main">
+    <p class="cb-title">Cookie Settings</p>
+    <p class="cb-body">We use cookies to enhance your experience, analyze site traffic and deliver personalized content. Read our <a href="https://www.framer.com/legal/policy/" target="_blank" rel="noopener">Cookie Policy</a></p>
+  </div>
+  <div class="cb-options" hidden>
+    <label><span><strong>Necessary</strong><small>Enables security and basic functionality.</small></span><input type="checkbox" name="necessary" checked /></label>
+    <label><span><strong>Preferences</strong><small>Enables personalized content and settings.</small></span><input type="checkbox" name="preferences" /></label>
+    <label><span><strong>Analytics</strong><small>Enables tracking of performance.</small></span><input type="checkbox" name="analytics" /></label>
+    <label><span><strong>Marketing</strong><small>Enables ads personalization and tracking.</small></span><input type="checkbox" name="marketing" /></label>
+  </div>
+  <div class="cb-buttons">
+    <button type="button" class="cb-btn secondary" data-cb="customize">Customize</button>
+    <button type="button" class="cb-btn secondary" data-cb="reject">Reject all</button>
+    <button type="button" class="cb-btn primary" data-cb="accept">Accept all</button>
+    <button type="button" class="cb-btn primary" data-cb="save" hidden>Save Preferences</button>
+  </div>
+</div>
+
+<style>
+  .cookie-banner {
+    position: fixed; right: 20px; bottom: 20px; z-index: 10; width: 360px; max-width: calc(100vw - 40px);
+    display: flex; flex-direction: column; gap: 16px; padding: 20px;
+    background: #fff; border: 1px solid rgba(0, 0, 0, 0.05); border-radius: 14px;
+    font-family: var(--font-sans); font-size: 14px; line-height: 1.5;
+  }
+  .cookie-banner[hidden], .cb-options[hidden], .cb-btn[hidden] { display: none; }
+  .cb-title { font-weight: 600; font-size: 15px; color: #000; }
+  .cb-body { color: #444; margin-top: 4px; }
+  .cb-body a { color: #999; text-decoration: underline; }
+  .cb-options { display: flex; flex-direction: column; gap: 8px; }
+  .cb-options label { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px; border-radius: 8px; background: rgba(0, 0, 0, 0.02); }
+  .cb-options small { display: block; color: #444; font-size: 12px; }
+  .cb-options input { accent-color: #000; }
+  .cb-buttons { display: flex; flex-direction: row; gap: 8px; }
+  .cb-btn { flex: 1; padding: 10px; border: 0; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px; }
+  .cb-btn:hover { opacity: 0.6; }
+  .cb-btn:active { opacity: 0.4; }
+  .cb-btn.primary { background: #000; color: #fff; }
+  .cb-btn.secondary { background: #eee; color: #444; }
+</style>
+
+<script>
+  const EU = "AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB CH".split(" ");
+  const KEY = "vocom-cookie-consent";
+  const banner = document.querySelector<HTMLElement>(".cookie-banner");
+  const stored = (() => { try { return localStorage.getItem(KEY); } catch { return "x"; } })();
+  if (banner && !stored) {
+    fetch("/cdn-cgi/trace").then((r) => (r.ok ? r.text() : "")).then((t) => {
+      const loc = (t.match(/^loc=(\w+)$/m) || [])[1];
+      if (loc && EU.includes(loc)) banner.hidden = false;
+    }).catch(() => {});
+    const save = (v: Record<string, boolean>) => {
+      try { localStorage.setItem(KEY, JSON.stringify(v)); } catch {}
+      (window as any).dataLayer?.push({ event: "cookie_consent", ...v });
+      banner.hidden = true;
+    };
+    const boxes = () => Object.fromEntries([...banner.querySelectorAll<HTMLInputElement>(".cb-options input")].map((i) => [i.name, i.checked]));
+    banner.addEventListener("click", (e) => {
+      const a = (e.target as HTMLElement).closest<HTMLElement>("[data-cb]")?.dataset.cb;
+      if (a === "accept") save({ necessary: true, preferences: true, analytics: true, marketing: true });
+      if (a === "reject") save({ necessary: true, preferences: false, analytics: false, marketing: false });
+      if (a === "save") save(boxes());
+      if (a === "customize") {
+        banner.querySelector<HTMLElement>(".cb-options")!.hidden = false;
+        banner.querySelectorAll<HTMLElement>("[data-cb]").forEach((b) => (b.hidden = b.dataset.cb !== "save"));
+      }
+    });
+  }
+</script>

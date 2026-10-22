@@ -1,0 +1,725 @@
+{
+ "type": "ComponentNode",
+ "id": "XpE2qho__",
+ "name": "Dropdown",
+ "variables": [
+  {
+   "key": "$control__mainLabel",
+   "id": "La1dt087j",
+   "name": "Main Label",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Resources"
+  },
+  {
+   "key": "$control__mainLabelLink",
+   "id": "IhbmURRdj",
+   "name": "Main Label Link",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__label",
+   "id": "ZEZ2AJJTT",
+   "name": "Label",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Item 1"
+  },
+  {
+   "key": "$control__label2",
+   "id": "d5weAwFFH",
+   "name": "Label 2",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Item 2"
+  },
+  {
+   "key": "$control__label3",
+   "id": "HR9_y30ZP",
+   "name": "Label 3",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Item 3"
+  },
+  {
+   "key": "$control__label4",
+   "id": "van38KTXX",
+   "name": "Label 4",
+   "node": "Variable",
+   "type": "string"
+  },
+  {
+   "key": "$control__label5",
+   "id": "UPD7LB2gL",
+   "name": "Label 5",
+   "node": "Variable",
+   "type": "string"
+  },
+  {
+   "key": "$control__label6",
+   "id": "nMNXa5SR3",
+   "name": "Label 6",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Resources"
+  },
+  {
+   "key": "$control__label7",
+   "id": "qBi_t0s3b",
+   "name": "Label 7",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Resources"
+  },
+  {
+   "key": "$control__linkLabel1",
+   "id": "G8bFYycEx",
+   "name": "Link Label 1",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel2",
+   "id": "H87es_geK",
+   "name": "Link Label 2",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel3",
+   "id": "LHNEosbo5",
+   "name": "Link Label 3",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel4",
+   "id": "zfbtbTJee",
+   "name": "Link Label 4",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel5",
+   "id": "YVcFvLcBL",
+   "name": "Link Label 5",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel6",
+   "id": "fnQEntJLE",
+   "name": "Link Label 6",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel7",
+   "id": "aoGbjomoz",
+   "name": "Link Label 7",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "onClick",
+   "id": "EcbTh7Cxi",
+   "name": "Click",
+   "node": "EventHandlerVariable",
+   "type": "eventhandler"
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "mxwcmaN0l",
+   "name": "Desktop"
+  },
+  {
+   "id": "Hh5S58TiK",
+   "name": "Phone"
+  },
+  {
+   "id": "VTEXALmnH",
+   "name": "Phone Open"
+  },
+  {
+   "id": "ON5h2XOYL",
+   "name": "Tablet"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "mxwcmaN0l",
+   "$isPrimary": true,
+   "attributes": {
+    "onTap": [
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-EcbTh7Cxi)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "BomIh851Y",
+     "component": "iOvkxuIxd",
+     "$componentDisplayName": "Dropdown Base",
+     "attributes": {
+      "onHover": [
+       {
+        "action": "SHOW_OVERLAY",
+        "controls": {
+         "overlay": "oQIBLyigT"
+        }
+       }
+      ],
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-La1dt087j)",
+      "$control__link": "var(--variable-IhbmURRdj)",
+      "position": "relative",
+      "width": "auto",
+      "height": "34px",
+      "whileOpen": "ZxDNYtqfa"
+     },
+     "children": [
+      {
+       "type": "RelativeOverlayNode",
+       "id": "oQIBLyigT",
+       "attributes": {
+        "boxShadows": [
+         "0px 10px 20px 0px rgba(0,0,0,0.05)"
+        ],
+        "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "overflow": "hidden",
+        "radius": "10px",
+        "floatingPlacement": "bottom",
+        "floatingAlignment": "center",
+        "floatingOffsetX": "0px",
+        "floatingOffsetY": "10px",
+        "floatingCollisionDetection": true,
+        "floatingCollisionPadding": "20px",
+        "width": "200px",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "tHn7SXhLs",
+         "component": "GGKcWL0Ix",
+         "$componentDisplayName": "Overlay Links",
+         "attributes": {
+          "$control__label1": "var(--variable-ZEZ2AJJTT)",
+          "$control__label2": "var(--variable-d5weAwFFH)",
+          "$control__label3": "var(--variable-HR9_y30ZP)",
+          "$control__label4": "var(--variable-van38KTXX)",
+          "$control__label5": "var(--variable-UPD7LB2gL)",
+          "$control__label6": "var(--variable-nMNXa5SR3)",
+          "$control__label7": "var(--variable-qBi_t0s3b)",
+          "$control__linkLabel1": "var(--variable-G8bFYycEx)",
+          "$control__linkLabel2": "var(--variable-H87es_geK)",
+          "$control__linkLabel3": "var(--variable-LHNEosbo5)",
+          "$control__linkLabel4": "var(--variable-zfbtbTJee)",
+          "$control__linkLabel5": "var(--variable-YVcFvLcBL)",
+          "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+          "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "JCjFWQb3E",
+     "component": "GGKcWL0Ix",
+     "$componentDisplayName": "Overlay Links",
+     "attributes": {
+      "$control__label1": "var(--variable-ZEZ2AJJTT)",
+      "$control__label2": "var(--variable-d5weAwFFH)",
+      "$control__label3": "var(--variable-HR9_y30ZP)",
+      "$control__label4": "var(--variable-van38KTXX)",
+      "$control__label5": "var(--variable-UPD7LB2gL)",
+      "$control__label6": "var(--variable-nMNXa5SR3)",
+      "$control__label7": "var(--variable-qBi_t0s3b)",
+      "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+      "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "visible": "false"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "Hh5S58TiK",
+   "$isReplica": true,
+   "$originalId": "mxwcmaN0l",
+   "attributes": {
+    "onTap": [
+     {
+      "action": "SET_VARIANT",
+      "controls": {
+       "variant": "Hh5S58TiK"
+      }
+     },
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-EcbTh7Cxi)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "left": "169px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "Hh5S58TiKBomIh851Y",
+     "component": "iOvkxuIxd",
+     "$replicaId": "Hh5S58TiK",
+     "$originalId": "BomIh851Y",
+     "$componentDisplayName": "Dropdown Base",
+     "attributes": {
+      "onHover": [
+       {
+        "action": "SHOW_OVERLAY",
+        "controls": {
+         "overlay": "oQIBLyigT"
+        }
+       }
+      ],
+      "$control__variant": "Tablet",
+      "$control__label": "var(--variable-La1dt087j)",
+      "$control__link": "var(--variable-IhbmURRdj)",
+      "position": "relative",
+      "width": "auto",
+      "height": "34px",
+      "whileOpen": "ZxDNYtqfa"
+     },
+     "children": [
+      {
+       "type": "RelativeOverlayNode",
+       "id": "Hh5S58TiKoQIBLyigT",
+       "$replicaId": "Hh5S58TiK",
+       "$originalId": "oQIBLyigT",
+       "attributes": {
+        "boxShadows": [
+         "0px 10px 20px 0px rgba(0,0,0,0.05)"
+        ],
+        "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "overflow": "hidden",
+        "radius": "10px",
+        "floatingPlacement": "bottom",
+        "floatingAlignment": "center",
+        "floatingOffsetX": "0px",
+        "floatingOffsetY": "10px",
+        "floatingCollisionDetection": true,
+        "floatingCollisionPadding": "20px",
+        "width": "200px",
+        "height": "auto",
+        "visible": "false"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "Hh5S58TiKtHn7SXhLs",
+         "component": "GGKcWL0Ix",
+         "$replicaId": "Hh5S58TiK",
+         "$originalId": "tHn7SXhLs",
+         "$componentDisplayName": "Overlay Links",
+         "attributes": {
+          "$control__label1": "var(--variable-ZEZ2AJJTT)",
+          "$control__label2": "var(--variable-d5weAwFFH)",
+          "$control__label3": "var(--variable-HR9_y30ZP)",
+          "$control__label4": "var(--variable-van38KTXX)",
+          "$control__label5": "var(--variable-UPD7LB2gL)",
+          "$control__label6": "var(--variable-nMNXa5SR3)",
+          "$control__label7": "var(--variable-qBi_t0s3b)",
+          "$control__linkLabel1": "var(--variable-G8bFYycEx)",
+          "$control__linkLabel2": "var(--variable-H87es_geK)",
+          "$control__linkLabel3": "var(--variable-LHNEosbo5)",
+          "$control__linkLabel4": "var(--variable-zfbtbTJee)",
+          "$control__linkLabel5": "var(--variable-YVcFvLcBL)",
+          "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+          "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "Hh5S58TiKJCjFWQb3E",
+     "component": "GGKcWL0Ix",
+     "$replicaId": "Hh5S58TiK",
+     "$originalId": "JCjFWQb3E",
+     "$componentDisplayName": "Overlay Links",
+     "attributes": {
+      "$control__label1": "var(--variable-ZEZ2AJJTT)",
+      "$control__label2": "var(--variable-d5weAwFFH)",
+      "$control__label3": "var(--variable-HR9_y30ZP)",
+      "$control__label4": "var(--variable-van38KTXX)",
+      "$control__label5": "var(--variable-UPD7LB2gL)",
+      "$control__label6": "var(--variable-nMNXa5SR3)",
+      "$control__label7": "var(--variable-qBi_t0s3b)",
+      "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+      "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "visible": "false"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone Open",
+   "id": "VTEXALmnH",
+   "$isReplica": true,
+   "$originalId": "mxwcmaN0l",
+   "attributes": {
+    "onTap": [
+     {
+      "action": "SET_VARIANT",
+      "controls": {
+       "variant": "VTEXALmnH"
+      }
+     },
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-EcbTh7Cxi)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "left": "383px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "269px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "VTEXALmnHBomIh851Y",
+     "component": "iOvkxuIxd",
+     "$replicaId": "VTEXALmnH",
+     "$originalId": "BomIh851Y",
+     "$componentDisplayName": "Dropdown Base",
+     "attributes": {
+      "onHover": [
+       {
+        "action": "SHOW_OVERLAY",
+        "controls": {
+         "overlay": "oQIBLyigT"
+        }
+       }
+      ],
+      "$control__variant": "Tablet",
+      "$control__label": "var(--variable-La1dt087j)",
+      "$control__link": "var(--variable-IhbmURRdj)",
+      "position": "relative",
+      "width": "auto",
+      "height": "34px",
+      "whileOpen": "ZxDNYtqfa"
+     },
+     "children": [
+      {
+       "type": "RelativeOverlayNode",
+       "id": "VTEXALmnHoQIBLyigT",
+       "$replicaId": "VTEXALmnH",
+       "$originalId": "oQIBLyigT",
+       "attributes": {
+        "boxShadows": [
+         "0px 10px 20px 0px rgba(0,0,0,0.05)"
+        ],
+        "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "overflow": "hidden",
+        "radius": "10px",
+        "floatingPlacement": "bottom",
+        "floatingAlignment": "center",
+        "floatingOffsetX": "0px",
+        "floatingOffsetY": "10px",
+        "floatingCollisionDetection": true,
+        "floatingCollisionPadding": "20px",
+        "width": "200px",
+        "height": "auto",
+        "visible": "false"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "VTEXALmnHtHn7SXhLs",
+         "component": "GGKcWL0Ix",
+         "$replicaId": "VTEXALmnH",
+         "$originalId": "tHn7SXhLs",
+         "$componentDisplayName": "Overlay Links",
+         "attributes": {
+          "$control__label1": "var(--variable-ZEZ2AJJTT)",
+          "$control__label2": "var(--variable-d5weAwFFH)",
+          "$control__label3": "var(--variable-HR9_y30ZP)",
+          "$control__label4": "var(--variable-van38KTXX)",
+          "$control__label5": "var(--variable-UPD7LB2gL)",
+          "$control__label6": "var(--variable-nMNXa5SR3)",
+          "$control__label7": "var(--variable-qBi_t0s3b)",
+          "$control__linkLabel1": "var(--variable-G8bFYycEx)",
+          "$control__linkLabel2": "var(--variable-H87es_geK)",
+          "$control__linkLabel3": "var(--variable-LHNEosbo5)",
+          "$control__linkLabel4": "var(--variable-zfbtbTJee)",
+          "$control__linkLabel5": "var(--variable-YVcFvLcBL)",
+          "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+          "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "VTEXALmnHJCjFWQb3E",
+     "component": "GGKcWL0Ix",
+     "$replicaId": "VTEXALmnH",
+     "$originalId": "JCjFWQb3E",
+     "$componentDisplayName": "Overlay Links",
+     "attributes": {
+      "$control__label1": "var(--variable-ZEZ2AJJTT)",
+      "$control__label2": "var(--variable-d5weAwFFH)",
+      "$control__label3": "var(--variable-HR9_y30ZP)",
+      "$control__label4": "var(--variable-van38KTXX)",
+      "$control__label5": "var(--variable-UPD7LB2gL)",
+      "$control__label6": "var(--variable-nMNXa5SR3)",
+      "$control__label7": "var(--variable-qBi_t0s3b)",
+      "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+      "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "ON5h2XOYL",
+   "$isReplica": true,
+   "$originalId": "mxwcmaN0l",
+   "attributes": {
+    "onTap": [
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-EcbTh7Cxi)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "left": "752px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ON5h2XOYLBomIh851Y",
+     "component": "iOvkxuIxd",
+     "$replicaId": "ON5h2XOYL",
+     "$originalId": "BomIh851Y",
+     "$componentDisplayName": "Dropdown Base",
+     "attributes": {
+      "onHover": [
+       {
+        "action": "SHOW_OVERLAY",
+        "controls": {
+         "overlay": "oQIBLyigT"
+        }
+       }
+      ],
+      "$control__variant": "Tablet",
+      "$control__label": "var(--variable-La1dt087j)",
+      "$control__link": "var(--variable-IhbmURRdj)",
+      "position": "relative",
+      "width": "auto",
+      "height": "36px",
+      "whileOpen": "ZxDNYtqfa"
+     },
+     "children": [
+      {
+       "type": "RelativeOverlayNode",
+       "id": "ON5h2XOYLoQIBLyigT",
+       "$replicaId": "ON5h2XOYL",
+       "$originalId": "oQIBLyigT",
+       "attributes": {
+        "boxShadows": [
+         "0px 10px 20px 0px rgba(0,0,0,0.05)"
+        ],
+        "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "overflow": "hidden",
+        "radius": "10px",
+        "floatingPlacement": "bottom",
+        "floatingAlignment": "center",
+        "floatingOffsetX": "0px",
+        "floatingOffsetY": "10px",
+        "floatingCollisionDetection": true,
+        "floatingCollisionPadding": "20px",
+        "width": "200px",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "ON5h2XOYLtHn7SXhLs",
+         "component": "GGKcWL0Ix",
+         "$replicaId": "ON5h2XOYL",
+         "$originalId": "tHn7SXhLs",
+         "$componentDisplayName": "Overlay Links",
+         "attributes": {
+          "$control__label1": "var(--variable-ZEZ2AJJTT)",
+          "$control__label2": "var(--variable-d5weAwFFH)",
+          "$control__label3": "var(--variable-HR9_y30ZP)",
+          "$control__label4": "var(--variable-van38KTXX)",
+          "$control__label5": "var(--variable-UPD7LB2gL)",
+          "$control__label6": "var(--variable-nMNXa5SR3)",
+          "$control__label7": "var(--variable-qBi_t0s3b)",
+          "$control__linkLabel1": "var(--variable-G8bFYycEx)",
+          "$control__linkLabel2": "var(--variable-H87es_geK)",
+          "$control__linkLabel3": "var(--variable-LHNEosbo5)",
+          "$control__linkLabel4": "var(--variable-zfbtbTJee)",
+          "$control__linkLabel5": "var(--variable-YVcFvLcBL)",
+          "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+          "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ON5h2XOYLJCjFWQb3E",
+     "component": "GGKcWL0Ix",
+     "$replicaId": "ON5h2XOYL",
+     "$originalId": "JCjFWQb3E",
+     "$componentDisplayName": "Overlay Links",
+     "attributes": {
+      "$control__label1": "var(--variable-ZEZ2AJJTT)",
+      "$control__label2": "var(--variable-d5weAwFFH)",
+      "$control__label3": "var(--variable-HR9_y30ZP)",
+      "$control__label4": "var(--variable-van38KTXX)",
+      "$control__label5": "var(--variable-UPD7LB2gL)",
+      "$control__label6": "var(--variable-nMNXa5SR3)",
+      "$control__label7": "var(--variable-qBi_t0s3b)",
+      "$control__linkLabel6": "var(--variable-fnQEntJLE)",
+      "$control__linkLabel7": "var(--variable-aoGbjomoz)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "visible": "false"
+     }
+    }
+   ]
+  }
+ ]
+}

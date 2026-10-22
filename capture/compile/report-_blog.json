@@ -1,0 +1,13 @@
+{
+ "warnings": {
+  "/blog": []
+ },
+ "textDiffs": [],
+ "headings": [
+  {
+   "route": "/blog",
+   "text": "We publish what we would want to read ourselves: specific, technical, and grounded in real deployments, not generic advice.",
+   "to": "p"
+  }
+ ]
+}

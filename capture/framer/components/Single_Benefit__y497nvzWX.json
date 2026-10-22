@@ -1,0 +1,275 @@
+{
+ "type": "ComponentNode",
+ "id": "y497nvzWX",
+ "name": "Single Benefit",
+ "variables": [
+  {
+   "key": "$control__icon",
+   "id": "svAMZquN7",
+   "name": "Icon",
+   "node": "Variable",
+   "type": "image",
+   "initialValue": {
+    "alt": "Benefit Icon",
+    "value": "data:framer/asset-reference,nrriKwLCw1mGEJdDgJUy4rXgzQ.svg?originalFilename=Button+%2810%29.svg&preferredSize=auto",
+    "type": "image"
+   }
+  },
+  {
+   "key": "$control__title",
+   "id": "i1QVRw_iQ",
+   "name": "Title",
+   "node": "Variable",
+   "type": "string",
+   "displayTextArea": true,
+   "initialValue": "Next AI-Powered Workflow"
+  },
+  {
+   "key": "$control__subtitle",
+   "id": "pxC3JNlOo",
+   "name": "Subtitle",
+   "node": "Variable",
+   "type": "string",
+   "displayTextArea": true,
+   "initialValue": "Streamline your workflow by automating repetitive tasks."
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "c6qtTifY3",
+   "name": "Default"
+  },
+  {
+   "id": "g0mTAFPV0",
+   "name": "Phone"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Default",
+   "id": "c6qtTifY3",
+   "$isPrimary": true,
+   "attributes": {
+    "boxShadows": [
+     "13.64px 17.05px 12.79px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */",
+     "5.97px 7.67px 9.38px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */",
+     "1.7px 1.7px 5.11px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */",
+     "0px 0px 0px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */"
+    ],
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "htmlTag": "div",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "8px",
+    "overflow": "hidden",
+    "padding": "24px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "radius": "16px",
+    "width": "268px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Icon",
+     "id": "cajbI6_QM",
+     "attributes": {
+      "fill": "var(--variable-svAMZquN7)",
+      "altText": "Benefit Icon",
+      "layout": "null",
+      "overflow": "hidden",
+      "position": "relative",
+      "width": "40px",
+      "height": "40px",
+      "aspectRatio": 1,
+      "userSelect": "none"
+     }
+    },
+    {
+     "type": "RichTextNode",
+     "id": "LFa_NmMed",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "90%",
+      "height": "auto",
+      "text": "var(--variable-i1QVRw_iQ)",
+      "fontName": "Lexend",
+      "fontStyle": "normal",
+      "fontWeight": 500,
+      "fontSize": "21px",
+      "letterSpacing": "0em",
+      "lineHeight": "1.52em",
+      "openTypeFontFeatures": {
+       "blwf": "on",
+       "cv09": "on",
+       "cv03": "on",
+       "cv04": "on",
+       "cv11": "on"
+      },
+      "textAlignment": "start",
+      "textDecorationStyle": "solid",
+      "textColor": "var(--token-c03b4e9f-f714-4eac-9638-e8713d0cc2f2, rgb(0, 0, 0))"
+     }
+    },
+    {
+     "type": "RichTextNode",
+     "id": "nZPbgNz2V",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "text": "var(--variable-pxC3JNlOo)",
+      "fontName": "Lexend",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "fontSize": "14px",
+      "letterSpacing": "0em",
+      "lineHeight": "1.57em",
+      "openTypeFontFeatures": {
+       "blwf": "on",
+       "cv09": "on",
+       "cv03": "on",
+       "cv04": "on",
+       "cv11": "on"
+      },
+      "textAlignment": "start",
+      "textDecorationStyle": "solid",
+      "textColor": "var(--token-8aa2e9d3-d7ab-4a00-9519-b599d07ea45e)"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "g0mTAFPV0",
+   "$isReplica": true,
+   "$originalId": "c6qtTifY3",
+   "attributes": {
+    "boxShadows": [
+     "13.64px 17.05px 12.79px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */",
+     "5.97px 7.67px 9.38px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */",
+     "1.7px 1.7px 5.11px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */",
+     "0px 0px 0px 0px var(--token-1f242b42-5623-4ac5-853d-85ecd2d28187, rgba(0, 0, 0, 0.01)) /* {\"name\":\"950 1%\"} */"
+    ],
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "htmlTag": "div",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "8px",
+    "overflow": "hidden",
+    "padding": "20px",
+    "left": "368px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "radius": "16px",
+    "width": "268px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Icon",
+     "id": "g0mTAFPV0cajbI6_QM",
+     "$replicaId": "g0mTAFPV0",
+     "$originalId": "cajbI6_QM",
+     "attributes": {
+      "fill": "var(--variable-svAMZquN7)",
+      "altText": "Benefit Icon",
+      "layout": "null",
+      "overflow": "hidden",
+      "position": "relative",
+      "width": "40px",
+      "height": "40px",
+      "aspectRatio": 1,
+      "userSelect": "none"
+     }
+    },
+    {
+     "type": "RichTextNode",
+     "id": "g0mTAFPV0LFa_NmMed",
+     "$replicaId": "g0mTAFPV0",
+     "$originalId": "LFa_NmMed",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "90%",
+      "height": "auto",
+      "text": "var(--variable-i1QVRw_iQ)",
+      "fontName": "Lexend",
+      "fontStyle": "normal",
+      "fontWeight": 500,
+      "fontSize": "21px",
+      "letterSpacing": "0em",
+      "lineHeight": "1.52em",
+      "openTypeFontFeatures": {
+       "blwf": "on",
+       "cv09": "on",
+       "cv03": "on",
+       "cv04": "on",
+       "cv11": "on"
+      },
+      "textAlignment": "center",
+      "textDecorationStyle": "solid",
+      "textColor": "var(--token-c03b4e9f-f714-4eac-9638-e8713d0cc2f2, rgb(0, 0, 0))"
+     }
+    },
+    {
+     "type": "RichTextNode",
+     "id": "g0mTAFPV0nZPbgNz2V",
+     "$replicaId": "g0mTAFPV0",
+     "$originalId": "nZPbgNz2V",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "text": "var(--variable-pxC3JNlOo)",
+      "fontName": "Lexend",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "fontSize": "14px",
+      "letterSpacing": "0em",
+      "lineHeight": "1.57em",
+      "openTypeFontFeatures": {
+       "blwf": "on",
+       "cv09": "on",
+       "cv03": "on",
+       "cv04": "on",
+       "cv11": "on"
+      },
+      "textAlignment": "center",
+      "textDecorationStyle": "solid",
+      "textColor": "var(--token-8aa2e9d3-d7ab-4a00-9519-b599d07ea45e)"
+     }
+    }
+   ]
+  }
+ ]
+}

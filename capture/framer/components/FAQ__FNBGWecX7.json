@@ -1,0 +1,816 @@
+{
+ "type": "ComponentNode",
+ "id": "FNBGWecX7",
+ "name": "FAQ",
+ "variables": [],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "a7AMiyBxo",
+   "name": "Desktop"
+  },
+  {
+   "id": "X4YpEl76C",
+   "name": "Tablet"
+  },
+  {
+   "id": "DpfWsQDiA",
+   "name": "Phone"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "a7AMiyBxo",
+   "$isPrimary": true,
+   "attributes": {
+    "htmlTag": "section",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "padding": "48px 120px 48px 120px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Padding",
+     "id": "BYV5phSwn",
+     "attributes": {
+      "fill": "https://framerusercontent.com/images/G4kNoh1nazkUyuzpkilDsDDj4.webp",
+      "htmlTag": "div",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "70px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1440px"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Head",
+       "id": "QWwOAz4eL",
+       "attributes": {
+        "htmlTag": "div",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "20px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "526px"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "fHyN4OOfm",
+         "attributes": {
+          "inlineCodeStylePreset": "Inline Code",
+          "linkStylePreset": "Link",
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 600,
+          "fontSize": "48px",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "60px",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-40cce62b-9bc2-4963-9580-2aa730fdcdfc, rgb(36, 36, 36))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:fHyN4OOfm:0",
+           "attributes": {
+            "tag": "h2"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:fHyN4OOfm:0:0",
+             "attributes": {
+              "text": "Frequently Asked Questions"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "y0YeogdBg",
+         "attributes": {
+          "inlineCodeStylePreset": "Inline Code",
+          "linkStylePreset": "Link",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "20px",
+          "letterSpacing": "0em",
+          "lineHeight": "30px",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-b268fed4-26f8-4365-bfa3-7b8b357d6aec, rgb(56, 56, 56))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:y0YeogdBg:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:y0YeogdBg:0:0",
+             "attributes": {
+              "text": "Got questions? We’ve got answers. If you need more help, feel free to reach out."
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Accodions",
+       "id": "MuktAPSIc",
+       "attributes": {
+        "htmlTag": "div",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "16px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "700px"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "wvYkH7iHi",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "What can Vocom AI agents do for my business?",
+          "$control__answer": "They understand natural language requests, route them correctly and handle routine queries around the clock. Complex requests are handed to your team the moment a human is needed.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "EHRhi0jEz",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "Can I book a demo?",
+          "$control__answer": "Yes. Get in touch through the contact page to schedule a demo and see the agents working on real scenarios.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "xPLAjaoWC",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "What support options do you offer?",
+          "$control__answer": "Our team works with you on setup and workflows, and enterprise customers get a dedicated success manager. Contact us to discuss the level of support you need.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "nly2v8SMh",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "Will agents work with our existing systems?",
+          "$control__answer": "Yes. Agents are integrated into the systems you already use, and you can build workflows around your own processes instead of a rigid template.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "SkXZRxIMS",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "How is our data handled?",
+          "$control__answer": "Agents run on the same secure infrastructure used across Vocom's AI suite. Data handling arrangements are agreed for each deployment, so raise your requirements early in the demo.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "P_TFPtUin",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "How long does deployment take?",
+          "$control__answer": "Timelines depend on the workflow and how many systems the agent connects to. Agents can be launched without writing code, and we will give you a plan after the initial walkthrough.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "X4YpEl76C",
+   "$isReplica": true,
+   "$originalId": "a7AMiyBxo",
+   "attributes": {
+    "htmlTag": "section",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "padding": "24px",
+    "left": "1300px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Padding",
+     "id": "X4YpEl76CBYV5phSwn",
+     "$replicaId": "X4YpEl76C",
+     "$originalId": "BYV5phSwn",
+     "attributes": {
+      "fill": "https://framerusercontent.com/images/G4kNoh1nazkUyuzpkilDsDDj4.webp",
+      "htmlTag": "div",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "70px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1440px"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Head",
+       "id": "X4YpEl76CQWwOAz4eL",
+       "$replicaId": "X4YpEl76C",
+       "$originalId": "QWwOAz4eL",
+       "attributes": {
+        "htmlTag": "div",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "20px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "526px"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "X4YpEl76CfHyN4OOfm",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "fHyN4OOfm",
+         "attributes": {
+          "inlineCodeStylePreset": "Inline Code",
+          "linkStylePreset": "Link",
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 600,
+          "fontSize": "48px",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "60px",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-40cce62b-9bc2-4963-9580-2aa730fdcdfc, rgb(36, 36, 36))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:X4YpEl76CfHyN4OOfm:0",
+           "attributes": {
+            "tag": "h2"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:X4YpEl76CfHyN4OOfm:0:0",
+             "attributes": {
+              "text": "Frequently Asked Questions"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "X4YpEl76Cy0YeogdBg",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "y0YeogdBg",
+         "attributes": {
+          "inlineCodeStylePreset": "Inline Code",
+          "linkStylePreset": "Link",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "20px",
+          "letterSpacing": "0em",
+          "lineHeight": "30px",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-b268fed4-26f8-4365-bfa3-7b8b357d6aec, rgb(56, 56, 56))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:X4YpEl76Cy0YeogdBg:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:X4YpEl76Cy0YeogdBg:0:0",
+             "attributes": {
+              "text": "Got questions? We’ve got answers. If you need more help, feel free to reach out."
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Accodions",
+       "id": "X4YpEl76CMuktAPSIc",
+       "$replicaId": "X4YpEl76C",
+       "$originalId": "MuktAPSIc",
+       "attributes": {
+        "htmlTag": "div",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "16px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "700px"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "X4YpEl76CwvYkH7iHi",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "wvYkH7iHi",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "What can Vocom AI agents do for my business?",
+          "$control__answer": "They understand natural language requests, route them correctly and handle routine queries around the clock. Complex requests are handed to your team the moment a human is needed.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "X4YpEl76CEHRhi0jEz",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "EHRhi0jEz",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "Can I book a demo?",
+          "$control__answer": "Yes. Get in touch through the contact page to schedule a demo and see the agents working on real scenarios.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "X4YpEl76CxPLAjaoWC",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "xPLAjaoWC",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "What support options do you offer?",
+          "$control__answer": "Our team works with you on setup and workflows, and enterprise customers get a dedicated success manager. Contact us to discuss the level of support you need.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "X4YpEl76Cnly2v8SMh",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "nly2v8SMh",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "Will agents work with our existing systems?",
+          "$control__answer": "Yes. Agents are integrated into the systems you already use, and you can build workflows around your own processes instead of a rigid template.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "X4YpEl76CSkXZRxIMS",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "SkXZRxIMS",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "How is our data handled?",
+          "$control__answer": "Agents run on the same secure infrastructure used across Vocom's AI suite. Data handling arrangements are agreed for each deployment, so raise your requirements early in the demo.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "X4YpEl76CP_TFPtUin",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "X4YpEl76C",
+         "$originalId": "P_TFPtUin",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "How long does deployment take?",
+          "$control__answer": "Timelines depend on the workflow and how many systems the agent connects to. Agents can be launched without writing code, and we will give you a plan after the initial walkthrough.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "DpfWsQDiA",
+   "$isReplica": true,
+   "$originalId": "a7AMiyBxo",
+   "attributes": {
+    "htmlTag": "section",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "padding": "16px",
+    "left": "2210px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Padding",
+     "id": "DpfWsQDiABYV5phSwn",
+     "$replicaId": "DpfWsQDiA",
+     "$originalId": "BYV5phSwn",
+     "attributes": {
+      "fill": "https://framerusercontent.com/images/G4kNoh1nazkUyuzpkilDsDDj4.webp",
+      "htmlTag": "div",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "70px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1440px"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Head",
+       "id": "DpfWsQDiAQWwOAz4eL",
+       "$replicaId": "DpfWsQDiA",
+       "$originalId": "QWwOAz4eL",
+       "attributes": {
+        "htmlTag": "div",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "20px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "526px"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "DpfWsQDiAfHyN4OOfm",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "fHyN4OOfm",
+         "attributes": {
+          "inlineCodeStylePreset": "Inline Code",
+          "linkStylePreset": "Link",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 600,
+          "fontSize": "40px",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "60px",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-40cce62b-9bc2-4963-9580-2aa730fdcdfc, rgb(36, 36, 36))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:DpfWsQDiAfHyN4OOfm:0",
+           "attributes": {
+            "tag": "h2"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:DpfWsQDiAfHyN4OOfm:0:0",
+             "attributes": {
+              "text": "Frequently Asked Questions"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "DpfWsQDiAy0YeogdBg",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "y0YeogdBg",
+         "attributes": {
+          "inlineCodeStylePreset": "Inline Code",
+          "linkStylePreset": "Link",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "18px",
+          "letterSpacing": "0em",
+          "lineHeight": "30px",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-b268fed4-26f8-4365-bfa3-7b8b357d6aec, rgb(56, 56, 56))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:DpfWsQDiAy0YeogdBg:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:DpfWsQDiAy0YeogdBg:0:0",
+             "attributes": {
+              "text": "Got questions? We’ve got answers. If you need more help, feel free to reach out."
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Accodions",
+       "id": "DpfWsQDiAMuktAPSIc",
+       "$replicaId": "DpfWsQDiA",
+       "$originalId": "MuktAPSIc",
+       "attributes": {
+        "htmlTag": "div",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "16px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "700px"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "DpfWsQDiAwvYkH7iHi",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "wvYkH7iHi",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "What can Vocom AI agents do for my business?",
+          "$control__answer": "They understand natural language requests, route them correctly and handle routine queries around the clock. Complex requests are handed to your team the moment a human is needed.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "DpfWsQDiAEHRhi0jEz",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "EHRhi0jEz",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "Can I book a demo?",
+          "$control__answer": "Yes. Get in touch through the contact page to schedule a demo and see the agents working on real scenarios.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "DpfWsQDiAxPLAjaoWC",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "xPLAjaoWC",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "What support options do you offer?",
+          "$control__answer": "Our team works with you on setup and workflows, and enterprise customers get a dedicated success manager. Contact us to discuss the level of support you need.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "DpfWsQDiAnly2v8SMh",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "nly2v8SMh",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "Will agents work with our existing systems?",
+          "$control__answer": "Yes. Agents are integrated into the systems you already use, and you can build workflows around your own processes instead of a rigid template.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "DpfWsQDiASkXZRxIMS",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "SkXZRxIMS",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "How is our data handled?",
+          "$control__answer": "Agents run on the same secure infrastructure used across Vocom's AI suite. Data handling arrangements are agreed for each deployment, so raise your requirements early in the demo.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "DpfWsQDiAP_TFPtUin",
+         "component": "yHfkKucqHT5equ4IvqJU",
+         "$replicaId": "DpfWsQDiA",
+         "$originalId": "P_TFPtUin",
+         "$componentDisplayName": "Faq Accordion",
+         "attributes": {
+          "$control__variant": "WkUsSV00b",
+          "$control__question": "How long does deployment take?",
+          "$control__answer": "Timelines depend on the workflow and how many systems the agent connects to. Agents can be launched without writing code, and we will give you a plan after the initial walkthrough.",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

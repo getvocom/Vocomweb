@@ -1,0 +1,76 @@
+/* Design tokens for vocom.ai.
+ * Colours come from the Framer project's colour styles (--color-*) and from raw values the
+ * design repeats (--brand-*, --ink-*, --gray-*). scripts/framer/css.mjs maps exact matches
+ * to these variables, so changing a token here changes every use.
+ * Breakpoints (match Framer): desktop >= 1200px, tablet 810px-1199.98px, phone <= 809.98px.
+ */
+:root {
+  /* Brand */
+  --brand-red: #7a1230;
+  --brand-red-alt: #7a122a;
+  --brand-crimson: #7f173f;
+  --brand-pink-border: #f1dce5;
+  --brand-pink-50: #fff6fa;
+  --ink-900: #171017;
+  --ink-800: #2b2228;
+  --ink-600: #554650;
+  --ink-heading: #101828;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --white: #ffffff;
+  --black: #000000;
+  --brand-gradient: linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%);
+
+  /* Framer colour styles */
+  --color-secondary-light-purple: rgb(157, 7, 237);
+  --color-shadow: rgba(94, 120, 143, 0.5);
+  --color-white: rgb(255, 255, 255);
+  --color-gray-2: rgb(96, 98, 102);
+  --color-gray-4: rgb(240, 242, 246);
+  --color-text-and-bg-dark: rgb(16, 16, 20);
+  --color-light: rgb(240, 215, 254);
+  --color-light-purple-2: rgb(204, 116, 251);
+  --color-black: rgb(0, 0, 0);
+  --color-primary-dark-purple: rgb(66, 3, 99);
+  --color-text-mid: rgb(61, 61, 71);
+  --color-vocom-cta-1: rgb(100, 20, 42);
+  --color-vocom: rgb(60, 8, 24);
+  --color-maroon: rgb(60, 2, 24);
+  --color-vocom-dark: rgb(21, 2, 8);
+  --color-neutral-medium: rgb(109, 109, 109);
+  --color-vocom-white: rgb(252, 235, 243);
+  --color-vocom-light: rgb(159, 37, 65);
+  --color-white-7pct: rgba(255, 255, 255, 0.07);
+  --color-lemon: rgb(255, 251, 241);
+  --color-pink-gradient: rgb(255, 239, 250);
+  --color-vocom-cta-2: rgb(246, 194, 218);
+  --color-border-light: rgba(255, 255, 255, 0.1);
+  --color-white-text-secondary: rgba(255, 255, 255, 0.7);
+  --color-white-d74d: rgb(255, 255, 255);
+  --color-primary-white: rgb(255, 255, 255);
+  --color-primary-black: rgb(0, 0, 0);
+  --color-dark-50: rgb(150, 150, 150);
+  --color-dark-70: rgb(102, 102, 102);
+
+  /* Type */
+  --font-sans: "Inter", "Inter Placeholder", sans-serif;
+  --font-display: "Inter Display", "Inter Display Placeholder", sans-serif;
+  --font-variable: "Inter Variable", "Inter", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-lexend: "Lexend", sans-serif;
+
+  /* Radii */
+  --radius-pill: 999px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+
+  /* Shadows */
+  --shadow-card: 0px 12px 30px 0px rgba(122, 18, 48, 0.06);
+  --shadow-button-hover: 0px 6px 16px 0px rgba(20, 10, 15, 0.18);
+
+  /* Layout */
+  --container: 1180px;
+  --header-height: 66px;
+}

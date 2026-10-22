@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects (301). Host and trailing-slash rules live in Cloudflare, see notes/launch.md.
+# Old Vocom AI slugs: 404 on the live site and absent from Framer's redirect list (checked 2026-10-22).
+# Targets chosen by closest topic match, approved by Tom ("use SEO best practice").
+/vocomai            /vocom-ai        301
+/vocomai-home       /vocom-ai        301
+/vocomai-security   /vocomai-vocam   301

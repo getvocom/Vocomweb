@@ -1,0 +1,328 @@
+{
+ "textStyles": [
+  {
+   "id": "TgDKsaVln",
+   "name": "",
+   "path": "/Heading 1",
+   "tag": "h1",
+   "font": "Garet/300/normal",
+   "fontSize": "40px",
+   "lineHeight": "1.1em",
+   "letterSpacing": "-0.04em",
+   "color": "#000",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 0,
+   "breakpoints": [],
+   "balance": false
+  },
+  {
+   "id": "GZAMBz5ZV",
+   "name": "",
+   "path": "/Heading 2",
+   "tag": "h2",
+   "font": "Inter/700/normal",
+   "fontSize": "30px",
+   "lineHeight": "1.4em",
+   "letterSpacing": "-0.04em",
+   "color": "#000",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 40,
+   "breakpoints": [],
+   "balance": false
+  },
+  {
+   "id": "o02_Tveex",
+   "name": "",
+   "path": "/Heading 3",
+   "tag": "h3",
+   "font": "Inter/700/normal",
+   "fontSize": "26px",
+   "lineHeight": "1.4em",
+   "letterSpacing": "-0.04em",
+   "color": "#000",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 40,
+   "breakpoints": [],
+   "balance": false
+  },
+  {
+   "id": "p7XlPkdUa",
+   "name": "",
+   "path": "/Heading 4",
+   "tag": "h4",
+   "font": "Inter/700/normal",
+   "fontSize": "22px",
+   "lineHeight": "1.4em",
+   "letterSpacing": "-0.04em",
+   "color": "#000",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 40,
+   "breakpoints": [],
+   "balance": false
+  },
+  {
+   "id": "ibG1kuX52",
+   "name": "",
+   "path": "/Heading 5",
+   "tag": "h5",
+   "font": "Inter/700/normal",
+   "fontSize": "18px",
+   "lineHeight": "1.4em",
+   "letterSpacing": "-0.04em",
+   "color": "#000",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 40,
+   "breakpoints": [],
+   "balance": false
+  },
+  {
+   "id": "E78cDlCe9",
+   "name": "",
+   "path": "/Heading 6",
+   "tag": "h6",
+   "font": "Inter/600/normal",
+   "fontSize": "16px",
+   "lineHeight": "1.4em",
+   "letterSpacing": "-0.02em",
+   "color": "#000",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 40,
+   "breakpoints": [],
+   "balance": false
+  },
+  {
+   "id": "MG8hOoCxz",
+   "name": "",
+   "path": "/Body",
+   "tag": "p",
+   "font": "Proxima Nova/300/normal",
+   "fontSize": "16px",
+   "lineHeight": "1.6em",
+   "letterSpacing": "-0.02em",
+   "color": "#666",
+   "transform": "none",
+   "alignment": "left",
+   "decoration": "none",
+   "paragraphSpacing": 20,
+   "breakpoints": [],
+   "balance": false
+  }
+ ],
+ "colorStyles": [
+  {
+   "id": "e018c7ca-56d6-40b4-ada2-6c5fc9028df9",
+   "name": "Secondary - Light Purple",
+   "path": "/Secondary - Light Purple",
+   "light": "rgb(157, 7, 237)",
+   "dark": null
+  },
+  {
+   "id": "c630804f-5e50-4893-b680-27b64d932590",
+   "name": "shadow",
+   "path": "/shadow",
+   "light": "rgba(94, 120, 143, 0.5)",
+   "dark": null
+  },
+  {
+   "id": "4a707b9d-a31e-4c43-92fb-0b65962a4be7",
+   "name": "White",
+   "path": "/White",
+   "light": "rgb(255, 255, 255)",
+   "dark": null
+  },
+  {
+   "id": "67d981e7-2754-44dc-bd50-7adae26c5928",
+   "name": "Gray 2",
+   "path": "/Gray 2",
+   "light": "rgb(96, 98, 102)",
+   "dark": null
+  },
+  {
+   "id": "b44aad5a-aed8-49ef-8497-aaf288733442",
+   "name": "Gray 4",
+   "path": "/Gray 4",
+   "light": "rgb(240, 242, 246)",
+   "dark": null
+  },
+  {
+   "id": "293955a5-6f9a-470e-8eb8-8f52a27509f0",
+   "name": "Text & BG - dark",
+   "path": "/Text & BG - dark",
+   "light": "rgb(16, 16, 20)",
+   "dark": null
+  },
+  {
+   "id": "0b36bd58-d768-42dc-959a-c00bbfbfebba",
+   "name": "Light",
+   "path": "/Light",
+   "light": "rgb(240, 215, 254)",
+   "dark": null
+  },
+  {
+   "id": "554ba8cf-8c62-48d2-83f5-ac610ba77e8a",
+   "name": "Light Purple 2",
+   "path": "/Light Purple 2",
+   "light": "rgb(204, 116, 251)",
+   "dark": null
+  },
+  {
+   "id": "1b7bb1c4-3a89-4ec2-aee2-16abaf604d08",
+   "name": "Black",
+   "path": "/Black",
+   "light": "rgb(0, 0, 0)",
+   "dark": null
+  },
+  {
+   "id": "85f0d8bc-c52f-4a5e-9660-1e6762f00902",
+   "name": "Primary - Dark Purple",
+   "path": "/Primary - Dark Purple",
+   "light": "rgb(66, 3, 99)",
+   "dark": null
+  },
+  {
+   "id": "30e48027-3b22-4ff1-a546-6bd64e851575",
+   "name": "Text - mid",
+   "path": "/Text - mid",
+   "light": "rgb(61, 61, 71)",
+   "dark": null
+  },
+  {
+   "id": "945bc3c7-401d-4c5b-8740-4176a404949d",
+   "name": "Vocom CTA 1",
+   "path": "/Vocom CTA 1",
+   "light": "rgb(100, 20, 42)",
+   "dark": null
+  },
+  {
+   "id": "58fad658-721f-4cb5-872a-6f11fb816532",
+   "name": "Vocom",
+   "path": "/Vocom",
+   "light": "rgb(60, 8, 24)",
+   "dark": null
+  },
+  {
+   "id": "4de79789-43dc-44ec-aa56-db5b8bb10770",
+   "name": "Maroon",
+   "path": "/Maroon",
+   "light": "rgb(60, 2, 24)",
+   "dark": null
+  },
+  {
+   "id": "63c519b1-7875-491e-b36b-f14f30806d72",
+   "name": "Vocom Dark",
+   "path": "/Vocom Dark",
+   "light": "rgb(21, 2, 8)",
+   "dark": null
+  },
+  {
+   "id": "8aa2e9d3-d7ab-4a00-9519-b599d07ea45e",
+   "name": "Neutral Medium",
+   "path": "/Neutral Medium",
+   "light": "rgb(109, 109, 109)",
+   "dark": null
+  },
+  {
+   "id": "3a04d53d-c0b5-4a94-910a-fab94c51068a",
+   "name": "Vocom White",
+   "path": "/Vocom White",
+   "light": "rgb(252, 235, 243)",
+   "dark": null
+  },
+  {
+   "id": "27613802-3d5c-4cf0-b30e-23b5a145df4a",
+   "name": "Vocom Light",
+   "path": "/Vocom Light",
+   "light": "rgb(159, 37, 65)",
+   "dark": null
+  },
+  {
+   "id": "a9883d9b-c1bd-4bd9-be15-284cd72e1b1f",
+   "name": "White 7%",
+   "path": "/White 7%",
+   "light": "rgba(255, 255, 255, 0.07)",
+   "dark": null
+  },
+  {
+   "id": "d14c59e2-b0cb-4755-a00a-8c21d92e5942",
+   "name": "Lemon",
+   "path": "/Lemon",
+   "light": "rgb(255, 251, 241)",
+   "dark": null
+  },
+  {
+   "id": "4137afde-5a4d-4b11-8adf-1ef62d46ea2a",
+   "name": "Pink-Gradient",
+   "path": "/Pink-Gradient",
+   "light": "rgb(255, 239, 250)",
+   "dark": null
+  },
+  {
+   "id": "608f0c3d-993e-47f7-bb8b-121bd21ad0f0",
+   "name": "Vocom CTA 2",
+   "path": "/Vocom CTA 2",
+   "light": "rgb(246, 194, 218)",
+   "dark": null
+  },
+  {
+   "id": "076767f4-76de-4c3a-8bd0-c113a42af0e2",
+   "name": "Border Light",
+   "path": "/Border Light",
+   "light": "rgba(255, 255, 255, 0.1)",
+   "dark": null
+  },
+  {
+   "id": "aca9965f-c667-4358-aee0-20894ed0633e",
+   "name": "White Text Secondary",
+   "path": "/White Text Secondary",
+   "light": "rgba(255, 255, 255, 0.7)",
+   "dark": null
+  },
+  {
+   "id": "d74d16c5-23aa-4649-a2ad-0da8c936dade",
+   "name": "White",
+   "path": "/White",
+   "light": "rgb(255, 255, 255)",
+   "dark": null
+  },
+  {
+   "id": "e16847f2-b192-48e1-a890-7bbcce11cc6e",
+   "name": "Primary / White",
+   "path": "/White",
+   "light": "rgb(255, 255, 255)",
+   "dark": null
+  },
+  {
+   "id": "be079bad-eabd-4234-8a56-5579c7057187",
+   "name": "Primary / Black",
+   "path": "/Black",
+   "light": "rgb(0, 0, 0)",
+   "dark": null
+  },
+  {
+   "id": "904c14a9-7582-43d7-a43c-85f49d580145",
+   "name": "Dark / 50",
+   "path": "/50",
+   "light": "rgb(150, 150, 150)",
+   "dark": null
+  },
+  {
+   "id": "0e272a57-d630-4ae6-a209-51c62dec2a5a",
+   "name": "Dark / 70",
+   "path": "/70",
+   "light": "rgb(102, 102, 102)",
+   "dark": null
+  }
+ ]
+}

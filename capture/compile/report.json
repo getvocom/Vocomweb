@@ -1,0 +1,277 @@
+{
+ "warnings": {
+  "/about": [],
+  "/adss-aerial-fiber-cable": [],
+  "/air-blown-micro-fiber-cable": [],
+  "/blog": [],
+  "/blog/:Posts": [],
+  "/contact-vocomai": [],
+  "/data-center-fiber-cabling": [],
+  "/fiber-optic-cable-catalog": [],
+  "/fiber-optic-cables": [],
+  "/ftth-drop-cable": [],
+  "/": [],
+  "/loose-tube-fiber-optic-cable": [],
+  "/marketing-alliance": [],
+  "/pricing-vocomai": [],
+  "/products/:Products": [],
+  "/resources": [],
+  "/ribbon-fiber-optic-cable": [],
+  "/search": [],
+  "/vocom-ai-agents": [],
+  "/vocom-ai-servers": [],
+  "/vocom-ai": [],
+  "/vocom-international": [],
+  "/vocom-privacy-policy": [],
+  "/vocom-services": [],
+  "/vocomai-coach-hub": [],
+  "/vocomai-consultancy": [],
+  "/vocomai-gpu-solutions": [],
+  "/vocomai-manufacturing": [],
+  "/vocomai-supply-chain": [],
+  "/vocomai-vocam": []
+ },
+ "textDiffs": [
+  {
+   "route": "/fiber-optic-cable-catalog",
+   "key": "/P2Hb6pOss/zRSW_pCPg/RRkSt4BNr/SFhCXwwv3/hK2_t8nis",
+   "bp": "Tablet",
+   "desktop": "[[\"See drop cable and connectors\"]]",
+   "other": "[[\"See drop cable and connectors\"]]"
+  },
+  {
+   "route": "/fiber-optic-cable-catalog",
+   "key": "/P2Hb6pOss/zRSW_pCPg/RRkSt4BNr/SFhCXwwv3/hK2_t8nis",
+   "bp": "Phone",
+   "desktop": "[[\"See drop cable and connectors\"]]",
+   "other": "[[\"\\n\"]]"
+  },
+  {
+   "route": "/fiber-optic-cable-catalog",
+   "key": "/P2Hb6pOss/zRSW_pCPg/rGHhzlJTL/kXJLPsy72/BmjZX5_1y",
+   "bp": "Tablet",
+   "desktop": "[[\"See drop cable and connectors\"]]",
+   "other": "[[\"See drop cable and connectors\"]]"
+  },
+  {
+   "route": "/fiber-optic-cable-catalog",
+   "key": "/P2Hb6pOss/zRSW_pCPg/rGHhzlJTL/kXJLPsy72/BmjZX5_1y",
+   "bp": "Phone",
+   "desktop": "[[\"See drop cable and connectors\"]]",
+   "other": "[[\"See all connectors and hardware\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/SVZP84NR2/r2PV2VoDX/GY9BqxEfw",
+   "bp": "Desktop 2",
+   "desktop": "[[\"2 to 3 weeks (production + air freight)\"]]",
+   "other": "[[\"2 to 3 weeks (production + air freight)\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/SVZP84NR2/r2PV2VoDX/GY9BqxEfw",
+   "bp": "Tablet",
+   "desktop": "[[\"2 to 3 weeks (production + air freight)\"]]",
+   "other": "[[\"2 to 3 weeks (production + air freight)\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/SVZP84NR2/r2PV2VoDX/GY9BqxEfw",
+   "bp": "Phone",
+   "desktop": "[[\"2 to 3 weeks (production + air freight)\"]]",
+   "other": "[[\"Expedited: 2 to 3 weeks (production + air freight)\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/e5Zi3Jqoe/cT3l4KaTQ/svKOcgL9u",
+   "bp": "Desktop 2",
+   "desktop": "[[\"Planned, recurring, forecastable demand\"]]",
+   "other": "[[\"Planned, recurring, forecastable demand\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/e5Zi3Jqoe/cT3l4KaTQ/svKOcgL9u",
+   "bp": "Tablet",
+   "desktop": "[[\"Planned, recurring, forecastable demand\"]]",
+   "other": "[[\"Planned, recurring, forecastable demand\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/e5Zi3Jqoe/cT3l4KaTQ/svKOcgL9u",
+   "bp": "Phone",
+   "desktop": "[[\"Planned, recurring, forecastable demand\"]]",
+   "other": "[[\"Standard: Planned, recurring, forecastable demand\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/e5Zi3Jqoe/zJRg6NDD0/s5t4PkQcW",
+   "bp": "Desktop 2",
+   "desktop": "[[\"Timeline-critical deployments with fixed deadlines\"]]",
+   "other": "[[\"Timeline-critical deployments with fixed deadlines\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/e5Zi3Jqoe/zJRg6NDD0/s5t4PkQcW",
+   "bp": "Tablet",
+   "desktop": "[[\"Timeline-critical deployments with fixed deadlines\"]]",
+   "other": "[[\"Timeline-critical deployments with fixed deadlines\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/e5Zi3Jqoe/zJRg6NDD0/s5t4PkQcW",
+   "bp": "Phone",
+   "desktop": "[[\"Timeline-critical deployments with fixed deadlines\"]]",
+   "other": "[[\"Expedited: Timeline-critical deployments with fixed deadlines\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/WR8hEXFNz/nn66ddqqV/y4GEZBlJp",
+   "bp": "Desktop 2",
+   "desktop": "[[\"Build-to-order, no US stock\"]]",
+   "other": "[[\"Build-to-order, no US stock\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/WR8hEXFNz/nn66ddqqV/y4GEZBlJp",
+   "bp": "Tablet",
+   "desktop": "[[\"Build-to-order, no US stock\"]]",
+   "other": "[[\"Build-to-order, no US stock\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/WR8hEXFNz/nn66ddqqV/y4GEZBlJp",
+   "bp": "Phone",
+   "desktop": "[[\"Build-to-order, no US stock\"]]",
+   "other": "[[\"Standard: Build-to-order, no US stock\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/WR8hEXFNz/sycudD9f3/ZJiWrtl3I",
+   "bp": "Desktop 2",
+   "desktop": "[[\"Made-to-order, built to your spec\"]]",
+   "other": "[[\"Made-to-order, built to your spec\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/WR8hEXFNz/sycudD9f3/ZJiWrtl3I",
+   "bp": "Tablet",
+   "desktop": "[[\"Made-to-order, built to your spec\"]]",
+   "other": "[[\"Made-to-order, built to your spec\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/WR8hEXFNz/sycudD9f3/ZJiWrtl3I",
+   "bp": "Phone",
+   "desktop": "[[\"Made-to-order, built to your spec\"]]",
+   "other": "[[\"Expedited: Made-to-order, built to your spec\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/vxejSuFEL/kkbt8r02H/Gndp4sbPL",
+   "bp": "Desktop 2",
+   "desktop": "[[\"Standard channel pricing\"]]",
+   "other": "[[\"Standard channel pricing\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/vxejSuFEL/kkbt8r02H/Gndp4sbPL",
+   "bp": "Tablet",
+   "desktop": "[[\"Standard channel pricing\"]]",
+   "other": "[[\"Standard channel pricing\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/vxejSuFEL/kkbt8r02H/Gndp4sbPL",
+   "bp": "Phone",
+   "desktop": "[[\"Standard channel pricing\"]]",
+   "other": "[[\"Standard: Standard channel pricing\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/vxejSuFEL/hW2fOhhyD/FQA6U7nyw",
+   "bp": "Desktop 2",
+   "desktop": "[[\"Premium reflects faster production and air freight\"]]",
+   "other": "[[\"Premium reflects faster production and air freight\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/vxejSuFEL/hW2fOhhyD/FQA6U7nyw",
+   "bp": "Tablet",
+   "desktop": "[[\"Premium reflects faster production and air freight\"]]",
+   "other": "[[\"Premium reflects faster production and air freight\"]]"
+  },
+  {
+   "route": "/fiber-optic-cables",
+   "key": "/e9aX7PI3e/GnAlK6GJh/sNx0GqbyZ/vxejSuFEL/hW2fOhhyD/FQA6U7nyw",
+   "bp": "Phone",
+   "desktop": "[[\"Premium reflects faster production and air freight\"]]",
+   "other": "[[\"Expedited: Premium reflects faster production and air freight\"]]"
+  },
+  {
+   "route": "/vocomai-supply-chain",
+   "key": "/HEEQZvlaF/iHYmhVDqT/OyhG2zuxN/Ib7UUtFPM/aEAQdASmr/Px5JvwKBy",
+   "bp": "Tablet",
+   "desktop": "[[\"Enterprise AI that simplifies complexity, drives measurable results, and fits into the systems you already run.\"],[\"See the rest of the suite: \",\"AI servers\",\", \",\"video security\",\" and \",\"pricing\",\".\"]]",
+   "other": "[[\"See the rest of the suite: \",\"AI servers\",\", \",\"video security\",\" and \",\"pricing\",\".\"]]"
+  },
+  {
+   "route": "/vocomai-supply-chain",
+   "key": "/HEEQZvlaF/iHYmhVDqT/OyhG2zuxN/Ib7UUtFPM/aEAQdASmr/Px5JvwKBy",
+   "bp": "Phone",
+   "desktop": "[[\"Enterprise AI that simplifies complexity, drives measurable results, and fits into the systems you already run.\"],[\"See the rest of the suite: \",\"AI servers\",\", \",\"video security\",\" and \",\"pricing\",\".\"]]",
+   "other": "[[\"See the rest of the suite: \",\"AI servers\",\", \",\"video security\",\" and \",\"pricing\",\".\"]]"
+  }
+ ],
+ "headings": [
+  {
+   "route": "/blog",
+   "text": "We publish what we would want to read ourselves: specific, technical, and grounded in real deployments, not generic advice.",
+   "to": "p"
+  },
+  {
+   "route": "/blog/:Posts",
+   "text": "",
+   "to": "h2"
+  },
+  {
+   "route": "/contact-vocomai",
+   "text": "We’re happy to answer any questions ",
+   "to": "h2"
+  },
+  {
+   "route": "/marketing-alliance",
+   "text": "A network of AI companies working together to accelerate adoption, share opportunities, and grow faster.",
+   "to": "p"
+  },
+  {
+   "route": "/marketing-alliance",
+   "text": "Key Principles ",
+   "to": "h2"
+  },
+  {
+   "route": "/marketing-alliance",
+   "text": "Built for AI Companies",
+   "to": "h2"
+  },
+  {
+   "route": "/vocom-privacy-policy",
+   "text": "Privacy Policy",
+   "to": "h2"
+  },
+  {
+   "route": "/vocomai-consultancy",
+   "text": "Trusted by forward-thinking teams",
+   "to": "h2"
+  },
+  {
+   "route": "/vocomai-consultancy",
+   "text": "Pricing",
+   "to": "h2"
+  },
+  {
+   "route": "/vocomai-vocam",
+   "text": "Up and running in about 10 minutes.",
+   "to": "p"
+  }
+ ]
+}

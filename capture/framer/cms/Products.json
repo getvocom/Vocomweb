@@ -1,0 +1,2343 @@
+{
+ "name": "Products",
+ "slugFieldName": "Slug",
+ "fields": [
+  {
+   "id": "g6g11fGQB",
+   "name": "Name",
+   "type": "string"
+  },
+  {
+   "id": "llF9GrUYm",
+   "name": "Category",
+   "type": "enum"
+  },
+  {
+   "id": "eGZZAahaC",
+   "name": "Codes",
+   "type": "string"
+  },
+  {
+   "id": "giHFGlsi3",
+   "name": "Fiber Counts",
+   "type": "string"
+  },
+  {
+   "id": "uKzg28JyD",
+   "name": "Construction And Rating",
+   "type": "string"
+  },
+  {
+   "id": "skoJps3fx",
+   "name": "Typical Use",
+   "type": "string"
+  },
+  {
+   "id": "uMOB_YZPM",
+   "name": "Description",
+   "type": "string"
+  },
+  {
+   "id": "T4Aw8UPEr",
+   "name": "Image",
+   "type": "image"
+  }
+ ],
+ "items": [
+  {
+   "id": "E_dPSNHbd",
+   "slug": "loose-tube-stranded-dielectric",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Loose tube stranded, dielectric",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Outside Plant Loose Tube Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "GCYFTY, GYFS",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 864F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Gel filled, all-dielectric, G.652D, HDPE",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Duct and direct burial backbone",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Loose tube stranded, dielectric. Supplied under codes GCYFTY, GYFS. Available in 12F to 864F. Construction: Gel filled, all-dielectric, G.652D, HDPE. Typical use: Duct and direct burial backbone.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Loose tube stranded, dielectric fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "MMrVTuT35",
+   "slug": "loose-tube-stranded-armored",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Loose tube stranded, armored",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Outside Plant Loose Tube Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "GYFDTS",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 288F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Steel tape armored, rodent resistant",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Direct burial, high rodent risk",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Loose tube stranded, armored. Supplied under codes GYFDTS. Available in 12F to 288F. Construction: Steel tape armored, rodent resistant. Typical use: Direct burial, high rodent risk.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Loose tube stranded, armored fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "kXtQeliGf",
+   "slug": "central-tube",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Central tube",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Outside Plant Loose Tube Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "GCYXTY",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "2F to 24F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Central loose tube, all-dielectric",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Access and last mile",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Central tube. Supplied under codes GCYXTY. Available in 2F to 24F. Construction: Central loose tube, all-dielectric. Typical use: Access and last mile.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Central tube fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "F7tqI4u9D",
+   "slug": "dry-and-half-dry-loose-tube",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Dry and half-dry loose tube",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Outside Plant Loose Tube Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "GYFS dry",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "24F to 432F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Water blocking tape, gel free",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Faster prep, cold climates",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Dry and half-dry loose tube. Supplied under codes GYFS dry. Available in 24F to 432F. Construction: Water blocking tape, gel free. Typical use: Faster prep, cold climates.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Dry and half-dry loose tube fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "ziK01nKWF",
+   "slug": "rollable-ribbon-outside-plant",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Rollable ribbon, outside plant",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Ribbon and High Fiber Count Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "e-ribbon OSP",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 864F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Flexible ribbon array, dielectric or armored, G.652D",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "High-count OSP, duct-limited routes",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Rollable ribbon fiber optic cable for outside plant, 12F to 864F. Supplied under codes e-ribbon OSP: flexible ribbon array, dielectric or armored, G.652D. Built for high-count OSP and duct-limited routes where a full duct needs more fiber.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Rollable ribbon, outside plant fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "YOqlrt8ru",
+   "slug": "rollable-ribbon-indoor",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Rollable ribbon, indoor",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Ribbon and High Fiber Count Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "e-ribbon ISP",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 864F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Plenum and riser rated",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Data center backbone",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Rollable ribbon fiber optic cable for indoor and data center use, 12F to 864F. Supplied under codes e-ribbon ISP: plenum and riser rated. Built for high fiber count data center backbone runs.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Rollable ribbon, indoor fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "isO2Wg2yL",
+   "slug": "flat-ribbon",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Flat ribbon",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Ribbon and High Fiber Count Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Flat ribbon OSP",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 864F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Rigid twelve-fiber array",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Existing flat ribbon estates",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Flat ribbon. Supplied under codes Flat ribbon OSP. Available in 12F to 864F. Construction: Rigid twelve-fiber array. Typical use: Existing flat ribbon estates.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Flat ribbon fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "EehbhFp2T",
+   "slug": "high-count-dielectric-ribbon",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "High-count dielectric ribbon",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Ribbon and High Fiber Count Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "GYFDXPH",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1728F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "144 ribbons of 12F, 28.4mm OD, 482 kg/km, G.652D",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Hyperscale and metro backbone",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "High-count dielectric ribbon. Supplied under codes GYFDXPH. Available in 1728F. Construction: 144 ribbons of 12F, 28.4mm OD, 482 kg/km, G.652D. Typical use: Hyperscale and metro backbone.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "High-count dielectric ribbon fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "Tf1pMLqgm",
+   "slug": "central-tube-ribbon",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Central tube ribbon",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Ribbon and High Fiber Count Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Central tube ribbon",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 432F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Single central tube, ribbon stack",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Compact high count",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Central tube ribbon. Supplied under codes Central tube ribbon. Available in 12F to 432F. Construction: Single central tube, ribbon stack. Typical use: Compact high count.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Central tube ribbon fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "q4OjXZSgo",
+   "slug": "highest-counts",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Highest counts",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Ribbon and High Fiber Count Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Quoted per route",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "to 3456F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Stranded ribbon on Fujikura glass",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Long-haul and hyperscale",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Highest counts. Supplied under codes Quoted per route. Available in to 3456F. Construction: Stranded ribbon on Fujikura glass. Typical use: Long-haul and hyperscale.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Highest counts fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "GpiDLj01Z",
+   "slug": "air-blown-micro-cable",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Air blown micro cable",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Air Blown Micro Cable, Microduct and Vaults"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Micro cable",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "24F to 288F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Gel filled or dry, all-dielectric, low friction sheath",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Blown routes, existing conduit",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Air blown micro cable. Supplied under codes Micro cable. Available in 24F to 288F. Construction: Gel filled or dry, all-dielectric, low friction sheath. Typical use: Blown routes, existing conduit.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Air blown micro cable fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "rkNlCqp2e",
+   "slug": "hdpe-microduct-single-way",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "HDPE microduct, single way",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Air Blown Micro Cable, Microduct and Vaults"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Microduct",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "n/a",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "5mm to 27mm OD",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Single route placement",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "HDPE microduct, single way. Supplied under codes Microduct. Construction: 5mm to 27mm OD. Typical use: Single route placement.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "HDPE microduct, single way fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "xI032dVij",
+   "slug": "hdpe-microduct-bundle",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "HDPE microduct bundle",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Air Blown Micro Cable, Microduct and Vaults"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "24 way, 25 way",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "n/a",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Outer sheathed bundle, color coded ways",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Multi-route in one bore",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "HDPE microduct bundle. Supplied under codes 24 way, 25 way. Construction: Outer sheathed bundle, color coded ways. Typical use: Multi-route in one bore.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "HDPE microduct bundle fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "niDm0MXJf",
+   "slug": "composite-vault-heavy",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Composite vault, heavy (Tier 15)",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Air Blown Micro Cable, Microduct and Vaults"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "CTC58-4-15",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "n/a",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "26 x 39 external, SCTE-77 Tier 15",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Underground distribution",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Composite vault, heavy. Supplied under codes CTC58-4-15. Construction: 26 x 39 external, SCTE-77 Tier 15. Typical use: Underground distribution.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Composite vault, heavy fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "obPukDtxA",
+   "slug": "composite-vault-heavy-2",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Composite vault, heavy (Tier 22)",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Air Blown Micro Cable, Microduct and Vaults"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "CTC32-4-22",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "n/a",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "22 x 34 external, SCTE-77 Tier 22",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Traffic-rated locations",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Composite vault, heavy. Supplied under codes CTC32-4-22. Construction: 22 x 34 external, SCTE-77 Tier 22. Typical use: Traffic-rated locations.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Composite vault, heavy fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "eS80WTUaM",
+   "slug": "composite-surface-box",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Composite surface box",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Air Blown Micro Cable, Microduct and Vaults"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "CTC430",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "n/a",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "14 inch, light duty, round lid",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Surface access points",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Composite surface box. Supplied under codes CTC430. Construction: 14 inch, light duty, round lid. Typical use: Surface access points.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Composite surface box fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "BzszQCfIl",
+   "slug": "adss-all-dielectric",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "ADSS all-dielectric",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Aerial and Self-Supporting Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "ADSS",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 432F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Self-supporting, no metallic element, UV stable",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Long pole spans, near power",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "ADSS all-dielectric. Supplied under codes ADSS. Available in 12F to 432F. Construction: Self-supporting, no metallic element, UV stable. Typical use: Long pole spans, near power.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "ADSS all-dielectric fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "LFvMV9djY",
+   "slug": "figure-8",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Figure 8",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Aerial and Self-Supporting Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Figure 8",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 144F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Integrated messenger",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Short and mid spans",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Figure 8. Supplied under codes Figure 8. Available in 12F to 144F. Construction: Integrated messenger. Typical use: Short and mid spans.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Figure 8 fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "X7oXdyHy1",
+   "slug": "armored-direct-burial",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Armored direct burial",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Aerial and Self-Supporting Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Armored OSP",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 288F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Round armor, rodent resistant, crush rated",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Trenched routes",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Armored direct burial. Supplied under codes Armored OSP. Available in 12F to 288F. Construction: Round armor, rodent resistant, crush rated. Typical use: Trenched routes.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Armored direct burial fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "rzih2bIVa",
+   "slug": "hybrid-fiber-and-copper",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Hybrid fiber and copper",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Aerial and Self-Supporting Cable"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Hybrid FTTA",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "2F plus 2 copper",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Outdoor rated, IP68 terminations",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Tower and antenna sites",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Hybrid fiber and copper. Supplied under codes Hybrid FTTA. Available in 2F plus 2 copper. Construction: Outdoor rated, IP68 terminations. Typical use: Tower and antenna sites.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Hybrid fiber and copper fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "Rg9H_Yjny",
+   "slug": "flat-drop",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Flat drop",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Drop Cable and FTTH"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Flat drop",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F to 12F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "G.657A1, UV stable",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Aerial and duct drops",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Flat drop fiber optic cable for FTTH, 1F to 12F. Supplied under codes Flat drop: G.657A1 bend-insensitive fiber, UV stable jacket for aerial and duct drops. Compatible with OptiTap and OptiTip hardened field connectors.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Flat drop fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "PEVxiGxby",
+   "slug": "flat-drop-with-tracing-wire",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Flat drop with tracing wire",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Drop Cable and FTTH"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Flat drop TW",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F to 12F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Locatable tracing element",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Buried drops",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Flat drop with tracing wire. Supplied under codes Flat drop TW. Available in 1F to 12F. Construction: Locatable tracing element. Typical use: Buried drops.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Flat drop with tracing wire fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "fP_74HUBg",
+   "slug": "armored-indoor-drop",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Armored indoor drop",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Drop Cable and FTTH"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "NSS, SS series",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F to 12F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Spiral armor, rodent and crush protection",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Riser and in-building",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Armored indoor drop. Supplied under codes NSS, SS series. Available in 1F to 12F. Construction: Spiral armor, rodent and crush protection. Typical use: Riser and in-building.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Armored indoor drop fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "EPkHO4bpD",
+   "slug": "mini-cable-plenum",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Mini cable, plenum",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Drop Cable and FTTH"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "GYFXBTC8F",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "8F, 12F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "3.0mm OD, G.657A1, OFNP, 200N tensile",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Plenum-rated in-building",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Mini cable, plenum. Supplied under codes GYFXBTC8F. Available in 8F, 12F. Construction: 3.0mm OD, G.657A1, OFNP, 200N tensile. Typical use: Plenum-rated in-building.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Mini cable, plenum fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "wx5kEddhu",
+   "slug": "low-visibility-fttr",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Low-visibility FTTR",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Drop Cable and FTTH"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "FTTR cable",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F to 2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Bend insensitive, adhesive deployable",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "In-home room to room",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Low-visibility FTTR. Supplied under codes FTTR cable. Available in 1F to 2F. Construction: Bend insensitive, adhesive deployable. Typical use: In-home room to room.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Low-visibility FTTR fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "ntVWhfo69",
+   "slug": "mpo-and-mtp-trunk",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "MPO and MTP trunk",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Data Center and Indoor Connectivity"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "MPO trunk",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 864F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Factory terminated, Type A, B or C polarity",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "MDA and HDA backbone",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "MPO and MTP trunk cable, 12F to 864F, supplied under code MPO trunk. Factory terminated fiber trunk in Type A, B or C polarity for MDA and HDA backbone runs. Standard lead time 6 to 8 weeks, up to 10 weeks for custom builds.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "MPO and MTP trunk fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "enIRJvBD0",
+   "slug": "mpo-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "MPO patch cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Data Center and Indoor Connectivity"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "MPO patch",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 48F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Push tab, polarity changeable, RoHS, GR-326",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Panel to panel",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "MPO patch cord, also called MPO to MPO patch cord, 12F to 48F, supplied under code MPO patch. Push tab, polarity changeable, RoHS and GR-326, for panel to panel connections. Standard lead time 6 to 8 weeks.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "MPO patch cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "jUB073vX8",
+   "slug": "harness-breakout",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Harness breakout",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Data Center and Indoor Connectivity"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "MPO to LC harness",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "8F to 24F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Factory terminated breakout to duplex LC",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "EDA to equipment",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Harness breakout. Supplied under codes MPO to LC harness. Available in 8F to 24F. Construction: Factory terminated breakout to duplex LC. Typical use: EDA to equipment.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Harness breakout fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "uMQW7PIPi",
+   "slug": "lc-and-sc-patch",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "LC and SC patch",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Data Center and Indoor Connectivity"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "LC, SC duplex",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "OS2, OM3, OM4",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Final rack hop",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "LC and SC patch. Supplied under codes LC, SC duplex. Available in 2F. Construction: OS2, OM3, OM4. Typical use: Final rack hop.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "LC and SC patch fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "LU01AowvZ",
+   "slug": "modular-cassette",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Modular cassette",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Data Center and Indoor Connectivity"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "LC cassette",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "12F to 24F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Single-mode and multimode duplex, push tab",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Panel population",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Modular cassette. Supplied under codes LC cassette. Available in 12F to 24F. Construction: Single-mode and multimode duplex, push tab. Typical use: Panel population.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Modular cassette fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "PkX2jxKQZ",
+   "slug": "optitap-compatible-connector",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "OptiTap compatible connector",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "U-Optic",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "IP68, GR-3120, RoHS, GR-326",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Outdoor field termination",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "OptiTap compatible connector. Supplied under codes U-Optic. Available in 1F. Construction: IP68, GR-3120, RoHS, GR-326. Typical use: Outdoor field termination.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "OptiTap compatible connector fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "YAZ3bbljE",
+   "slug": "sc-shutter-connector",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "SC shutter connector",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "SC shutter",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Dust shutter, indoor rated",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Terminal box termination",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "SC shutter connector. Supplied under codes SC shutter. Available in 1F. Construction: Dust shutter, indoor rated. Typical use: Terminal box termination.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "SC shutter connector fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "Ls0clGlTn",
+   "slug": "in-house-terminal-box",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "In-house terminal box",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "Terminal box",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "1F to 4F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "SC or shutter equipped",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Room and premises entry",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "In-house terminal box. Supplied under codes Terminal box. Available in 1F to 4F. Construction: SC or shutter equipped. Typical use: Room and premises entry.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "In-house terminal box fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "ifYhXPn33",
+   "slug": "waterproof-terminal-box",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Waterproof terminal box",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "IP68 box, LC and MT",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "2F to 12F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "IP68 rated",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Tower and FTTA sites",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Waterproof terminal box. Supplied under codes IP68 box, LC and MT. Available in 2F to 12F. Construction: IP68 rated. Typical use: Tower and FTTA sites.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Waterproof terminal box fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "ifNueoyrV",
+   "slug": "cassette-adapters",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Cassette adapters",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "LC, SC adapter",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "n/a",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Meets or exceeds industry standards",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Panel and cassette build",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Cassette adapters. Supplied under codes LC, SC adapter. Construction: Meets or exceeds industry standards. Typical use: Panel and cassette build.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Cassette adapters fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "QWdTJzA3L",
+   "slug": "sc-fiber-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "SC Fiber Patch Cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "SC-UPC, SC-APC",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "Simplex, 1F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, zirconia ferrule",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Cross-connects and interconnects in backbone, horizontal and work area applications",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "SC Fiber Patch Cord. Supplied under codes SC-UPC, SC-APC. Available in Simplex, 1F. Construction: 2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, zirconia ferrule. Typical use: Cross-connects and interconnects in backbone, horizontal and work area applications.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "SC Fiber Patch Cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "hfm2r4SOV",
+   "slug": "lc-fiber-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "LC Fiber Patch Cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "LC-UPC, LC-APC",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "Simplex or duplex, 1F to 2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "900um pigtail or 2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, 1.25mm ferrule",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "High-density data center, LAN and rack patching",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "LC Fiber Patch Cord. Supplied under codes LC-UPC, LC-APC. Available in Simplex or duplex, 1F to 2F. Construction: 900um pigtail or 2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, 1.25mm ferrule. Typical use: High-density data center, LAN and rack patching.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "LC Fiber Patch Cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "U2xNO0BLc",
+   "slug": "fc-fiber-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "FC Fiber Patch Cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "FC-UPC, FC-APC",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "Simplex or duplex, 1F to 2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "0.9mm pigtail or 2.0mm/3.0mm jacket, OFNR rated, UL listed, screw-type coupling",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "CATV, active device termination and FTTX",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "FC Fiber Patch Cord. Supplied under codes FC-UPC, FC-APC. Available in Simplex or duplex, 1F to 2F. Construction: 0.9mm pigtail or 2.0mm/3.0mm jacket, OFNR rated, UL listed, screw-type coupling. Typical use: CATV, active device termination and FTTX.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "FC Fiber Patch Cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "KsI_m3kcF",
+   "slug": "st-fiber-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "ST Fiber Patch Cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "ST-UPC",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "Simplex or duplex, 1F to 2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "0.9mm pigtail or 2.0mm/3.0mm jacket, OFNR rated, UL listed, bayonet mount",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "LANs, public networks and storage area networks",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "ST fiber patch cord and ST fiber patch cable, simplex or duplex, 1F to 2F. Supplied under codes ST-UPC with a 0.9mm pigtail or 2.0mm/3.0mm jacket, OFNR rated, UL listed, bayonet mount connector. Used in LANs, public networks and storage area networks.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "ST Fiber Patch Cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "pGUI7z5qC",
+   "slug": "mtrj-fiber-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "MTRJ Fiber Patch Cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "MTRJ",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "Duplex, 2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "2.0mm/3.0mm jacket, OFNR rated, UL listed, 1.25mm dual-fiber ferrule",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Small form factor LAN and fiber-to-the-desk applications",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "MTRJ Fiber Patch Cord. Supplied under codes MTRJ. Available in Duplex, 2F. Construction: 2.0mm/3.0mm jacket, OFNR rated, UL listed, 1.25mm dual-fiber ferrule. Typical use: Small form factor LAN and fiber-to-the-desk applications.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "MTRJ Fiber Patch Cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "mtGeXa3Mz",
+   "slug": "lc-uniboot-and-lc-extractor-micro-cable",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "LC Uniboot and LC Extractor Micro Cable",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "LC-UNIBOOT, LC-EXTRACTOR",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "2F to 144F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "1.6mm dualan cable, OFNR or LSZH jacket, MM OM3/OM4/OM5 or SM OS2 G.657.A, factory terminated",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "High-density MDA and EDA polarity-switchable patching",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "LC Uniboot and LC Extractor Micro Cable. Supplied under codes LC-UNIBOOT, LC-EXTRACTOR. Available in 2F to 144F. Construction: 1.6mm dualan cable, OFNR or LSZH jacket, MM OM3/OM4/OM5 or SM OS2 G.657.A, factory terminated. Typical use: High-density MDA and EDA polarity-switchable patching.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "LC Uniboot and LC Extractor Micro Cable fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "imyoby4Tl",
+   "slug": "armored-fiber-patch-cord",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Armored Fiber Patch Cord",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "ARM-2C",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "Duplex, 2F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "3.2mm OD, spiral metal armor, OFNR or LSZH jacket, rodent resistant",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Rugged indoor runs exposed to rodent or crush risk",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Armored Fiber Patch Cord. Supplied under codes ARM-2C. Available in Duplex, 2F. Construction: 3.2mm OD, spiral metal armor, OFNR or LSZH jacket, rodent resistant. Typical use: Rugged indoor runs exposed to rodent or crush risk.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Armored Fiber Patch Cord fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "rTVadp46Z",
+   "slug": "mtp-mpo-array-cable",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "MTP/MPO Array Cable",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "MTP-8F, MTP-12F, MTP-16F, MTP-24F, MTP-32F",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "8F to 32F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Single-jacket round cable, OFNR or LSZH, MM OM3/OM4/OM5 or SM OS2 G.657.A, polarity A, B or C",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "High-density cabinet and rack patching",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "MTP/MPO Array Cable. Supplied under codes MTP-8F, MTP-12F, MTP-16F, MTP-24F, MTP-32F. Available in 8F to 32F. Construction: Single-jacket round cable, OFNR or LSZH, MM OM3/OM4/OM5 or SM OS2 G.657.A, polarity A, B or C. Typical use: High-density cabinet and rack patching.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "MTP/MPO Array Cable fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "RYUxIDzor",
+   "slug": "mtp-mpo-trunk-cable",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "MTP/MPO Trunk Cable",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "MTP-TRUNK-8 to MTP-TRUNK-144",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "8F to 144F",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Double-jacketed backbone cable, OFNP available, pulling eye option, factory terminated and tested",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Main, horizontal and zone distribution backbone runs",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "MTP and MPO trunk cable, 8F to 144F, supplied under codes MTP-TRUNK-8 to MTP-TRUNK-144. Double-jacketed fiber optic trunk, factory terminated and tested, with OFNP and pulling eye options, for main, horizontal and zone distribution backbone runs. Standard lead time 6 to 8 weeks.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "MTP/MPO Trunk Cable fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  },
+  {
+   "id": "FxvChSNIg",
+   "slug": "fiber-adapters",
+   "draft": false,
+   "fieldData": {
+    "g6g11fGQB": {
+     "type": "string",
+     "value": "Fiber Adapters",
+     "valueByLocale": {}
+    },
+    "llF9GrUYm": {
+     "type": "enum",
+     "value": "Connectors, Terminal Boxes and Hardware"
+    },
+    "eGZZAahaC": {
+     "type": "string",
+     "value": "ADPT-SC, ADPT-LC, ADPT-FC, ADPT-ST, ADPT-MTRJ",
+     "valueByLocale": {}
+    },
+    "giHFGlsi3": {
+     "type": "string",
+     "value": "N/A",
+     "valueByLocale": {}
+    },
+    "uKzg28JyD": {
+     "type": "string",
+     "value": "Zirconia ceramic alignment sleeve, less than 0.2dB insertion loss, UL listed housing",
+     "valueByLocale": {}
+    },
+    "skoJps3fx": {
+     "type": "string",
+     "value": "Ferrule-to-ferrule coupling between two patch cords",
+     "valueByLocale": {}
+    },
+    "uMOB_YZPM": {
+     "type": "string",
+     "value": "Fiber Adapters. Supplied under codes ADPT-SC, ADPT-LC, ADPT-FC, ADPT-ST, ADPT-MTRJ. Available in N/A. Construction: Zirconia ceramic alignment sleeve, less than 0.2dB insertion loss, UL listed housing. Typical use: Ferrule-to-ferrule coupling between two patch cords.",
+     "valueByLocale": {}
+    },
+    "T4Aw8UPEr": {
+     "type": "image",
+     "value": {
+      "id": "wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "url": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png",
+      "thumbnailUrl": "https://framerusercontent.com/images/wY6HJlyDp6YpLO5NRFeaLbK976w.png?scale-down-to=512",
+      "altText": "Fiber Adapters fiber optic cable",
+      "resolution": "auto"
+     }
+    }
+   }
+  }
+ ]
+}

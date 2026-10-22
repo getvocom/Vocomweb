@@ -1,0 +1,188 @@
+{
+ "uMgix3Bbw": {
+  "route": "/blog",
+  "name": null,
+  "Desktop": {
+   "autoRows": "600px",
+   "templateRows": "auto"
+  },
+  "Tablet": {
+   "autoRows": "450px",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "300px",
+   "templateRows": "auto"
+  }
+ },
+ "cDywdqTnp": {
+  "route": "/fiber-optic-cable-catalog",
+  "name": "Hero Content",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "424.672px"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "454.125px"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "qtCT6mwkS": {
+  "route": "/fiber-optic-cable-catalog",
+  "name": "Jump Links",
+  "Desktop": {
+   "autoRows": "min-content",
+   "templateRows": "100px"
+  },
+  "Tablet": {
+   "autoRows": "min-content",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "min-content",
+   "templateRows": "auto"
+  }
+ },
+ "oB5igNhOA": {
+  "route": "/fiber-optic-cable-catalog",
+  "name": "Sourcing Reason Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "165px"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "Ny0si9Pb6": {
+  "route": "/fiber-optic-cables",
+  "name": "Hero Content",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "584.625px"
+  },
+  "Tablet": null,
+  "Phone": null
+ },
+ "ML6CIrUAo": {
+  "route": "/fiber-optic-cables",
+  "name": "Category Tile Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "140.406px"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "G6NFqJBp8": {
+  "route": "/fiber-optic-cables",
+  "name": "Project Blocks",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "272.266px"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "EU0Xh8jlm": {
+  "route": "/fiber-optic-cables",
+  "name": "Sourcing Reason Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "165px"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "sxxIdCBMb": {
+  "route": "/",
+  "name": "Product Tile Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "mZR_TPspw": {
+  "route": "/products/central-tube",
+  "name": "Spec Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "D4UxDxRbW": {
+  "route": "/search",
+  "name": "Results Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ },
+ "DvNK6Xs2b": {
+  "route": "/search",
+  "name": "Results Grid",
+  "Desktop": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Tablet": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  },
+  "Phone": {
+   "autoRows": "minmax(0px, 1fr)",
+   "templateRows": "auto"
+  }
+ }
+}

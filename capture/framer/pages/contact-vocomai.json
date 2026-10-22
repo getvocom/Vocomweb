@@ -1,0 +1,5014 @@
+{
+ "type": "WebPageNode",
+ "id": "ZrKrxqS2c",
+ "name": "/contact-vocomai",
+ "variables": [],
+ "$parentId": "sn7IXw6X9",
+ "$breakpoints": [
+  {
+   "id": "FXbGiATg9",
+   "name": "Desktop",
+   "mediaQueryRange": "(min-width: 1200px)"
+  },
+  {
+   "id": "IgrH9Cew1",
+   "name": "Tablet",
+   "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "id": "N_TwvUlTm",
+   "name": "Phone",
+   "mediaQueryRange": "(max-width: 809.98px)"
+  }
+ ],
+ "attributes": {
+  "metadata": {
+   "title": "Request a Fiber Cable Quote | Contact Vocom",
+   "description": "Talk to Vocom AI experts about AI tools for logistics, operations, and security that help your enterprise save time, cut costs, and boost efficiency.",
+   "socialImage": "https://framerusercontent.com/images/OklhP163funuHA8B9Sp76WVSYqk.jpeg",
+   "noIndexSite": false
+  },
+  "path": "/contact-vocomai"
+ },
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "FXbGiATg9",
+   "$isPrimary": true,
+   "$mediaQuery": {
+    "range": "(min-width: 1200px)",
+    "name": "Desktop"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "BgMLZdRn1",
+     "component": "viLm3CAkV",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "PRvd5mD1z",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "clip",
+      "padding": "32px 16px 0px 16px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1200px",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "gyjeI3I_e",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "40px",
+        "overflow": "clip",
+        "position": "relative",
+        "radius": "26px",
+        "width": "1fr",
+        "height": "1fr",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "content",
+         "id": "HwWxq61MH",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": true,
+          "gap": "10px 30px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "zIndex": "3"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "vxuGtYlU4",
+           "attributes": {
+            "inlineCodeStylePreset": "Inline Code",
+            "linkStylePreset": "Link",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "64px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1.05em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "ss03": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(0, 0, 0)",
+            "zIndex": "3"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:vxuGtYlU4:0",
+             "attributes": {
+              "tag": "h1"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:vxuGtYlU4:0:0",
+               "attributes": {
+                "text": "Contact our sales team"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "I03GPGzYQ",
+           "attributes": {
+            "inlineCodeStylePreset": "Inline Code",
+            "linkStylePreset": "Link",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 400
+            },
+            "fontWeight": 400,
+            "fontSize": "18px",
+            "letterSpacing": "-0.04em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "ss03": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(102, 102, 102)",
+            "zIndex": "4"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:I03GPGzYQ:0",
+             "attributes": {
+              "tag": "h1"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:I03GPGzYQ:0:0",
+               "attributes": {
+                "text": "We’re happy to answer any questions "
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "name": "Features",
+           "id": "eGYvdzkSC",
+           "attributes": {
+            "htmlTag": "div",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "16px",
+            "overflow": "hidden",
+            "padding": "16px 0px 0px 0px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "ComponentInstanceNode",
+             "id": "toC9o1x5D",
+             "component": "HQwGbzPSm",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Purple",
+              "$control__filledText": "Speed",
+              "$control__text": "Schedule a demo",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto"
+             }
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "YPVhECK8j",
+             "component": "HQwGbzPSm",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Purple",
+              "$control__filledText": "Speed",
+              "$control__text": "Get pricing information",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto"
+             }
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "cd7LJFurJ",
+             "component": "HQwGbzPSm",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Purple",
+              "$control__filledText": "Speed",
+              "$control__text": "Explore use cases for your team",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "ZAK0G3HDW",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "overflow": "clip",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "name": "text",
+           "id": "BItpObHWf",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "16px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "1"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "DYQlltKZx",
+             "attributes": {
+              "border": "3px dotted var(--token-c630804f-5e50-4893-b680-27b64d932590)",
+              "layout": "null",
+              "opacity": "0.5",
+              "overflow": "hidden",
+              "position": "relative",
+              "radius": "8px",
+              "width": "1fr",
+              "height": "2px"
+             }
+            },
+            {
+             "type": "RichTextNode",
+             "id": "TIXwqGJUv",
+             "attributes": {
+              "inlineCodeStylePreset": "Inline Code",
+              "linkStylePreset": "Link",
+              "position": "relative",
+              "width": "1.5fr",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontSize": "16px",
+              "letterSpacing": "0em",
+              "lineHeight": "150%",
+              "textAlignment": "center",
+              "textDecorationStyle": "solid",
+              "textColor": "rgb(0, 0, 0)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:TIXwqGJUv:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:TIXwqGJUv:0:0",
+                 "attributes": {
+                  "text": "Working with renowned, trusted, and leading enterprises"
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fIYIzWttZ",
+             "attributes": {
+              "border": "3px dotted var(--token-c630804f-5e50-4893-b680-27b64d932590)",
+              "layout": "null",
+              "opacity": "0.5",
+              "overflow": "hidden",
+              "position": "relative",
+              "radius": "8px",
+              "width": "1fr",
+              "height": "2px"
+             }
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "name": "logos",
+           "id": "jOPs9EMuC",
+           "attributes": {
+            "htmlTag": "div",
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": true,
+            "gap": "54px",
+            "opacity": "0.9",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "554px",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "jxdYPbB8p",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/GsiDHbnQROE9zx5JDatZkECu1NM.svg",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "28.93617021276596px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1
+             }
+            },
+            {
+             "type": "FrameNode",
+             "id": "t7AsEaifp",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/pVL0nRXxwG3hF5g4bFBNz5LrKE.png",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "56.063829787234035px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1.94
+             }
+            },
+            {
+             "type": "FrameNode",
+             "id": "g4VJQkiIR",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/xZcjKmew0EQg7g507r3SXeKEj0.svg",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "48.829787234042556px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1.69
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "bizlink",
+             "id": "v1xj4Aidp",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/T47ORQgP7tP8ZvfWUCl9PA1WQM.png",
+              "altText": "BizLink logo",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "180px",
+              "height": "40px"
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "ats",
+             "id": "Xfv2492Iq",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/zVQD3XfDVxWTMxfNZ24mkF56U.png",
+              "altText": "American Tech Supply logo",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "273px",
+              "height": "40px"
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "wesco",
+             "id": "Pieebye5e",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/Z4c0iBvg3KEk6l9xTTpz5Af2iw.png",
+              "layout": "null",
+              "position": "relative",
+              "width": "66px",
+              "height": "42px"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "tok3GNI32",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "end",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "16px",
+        "overflow": "hidden",
+        "position": "relative",
+        "radius": "16px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "620px",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Form",
+         "id": "mp372E_OZ",
+         "attributes": {
+          "fill": "var(--token-608f0c3d-993e-47f7-bb8b-121bd21ad0f0)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "overflow": "hidden",
+          "padding": "16px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "400px",
+          "height": "auto",
+          "maxWidth": "400px",
+          "zIndex": "9"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "id": "Jpezy3EDW",
+           "attributes": {
+            "fill": "rgba(255,255,255,1)",
+            "formSubmitButtonId": "YOg0XFQDn",
+            "formSubmitTrackingId": "form-submission",
+            "htmlTag": "form",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "gap": "20px",
+            "overflow": "hidden",
+            "padding": "20px",
+            "position": "relative",
+            "radius": "16px",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "9"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "bZfY9JzVh",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "tk9WcVKvl",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:tk9WcVKvl:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:tk9WcVKvl:0:0",
+                   "attributes": {
+                    "text": "Name"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "ECLa8xo7A",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Name",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Name",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "Sl8K5xdbw",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "V236B6MYY",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:V236B6MYY:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:V236B6MYY:0:0",
+                   "attributes": {
+                    "text": "Email"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "wSb425prw",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Email",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Email",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "email",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "r8MNDTAR_",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "64px",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "YHo0G78l5",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:YHo0G78l5:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:YHo0G78l5:0:0",
+                   "attributes": {
+                    "text": "Company Name"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "ZWAJSd6G_",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Company ",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Company ",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "textarea",
+                "formTextAreaResizable": "false",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "minHeight": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "aaDA4eHht",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "328px",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "S9lKZ4G_T",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:S9lKZ4G_T:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:S9lKZ4G_T:0:0",
+                   "attributes": {
+                    "text": "Company Size"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "gG4lMB6Xl",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Company Size",
+                "formInputRequired": "true",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "1-50",
+                  "title": "1-50"
+                 },
+                 {
+                  "type": "option",
+                  "value": "250-500",
+                  "title": "250-500"
+                 },
+                 {
+                  "type": "option",
+                  "value": "500-1000",
+                  "title": "500-1000"
+                 },
+                 {
+                  "type": "option",
+                  "value": "1000+",
+                  "title": "1000+"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "OldGQHgxg",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "rl6L7WKXl",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:rl6L7WKXl:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:rl6L7WKXl:0:0",
+                   "attributes": {
+                    "text": "Use case "
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "dJ53EQvF5",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Use Case",
+                "formInputRequired": "true",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Fiber Optic",
+                  "title": "Fiber Optic"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Consultancy",
+                  "title": "Consultancy"
+                 },
+                 {
+                  "type": "option",
+                  "value": "RenOS",
+                  "title": "RenOS"
+                 },
+                 {
+                  "type": "option",
+                  "value": "AI Server Rental ",
+                  "title": "AI Server Rental "
+                 },
+                 {
+                  "type": "option",
+                  "value": "Custom Solution",
+                  "title": "Custom Solution"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Other",
+                  "title": "Other"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "f0Cdxebt_",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "co2vjqpO7",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:co2vjqpO7:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:co2vjqpO7:0:0",
+                   "attributes": {
+                    "text": "I am a"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "OYmbc4bgy",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "I Am A",
+                "formInputRequired": "false",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Distributor or reseller",
+                  "title": "Distributor or reseller"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Installation contractor",
+                  "title": "Installation contractor"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Carrier or ISP",
+                  "title": "Carrier or ISP"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Data center builder or operator",
+                  "title": "Data center builder or operator"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Referral partner",
+                  "title": "Referral partner"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Other",
+                  "title": "Other"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "Lb76siuZi",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "j6F3aTpSI",
+               "attributes": {
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:j6F3aTpSI:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:j6F3aTpSI:0:0",
+                   "attributes": {
+                    "text": "Message"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "YeEWP3GyO",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Message",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Tell us about your project. For fiber, include fiber count, type, rating, footage and needed-by date.",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "textarea",
+                "formTextAreaResizable": "true",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "100px",
+                "minHeight": "100px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "Fgb_1wUGl",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "CP3uTBT32",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Website",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "BSp3q4Aa1",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "F3rB5u2re",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Phone Number",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "Epq5olKEq",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "mFucmWoBe",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Fax",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "b6BdLCJ42",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "LjG3MAjcn",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Address",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "YOg0XFQDn",
+             "component": "jkYxzsOvkjBGfvaxGMJu",
+             "$componentDisplayName": "Button 5",
+             "attributes": {
+              "$control__variant": "ttDmxAqzw",
+              "formButtonSuccessVariant": "KUtv4icvY",
+              "formButtonPendingVariant": "p7GyE5H72",
+              "formButtonErrorVariant": "M1Qxggug9",
+              "formButtonIncompleteVariant": "HklTQ0dlG",
+              "position": "relative",
+              "width": "1fr",
+              "height": "40px",
+              "zIndex": "9"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "f3c_qI87l",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "20.53%",
+      "constraintsLocked": false,
+      "width": "1200px",
+      "height": "479px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "UsD1LjoYp",
+     "component": "gZoBdp3Uw",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "IgrH9Cew1",
+   "$isReplica": true,
+   "$originalId": "FXbGiATg9",
+   "$mediaQuery": {
+    "range": "(min-width: 810px) and (max-width: 1199.98px)",
+    "name": "Tablet"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "1300px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "IgrH9Cew1BgMLZdRn1",
+     "component": "viLm3CAkV",
+     "$replicaId": "IgrH9Cew1",
+     "$originalId": "BgMLZdRn1",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "767px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "IgrH9Cew1PRvd5mD1z",
+     "$replicaId": "IgrH9Cew1",
+     "$originalId": "PRvd5mD1z",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "50px",
+      "overflow": "clip",
+      "padding": "48px 16px 0px 16px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1200px",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "IgrH9Cew1gyjeI3I_e",
+       "$replicaId": "IgrH9Cew1",
+       "$originalId": "gyjeI3I_e",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "40px",
+        "overflow": "clip",
+        "position": "relative",
+        "radius": "26px",
+        "width": "1fr",
+        "height": "auto",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "content",
+         "id": "IgrH9Cew1HwWxq61MH",
+         "$replicaId": "IgrH9Cew1",
+         "$originalId": "HwWxq61MH",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": true,
+          "gap": "10px 30px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "zIndex": "3"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "IgrH9Cew1vxuGtYlU4",
+           "$replicaId": "IgrH9Cew1",
+           "$originalId": "vxuGtYlU4",
+           "attributes": {
+            "inlineCodeStylePreset": "Inline Code",
+            "linkStylePreset": "Link",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "64px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1.05em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "ss03": "on"
+            },
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(0, 0, 0)",
+            "zIndex": "3"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:IgrH9Cew1vxuGtYlU4:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:IgrH9Cew1vxuGtYlU4:0:0",
+               "attributes": {
+                "text": "Contact our sales team"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "IgrH9Cew1I03GPGzYQ",
+           "$replicaId": "IgrH9Cew1",
+           "$originalId": "I03GPGzYQ",
+           "attributes": {
+            "inlineCodeStylePreset": "Inline Code",
+            "linkStylePreset": "Link",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "27px",
+            "letterSpacing": "-0.04em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "ss03": "on"
+            },
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(153, 153, 153)",
+            "zIndex": "4"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:IgrH9Cew1I03GPGzYQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:IgrH9Cew1I03GPGzYQ:0:0",
+               "attributes": {
+                "text": "We’re happy to answer any questions "
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "name": "Features",
+           "id": "IgrH9Cew1eGYvdzkSC",
+           "$replicaId": "IgrH9Cew1",
+           "$originalId": "eGYvdzkSC",
+           "attributes": {
+            "htmlTag": "div",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "16px",
+            "overflow": "hidden",
+            "padding": "16px 0px 0px 0px",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "ComponentInstanceNode",
+             "id": "IgrH9Cew1toC9o1x5D",
+             "component": "HQwGbzPSm",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "toC9o1x5D",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Purple",
+              "$control__filledText": "Speed",
+              "$control__text": "Schedule a demo",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "IgrH9Cew1YPVhECK8j",
+             "component": "HQwGbzPSm",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "YPVhECK8j",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Purple",
+              "$control__filledText": "Speed",
+              "$control__text": "Get pricing information",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "IgrH9Cew1cd7LJFurJ",
+             "component": "HQwGbzPSm",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "cd7LJFurJ",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Purple",
+              "$control__filledText": "Speed",
+              "$control__text": "Explore use cases for your team",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "IgrH9Cew1ZAK0G3HDW",
+         "$replicaId": "IgrH9Cew1",
+         "$originalId": "ZAK0G3HDW",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "overflow": "clip",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "name": "text",
+           "id": "IgrH9Cew1BItpObHWf",
+           "$replicaId": "IgrH9Cew1",
+           "$originalId": "BItpObHWf",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "16px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "1"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1DYQlltKZx",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "DYQlltKZx",
+             "attributes": {
+              "border": "3px dotted var(--token-c630804f-5e50-4893-b680-27b64d932590)",
+              "layout": "null",
+              "opacity": "0.5",
+              "overflow": "hidden",
+              "position": "relative",
+              "radius": "8px",
+              "width": "1fr",
+              "height": "2px"
+             }
+            },
+            {
+             "type": "RichTextNode",
+             "id": "IgrH9Cew1TIXwqGJUv",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "TIXwqGJUv",
+             "attributes": {
+              "inlineCodeStylePreset": "Inline Code",
+              "linkStylePreset": "Link",
+              "position": "relative",
+              "width": "1.5fr",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontSize": "16px",
+              "letterSpacing": "0em",
+              "lineHeight": "150%",
+              "textAlignment": "center",
+              "textDecorationStyle": "solid",
+              "textColor": "rgb(0, 0, 0)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:IgrH9Cew1TIXwqGJUv:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:IgrH9Cew1TIXwqGJUv:0:0",
+                 "attributes": {
+                  "text": "Working with renowned, trusted, and leading enterprises"
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1fIYIzWttZ",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "fIYIzWttZ",
+             "attributes": {
+              "border": "3px dotted var(--token-c630804f-5e50-4893-b680-27b64d932590)",
+              "layout": "null",
+              "opacity": "0.5",
+              "overflow": "hidden",
+              "position": "relative",
+              "radius": "8px",
+              "width": "1fr",
+              "height": "2px"
+             }
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "name": "logos",
+           "id": "IgrH9Cew1jOPs9EMuC",
+           "$replicaId": "IgrH9Cew1",
+           "$originalId": "jOPs9EMuC",
+           "attributes": {
+            "htmlTag": "div",
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": true,
+            "gap": "54px",
+            "opacity": "0.9",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "554px",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1jxdYPbB8p",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "jxdYPbB8p",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/GsiDHbnQROE9zx5JDatZkECu1NM.svg",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "28.93617021276596px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1
+             }
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1t7AsEaifp",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "t7AsEaifp",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/pVL0nRXxwG3hF5g4bFBNz5LrKE.png",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "56.063829787234035px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1.94
+             }
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1g4VJQkiIR",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "g4VJQkiIR",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/xZcjKmew0EQg7g507r3SXeKEj0.svg",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "48.829787234042556px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1.69
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "bizlink",
+             "id": "IgrH9Cew1v1xj4Aidp",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "v1xj4Aidp",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/T47ORQgP7tP8ZvfWUCl9PA1WQM.png",
+              "altText": "BizLink logo",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "180px",
+              "height": "40px"
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "ats",
+             "id": "IgrH9Cew1Xfv2492Iq",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "Xfv2492Iq",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/zVQD3XfDVxWTMxfNZ24mkF56U.png",
+              "altText": "American Tech Supply logo",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "273px",
+              "height": "40px"
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "wesco",
+             "id": "IgrH9Cew1Pieebye5e",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "Pieebye5e",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/Z4c0iBvg3KEk6l9xTTpz5Af2iw.png",
+              "layout": "null",
+              "position": "relative",
+              "width": "66px",
+              "height": "42px"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "IgrH9Cew1tok3GNI32",
+       "$replicaId": "IgrH9Cew1",
+       "$originalId": "tok3GNI32",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "16px",
+        "overflow": "hidden",
+        "position": "relative",
+        "radius": "16px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "620px",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Form",
+         "id": "IgrH9Cew1mp372E_OZ",
+         "$replicaId": "IgrH9Cew1",
+         "$originalId": "mp372E_OZ",
+         "attributes": {
+          "fill": "var(--token-608f0c3d-993e-47f7-bb8b-121bd21ad0f0)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "overflow": "hidden",
+          "padding": "16px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "400px",
+          "height": "auto",
+          "maxWidth": "400px",
+          "zIndex": "9"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "id": "IgrH9Cew1Jpezy3EDW",
+           "$replicaId": "IgrH9Cew1",
+           "$originalId": "Jpezy3EDW",
+           "attributes": {
+            "fill": "rgba(255,255,255,1)",
+            "formSubmitButtonId": "YOg0XFQDn",
+            "formSubmitTrackingId": "form-submission",
+            "htmlTag": "form",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "gap": "20px",
+            "overflow": "hidden",
+            "padding": "20px",
+            "position": "relative",
+            "radius": "16px",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "9"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1bZfY9JzVh",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "bZfY9JzVh",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1tk9WcVKvl",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "tk9WcVKvl",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1tk9WcVKvl:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1tk9WcVKvl:0:0",
+                   "attributes": {
+                    "text": "Name"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1ECLa8xo7A",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "ECLa8xo7A",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Name",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Name",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1Sl8K5xdbw",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "Sl8K5xdbw",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1V236B6MYY",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "V236B6MYY",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1V236B6MYY:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1V236B6MYY:0:0",
+                   "attributes": {
+                    "text": "Email"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1wSb425prw",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "wSb425prw",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Email",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Email",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "email",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1r8MNDTAR_",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "r8MNDTAR_",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "64px",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1YHo0G78l5",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "YHo0G78l5",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1YHo0G78l5:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1YHo0G78l5:0:0",
+                   "attributes": {
+                    "text": "Company Name"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1ZWAJSd6G_",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "ZWAJSd6G_",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Company ",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Company ",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "textarea",
+                "formTextAreaResizable": "false",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "minHeight": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1aaDA4eHht",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "aaDA4eHht",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "328px",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1S9lKZ4G_T",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "S9lKZ4G_T",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1S9lKZ4G_T:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1S9lKZ4G_T:0:0",
+                   "attributes": {
+                    "text": "Company Size"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "IgrH9Cew1gG4lMB6Xl",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "gG4lMB6Xl",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Company Size",
+                "formInputRequired": "true",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "1-50",
+                  "title": "1-50"
+                 },
+                 {
+                  "type": "option",
+                  "value": "250-500",
+                  "title": "250-500"
+                 },
+                 {
+                  "type": "option",
+                  "value": "500-1000",
+                  "title": "500-1000"
+                 },
+                 {
+                  "type": "option",
+                  "value": "1000+",
+                  "title": "1000+"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1OldGQHgxg",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "OldGQHgxg",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1rl6L7WKXl",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "rl6L7WKXl",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1rl6L7WKXl:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1rl6L7WKXl:0:0",
+                   "attributes": {
+                    "text": "Use case "
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "IgrH9Cew1dJ53EQvF5",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "dJ53EQvF5",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Use Case",
+                "formInputRequired": "true",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Fiber Optic",
+                  "title": "Fiber Optic"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Consultancy",
+                  "title": "Consultancy"
+                 },
+                 {
+                  "type": "option",
+                  "value": "RenOS",
+                  "title": "RenOS"
+                 },
+                 {
+                  "type": "option",
+                  "value": "AI Server Rental ",
+                  "title": "AI Server Rental "
+                 },
+                 {
+                  "type": "option",
+                  "value": "Custom Solution",
+                  "title": "Custom Solution"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Other",
+                  "title": "Other"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1f0Cdxebt_",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "f0Cdxebt_",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1co2vjqpO7",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "co2vjqpO7",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1co2vjqpO7:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1co2vjqpO7:0:0",
+                   "attributes": {
+                    "text": "I am a"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "IgrH9Cew1OYmbc4bgy",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "OYmbc4bgy",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "I Am A",
+                "formInputRequired": "false",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Distributor or reseller",
+                  "title": "Distributor or reseller"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Installation contractor",
+                  "title": "Installation contractor"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Carrier or ISP",
+                  "title": "Carrier or ISP"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Data center builder or operator",
+                  "title": "Data center builder or operator"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Referral partner",
+                  "title": "Referral partner"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Other",
+                  "title": "Other"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1Lb76siuZi",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "Lb76siuZi",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "IgrH9Cew1j6F3aTpSI",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "j6F3aTpSI",
+               "attributes": {
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:IgrH9Cew1j6F3aTpSI:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:IgrH9Cew1j6F3aTpSI:0:0",
+                   "attributes": {
+                    "text": "Message"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1YeEWP3GyO",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "YeEWP3GyO",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Message",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Tell us about your project. For fiber, include fiber count, type, rating, footage and needed-by date.",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "textarea",
+                "formTextAreaResizable": "true",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "100px",
+                "minHeight": "100px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1Fgb_1wUGl",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "Fgb_1wUGl",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1CP3uTBT32",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "CP3uTBT32",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Website",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1BSp3q4Aa1",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "BSp3q4Aa1",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1F3rB5u2re",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "F3rB5u2re",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Phone Number",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1Epq5olKEq",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "Epq5olKEq",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1mFucmWoBe",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "mFucmWoBe",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Fax",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "IgrH9Cew1b6BdLCJ42",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "b6BdLCJ42",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "IgrH9Cew1LjG3MAjcn",
+               "$replicaId": "IgrH9Cew1",
+               "$originalId": "LjG3MAjcn",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Address",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "IgrH9Cew1YOg0XFQDn",
+             "component": "jkYxzsOvkjBGfvaxGMJu",
+             "$replicaId": "IgrH9Cew1",
+             "$originalId": "YOg0XFQDn",
+             "$componentDisplayName": "Button 5",
+             "attributes": {
+              "$control__variant": "ttDmxAqzw",
+              "formButtonSuccessVariant": "KUtv4icvY",
+              "formButtonPendingVariant": "p7GyE5H72",
+              "formButtonErrorVariant": "M1Qxggug9",
+              "formButtonIncompleteVariant": "HklTQ0dlG",
+              "position": "relative",
+              "width": "1fr",
+              "height": "40px",
+              "zIndex": "9"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "IgrH9Cew1f3c_qI87l",
+     "$replicaId": "IgrH9Cew1",
+     "$originalId": "f3c_qI87l",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "11.06%",
+      "constraintsLocked": false,
+      "width": "810px",
+      "height": "386px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "IgrH9Cew1UsD1LjoYp",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "IgrH9Cew1",
+     "$originalId": "UsD1LjoYp",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "N_TwvUlTm",
+   "$isReplica": true,
+   "$originalId": "FXbGiATg9",
+   "$mediaQuery": {
+    "range": "(max-width: 809.98px)",
+    "name": "Phone"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "2210px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "N_TwvUlTmBgMLZdRn1",
+     "component": "viLm3CAkV",
+     "$replicaId": "N_TwvUlTm",
+     "$originalId": "BgMLZdRn1",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "360px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "N_TwvUlTmPRvd5mD1z",
+     "$replicaId": "N_TwvUlTm",
+     "$originalId": "PRvd5mD1z",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "35px",
+      "overflow": "clip",
+      "padding": "48px 16px 0px 16px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "N_TwvUlTmgyjeI3I_e",
+       "$replicaId": "N_TwvUlTm",
+       "$originalId": "gyjeI3I_e",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "40px",
+        "position": "relative",
+        "radius": "26px",
+        "width": "1fr",
+        "height": "auto",
+        "zIndex": "1"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "content",
+         "id": "N_TwvUlTmHwWxq61MH",
+         "$replicaId": "N_TwvUlTm",
+         "$originalId": "HwWxq61MH",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": true,
+          "gap": "10px 30px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "zIndex": "3"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "N_TwvUlTmvxuGtYlU4",
+           "$replicaId": "N_TwvUlTm",
+           "$originalId": "vxuGtYlU4",
+           "attributes": {
+            "inlineCodeStylePreset": "Inline Code",
+            "linkStylePreset": "Link",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "30px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1.05em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "ss03": "on"
+            },
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(0, 0, 0)",
+            "zIndex": "3"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:N_TwvUlTmvxuGtYlU4:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:N_TwvUlTmvxuGtYlU4:0:0",
+               "attributes": {
+                "text": "Contact our sales team"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "N_TwvUlTmI03GPGzYQ",
+           "$replicaId": "N_TwvUlTm",
+           "$originalId": "I03GPGzYQ",
+           "attributes": {
+            "inlineCodeStylePreset": "Inline Code",
+            "linkStylePreset": "Link",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "16px",
+            "letterSpacing": "-0.04em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "ss03": "on"
+            },
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(153, 153, 153)",
+            "zIndex": "4"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:N_TwvUlTmI03GPGzYQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:N_TwvUlTmI03GPGzYQ:0:0",
+               "attributes": {
+                "text": "We’re happy to answer any questions "
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "name": "Features",
+           "id": "N_TwvUlTmeGYvdzkSC",
+           "$replicaId": "N_TwvUlTm",
+           "$originalId": "eGYvdzkSC",
+           "attributes": {
+            "htmlTag": "div",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "16px",
+            "padding": "16px 12px 0px 12px",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "ComponentInstanceNode",
+             "id": "N_TwvUlTmtoC9o1x5D",
+             "component": "HQwGbzPSm",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "toC9o1x5D",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Green",
+              "$control__filledText": "Speed",
+              "$control__text": "Schedule a demo",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "N_TwvUlTmYPVhECK8j",
+             "component": "HQwGbzPSm",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "YPVhECK8j",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Green",
+              "$control__filledText": "Speed",
+              "$control__text": "Get pricing information",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "N_TwvUlTmcd7LJFurJ",
+             "component": "HQwGbzPSm",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "cd7LJFurJ",
+             "$componentDisplayName": "Checked Text 2",
+             "attributes": {
+              "$control__variant": "Green",
+              "$control__filledText": "Speed",
+              "$control__text": "Explore use cases for your team",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "N_TwvUlTmZAK0G3HDW",
+         "$replicaId": "N_TwvUlTm",
+         "$originalId": "ZAK0G3HDW",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "overflow": "clip",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "name": "text",
+           "id": "N_TwvUlTmBItpObHWf",
+           "$replicaId": "N_TwvUlTm",
+           "$originalId": "BItpObHWf",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "16px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "1"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmDYQlltKZx",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "DYQlltKZx",
+             "attributes": {
+              "border": "3px dotted var(--token-c630804f-5e50-4893-b680-27b64d932590)",
+              "layout": "null",
+              "opacity": "0.5",
+              "overflow": "hidden",
+              "position": "relative",
+              "radius": "8px",
+              "width": "1fr",
+              "height": "2px"
+             }
+            },
+            {
+             "type": "RichTextNode",
+             "id": "N_TwvUlTmTIXwqGJUv",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "TIXwqGJUv",
+             "attributes": {
+              "inlineCodeStylePreset": "Inline Code",
+              "linkStylePreset": "Link",
+              "position": "relative",
+              "width": "1.5fr",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontSize": "11px",
+              "letterSpacing": "0em",
+              "lineHeight": "150%",
+              "textAlignment": "center",
+              "textDecorationStyle": "solid",
+              "textColor": "rgb(0, 0, 0)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:N_TwvUlTmTIXwqGJUv:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:N_TwvUlTmTIXwqGJUv:0:0",
+                 "attributes": {
+                  "text": "Working with renowned, trusted, and leading enterprises"
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmfIYIzWttZ",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "fIYIzWttZ",
+             "attributes": {
+              "border": "3px dotted var(--token-c630804f-5e50-4893-b680-27b64d932590)",
+              "layout": "null",
+              "opacity": "0.5",
+              "overflow": "hidden",
+              "position": "relative",
+              "radius": "8px",
+              "width": "1fr",
+              "height": "2px"
+             }
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "name": "logos",
+           "id": "N_TwvUlTmjOPs9EMuC",
+           "$replicaId": "N_TwvUlTm",
+           "$originalId": "jOPs9EMuC",
+           "attributes": {
+            "htmlTag": "div",
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": true,
+            "gap": "25px 55px",
+            "opacity": "0.9",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmjxdYPbB8p",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "jxdYPbB8p",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/GsiDHbnQROE9zx5JDatZkECu1NM.svg",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "28.93617021276596px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1
+             }
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmt7AsEaifp",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "t7AsEaifp",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/pVL0nRXxwG3hF5g4bFBNz5LrKE.png",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "56.063829787234035px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1.94
+             }
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmg4VJQkiIR",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "g4VJQkiIR",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/xZcjKmew0EQg7g507r3SXeKEj0.svg",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "48.829787234042556px",
+              "height": "28.037383177570092px",
+              "aspectRatio": 1.69
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "bizlink",
+             "id": "N_TwvUlTmv1xj4Aidp",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "v1xj4Aidp",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/T47ORQgP7tP8ZvfWUCl9PA1WQM.png",
+              "altText": "BizLink logo",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "180px",
+              "height": "40px"
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "ats",
+             "id": "N_TwvUlTmXfv2492Iq",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "Xfv2492Iq",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/zVQD3XfDVxWTMxfNZ24mkF56U.png",
+              "altText": "American Tech Supply logo",
+              "layout": "null",
+              "opacity": "0.7",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "273px",
+              "height": "40px"
+             }
+            },
+            {
+             "type": "FrameNode",
+             "name": "wesco",
+             "id": "N_TwvUlTmPieebye5e",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "Pieebye5e",
+             "attributes": {
+              "fill": "https://framerusercontent.com/images/Z4c0iBvg3KEk6l9xTTpz5Af2iw.png",
+              "layout": "null",
+              "position": "relative",
+              "width": "66px",
+              "height": "42px"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "N_TwvUlTmtok3GNI32",
+       "$replicaId": "N_TwvUlTm",
+       "$originalId": "tok3GNI32",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "16px",
+        "overflow": "hidden",
+        "position": "relative",
+        "radius": "16px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "620px",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Form",
+         "id": "N_TwvUlTmmp372E_OZ",
+         "$replicaId": "N_TwvUlTm",
+         "$originalId": "mp372E_OZ",
+         "attributes": {
+          "fill": "var(--token-608f0c3d-993e-47f7-bb8b-121bd21ad0f0)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "overflow": "hidden",
+          "padding": "16px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "400px",
+          "zIndex": "9"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "id": "N_TwvUlTmJpezy3EDW",
+           "$replicaId": "N_TwvUlTm",
+           "$originalId": "Jpezy3EDW",
+           "attributes": {
+            "fill": "rgba(255,255,255,1)",
+            "formSubmitButtonId": "YOg0XFQDn",
+            "formSubmitTrackingId": "form-submission",
+            "htmlTag": "form",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "gap": "20px",
+            "overflow": "hidden",
+            "padding": "20px",
+            "position": "relative",
+            "radius": "16px",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "9"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmbZfY9JzVh",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "bZfY9JzVh",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmtk9WcVKvl",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "tk9WcVKvl",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmtk9WcVKvl:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmtk9WcVKvl:0:0",
+                   "attributes": {
+                    "text": "Name"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmECLa8xo7A",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "ECLa8xo7A",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Name",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Name",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmSl8K5xdbw",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "Sl8K5xdbw",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmV236B6MYY",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "V236B6MYY",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmV236B6MYY:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmV236B6MYY:0:0",
+                   "attributes": {
+                    "text": "Email"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmwSb425prw",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "wSb425prw",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Email",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Email",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "email",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmr8MNDTAR_",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "r8MNDTAR_",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "64px",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmYHo0G78l5",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "YHo0G78l5",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmYHo0G78l5:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmYHo0G78l5:0:0",
+                   "attributes": {
+                    "text": "Company Name"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmZWAJSd6G_",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "ZWAJSd6G_",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Company ",
+                "formInputRequired": "true",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Your Company ",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "textarea",
+                "formTextAreaResizable": "false",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "minHeight": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmaaDA4eHht",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "aaDA4eHht",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "328px",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmS9lKZ4G_T",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "S9lKZ4G_T",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmS9lKZ4G_T:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmS9lKZ4G_T:0:0",
+                   "attributes": {
+                    "text": "Company Size"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "N_TwvUlTmgG4lMB6Xl",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "gG4lMB6Xl",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Company Size",
+                "formInputRequired": "true",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "1-50",
+                  "title": "1-50"
+                 },
+                 {
+                  "type": "option",
+                  "value": "250-500",
+                  "title": "250-500"
+                 },
+                 {
+                  "type": "option",
+                  "value": "500-1000",
+                  "title": "500-1000"
+                 },
+                 {
+                  "type": "option",
+                  "value": "1000+",
+                  "title": "1000+"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmOldGQHgxg",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "OldGQHgxg",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmrl6L7WKXl",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "rl6L7WKXl",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmrl6L7WKXl:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmrl6L7WKXl:0:0",
+                   "attributes": {
+                    "text": "Use case "
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "N_TwvUlTmdJ53EQvF5",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "dJ53EQvF5",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Use Case",
+                "formInputRequired": "true",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Fiber Optic",
+                  "title": "Fiber Optic"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Consultancy",
+                  "title": "Consultancy"
+                 },
+                 {
+                  "type": "option",
+                  "value": "RenOS",
+                  "title": "RenOS"
+                 },
+                 {
+                  "type": "option",
+                  "value": "AI Server Rental ",
+                  "title": "AI Server Rental "
+                 },
+                 {
+                  "type": "option",
+                  "value": "Custom Solution",
+                  "title": "Custom Solution"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Other",
+                  "title": "Other"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmf0Cdxebt_",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "f0Cdxebt_",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmco2vjqpO7",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "co2vjqpO7",
+               "attributes": {
+                "inlineCodeStylePreset": "Inline Code",
+                "linkStylePreset": "Link",
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmco2vjqpO7:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmco2vjqpO7:0:0",
+                   "attributes": {
+                    "text": "I am a"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormSelectNode",
+               "id": "N_TwvUlTmOYmbc4bgy",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "OYmbc4bgy",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "I Am A",
+                "formInputRequired": "false",
+                "formInputValue": "AFv_AOmCl",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formSelectOptions": [
+                 {
+                  "type": "option",
+                  "value": "",
+                  "title": "Select…",
+                  "disabled": "true"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Distributor or reseller",
+                  "title": "Distributor or reseller"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Installation contractor",
+                  "title": "Installation contractor"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Carrier or ISP",
+                  "title": "Carrier or ISP"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Data center builder or operator",
+                  "title": "Data center builder or operator"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Referral partner",
+                  "title": "Referral partner"
+                 },
+                 {
+                  "type": "option",
+                  "value": "Other",
+                  "title": "Other"
+                 }
+                ],
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "40px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmLb76siuZi",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "Lb76siuZi",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "zIndex": "9"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "id": "N_TwvUlTmj6F3aTpSI",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "j6F3aTpSI",
+               "attributes": {
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 500,
+                "fontSize": "12px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:N_TwvUlTmj6F3aTpSI:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:N_TwvUlTmj6F3aTpSI:0:0",
+                   "attributes": {
+                    "text": "Message"
+                   }
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmYeEWP3GyO",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "YeEWP3GyO",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Message",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputIconColor": "rgba(153, 153, 153, 1)",
+                "formInputPlaceholder": "Tell us about your project. For fiber, include fiber count, type, rating, footage and needed-by date.",
+                "formInputPlaceholderColor": "rgba(153, 153, 153, 1)",
+                "formTextInputType": "textarea",
+                "formTextAreaResizable": "true",
+                "padding": "12px",
+                "position": "relative",
+                "radius": "10px",
+                "width": "1fr",
+                "height": "100px",
+                "minHeight": "100px",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmFgb_1wUGl",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "Fgb_1wUGl",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmCP3uTBT32",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "CP3uTBT32",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Website",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmBSp3q4Aa1",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "BSp3q4Aa1",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmF3rB5u2re",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "F3rB5u2re",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Phone Number",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmEpq5olKEq",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "Epq5olKEq",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmmFucmWoBe",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "mFucmWoBe",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Fax",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "N_TwvUlTmb6BdLCJ42",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "b6BdLCJ42",
+             "attributes": {
+              "htmlTag": "label",
+              "layout": "null",
+              "opacity": "0",
+              "overflow": "hidden",
+              "position": "absolute",
+              "left": "-9999px",
+              "right": "null",
+              "top": "-9999px",
+              "bottom": "null",
+              "centerAnchorX": "0%",
+              "centerAnchorY": "0%",
+              "constraintsLocked": false,
+              "width": "1px",
+              "height": "1px"
+             },
+             "children": [
+              {
+               "type": "FormPlainTextInputNode",
+               "id": "N_TwvUlTmLjG3MAjcn",
+               "$replicaId": "N_TwvUlTm",
+               "$originalId": "LjG3MAjcn",
+               "attributes": {
+                "border": "1px solid rgba(136, 136, 136, 0.1)",
+                "fill": "rgba(187, 187, 187, 0.15)",
+                "formInputName": "Address",
+                "formInputRequired": "false",
+                "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+                "formInputFocusedBorderWidth": 1,
+                "formInputFocusedBorderTop": 1,
+                "formInputFocusedBorderRight": 1,
+                "formInputFocusedBorderBottom": 1,
+                "formInputFocusedBorderLeft": 1,
+                "formInputFocusedBorderPerSide": false,
+                "formInputFocusedBorderStyle": "solid",
+                "formInputPlaceholder": "",
+                "formTextInputType": "text",
+                "padding": "12px",
+                "left": "null",
+                "right": "null",
+                "top": "null",
+                "bottom": "null",
+                "centerAnchorX": "0%",
+                "centerAnchorY": "0%",
+                "constraintsLocked": false,
+                "radius": "10px",
+                "width": "1px",
+                "height": "1px",
+                "tabIndex": "-1",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": 400,
+                "fontSize": "14px",
+                "letterSpacing": "0em",
+                "lineHeight": "1.2em",
+                "textColor": "rgba(153, 153, 153, 1)"
+               }
+              }
+             ]
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "N_TwvUlTmYOg0XFQDn",
+             "component": "jkYxzsOvkjBGfvaxGMJu",
+             "$replicaId": "N_TwvUlTm",
+             "$originalId": "YOg0XFQDn",
+             "$componentDisplayName": "Button 5",
+             "attributes": {
+              "$control__variant": "ttDmxAqzw",
+              "formButtonSuccessVariant": "KUtv4icvY",
+              "formButtonPendingVariant": "p7GyE5H72",
+              "formButtonErrorVariant": "M1Qxggug9",
+              "formButtonIncompleteVariant": "HklTQ0dlG",
+              "position": "relative",
+              "width": "1fr",
+              "height": "40px",
+              "zIndex": "9"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "N_TwvUlTmf3c_qI87l",
+     "$replicaId": "N_TwvUlTm",
+     "$originalId": "f3c_qI87l",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "7.36%",
+      "constraintsLocked": false,
+      "width": "390px",
+      "height": "310px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "N_TwvUlTmUsD1LjoYp",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "N_TwvUlTm",
+     "$originalId": "UsD1LjoYp",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "ComponentInstanceNode",
+   "id": "fqkdvsji5",
+   "component": "GbX8S6ghmyszcS2GLR2F",
+   "$componentDisplayName": "Cookie Banner",
+   "attributes": {
+    "$control__gTMID": "",
+    "$control__preview": "false",
+    "$control__trigger": "{\"type\":{\"type\":\"enum\",\"value\":\"text\"},\"iconType\":{\"type\":\"enum\",\"value\":\"default\"},\"text\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"textFont\":{\"type\":\"font\"},\"iconSize\":{\"type\":\"number\",\"value\":24},\"color\":{\"type\":\"color\",\"value\":\"#333\"},\"iconImage\":{\"type\":\"image\"}}",
+    "$control__banner": "{\"position\":{\"type\":\"enum\",\"value\":\"bottom-right\"},\"zIndex\":{\"type\":\"number\",\"value\":10},\"width\":{\"type\":\"number\",\"value\":360},\"containerWidth\":{\"type\":\"number\",\"value\":0},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"inset\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"colorTitle\":{\"type\":\"color\",\"value\":\"#000\"},\"fontBody\":{\"type\":\"font\"},\"colorBody\":{\"type\":\"color\",\"value\":\"#444\"},\"fill\":{\"type\":\"color\",\"value\":\"#FFF\"},\"link\":{\"type\":\"color\",\"value\":\"#999\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":14},\"width\":{\"type\":\"number\",\"value\":1},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.05)\"}}},\"shadow\":{\"type\":\"object\",\"value\":null},\"backdrop\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"}}},\"animation\":{\"type\":\"object\",\"value\":{\"x\":{\"type\":\"number\",\"value\":0},\"y\":{\"type\":\"number\",\"value\":10},\"scale\":{\"type\":\"number\",\"value\":1},\"transition\":{\"type\":\"transition\",\"value\":{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":500,\"damping\":60,\"mass\":1,\"stagger\":0}}}}}",
+    "$control__buttons": "{\"primary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#000\"},\"color\":{\"type\":\"color\",\"value\":\"#FFF\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"secondary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#EEE\"},\"color\":{\"type\":\"color\",\"value\":\"#444\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"labels\":{\"type\":\"object\",\"value\":{\"accept\":{\"type\":\"string\",\"value\":\"Accept\"},\"reject\":{\"type\":\"string\",\"value\":\"Reject\"},\"acceptAll\":{\"type\":\"string\",\"value\":\"Accept all\"},\"rejectAll\":{\"type\":\"string\",\"value\":\"Reject all\"},\"customize\":{\"type\":\"string\",\"value\":\"Customize\"},\"save\":{\"type\":\"string\",\"value\":\"Save Preferences\"},\"confirm\":{\"type\":\"string\",\"value\":\"Okay\"}}},\"font\":{\"type\":\"font\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":10,\"fused\":[10,10,10,10]}},\"borderRadius\":{\"type\":\"number\",\"value\":8},\"tapOpacity\":{\"type\":\"number\",\"value\":0.4},\"hoverOpacity\":{\"type\":\"number\",\"value\":0.6},\"direction\":{\"type\":\"enum\",\"value\":\"row\"},\"fluid\":{\"type\":\"boolean\",\"value\":true}}",
+    "$control__regions": "{\"isEU\":{\"type\":\"boolean\",\"value\":true},\"euType\":{\"type\":\"enum\",\"value\":\"medium\"},\"euTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"euDescription\":{\"type\":\"string\",\"value\":\"We use cookies to enhance your experience, analyze site traffic and deliver personalized content.\"},\"euPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\",\"value\":{\"url\":\"https://www.framer.com/legal/policy/\",\"type\":\"url\"}},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"euDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":false},\"analytics\":{\"type\":\"boolean\",\"value\":false},\"marketing\":{\"type\":\"boolean\",\"value\":false}}},\"euShowReject\":{\"type\":\"boolean\",\"value\":true},\"euBlocking\":{\"type\":\"boolean\",\"value\":false},\"worldType\":{\"type\":\"enum\",\"value\":\"simple\"},\"worldTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"worldDescription\":{\"type\":\"string\",\"value\":\"We use cookies to personalize content, run ads, and analyze traffic.\"},\"worldPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\"},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"worldDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":true},\"analytics\":{\"type\":\"boolean\",\"value\":true},\"marketing\":{\"type\":\"boolean\",\"value\":true}}},\"worldShowReject\":{\"type\":\"boolean\",\"value\":true},\"worldBlocking\":{\"type\":\"boolean\",\"value\":false}}",
+    "$control__options": "{\"preview\":{\"type\":\"boolean\",\"value\":false},\"necessary\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Necessary\"},\"description\":{\"type\":\"string\",\"value\":\"Enables security and basic functionality.\"},\"optional\":{\"type\":\"boolean\",\"value\":true}}},\"preferences\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Preferences\"},\"description\":{\"type\":\"string\",\"value\":\"Enables personalized content and settings.\"}}},\"analytics\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Analytics\"},\"description\":{\"type\":\"string\",\"value\":\"Enables tracking of performance.\"}}},\"marketing\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Marketing\"},\"description\":{\"type\":\"string\",\"value\":\"Enables ads personalization and tracking.\"}}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"fontBody\":{\"type\":\"font\"},\"background\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":8},\"width\":{\"type\":\"number\",\"value\":0},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"}}},\"toggleColor\":{\"type\":\"color\",\"value\":\"#000\"},\"toggleColorInactive\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":12,\"fused\":[12,12,12,12]}}}}}",
+    "left": "-500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto"
+   }
+  }
+ ]
+}

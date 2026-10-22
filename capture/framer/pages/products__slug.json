@@ -1,0 +1,4130 @@
+{
+ "type": "WebPageNode",
+ "id": "IuFAdRGoP",
+ "name": "/products/:Products",
+ "variables": [],
+ "$parentId": "sn7IXw6X9",
+ "$breakpoints": [
+  {
+   "id": "DB1zP8_5j",
+   "name": "Desktop",
+   "mediaQueryRange": "(min-width: 1200px)",
+   "rootFontSize": 16
+  },
+  {
+   "id": "B2fCATfV8",
+   "name": "Tablet",
+   "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)",
+   "rootFontSize": 16
+  },
+  {
+   "id": "ig29rx0Ez",
+   "name": "Phone",
+   "mediaQueryRange": "(max-width: 809.98px)",
+   "rootFontSize": 16
+  }
+ ],
+ "attributes": {
+  "metadata": {
+   "title": "{{Name}} | Fiber Optic Cable | Vocom",
+   "description": "{{Description}}",
+   "socialImage": "var(--variable-T4Aw8UPEr)"
+  },
+  "path": "/products/:Products"
+ },
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "DB1zP8_5j",
+   "$isPrimary": true,
+   "$mediaQuery": {
+    "range": "(min-width: 1200px)",
+    "name": "Desktop"
+   },
+   "attributes": {
+    "fill": "linear-gradient(180deg, #FFFFFF 0%, #FCEBF3 28.000000000000004%, #FFFFFF 100%)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "clip",
+    "padding": "0px 20px 0px 20px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "rootFontSize": "16px",
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "BZc3Kc6iL",
+     "component": "viLm3CAkV",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "position": "sticky",
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Product Content",
+     "id": "QutQ08XTv",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "64px 0px 56px 0px",
+      "position": "relative",
+      "width": "820px",
+      "height": "auto",
+      "maxWidth": "100%"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "GawAEzkGE",
+       "attributes": {
+        "link": {
+         "href": "/fiber-optic-cable-catalog"
+        },
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "13px",
+        "letterSpacing": "0.02em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(127, 23, 63)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:GawAEzkGE:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:GawAEzkGE:0:0",
+           "attributes": {
+            "text": "FULL PRODUCT CATALOG"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "OKnmWAXoj",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": {
+         "from": "var(--variable-llF9GrUYm)",
+         "transforms": [
+          {
+           "name": "optionToDisplayName"
+          }
+         ]
+        },
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.2em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "lJf93rAiu",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-g6g11fGQB)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "42px",
+        "letterSpacing": "-0.035em",
+        "lineHeight": "1.1em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)",
+        "textWrap": "balance"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Product Image",
+       "id": "ptSBeNbTz",
+       "attributes": {
+        "border": "1px solid rgba(136, 18, 67, 0.14)",
+        "fill": "var(--variable-T4Aw8UPEr)",
+        "layout": "null",
+        "overflow": "clip",
+        "position": "relative",
+        "radius": "24px",
+        "width": "1fr",
+        "height": "320px"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "VXp54xIjv",
+       "attributes": {
+        "position": "relative",
+        "width": "700px",
+        "height": "auto",
+        "maxWidth": "100%",
+        "text": "var(--variable-uMOB_YZPM)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "17px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.55em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Buttons",
+       "id": "RF8xY2aey",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "12px",
+        "position": "relative",
+        "width": "auto",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Request a Quote Button",
+         "id": "PzQZt8ZYf",
+         "attributes": {
+          "cursor": "pointer",
+          "fill": "linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%)",
+          "htmlTag": "button",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "9px",
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "padding": "14px 22px 14px 22px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "lRUXMdlDw",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 800,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(255, 255, 255)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:lRUXMdlDw:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:lRUXMdlDw:0:0",
+               "attributes": {
+                "text": "Request a Quote"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "IconNode",
+           "id": "rqc1rjkJj",
+           "set": "omX0gWFPqDwhaiWwf6ab",
+           "$control__icon": "Arrow Right",
+           "attributes": {
+            "$control__color": "#FFFFFF",
+            "$control__width": "1.5",
+            "$control__alpha": "0",
+            "position": "relative",
+            "width": "17px",
+            "height": "17px"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Back to Catalog Button",
+         "id": "SppV_2Ij8",
+         "attributes": {
+          "border": "1px solid rgba(127, 23, 63, 0.18)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "9px",
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "padding": "14px 20px 14px 20px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "jJYU01Aes",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 800,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:jJYU01Aes:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:jJYU01Aes:0:0",
+               "attributes": {
+                "text": "Back to full catalog"
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Spec Grid",
+       "id": "mZR_TPspw",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnMinWidth": "220px",
+        "gap": "14px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Codes",
+         "id": "DCcGBHCuU",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "FJv0ZLArk",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:FJv0ZLArk:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:FJv0ZLArk:0:0",
+               "attributes": {
+                "text": "Codes"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "H6Coz0515",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-eGZZAahaC)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Fiber Counts",
+         "id": "rAnA2hKLY",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "EZTR8i461",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:EZTR8i461:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:EZTR8i461:0:0",
+               "attributes": {
+                "text": "Fiber Counts"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "NK0K7qUnB",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-giHFGlsi3)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Construction and Rating",
+         "id": "p4P73nMUP",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "zf9hPHzeO",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:zf9hPHzeO:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:zf9hPHzeO:0:0",
+               "attributes": {
+                "text": "Construction and Rating"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "TuhP7mzOx",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-uKzg28JyD)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Typical Use",
+         "id": "AygPRlHPP",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "WXU2cUQvX",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:WXU2cUQvX:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:WXU2cUQvX:0:0",
+               "attributes": {
+                "text": "Typical Use"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "q70wPJgzr",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-skoJps3fx)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "LyVVydaN3",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 24px 24px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "VrHcjOumT",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "26px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:VrHcjOumT:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:VrHcjOumT:0:0",
+           "attributes": {
+            "text": "Frequently Asked Questions"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "pgVNAKQS0",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.4em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgba(23, 16, 23, 0.6)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:pgVNAKQS0:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:pgVNAKQS0:0:0",
+           "attributes": {
+            "text": "Straight answers about this cable."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "kf4ffdEzQ",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "M17vTpWBZ",
+         "component": "hffygecrutPNoWvOT12D",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What fiber counts does this cable come in?",
+          "$control__answer": "var(--variable-giHFGlsi3)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "i_5RL8Lh8",
+         "component": "hffygecrutPNoWvOT12D",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What is it built and rated to?",
+          "$control__answer": "var(--variable-uKzg28JyD)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "ViTH9p2Uv",
+         "component": "hffygecrutPNoWvOT12D",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "Where is this cable typically used?",
+          "$control__answer": "var(--variable-skoJps3fx)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "hW2L0dRta",
+         "component": "hffygecrutPNoWvOT12D",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What product codes does it ship under?",
+          "$control__answer": "var(--variable-eGZZAahaC)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Related Products",
+     "id": "b2WuoXnc1",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 0px 24px 0px",
+      "position": "relative",
+      "width": "820px",
+      "height": "auto",
+      "maxWidth": "100%"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "tKvHyclLS",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "26px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:tKvHyclLS:0",
+         "attributes": {
+          "tag": "h2"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:tKvHyclLS:0:0",
+           "attributes": {
+            "text": "More from this category"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "AG5exev4_",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": {
+         "from": "var(--variable-llF9GrUYm)",
+         "transforms": [
+          {
+           "name": "optionToDisplayName"
+          }
+         ]
+        },
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.2em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Related Product Links",
+       "id": "bXoEwr0AA",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "10px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Products",
+         "repeatedDescendantId": "QSf4ktyCd",
+         "limit": "4",
+         "filters": [
+          {
+           "variableId": "llF9GrUYm",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": "var(--variable-llF9GrUYm)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Related Product Link",
+         "id": "QSf4ktyCd",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.12)",
+          "cursor": "pointer",
+          "fill": "rgb(255, 246, 250)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/products/:slug",
+           "collectionItem": "var(--variable-Khzaw2vzz)"
+          },
+          "padding": "10px 14px 10px 14px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "L3n9Cnzt5",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "text": "var(--variable-g6g11fGQB)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "13px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Explore More",
+       "id": "lY2VF9bsY",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "20px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "DKj41ASvX",
+         "attributes": {
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:DKj41ASvX:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:DKj41ASvX:0:0",
+             "attributes": {
+              "text": "View the full product catalog"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "h2u2SFloe",
+         "attributes": {
+          "link": {
+           "href": "/fiber-optic-cables"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:h2u2SFloe:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:h2u2SFloe:0:0",
+             "attributes": {
+              "text": "See our full fiber optic cable range"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "Cqry8Akho",
+         "attributes": {
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:Cqry8Akho:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:Cqry8Akho:0:0",
+             "attributes": {
+              "text": "Talk to a specifier"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Closing CTA",
+     "id": "Z7CGH_i3v",
+     "attributes": {
+      "border": "1px solid rgba(136, 18, 67, 0.14)",
+      "fill": "linear-gradient(135deg, #FFF4F9 0%, #FFFFFF 100%)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "18px",
+      "padding": "34px",
+      "position": "relative",
+      "radius": "30px",
+      "width": "100%",
+      "height": "auto",
+      "maxWidth": "1160px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "hmxoNa7g5",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "30px",
+        "letterSpacing": "-0.03em",
+        "lineHeight": "1.1em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:hmxoNa7g5:0",
+         "attributes": {
+          "tag": "h2"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:hmxoNa7g5:0:0",
+           "attributes": {
+            "text": "Need a quote on this cable?"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Request a Quote Button",
+       "id": "fTv5Zzd3Y",
+       "attributes": {
+        "cursor": "pointer",
+        "fill": "linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%)",
+        "htmlTag": "button",
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "9px",
+        "link": {
+         "href": "/contact-vocomai"
+        },
+        "padding": "14px 22px 14px 22px",
+        "position": "relative",
+        "radius": "999px",
+        "width": "auto",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "v_rswn9ol",
+         "attributes": {
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 800,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(255, 255, 255)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:v_rswn9ol:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:v_rswn9ol:0:0",
+             "attributes": {
+              "text": "Request a Quote"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "IconNode",
+         "id": "kqPYdA8NG",
+         "set": "omX0gWFPqDwhaiWwf6ab",
+         "$control__icon": "Arrow Right",
+         "attributes": {
+          "$control__color": "#FFFFFF",
+          "$control__width": "1.5",
+          "$control__alpha": "0",
+          "position": "relative",
+          "width": "17px",
+          "height": "17px"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "sJzOM7iDk",
+     "component": "gZoBdp3Uw",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "$control__footerTagline": "Your partner for telecommunications and fiber optic supply.",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM AI",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "B2fCATfV8",
+   "$isReplica": true,
+   "$originalId": "DB1zP8_5j",
+   "$mediaQuery": {
+    "range": "(min-width: 810px) and (max-width: 1199.98px)",
+    "name": "Tablet"
+   },
+   "attributes": {
+    "fill": "linear-gradient(180deg, #FFFFFF 0%, #FCEBF3 28.000000000000004%, #FFFFFF 100%)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "clip",
+    "padding": "0px 20px 0px 20px",
+    "left": "1300px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "rootFontSize": "16px",
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "B2fCATfV8BZc3Kc6iL",
+     "component": "viLm3CAkV",
+     "$replicaId": "B2fCATfV8",
+     "$originalId": "BZc3Kc6iL",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "position": "sticky",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Product Content",
+     "id": "B2fCATfV8QutQ08XTv",
+     "$replicaId": "B2fCATfV8",
+     "$originalId": "QutQ08XTv",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "64px 0px 56px 0px",
+      "position": "relative",
+      "width": "820px",
+      "height": "auto",
+      "maxWidth": "100%"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8GawAEzkGE",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "GawAEzkGE",
+       "attributes": {
+        "link": {
+         "href": "/fiber-optic-cable-catalog"
+        },
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "13px",
+        "letterSpacing": "0.02em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(127, 23, 63)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:B2fCATfV8GawAEzkGE:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:B2fCATfV8GawAEzkGE:0:0",
+           "attributes": {
+            "text": "FULL PRODUCT CATALOG"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8OKnmWAXoj",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "OKnmWAXoj",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": {
+         "from": "var(--variable-llF9GrUYm)",
+         "transforms": [
+          {
+           "name": "optionToDisplayName"
+          }
+         ]
+        },
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.2em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8lJf93rAiu",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "lJf93rAiu",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-g6g11fGQB)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "42px",
+        "letterSpacing": "-0.035em",
+        "lineHeight": "1.1em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)",
+        "textWrap": "balance"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Product Image",
+       "id": "B2fCATfV8ptSBeNbTz",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "ptSBeNbTz",
+       "attributes": {
+        "border": "1px solid rgba(136, 18, 67, 0.14)",
+        "fill": "var(--variable-T4Aw8UPEr)",
+        "layout": "null",
+        "overflow": "clip",
+        "position": "relative",
+        "radius": "24px",
+        "width": "1fr",
+        "height": "320px"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8VXp54xIjv",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "VXp54xIjv",
+       "attributes": {
+        "position": "relative",
+        "width": "700px",
+        "height": "auto",
+        "maxWidth": "100%",
+        "text": "var(--variable-uMOB_YZPM)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "17px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.55em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Buttons",
+       "id": "B2fCATfV8RF8xY2aey",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "RF8xY2aey",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "12px",
+        "position": "relative",
+        "width": "auto",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Request a Quote Button",
+         "id": "B2fCATfV8PzQZt8ZYf",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "PzQZt8ZYf",
+         "attributes": {
+          "cursor": "pointer",
+          "fill": "linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%)",
+          "htmlTag": "button",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "9px",
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "padding": "14px 22px 14px 22px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8lRUXMdlDw",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "lRUXMdlDw",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 800,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(255, 255, 255)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:B2fCATfV8lRUXMdlDw:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:B2fCATfV8lRUXMdlDw:0:0",
+               "attributes": {
+                "text": "Request a Quote"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "IconNode",
+           "id": "B2fCATfV8rqc1rjkJj",
+           "set": "omX0gWFPqDwhaiWwf6ab",
+           "$control__icon": "Arrow Right",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "rqc1rjkJj",
+           "attributes": {
+            "$control__color": "#FFFFFF",
+            "$control__width": "1.5",
+            "$control__alpha": "0",
+            "position": "relative",
+            "width": "17px",
+            "height": "17px"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Back to Catalog Button",
+         "id": "B2fCATfV8SppV_2Ij8",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "SppV_2Ij8",
+         "attributes": {
+          "border": "1px solid rgba(127, 23, 63, 0.18)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "9px",
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "padding": "14px 20px 14px 20px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8jJYU01Aes",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "jJYU01Aes",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 800,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:B2fCATfV8jJYU01Aes:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:B2fCATfV8jJYU01Aes:0:0",
+               "attributes": {
+                "text": "Back to full catalog"
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Spec Grid",
+       "id": "B2fCATfV8mZR_TPspw",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "mZR_TPspw",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnMinWidth": "220px",
+        "gap": "14px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Codes",
+         "id": "B2fCATfV8DCcGBHCuU",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "DCcGBHCuU",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8FJv0ZLArk",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "FJv0ZLArk",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:B2fCATfV8FJv0ZLArk:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:B2fCATfV8FJv0ZLArk:0:0",
+               "attributes": {
+                "text": "Codes"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8H6Coz0515",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "H6Coz0515",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-eGZZAahaC)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Fiber Counts",
+         "id": "B2fCATfV8rAnA2hKLY",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "rAnA2hKLY",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8EZTR8i461",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "EZTR8i461",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:B2fCATfV8EZTR8i461:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:B2fCATfV8EZTR8i461:0:0",
+               "attributes": {
+                "text": "Fiber Counts"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8NK0K7qUnB",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "NK0K7qUnB",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-giHFGlsi3)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Construction and Rating",
+         "id": "B2fCATfV8p4P73nMUP",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "p4P73nMUP",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8zf9hPHzeO",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "zf9hPHzeO",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:B2fCATfV8zf9hPHzeO:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:B2fCATfV8zf9hPHzeO:0:0",
+               "attributes": {
+                "text": "Construction and Rating"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8TuhP7mzOx",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "TuhP7mzOx",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-uKzg28JyD)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Typical Use",
+         "id": "B2fCATfV8AygPRlHPP",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "AygPRlHPP",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8WXU2cUQvX",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "WXU2cUQvX",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:B2fCATfV8WXU2cUQvX:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:B2fCATfV8WXU2cUQvX:0:0",
+               "attributes": {
+                "text": "Typical Use"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8q70wPJgzr",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "q70wPJgzr",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-skoJps3fx)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "B2fCATfV8LyVVydaN3",
+     "$replicaId": "B2fCATfV8",
+     "$originalId": "LyVVydaN3",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 24px 24px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8VrHcjOumT",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "VrHcjOumT",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "26px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:B2fCATfV8VrHcjOumT:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:B2fCATfV8VrHcjOumT:0:0",
+           "attributes": {
+            "text": "Frequently Asked Questions"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8pgVNAKQS0",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "pgVNAKQS0",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.4em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgba(23, 16, 23, 0.6)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:B2fCATfV8pgVNAKQS0:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:B2fCATfV8pgVNAKQS0:0:0",
+           "attributes": {
+            "text": "Straight answers about this cable."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "B2fCATfV8kf4ffdEzQ",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "kf4ffdEzQ",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "B2fCATfV8M17vTpWBZ",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "M17vTpWBZ",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What fiber counts does this cable come in?",
+          "$control__answer": "var(--variable-giHFGlsi3)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "B2fCATfV8i_5RL8Lh8",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "i_5RL8Lh8",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What is it built and rated to?",
+          "$control__answer": "var(--variable-uKzg28JyD)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "B2fCATfV8ViTH9p2Uv",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "ViTH9p2Uv",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "Where is this cable typically used?",
+          "$control__answer": "var(--variable-skoJps3fx)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "B2fCATfV8hW2L0dRta",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "hW2L0dRta",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What product codes does it ship under?",
+          "$control__answer": "var(--variable-eGZZAahaC)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Related Products",
+     "id": "B2fCATfV8b2WuoXnc1",
+     "$replicaId": "B2fCATfV8",
+     "$originalId": "b2WuoXnc1",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 0px 24px 0px",
+      "position": "relative",
+      "width": "820px",
+      "height": "auto",
+      "maxWidth": "100%"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8tKvHyclLS",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "tKvHyclLS",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "26px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:B2fCATfV8tKvHyclLS:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:B2fCATfV8tKvHyclLS:0:0",
+           "attributes": {
+            "text": "More from this category"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8AG5exev4_",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "AG5exev4_",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": {
+         "from": "var(--variable-llF9GrUYm)",
+         "transforms": [
+          {
+           "name": "optionToDisplayName"
+          }
+         ]
+        },
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.2em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Related Product Links",
+       "id": "B2fCATfV8bXoEwr0AA",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "bXoEwr0AA",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "10px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Products",
+         "repeatedDescendantId": "QSf4ktyCd",
+         "limit": "4",
+         "filters": [
+          {
+           "variableId": "llF9GrUYm",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": "var(--variable-llF9GrUYm)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Related Product Link",
+         "id": "B2fCATfV8QSf4ktyCd",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "QSf4ktyCd",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.12)",
+          "cursor": "pointer",
+          "fill": "rgb(255, 246, 250)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/products/:slug",
+           "collectionItem": "var(--variable-Khzaw2vzz)"
+          },
+          "padding": "10px 14px 10px 14px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "B2fCATfV8L3n9Cnzt5",
+           "$replicaId": "B2fCATfV8",
+           "$originalId": "L3n9Cnzt5",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "text": "var(--variable-g6g11fGQB)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "13px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Explore More",
+       "id": "B2fCATfV8lY2VF9bsY",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "lY2VF9bsY",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "20px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "B2fCATfV8DKj41ASvX",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "DKj41ASvX",
+         "attributes": {
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:B2fCATfV8DKj41ASvX:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:B2fCATfV8DKj41ASvX:0:0",
+             "attributes": {
+              "text": "View the full product catalog"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "B2fCATfV8h2u2SFloe",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "h2u2SFloe",
+         "attributes": {
+          "link": {
+           "href": "/fiber-optic-cables"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:B2fCATfV8h2u2SFloe:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:B2fCATfV8h2u2SFloe:0:0",
+             "attributes": {
+              "text": "See our full fiber optic cable range"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "B2fCATfV8Cqry8Akho",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "Cqry8Akho",
+         "attributes": {
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:B2fCATfV8Cqry8Akho:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:B2fCATfV8Cqry8Akho:0:0",
+             "attributes": {
+              "text": "Talk to a specifier"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Closing CTA",
+     "id": "B2fCATfV8Z7CGH_i3v",
+     "$replicaId": "B2fCATfV8",
+     "$originalId": "Z7CGH_i3v",
+     "attributes": {
+      "border": "1px solid rgba(136, 18, 67, 0.14)",
+      "fill": "linear-gradient(135deg, #FFF4F9 0%, #FFFFFF 100%)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "18px",
+      "padding": "34px",
+      "position": "relative",
+      "radius": "30px",
+      "width": "100%",
+      "height": "auto",
+      "maxWidth": "1160px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "B2fCATfV8hmxoNa7g5",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "hmxoNa7g5",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "30px",
+        "letterSpacing": "-0.03em",
+        "lineHeight": "1.1em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:B2fCATfV8hmxoNa7g5:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:B2fCATfV8hmxoNa7g5:0:0",
+           "attributes": {
+            "text": "Need a quote on this cable?"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Request a Quote Button",
+       "id": "B2fCATfV8fTv5Zzd3Y",
+       "$replicaId": "B2fCATfV8",
+       "$originalId": "fTv5Zzd3Y",
+       "attributes": {
+        "cursor": "pointer",
+        "fill": "linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%)",
+        "htmlTag": "button",
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "9px",
+        "link": {
+         "href": "/contact-vocomai"
+        },
+        "padding": "14px 22px 14px 22px",
+        "position": "relative",
+        "radius": "999px",
+        "width": "auto",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "B2fCATfV8v_rswn9ol",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "v_rswn9ol",
+         "attributes": {
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 800,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(255, 255, 255)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:B2fCATfV8v_rswn9ol:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:B2fCATfV8v_rswn9ol:0:0",
+             "attributes": {
+              "text": "Request a Quote"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "IconNode",
+         "id": "B2fCATfV8kqPYdA8NG",
+         "set": "omX0gWFPqDwhaiWwf6ab",
+         "$control__icon": "Arrow Right",
+         "$replicaId": "B2fCATfV8",
+         "$originalId": "kqPYdA8NG",
+         "attributes": {
+          "$control__color": "#FFFFFF",
+          "$control__width": "1.5",
+          "$control__alpha": "0",
+          "position": "relative",
+          "width": "17px",
+          "height": "17px"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "B2fCATfV8sJzOM7iDk",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "B2fCATfV8",
+     "$originalId": "sJzOM7iDk",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "$control__footerTagline": "Your partner for telecommunications and fiber optic supply.",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM AI",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "ig29rx0Ez",
+   "$isReplica": true,
+   "$originalId": "DB1zP8_5j",
+   "$mediaQuery": {
+    "range": "(max-width: 809.98px)",
+    "name": "Phone"
+   },
+   "attributes": {
+    "fill": "linear-gradient(180deg, #FFFFFF 0%, #FCEBF3 28.000000000000004%, #FFFFFF 100%)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "clip",
+    "padding": "0px 20px 0px 20px",
+    "left": "2210px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "rootFontSize": "16px",
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ig29rx0EzBZc3Kc6iL",
+     "component": "viLm3CAkV",
+     "$replicaId": "ig29rx0Ez",
+     "$originalId": "BZc3Kc6iL",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "position": "sticky",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Product Content",
+     "id": "ig29rx0EzQutQ08XTv",
+     "$replicaId": "ig29rx0Ez",
+     "$originalId": "QutQ08XTv",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "64px 0px 56px 0px",
+      "position": "relative",
+      "width": "820px",
+      "height": "auto",
+      "maxWidth": "100%"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzGawAEzkGE",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "GawAEzkGE",
+       "attributes": {
+        "link": {
+         "href": "/fiber-optic-cable-catalog"
+        },
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "13px",
+        "letterSpacing": "0.02em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(127, 23, 63)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:ig29rx0EzGawAEzkGE:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:ig29rx0EzGawAEzkGE:0:0",
+           "attributes": {
+            "text": "FULL PRODUCT CATALOG"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzOKnmWAXoj",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "OKnmWAXoj",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": {
+         "from": "var(--variable-llF9GrUYm)",
+         "transforms": [
+          {
+           "name": "optionToDisplayName"
+          }
+         ]
+        },
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.2em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzlJf93rAiu",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "lJf93rAiu",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-g6g11fGQB)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "42px",
+        "letterSpacing": "-0.035em",
+        "lineHeight": "1.1em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)",
+        "textWrap": "balance"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Product Image",
+       "id": "ig29rx0EzptSBeNbTz",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "ptSBeNbTz",
+       "attributes": {
+        "border": "1px solid rgba(136, 18, 67, 0.14)",
+        "fill": "var(--variable-T4Aw8UPEr)",
+        "layout": "null",
+        "overflow": "clip",
+        "position": "relative",
+        "radius": "24px",
+        "width": "1fr",
+        "height": "320px"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzVXp54xIjv",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "VXp54xIjv",
+       "attributes": {
+        "position": "relative",
+        "width": "700px",
+        "height": "auto",
+        "maxWidth": "100%",
+        "text": "var(--variable-uMOB_YZPM)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "17px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.55em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Buttons",
+       "id": "ig29rx0EzRF8xY2aey",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "RF8xY2aey",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "12px",
+        "position": "relative",
+        "width": "auto",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Request a Quote Button",
+         "id": "ig29rx0EzPzQZt8ZYf",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "PzQZt8ZYf",
+         "attributes": {
+          "cursor": "pointer",
+          "fill": "linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%)",
+          "htmlTag": "button",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "9px",
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "padding": "14px 22px 14px 22px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzlRUXMdlDw",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "lRUXMdlDw",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 800,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(255, 255, 255)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ig29rx0EzlRUXMdlDw:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ig29rx0EzlRUXMdlDw:0:0",
+               "attributes": {
+                "text": "Request a Quote"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "IconNode",
+           "id": "ig29rx0Ezrqc1rjkJj",
+           "set": "omX0gWFPqDwhaiWwf6ab",
+           "$control__icon": "Arrow Right",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "rqc1rjkJj",
+           "attributes": {
+            "$control__color": "#FFFFFF",
+            "$control__width": "1.5",
+            "$control__alpha": "0",
+            "position": "relative",
+            "width": "17px",
+            "height": "17px"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Back to Catalog Button",
+         "id": "ig29rx0EzSppV_2Ij8",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "SppV_2Ij8",
+         "attributes": {
+          "border": "1px solid rgba(127, 23, 63, 0.18)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "9px",
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "padding": "14px 20px 14px 20px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzjJYU01Aes",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "jJYU01Aes",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 800,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ig29rx0EzjJYU01Aes:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ig29rx0EzjJYU01Aes:0:0",
+               "attributes": {
+                "text": "Back to full catalog"
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Spec Grid",
+       "id": "ig29rx0EzmZR_TPspw",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "mZR_TPspw",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnMinWidth": "220px",
+        "gap": "14px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Codes",
+         "id": "ig29rx0EzDCcGBHCuU",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "DCcGBHCuU",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzFJv0ZLArk",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "FJv0ZLArk",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ig29rx0EzFJv0ZLArk:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ig29rx0EzFJv0ZLArk:0:0",
+               "attributes": {
+                "text": "Codes"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzH6Coz0515",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "H6Coz0515",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-eGZZAahaC)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Fiber Counts",
+         "id": "ig29rx0EzrAnA2hKLY",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "rAnA2hKLY",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzEZTR8i461",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "EZTR8i461",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ig29rx0EzEZTR8i461:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ig29rx0EzEZTR8i461:0:0",
+               "attributes": {
+                "text": "Fiber Counts"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzNK0K7qUnB",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "NK0K7qUnB",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-giHFGlsi3)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Construction and Rating",
+         "id": "ig29rx0Ezp4P73nMUP",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "p4P73nMUP",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0Ezzf9hPHzeO",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "zf9hPHzeO",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ig29rx0Ezzf9hPHzeO:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ig29rx0Ezzf9hPHzeO:0:0",
+               "attributes": {
+                "text": "Construction and Rating"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzTuhP7mzOx",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "TuhP7mzOx",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-uKzg28JyD)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Typical Use",
+         "id": "ig29rx0EzAygPRlHPP",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "AygPRlHPP",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "padding": "18px",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "1fr"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzWXU2cUQvX",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "WXU2cUQvX",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ig29rx0EzWXU2cUQvX:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ig29rx0EzWXU2cUQvX:0:0",
+               "attributes": {
+                "text": "Typical Use"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0Ezq70wPJgzr",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "q70wPJgzr",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-skoJps3fx)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "15px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "ig29rx0EzLyVVydaN3",
+     "$replicaId": "ig29rx0Ez",
+     "$originalId": "LyVVydaN3",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 24px 24px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzVrHcjOumT",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "VrHcjOumT",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "26px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:ig29rx0EzVrHcjOumT:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:ig29rx0EzVrHcjOumT:0:0",
+           "attributes": {
+            "text": "Frequently Asked Questions"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzpgVNAKQS0",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "pgVNAKQS0",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.4em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgba(23, 16, 23, 0.6)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:ig29rx0EzpgVNAKQS0:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:ig29rx0EzpgVNAKQS0:0:0",
+           "attributes": {
+            "text": "Straight answers about this cable."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "ig29rx0Ezkf4ffdEzQ",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "kf4ffdEzQ",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "ComponentInstanceNode",
+         "id": "ig29rx0EzM17vTpWBZ",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "M17vTpWBZ",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What fiber counts does this cable come in?",
+          "$control__answer": "var(--variable-giHFGlsi3)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "ig29rx0Ezi_5RL8Lh8",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "i_5RL8Lh8",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What is it built and rated to?",
+          "$control__answer": "var(--variable-uKzg28JyD)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "ig29rx0EzViTH9p2Uv",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "ViTH9p2Uv",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "Where is this cable typically used?",
+          "$control__answer": "var(--variable-skoJps3fx)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        },
+        {
+         "type": "ComponentInstanceNode",
+         "id": "ig29rx0EzhW2L0dRta",
+         "component": "hffygecrutPNoWvOT12D",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "hW2L0dRta",
+         "$componentDisplayName": "faq/accordian_item 2",
+         "attributes": {
+          "$control__variant": "VqqEAblws",
+          "$control__question": "What product codes does it ship under?",
+          "$control__answer": "var(--variable-eGZZAahaC)",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Related Products",
+     "id": "ig29rx0Ezb2WuoXnc1",
+     "$replicaId": "ig29rx0Ez",
+     "$originalId": "b2WuoXnc1",
+     "attributes": {
+      "htmlTag": "section",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 0px 24px 0px",
+      "position": "relative",
+      "width": "820px",
+      "height": "auto",
+      "maxWidth": "100%"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EztKvHyclLS",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "tKvHyclLS",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "26px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:ig29rx0EztKvHyclLS:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:ig29rx0EztKvHyclLS:0:0",
+           "attributes": {
+            "text": "More from this category"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzAG5exev4_",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "AG5exev4_",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": {
+         "from": "var(--variable-llF9GrUYm)",
+         "transforms": [
+          {
+           "name": "optionToDisplayName"
+          }
+         ]
+        },
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.2em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(0, 0, 0)"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Related Product Links",
+       "id": "ig29rx0EzbXoEwr0AA",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "bXoEwr0AA",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "10px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Products",
+         "repeatedDescendantId": "QSf4ktyCd",
+         "limit": "4",
+         "filters": [
+          {
+           "variableId": "llF9GrUYm",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": "var(--variable-llF9GrUYm)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Related Product Link",
+         "id": "ig29rx0EzQSf4ktyCd",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "QSf4ktyCd",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.12)",
+          "cursor": "pointer",
+          "fill": "rgb(255, 246, 250)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/products/:slug",
+           "collectionItem": "var(--variable-Khzaw2vzz)"
+          },
+          "padding": "10px 14px 10px 14px",
+          "position": "relative",
+          "radius": "999px",
+          "width": "auto",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ig29rx0EzL3n9Cnzt5",
+           "$replicaId": "ig29rx0Ez",
+           "$originalId": "L3n9Cnzt5",
+           "attributes": {
+            "position": "relative",
+            "width": "auto",
+            "height": "auto",
+            "text": "var(--variable-g6g11fGQB)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "13px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(127, 23, 63)"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Explore More",
+       "id": "ig29rx0EzlY2VF9bsY",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "lY2VF9bsY",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "20px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "ig29rx0EzDKj41ASvX",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "DKj41ASvX",
+         "attributes": {
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:ig29rx0EzDKj41ASvX:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:ig29rx0EzDKj41ASvX:0:0",
+             "attributes": {
+              "text": "View the full product catalog"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "ig29rx0Ezh2u2SFloe",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "h2u2SFloe",
+         "attributes": {
+          "link": {
+           "href": "/fiber-optic-cables"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:ig29rx0Ezh2u2SFloe:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:ig29rx0Ezh2u2SFloe:0:0",
+             "attributes": {
+              "text": "See our full fiber optic cable range"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "ig29rx0EzCqry8Akho",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "Cqry8Akho",
+         "attributes": {
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "14px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(127, 23, 63)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:ig29rx0EzCqry8Akho:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:ig29rx0EzCqry8Akho:0:0",
+             "attributes": {
+              "text": "Talk to a specifier"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Closing CTA",
+     "id": "ig29rx0EzZ7CGH_i3v",
+     "$replicaId": "ig29rx0Ez",
+     "$originalId": "Z7CGH_i3v",
+     "attributes": {
+      "border": "1px solid rgba(136, 18, 67, 0.14)",
+      "fill": "linear-gradient(135deg, #FFF4F9 0%, #FFFFFF 100%)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "18px",
+      "padding": "34px",
+      "position": "relative",
+      "radius": "30px",
+      "width": "100%",
+      "height": "auto",
+      "maxWidth": "1160px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "ig29rx0EzhmxoNa7g5",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "hmxoNa7g5",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "30px",
+        "letterSpacing": "-0.03em",
+        "lineHeight": "1.1em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:ig29rx0EzhmxoNa7g5:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:ig29rx0EzhmxoNa7g5:0:0",
+           "attributes": {
+            "text": "Need a quote on this cable?"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Request a Quote Button",
+       "id": "ig29rx0EzfTv5Zzd3Y",
+       "$replicaId": "ig29rx0Ez",
+       "$originalId": "fTv5Zzd3Y",
+       "attributes": {
+        "cursor": "pointer",
+        "fill": "linear-gradient(135deg, #7F173F 0%, #DD2E7E 100%)",
+        "htmlTag": "button",
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "9px",
+        "link": {
+         "href": "/contact-vocomai"
+        },
+        "padding": "14px 22px 14px 22px",
+        "position": "relative",
+        "radius": "999px",
+        "width": "auto",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "ig29rx0Ezv_rswn9ol",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "v_rswn9ol",
+         "attributes": {
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 800,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(255, 255, 255)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:ig29rx0Ezv_rswn9ol:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:ig29rx0Ezv_rswn9ol:0:0",
+             "attributes": {
+              "text": "Request a Quote"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "IconNode",
+         "id": "ig29rx0EzkqPYdA8NG",
+         "set": "omX0gWFPqDwhaiWwf6ab",
+         "$control__icon": "Arrow Right",
+         "$replicaId": "ig29rx0Ez",
+         "$originalId": "kqPYdA8NG",
+         "attributes": {
+          "$control__color": "#FFFFFF",
+          "$control__width": "1.5",
+          "$control__alpha": "0",
+          "position": "relative",
+          "width": "17px",
+          "height": "17px"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ig29rx0EzsJzOM7iDk",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "ig29rx0Ez",
+     "$originalId": "sJzOM7iDk",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "$control__footerTagline": "Your partner for telecommunications and fiber optic supply.",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM AI",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "ComponentInstanceNode",
+   "id": "bisOH82NC",
+   "component": "GbX8S6ghmyszcS2GLR2F",
+   "$componentDisplayName": "Cookie Banner",
+   "attributes": {
+    "$control__gTMID": "",
+    "$control__preview": "false",
+    "$control__trigger": "{\"type\":{\"type\":\"enum\",\"value\":\"text\"},\"iconType\":{\"type\":\"enum\",\"value\":\"default\"},\"text\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"textFont\":{\"type\":\"font\"},\"iconSize\":{\"type\":\"number\",\"value\":24},\"color\":{\"type\":\"color\",\"value\":\"#333\"},\"iconImage\":{\"type\":\"image\"}}",
+    "$control__banner": "{\"position\":{\"type\":\"enum\",\"value\":\"bottom-right\"},\"zIndex\":{\"type\":\"number\",\"value\":10},\"width\":{\"type\":\"number\",\"value\":360},\"containerWidth\":{\"type\":\"number\",\"value\":0},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"inset\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"colorTitle\":{\"type\":\"color\",\"value\":\"#000\"},\"fontBody\":{\"type\":\"font\"},\"colorBody\":{\"type\":\"color\",\"value\":\"#444\"},\"fill\":{\"type\":\"color\",\"value\":\"#FFF\"},\"link\":{\"type\":\"color\",\"value\":\"#999\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":14},\"width\":{\"type\":\"number\",\"value\":1},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.05)\"}}},\"shadow\":{\"type\":\"object\",\"value\":null},\"backdrop\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"}}},\"animation\":{\"type\":\"object\",\"value\":{\"x\":{\"type\":\"number\",\"value\":0},\"y\":{\"type\":\"number\",\"value\":10},\"scale\":{\"type\":\"number\",\"value\":1},\"transition\":{\"type\":\"transition\",\"value\":{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":500,\"damping\":60,\"mass\":1,\"stagger\":0}}}}}",
+    "$control__buttons": "{\"primary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#000\"},\"color\":{\"type\":\"color\",\"value\":\"#FFF\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"secondary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#EEE\"},\"color\":{\"type\":\"color\",\"value\":\"#444\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"labels\":{\"type\":\"object\",\"value\":{\"accept\":{\"type\":\"string\",\"value\":\"Accept\"},\"reject\":{\"type\":\"string\",\"value\":\"Reject\"},\"acceptAll\":{\"type\":\"string\",\"value\":\"Accept all\"},\"rejectAll\":{\"type\":\"string\",\"value\":\"Reject all\"},\"customize\":{\"type\":\"string\",\"value\":\"Customize\"},\"save\":{\"type\":\"string\",\"value\":\"Save Preferences\"},\"confirm\":{\"type\":\"string\",\"value\":\"Okay\"}}},\"font\":{\"type\":\"font\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":10,\"fused\":[10,10,10,10]}},\"borderRadius\":{\"type\":\"number\",\"value\":8},\"tapOpacity\":{\"type\":\"number\",\"value\":0.4},\"hoverOpacity\":{\"type\":\"number\",\"value\":0.6},\"direction\":{\"type\":\"enum\",\"value\":\"row\"},\"fluid\":{\"type\":\"boolean\",\"value\":true}}",
+    "$control__regions": "{\"isEU\":{\"type\":\"boolean\",\"value\":true},\"euType\":{\"type\":\"enum\",\"value\":\"medium\"},\"euTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"euDescription\":{\"type\":\"string\",\"value\":\"We use cookies to enhance your experience, analyze site traffic and deliver personalized content.\"},\"euPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\",\"value\":{\"url\":\"https://www.framer.com/legal/policy/\",\"type\":\"url\"}},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"euDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":false},\"analytics\":{\"type\":\"boolean\",\"value\":false},\"marketing\":{\"type\":\"boolean\",\"value\":false}}},\"euShowReject\":{\"type\":\"boolean\",\"value\":true},\"euBlocking\":{\"type\":\"boolean\",\"value\":false},\"worldType\":{\"type\":\"enum\",\"value\":\"simple\"},\"worldTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"worldDescription\":{\"type\":\"string\",\"value\":\"We use cookies to personalize content, run ads, and analyze traffic.\"},\"worldPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\"},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"worldDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":true},\"analytics\":{\"type\":\"boolean\",\"value\":true},\"marketing\":{\"type\":\"boolean\",\"value\":true}}},\"worldShowReject\":{\"type\":\"boolean\",\"value\":true},\"worldBlocking\":{\"type\":\"boolean\",\"value\":false}}",
+    "$control__options": "{\"preview\":{\"type\":\"boolean\",\"value\":false},\"necessary\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Necessary\"},\"description\":{\"type\":\"string\",\"value\":\"Enables security and basic functionality.\"},\"optional\":{\"type\":\"boolean\",\"value\":true}}},\"preferences\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Preferences\"},\"description\":{\"type\":\"string\",\"value\":\"Enables personalized content and settings.\"}}},\"analytics\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Analytics\"},\"description\":{\"type\":\"string\",\"value\":\"Enables tracking of performance.\"}}},\"marketing\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Marketing\"},\"description\":{\"type\":\"string\",\"value\":\"Enables ads personalization and tracking.\"}}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"fontBody\":{\"type\":\"font\"},\"background\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":8},\"width\":{\"type\":\"number\",\"value\":0},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"}}},\"toggleColor\":{\"type\":\"color\",\"value\":\"#000\"},\"toggleColorInactive\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":12,\"fused\":[12,12,12,12]}}}}}",
+    "left": "-500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto"
+   }
+  }
+ ]
+}

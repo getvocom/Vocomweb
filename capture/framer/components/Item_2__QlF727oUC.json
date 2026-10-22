@@ -1,0 +1,442 @@
+{
+ "type": "ComponentNode",
+ "id": "QlF727oUC",
+ "name": "Item 2",
+ "variables": [
+  {
+   "key": "$control__number",
+   "id": "BU4_wyR9A",
+   "name": "Number",
+   "node": "Variable",
+   "type": "number",
+   "initialValue": 17
+  },
+  {
+   "key": "$control__suffix",
+   "id": "uvfNqUND5",
+   "name": "Suffix",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "+"
+  },
+  {
+   "key": "$control__speedMs",
+   "id": "OhLeOem3o",
+   "name": "Speed Ms",
+   "node": "Variable",
+   "type": "number",
+   "initialValue": 60
+  },
+  {
+   "key": "$control__h3Title",
+   "id": "ezNYwgiIW",
+   "name": "H3 Title",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "H3 Title"
+  },
+  {
+   "key": "$control__description",
+   "id": "MTE4RiHaV",
+   "name": "Description",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Description"
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "gRIbtkJKO",
+   "name": "Desktop"
+  },
+  {
+   "id": "BmoHuNr5H",
+   "name": "Tablet"
+  },
+  {
+   "id": "rLPyd9CHW",
+   "name": "Phone"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "gRIbtkJKO",
+   "$isPrimary": true,
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "30px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "49.74%",
+    "constraintsLocked": false,
+    "width": "400px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "nxpWH_FIw",
+     "component": "codeFile/Xv0dh3o:Counter",
+     "$componentDisplayName": "Counter",
+     "attributes": {
+      "$control__viewport": "true",
+      "$control__replay": "false",
+      "$control__font": "{\"fontSelector\":\"Inter-SemiBold\"}",
+      "$control__fontSize": "90",
+      "$control__fontColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12)) /* {\"name\":\"Black\"} */",
+      "$control__startNumber": "0",
+      "$control__endNumber": "var(--variable-BU4_wyR9A)",
+      "$control__separator": "none",
+      "$control__incrementType": "var(--variable-acalScyHL)",
+      "$control__prefix": "",
+      "$control__prefixFont": "{\"fontSelector\":\"Inter-Bold\"}",
+      "$control__prefixColor": "rgb(255, 255, 255)",
+      "$control__suffix": "var(--variable-uvfNqUND5)",
+      "$control__suffixColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12)) /* {\"name\":\"Black\"} */",
+      "$control__gapSize": "0",
+      "$control__speedMs": "var(--variable-OhLeOem3o)",
+      "$control__loopAnimation": "false",
+      "position": "relative",
+      "width": "auto",
+      "height": "auto"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Text",
+     "id": "UgkTC_f2W",
+     "attributes": {
+      "borderStyle": "solid",
+      "borderColor": "rgb(214, 214, 214)",
+      "borderTop": "1px",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "gap": "8px",
+      "padding": "40px 0px 0px 0px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "name": "Websites launched",
+       "id": "Qrn1uATZA",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-ezNYwgiIW)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "26px",
+        "letterSpacing": "-0.04em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "name": "Helping brands make their mark online.",
+       "id": "LmdzR3h83",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-MTE4RiHaV)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.04em",
+        "lineHeight": "1.3em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgba(12, 12, 12, 0.6)",
+        "textWrap": "balance"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "BmoHuNr5H",
+   "$isReplica": true,
+   "$originalId": "gRIbtkJKO",
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "24px",
+    "left": "500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "49.74%",
+    "constraintsLocked": false,
+    "width": "400px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "BmoHuNr5HnxpWH_FIw",
+     "component": "codeFile/Xv0dh3o:Counter",
+     "$replicaId": "BmoHuNr5H",
+     "$originalId": "nxpWH_FIw",
+     "$componentDisplayName": "Counter",
+     "attributes": {
+      "$control__viewport": "true",
+      "$control__replay": "false",
+      "$control__font": "{\"fontSelector\":\"Inter-SemiBold\"}",
+      "$control__fontSize": "66",
+      "$control__fontColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12)) /* {\"name\":\"Black\"} */",
+      "$control__startNumber": "0",
+      "$control__endNumber": "var(--variable-BU4_wyR9A)",
+      "$control__separator": "none",
+      "$control__incrementType": "var(--variable-acalScyHL)",
+      "$control__prefix": "",
+      "$control__prefixFont": "{\"fontSelector\":\"Inter-Bold\"}",
+      "$control__prefixColor": "rgb(255, 255, 255)",
+      "$control__suffix": "var(--variable-uvfNqUND5)",
+      "$control__suffixColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12)) /* {\"name\":\"Black\"} */",
+      "$control__gapSize": "0",
+      "$control__speedMs": "var(--variable-OhLeOem3o)",
+      "$control__loopAnimation": "false",
+      "position": "relative",
+      "width": "auto",
+      "height": "auto"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Text",
+     "id": "BmoHuNr5HUgkTC_f2W",
+     "$replicaId": "BmoHuNr5H",
+     "$originalId": "UgkTC_f2W",
+     "attributes": {
+      "borderStyle": "solid",
+      "borderColor": "rgb(214, 214, 214)",
+      "borderTop": "1px",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "gap": "6px",
+      "padding": "32px 0px 0px 0px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "name": "Websites launched",
+       "id": "BmoHuNr5HQrn1uATZA",
+       "$replicaId": "BmoHuNr5H",
+       "$originalId": "Qrn1uATZA",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-ezNYwgiIW)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "26px",
+        "letterSpacing": "-0.04em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "name": "Helping brands make their mark online.",
+       "id": "BmoHuNr5HLmdzR3h83",
+       "$replicaId": "BmoHuNr5H",
+       "$originalId": "LmdzR3h83",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-MTE4RiHaV)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.04em",
+        "lineHeight": "1.3em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgba(12, 12, 12, 0.6)",
+        "textWrap": "balance"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "rLPyd9CHW",
+   "$isReplica": true,
+   "$originalId": "gRIbtkJKO",
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "20px",
+    "left": "1000px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "49.74%",
+    "constraintsLocked": false,
+    "width": "400px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "rLPyd9CHWnxpWH_FIw",
+     "component": "codeFile/Xv0dh3o:Counter",
+     "$replicaId": "rLPyd9CHW",
+     "$originalId": "nxpWH_FIw",
+     "$componentDisplayName": "Counter",
+     "attributes": {
+      "$control__viewport": "true",
+      "$control__replay": "false",
+      "$control__font": "{\"fontSelector\":\"Inter-SemiBold\"}",
+      "$control__fontSize": "44",
+      "$control__fontColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12)) /* {\"name\":\"Black\"} */",
+      "$control__startNumber": "0",
+      "$control__endNumber": "var(--variable-BU4_wyR9A)",
+      "$control__separator": "none",
+      "$control__incrementType": "var(--variable-acalScyHL)",
+      "$control__prefix": "",
+      "$control__prefixFont": "{\"fontSelector\":\"Inter-Bold\"}",
+      "$control__prefixColor": "rgb(255, 255, 255)",
+      "$control__suffix": "var(--variable-uvfNqUND5)",
+      "$control__suffixColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12)) /* {\"name\":\"Black\"} */",
+      "$control__gapSize": "0",
+      "$control__speedMs": "var(--variable-OhLeOem3o)",
+      "$control__loopAnimation": "false",
+      "position": "relative",
+      "width": "auto",
+      "height": "auto"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Text",
+     "id": "rLPyd9CHWUgkTC_f2W",
+     "$replicaId": "rLPyd9CHW",
+     "$originalId": "UgkTC_f2W",
+     "attributes": {
+      "borderStyle": "solid",
+      "borderColor": "rgb(214, 214, 214)",
+      "borderTop": "1px",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "gap": "6px",
+      "padding": "24px 0px 0px 0px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "name": "Websites launched",
+       "id": "rLPyd9CHWQrn1uATZA",
+       "$replicaId": "rLPyd9CHW",
+       "$originalId": "Qrn1uATZA",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-ezNYwgiIW)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "26px",
+        "letterSpacing": "-0.04em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-09fd1980-8076-4f0b-8bb4-7ba5919ad6b8, rgb(12, 12, 12))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "name": "Helping brands make their mark online.",
+       "id": "rLPyd9CHWLmdzR3h83",
+       "$replicaId": "rLPyd9CHW",
+       "$originalId": "LmdzR3h83",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-MTE4RiHaV)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.04em",
+        "lineHeight": "1.3em",
+        "textAlignment": "start",
+        "textDecorationStyle": "solid",
+        "textColor": "rgba(12, 12, 12, 0.6)",
+        "textWrap": "balance"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

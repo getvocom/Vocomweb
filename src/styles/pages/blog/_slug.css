@@ -1,0 +1,62 @@
+/* Converted from Framer. Breakpoints: desktop >=1200, tablet 810-1199, phone <810. */
+.xo1cbap{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;padding:0px 20px 0px 20px;background:var(--white);overflow:clip;min-height:100vh}
+.xxhaate{display:block;position:sticky;top:10px;flex:none;width:1000px;height:min-content;z-index:10}
+.x3aw67t{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:160px;position:relative;flex:none;width:100%;height:min-content;padding:80px;background:var(--color-primary-white);z-index:2}
+.xpfbp2a{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:80px;position:relative;flex:none;width:100%;height:min-content;max-width:1800px}
+.xbjuv1n{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;gap:10px;position:relative;flex:none;width:100%;height:min-content;overflow:hidden}
+.xjfstzd{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:80px;position:relative;flex:1 0 0px;width:1px;height:min-content;max-width:800px}
+.xngstlx{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:120px;position:relative;flex:none;width:100%;height:min-content;overflow:hidden}
+.xsgmxg6{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px;position:relative;flex:none;width:min-content;height:min-content}
+.xrm9xux{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:16px;letter-spacing:0;line-height:1.4em;color:var(--color-dark-70);text-align:left;white-space:pre}
+.x2goiwl{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:18px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-black);text-align:left;white-space:pre}
+.xmcmady{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px;position:relative;flex:none;width:300px;height:min-content}
+.x3caq2v{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:56px;letter-spacing:0;line-height:1.2em;color:var(--color-primary-black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xjz3abm{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:min-content;max-width:1000px;border-radius:24px;overflow:hidden}
+.xnofpkf{display:block;position:relative;flex:none;width:100%;height:auto;overflow:hidden}
+.xmk59jd{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:40px;position:relative;flex:none;width:100%;height:min-content;max-width:1200px}
+.x6l1afq{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:30px;letter-spacing:-0.04em;line-height:1.4em;color:var(--black);text-align:left;--para-gap:40px;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xu7ifhs{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:500;font-size:24px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xjazvom{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:min-content;height:min-content;padding:16px 32px 16px 32px;border-radius:64px;background:var(--color-vocom-cta-1);--bw:1px;--bs:solid;--bc:rgba(0, 0, 0, 0);overflow:hidden;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xpwacie{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:18px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-white);text-align:left;white-space:pre;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xk2u4oo{display:block;position:relative;flex:none;width:16px;height:16px}
+.xpfbzxd{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:56px;letter-spacing:0;line-height:1.2em;color:var(--black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xccobj5{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:40px;position:relative;flex:none;width:100%;height:min-content;overflow:hidden}
+.xrmxswb{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:min-content;border-radius:24px;overflow:hidden}
+.x8fata5{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:40px;position:relative;flex:none;width:100%;height:min-content;overflow:hidden}
+.xnsnqlk{display:block;position:relative;flex:1 0 0px;width:1px;height:600px;border-radius:24px;overflow:hidden}
+.xoga3wx{display:block;position:relative;width:110.00000000000001%;height:110.00000000000001%;overflow:hidden}
+.xgirsjj{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:48px;position:relative;flex:none;width:100%;height:min-content;max-width:1200px;overflow:hidden}
+.xrgsblc{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:500;font-size:56px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xzxrxrs{display:block;position:relative;flex:none;width:100%;height:min-content}
+.xjazvom:hover{background:var(--color-vocom-white);--bc:var(--black);box-shadow:0px 6px 16px 0px rgba(20, 10, 15, 0.18)}
+.xjazvom:hover .xpwacie{color:var(--color-primary-black)}
+@media (min-width: 810px) and (max-width: 1199.98px){
+.xo1cbap{min-height:0}
+.xxhaate{width:767px}
+.x3aw67t{padding:80px 64px 80px 64px;gap:0}
+.x3caq2v{font-size:48px}
+.xu7ifhs{font-size:20px}
+.xpfbzxd{font-size:48px}
+.xnsnqlk{height:400px}
+.xrgsblc{font-size:38px}
+}
+@media (max-width: 809.98px){
+.xo1cbap{min-height:0}
+.xxhaate{width:360px}
+.x3aw67t{padding:120px 16px 80px 16px;gap:0}
+.xjfstzd{gap:48px}
+.xngstlx{flex-direction:column;align-items:flex-start;gap:12px}
+.xsgmxg6{flex-direction:row;justify-content:space-between;width:100%}
+.xrm9xux{flex:1 0 0px;width:1px;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x2goiwl{flex:1 0 0px;width:1px;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xmcmady{flex-direction:row;justify-content:space-between;width:100%}
+.x3caq2v{font-size:32px}
+.xjz3abm{border-radius:12px}
+.xu7ifhs{font-size:18px}
+.xpfbzxd{font-size:32px}
+.xccobj5{gap:16px;width:min-content}
+.xrmxswb{width:358px;border-radius:12px}
+.x8fata5{gap:16px;width:358px}
+.xnsnqlk{height:200px;border-radius:12px}
+.xrgsblc{font-size:32px}
+}

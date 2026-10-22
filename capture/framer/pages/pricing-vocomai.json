@@ -1,0 +1,5552 @@
+{
+ "type": "WebPageNode",
+ "id": "kWasfqqCR",
+ "name": "/pricing-vocomai",
+ "variables": [],
+ "$parentId": "sn7IXw6X9",
+ "$breakpoints": [
+  {
+   "id": "unHEOJgLF",
+   "name": "Desktop",
+   "mediaQueryRange": "(min-width: 1200px)"
+  },
+  {
+   "id": "h7__dk9Qs",
+   "name": "Tablet",
+   "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "id": "fC1l0alBo",
+   "name": "Phone",
+   "mediaQueryRange": "(max-width: 809.98px)"
+  }
+ ],
+ "attributes": {
+  "metadata": {
+   "title": "Pricing & Quotes | Vocom",
+   "description": "Explore Vocom AI pricing for AI audits, automation systems, and enterprise AI solutions. Flexible packages tailored to your business goals and scale.",
+   "socialImage": "https://framerusercontent.com/images/OklhP163funuHA8B9Sp76WVSYqk.jpeg",
+   "noIndexSite": false
+  },
+  "path": "/pricing-vocomai"
+ },
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "unHEOJgLF",
+   "$isPrimary": true,
+   "$mediaQuery": {
+    "range": "(min-width: 1200px)",
+    "name": "Desktop"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "q1eSa0Cis",
+     "component": "viLm3CAkV",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "bUoktgvCu",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "19.67%",
+      "constraintsLocked": false,
+      "width": "1200px",
+      "height": "432px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "eLXQm1Ftk",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "80px",
+      "overflow": "hidden",
+      "padding": "80px 0px 80px 0px",
+      "position": "relative",
+      "width": "960px",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "ZW4iL_lB9",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "xOiw7aMrg",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontVariationAxes": {
+           "opsz": 32,
+           "wght": 700
+          },
+          "fontWeight": 700,
+          "fontSize": "32px",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1em",
+          "openTypeFontFeatures": {
+           "cv01": "on",
+           "cv09": "on",
+           "cv11": "on",
+           "cv05": "on",
+           "ss03": "on"
+          },
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:xOiw7aMrg:0",
+           "attributes": {
+            "tag": "h1"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:xOiw7aMrg:0:0",
+             "attributes": {
+              "text": "Pricing"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "kahBF5L6m",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontVariationAxes": {
+           "opsz": 32,
+           "wght": 700
+          },
+          "fontWeight": 700,
+          "fontSize": "32px",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1em",
+          "openTypeFontFeatures": {
+           "cv01": "on",
+           "cv09": "on",
+           "cv11": "on",
+           "cv05": "on",
+           "ss03": "on"
+          },
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-d3650bef-13f5-49bd-88f0-8a82034ef0d6, rgb(153, 153, 153))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:kahBF5L6m:0",
+           "attributes": {
+            "tag": "h2"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:kahBF5L6m:0:0",
+             "attributes": {
+              "text": "Flexible, outcome-driven options."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "a7bNklFsn",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "17px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:a7bNklFsn:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:a7bNklFsn:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "JUzq7MCWk",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)",
+          "visible": "false"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:JUzq7MCWk:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:JUzq7MCWk:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "u9xwMpeKP",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "17px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)",
+          "visible": "false"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:u9xwMpeKP:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:u9xwMpeKP:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "wuEn5YYBm",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "20px",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "M54sOvn_n",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "300px",
+          "height": "340px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "QRGuiWn9F",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:QRGuiWn9F:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:QRGuiWn9F:0:0",
+               "attributes": {
+                "text": "Book a Demo"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "JmZFebhS0",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:JmZFebhS0:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:JmZFebhS0:0:0",
+               "attributes": {
+                "text": "Free"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "Cr4SJkZDK",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "iJmVtgsZT",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "gM3Yuh8II",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "m8ibeoXZv",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "Co3Qd_Zgo",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:Co3Qd_Zgo:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:Co3Qd_Zgo:0:0",
+                   "attributes": {
+                    "text": "Personalized walkthrough"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "UwLDOO2Ll",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "SfDbhLogp",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "kjeD7uqgh",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "AVybTQ4YV",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:AVybTQ4YV:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:AVybTQ4YV:0:0",
+                   "attributes": {
+                    "text": "Explore AIs in action"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "tc5252zbu",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "KFo_uq2w4",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "zVoQmSxFr",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "QhvW4Qd4Y",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:QhvW4Qd4Y:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:QhvW4Qd4Y:0:0",
+                   "attributes": {
+                    "text": "ROI assessment"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "rFtDA7gOs",
+           "attributes": {
+            "fill": "var(--token-41f137fe-ba41-450e-8f23-195a46c485dc, rgba(0, 0, 0, 0.08)) /* {\"name\":\"Layered Buttons\"} */",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "nes5NrNdw",
+             "attributes": {
+              "linkStylePreset": "Link",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:nes5NrNdw:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:nes5NrNdw:0:0",
+                 "attributes": {
+                  "text": "Book a Demo"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "z8AdL1_9S",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "300px",
+          "height": "340px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "zndkAsw7u",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:zndkAsw7u:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:zndkAsw7u:0:0",
+               "attributes": {
+                "text": "Book an AI Audit"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "phYc6lz0J",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:phYc6lz0J:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:phYc6lz0J:0:0",
+               "attributes": {
+                "text": "$5,000+"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "G1tN_KVy6",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "UqIMlhpTi",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "KhGKJbAHB",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "K7gmzQxe4",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "p2qfXxT2V",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:p2qfXxT2V:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:p2qfXxT2V:0:0",
+                   "attributes": {
+                    "text": "We plug into your business and map real pain points"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "gxruH61CV",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "L4wMFJICJ",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "aMKs14q6m",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "SqhjiNtYp",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:SqhjiNtYp:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:SqhjiNtYp:0:0",
+                   "attributes": {
+                    "text": "Identify practical AI solutions that actually work"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "xGZTWjvpn",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "kRajOldIX",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "ni2wf39Zs",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "ejTHuXq8n",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:ejTHuXq8n:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:ejTHuXq8n:0:0",
+                   "attributes": {
+                    "text": "ROI calculation and implementation roadmap"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "jyR51ppMR",
+           "attributes": {
+            "fill": "rgb(100, 20, 42)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "pJx01JUU3",
+             "attributes": {
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-26b2fd9f-cb04-4e12-920b-6e002294676e, rgb(255, 255, 255))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:pJx01JUU3:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:pJx01JUU3:0:0",
+                 "attributes": {
+                  "text": "Book Now"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "J4aLOM0ZC",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "300px",
+          "height": "340px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "b1olzFf4l",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:b1olzFf4l:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:b1olzFf4l:0:0",
+               "attributes": {
+                "text": "Custom Enterprise"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "dWUkCcD0s",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:dWUkCcD0s:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:dWUkCcD0s:0:0",
+               "attributes": {
+                "text": "Contact Sales"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "OOgPMuEbm",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "FHX_1z1Y_",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "gk0WhebWD",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "X_9WQKdLR",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "vrKw4vqsj",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:vrKw4vqsj:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:vrKw4vqsj:0:0",
+                   "attributes": {
+                    "text": "Tailored solutions"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "tG7Sfv9cI",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "EH9rdlJQ4",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "VkNF7a3X5",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "u8SbMepzx",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:u8SbMepzx:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:u8SbMepzx:0:0",
+                   "attributes": {
+                    "text": "Full implementation"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "SumZ8CCBG",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "NuRJ_SYAN",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "isEGYyZPo",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "PHU0gtyVI",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:PHU0gtyVI:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:PHU0gtyVI:0:0",
+                   "attributes": {
+                    "text": "Dedicated success manager"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "YKkc1BcM4",
+           "attributes": {
+            "fill": "rgb(100, 20, 42)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "cGeDZk2AB",
+             "attributes": {
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-26b2fd9f-cb04-4e12-920b-6e002294676e, rgb(255, 255, 255))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:cGeDZk2AB:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:cGeDZk2AB:0:0",
+                 "attributes": {
+                  "text": "Book Now"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "Rx4zeAT0k",
+     "component": "gZoBdp3Uw",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "h7__dk9Qs",
+   "$isReplica": true,
+   "$originalId": "unHEOJgLF",
+   "$mediaQuery": {
+    "range": "(min-width: 810px) and (max-width: 1199.98px)",
+    "name": "Tablet"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "1300px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "h7__dk9Qsq1eSa0Cis",
+     "component": "viLm3CAkV",
+     "$replicaId": "h7__dk9Qs",
+     "$originalId": "q1eSa0Cis",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "767px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "h7__dk9QsbUoktgvCu",
+     "$replicaId": "h7__dk9Qs",
+     "$originalId": "bUoktgvCu",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "17.9%",
+      "constraintsLocked": false,
+      "width": "810px",
+      "height": "508px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "h7__dk9QseLXQm1Ftk",
+     "$replicaId": "h7__dk9Qs",
+     "$originalId": "eLXQm1Ftk",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "80px",
+      "overflow": "hidden",
+      "padding": "80px 0px 80px 0px",
+      "position": "relative",
+      "width": "960px",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "h7__dk9QsZW4iL_lB9",
+       "$replicaId": "h7__dk9Qs",
+       "$originalId": "ZW4iL_lB9",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "h7__dk9QsxOiw7aMrg",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "xOiw7aMrg",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontVariationAxes": {
+           "opsz": 32,
+           "wght": 700
+          },
+          "fontWeight": 700,
+          "fontSize": "32px",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1em",
+          "openTypeFontFeatures": {
+           "cv01": "on",
+           "cv09": "on",
+           "cv11": "on",
+           "cv05": "on",
+           "ss03": "on"
+          },
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:h7__dk9QsxOiw7aMrg:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:h7__dk9QsxOiw7aMrg:0:0",
+             "attributes": {
+              "text": "Pricing"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "h7__dk9QskahBF5L6m",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "kahBF5L6m",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontVariationAxes": {
+           "opsz": 32,
+           "wght": 700
+          },
+          "fontWeight": 700,
+          "fontSize": "32px",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1em",
+          "openTypeFontFeatures": {
+           "cv01": "on",
+           "cv09": "on",
+           "cv11": "on",
+           "cv05": "on",
+           "ss03": "on"
+          },
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-d3650bef-13f5-49bd-88f0-8a82034ef0d6, rgb(153, 153, 153))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:h7__dk9QskahBF5L6m:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:h7__dk9QskahBF5L6m:0:0",
+             "attributes": {
+              "text": "Flexible, outcome-driven options."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "h7__dk9Qsa7bNklFsn",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "a7bNklFsn",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "17px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:h7__dk9Qsa7bNklFsn:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:h7__dk9Qsa7bNklFsn:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "h7__dk9QsJUzq7MCWk",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "JUzq7MCWk",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)",
+          "visible": "false"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:h7__dk9QsJUzq7MCWk:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:h7__dk9QsJUzq7MCWk:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "h7__dk9Qsu9xwMpeKP",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "u9xwMpeKP",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "17px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)",
+          "visible": "false"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:h7__dk9Qsu9xwMpeKP:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:h7__dk9Qsu9xwMpeKP:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "h7__dk9QswuEn5YYBm",
+       "$replicaId": "h7__dk9Qs",
+       "$originalId": "wuEn5YYBm",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "20px",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "h7__dk9QsM54sOvn_n",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "M54sOvn_n",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "239.04255319148936px",
+          "height": "302px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "h7__dk9QsQRGuiWn9F",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "QRGuiWn9F",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:h7__dk9QsQRGuiWn9F:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:h7__dk9QsQRGuiWn9F:0:0",
+               "attributes": {
+                "text": "Book a Demo"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "h7__dk9QsJmZFebhS0",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "JmZFebhS0",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:h7__dk9QsJmZFebhS0:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:h7__dk9QsJmZFebhS0:0:0",
+               "attributes": {
+                "text": "Free"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "h7__dk9QsCr4SJkZDK",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "Cr4SJkZDK",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsiJmVtgsZT",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "iJmVtgsZT",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsgM3Yuh8II",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "gM3Yuh8II",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9Qsm8ibeoXZv",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "m8ibeoXZv",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsCo3Qd_Zgo",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "Co3Qd_Zgo",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsCo3Qd_Zgo:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsCo3Qd_Zgo:0:0",
+                   "attributes": {
+                    "text": "Personalized walkthrough"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsUwLDOO2Ll",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "UwLDOO2Ll",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsSfDbhLogp",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "SfDbhLogp",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QskjeD7uqgh",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "kjeD7uqgh",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsAVybTQ4YV",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "AVybTQ4YV",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsAVybTQ4YV:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsAVybTQ4YV:0:0",
+                   "attributes": {
+                    "text": "Explore AIs in action"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9Qstc5252zbu",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "tc5252zbu",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsKFo_uq2w4",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "KFo_uq2w4",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QszVoQmSxFr",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "zVoQmSxFr",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsQhvW4Qd4Y",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "QhvW4Qd4Y",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsQhvW4Qd4Y:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsQhvW4Qd4Y:0:0",
+                   "attributes": {
+                    "text": "ROI assessment"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "h7__dk9QsrFtDA7gOs",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "rFtDA7gOs",
+           "attributes": {
+            "fill": "var(--token-41f137fe-ba41-450e-8f23-195a46c485dc, rgba(0, 0, 0, 0.08)) /* {\"name\":\"Layered Buttons\"} */",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "h7__dk9Qsnes5NrNdw",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "nes5NrNdw",
+             "attributes": {
+              "linkStylePreset": "Link",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:h7__dk9Qsnes5NrNdw:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:h7__dk9Qsnes5NrNdw:0:0",
+                 "attributes": {
+                  "text": "Book a Demo"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "h7__dk9Qsz8AdL1_9S",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "z8AdL1_9S",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "239.04255319148933px",
+          "height": "302px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "h7__dk9QszndkAsw7u",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "zndkAsw7u",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:h7__dk9QszndkAsw7u:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:h7__dk9QszndkAsw7u:0:0",
+               "attributes": {
+                "text": "Book an AI Audit"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "h7__dk9QsphYc6lz0J",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "phYc6lz0J",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:h7__dk9QsphYc6lz0J:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:h7__dk9QsphYc6lz0J:0:0",
+               "attributes": {
+                "text": "$5,000+"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "h7__dk9QsG1tN_KVy6",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "G1tN_KVy6",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsUqIMlhpTi",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "UqIMlhpTi",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsKhGKJbAHB",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "KhGKJbAHB",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QsK7gmzQxe4",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "K7gmzQxe4",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9Qsp2qfXxT2V",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "p2qfXxT2V",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9Qsp2qfXxT2V:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9Qsp2qfXxT2V:0:0",
+                   "attributes": {
+                    "text": "We plug into your business and map real pain points"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsgxruH61CV",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "gxruH61CV",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsL4wMFJICJ",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "L4wMFJICJ",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QsaMKs14q6m",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "aMKs14q6m",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsSqhjiNtYp",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "SqhjiNtYp",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsSqhjiNtYp:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsSqhjiNtYp:0:0",
+                   "attributes": {
+                    "text": "Identify practical AI solutions that actually work"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsxGZTWjvpn",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "xGZTWjvpn",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QskRajOldIX",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "kRajOldIX",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9Qsni2wf39Zs",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "ni2wf39Zs",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsejTHuXq8n",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "ejTHuXq8n",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsejTHuXq8n:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsejTHuXq8n:0:0",
+                   "attributes": {
+                    "text": "ROI calculation and implementation roadmap"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "h7__dk9QsjyR51ppMR",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "jyR51ppMR",
+           "attributes": {
+            "fill": "rgb(100, 20, 42)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "h7__dk9QspJx01JUU3",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "pJx01JUU3",
+             "attributes": {
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-26b2fd9f-cb04-4e12-920b-6e002294676e, rgb(255, 255, 255))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:h7__dk9QspJx01JUU3:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:h7__dk9QspJx01JUU3:0:0",
+                 "attributes": {
+                  "text": "Book Now"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "h7__dk9QsJ4aLOM0ZC",
+         "$replicaId": "h7__dk9Qs",
+         "$originalId": "J4aLOM0ZC",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "239.04255319148933px",
+          "height": "302px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "h7__dk9Qsb1olzFf4l",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "b1olzFf4l",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:h7__dk9Qsb1olzFf4l:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:h7__dk9Qsb1olzFf4l:0:0",
+               "attributes": {
+                "text": "Custom Enterprise"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "h7__dk9QsdWUkCcD0s",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "dWUkCcD0s",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:h7__dk9QsdWUkCcD0s:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:h7__dk9QsdWUkCcD0s:0:0",
+               "attributes": {
+                "text": "Contact Sales"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "h7__dk9QsOOgPMuEbm",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "OOgPMuEbm",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsFHX_1z1Y_",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "FHX_1z1Y_",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9Qsgk0WhebWD",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "gk0WhebWD",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QsX_9WQKdLR",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "X_9WQKdLR",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsvrKw4vqsj",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "vrKw4vqsj",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsvrKw4vqsj:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsvrKw4vqsj:0:0",
+                   "attributes": {
+                    "text": "Tailored solutions"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QstG7Sfv9cI",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "tG7Sfv9cI",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsEH9rdlJQ4",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "EH9rdlJQ4",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QsVkNF7a3X5",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "VkNF7a3X5",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9Qsu8SbMepzx",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "u8SbMepzx",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9Qsu8SbMepzx:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9Qsu8SbMepzx:0:0",
+                   "attributes": {
+                    "text": "Full implementation"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "h7__dk9QsSumZ8CCBG",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "SumZ8CCBG",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "h7__dk9QsNuRJ_SYAN",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "NuRJ_SYAN",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "h7__dk9QsisEGYyZPo",
+                 "$replicaId": "h7__dk9Qs",
+                 "$originalId": "isEGYyZPo",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "h7__dk9QsPHU0gtyVI",
+               "$replicaId": "h7__dk9Qs",
+               "$originalId": "PHU0gtyVI",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:h7__dk9QsPHU0gtyVI:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:h7__dk9QsPHU0gtyVI:0:0",
+                   "attributes": {
+                    "text": "Dedicated success manager"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "h7__dk9QsYKkc1BcM4",
+           "$replicaId": "h7__dk9Qs",
+           "$originalId": "YKkc1BcM4",
+           "attributes": {
+            "fill": "rgb(100, 20, 42)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "h7__dk9QscGeDZk2AB",
+             "$replicaId": "h7__dk9Qs",
+             "$originalId": "cGeDZk2AB",
+             "attributes": {
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-26b2fd9f-cb04-4e12-920b-6e002294676e, rgb(255, 255, 255))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:h7__dk9QscGeDZk2AB:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:h7__dk9QscGeDZk2AB:0:0",
+                 "attributes": {
+                  "text": "Book Now"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "h7__dk9QsRx4zeAT0k",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "h7__dk9Qs",
+     "$originalId": "Rx4zeAT0k",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "fC1l0alBo",
+   "$isReplica": true,
+   "$originalId": "unHEOJgLF",
+   "$mediaQuery": {
+    "range": "(max-width: 809.98px)",
+    "name": "Phone"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "2210px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "fC1l0alBoq1eSa0Cis",
+     "component": "viLm3CAkV",
+     "$replicaId": "fC1l0alBo",
+     "$originalId": "q1eSa0Cis",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "360px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "fC1l0alBobUoktgvCu",
+     "$replicaId": "fC1l0alBo",
+     "$originalId": "bUoktgvCu",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "13.98%",
+      "constraintsLocked": false,
+      "width": "390px",
+      "height": "504px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "fC1l0alBoeLXQm1Ftk",
+     "$replicaId": "fC1l0alBo",
+     "$originalId": "eLXQm1Ftk",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "80px",
+      "overflow": "hidden",
+      "padding": "80px 0px 80px 0px",
+      "position": "relative",
+      "width": "960px",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "fC1l0alBoZW4iL_lB9",
+       "$replicaId": "fC1l0alBo",
+       "$originalId": "ZW4iL_lB9",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "0px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "id": "fC1l0alBoxOiw7aMrg",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "xOiw7aMrg",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontVariationAxes": {
+           "opsz": 32,
+           "wght": 700
+          },
+          "fontWeight": 700,
+          "fontSize": "32px",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1em",
+          "openTypeFontFeatures": {
+           "cv01": "on",
+           "cv09": "on",
+           "cv11": "on",
+           "cv05": "on",
+           "ss03": "on"
+          },
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:fC1l0alBoxOiw7aMrg:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:fC1l0alBoxOiw7aMrg:0:0",
+             "attributes": {
+              "text": "Pricing"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "fC1l0alBokahBF5L6m",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "kahBF5L6m",
+         "attributes": {
+          "position": "relative",
+          "width": "auto",
+          "height": "auto",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontVariationAxes": {
+           "opsz": 32,
+           "wght": 700
+          },
+          "fontWeight": 700,
+          "fontSize": "24px",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1em",
+          "openTypeFontFeatures": {
+           "cv01": "on",
+           "cv09": "on",
+           "cv11": "on",
+           "cv05": "on",
+           "ss03": "on"
+          },
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "var(--token-d3650bef-13f5-49bd-88f0-8a82034ef0d6, rgb(153, 153, 153))"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:fC1l0alBokahBF5L6m:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:fC1l0alBokahBF5L6m:0:0",
+             "attributes": {
+              "text": "Flexible, outcome-driven options."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "fC1l0alBoa7bNklFsn",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "a7bNklFsn",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "17px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:fC1l0alBoa7bNklFsn:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:fC1l0alBoa7bNklFsn:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "fC1l0alBoJUzq7MCWk",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "JUzq7MCWk",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)",
+          "visible": "false"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:fC1l0alBoJUzq7MCWk:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:fC1l0alBoJUzq7MCWk:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "id": "fC1l0alBou9xwMpeKP",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "u9xwMpeKP",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "640px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "17px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em",
+          "textAlignment": "center",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(90, 90, 90)",
+          "visible": "false"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:fC1l0alBou9xwMpeKP:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:fC1l0alBou9xwMpeKP:0:0",
+             "attributes": {
+              "text": "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "fC1l0alBowuEn5YYBm",
+       "$replicaId": "fC1l0alBo",
+       "$originalId": "wuEn5YYBm",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "20px",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "fC1l0alBoM54sOvn_n",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "M54sOvn_n",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "300px",
+          "height": "340px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "fC1l0alBoQRGuiWn9F",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "QRGuiWn9F",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fC1l0alBoQRGuiWn9F:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fC1l0alBoQRGuiWn9F:0:0",
+               "attributes": {
+                "text": "Book a Demo"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "fC1l0alBoJmZFebhS0",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "JmZFebhS0",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fC1l0alBoJmZFebhS0:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fC1l0alBoJmZFebhS0:0:0",
+               "attributes": {
+                "text": "Free"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fC1l0alBoCr4SJkZDK",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "Cr4SJkZDK",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBoiJmVtgsZT",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "iJmVtgsZT",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBogM3Yuh8II",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "gM3Yuh8II",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBom8ibeoXZv",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "m8ibeoXZv",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBoCo3Qd_Zgo",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "Co3Qd_Zgo",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBoCo3Qd_Zgo:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBoCo3Qd_Zgo:0:0",
+                   "attributes": {
+                    "text": "Personalized walkthrough"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBoUwLDOO2Ll",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "UwLDOO2Ll",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBoSfDbhLogp",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "SfDbhLogp",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBokjeD7uqgh",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "kjeD7uqgh",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBoAVybTQ4YV",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "AVybTQ4YV",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBoAVybTQ4YV:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBoAVybTQ4YV:0:0",
+                   "attributes": {
+                    "text": "Explore AIs in action"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBotc5252zbu",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "tc5252zbu",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBoKFo_uq2w4",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "KFo_uq2w4",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBozVoQmSxFr",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "zVoQmSxFr",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBoQhvW4Qd4Y",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "QhvW4Qd4Y",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBoQhvW4Qd4Y:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBoQhvW4Qd4Y:0:0",
+                   "attributes": {
+                    "text": "ROI assessment"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fC1l0alBorFtDA7gOs",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "rFtDA7gOs",
+           "attributes": {
+            "fill": "var(--token-41f137fe-ba41-450e-8f23-195a46c485dc, rgba(0, 0, 0, 0.08)) /* {\"name\":\"Layered Buttons\"} */",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "fC1l0alBones5NrNdw",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "nes5NrNdw",
+             "attributes": {
+              "linkStylePreset": "Link",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:fC1l0alBones5NrNdw:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:fC1l0alBones5NrNdw:0:0",
+                 "attributes": {
+                  "text": "Book a Demo"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "fC1l0alBoz8AdL1_9S",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "z8AdL1_9S",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "300px",
+          "height": "340px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "fC1l0alBozndkAsw7u",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "zndkAsw7u",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fC1l0alBozndkAsw7u:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fC1l0alBozndkAsw7u:0:0",
+               "attributes": {
+                "text": "Book an AI Audit"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "fC1l0alBophYc6lz0J",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "phYc6lz0J",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fC1l0alBophYc6lz0J:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fC1l0alBophYc6lz0J:0:0",
+               "attributes": {
+                "text": "$5,000+"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fC1l0alBoG1tN_KVy6",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "G1tN_KVy6",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBoUqIMlhpTi",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "UqIMlhpTi",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBoKhGKJbAHB",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "KhGKJbAHB",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBoK7gmzQxe4",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "K7gmzQxe4",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBop2qfXxT2V",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "p2qfXxT2V",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBop2qfXxT2V:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBop2qfXxT2V:0:0",
+                   "attributes": {
+                    "text": "We plug into your business and map real pain points"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBogxruH61CV",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "gxruH61CV",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBoL4wMFJICJ",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "L4wMFJICJ",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBoaMKs14q6m",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "aMKs14q6m",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBoSqhjiNtYp",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "SqhjiNtYp",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBoSqhjiNtYp:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBoSqhjiNtYp:0:0",
+                   "attributes": {
+                    "text": "Identify practical AI solutions that actually work"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBoxGZTWjvpn",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "xGZTWjvpn",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBokRajOldIX",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "kRajOldIX",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBoni2wf39Zs",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "ni2wf39Zs",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBoejTHuXq8n",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "ejTHuXq8n",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBoejTHuXq8n:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBoejTHuXq8n:0:0",
+                   "attributes": {
+                    "text": "ROI calculation and implementation roadmap"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fC1l0alBojyR51ppMR",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "jyR51ppMR",
+           "attributes": {
+            "fill": "rgb(100, 20, 42)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "fC1l0alBopJx01JUU3",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "pJx01JUU3",
+             "attributes": {
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-26b2fd9f-cb04-4e12-920b-6e002294676e, rgb(255, 255, 255))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:fC1l0alBopJx01JUU3:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:fC1l0alBopJx01JUU3:0:0",
+                 "attributes": {
+                  "text": "Book Now"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "fC1l0alBoJ4aLOM0ZC",
+         "$replicaId": "fC1l0alBo",
+         "$originalId": "J4aLOM0ZC",
+         "attributes": {
+          "fill": "var(--token-dbe12eec-d6ea-4e14-b331-3053c9d607dd, rgb(245, 245, 245)) /* {\"name\":\"Placeholder Fill\"} */",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "20px",
+          "padding": "20px",
+          "position": "relative",
+          "radius": "24px",
+          "width": "300px",
+          "height": "340px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "fC1l0alBob1olzFf4l",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "b1olzFf4l",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 24,
+             "wght": 550
+            },
+            "fontWeight": 550,
+            "fontSize": "15px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fC1l0alBob1olzFf4l:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fC1l0alBob1olzFf4l:0:0",
+               "attributes": {
+                "text": "Custom Enterprise"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "fC1l0alBodWUkCcD0s",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "dWUkCcD0s",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontVariationAxes": {
+             "opsz": 32,
+             "wght": 700
+            },
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "1em",
+            "openTypeFontFeatures": {
+             "cv01": "on",
+             "cv09": "on",
+             "cv11": "on",
+             "cv05": "on",
+             "tnum": "on"
+            },
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-8961fb69-0ea3-46ab-8b8e-1f9187ebd1a9, rgb(0, 0, 0))"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fC1l0alBodWUkCcD0s:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fC1l0alBodWUkCcD0s:0:0",
+               "attributes": {
+                "text": "Contact Sales"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fC1l0alBoOOgPMuEbm",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "OOgPMuEbm",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "5px",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "1fr",
+            "height": "1fr"
+           },
+           "children": [
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBoFHX_1z1Y_",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "FHX_1z1Y_",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBogk0WhebWD",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "gk0WhebWD",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBoX_9WQKdLR",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "X_9WQKdLR",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBovrKw4vqsj",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "vrKw4vqsj",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBovrKw4vqsj:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBovrKw4vqsj:0:0",
+                   "attributes": {
+                    "text": "Tailored solutions"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBotG7Sfv9cI",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "tG7Sfv9cI",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBoEH9rdlJQ4",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "EH9rdlJQ4",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBoVkNF7a3X5",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "VkNF7a3X5",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBou8SbMepzx",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "u8SbMepzx",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBou8SbMepzx:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBou8SbMepzx:0:0",
+                   "attributes": {
+                    "text": "Full implementation"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "id": "fC1l0alBoSumZ8CCBG",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "SumZ8CCBG",
+             "attributes": {
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "10px",
+              "overflow": "hidden",
+              "position": "relative",
+              "width": "266.5px",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "FrameNode",
+               "name": "Check",
+               "id": "fC1l0alBoNuRJ_SYAN",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "NuRJ_SYAN",
+               "attributes": {
+                "layout": "null",
+                "overflow": "hidden",
+                "position": "relative",
+                "width": "16px",
+                "height": "16px"
+               },
+               "children": [
+                {
+                 "type": "PathNode",
+                 "id": "fC1l0alBoisEGYyZPo",
+                 "$replicaId": "fC1l0alBo",
+                 "$originalId": "isEGYyZPo",
+                 "$rect": {
+                  "width": 9.5,
+                  "height": 6.5
+                 },
+                 "attributes": {}
+                }
+               ]
+              },
+              {
+               "type": "RichTextNode",
+               "id": "fC1l0alBoPHU0gtyVI",
+               "$replicaId": "fC1l0alBo",
+               "$originalId": "PHU0gtyVI",
+               "attributes": {
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "fontName": "Inter",
+                "fontStyle": "normal",
+                "fontVariationAxes": {
+                 "opsz": 24,
+                 "wght": 500
+                },
+                "fontWeight": 500,
+                "fontSize": "15px",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "1.3em",
+                "openTypeFontFeatures": {
+                 "cv01": "on",
+                 "cv09": "on",
+                 "cv11": "on",
+                 "cv05": "on",
+                 "tnum": "on"
+                },
+                "textAlignment": "left",
+                "textDecorationStyle": "solid",
+                "textColor": "var(--token-ed724e25-7ff9-40e4-a153-c8f5351e85cb, rgb(119, 119, 119))"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:fC1l0alBoPHU0gtyVI:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:fC1l0alBoPHU0gtyVI:0:0",
+                   "attributes": {
+                    "text": "Dedicated success manager"
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fC1l0alBoYKkc1BcM4",
+           "$replicaId": "fC1l0alBo",
+           "$originalId": "YKkc1BcM4",
+           "attributes": {
+            "fill": "rgb(100, 20, 42)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "10px",
+            "link": {
+             "href": "/contact-vocomai"
+            },
+            "overflow": "hidden",
+            "padding": "10px",
+            "position": "relative",
+            "radius": "10px",
+            "width": "1fr",
+            "height": "40px"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "fC1l0alBocGeDZk2AB",
+             "$replicaId": "fC1l0alBo",
+             "$originalId": "cGeDZk2AB",
+             "attributes": {
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "fontName": "Inter",
+              "fontStyle": "normal",
+              "fontVariationAxes": {
+               "opsz": 20,
+               "wght": 600
+              },
+              "fontWeight": 600,
+              "fontSize": "14px",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "1.2em",
+              "openTypeFontFeatures": {
+               "cv09": "on",
+               "cv01": "on",
+               "cv11": "on",
+               "cv05": "on"
+              },
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-26b2fd9f-cb04-4e12-920b-6e002294676e, rgb(255, 255, 255))",
+              "userSelect": "none"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:fC1l0alBocGeDZk2AB:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:fC1l0alBocGeDZk2AB:0:0",
+                 "attributes": {
+                  "text": "Book Now"
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "fC1l0alBoRx4zeAT0k",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "fC1l0alBo",
+     "$originalId": "Rx4zeAT0k",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "ComponentInstanceNode",
+   "id": "rZ_hCLLW5",
+   "component": "GbX8S6ghmyszcS2GLR2F",
+   "$componentDisplayName": "Cookie Banner",
+   "attributes": {
+    "$control__gTMID": "",
+    "$control__preview": "false",
+    "$control__trigger": "{\"type\":{\"type\":\"enum\",\"value\":\"text\"},\"iconType\":{\"type\":\"enum\",\"value\":\"default\"},\"text\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"textFont\":{\"type\":\"font\"},\"iconSize\":{\"type\":\"number\",\"value\":24},\"color\":{\"type\":\"color\",\"value\":\"#333\"},\"iconImage\":{\"type\":\"image\"}}",
+    "$control__banner": "{\"position\":{\"type\":\"enum\",\"value\":\"bottom-right\"},\"zIndex\":{\"type\":\"number\",\"value\":10},\"width\":{\"type\":\"number\",\"value\":360},\"containerWidth\":{\"type\":\"number\",\"value\":0},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"inset\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"colorTitle\":{\"type\":\"color\",\"value\":\"#000\"},\"fontBody\":{\"type\":\"font\"},\"colorBody\":{\"type\":\"color\",\"value\":\"#444\"},\"fill\":{\"type\":\"color\",\"value\":\"#FFF\"},\"link\":{\"type\":\"color\",\"value\":\"#999\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":14},\"width\":{\"type\":\"number\",\"value\":1},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.05)\"}}},\"shadow\":{\"type\":\"object\",\"value\":null},\"backdrop\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"}}},\"animation\":{\"type\":\"object\",\"value\":{\"x\":{\"type\":\"number\",\"value\":0},\"y\":{\"type\":\"number\",\"value\":10},\"scale\":{\"type\":\"number\",\"value\":1},\"transition\":{\"type\":\"transition\",\"value\":{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":500,\"damping\":60,\"mass\":1,\"stagger\":0}}}}}",
+    "$control__buttons": "{\"primary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#000\"},\"color\":{\"type\":\"color\",\"value\":\"#FFF\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"secondary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#EEE\"},\"color\":{\"type\":\"color\",\"value\":\"#444\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"labels\":{\"type\":\"object\",\"value\":{\"accept\":{\"type\":\"string\",\"value\":\"Accept\"},\"reject\":{\"type\":\"string\",\"value\":\"Reject\"},\"acceptAll\":{\"type\":\"string\",\"value\":\"Accept all\"},\"rejectAll\":{\"type\":\"string\",\"value\":\"Reject all\"},\"customize\":{\"type\":\"string\",\"value\":\"Customize\"},\"save\":{\"type\":\"string\",\"value\":\"Save Preferences\"},\"confirm\":{\"type\":\"string\",\"value\":\"Okay\"}}},\"font\":{\"type\":\"font\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":10,\"fused\":[10,10,10,10]}},\"borderRadius\":{\"type\":\"number\",\"value\":8},\"tapOpacity\":{\"type\":\"number\",\"value\":0.4},\"hoverOpacity\":{\"type\":\"number\",\"value\":0.6},\"direction\":{\"type\":\"enum\",\"value\":\"row\"},\"fluid\":{\"type\":\"boolean\",\"value\":true}}",
+    "$control__regions": "{\"isEU\":{\"type\":\"boolean\",\"value\":true},\"euType\":{\"type\":\"enum\",\"value\":\"medium\"},\"euTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"euDescription\":{\"type\":\"string\",\"value\":\"We use cookies to enhance your experience, analyze site traffic and deliver personalized content.\"},\"euPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\",\"value\":{\"url\":\"https://www.framer.com/legal/policy/\",\"type\":\"url\"}},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"euDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":false},\"analytics\":{\"type\":\"boolean\",\"value\":false},\"marketing\":{\"type\":\"boolean\",\"value\":false}}},\"euShowReject\":{\"type\":\"boolean\",\"value\":true},\"euBlocking\":{\"type\":\"boolean\",\"value\":false},\"worldType\":{\"type\":\"enum\",\"value\":\"simple\"},\"worldTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"worldDescription\":{\"type\":\"string\",\"value\":\"We use cookies to personalize content, run ads, and analyze traffic.\"},\"worldPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\"},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"worldDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":true},\"analytics\":{\"type\":\"boolean\",\"value\":true},\"marketing\":{\"type\":\"boolean\",\"value\":true}}},\"worldShowReject\":{\"type\":\"boolean\",\"value\":true},\"worldBlocking\":{\"type\":\"boolean\",\"value\":false}}",
+    "$control__options": "{\"preview\":{\"type\":\"boolean\",\"value\":false},\"necessary\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Necessary\"},\"description\":{\"type\":\"string\",\"value\":\"Enables security and basic functionality.\"},\"optional\":{\"type\":\"boolean\",\"value\":true}}},\"preferences\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Preferences\"},\"description\":{\"type\":\"string\",\"value\":\"Enables personalized content and settings.\"}}},\"analytics\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Analytics\"},\"description\":{\"type\":\"string\",\"value\":\"Enables tracking of performance.\"}}},\"marketing\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Marketing\"},\"description\":{\"type\":\"string\",\"value\":\"Enables ads personalization and tracking.\"}}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"fontBody\":{\"type\":\"font\"},\"background\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":8},\"width\":{\"type\":\"number\",\"value\":0},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"}}},\"toggleColor\":{\"type\":\"color\",\"value\":\"#000\"},\"toggleColorInactive\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":12,\"fused\":[12,12,12,12]}}}}}",
+    "left": "-500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto"
+   }
+  }
+ ]
+}

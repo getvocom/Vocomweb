@@ -1,0 +1,29 @@
+{
+  "name": "vocom-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "capture": "node scripts/capture.mjs",
+    "parity": "node scripts/parity-check.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.18.2"
+  },
+  "devDependencies": {
+    "@material-design-icons/svg": "^0.14.15",
+    "@phosphor-icons/core": "^2.1.1",
+    "feather-icons": "^4.29.2",
+    "pagefind": "^1.5.2",
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.64.1",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.35.5"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true,
+    "sharp@0.35.5": true
+  }
+}

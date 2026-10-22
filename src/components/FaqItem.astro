@@ -1,0 +1,32 @@
+---
+// FAQ accordion item (replaces the Framer "faq/accordian_item 2" component).
+// Native <details> so answers are in the HTML and it works without JavaScript.
+interface Props { question: string; answer?: string; open?: boolean }
+const { question, answer, open = false } = Astro.props;
+---
+<details class="faq-item" open={open}>
+  <summary class="faq-q">
+    <p>{question}</p>
+    <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+  </summary>
+  <div class="faq-a"><p>{answer}<slot /></p></div>
+</details>
+
+<style>
+  .faq-item {
+    display: flex; flex-direction: column; gap: 4px; width: 100%;
+    padding: 8px 16px; background: var(--white); border-radius: 8px;
+    overflow: hidden; cursor: pointer; transition: background-color 0.2s ease;
+  }
+  .faq-item[open] { background: rgb(247, 247, 248); }
+  .faq-q { display: flex; align-items: center; gap: 16px; list-style: none; }
+  .faq-q::-webkit-details-marker { display: none; }
+  .faq-q p, .faq-a p {
+    font-family: var(--font-sans); font-size: 14px; line-height: 1.7; color: rgb(64, 66, 69);
+    white-space: pre-wrap; overflow-wrap: break-word;
+  }
+  .faq-q p { flex: 1 0 0; }
+  .faq-icon { flex: none; width: 20px; height: 20px; fill: rgb(185, 187, 193); transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease; }
+  .faq-item[open] .faq-icon { width: 28px; height: 28px; transform: rotate(45deg); }
+  .faq-a { padding-top: 4px; }
+</style>

@@ -1,0 +1,33 @@
+---
+// Tab/step item (replaces the Framer "tab/step_item" component). The parent tab
+// container switches variant on tap; Base.astro's script then sets data-open on every
+// item whose data-open-in lists the new variant. As on the live site, the collapsed
+// state shows a minus and the open state a plus.
+interface Props { number: string; openIn: string; open?: boolean }
+const { number, openIn, open = false } = Astro.props;
+---
+<div class="step-item" data-open-in={openIn} data-open={open ? "" : undefined}>
+  <p class="step-num">{number}</p>
+  <div class="step-body">
+    <p class="step-h"><slot name="heading" /></p>
+    <p class="step-d"><slot /></p>
+  </div>
+  <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="minus" d="M19 13H5v-2h14v2z"></path><path class="plus" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+</div>
+
+<style>
+  .step-item {
+    display: flex; gap: 10px; align-items: flex-start; justify-content: center; width: 100%;
+    padding: 16px; background: var(--white); border-radius: 8px; overflow: hidden; cursor: pointer;
+    transition: box-shadow 0.25s ease;
+  }
+  .step-item[data-open] { box-shadow: rgb(232, 232, 232) 0px 0px 2px 0px; }
+  .step-num, .step-h { font-family: var(--font-sans); font-size: 16px; font-weight: 500; line-height: 1.7; color: rgb(38, 44, 55); }
+  .step-num { flex: none; width: 20px; }
+  .step-body { flex: 1 0 0; display: flex; flex-direction: column; gap: 2px; }
+  .step-d { display: none; font-family: var(--font-sans); font-size: 14px; line-height: 1.7; color: rgb(64, 66, 69); }
+  .step-item[data-open] .step-d { display: block; }
+  .step-icon { flex: none; width: 24px; height: 24px; fill: rgb(185, 187, 193); }
+  .step-icon .plus, .step-item[data-open] .step-icon .minus { display: none; }
+  .step-item[data-open] .step-icon .plus { display: inline; }
+</style>

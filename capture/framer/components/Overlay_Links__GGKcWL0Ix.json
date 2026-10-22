@@ -1,0 +1,302 @@
+{
+ "type": "ComponentNode",
+ "id": "GGKcWL0Ix",
+ "name": "Overlay Links",
+ "variables": [
+  {
+   "key": "$control__label1",
+   "id": "EmaKBFW0E",
+   "name": "Label 1",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Lesson"
+  },
+  {
+   "key": "$control__label2",
+   "id": "gKXZw6rQf",
+   "name": "Label 2",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Lesson"
+  },
+  {
+   "key": "$control__label3",
+   "id": "WgkGbhLH6",
+   "name": "Label 3",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Lesson"
+  },
+  {
+   "key": "$control__label4",
+   "id": "GJp9VvhXD",
+   "name": "Label 4",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Lesson"
+  },
+  {
+   "key": "$control__label5",
+   "id": "HjWq4q7J_",
+   "name": "Label 5",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Lesson"
+  },
+  {
+   "key": "$control__label6",
+   "id": "bkODqtzb3",
+   "name": "Label 6",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Resources"
+  },
+  {
+   "key": "$control__label7",
+   "id": "UOxVzYWPo",
+   "name": "Label 7",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Resources"
+  },
+  {
+   "key": "$control__linkLabel1",
+   "id": "Wlq0G9UKl",
+   "name": "Link Label 1",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel2",
+   "id": "hE7dwLTT6",
+   "name": "Link Label 2",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel3",
+   "id": "GEOaWQX_7",
+   "name": "Link Label 3",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel4",
+   "id": "yLqa1GMpw",
+   "name": "Link Label 4",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel5",
+   "id": "Qu21DiaI7",
+   "name": "Link Label 5",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel6",
+   "id": "abdaJ8RjY",
+   "name": "Link Label 6",
+   "node": "LinkVariable",
+   "type": "link"
+  },
+  {
+   "key": "$control__linkLabel7",
+   "id": "WAzAiN7Rb",
+   "name": "Link Label 7",
+   "node": "LinkVariable",
+   "type": "link"
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "Plbk9I8LE",
+   "name": "Default"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Default",
+   "id": "Plbk9I8LE",
+   "$isPrimary": true,
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "10px 16px 10px 16px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "F7tQYIeiW",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-EmaKBFW0E)",
+      "$control__link": "var(--variable-Wlq0G9UKl)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-EmaKBFW0E)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "UWEjBrSs0",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-gKXZw6rQf)",
+      "$control__link": "var(--variable-hE7dwLTT6)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-gKXZw6rQf)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "BEs8Uq_Zl",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-WgkGbhLH6)",
+      "$control__link": "var(--variable-GEOaWQX_7)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-WgkGbhLH6)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "Kgpegqbqr",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-GJp9VvhXD)",
+      "$control__link": "var(--variable-yLqa1GMpw)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-GJp9VvhXD)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "HK4gmGEvb",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-HjWq4q7J_)",
+      "$control__link": "var(--variable-Qu21DiaI7)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-HjWq4q7J_)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "sJ4nybG4s",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-bkODqtzb3)",
+      "$control__link": "var(--variable-abdaJ8RjY)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-bkODqtzb3)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "wWAirpJOW",
+     "component": "DtDDOsgLb",
+     "$componentDisplayName": "Menu Item Tuto",
+     "attributes": {
+      "$control__variant": "Default",
+      "$control__label": "var(--variable-UOxVzYWPo)",
+      "$control__link": "var(--variable-WAzAiN7Rb)",
+      "position": "relative",
+      "width": "1fr",
+      "height": "34px",
+      "visible": {
+       "from": "var(--variable-UOxVzYWPo)",
+       "transforms": [
+        {
+         "name": "isSet"
+        }
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

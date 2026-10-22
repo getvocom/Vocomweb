@@ -1,0 +1,1244 @@
+{
+ "type": "WebPageNode",
+ "id": "Qb4tBBvgw",
+ "name": "/blog",
+ "variables": [],
+ "$parentId": "sn7IXw6X9",
+ "$breakpoints": [
+  {
+   "id": "j_v773yJZ",
+   "name": "Desktop",
+   "mediaQueryRange": "(min-width: 1200px)"
+  },
+  {
+   "id": "fySiPf3b1",
+   "name": "Tablet",
+   "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "id": "JSRHeshwW",
+   "name": "Phone",
+   "mediaQueryRange": "(max-width: 809.98px)"
+  }
+ ],
+ "attributes": {
+  "metadata": {
+   "title": "Fiber, Connectivity, and AI Insights | Vocom Blog",
+   "description": "Insights on fiber optic cable, enterprise AI, and telecom infrastructure from Vocom, from a team that has run networks since 1998. Read the blog.",
+   "socialImage": "https://framerusercontent.com/images/kNpzD9xN95IKt02J6SfH65MYTc0.webp"
+  },
+  "path": "/blog"
+ },
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "j_v773yJZ",
+   "$isPrimary": true,
+   "$mediaQuery": {
+    "range": "(min-width: 1200px)",
+    "name": "Desktop"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "gap": "0px",
+    "overflow": "clip",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "qx8ZtJjy2",
+     "component": "viLm3CAkV",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Content",
+     "id": "obnZiHX9o",
+     "attributes": {
+      "fill": "var(--token-e16847f2-b192-48e1-a890-7bbcce11cc6e)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "160px",
+      "padding": "120px 80px 160px 80px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "2"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "OC5Khll4w",
+       "attributes": {
+        "htmlTag": "main",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "80px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1800px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Intro Header",
+         "id": "Nr0AmbkDc",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "24px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "800px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ZaRFMZjqh",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "64px",
+            "letterSpacing": "-0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-63c519b1-7875-491e-b36b-f14f30806d72)",
+            "textEffect": {
+             "threshold": 0,
+             "trigger": "onMount",
+             "tokenization": "line",
+             "delay": "0s",
+             "replay": false,
+             "style": {
+              "opacity": 0,
+              "x": "50px",
+              "y": "0px",
+              "scale": 1,
+              "skewX": "0deg",
+              "skewY": "0deg",
+              "blur": "0px",
+              "transition": "tween 0,0.46,0.56,1 0.5s 0.2s",
+              "rotate": "0deg"
+             }
+            }
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ZaRFMZjqh:0",
+             "attributes": {
+              "tag": "h1"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ZaRFMZjqh:0:0",
+               "attributes": {
+                "text": "Fiber, Connectivity, and AI Insights"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "irWGwpkeL",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Manrope",
+            "fontStyle": "normal",
+            "fontWeight": 500,
+            "fontSize": "32px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-be079bad-eabd-4234-8a56-5579c7057187)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:irWGwpkeL:0",
+             "attributes": {
+              "tag": "h2"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:irWGwpkeL:0:0",
+               "attributes": {
+                "text": "Practical guidance on fiber optic cable specification, telecom infrastructure, and enterprise AI, from a team that has run networks since 1998."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "uMgix3Bbw",
+         "attributes": {
+          "layout": "grid",
+          "gridAlignment": "start",
+          "gridColumnCount": 2,
+          "gridColumnMinWidth": "200px",
+          "gap": "40px",
+          "position": "relative",
+          "collectionList": {
+           "collection": "Posts"
+          },
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "ComponentInstanceNode",
+           "id": "rAW0fpyzt",
+           "name": "Project Card",
+           "component": "OimJvlIzg",
+           "$componentDisplayName": "Case Thumbnail",
+           "attributes": {
+            "$control__variant": "Desktop",
+            "$control__projectTitle": "var(--variable-y34GyoiDi)",
+            "$control__clientName": "var(--variable-MSZWmOUa4)",
+            "$control__image": "var(--variable-KM6vLSrCh)",
+            "$control__link": {
+             "href": "/blog/:slug",
+             "collectionItem": "var(--variable-HO_Dxy3Fb)"
+            },
+            "gridItemColumnSpan": "1",
+            "gridItemRowSpan": "1",
+            "position": "relative",
+            "width": "100px",
+            "height": "500px"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Text 3 Columns",
+         "id": "c21JqXRgS",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "16px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "HuEOFTfzh",
+           "attributes": {
+            "position": "relative",
+            "width": "20%",
+            "height": "auto",
+            "fontName": "Manrope",
+            "fontStyle": "normal",
+            "fontWeight": 500,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-be079bad-eabd-4234-8a56-5579c7057187)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:HuEOFTfzh:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:HuEOFTfzh:0:0",
+               "attributes": {
+                "text": "Why We Write This"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "FJJosxFyv",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "horizontal",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "48px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "PvzhMitxQ",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": 500,
+              "fontSize": "40px",
+              "letterSpacing": "0em",
+              "lineHeight": "1.4em",
+              "textAlignment": "left",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-63c519b1-7875-491e-b36b-f14f30806d72)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:PvzhMitxQ:0",
+               "attributes": {
+                "tag": "h1"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:PvzhMitxQ:0:0",
+                 "attributes": {
+                  "text": "We publish what we would want to read ourselves: specific, technical, and grounded in real deployments, not generic advice."
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "uGgcaHjJS",
+             "component": "K8F1zjfny",
+             "$componentDisplayName": "Button Icon",
+             "attributes": {
+              "$control__variant": "Primary",
+              "$control__title": "About Us",
+              "$control__link": "/about",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "LKMBzPSig",
+     "component": "gZoBdp3Uw",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "fySiPf3b1",
+   "$isReplica": true,
+   "$originalId": "j_v773yJZ",
+   "$mediaQuery": {
+    "range": "(min-width: 810px) and (max-width: 1199.98px)",
+    "name": "Tablet"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "gap": "0px",
+    "overflow": "clip",
+    "left": "1300px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "fySiPf3b1qx8ZtJjy2",
+     "component": "viLm3CAkV",
+     "$replicaId": "fySiPf3b1",
+     "$originalId": "qx8ZtJjy2",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "767px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Content",
+     "id": "fySiPf3b1obnZiHX9o",
+     "$replicaId": "fySiPf3b1",
+     "$originalId": "obnZiHX9o",
+     "attributes": {
+      "fill": "var(--token-e16847f2-b192-48e1-a890-7bbcce11cc6e)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "0px",
+      "padding": "120px 64px 160px 64px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "2"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "fySiPf3b1OC5Khll4w",
+       "$replicaId": "fySiPf3b1",
+       "$originalId": "OC5Khll4w",
+       "attributes": {
+        "htmlTag": "main",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "120px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1800px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Intro Header",
+         "id": "fySiPf3b1Nr0AmbkDc",
+         "$replicaId": "fySiPf3b1",
+         "$originalId": "Nr0AmbkDc",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "24px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "800px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "fySiPf3b1ZaRFMZjqh",
+           "$replicaId": "fySiPf3b1",
+           "$originalId": "ZaRFMZjqh",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "52px",
+            "letterSpacing": "-0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-63c519b1-7875-491e-b36b-f14f30806d72)",
+            "textEffect": {
+             "threshold": 0,
+             "trigger": "onMount",
+             "tokenization": "line",
+             "delay": "0s",
+             "replay": false,
+             "style": {
+              "opacity": 0,
+              "x": "50px",
+              "y": "0px",
+              "scale": 1,
+              "skewX": "0deg",
+              "skewY": "0deg",
+              "blur": "0px",
+              "transition": "tween 0,0.46,0.56,1 0.5s 0.2s",
+              "rotate": "0deg"
+             }
+            }
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fySiPf3b1ZaRFMZjqh:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fySiPf3b1ZaRFMZjqh:0:0",
+               "attributes": {
+                "text": "Fiber, Connectivity, and AI Insights"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "fySiPf3b1irWGwpkeL",
+           "$replicaId": "fySiPf3b1",
+           "$originalId": "irWGwpkeL",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Manrope",
+            "fontStyle": "normal",
+            "fontWeight": 500,
+            "fontSize": "32px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-be079bad-eabd-4234-8a56-5579c7057187)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fySiPf3b1irWGwpkeL:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fySiPf3b1irWGwpkeL:0:0",
+               "attributes": {
+                "text": "Practical guidance on fiber optic cable specification, telecom infrastructure, and enterprise AI, from a team that has run networks since 1998."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "fySiPf3b1uMgix3Bbw",
+         "$replicaId": "fySiPf3b1",
+         "$originalId": "uMgix3Bbw",
+         "attributes": {
+          "layout": "grid",
+          "gridAlignment": "start",
+          "gridColumnCount": 2,
+          "gridColumnMinWidth": "200px",
+          "gap": "40px",
+          "position": "relative",
+          "collectionList": {
+           "collection": "Posts"
+          },
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "ComponentInstanceNode",
+           "id": "fySiPf3b1rAW0fpyzt",
+           "name": "Project Card",
+           "component": "OimJvlIzg",
+           "$replicaId": "fySiPf3b1",
+           "$originalId": "rAW0fpyzt",
+           "$componentDisplayName": "Case Thumbnail",
+           "attributes": {
+            "$control__variant": "Desktop",
+            "$control__projectTitle": "var(--variable-y34GyoiDi)",
+            "$control__clientName": "var(--variable-MSZWmOUa4)",
+            "$control__image": "var(--variable-KM6vLSrCh)",
+            "$control__link": {
+             "href": "/blog/:slug",
+             "collectionItem": "var(--variable-HO_Dxy3Fb)"
+            },
+            "gridItemColumnSpan": "1",
+            "gridItemRowSpan": "1",
+            "position": "relative",
+            "width": "100px",
+            "height": "450px"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Text 3 Columns",
+         "id": "fySiPf3b1c21JqXRgS",
+         "$replicaId": "fySiPf3b1",
+         "$originalId": "c21JqXRgS",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "16px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "fySiPf3b1HuEOFTfzh",
+           "$replicaId": "fySiPf3b1",
+           "$originalId": "HuEOFTfzh",
+           "attributes": {
+            "position": "relative",
+            "width": "20%",
+            "height": "auto",
+            "fontName": "Manrope",
+            "fontStyle": "normal",
+            "fontWeight": 500,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-be079bad-eabd-4234-8a56-5579c7057187)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:fySiPf3b1HuEOFTfzh:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:fySiPf3b1HuEOFTfzh:0:0",
+               "attributes": {
+                "text": "Why We Write This"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "fySiPf3b1FJJosxFyv",
+           "$replicaId": "fySiPf3b1",
+           "$originalId": "FJJosxFyv",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "48px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "fySiPf3b1PvzhMitxQ",
+             "$replicaId": "fySiPf3b1",
+             "$originalId": "PvzhMitxQ",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": 500,
+              "fontSize": "40px",
+              "letterSpacing": "0em",
+              "lineHeight": "1.4em",
+              "textAlignment": "left",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-63c519b1-7875-491e-b36b-f14f30806d72)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:fySiPf3b1PvzhMitxQ:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:fySiPf3b1PvzhMitxQ:0:0",
+                 "attributes": {
+                  "text": "We publish what we would want to read ourselves: specific, technical, and grounded in real deployments, not generic advice."
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "fySiPf3b1uGgcaHjJS",
+             "component": "K8F1zjfny",
+             "$replicaId": "fySiPf3b1",
+             "$originalId": "uGgcaHjJS",
+             "$componentDisplayName": "Button Icon",
+             "attributes": {
+              "$control__variant": "Primary",
+              "$control__title": "About Us",
+              "$control__link": "/about",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "fySiPf3b1LKMBzPSig",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "fySiPf3b1",
+     "$originalId": "LKMBzPSig",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "JSRHeshwW",
+   "$isReplica": true,
+   "$originalId": "j_v773yJZ",
+   "$mediaQuery": {
+    "range": "(max-width: 809.98px)",
+    "name": "Phone"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "gap": "0px",
+    "overflow": "clip",
+    "left": "2210px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "JSRHeshwWqx8ZtJjy2",
+     "component": "viLm3CAkV",
+     "$replicaId": "JSRHeshwW",
+     "$originalId": "qx8ZtJjy2",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "360px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Content",
+     "id": "JSRHeshwWobnZiHX9o",
+     "$replicaId": "JSRHeshwW",
+     "$originalId": "obnZiHX9o",
+     "attributes": {
+      "fill": "var(--token-e16847f2-b192-48e1-a890-7bbcce11cc6e)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "0px",
+      "padding": "120px 16px 160px 16px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "2"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "JSRHeshwWOC5Khll4w",
+       "$replicaId": "JSRHeshwW",
+       "$originalId": "OC5Khll4w",
+       "attributes": {
+        "htmlTag": "main",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "80px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1800px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Intro Header",
+         "id": "JSRHeshwWNr0AmbkDc",
+         "$replicaId": "JSRHeshwW",
+         "$originalId": "Nr0AmbkDc",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "24px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "maxWidth": "800px"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "JSRHeshwWZaRFMZjqh",
+           "$replicaId": "JSRHeshwW",
+           "$originalId": "ZaRFMZjqh",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "32px",
+            "letterSpacing": "-0.04em",
+            "lineHeight": "1.2em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-63c519b1-7875-491e-b36b-f14f30806d72)",
+            "textEffect": {
+             "threshold": 0,
+             "trigger": "onMount",
+             "tokenization": "line",
+             "delay": "0s",
+             "replay": false,
+             "style": {
+              "opacity": 0,
+              "x": "50px",
+              "y": "0px",
+              "scale": 1,
+              "skewX": "0deg",
+              "skewY": "0deg",
+              "blur": "0px",
+              "transition": "tween 0,0.46,0.56,1 0.5s 0.2s",
+              "rotate": "0deg"
+             }
+            }
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:JSRHeshwWZaRFMZjqh:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:JSRHeshwWZaRFMZjqh:0:0",
+               "attributes": {
+                "text": "Fiber, Connectivity, and AI Insights"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "JSRHeshwWirWGwpkeL",
+           "$replicaId": "JSRHeshwW",
+           "$originalId": "irWGwpkeL",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Manrope",
+            "fontStyle": "normal",
+            "fontWeight": 500,
+            "fontSize": "32px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-be079bad-eabd-4234-8a56-5579c7057187)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:JSRHeshwWirWGwpkeL:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:JSRHeshwWirWGwpkeL:0:0",
+               "attributes": {
+                "text": "Practical guidance on fiber optic cable specification, telecom infrastructure, and enterprise AI, from a team that has run networks since 1998."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "JSRHeshwWuMgix3Bbw",
+         "$replicaId": "JSRHeshwW",
+         "$originalId": "uMgix3Bbw",
+         "attributes": {
+          "layout": "grid",
+          "gridAlignment": "start",
+          "gridColumnCount": 1,
+          "gridColumnMinWidth": "200px",
+          "gap": "40px",
+          "position": "relative",
+          "collectionList": {
+           "collection": "Posts"
+          },
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "ComponentInstanceNode",
+           "id": "JSRHeshwWrAW0fpyzt",
+           "name": "Project Card",
+           "component": "OimJvlIzg",
+           "$replicaId": "JSRHeshwW",
+           "$originalId": "rAW0fpyzt",
+           "$componentDisplayName": "Case Thumbnail",
+           "attributes": {
+            "$control__variant": "Mobile",
+            "$control__projectTitle": "var(--variable-y34GyoiDi)",
+            "$control__clientName": "var(--variable-MSZWmOUa4)",
+            "$control__image": "var(--variable-KM6vLSrCh)",
+            "$control__link": {
+             "href": "/blog/:slug",
+             "collectionItem": "var(--variable-HO_Dxy3Fb)"
+            },
+            "gridItemColumnSpan": "1",
+            "gridItemRowSpan": "1",
+            "position": "relative",
+            "width": "100px",
+            "height": "300px"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Text 3 Columns",
+         "id": "JSRHeshwWc21JqXRgS",
+         "$replicaId": "JSRHeshwW",
+         "$originalId": "c21JqXRgS",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "16px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "JSRHeshwWHuEOFTfzh",
+           "$replicaId": "JSRHeshwW",
+           "$originalId": "HuEOFTfzh",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Manrope",
+            "fontStyle": "normal",
+            "fontWeight": 500,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "left",
+            "textDecorationStyle": "solid",
+            "textColor": "var(--token-be079bad-eabd-4234-8a56-5579c7057187)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:JSRHeshwWHuEOFTfzh:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:JSRHeshwWHuEOFTfzh:0:0",
+               "attributes": {
+                "text": "Why We Write This"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "FrameNode",
+           "id": "JSRHeshwWFJJosxFyv",
+           "$replicaId": "JSRHeshwW",
+           "$originalId": "FJJosxFyv",
+           "attributes": {
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "48px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "id": "JSRHeshwWPvzhMitxQ",
+             "$replicaId": "JSRHeshwW",
+             "$originalId": "PvzhMitxQ",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": 500,
+              "fontSize": "40px",
+              "letterSpacing": "0em",
+              "lineHeight": "1.4em",
+              "textAlignment": "left",
+              "textDecorationStyle": "solid",
+              "textColor": "var(--token-63c519b1-7875-491e-b36b-f14f30806d72)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:JSRHeshwWPvzhMitxQ:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:JSRHeshwWPvzhMitxQ:0:0",
+                 "attributes": {
+                  "text": "We publish what we would want to read ourselves: specific, technical, and grounded in real deployments, not generic advice."
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "ComponentInstanceNode",
+             "id": "JSRHeshwWuGgcaHjJS",
+             "component": "K8F1zjfny",
+             "$replicaId": "JSRHeshwW",
+             "$originalId": "uGgcaHjJS",
+             "$componentDisplayName": "Button Icon",
+             "attributes": {
+              "$control__variant": "Primary",
+              "$control__title": "About Us",
+              "$control__link": "/about",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "JSRHeshwWLKMBzPSig",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "JSRHeshwW",
+     "$originalId": "LKMBzPSig",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "ComponentInstanceNode",
+   "id": "zm9cw5aLh",
+   "component": "GbX8S6ghmyszcS2GLR2F",
+   "$componentDisplayName": "Cookie Banner",
+   "attributes": {
+    "$control__gTMID": "",
+    "$control__preview": "false",
+    "$control__trigger": "{\"type\":{\"type\":\"enum\",\"value\":\"text\"},\"iconType\":{\"type\":\"enum\",\"value\":\"default\"},\"text\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"textFont\":{\"type\":\"font\"},\"iconSize\":{\"type\":\"number\",\"value\":24},\"color\":{\"type\":\"color\",\"value\":\"#333\"},\"iconImage\":{\"type\":\"image\"}}",
+    "$control__banner": "{\"position\":{\"type\":\"enum\",\"value\":\"bottom-right\"},\"zIndex\":{\"type\":\"number\",\"value\":10},\"width\":{\"type\":\"number\",\"value\":360},\"containerWidth\":{\"type\":\"number\",\"value\":0},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"inset\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"colorTitle\":{\"type\":\"color\",\"value\":\"#000\"},\"fontBody\":{\"type\":\"font\"},\"colorBody\":{\"type\":\"color\",\"value\":\"#444\"},\"fill\":{\"type\":\"color\",\"value\":\"#FFF\"},\"link\":{\"type\":\"color\",\"value\":\"#999\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":14},\"width\":{\"type\":\"number\",\"value\":1},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.05)\"}}},\"shadow\":{\"type\":\"object\",\"value\":null},\"backdrop\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"}}},\"animation\":{\"type\":\"object\",\"value\":{\"x\":{\"type\":\"number\",\"value\":0},\"y\":{\"type\":\"number\",\"value\":10},\"scale\":{\"type\":\"number\",\"value\":1},\"transition\":{\"type\":\"transition\",\"value\":{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":500,\"damping\":60,\"mass\":1,\"stagger\":0}}}}}",
+    "$control__buttons": "{\"primary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#000\"},\"color\":{\"type\":\"color\",\"value\":\"#FFF\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"secondary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#EEE\"},\"color\":{\"type\":\"color\",\"value\":\"#444\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"labels\":{\"type\":\"object\",\"value\":{\"accept\":{\"type\":\"string\",\"value\":\"Accept\"},\"reject\":{\"type\":\"string\",\"value\":\"Reject\"},\"acceptAll\":{\"type\":\"string\",\"value\":\"Accept all\"},\"rejectAll\":{\"type\":\"string\",\"value\":\"Reject all\"},\"customize\":{\"type\":\"string\",\"value\":\"Customize\"},\"save\":{\"type\":\"string\",\"value\":\"Save Preferences\"},\"confirm\":{\"type\":\"string\",\"value\":\"Okay\"}}},\"font\":{\"type\":\"font\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":10,\"fused\":[10,10,10,10]}},\"borderRadius\":{\"type\":\"number\",\"value\":8},\"tapOpacity\":{\"type\":\"number\",\"value\":0.4},\"hoverOpacity\":{\"type\":\"number\",\"value\":0.6},\"direction\":{\"type\":\"enum\",\"value\":\"row\"},\"fluid\":{\"type\":\"boolean\",\"value\":true}}",
+    "$control__regions": "{\"isEU\":{\"type\":\"boolean\",\"value\":true},\"euType\":{\"type\":\"enum\",\"value\":\"medium\"},\"euTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"euDescription\":{\"type\":\"string\",\"value\":\"We use cookies to enhance your experience, analyze site traffic and deliver personalized content.\"},\"euPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\",\"value\":{\"url\":\"https://www.framer.com/legal/policy/\",\"type\":\"url\"}},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"euDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":false},\"analytics\":{\"type\":\"boolean\",\"value\":false},\"marketing\":{\"type\":\"boolean\",\"value\":false}}},\"euShowReject\":{\"type\":\"boolean\",\"value\":true},\"euBlocking\":{\"type\":\"boolean\",\"value\":false},\"worldType\":{\"type\":\"enum\",\"value\":\"simple\"},\"worldTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"worldDescription\":{\"type\":\"string\",\"value\":\"We use cookies to personalize content, run ads, and analyze traffic.\"},\"worldPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\"},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"worldDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":true},\"analytics\":{\"type\":\"boolean\",\"value\":true},\"marketing\":{\"type\":\"boolean\",\"value\":true}}},\"worldShowReject\":{\"type\":\"boolean\",\"value\":true},\"worldBlocking\":{\"type\":\"boolean\",\"value\":false}}",
+    "$control__options": "{\"preview\":{\"type\":\"boolean\",\"value\":false},\"necessary\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Necessary\"},\"description\":{\"type\":\"string\",\"value\":\"Enables security and basic functionality.\"},\"optional\":{\"type\":\"boolean\",\"value\":true}}},\"preferences\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Preferences\"},\"description\":{\"type\":\"string\",\"value\":\"Enables personalized content and settings.\"}}},\"analytics\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Analytics\"},\"description\":{\"type\":\"string\",\"value\":\"Enables tracking of performance.\"}}},\"marketing\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Marketing\"},\"description\":{\"type\":\"string\",\"value\":\"Enables ads personalization and tracking.\"}}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"fontBody\":{\"type\":\"font\"},\"background\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":8},\"width\":{\"type\":\"number\",\"value\":0},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"}}},\"toggleColor\":{\"type\":\"color\",\"value\":\"#000\"},\"toggleColorInactive\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":12,\"fused\":[12,12,12,12]}}}}}",
+    "left": "-500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto"
+   }
+  }
+ ]
+}

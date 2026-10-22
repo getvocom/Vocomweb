@@ -1,0 +1,2202 @@
+{
+ "type": "WebPageNode",
+ "id": "mU7JU0LA5",
+ "name": "/resources",
+ "variables": [],
+ "$parentId": "sn7IXw6X9",
+ "$breakpoints": [
+  {
+   "id": "eKhgcMzxW",
+   "name": "Desktop",
+   "mediaQueryRange": "(min-width: 1200px)"
+  },
+  {
+   "id": "r7aaXUlmT",
+   "name": "Tablet",
+   "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "id": "ALTmfR_za",
+   "name": "Phone",
+   "mediaQueryRange": "(max-width: 809.98px)"
+  }
+ ],
+ "attributes": {
+  "metadata": {
+   "title": "Resources | Vocom",
+   "description": "Download Vocom's guides on fiber optic cable, connectivity, and enterprise AI, or book a call with our team to plan your next build.",
+   "socialImage": "https://framerusercontent.com/images/OklhP163funuHA8B9Sp76WVSYqk.jpeg",
+   "noIndexSite": false
+  },
+  "path": "/resources"
+ },
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "eKhgcMzxW",
+   "$isPrimary": true,
+   "$mediaQuery": {
+    "range": "(min-width: 1200px)",
+    "name": "Desktop"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "b9Bevuj0Y",
+     "component": "viLm3CAkV",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "JuPBJYIlb",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "48px 24px 48px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "QOfBROUQM",
+       "attributes": {
+        "position": "relative",
+        "width": "auto",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "15px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.4em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(102, 102, 102)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:QOfBROUQM:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:QOfBROUQM:0:0",
+           "attributes": {
+            "text": "Working with renowned, trusted, and leading enterprises"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "qMEerEI3B",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "30px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "YUYn8BD2H",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/GsiDHbnQROE9zx5JDatZkECu1NM.svg",
+          "layout": "null",
+          "position": "relative",
+          "width": "60px",
+          "height": "80px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "id": "GkFiwJ4CA",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/pVL0nRXxwG3hF5g4bFBNz5LrKE.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "118px",
+          "height": "60px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "id": "UblYsfp2g",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/xZcjKmew0EQg7g507r3SXeKEj0.svg",
+          "layout": "null",
+          "position": "relative",
+          "width": "101.25px",
+          "height": "60px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "ats",
+         "id": "sVGpptOTm",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/zVQD3XfDVxWTMxfNZ24mkF56U.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "200px",
+          "height": "30px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "bizlink",
+         "id": "AuBsvLhUB",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/FrZMVYpiXVcZG7pU5xuMpGZzqU.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "150px",
+          "height": "33px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "wesco",
+         "id": "Hb05YLTJz",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/Z4c0iBvg3KEk6l9xTTpz5Af2iw.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "66px",
+          "height": "42px"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "rsLlPtf2Z",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "28px",
+      "overflow": "clip",
+      "padding": "72px 24px 44px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1200px",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Resources Column",
+       "id": "g6eGsB6B6",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "24px",
+        "position": "relative",
+        "radius": "26px",
+        "width": "1.45fr",
+        "height": "auto",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Resource Intro",
+         "id": "aeLyDgEI1",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "14px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "name": "Title",
+           "id": "bvjC7st1o",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "48px",
+            "letterSpacing": "-0.045em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(32, 21, 25)",
+            "textWrap": "balance"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:bvjC7st1o:0",
+             "attributes": {
+              "tag": "h1"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:bvjC7st1o:0:0",
+               "attributes": {
+                "text": "Resources for Fiber, Connectivity, and AI"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "name": "Sub-line",
+           "id": "Qe9gqKP7t",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "18px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.45em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgba(74, 48, 56, 0.78)",
+            "textWrap": "balance"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:Qe9gqKP7t:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:Qe9gqKP7t:0:0",
+               "attributes": {
+                "text": "Download our guides on what we do, or book a time to talk if it’s easier."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Download Cards",
+         "id": "xFxhIzMW8",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "14px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "name": "Fibre Optic Cable Guide",
+           "id": "nCwGsF05Z",
+           "attributes": {
+            "border": "1px solid rgba(117, 40, 58, 0.12)",
+            "fill": "rgba(255, 255, 255, 0.82)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "14px",
+            "overflow": "clip",
+            "padding": "22px",
+            "position": "relative",
+            "radius": "22px",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "name": "Title",
+             "id": "A6T5HQiqO",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Inter Display",
+              "fontStyle": "normal",
+              "fontWeight": 700,
+              "fontSize": "22px",
+              "letterSpacing": "-0.025em",
+              "lineHeight": "1.1em",
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "rgb(32, 21, 25)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:A6T5HQiqO:0",
+               "attributes": {
+                "tag": "h2"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:A6T5HQiqO:0:0",
+                 "attributes": {
+                  "text": "Fiber Optic Cable Catalog"
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "RichTextNode",
+             "name": "Description",
+             "id": "QTLlxt3EH",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Inter Display",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontSize": "15px",
+              "letterSpacing": "0em",
+              "lineHeight": "1.45em",
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "rgba(74, 48, 56, 0.74)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:QTLlxt3EH:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:QTLlxt3EH:0:0",
+                 "attributes": {
+                  "text": "Loose-tube, drop and ADSS cable: counts, specs and how to order build-to-order."
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "name": "[FILE SLOT — fibre guide PDF]",
+             "id": "lGc8Nmk3f",
+             "attributes": {
+              "cursor": "pointer",
+              "fill": "rgb(116, 35, 55)",
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "center",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "0px",
+              "link": {
+               "href": "https://drive.google.com/drive/folders/1Z-fUh05kchJa-yp29QmTjHUIbLH5mSau?usp=sharing",
+               "openInNewTab": true,
+               "rel": "noreferrer"
+              },
+              "overflow": "clip",
+              "padding": "11px 16px 11px 16px",
+              "position": "relative",
+              "radius": "999px",
+              "width": "auto",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "name": "Button Label",
+               "id": "mdZtNf2qb",
+               "attributes": {
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter Display",
+                "fontStyle": "normal",
+                "fontWeight": 700,
+                "fontSize": "13px",
+                "letterSpacing": "0.01em",
+                "lineHeight": "1em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "rgb(255, 255, 255)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:mdZtNf2qb:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:mdZtNf2qb:0:0",
+                   "attributes": {
+                    "text": "Access Our Catalog Here "
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Booking Column",
+       "id": "mHDyliPNg",
+       "attributes": {
+        "border": "1px solid rgba(117, 40, 58, 0.12)",
+        "fill": "rgba(255, 255, 255, 0.72)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "18px",
+        "overflow": "clip",
+        "padding": "28px",
+        "position": "relative",
+        "radius": "28px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "420px",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "name": "Booking Title",
+         "id": "kLm4ROptS",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "28px",
+          "letterSpacing": "-0.035em",
+          "lineHeight": "1.08em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(32, 21, 25)",
+          "textWrap": "balance"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:kLm4ROptS:0",
+           "attributes": {
+            "tag": "h2"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:kLm4ROptS:0:0",
+             "attributes": {
+              "text": "Prefer to talk? Book a call."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "name": "Booking Text",
+         "id": "gkWoqxoPz",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.45em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgba(74, 48, 56, 0.72)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:gkWoqxoPz:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:gkWoqxoPz:0:0",
+             "attributes": {
+              "text": "Choose a time with the Vocom team and we’ll walk through fiber, connectivity or AI options for your project."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Calendly Embed",
+         "id": "Vexk90ge4",
+         "attributes": {
+          "border": "1px solid rgba(117, 40, 58, 0.10)",
+          "fill": "rgb(255, 255, 255)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "0px",
+          "overflow": "clip",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "520px"
+         },
+         "children": [
+          {
+           "type": "ComponentInstanceNode",
+           "id": "xv0l4U9g3",
+           "component": "WIJbzyan03eQVbqqCNqQ",
+           "$componentDisplayName": "Calendly",
+           "attributes": {
+            "$control__calendar": "kevin-getvocom",
+            "$control__details": "true",
+            "$control__gDPR": "true",
+            "position": "relative",
+            "width": "1fr",
+            "height": "520px"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "N3wjoH34A",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "21.69%",
+      "constraintsLocked": false,
+      "width": "1200px",
+      "height": "560px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "vs3bXk2Gn",
+     "component": "gZoBdp3Uw",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "r7aaXUlmT",
+   "$isReplica": true,
+   "$originalId": "eKhgcMzxW",
+   "$mediaQuery": {
+    "range": "(min-width: 810px) and (max-width: 1199.98px)",
+    "name": "Tablet"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "1300px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "r7aaXUlmTb9Bevuj0Y",
+     "component": "viLm3CAkV",
+     "$replicaId": "r7aaXUlmT",
+     "$originalId": "b9Bevuj0Y",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "767px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "r7aaXUlmTJuPBJYIlb",
+     "$replicaId": "r7aaXUlmT",
+     "$originalId": "JuPBJYIlb",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "48px 24px 48px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "r7aaXUlmTQOfBROUQM",
+       "$replicaId": "r7aaXUlmT",
+       "$originalId": "QOfBROUQM",
+       "attributes": {
+        "position": "relative",
+        "width": "auto",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "15px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.4em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(102, 102, 102)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:r7aaXUlmTQOfBROUQM:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:r7aaXUlmTQOfBROUQM:0:0",
+           "attributes": {
+            "text": "Working with renowned, trusted, and leading enterprises"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "r7aaXUlmTqMEerEI3B",
+       "$replicaId": "r7aaXUlmT",
+       "$originalId": "qMEerEI3B",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "30px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "r7aaXUlmTYUYn8BD2H",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "YUYn8BD2H",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/GsiDHbnQROE9zx5JDatZkECu1NM.svg",
+          "layout": "null",
+          "position": "relative",
+          "width": "60px",
+          "height": "80px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "id": "r7aaXUlmTGkFiwJ4CA",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "GkFiwJ4CA",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/pVL0nRXxwG3hF5g4bFBNz5LrKE.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "118px",
+          "height": "60px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "id": "r7aaXUlmTUblYsfp2g",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "UblYsfp2g",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/xZcjKmew0EQg7g507r3SXeKEj0.svg",
+          "layout": "null",
+          "position": "relative",
+          "width": "101.25px",
+          "height": "60px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "ats",
+         "id": "r7aaXUlmTsVGpptOTm",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "sVGpptOTm",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/zVQD3XfDVxWTMxfNZ24mkF56U.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "200px",
+          "height": "30px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "bizlink",
+         "id": "r7aaXUlmTAuBsvLhUB",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "AuBsvLhUB",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/FrZMVYpiXVcZG7pU5xuMpGZzqU.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "150px",
+          "height": "33px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "wesco",
+         "id": "r7aaXUlmTHb05YLTJz",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "Hb05YLTJz",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/Z4c0iBvg3KEk6l9xTTpz5Af2iw.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "66px",
+          "height": "42px"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "r7aaXUlmTrsLlPtf2Z",
+     "$replicaId": "r7aaXUlmT",
+     "$originalId": "rsLlPtf2Z",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "28px",
+      "overflow": "clip",
+      "padding": "56px 20px 44px 20px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "1200px",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Resources Column",
+       "id": "r7aaXUlmTg6eGsB6B6",
+       "$replicaId": "r7aaXUlmT",
+       "$originalId": "g6eGsB6B6",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "24px",
+        "position": "relative",
+        "radius": "26px",
+        "width": "1fr",
+        "height": "auto",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Resource Intro",
+         "id": "r7aaXUlmTaeLyDgEI1",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "aeLyDgEI1",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "14px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "name": "Title",
+           "id": "r7aaXUlmTbvjC7st1o",
+           "$replicaId": "r7aaXUlmT",
+           "$originalId": "bvjC7st1o",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "42px",
+            "letterSpacing": "-0.045em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(32, 21, 25)",
+            "textWrap": "balance"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:r7aaXUlmTbvjC7st1o:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:r7aaXUlmTbvjC7st1o:0:0",
+               "attributes": {
+                "text": "Resources for Fiber, Connectivity, and AI"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "name": "Sub-line",
+           "id": "r7aaXUlmTQe9gqKP7t",
+           "$replicaId": "r7aaXUlmT",
+           "$originalId": "Qe9gqKP7t",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "18px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.45em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgba(74, 48, 56, 0.78)",
+            "textWrap": "balance"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:r7aaXUlmTQe9gqKP7t:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:r7aaXUlmTQe9gqKP7t:0:0",
+               "attributes": {
+                "text": "Download our guides on what we do, or book a time to talk if it’s easier."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Download Cards",
+         "id": "r7aaXUlmTxFxhIzMW8",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "xFxhIzMW8",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "14px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "name": "Fibre Optic Cable Guide",
+           "id": "r7aaXUlmTnCwGsF05Z",
+           "$replicaId": "r7aaXUlmT",
+           "$originalId": "nCwGsF05Z",
+           "attributes": {
+            "border": "1px solid rgba(117, 40, 58, 0.12)",
+            "fill": "rgba(255, 255, 255, 0.82)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "14px",
+            "overflow": "clip",
+            "padding": "22px",
+            "position": "relative",
+            "radius": "22px",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "name": "Title",
+             "id": "r7aaXUlmTA6T5HQiqO",
+             "$replicaId": "r7aaXUlmT",
+             "$originalId": "A6T5HQiqO",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Inter Display",
+              "fontStyle": "normal",
+              "fontWeight": 700,
+              "fontSize": "22px",
+              "letterSpacing": "-0.025em",
+              "lineHeight": "1.1em",
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "rgb(32, 21, 25)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:r7aaXUlmTA6T5HQiqO:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:r7aaXUlmTA6T5HQiqO:0:0",
+                 "attributes": {
+                  "text": "Fiber Optic Cable Catalog"
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "RichTextNode",
+             "name": "Description",
+             "id": "r7aaXUlmTQTLlxt3EH",
+             "$replicaId": "r7aaXUlmT",
+             "$originalId": "QTLlxt3EH",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Inter Display",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontSize": "15px",
+              "letterSpacing": "0em",
+              "lineHeight": "1.45em",
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "rgba(74, 48, 56, 0.74)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:r7aaXUlmTQTLlxt3EH:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:r7aaXUlmTQTLlxt3EH:0:0",
+                 "attributes": {
+                  "text": "Loose-tube, drop and ADSS cable: counts, specs and how to order build-to-order."
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "name": "[FILE SLOT — fibre guide PDF]",
+             "id": "r7aaXUlmTlGc8Nmk3f",
+             "$replicaId": "r7aaXUlmT",
+             "$originalId": "lGc8Nmk3f",
+             "attributes": {
+              "cursor": "pointer",
+              "fill": "rgb(116, 35, 55)",
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "center",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "0px",
+              "link": {
+               "href": "https://drive.google.com/drive/folders/1Z-fUh05kchJa-yp29QmTjHUIbLH5mSau?usp=sharing",
+               "openInNewTab": true,
+               "rel": "noreferrer"
+              },
+              "overflow": "clip",
+              "padding": "11px 16px 11px 16px",
+              "position": "relative",
+              "radius": "999px",
+              "width": "auto",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "name": "Button Label",
+               "id": "r7aaXUlmTmdZtNf2qb",
+               "$replicaId": "r7aaXUlmT",
+               "$originalId": "mdZtNf2qb",
+               "attributes": {
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter Display",
+                "fontStyle": "normal",
+                "fontWeight": 700,
+                "fontSize": "13px",
+                "letterSpacing": "0.01em",
+                "lineHeight": "1em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "rgb(255, 255, 255)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:r7aaXUlmTmdZtNf2qb:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:r7aaXUlmTmdZtNf2qb:0:0",
+                   "attributes": {
+                    "text": "Access Our Catalog Here "
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Booking Column",
+       "id": "r7aaXUlmTmHDyliPNg",
+       "$replicaId": "r7aaXUlmT",
+       "$originalId": "mHDyliPNg",
+       "attributes": {
+        "border": "1px solid rgba(117, 40, 58, 0.12)",
+        "fill": "rgba(255, 255, 255, 0.72)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "center",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "18px",
+        "overflow": "clip",
+        "padding": "28px",
+        "position": "relative",
+        "radius": "28px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "720px",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "name": "Booking Title",
+         "id": "r7aaXUlmTkLm4ROptS",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "kLm4ROptS",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "28px",
+          "letterSpacing": "-0.035em",
+          "lineHeight": "1.08em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(32, 21, 25)",
+          "textWrap": "balance"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:r7aaXUlmTkLm4ROptS:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:r7aaXUlmTkLm4ROptS:0:0",
+             "attributes": {
+              "text": "Prefer to talk? Book a call."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "name": "Booking Text",
+         "id": "r7aaXUlmTgkWoqxoPz",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "gkWoqxoPz",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.45em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgba(74, 48, 56, 0.72)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:r7aaXUlmTgkWoqxoPz:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:r7aaXUlmTgkWoqxoPz:0:0",
+             "attributes": {
+              "text": "Choose a time with the Vocom team and we’ll walk through fiber, connectivity or AI options for your project."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Calendly Embed",
+         "id": "r7aaXUlmTVexk90ge4",
+         "$replicaId": "r7aaXUlmT",
+         "$originalId": "Vexk90ge4",
+         "attributes": {
+          "border": "1px solid rgba(117, 40, 58, 0.10)",
+          "fill": "rgb(255, 255, 255)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "0px",
+          "overflow": "clip",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "520px"
+         },
+         "children": [
+          {
+           "type": "ComponentInstanceNode",
+           "id": "r7aaXUlmTxv0l4U9g3",
+           "component": "WIJbzyan03eQVbqqCNqQ",
+           "$replicaId": "r7aaXUlmT",
+           "$originalId": "xv0l4U9g3",
+           "$componentDisplayName": "Calendly",
+           "attributes": {
+            "$control__calendar": "kevin-getvocom",
+            "$control__details": "true",
+            "$control__gDPR": "true",
+            "position": "relative",
+            "width": "1fr",
+            "height": "520px"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "r7aaXUlmTN3wjoH34A",
+     "$replicaId": "r7aaXUlmT",
+     "$originalId": "N3wjoH34A",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "17.9%",
+      "constraintsLocked": false,
+      "width": "810px",
+      "height": "386px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "r7aaXUlmTvs3bXk2Gn",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "r7aaXUlmT",
+     "$originalId": "vs3bXk2Gn",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "ALTmfR_za",
+   "$isReplica": true,
+   "$originalId": "eKhgcMzxW",
+   "$mediaQuery": {
+    "range": "(max-width: 809.98px)",
+    "name": "Phone"
+   },
+   "attributes": {
+    "fill": "white",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "padding": "0px 20px 0px 20px",
+    "left": "2210px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ALTmfR_zab9Bevuj0Y",
+     "component": "viLm3CAkV",
+     "$replicaId": "ALTmfR_za",
+     "$originalId": "b9Bevuj0Y",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "position": "sticky",
+      "positionStickyTop": 10,
+      "width": "360px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "id": "ALTmfR_zaJuPBJYIlb",
+     "$replicaId": "ALTmfR_za",
+     "$originalId": "JuPBJYIlb",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "48px 24px 48px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "ALTmfR_zaQOfBROUQM",
+       "$replicaId": "ALTmfR_za",
+       "$originalId": "QOfBROUQM",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "15px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.4em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(102, 102, 102)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:ALTmfR_zaQOfBROUQM:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:ALTmfR_zaQOfBROUQM:0:0",
+           "attributes": {
+            "text": "Working with renowned, trusted, and leading enterprises"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "ALTmfR_zaqMEerEI3B",
+       "$replicaId": "ALTmfR_za",
+       "$originalId": "qMEerEI3B",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": true,
+        "gap": "30px",
+        "position": "relative",
+        "width": "100%",
+        "height": "auto"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "ALTmfR_zaYUYn8BD2H",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "YUYn8BD2H",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/GsiDHbnQROE9zx5JDatZkECu1NM.svg",
+          "layout": "null",
+          "position": "relative",
+          "width": "60px",
+          "height": "80px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "id": "ALTmfR_zaGkFiwJ4CA",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "GkFiwJ4CA",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/pVL0nRXxwG3hF5g4bFBNz5LrKE.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "118px",
+          "height": "60px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "id": "ALTmfR_zaUblYsfp2g",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "UblYsfp2g",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/xZcjKmew0EQg7g507r3SXeKEj0.svg",
+          "layout": "null",
+          "position": "relative",
+          "width": "101.25px",
+          "height": "60px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "ats",
+         "id": "ALTmfR_zasVGpptOTm",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "sVGpptOTm",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/zVQD3XfDVxWTMxfNZ24mkF56U.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "200px",
+          "height": "30px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "bizlink",
+         "id": "ALTmfR_zaAuBsvLhUB",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "AuBsvLhUB",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/FrZMVYpiXVcZG7pU5xuMpGZzqU.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "150px",
+          "height": "33px"
+         }
+        },
+        {
+         "type": "FrameNode",
+         "name": "wesco",
+         "id": "ALTmfR_zaHb05YLTJz",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "Hb05YLTJz",
+         "attributes": {
+          "fill": "https://framerusercontent.com/images/Z4c0iBvg3KEk6l9xTTpz5Af2iw.png",
+          "layout": "null",
+          "position": "relative",
+          "width": "66px",
+          "height": "42px"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "ALTmfR_zarsLlPtf2Z",
+     "$replicaId": "ALTmfR_za",
+     "$originalId": "rsLlPtf2Z",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "42px 0px 36px 0px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "7"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Resources Column",
+       "id": "ALTmfR_zag6eGsB6B6",
+       "$replicaId": "ALTmfR_za",
+       "$originalId": "g6eGsB6B6",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "24px",
+        "position": "relative",
+        "radius": "26px",
+        "width": "1fr",
+        "height": "auto",
+        "zIndex": "1"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Resource Intro",
+         "id": "ALTmfR_zaaeLyDgEI1",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "aeLyDgEI1",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "14px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "name": "Title",
+           "id": "ALTmfR_zabvjC7st1o",
+           "$replicaId": "ALTmfR_za",
+           "$originalId": "bvjC7st1o",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "34px",
+            "letterSpacing": "-0.045em",
+            "lineHeight": "1em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(32, 21, 25)",
+            "textWrap": "balance"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ALTmfR_zabvjC7st1o:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ALTmfR_zabvjC7st1o:0:0",
+               "attributes": {
+                "text": "Resources for Fiber, Connectivity, and AI"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "name": "Sub-line",
+           "id": "ALTmfR_zaQe9gqKP7t",
+           "$replicaId": "ALTmfR_za",
+           "$originalId": "Qe9gqKP7t",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter Display",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.45em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgba(74, 48, 56, 0.78)",
+            "textWrap": "balance"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ALTmfR_zaQe9gqKP7t:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ALTmfR_zaQe9gqKP7t:0:0",
+               "attributes": {
+                "text": "Download our guides on what we do, or book a time to talk if it’s easier."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Download Cards",
+         "id": "ALTmfR_zaxFxhIzMW8",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "xFxhIzMW8",
+         "attributes": {
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "14px",
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "FrameNode",
+           "name": "Fibre Optic Cable Guide",
+           "id": "ALTmfR_zanCwGsF05Z",
+           "$replicaId": "ALTmfR_za",
+           "$originalId": "nCwGsF05Z",
+           "attributes": {
+            "border": "1px solid rgba(117, 40, 58, 0.12)",
+            "fill": "rgba(255, 255, 255, 0.82)",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "start",
+            "stackWrapEnabled": false,
+            "gap": "14px",
+            "overflow": "clip",
+            "padding": "22px",
+            "position": "relative",
+            "radius": "22px",
+            "width": "1fr",
+            "height": "auto"
+           },
+           "children": [
+            {
+             "type": "RichTextNode",
+             "name": "Title",
+             "id": "ALTmfR_zaA6T5HQiqO",
+             "$replicaId": "ALTmfR_za",
+             "$originalId": "A6T5HQiqO",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Inter Display",
+              "fontStyle": "normal",
+              "fontWeight": 700,
+              "fontSize": "22px",
+              "letterSpacing": "-0.025em",
+              "lineHeight": "1.1em",
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "rgb(32, 21, 25)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:ALTmfR_zaA6T5HQiqO:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:ALTmfR_zaA6T5HQiqO:0:0",
+                 "attributes": {
+                  "text": "Fiber Optic Cable Catalog"
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "RichTextNode",
+             "name": "Description",
+             "id": "ALTmfR_zaQTLlxt3EH",
+             "$replicaId": "ALTmfR_za",
+             "$originalId": "QTLlxt3EH",
+             "attributes": {
+              "position": "relative",
+              "width": "1fr",
+              "height": "auto",
+              "fontName": "Inter Display",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontSize": "15px",
+              "letterSpacing": "0em",
+              "lineHeight": "1.45em",
+              "textAlignment": "start",
+              "textDecorationStyle": "solid",
+              "textColor": "rgba(74, 48, 56, 0.74)"
+             },
+             "children": [
+              {
+               "type": "TextBlock",
+               "id": "v:ALTmfR_zaQTLlxt3EH:0",
+               "attributes": {
+                "tag": "p"
+               },
+               "children": [
+                {
+                 "type": "TextRun",
+                 "id": "v:ALTmfR_zaQTLlxt3EH:0:0",
+                 "attributes": {
+                  "text": "Loose-tube, drop and ADSS cable: counts, specs and how to order build-to-order."
+                 }
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "type": "FrameNode",
+             "name": "[FILE SLOT — fibre guide PDF]",
+             "id": "ALTmfR_zalGc8Nmk3f",
+             "$replicaId": "ALTmfR_za",
+             "$originalId": "lGc8Nmk3f",
+             "attributes": {
+              "cursor": "pointer",
+              "fill": "rgb(116, 35, 55)",
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "center",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "0px",
+              "link": {
+               "href": "https://drive.google.com/drive/folders/1Z-fUh05kchJa-yp29QmTjHUIbLH5mSau?usp=sharing",
+               "openInNewTab": true,
+               "rel": "noreferrer"
+              },
+              "overflow": "clip",
+              "padding": "11px 16px 11px 16px",
+              "position": "relative",
+              "radius": "999px",
+              "width": "1fr",
+              "height": "auto"
+             },
+             "children": [
+              {
+               "type": "RichTextNode",
+               "name": "Button Label",
+               "id": "ALTmfR_zamdZtNf2qb",
+               "$replicaId": "ALTmfR_za",
+               "$originalId": "mdZtNf2qb",
+               "attributes": {
+                "position": "relative",
+                "width": "auto",
+                "height": "auto",
+                "fontName": "Inter Display",
+                "fontStyle": "normal",
+                "fontWeight": 700,
+                "fontSize": "13px",
+                "letterSpacing": "0.01em",
+                "lineHeight": "1em",
+                "textAlignment": "start",
+                "textDecorationStyle": "solid",
+                "textColor": "rgb(255, 255, 255)"
+               },
+               "children": [
+                {
+                 "type": "TextBlock",
+                 "id": "v:ALTmfR_zamdZtNf2qb:0",
+                 "attributes": {
+                  "tag": "p"
+                 },
+                 "children": [
+                  {
+                   "type": "TextRun",
+                   "id": "v:ALTmfR_zamdZtNf2qb:0:0",
+                   "attributes": {
+                    "text": "Access Our Catalog Here "
+                   }
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Booking Column",
+       "id": "ALTmfR_zamHDyliPNg",
+       "$replicaId": "ALTmfR_za",
+       "$originalId": "mHDyliPNg",
+       "attributes": {
+        "border": "1px solid rgba(117, 40, 58, 0.12)",
+        "fill": "rgba(255, 255, 255, 0.72)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "start",
+        "stackWrapEnabled": false,
+        "gap": "18px",
+        "overflow": "clip",
+        "padding": "20px",
+        "position": "relative",
+        "radius": "28px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "350px",
+        "zIndex": "9"
+       },
+       "children": [
+        {
+         "type": "RichTextNode",
+         "name": "Booking Title",
+         "id": "ALTmfR_zakLm4ROptS",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "kLm4ROptS",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontSize": "26px",
+          "letterSpacing": "-0.035em",
+          "lineHeight": "1.08em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgb(32, 21, 25)",
+          "textWrap": "balance"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:ALTmfR_zakLm4ROptS:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:ALTmfR_zakLm4ROptS:0:0",
+             "attributes": {
+              "text": "Prefer to talk? Book a call."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "RichTextNode",
+         "name": "Booking Text",
+         "id": "ALTmfR_zagkWoqxoPz",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "gkWoqxoPz",
+         "attributes": {
+          "position": "relative",
+          "width": "1fr",
+          "height": "auto",
+          "fontName": "Inter Display",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.45em",
+          "textAlignment": "start",
+          "textDecorationStyle": "solid",
+          "textColor": "rgba(74, 48, 56, 0.72)"
+         },
+         "children": [
+          {
+           "type": "TextBlock",
+           "id": "v:ALTmfR_zagkWoqxoPz:0",
+           "attributes": {
+            "tag": "p"
+           },
+           "children": [
+            {
+             "type": "TextRun",
+             "id": "v:ALTmfR_zagkWoqxoPz:0:0",
+             "attributes": {
+              "text": "Choose a time with the Vocom team and we’ll walk through fiber, connectivity or AI options for your project."
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Calendly Embed",
+         "id": "ALTmfR_zaVexk90ge4",
+         "$replicaId": "ALTmfR_za",
+         "$originalId": "Vexk90ge4",
+         "attributes": {
+          "border": "1px solid rgba(117, 40, 58, 0.10)",
+          "fill": "rgb(255, 255, 255)",
+          "layout": "stack",
+          "stackDirection": "horizontal",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "0px",
+          "overflow": "clip",
+          "position": "relative",
+          "radius": "18px",
+          "width": "1fr",
+          "height": "500px"
+         },
+         "children": [
+          {
+           "type": "ComponentInstanceNode",
+           "id": "ALTmfR_zaxv0l4U9g3",
+           "component": "WIJbzyan03eQVbqqCNqQ",
+           "$replicaId": "ALTmfR_za",
+           "$originalId": "xv0l4U9g3",
+           "$componentDisplayName": "Calendly",
+           "attributes": {
+            "$control__calendar": "kevin-getvocom",
+            "$control__details": "true",
+            "$control__gDPR": "true",
+            "position": "relative",
+            "width": "1fr",
+            "height": "500px"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "ALTmfR_zaN3wjoH34A",
+     "$replicaId": "ALTmfR_za",
+     "$originalId": "N3wjoH34A",
+     "attributes": {
+      "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+      "layout": "null",
+      "position": "absolute",
+      "left": "0px",
+      "right": "0px",
+      "top": "0px",
+      "bottom": "null",
+      "centerAnchorX": "50%",
+      "centerAnchorY": "13.98%",
+      "constraintsLocked": false,
+      "width": "390px",
+      "height": "720px",
+      "zIndex": "0"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ALTmfR_zavs3bXk2Gn",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "ALTmfR_za",
+     "$originalId": "vs3bXk2Gn",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "$control__footerTagline": "One Platform. One Partner. Future-Ready",
+      "$control__title": "Quick Links",
+      "$control__menu1": "VOCOM",
+      "$control__menu2": "Services",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link2": "/vocom-services",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "ComponentInstanceNode",
+   "id": "Fiolwovm1",
+   "component": "GbX8S6ghmyszcS2GLR2F",
+   "$componentDisplayName": "Cookie Banner",
+   "attributes": {
+    "$control__gTMID": "",
+    "$control__preview": "false",
+    "$control__trigger": "{\"type\":{\"type\":\"enum\",\"value\":\"text\"},\"iconType\":{\"type\":\"enum\",\"value\":\"default\"},\"text\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"textFont\":{\"type\":\"font\"},\"iconSize\":{\"type\":\"number\",\"value\":24},\"color\":{\"type\":\"color\",\"value\":\"#333\"},\"iconImage\":{\"type\":\"image\"}}",
+    "$control__banner": "{\"position\":{\"type\":\"enum\",\"value\":\"bottom-right\"},\"zIndex\":{\"type\":\"number\",\"value\":10},\"width\":{\"type\":\"number\",\"value\":360},\"containerWidth\":{\"type\":\"number\",\"value\":0},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"inset\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"colorTitle\":{\"type\":\"color\",\"value\":\"#000\"},\"fontBody\":{\"type\":\"font\"},\"colorBody\":{\"type\":\"color\",\"value\":\"#444\"},\"fill\":{\"type\":\"color\",\"value\":\"#FFF\"},\"link\":{\"type\":\"color\",\"value\":\"#999\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":14},\"width\":{\"type\":\"number\",\"value\":1},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.05)\"}}},\"shadow\":{\"type\":\"object\",\"value\":null},\"backdrop\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"}}},\"animation\":{\"type\":\"object\",\"value\":{\"x\":{\"type\":\"number\",\"value\":0},\"y\":{\"type\":\"number\",\"value\":10},\"scale\":{\"type\":\"number\",\"value\":1},\"transition\":{\"type\":\"transition\",\"value\":{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":500,\"damping\":60,\"mass\":1,\"stagger\":0}}}}}",
+    "$control__buttons": "{\"primary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#000\"},\"color\":{\"type\":\"color\",\"value\":\"#FFF\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"secondary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#EEE\"},\"color\":{\"type\":\"color\",\"value\":\"#444\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"labels\":{\"type\":\"object\",\"value\":{\"accept\":{\"type\":\"string\",\"value\":\"Accept\"},\"reject\":{\"type\":\"string\",\"value\":\"Reject\"},\"acceptAll\":{\"type\":\"string\",\"value\":\"Accept all\"},\"rejectAll\":{\"type\":\"string\",\"value\":\"Reject all\"},\"customize\":{\"type\":\"string\",\"value\":\"Customize\"},\"save\":{\"type\":\"string\",\"value\":\"Save Preferences\"},\"confirm\":{\"type\":\"string\",\"value\":\"Okay\"}}},\"font\":{\"type\":\"font\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":10,\"fused\":[10,10,10,10]}},\"borderRadius\":{\"type\":\"number\",\"value\":8},\"tapOpacity\":{\"type\":\"number\",\"value\":0.4},\"hoverOpacity\":{\"type\":\"number\",\"value\":0.6},\"direction\":{\"type\":\"enum\",\"value\":\"row\"},\"fluid\":{\"type\":\"boolean\",\"value\":true}}",
+    "$control__regions": "{\"isEU\":{\"type\":\"boolean\",\"value\":true},\"euType\":{\"type\":\"enum\",\"value\":\"medium\"},\"euTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"euDescription\":{\"type\":\"string\",\"value\":\"We use cookies to enhance your experience, analyze site traffic and deliver personalized content.\"},\"euPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\",\"value\":{\"url\":\"https://www.framer.com/legal/policy/\",\"type\":\"url\"}},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"euDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":false},\"analytics\":{\"type\":\"boolean\",\"value\":false},\"marketing\":{\"type\":\"boolean\",\"value\":false}}},\"euShowReject\":{\"type\":\"boolean\",\"value\":true},\"euBlocking\":{\"type\":\"boolean\",\"value\":false},\"worldType\":{\"type\":\"enum\",\"value\":\"simple\"},\"worldTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"worldDescription\":{\"type\":\"string\",\"value\":\"We use cookies to personalize content, run ads, and analyze traffic.\"},\"worldPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\"},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"worldDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":true},\"analytics\":{\"type\":\"boolean\",\"value\":true},\"marketing\":{\"type\":\"boolean\",\"value\":true}}},\"worldShowReject\":{\"type\":\"boolean\",\"value\":true},\"worldBlocking\":{\"type\":\"boolean\",\"value\":false}}",
+    "$control__options": "{\"preview\":{\"type\":\"boolean\",\"value\":false},\"necessary\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Necessary\"},\"description\":{\"type\":\"string\",\"value\":\"Enables security and basic functionality.\"},\"optional\":{\"type\":\"boolean\",\"value\":true}}},\"preferences\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Preferences\"},\"description\":{\"type\":\"string\",\"value\":\"Enables personalized content and settings.\"}}},\"analytics\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Analytics\"},\"description\":{\"type\":\"string\",\"value\":\"Enables tracking of performance.\"}}},\"marketing\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Marketing\"},\"description\":{\"type\":\"string\",\"value\":\"Enables ads personalization and tracking.\"}}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"fontBody\":{\"type\":\"font\"},\"background\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":8},\"width\":{\"type\":\"number\",\"value\":0},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"}}},\"toggleColor\":{\"type\":\"color\",\"value\":\"#000\"},\"toggleColorInactive\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":12,\"fused\":[12,12,12,12]}}}}}",
+    "left": "-500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto"
+   }
+  }
+ ]
+}

@@ -1,0 +1,293 @@
+{
+ "type": "ComponentNode",
+ "id": "iOvkxuIxd",
+ "name": "Dropdown Base",
+ "variables": [
+  {
+   "key": "$control__label",
+   "id": "hGVbnpPq4",
+   "name": "Label",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Resources"
+  },
+  {
+   "key": "onHover",
+   "id": "HyVTVjrV7",
+   "name": "Hover",
+   "node": "EventHandlerVariable",
+   "type": "eventhandler"
+  },
+  {
+   "key": "$control__link",
+   "id": "teT3bJ1mf",
+   "name": "Link",
+   "node": "LinkVariable",
+   "type": "link"
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "SShMeJlVn",
+   "name": "Default"
+  },
+  {
+   "id": "ZxDNYtqfa",
+   "name": "Hovered"
+  },
+  {
+   "id": "AFksm3QHv",
+   "name": "Tablet"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Default",
+   "id": "SShMeJlVn",
+   "$isPrimary": true,
+   "attributes": {
+    "onMouseEnter": [
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-HyVTVjrV7)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "horizontal",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "overflow": "hidden",
+    "padding": "8px 16px 8px 16px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "18.13%",
+    "centerAnchorY": "48.57%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "RichTextNode",
+     "id": "OURSjEjMK",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "link": {
+       "href": "var(--variable-teT3bJ1mf)"
+      },
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "auto",
+      "height": "auto",
+      "text": "var(--variable-hGVbnpPq4)",
+      "fontName": "Inter",
+      "fontStyle": "normal",
+      "fontWeight": 600,
+      "fontSize": "16px",
+      "letterSpacing": "0em",
+      "lineHeight": "160%",
+      "textAlignment": "left",
+      "textDecorationStyle": "solid",
+      "textColor": "rgb(14, 28, 41)",
+      "userSelect": "none"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "CWd0mEsNR",
+     "component": "tYScH7LTqUtz5KUaUAYP",
+     "$componentDisplayName": "Phosphor",
+     "attributes": {
+      "$control__select": "false",
+      "$control__name": "House",
+      "$control__name1": "caret-down",
+      "$control__color": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)",
+      "$control__weight": "Bold",
+      "$control__mirrored": "false",
+      "position": "relative",
+      "width": "20px",
+      "height": "20px"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Hovered",
+   "id": "ZxDNYtqfa",
+   "$isReplica": true,
+   "$originalId": "SShMeJlVn",
+   "attributes": {
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "onMouseEnter": [
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-HyVTVjrV7)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "horizontal",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "overflow": "hidden",
+    "padding": "8px 16px 8px 16px",
+    "left": "199px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "18.13%",
+    "centerAnchorY": "48.57%",
+    "constraintsLocked": false,
+    "radius": "10px",
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "RichTextNode",
+     "id": "ZxDNYtqfaOURSjEjMK",
+     "$replicaId": "ZxDNYtqfa",
+     "$originalId": "OURSjEjMK",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "link": {
+       "href": "var(--variable-teT3bJ1mf)"
+      },
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "auto",
+      "height": "auto",
+      "text": "var(--variable-hGVbnpPq4)",
+      "fontName": "Inter",
+      "fontStyle": "normal",
+      "fontWeight": 600,
+      "fontSize": "16px",
+      "letterSpacing": "0em",
+      "lineHeight": "160%",
+      "textAlignment": "left",
+      "textDecorationStyle": "solid",
+      "textColor": "rgb(14, 28, 41)",
+      "userSelect": "none"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "ZxDNYtqfaCWd0mEsNR",
+     "component": "tYScH7LTqUtz5KUaUAYP",
+     "$replicaId": "ZxDNYtqfa",
+     "$originalId": "CWd0mEsNR",
+     "$componentDisplayName": "Phosphor",
+     "attributes": {
+      "$control__select": "false",
+      "$control__name": "House",
+      "$control__name1": "caret-down",
+      "$control__color": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)",
+      "$control__weight": "Bold",
+      "$control__mirrored": "false",
+      "position": "relative",
+      "rotation": "180deg",
+      "width": "20px",
+      "height": "20px"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "AFksm3QHv",
+   "$isReplica": true,
+   "$originalId": "SShMeJlVn",
+   "attributes": {
+    "onMouseEnter": [
+     {
+      "action": "TRIGGER_EVENT",
+      "controls": {
+       "id": "var(--variable-HyVTVjrV7)"
+      }
+     }
+    ],
+    "layout": "stack",
+    "stackDirection": "horizontal",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "overflow": "hidden",
+    "padding": "8px",
+    "left": "443px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "18.13%",
+    "centerAnchorY": "48.57%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "RichTextNode",
+     "id": "AFksm3QHvOURSjEjMK",
+     "$replicaId": "AFksm3QHv",
+     "$originalId": "OURSjEjMK",
+     "attributes": {
+      "inlineCodeStylePreset": "Inline Code",
+      "link": {
+       "href": "var(--variable-teT3bJ1mf)"
+      },
+      "linkStylePreset": "Link",
+      "position": "relative",
+      "width": "auto",
+      "height": "auto",
+      "text": "var(--variable-hGVbnpPq4)",
+      "fontName": "Inter",
+      "fontStyle": "normal",
+      "fontWeight": 600,
+      "fontSize": "12px",
+      "letterSpacing": "0em",
+      "lineHeight": "160%",
+      "textAlignment": "left",
+      "textDecorationStyle": "solid",
+      "textColor": "rgb(14, 28, 41)",
+      "userSelect": "none"
+     }
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "AFksm3QHvCWd0mEsNR",
+     "component": "tYScH7LTqUtz5KUaUAYP",
+     "$replicaId": "AFksm3QHv",
+     "$originalId": "CWd0mEsNR",
+     "$componentDisplayName": "Phosphor",
+     "attributes": {
+      "$control__select": "false",
+      "$control__name": "House",
+      "$control__name1": "caret-down",
+      "$control__color": "var(--token-58fad658-721f-4cb5-872a-6f11fb816532)",
+      "$control__weight": "Bold",
+      "$control__mirrored": "false",
+      "position": "relative",
+      "width": "16px",
+      "height": "16px"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "type": "ComponentNode",
+ "id": "PnJkLKoBG",
+ "name": "FEATURE CARD",
+ "variables": [
+  {
+   "key": "$control__title",
+   "id": "szmSGh_P8",
+   "name": "Title",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Unlimited Request"
+  },
+  {
+   "key": "$control__description",
+   "id": "RQPdy_G71",
+   "name": "description",
+   "node": "Variable",
+   "type": "string",
+   "initialValue": "Make as many design requests as you need without any limits."
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "xdoYNCKqz",
+   "name": "Variant 1"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Variant 1",
+   "id": "xdoYNCKqz",
+   "$isPrimary": true,
+   "attributes": {
+    "cursor": "default",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "8px",
+    "padding": "4px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "14.37%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "width": "289.5px",
+    "height": "auto",
+    "transition": "spring-physics 500 60 1 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Icon Box",
+     "id": "OgX1KZ9mY",
+     "attributes": {
+      "boxShadows": [
+       "0px 0px 0px 1px rgba(234, 234, 234, 1)",
+       "0px 1px 3px 0px rgba(143, 143, 143, 0.20000000298023224)",
+       "inset 0px -2.4000000953674316px 0px 0px rgba(61, 61, 61, 0.03999999910593033)"
+      ],
+      "fill": "var(--token-27613802-3d5c-4cf0-b30e-23b5a145df4a)",
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "position": "relative",
+      "radius": "10px",
+      "width": "48px",
+      "height": "49px",
+      "aspectRatio": 1
+     },
+     "children": [
+      {
+       "type": "ComponentInstanceNode",
+       "id": "NMgYXjyUl",
+       "component": "f0DboytQenYh21kfme7W",
+       "$componentDisplayName": "Feather",
+       "attributes": {
+        "$control__select": "true",
+        "$control__name": "var(--variable-dR2wAaU7F)",
+        "$control__name1": "Home",
+        "$control__mirrored": "false",
+        "$control__color": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+        "position": "relative",
+        "width": "26px",
+        "height": "28px",
+        "aspectRatio": 1
+       }
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Texts",
+     "id": "y9oNFsFGD",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "5px",
+      "overflow": "hidden",
+      "position": "relative",
+      "width": "242px",
+      "height": "90px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "name": "Really Limitless",
+       "id": "ftvoRfBsc",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-szmSGh_P8)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "24px",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-626548fe-7c5c-4354-b189-7fe095fa9641, rgb(39, 39, 39))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "name": "Sign up for our plan and enjoy unlimited design requests",
+       "id": "mGHJwETmr",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "paragraphSpacing": 14,
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-RQPdy_G71)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "14px",
+        "letterSpacing": "0em",
+        "lineHeight": "159%",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(92, 92, 92)"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

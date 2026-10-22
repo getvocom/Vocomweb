@@ -1,0 +1,324 @@
+{
+ "type": "ComponentNode",
+ "id": "hn4EfB4Wv",
+ "name": "Feature Item One 2",
+ "variables": [
+  {
+   "key": "$control__scrollSection",
+   "id": "ttue63S6I",
+   "name": "Scroll Section",
+   "node": "Variable",
+   "type": "scrollsectionref"
+  },
+  {
+   "key": "$control__title",
+   "id": "aP4kbp86Y",
+   "name": "Title",
+   "node": "Variable",
+   "type": "string",
+   "displayTextArea": true,
+   "initialValue": "Intuitive drag & drop editor"
+  },
+  {
+   "key": "$control__content",
+   "id": "dkPy48BZc",
+   "name": "Content",
+   "node": "Variable",
+   "type": "string",
+   "displayTextArea": true,
+   "initialValue": "Create stunning designs effortlessly with a user-friendly interface."
+  },
+  {
+   "key": "$control__image",
+   "id": "eVsTcYmwU",
+   "name": "Image",
+   "node": "Variable",
+   "type": "image",
+   "initialValue": {
+    "alt": "Feature Image",
+    "value": "data:framer/asset-reference,m56Yl224T7rX3UhBtcXbHVhsfw.jpg?originalFilename=sightify_3.jpg&preferredSize=auto&width=1920&height=1280",
+    "type": "image"
+   }
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "jfeXuHKCA",
+   "name": "Feature Item"
+  },
+  {
+   "id": "fuFkCLUFe",
+   "name": "Feature Item - Phone"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Feature Item",
+   "id": "jfeXuHKCA",
+   "$isPrimary": true,
+   "attributes": {
+    "cursor": "default",
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "padding": "6px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "radius": "30px",
+    "width": "360px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Feature Image",
+     "id": "oS2FC3vKd",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "position": "relative",
+      "radius": "25px",
+      "width": "1fr",
+      "height": "300px",
+      "aspectRatio": 1.16
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "a9HHiJ6cQ",
+       "attributes": {
+        "fill": "var(--variable-eVsTcYmwU)",
+        "altText": "Feature Image",
+        "layout": "null",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "1fr"
+       }
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Feature Content",
+     "id": "mAhx6I3Y_",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "padding": "20px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "600px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "D4czt9pzD",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-aP4kbp86Y)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "22px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.1em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-f76c80e4-24c3-4158-b8cf-0c2015ff5a02, rgb(16, 16, 17))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "XZDuwkw2r",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-dkPy48BZc)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.4em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-67d981e7-2754-44dc-bd50-7adae26c5928)"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Feature Item - Phone",
+   "id": "fuFkCLUFe",
+   "$isReplica": true,
+   "$originalId": "jfeXuHKCA",
+   "attributes": {
+    "cursor": "default",
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "padding": "6px",
+    "left": "460px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "radius": "30px",
+    "width": "360px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Feature Image",
+     "id": "fuFkCLUFeoS2FC3vKd",
+     "$replicaId": "fuFkCLUFe",
+     "$originalId": "oS2FC3vKd",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "position": "relative",
+      "radius": "25px",
+      "width": "1fr",
+      "height": "300px",
+      "aspectRatio": 1.16
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "fuFkCLUFea9HHiJ6cQ",
+       "$replicaId": "fuFkCLUFe",
+       "$originalId": "a9HHiJ6cQ",
+       "attributes": {
+        "fill": "var(--variable-eVsTcYmwU)",
+        "altText": "Feature Image",
+        "layout": "null",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "1fr"
+       }
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Feature Content",
+     "id": "fuFkCLUFemAhx6I3Y_",
+     "$replicaId": "fuFkCLUFe",
+     "$originalId": "mAhx6I3Y_",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "padding": "15px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "600px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "fuFkCLUFeD4czt9pzD",
+       "$replicaId": "fuFkCLUFe",
+       "$originalId": "D4czt9pzD",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-aP4kbp86Y)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "22px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.1em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-f76c80e4-24c3-4158-b8cf-0c2015ff5a02, rgb(16, 16, 17))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "fuFkCLUFeXZDuwkw2r",
+       "$replicaId": "fuFkCLUFe",
+       "$originalId": "XZDuwkw2r",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-dkPy48BZc)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.4em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-67d981e7-2754-44dc-bd50-7adae26c5928)"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

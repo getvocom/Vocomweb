@@ -1,0 +1,54 @@
+/* Converted from Framer. Breakpoints: desktop >=1200, tablet 810-1199, phone <810. */
+.x18jjgv{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;background:var(--white);overflow:clip;min-height:100vh}
+.xxhaate{display:block;position:sticky;top:10px;flex:none;width:1000px;height:min-content;z-index:10}
+.xcunrfe{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:160px;position:relative;flex:none;width:100%;height:min-content;padding:120px 80px 160px 80px;background:var(--color-primary-white);z-index:2}
+.xgvleal{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:80px;position:relative;flex:none;width:100%;height:min-content;max-width:1800px}
+.xwlszac{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px;position:relative;flex:none;width:100%;height:min-content;max-width:800px}
+.xiglghe{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:700;font-size:64px;letter-spacing:-0.04em;line-height:1.2em;color:var(--color-vocom-dark);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x3bs7si{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:32px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xwqa03j{display:grid;grid-template-columns:repeat(2, minmax(1px, 1fr));grid-auto-rows:600px;gap:40px;justify-items:start;align-items:start;position:relative;flex:none;width:100%;height:min-content}
+.xd0kq3e{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:24px;position:relative;flex:none;width:100%;height:500px;grid-column:span 1;grid-row:span 1}
+.xx9ppqb{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:min-content;border-radius:24px;overflow:hidden}
+.xdbmktu{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;position:relative;flex:none;width:100%;height:auto;overflow:hidden}
+.xlw20n0{display:block;position:relative;flex:none;width:32px;height:48px;border-radius:200px;background:rgba(255, 255, 255, 0.2);transform:rotate(45deg);transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xzxipsl{display:block;position:relative;width:16px;height:16px;transform:rotate(-45deg)}
+.xxam86z{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px;position:relative;flex:none;width:100%;height:min-content}
+.xln6awk{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:18px;letter-spacing:0;line-height:1.4em;color:var(--color-dark-70);text-align:left;white-space:pre}
+.xjwpfji{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:12px;position:relative;flex:none;width:100%;height:min-content}
+.xqbkdlg{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:24px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-black);text-align:left;white-space:pre}
+.x6poghv{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;gap:16px;position:relative;flex:none;width:100%;height:min-content}
+.x6enb0u{position:relative;flex:none;width:20%;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:16px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x1z6ani{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;gap:48px;position:relative;flex:1 0 0px;width:1px;height:min-content}
+.xkydvn6{position:relative;flex:1 0 0px;width:1px;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:40px;letter-spacing:0;line-height:1.4em;color:var(--color-vocom-dark);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xjazvom{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:min-content;height:min-content;padding:16px 32px 16px 32px;border-radius:64px;background:var(--color-vocom-cta-1);--bw:1px;--bs:solid;--bc:rgba(0, 0, 0, 0);overflow:hidden;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xpwacie{position:relative;flex:none;width:auto;height:auto;display:block;font-family:"Manrope", sans-serif;font-weight:500;font-size:18px;letter-spacing:0;line-height:1.4em;color:var(--color-primary-white);text-align:left;white-space:pre;transition:all 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+.xk2u4oo{display:block;position:relative;flex:none;width:16px;height:16px}
+.xzxrxrs{display:block;position:relative;flex:none;width:100%;height:min-content}
+.xd0kq3e:hover .xlw20n0{background:var(--color-primary-white);transform:none}
+.xjazvom:hover{background:var(--color-vocom-white);--bc:var(--black);box-shadow:0px 6px 16px 0px rgba(20, 10, 15, 0.18)}
+.xjazvom:hover .xpwacie{color:var(--color-primary-black)}
+@media (min-width: 810px) and (max-width: 1199.98px){
+.x18jjgv{min-height:0}
+.xxhaate{width:767px}
+.xcunrfe{padding:120px 64px 160px 64px;gap:0}
+.xgvleal{gap:120px}
+.xiglghe{font-size:52px}
+.xwqa03j{grid-auto-rows:450px}
+.xd0kq3e{height:450px}
+.x1z6ani{flex-direction:column}
+.xkydvn6{flex:none;width:100%}
+}
+@media (max-width: 809.98px){
+.x18jjgv{min-height:0}
+.xxhaate{width:360px}
+.xcunrfe{padding:120px 16px 160px 16px;gap:0}
+.xiglghe{font-size:32px}
+.xwqa03j{grid-template-columns:repeat(1, minmax(1px, 1fr));grid-auto-rows:300px}
+.xd0kq3e{gap:16px;height:300px}
+.xx9ppqb{border-radius:16px}
+.xlw20n0{display:none}
+.x6poghv{flex-direction:column}
+.x6enb0u{width:100%}
+.x1z6ani{flex-direction:column;flex:none;width:100%}
+.xkydvn6{flex:none;width:100%}
+}

@@ -1,0 +1,103 @@
+{
+ "/blog/:Posts": {
+  "Blog Thumbnail Title": "h1",
+  "Industry": "h4",
+  "Product": "h4",
+  "Full Post Title": "h2",
+  "Intro Section Body": "h3",
+  "Button Text": "h4",
+  "First Section Title": "h2",
+  "First Section Body": "h3",
+  "Second Section Title": "h2",
+  "Second Section Body": "h3",
+  "Third Section Title": "h2",
+  "Third Section Body": "h3",
+  "Fourth Section Title": "h2",
+  "Fourth Section Body": "h3",
+  "Fifth Section Title": "h1",
+  "Fifth Section Body": "h3",
+  "Meta Title": "h2",
+  "Bottom Section Heading": "h2",
+  "Bottom Section Body": "h3",
+  "Final Section Heading": "h2",
+  "Final Section Body": "h3"
+ },
+ "/products/:Products": {
+  "Name": "h1",
+  "Codes": "p",
+  "Fiber Counts": "p",
+  "Construction And Rating": "p",
+  "Typical Use": "p",
+  "Description": "p"
+ },
+ "/vocom-ai": {
+  "Button Text": "p"
+ },
+ "/blog": {
+  "Blog Thumbnail Title": "h3",
+  "Product": "h4",
+  "Industry": "h4"
+ },
+ "/fiber-optic-cable-catalog": {
+  "Industry": "p",
+  "Name": "p",
+  "Codes": "p",
+  "Fiber Counts": "p",
+  "Construction And Rating": "p",
+  "Typical Use": "p"
+ },
+ "/adss-aerial-fiber-cable": {
+  "Fiber Counts": "p",
+  "Name": "p",
+  "Codes": "p"
+ },
+ "/": {
+  "Industry": "p"
+ },
+ "/about": {
+  "Button Text": "p",
+  "Product": "p",
+  "Industry": "p"
+ },
+ "/vocomai-consultancy": {
+  "Industry": "p"
+ },
+ "/ftth-drop-cable": {
+  "Name": "p",
+  "Codes": "p",
+  "Fiber Counts": "p"
+ },
+ "/ribbon-fiber-optic-cable": {
+  "Name": "p",
+  "Fiber Counts": "p",
+  "Codes": "p"
+ },
+ "/loose-tube-fiber-optic-cable": {
+  "Name": "p"
+ },
+ "/vocomai-manufacturing": {
+  "Button Text": "p"
+ },
+ "/fiber-optic-cables": {
+  "Industry": "p",
+  "Name": "p",
+  "Codes": "p",
+  "Fiber Counts": "p",
+  "Construction And Rating": "p",
+  "Typical Use": "p"
+ },
+ "/search": {
+  "Blog Thumbnail Title": "p",
+  "Product": "p",
+  "Industry": "p",
+  "Name": "p",
+  "Codes": "p"
+ },
+ "/air-blown-micro-fiber-cable": {
+  "Name": "p",
+  "Fiber Counts": "p"
+ },
+ "/data-center-fiber-cabling": {
+  "Name": "p"
+ }
+}

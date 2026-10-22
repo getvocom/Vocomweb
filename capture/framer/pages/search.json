@@ -1,0 +1,6109 @@
+{
+ "type": "WebPageNode",
+ "id": "mm0ZZV4Jx",
+ "name": "/search",
+ "variables": [
+  {
+   "key": "$control__query",
+   "id": "XlVmMONvi",
+   "name": "Query",
+   "node": "Variable",
+   "type": "string",
+   "queryParam": "query"
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$breakpoints": [
+  {
+   "id": "toE7fhAoE",
+   "name": "Desktop",
+   "mediaQueryRange": "(min-width: 1200px)"
+  },
+  {
+   "id": "UnEBWU4Gm",
+   "name": "Tablet",
+   "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "id": "o4sNbqVRM",
+   "name": "Phone",
+   "mediaQueryRange": "(max-width: 809.98px)"
+  }
+ ],
+ "attributes": {
+  "metadata": {
+   "title": "Search Fiber Optic Cable and Connector Products | Vocom",
+   "description": "Search Vocom's fiber optic cable and connector catalog plus blog posts by product name, code, or keyword to find what you need fast.",
+   "noIndex": true,
+   "noIndexSite": true
+  },
+  "path": "/search"
+ },
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Desktop",
+   "id": "toE7fhAoE",
+   "$isPrimary": true,
+   "$mediaQuery": {
+    "range": "(min-width: 1200px)",
+    "name": "Desktop"
+   },
+   "attributes": {
+    "fill": "#ffffff",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "1200px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "nCsiUFPLp",
+     "component": "viLm3CAkV",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "position": "sticky",
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Search Header",
+     "id": "UjLiCovtq",
+     "attributes": {
+      "fill": "linear-gradient(180deg, #FFFFFF 0%, #FCEBF3 100%)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "80px 24px 50px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "iiccNaD2Q",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "40px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.15em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:iiccNaD2Q:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:iiccNaD2Q:0:0",
+           "attributes": {
+            "text": "Search Vocom"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "i5ZTfU6E6",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "600px",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.5em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:i5ZTfU6E6:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:i5ZTfU6E6:0:0",
+           "attributes": {
+            "text": "Search products and blog posts by name or keyword."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Search Input Wrap",
+       "id": "tvn3HLTcd",
+       "attributes": {
+        "border": "1px solid rgba(136, 18, 67, 0.2)",
+        "fill": "#FFFFFF",
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "start",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "padding": "4px 4px 4px 18px",
+        "position": "relative",
+        "radius": "999px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "560px"
+       },
+       "children": [
+        {
+         "type": "IconNode",
+         "id": "K1Mt4pyYZ",
+         "set": "omX0gWFPqDwhaiWwf6ab",
+         "$control__icon": "Magnifying Glass",
+         "attributes": {
+          "$control__color": "#999999",
+          "$control__width": "1.8",
+          "$control__alpha": "0",
+          "position": "relative",
+          "width": "18px",
+          "height": "18px"
+         }
+        },
+        {
+         "type": "FormPlainTextInputNode",
+         "id": "HUq20z29K",
+         "attributes": {
+          "border": "1px solid rgba(136, 136, 136, 0.1)",
+          "fill": "rgba(187, 187, 187, 0.15)",
+          "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+          "formInputFocusedBorderWidth": 1,
+          "formInputFocusedBorderTop": 1,
+          "formInputFocusedBorderRight": 1,
+          "formInputFocusedBorderBottom": 1,
+          "formInputFocusedBorderLeft": 1,
+          "formInputFocusedBorderPerSide": false,
+          "formInputFocusedBorderStyle": "solid",
+          "formInputPlaceholder": "Search products, blog, and more...",
+          "formInputPlaceholderColor": "rgb(153, 153, 153)",
+          "formTextInputType": "text",
+          "padding": "10px 6px 10px 6px",
+          "position": "relative",
+          "radius": "10px",
+          "width": "1fr",
+          "height": "44px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textColor": "rgb(23, 16, 23)",
+          "variableBinding": "var(--variable-XlVmMONvi)"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Search Results",
+     "id": "T_E43xZap",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 24px 90px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Results Grid",
+       "id": "D4UxDxRbW",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 3,
+        "gridColumnMinWidth": "260px",
+        "gap": "18px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Products",
+         "repeatedDescendantId": "sKM9oOWbI",
+         "filters": [
+          {
+           "variableId": "g6g11fGQB",
+           "transforms": [
+            {
+             "name": "contains",
+             "value": "var(--variable-XlVmMONvi)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Result Item",
+         "id": "sKM9oOWbI",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "link": {
+           "href": "/products/:slug",
+           "collectionItem": "var(--variable-Khzaw2vzz)"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "pMTuwuU1N",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": {
+             "from": "var(--variable-llF9GrUYm)",
+             "transforms": [
+              {
+               "name": "optionToDisplayName"
+              }
+             ]
+            },
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.06em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(122, 18, 48)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "ZSWjXu9HC",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-g6g11fGQB)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "QnYZVDx_k",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-eGZZAahaC)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Empty State",
+         "id": "ynEHCuppm",
+         "attributes": {
+          "border": "1px dashed rgba(136, 18, 67, 0.2)",
+          "fill": "#FFF9FB",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "padding": "40px",
+          "position": "relative",
+          "radius": "20px",
+          "width": "auto",
+          "height": "100px",
+          "minWidth": "100%",
+          "maxWidth": "1160px",
+          "minHeight": "100%",
+          "visible": {
+           "from": "var(--variable-D4UxDxRbW-item-count)",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": 0
+            }
+           ]
+          }
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "qjT_nSBYe",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:qjT_nSBYe:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:qjT_nSBYe:0:0",
+               "attributes": {
+                "text": "No products found. Try a different name or code."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Results Grid",
+       "id": "DvNK6Xs2b",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 3,
+        "gridColumnMinWidth": "260px",
+        "gap": "18px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Posts",
+         "repeatedDescendantId": "yRVqXxGjF",
+         "sorting": [
+          {
+           "variable": "qipVEtYvn",
+           "direction": "asc"
+          }
+         ],
+         "filters": [
+          {
+           "variableId": "qipVEtYvn",
+           "transforms": [
+            {
+             "name": "contains",
+             "value": "var(--variable-XlVmMONvi)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Result Item",
+         "id": "yRVqXxGjF",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "link": {
+           "href": "/blog/:slug",
+           "collectionItem": "var(--variable-HO_Dxy3Fb)"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "BpG3tIAti",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-MSZWmOUa4)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(0, 0, 0)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "QKlMetaCJ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-y34GyoiDi)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Empty State",
+         "id": "UdeHJnDzt",
+         "attributes": {
+          "border": "1px dashed rgba(136, 18, 67, 0.2)",
+          "fill": "#FFF9FB",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "padding": "40px",
+          "position": "relative",
+          "radius": "20px",
+          "width": "auto",
+          "height": "100px",
+          "minWidth": "100%",
+          "maxWidth": "1160px",
+          "minHeight": "100%",
+          "visible": {
+           "from": "var(--variable-DvNK6Xs2b-item-count)",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": 0
+            }
+           ]
+          }
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "QS6Rom1DL",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:QS6Rom1DL:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:QS6Rom1DL:0:0",
+               "attributes": {
+                "text": "No blog posts found. Try a different title."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "c04qjvJsM",
+     "attributes": {
+      "fill": "#FFFFFF",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "60px 24px 90px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "LoJAYE7NS",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 700,
+        "fontSize": "13px",
+        "letterSpacing": "0.08em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textTransform": "uppercase",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(122, 18, 48)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:LoJAYE7NS:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:LoJAYE7NS:0:0",
+           "attributes": {
+            "text": "Popular Pages"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "QfOpLYrJB",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 700,
+        "fontSize": "32px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:QfOpLYrJB:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:QfOpLYrJB:0:0",
+           "attributes": {
+            "text": "Explore Vocom"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "pqrCwlrBj",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "600px",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.5em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:pqrCwlrBj:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:pqrCwlrBj:0:0",
+           "attributes": {
+            "text": "Quick links to the pages people look for most."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "kptFVfsyT",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 3,
+        "gridColumnMinWidth": "260px",
+        "gridRowCount": 1,
+        "gridRowHeightType": "auto",
+        "gridRowHeight": "200px",
+        "gap": "18px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "Dw1e94ESs",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "lj8R8q9ot",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:lj8R8q9ot:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:lj8R8q9ot:0:0",
+               "attributes": {
+                "text": "Home"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "utQIK0_qe",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:utQIK0_qe:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:utQIK0_qe:0:0",
+               "attributes": {
+                "text": "Vocom’s homepage: fiber, AI, and telecom services."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "X8WFkkyzd",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/fiber-optic-cables"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "LxMRy50Cz",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:LxMRy50Cz:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:LxMRy50Cz:0:0",
+               "attributes": {
+                "text": "Fiber Optic Cable"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "ASyCwKL6C",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ASyCwKL6C:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ASyCwKL6C:0:0",
+               "attributes": {
+                "text": "Wholesale fiber optic cable, built to order."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "hPYsWdAZQ",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "M7k5BJDu9",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:M7k5BJDu9:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:M7k5BJDu9:0:0",
+               "attributes": {
+                "text": "Vocom AI"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UUFISM7ev",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UUFISM7ev:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UUFISM7ev:0:0",
+               "attributes": {
+                "text": "Enterprise AI tools for coaching, security, and supply chain."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "OzWHZmZao",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-international"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "mQu2f_joR",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:mQu2f_joR:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:mQu2f_joR:0:0",
+               "attributes": {
+                "text": "Vocom International"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "zEjcVUmqP",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:zEjcVUmqP:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:zEjcVUmqP:0:0",
+               "attributes": {
+                "text": "Global telecom services and connectivity."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "lmjlIQZEY",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/about"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "uScPVOltu",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:uScPVOltu:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:uScPVOltu:0:0",
+               "attributes": {
+                "text": "About Us"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "yOCPSWDiD",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:yOCPSWDiD:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:yOCPSWDiD:0:0",
+               "attributes": {
+                "text": "Who we are and what we do."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "ZGhzfAOX2",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "ti71Tu82d",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:ti71Tu82d:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:ti71Tu82d:0:0",
+               "attributes": {
+                "text": "Request a Quote"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "WBy6m97pQ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:WBy6m97pQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:WBy6m97pQ:0:0",
+               "attributes": {
+                "text": "Get in touch with our team."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "mobscLSkC",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/resources"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "P1fW4y7D_",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:P1fW4y7D_:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:P1fW4y7D_:0:0",
+               "attributes": {
+                "text": "Resources"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "c7wP83hIq",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:c7wP83hIq:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:c7wP83hIq:0:0",
+               "attributes": {
+                "text": "Guides, docs, and partner resources."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "Bs_pehP0Z",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/blog"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "kqDoEOzfB",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:kqDoEOzfB:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:kqDoEOzfB:0:0",
+               "attributes": {
+                "text": "Blog"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "E4vgq0e7O",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:E4vgq0e7O:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:E4vgq0e7O:0:0",
+               "attributes": {
+                "text": "News, insights, and product updates."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "b6XeZQC5Y",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai-agents"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "dHDlbfEV7",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:dHDlbfEV7:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:dHDlbfEV7:0:0",
+               "attributes": {
+                "text": "AI Agents"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "WKPFdF7_S",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:WKPFdF7_S:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:WKPFdF7_S:0:0",
+               "attributes": {
+                "text": "Autonomous agents for enterprise operations."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "wdftD9n8a",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/pricing-vocomai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "nP6isbHR5",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:nP6isbHR5:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:nP6isbHR5:0:0",
+               "attributes": {
+                "text": "Pricing"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "G5jGMpbSK",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:G5jGMpbSK:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:G5jGMpbSK:0:0",
+               "attributes": {
+                "text": "Vocom AI pricing and plans."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "xn3kDLq53",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "lOb24nxa4",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:lOb24nxa4:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:lOb24nxa4:0:0",
+               "attributes": {
+                "text": "Full Fiber Catalog"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "Z4PDHRp5h",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:Z4PDHRp5h:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:Z4PDHRp5h:0:0",
+               "attributes": {
+                "text": "Every cable, duct, and connector we supply."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "Xm365b0qn",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai-agents"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "iKhATHKuZ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:iKhATHKuZ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:iKhATHKuZ:0:0",
+               "attributes": {
+                "text": "AI Coach Hub"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "CQUkjW8FQ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:CQUkjW8FQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:CQUkjW8FQ:0:0",
+               "attributes": {
+                "text": "Always-on AI training for teams."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "TF6RCtKIg",
+     "component": "gZoBdp3Uw",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Desktop",
+      "$control__footerTagline": "Connecting the world through innovative telecommunications solutions.",
+      "$control__title": "Quick Links",
+      "$control__menu1": "Home",
+      "$control__menu2": "VOCOM AI",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Tablet",
+   "id": "UnEBWU4Gm",
+   "$isReplica": true,
+   "$originalId": "toE7fhAoE",
+   "$mediaQuery": {
+    "range": "(min-width: 810px) and (max-width: 1199.98px)",
+    "name": "Tablet"
+   },
+   "attributes": {
+    "fill": "#ffffff",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "left": "2600px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "810px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "UnEBWU4GmnCsiUFPLp",
+     "component": "viLm3CAkV",
+     "$replicaId": "UnEBWU4Gm",
+     "$originalId": "nCsiUFPLp",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "position": "sticky",
+      "width": "1000px",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Search Header",
+     "id": "UnEBWU4GmUjLiCovtq",
+     "$replicaId": "UnEBWU4Gm",
+     "$originalId": "UjLiCovtq",
+     "attributes": {
+      "fill": "linear-gradient(180deg, #FFFFFF 0%, #FCEBF3 100%)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "80px 24px 50px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "UnEBWU4GmiiccNaD2Q",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "iiccNaD2Q",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "40px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.15em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:UnEBWU4GmiiccNaD2Q:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:UnEBWU4GmiiccNaD2Q:0:0",
+           "attributes": {
+            "text": "Search Vocom"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "UnEBWU4Gmi5ZTfU6E6",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "i5ZTfU6E6",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "600px",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.5em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:UnEBWU4Gmi5ZTfU6E6:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:UnEBWU4Gmi5ZTfU6E6:0:0",
+           "attributes": {
+            "text": "Search products and blog posts by name or keyword."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Search Input Wrap",
+       "id": "UnEBWU4Gmtvn3HLTcd",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "tvn3HLTcd",
+       "attributes": {
+        "border": "1px solid rgba(136, 18, 67, 0.2)",
+        "fill": "#FFFFFF",
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "start",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "padding": "4px 4px 4px 18px",
+        "position": "relative",
+        "radius": "999px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "560px"
+       },
+       "children": [
+        {
+         "type": "IconNode",
+         "id": "UnEBWU4GmK1Mt4pyYZ",
+         "set": "omX0gWFPqDwhaiWwf6ab",
+         "$control__icon": "Magnifying Glass",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "K1Mt4pyYZ",
+         "attributes": {
+          "$control__color": "#999999",
+          "$control__width": "1.8",
+          "$control__alpha": "0",
+          "position": "relative",
+          "width": "18px",
+          "height": "18px"
+         }
+        },
+        {
+         "type": "FormPlainTextInputNode",
+         "id": "UnEBWU4GmHUq20z29K",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "HUq20z29K",
+         "attributes": {
+          "border": "1px solid rgba(136, 136, 136, 0.1)",
+          "fill": "rgba(187, 187, 187, 0.15)",
+          "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+          "formInputFocusedBorderWidth": 1,
+          "formInputFocusedBorderTop": 1,
+          "formInputFocusedBorderRight": 1,
+          "formInputFocusedBorderBottom": 1,
+          "formInputFocusedBorderLeft": 1,
+          "formInputFocusedBorderPerSide": false,
+          "formInputFocusedBorderStyle": "solid",
+          "formInputPlaceholder": "Search products, blog, and more...",
+          "formInputPlaceholderColor": "rgb(153, 153, 153)",
+          "formTextInputType": "text",
+          "padding": "10px 6px 10px 6px",
+          "position": "relative",
+          "radius": "10px",
+          "width": "1fr",
+          "height": "44px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textColor": "rgb(23, 16, 23)",
+          "variableBinding": "var(--variable-XlVmMONvi)"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Search Results",
+     "id": "UnEBWU4GmT_E43xZap",
+     "$replicaId": "UnEBWU4Gm",
+     "$originalId": "T_E43xZap",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 24px 90px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Results Grid",
+       "id": "UnEBWU4GmD4UxDxRbW",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "D4UxDxRbW",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 2,
+        "gridColumnMinWidth": "260px",
+        "gap": "18px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Products",
+         "repeatedDescendantId": "sKM9oOWbI",
+         "filters": [
+          {
+           "variableId": "g6g11fGQB",
+           "transforms": [
+            {
+             "name": "contains",
+             "value": "var(--variable-XlVmMONvi)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Result Item",
+         "id": "UnEBWU4GmsKM9oOWbI",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "sKM9oOWbI",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "link": {
+           "href": "/products/:slug",
+           "collectionItem": "var(--variable-Khzaw2vzz)"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmpMTuwuU1N",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "pMTuwuU1N",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": {
+             "from": "var(--variable-llF9GrUYm)",
+             "transforms": [
+              {
+               "name": "optionToDisplayName"
+              }
+             ]
+            },
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.06em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(122, 18, 48)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmZSWjXu9HC",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "ZSWjXu9HC",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-g6g11fGQB)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmQnYZVDx_k",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "QnYZVDx_k",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-eGZZAahaC)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Empty State",
+         "id": "UnEBWU4GmynEHCuppm",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "ynEHCuppm",
+         "attributes": {
+          "border": "1px dashed rgba(136, 18, 67, 0.2)",
+          "fill": "#FFF9FB",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "padding": "40px",
+          "position": "relative",
+          "radius": "20px",
+          "width": "auto",
+          "height": "100px",
+          "minWidth": "100%",
+          "maxWidth": "1160px",
+          "minHeight": "100%",
+          "visible": {
+           "from": "var(--variable-D4UxDxRbW-item-count)",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": 0
+            }
+           ]
+          }
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmqjT_nSBYe",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "qjT_nSBYe",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmqjT_nSBYe:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmqjT_nSBYe:0:0",
+               "attributes": {
+                "text": "No products found. Try a different name or code."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Results Grid",
+       "id": "UnEBWU4GmDvNK6Xs2b",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "DvNK6Xs2b",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 2,
+        "gridColumnMinWidth": "260px",
+        "gap": "18px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Posts",
+         "repeatedDescendantId": "yRVqXxGjF",
+         "sorting": [
+          {
+           "variable": "qipVEtYvn",
+           "direction": "asc"
+          }
+         ],
+         "filters": [
+          {
+           "variableId": "qipVEtYvn",
+           "transforms": [
+            {
+             "name": "contains",
+             "value": "var(--variable-XlVmMONvi)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Result Item",
+         "id": "UnEBWU4GmyRVqXxGjF",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "yRVqXxGjF",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "link": {
+           "href": "/blog/:slug",
+           "collectionItem": "var(--variable-HO_Dxy3Fb)"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmBpG3tIAti",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "BpG3tIAti",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-MSZWmOUa4)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(0, 0, 0)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmQKlMetaCJ",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "QKlMetaCJ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-y34GyoiDi)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Empty State",
+         "id": "UnEBWU4GmUdeHJnDzt",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "UdeHJnDzt",
+         "attributes": {
+          "border": "1px dashed rgba(136, 18, 67, 0.2)",
+          "fill": "#FFF9FB",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "padding": "40px",
+          "position": "relative",
+          "radius": "20px",
+          "width": "auto",
+          "height": "100px",
+          "minWidth": "100%",
+          "maxWidth": "1160px",
+          "minHeight": "100%",
+          "visible": {
+           "from": "var(--variable-DvNK6Xs2b-item-count)",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": 0
+            }
+           ]
+          }
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmQS6Rom1DL",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "QS6Rom1DL",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmQS6Rom1DL:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmQS6Rom1DL:0:0",
+               "attributes": {
+                "text": "No blog posts found. Try a different title."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "UnEBWU4Gmc04qjvJsM",
+     "$replicaId": "UnEBWU4Gm",
+     "$originalId": "c04qjvJsM",
+     "attributes": {
+      "fill": "#FFFFFF",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "60px 24px 90px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "UnEBWU4GmLoJAYE7NS",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "LoJAYE7NS",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 700,
+        "fontSize": "13px",
+        "letterSpacing": "0.08em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textTransform": "uppercase",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(122, 18, 48)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:UnEBWU4GmLoJAYE7NS:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:UnEBWU4GmLoJAYE7NS:0:0",
+           "attributes": {
+            "text": "Popular Pages"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "UnEBWU4GmQfOpLYrJB",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "QfOpLYrJB",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 700,
+        "fontSize": "32px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:UnEBWU4GmQfOpLYrJB:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:UnEBWU4GmQfOpLYrJB:0:0",
+           "attributes": {
+            "text": "Explore Vocom"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "UnEBWU4GmpqrCwlrBj",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "pqrCwlrBj",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "600px",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.5em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:UnEBWU4GmpqrCwlrBj:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:UnEBWU4GmpqrCwlrBj:0:0",
+           "attributes": {
+            "text": "Quick links to the pages people look for most."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "UnEBWU4GmkptFVfsyT",
+       "$replicaId": "UnEBWU4Gm",
+       "$originalId": "kptFVfsyT",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 2,
+        "gridColumnMinWidth": "240px",
+        "gridRowCount": 1,
+        "gridRowHeightType": "auto",
+        "gridRowHeight": "200px",
+        "gap": "18px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmDw1e94ESs",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "Dw1e94ESs",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4Gmlj8R8q9ot",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "lj8R8q9ot",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4Gmlj8R8q9ot:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4Gmlj8R8q9ot:0:0",
+               "attributes": {
+                "text": "Home"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmutQIK0_qe",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "utQIK0_qe",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmutQIK0_qe:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmutQIK0_qe:0:0",
+               "attributes": {
+                "text": "Vocom’s homepage: fiber, AI, and telecom services."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmX8WFkkyzd",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "X8WFkkyzd",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/fiber-optic-cables"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmLxMRy50Cz",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "LxMRy50Cz",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmLxMRy50Cz:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmLxMRy50Cz:0:0",
+               "attributes": {
+                "text": "Fiber Optic Cable"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmASyCwKL6C",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "ASyCwKL6C",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmASyCwKL6C:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmASyCwKL6C:0:0",
+               "attributes": {
+                "text": "Wholesale fiber optic cable, built to order."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmhPYsWdAZQ",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "hPYsWdAZQ",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmM7k5BJDu9",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "M7k5BJDu9",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmM7k5BJDu9:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmM7k5BJDu9:0:0",
+               "attributes": {
+                "text": "Vocom AI"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmUUFISM7ev",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "UUFISM7ev",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmUUFISM7ev:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmUUFISM7ev:0:0",
+               "attributes": {
+                "text": "Enterprise AI tools for coaching, security, and supply chain."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmOzWHZmZao",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "OzWHZmZao",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-international"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmmQu2f_joR",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "mQu2f_joR",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmmQu2f_joR:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmmQu2f_joR:0:0",
+               "attributes": {
+                "text": "Vocom International"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmzEjcVUmqP",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "zEjcVUmqP",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmzEjcVUmqP:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmzEjcVUmqP:0:0",
+               "attributes": {
+                "text": "Global telecom services and connectivity."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmlmjlIQZEY",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "lmjlIQZEY",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/about"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmuScPVOltu",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "uScPVOltu",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmuScPVOltu:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmuScPVOltu:0:0",
+               "attributes": {
+                "text": "About Us"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmyOCPSWDiD",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "yOCPSWDiD",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmyOCPSWDiD:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmyOCPSWDiD:0:0",
+               "attributes": {
+                "text": "Who we are and what we do."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmZGhzfAOX2",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "ZGhzfAOX2",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4Gmti71Tu82d",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "ti71Tu82d",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4Gmti71Tu82d:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4Gmti71Tu82d:0:0",
+               "attributes": {
+                "text": "Request a Quote"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmWBy6m97pQ",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "WBy6m97pQ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmWBy6m97pQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmWBy6m97pQ:0:0",
+               "attributes": {
+                "text": "Get in touch with our team."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmmobscLSkC",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "mobscLSkC",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/resources"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmP1fW4y7D_",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "P1fW4y7D_",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmP1fW4y7D_:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmP1fW4y7D_:0:0",
+               "attributes": {
+                "text": "Resources"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4Gmc7wP83hIq",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "c7wP83hIq",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4Gmc7wP83hIq:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4Gmc7wP83hIq:0:0",
+               "attributes": {
+                "text": "Guides, docs, and partner resources."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmBs_pehP0Z",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "Bs_pehP0Z",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/blog"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmkqDoEOzfB",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "kqDoEOzfB",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmkqDoEOzfB:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmkqDoEOzfB:0:0",
+               "attributes": {
+                "text": "Blog"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmE4vgq0e7O",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "E4vgq0e7O",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmE4vgq0e7O:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmE4vgq0e7O:0:0",
+               "attributes": {
+                "text": "News, insights, and product updates."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4Gmb6XeZQC5Y",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "b6XeZQC5Y",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai-agents"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmdHDlbfEV7",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "dHDlbfEV7",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmdHDlbfEV7:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmdHDlbfEV7:0:0",
+               "attributes": {
+                "text": "AI Agents"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmWKPFdF7_S",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "WKPFdF7_S",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmWKPFdF7_S:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmWKPFdF7_S:0:0",
+               "attributes": {
+                "text": "Autonomous agents for enterprise operations."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmwdftD9n8a",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "wdftD9n8a",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/pricing-vocomai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmnP6isbHR5",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "nP6isbHR5",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmnP6isbHR5:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmnP6isbHR5:0:0",
+               "attributes": {
+                "text": "Pricing"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmG5jGMpbSK",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "G5jGMpbSK",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmG5jGMpbSK:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmG5jGMpbSK:0:0",
+               "attributes": {
+                "text": "Vocom AI pricing and plans."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4Gmxn3kDLq53",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "xn3kDLq53",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmlOb24nxa4",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "lOb24nxa4",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmlOb24nxa4:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmlOb24nxa4:0:0",
+               "attributes": {
+                "text": "Full Fiber Catalog"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmZ4PDHRp5h",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "Z4PDHRp5h",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmZ4PDHRp5h:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmZ4PDHRp5h:0:0",
+               "attributes": {
+                "text": "Every cable, duct, and connector we supply."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "UnEBWU4GmXm365b0qn",
+         "$replicaId": "UnEBWU4Gm",
+         "$originalId": "Xm365b0qn",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai-agents"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmiKhATHKuZ",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "iKhATHKuZ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmiKhATHKuZ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmiKhATHKuZ:0:0",
+               "attributes": {
+                "text": "AI Coach Hub"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "UnEBWU4GmCQUkjW8FQ",
+           "$replicaId": "UnEBWU4Gm",
+           "$originalId": "CQUkjW8FQ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:UnEBWU4GmCQUkjW8FQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:UnEBWU4GmCQUkjW8FQ:0:0",
+               "attributes": {
+                "text": "Always-on AI training for teams."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "UnEBWU4GmTF6RCtKIg",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "UnEBWU4Gm",
+     "$originalId": "TF6RCtKIg",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Tablet",
+      "$control__footerTagline": "Connecting the world through innovative telecommunications solutions.",
+      "$control__title": "Quick Links",
+      "$control__menu1": "Home",
+      "$control__menu2": "VOCOM AI",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Phone",
+   "id": "o4sNbqVRM",
+   "$isReplica": true,
+   "$originalId": "toE7fhAoE",
+   "$mediaQuery": {
+    "range": "(max-width: 809.98px)",
+    "name": "Phone"
+   },
+   "attributes": {
+    "fill": "#ffffff",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "left": "3510px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "390px",
+    "height": "auto",
+    "transition": "spring-duration 0.4s 0.2 0s"
+   },
+   "children": [
+    {
+     "type": "ComponentInstanceNode",
+     "id": "o4sNbqVRMnCsiUFPLp",
+     "component": "viLm3CAkV",
+     "$replicaId": "o4sNbqVRM",
+     "$originalId": "nCsiUFPLp",
+     "$componentDisplayName": "Navigation Bar 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "position": "sticky",
+      "width": "1fr",
+      "height": "auto",
+      "zIndex": "10"
+     }
+    },
+    {
+     "type": "FrameNode",
+     "name": "Search Header",
+     "id": "o4sNbqVRMUjLiCovtq",
+     "$replicaId": "o4sNbqVRM",
+     "$originalId": "UjLiCovtq",
+     "attributes": {
+      "fill": "linear-gradient(180deg, #FFFFFF 0%, #FCEBF3 100%)",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "80px 24px 50px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "o4sNbqVRMiiccNaD2Q",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "iiccNaD2Q",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 800,
+        "fontSize": "40px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.15em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:o4sNbqVRMiiccNaD2Q:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:o4sNbqVRMiiccNaD2Q:0:0",
+           "attributes": {
+            "text": "Search Vocom"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "o4sNbqVRMi5ZTfU6E6",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "i5ZTfU6E6",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "600px",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.5em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:o4sNbqVRMi5ZTfU6E6:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:o4sNbqVRMi5ZTfU6E6:0:0",
+           "attributes": {
+            "text": "Search products and blog posts by name or keyword."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Search Input Wrap",
+       "id": "o4sNbqVRMtvn3HLTcd",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "tvn3HLTcd",
+       "attributes": {
+        "border": "1px solid rgba(136, 18, 67, 0.2)",
+        "fill": "#FFFFFF",
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "start",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "padding": "4px 4px 4px 18px",
+        "position": "relative",
+        "radius": "999px",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "560px"
+       },
+       "children": [
+        {
+         "type": "IconNode",
+         "id": "o4sNbqVRMK1Mt4pyYZ",
+         "set": "omX0gWFPqDwhaiWwf6ab",
+         "$control__icon": "Magnifying Glass",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "K1Mt4pyYZ",
+         "attributes": {
+          "$control__color": "#999999",
+          "$control__width": "1.8",
+          "$control__alpha": "0",
+          "position": "relative",
+          "width": "18px",
+          "height": "18px"
+         }
+        },
+        {
+         "type": "FormPlainTextInputNode",
+         "id": "o4sNbqVRMHUq20z29K",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "HUq20z29K",
+         "attributes": {
+          "border": "1px solid rgba(136, 136, 136, 0.1)",
+          "fill": "rgba(187, 187, 187, 0.15)",
+          "formInputFocusedBorderColor": "rgba(0, 153, 255, 1)",
+          "formInputFocusedBorderWidth": 1,
+          "formInputFocusedBorderTop": 1,
+          "formInputFocusedBorderRight": 1,
+          "formInputFocusedBorderBottom": 1,
+          "formInputFocusedBorderLeft": 1,
+          "formInputFocusedBorderPerSide": false,
+          "formInputFocusedBorderStyle": "solid",
+          "formInputPlaceholder": "Search products, blog, and more...",
+          "formInputPlaceholderColor": "rgb(153, 153, 153)",
+          "formTextInputType": "text",
+          "padding": "10px 6px 10px 6px",
+          "position": "relative",
+          "radius": "10px",
+          "width": "1fr",
+          "height": "44px",
+          "fontName": "Inter",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontSize": "15px",
+          "letterSpacing": "0em",
+          "lineHeight": "1.2em",
+          "textColor": "rgb(23, 16, 23)",
+          "variableBinding": "var(--variable-XlVmMONvi)"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Search Results",
+     "id": "o4sNbqVRMT_E43xZap",
+     "$replicaId": "o4sNbqVRM",
+     "$originalId": "T_E43xZap",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "20px",
+      "padding": "0px 24px 90px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "name": "Results Grid",
+       "id": "o4sNbqVRMD4UxDxRbW",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "D4UxDxRbW",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 1,
+        "gridColumnMinWidth": "260px",
+        "gap": "18px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Products",
+         "repeatedDescendantId": "sKM9oOWbI",
+         "filters": [
+          {
+           "variableId": "g6g11fGQB",
+           "transforms": [
+            {
+             "name": "contains",
+             "value": "var(--variable-XlVmMONvi)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Result Item",
+         "id": "o4sNbqVRMsKM9oOWbI",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "sKM9oOWbI",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "link": {
+           "href": "/products/:slug",
+           "collectionItem": "var(--variable-Khzaw2vzz)"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMpMTuwuU1N",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "pMTuwuU1N",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": {
+             "from": "var(--variable-llF9GrUYm)",
+             "transforms": [
+              {
+               "name": "optionToDisplayName"
+              }
+             ]
+            },
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "11px",
+            "letterSpacing": "0.06em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textTransform": "uppercase",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(122, 18, 48)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMZSWjXu9HC",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "ZSWjXu9HC",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-g6g11fGQB)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMQnYZVDx_k",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "QnYZVDx_k",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-eGZZAahaC)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Empty State",
+         "id": "o4sNbqVRMynEHCuppm",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "ynEHCuppm",
+         "attributes": {
+          "border": "1px dashed rgba(136, 18, 67, 0.2)",
+          "fill": "#FFF9FB",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "padding": "40px",
+          "position": "relative",
+          "radius": "20px",
+          "width": "auto",
+          "height": "100px",
+          "minWidth": "100%",
+          "maxWidth": "1160px",
+          "minHeight": "100%",
+          "visible": {
+           "from": "var(--variable-D4UxDxRbW-item-count)",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": 0
+            }
+           ]
+          }
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMqjT_nSBYe",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "qjT_nSBYe",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMqjT_nSBYe:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMqjT_nSBYe:0:0",
+               "attributes": {
+                "text": "No products found. Try a different name or code."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "name": "Results Grid",
+       "id": "o4sNbqVRMDvNK6Xs2b",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "DvNK6Xs2b",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 1,
+        "gridColumnMinWidth": "260px",
+        "gap": "18px",
+        "position": "relative",
+        "collectionList": {
+         "collection": "Posts",
+         "repeatedDescendantId": "yRVqXxGjF",
+         "sorting": [
+          {
+           "variable": "qipVEtYvn",
+           "direction": "asc"
+          }
+         ],
+         "filters": [
+          {
+           "variableId": "qipVEtYvn",
+           "transforms": [
+            {
+             "name": "contains",
+             "value": "var(--variable-XlVmMONvi)"
+            }
+           ]
+          }
+         ],
+         "filtersOperator": "and"
+        },
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "name": "Result Item",
+         "id": "o4sNbqVRMyRVqXxGjF",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "yRVqXxGjF",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "10px",
+          "link": {
+           "href": "/blog/:slug",
+           "collectionItem": "var(--variable-HO_Dxy3Fb)"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMBpG3tIAti",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "BpG3tIAti",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-MSZWmOUa4)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.2em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(0, 0, 0)"
+           }
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMQKlMetaCJ",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "QKlMetaCJ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "text": "var(--variable-y34GyoiDi)",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           }
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "name": "Empty State",
+         "id": "o4sNbqVRMUdeHJnDzt",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "UdeHJnDzt",
+         "attributes": {
+          "border": "1px dashed rgba(136, 18, 67, 0.2)",
+          "fill": "#FFF9FB",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "center",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "8px",
+          "padding": "40px",
+          "position": "relative",
+          "radius": "20px",
+          "width": "auto",
+          "height": "100px",
+          "minWidth": "100%",
+          "maxWidth": "1160px",
+          "minHeight": "100%",
+          "visible": {
+           "from": "var(--variable-DvNK6Xs2b-item-count)",
+           "transforms": [
+            {
+             "name": "equals",
+             "value": 0
+            }
+           ]
+          }
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMQS6Rom1DL",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "QS6Rom1DL",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 600,
+            "fontSize": "16px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "center",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMQS6Rom1DL:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMQS6Rom1DL:0:0",
+               "attributes": {
+                "text": "No blog posts found. Try a different title."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "id": "o4sNbqVRMc04qjvJsM",
+     "$replicaId": "o4sNbqVRM",
+     "$originalId": "c04qjvJsM",
+     "attributes": {
+      "fill": "#FFFFFF",
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "24px",
+      "padding": "60px 24px 90px 24px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "o4sNbqVRMLoJAYE7NS",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "LoJAYE7NS",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 700,
+        "fontSize": "13px",
+        "letterSpacing": "0.08em",
+        "lineHeight": "1.3em",
+        "textAlignment": "center",
+        "textTransform": "uppercase",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(122, 18, 48)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:o4sNbqVRMLoJAYE7NS:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:o4sNbqVRMLoJAYE7NS:0:0",
+           "attributes": {
+            "text": "Popular Pages"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "o4sNbqVRMQfOpLYrJB",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "QfOpLYrJB",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 700,
+        "fontSize": "32px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.2em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(23, 16, 23)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:o4sNbqVRMQfOpLYrJB:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:o4sNbqVRMQfOpLYrJB:0:0",
+           "attributes": {
+            "text": "Explore Vocom"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "RichTextNode",
+       "id": "o4sNbqVRMpqrCwlrBj",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "pqrCwlrBj",
+       "attributes": {
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "600px",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "letterSpacing": "0em",
+        "lineHeight": "1.5em",
+        "textAlignment": "center",
+        "textDecorationStyle": "solid",
+        "textColor": "rgb(85, 70, 80)"
+       },
+       "children": [
+        {
+         "type": "TextBlock",
+         "id": "v:o4sNbqVRMpqrCwlrBj:0",
+         "attributes": {
+          "tag": "p"
+         },
+         "children": [
+          {
+           "type": "TextRun",
+           "id": "v:o4sNbqVRMpqrCwlrBj:0:0",
+           "attributes": {
+            "text": "Quick links to the pages people look for most."
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "FrameNode",
+       "id": "o4sNbqVRMkptFVfsyT",
+       "$replicaId": "o4sNbqVRM",
+       "$originalId": "kptFVfsyT",
+       "attributes": {
+        "layout": "grid",
+        "gridAlignment": "center",
+        "gridColumnCount": 1,
+        "gridColumnMinWidth": "100px",
+        "gridRowCount": 1,
+        "gridRowHeightType": "auto",
+        "gridRowHeight": "200px",
+        "gap": "18px",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "maxWidth": "1160px"
+       },
+       "children": [
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMDw1e94ESs",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "Dw1e94ESs",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMlj8R8q9ot",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "lj8R8q9ot",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMlj8R8q9ot:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMlj8R8q9ot:0:0",
+               "attributes": {
+                "text": "Home"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMutQIK0_qe",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "utQIK0_qe",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMutQIK0_qe:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMutQIK0_qe:0:0",
+               "attributes": {
+                "text": "Vocom’s homepage: fiber, AI, and telecom services."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMX8WFkkyzd",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "X8WFkkyzd",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/fiber-optic-cables"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMLxMRy50Cz",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "LxMRy50Cz",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMLxMRy50Cz:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMLxMRy50Cz:0:0",
+               "attributes": {
+                "text": "Fiber Optic Cable"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMASyCwKL6C",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "ASyCwKL6C",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMASyCwKL6C:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMASyCwKL6C:0:0",
+               "attributes": {
+                "text": "Wholesale fiber optic cable, built to order."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMhPYsWdAZQ",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "hPYsWdAZQ",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMM7k5BJDu9",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "M7k5BJDu9",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMM7k5BJDu9:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMM7k5BJDu9:0:0",
+               "attributes": {
+                "text": "Vocom AI"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMUUFISM7ev",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "UUFISM7ev",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMUUFISM7ev:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMUUFISM7ev:0:0",
+               "attributes": {
+                "text": "Enterprise AI tools for coaching, security, and supply chain."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMOzWHZmZao",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "OzWHZmZao",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-international"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMmQu2f_joR",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "mQu2f_joR",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMmQu2f_joR:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMmQu2f_joR:0:0",
+               "attributes": {
+                "text": "Vocom International"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMzEjcVUmqP",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "zEjcVUmqP",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMzEjcVUmqP:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMzEjcVUmqP:0:0",
+               "attributes": {
+                "text": "Global telecom services and connectivity."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMlmjlIQZEY",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "lmjlIQZEY",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/about"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMuScPVOltu",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "uScPVOltu",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMuScPVOltu:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMuScPVOltu:0:0",
+               "attributes": {
+                "text": "About Us"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMyOCPSWDiD",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "yOCPSWDiD",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMyOCPSWDiD:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMyOCPSWDiD:0:0",
+               "attributes": {
+                "text": "Who we are and what we do."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMZGhzfAOX2",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "ZGhzfAOX2",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/contact-vocomai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMti71Tu82d",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "ti71Tu82d",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMti71Tu82d:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMti71Tu82d:0:0",
+               "attributes": {
+                "text": "Request a Quote"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMWBy6m97pQ",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "WBy6m97pQ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMWBy6m97pQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMWBy6m97pQ:0:0",
+               "attributes": {
+                "text": "Get in touch with our team."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMmobscLSkC",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "mobscLSkC",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/resources"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMP1fW4y7D_",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "P1fW4y7D_",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMP1fW4y7D_:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMP1fW4y7D_:0:0",
+               "attributes": {
+                "text": "Resources"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMc7wP83hIq",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "c7wP83hIq",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMc7wP83hIq:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMc7wP83hIq:0:0",
+               "attributes": {
+                "text": "Guides, docs, and partner resources."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMBs_pehP0Z",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "Bs_pehP0Z",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/blog"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMkqDoEOzfB",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "kqDoEOzfB",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMkqDoEOzfB:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMkqDoEOzfB:0:0",
+               "attributes": {
+                "text": "Blog"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRME4vgq0e7O",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "E4vgq0e7O",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRME4vgq0e7O:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRME4vgq0e7O:0:0",
+               "attributes": {
+                "text": "News, insights, and product updates."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMb6XeZQC5Y",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "b6XeZQC5Y",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai-agents"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMdHDlbfEV7",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "dHDlbfEV7",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMdHDlbfEV7:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMdHDlbfEV7:0:0",
+               "attributes": {
+                "text": "AI Agents"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMWKPFdF7_S",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "WKPFdF7_S",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMWKPFdF7_S:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMWKPFdF7_S:0:0",
+               "attributes": {
+                "text": "Autonomous agents for enterprise operations."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMwdftD9n8a",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "wdftD9n8a",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/pricing-vocomai"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMnP6isbHR5",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "nP6isbHR5",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMnP6isbHR5:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMnP6isbHR5:0:0",
+               "attributes": {
+                "text": "Pricing"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMG5jGMpbSK",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "G5jGMpbSK",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMG5jGMpbSK:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMG5jGMpbSK:0:0",
+               "attributes": {
+                "text": "Vocom AI pricing and plans."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMxn3kDLq53",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "xn3kDLq53",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/fiber-optic-cable-catalog"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMlOb24nxa4",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "lOb24nxa4",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMlOb24nxa4:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMlOb24nxa4:0:0",
+               "attributes": {
+                "text": "Full Fiber Catalog"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMZ4PDHRp5h",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "Z4PDHRp5h",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMZ4PDHRp5h:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMZ4PDHRp5h:0:0",
+               "attributes": {
+                "text": "Every cable, duct, and connector we supply."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "type": "FrameNode",
+         "id": "o4sNbqVRMXm365b0qn",
+         "$replicaId": "o4sNbqVRM",
+         "$originalId": "Xm365b0qn",
+         "attributes": {
+          "border": "1px solid rgba(136, 18, 67, 0.14)",
+          "cursor": "pointer",
+          "fill": "#FFFFFF",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "start",
+          "stackWrapEnabled": false,
+          "gap": "6px",
+          "link": {
+           "href": "/vocom-ai-agents"
+          },
+          "padding": "20px",
+          "position": "relative",
+          "radius": "16px",
+          "width": "1fr",
+          "height": "auto"
+         },
+         "children": [
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMiKhATHKuZ",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "iKhATHKuZ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "fontSize": "17px",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "1.3em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(23, 16, 23)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMiKhATHKuZ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMiKhATHKuZ:0:0",
+               "attributes": {
+                "text": "AI Coach Hub"
+               }
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "type": "RichTextNode",
+           "id": "o4sNbqVRMCQUkjW8FQ",
+           "$replicaId": "o4sNbqVRM",
+           "$originalId": "CQUkjW8FQ",
+           "attributes": {
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "fontName": "Inter",
+            "fontStyle": "normal",
+            "fontWeight": 400,
+            "fontSize": "13.5px",
+            "letterSpacing": "0em",
+            "lineHeight": "1.4em",
+            "textAlignment": "start",
+            "textDecorationStyle": "solid",
+            "textColor": "rgb(85, 70, 80)"
+           },
+           "children": [
+            {
+             "type": "TextBlock",
+             "id": "v:o4sNbqVRMCQUkjW8FQ:0",
+             "attributes": {
+              "tag": "p"
+             },
+             "children": [
+              {
+               "type": "TextRun",
+               "id": "v:o4sNbqVRMCQUkjW8FQ:0:0",
+               "attributes": {
+                "text": "Always-on AI training for teams."
+               }
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ComponentInstanceNode",
+     "id": "o4sNbqVRMTF6RCtKIg",
+     "component": "gZoBdp3Uw",
+     "$replicaId": "o4sNbqVRM",
+     "$originalId": "TF6RCtKIg",
+     "$componentDisplayName": "Simple Footer 2",
+     "attributes": {
+      "$control__variant": "Phone",
+      "$control__footerTagline": "Connecting the world through innovative telecommunications solutions.",
+      "$control__title": "Quick Links",
+      "$control__menu1": "Home",
+      "$control__menu2": "VOCOM AI",
+      "$control__menu3": "RenOS AI Agents",
+      "$control__link1": "/",
+      "$control__link3": "/vocom-ai-agents",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto"
+     }
+    }
+   ]
+  },
+  {
+   "type": "ComponentInstanceNode",
+   "id": "SpJvwb4Du",
+   "component": "GbX8S6ghmyszcS2GLR2F",
+   "$componentDisplayName": "Cookie Banner",
+   "attributes": {
+    "$control__gTMID": "",
+    "$control__preview": "false",
+    "$control__trigger": "{\"type\":{\"type\":\"enum\",\"value\":\"text\"},\"iconType\":{\"type\":\"enum\",\"value\":\"default\"},\"text\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"textFont\":{\"type\":\"font\"},\"iconSize\":{\"type\":\"number\",\"value\":24},\"color\":{\"type\":\"color\",\"value\":\"#333\"},\"iconImage\":{\"type\":\"image\"}}",
+    "$control__banner": "{\"position\":{\"type\":\"enum\",\"value\":\"bottom-right\"},\"zIndex\":{\"type\":\"number\",\"value\":10},\"width\":{\"type\":\"number\",\"value\":360},\"containerWidth\":{\"type\":\"number\",\"value\":0},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"inset\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":20,\"fused\":[20,20,20,20]}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"colorTitle\":{\"type\":\"color\",\"value\":\"#000\"},\"fontBody\":{\"type\":\"font\"},\"colorBody\":{\"type\":\"color\",\"value\":\"#444\"},\"fill\":{\"type\":\"color\",\"value\":\"#FFF\"},\"link\":{\"type\":\"color\",\"value\":\"#999\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":14},\"width\":{\"type\":\"number\",\"value\":1},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.05)\"}}},\"shadow\":{\"type\":\"object\",\"value\":null},\"backdrop\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"}}},\"animation\":{\"type\":\"object\",\"value\":{\"x\":{\"type\":\"number\",\"value\":0},\"y\":{\"type\":\"number\",\"value\":10},\"scale\":{\"type\":\"number\",\"value\":1},\"transition\":{\"type\":\"transition\",\"value\":{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":500,\"damping\":60,\"mass\":1,\"stagger\":0}}}}}",
+    "$control__buttons": "{\"primary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#000\"},\"color\":{\"type\":\"color\",\"value\":\"#FFF\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"secondary\":{\"type\":\"object\",\"value\":{\"fill\":{\"type\":\"color\",\"value\":\"#EEE\"},\"color\":{\"type\":\"color\",\"value\":\"#444\"},\"shadow\":{\"type\":\"object\",\"value\":null}}},\"labels\":{\"type\":\"object\",\"value\":{\"accept\":{\"type\":\"string\",\"value\":\"Accept\"},\"reject\":{\"type\":\"string\",\"value\":\"Reject\"},\"acceptAll\":{\"type\":\"string\",\"value\":\"Accept all\"},\"rejectAll\":{\"type\":\"string\",\"value\":\"Reject all\"},\"customize\":{\"type\":\"string\",\"value\":\"Customize\"},\"save\":{\"type\":\"string\",\"value\":\"Save Preferences\"},\"confirm\":{\"type\":\"string\",\"value\":\"Okay\"}}},\"font\":{\"type\":\"font\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":10,\"fused\":[10,10,10,10]}},\"borderRadius\":{\"type\":\"number\",\"value\":8},\"tapOpacity\":{\"type\":\"number\",\"value\":0.4},\"hoverOpacity\":{\"type\":\"number\",\"value\":0.6},\"direction\":{\"type\":\"enum\",\"value\":\"row\"},\"fluid\":{\"type\":\"boolean\",\"value\":true}}",
+    "$control__regions": "{\"isEU\":{\"type\":\"boolean\",\"value\":true},\"euType\":{\"type\":\"enum\",\"value\":\"medium\"},\"euTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"euDescription\":{\"type\":\"string\",\"value\":\"We use cookies to enhance your experience, analyze site traffic and deliver personalized content.\"},\"euPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\",\"value\":{\"url\":\"https://www.framer.com/legal/policy/\",\"type\":\"url\"}},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"euDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":false},\"analytics\":{\"type\":\"boolean\",\"value\":false},\"marketing\":{\"type\":\"boolean\",\"value\":false}}},\"euShowReject\":{\"type\":\"boolean\",\"value\":true},\"euBlocking\":{\"type\":\"boolean\",\"value\":false},\"worldType\":{\"type\":\"enum\",\"value\":\"simple\"},\"worldTitle\":{\"type\":\"string\",\"value\":\"Cookie Settings\"},\"worldDescription\":{\"type\":\"string\",\"value\":\"We use cookies to personalize content, run ads, and analyze traffic.\"},\"worldPolicy\":{\"type\":\"object\",\"value\":{\"link\":{\"type\":\"link\"},\"prefix\":{\"type\":\"string\",\"value\":\"Read our\"},\"label\":{\"type\":\"string\",\"value\":\"Cookie Policy\"}}},\"worldDefaults\":{\"type\":\"object\",\"value\":{\"necessary\":{\"type\":\"boolean\",\"value\":true},\"preferences\":{\"type\":\"boolean\",\"value\":true},\"analytics\":{\"type\":\"boolean\",\"value\":true},\"marketing\":{\"type\":\"boolean\",\"value\":true}}},\"worldShowReject\":{\"type\":\"boolean\",\"value\":true},\"worldBlocking\":{\"type\":\"boolean\",\"value\":false}}",
+    "$control__options": "{\"preview\":{\"type\":\"boolean\",\"value\":false},\"necessary\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Necessary\"},\"description\":{\"type\":\"string\",\"value\":\"Enables security and basic functionality.\"},\"optional\":{\"type\":\"boolean\",\"value\":true}}},\"preferences\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Preferences\"},\"description\":{\"type\":\"string\",\"value\":\"Enables personalized content and settings.\"}}},\"analytics\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Analytics\"},\"description\":{\"type\":\"string\",\"value\":\"Enables tracking of performance.\"}}},\"marketing\":{\"type\":\"object\",\"value\":{\"title\":{\"type\":\"string\",\"value\":\"Marketing\"},\"description\":{\"type\":\"string\",\"value\":\"Enables ads personalization and tracking.\"}}},\"style\":{\"type\":\"object\",\"value\":{\"fontTitle\":{\"type\":\"font\"},\"fontBody\":{\"type\":\"font\"},\"background\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"},\"border\":{\"type\":\"object\",\"value\":{\"radius\":{\"type\":\"number\",\"value\":8},\"width\":{\"type\":\"number\",\"value\":0},\"color\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.02)\"}}},\"toggleColor\":{\"type\":\"color\",\"value\":\"#000\"},\"toggleColorInactive\":{\"type\":\"color\",\"value\":\"rgba(0,0,0,0.1)\"},\"padding\":{\"type\":\"fusednumber\",\"isFused\":false,\"value\":{\"single\":12,\"fused\":[12,12,12,12]}}}}}",
+    "left": "-500px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "0%",
+    "centerAnchorY": "0%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto"
+   }
+  }
+ ]
+}

@@ -1,0 +1,387 @@
+{
+ "type": "ComponentNode",
+ "id": "oBk1O4lDD",
+ "name": "Feature Item Three",
+ "variables": [
+  {
+   "key": "$control__scrollSection",
+   "id": "LA96l3Zx8",
+   "name": "Scroll Section",
+   "node": "Variable",
+   "type": "scrollsectionref"
+  },
+  {
+   "key": "$control__title",
+   "id": "ubuEg6QNt",
+   "name": "Title",
+   "node": "Variable",
+   "type": "string",
+   "displayTextArea": true,
+   "initialValue": "Real-time collaboration"
+  },
+  {
+   "key": "$control__content",
+   "id": "plYB5UR0M",
+   "name": "Content",
+   "node": "Variable",
+   "type": "string",
+   "displayTextArea": true,
+   "initialValue": "Work seamlessly with your team, get instant feedback."
+  },
+  {
+   "key": "$control__image",
+   "id": "q2o9JkAZ5",
+   "name": "Image",
+   "node": "Variable",
+   "type": "image",
+   "initialValue": {
+    "alt": "Feature image",
+    "value": "data:framer/asset-reference,NU9HfNwS2MXzEazRU5CfxToRVQo.jpg?originalFilename=sightify_1.jpg&preferredSize=auto&width=1920&height=1281",
+    "type": "image"
+   }
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "oRVMfDZiP",
+   "name": "Feature Item"
+  },
+  {
+   "id": "gyZeIHaDt",
+   "name": "Feature Item - Phone"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Feature Item",
+   "id": "oRVMfDZiP",
+   "$isPrimary": true,
+   "attributes": {
+    "cursor": "default",
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "padding": "6px",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "radius": "30px",
+    "width": "360px",
+    "height": "auto",
+    "transition": "spring-duration 5s 0 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Feature Image",
+     "id": "pgIJ1X7uT",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "position": "relative",
+      "radius": "25px",
+      "width": "1fr",
+      "height": "300px",
+      "aspectRatio": 1.16
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "R0Gk7OCd5",
+       "attributes": {
+        "fill": "var(--variable-q2o9JkAZ5)",
+        "altText": "Feature image",
+        "layout": "null",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "1fr"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Avatar Hover",
+       "id": "d9lVlHLpB",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "position": "absolute",
+        "left": "null",
+        "right": "null",
+        "top": "null",
+        "bottom": "null",
+        "centerAnchorX": "50%",
+        "centerAnchorY": "50%",
+        "constraintsLocked": false,
+        "width": "100%",
+        "height": "100%",
+        "styleTransformEffect": {
+         "trigger": "onScrollTarget",
+         "viewport": "start",
+         "transition": "spring-physics 600 80 1 0s",
+         "sections": [
+          {
+           "scale": 0.9
+          },
+          {
+           "x": "1px",
+           "scale": 0.9,
+           "rotate": "190deg"
+          }
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Feature Content",
+     "id": "ZWgazy4Ev",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "padding": "20px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "600px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "gMWZUCH55",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-ubuEg6QNt)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "22px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.1em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-f76c80e4-24c3-4158-b8cf-0c2015ff5a02, rgb(16, 16, 17))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "pn36E0JsP",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-plYB5UR0M)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.4em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-67d981e7-2754-44dc-bd50-7adae26c5928)"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Feature Item - Phone",
+   "id": "gyZeIHaDt",
+   "$isReplica": true,
+   "$originalId": "oRVMfDZiP",
+   "attributes": {
+    "cursor": "default",
+    "fill": "var(--token-3a04d53d-c0b5-4a94-910a-fab94c51068a)",
+    "layout": "stack",
+    "stackDirection": "vertical",
+    "stackDistribution": "start",
+    "stackAlignment": "start",
+    "stackWrapEnabled": false,
+    "gap": "0px",
+    "overflow": "hidden",
+    "padding": "6px",
+    "left": "460px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "50%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "radius": "30px",
+    "width": "360px",
+    "height": "auto",
+    "transition": "spring-duration 5s 0 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Feature Image",
+     "id": "gyZeIHaDtpgIJ1X7uT",
+     "$replicaId": "gyZeIHaDt",
+     "$originalId": "pgIJ1X7uT",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "horizontal",
+      "stackDistribution": "center",
+      "stackAlignment": "center",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "position": "relative",
+      "radius": "25px",
+      "width": "1fr",
+      "height": "300px",
+      "aspectRatio": 1.16
+     },
+     "children": [
+      {
+       "type": "FrameNode",
+       "id": "gyZeIHaDtR0Gk7OCd5",
+       "$replicaId": "gyZeIHaDt",
+       "$originalId": "R0Gk7OCd5",
+       "attributes": {
+        "fill": "var(--variable-q2o9JkAZ5)",
+        "altText": "Feature image",
+        "layout": "null",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "1fr",
+        "height": "1fr"
+       }
+      },
+      {
+       "type": "FrameNode",
+       "name": "Avatar Hover",
+       "id": "gyZeIHaDtd9lVlHLpB",
+       "$replicaId": "gyZeIHaDt",
+       "$originalId": "d9lVlHLpB",
+       "attributes": {
+        "layout": "stack",
+        "stackDirection": "horizontal",
+        "stackDistribution": "center",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": "10px",
+        "position": "absolute",
+        "left": "null",
+        "right": "null",
+        "top": "null",
+        "bottom": "null",
+        "centerAnchorX": "50%",
+        "centerAnchorY": "50%",
+        "constraintsLocked": false,
+        "width": "100%",
+        "height": "100%"
+       }
+      }
+     ]
+    },
+    {
+     "type": "FrameNode",
+     "name": "Feature Content",
+     "id": "gyZeIHaDtZWgazy4Ev",
+     "$replicaId": "gyZeIHaDt",
+     "$originalId": "ZWgazy4Ev",
+     "attributes": {
+      "layout": "stack",
+      "stackDirection": "vertical",
+      "stackDistribution": "start",
+      "stackAlignment": "start",
+      "stackWrapEnabled": false,
+      "gap": "10px",
+      "overflow": "hidden",
+      "padding": "15px",
+      "position": "relative",
+      "width": "1fr",
+      "height": "auto",
+      "maxWidth": "600px"
+     },
+     "children": [
+      {
+       "type": "RichTextNode",
+       "id": "gyZeIHaDtgMWZUCH55",
+       "$replicaId": "gyZeIHaDt",
+       "$originalId": "gMWZUCH55",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-ubuEg6QNt)",
+        "fontName": "Inter Display",
+        "fontStyle": "normal",
+        "fontWeight": 600,
+        "fontSize": "22px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.1em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-f76c80e4-24c3-4158-b8cf-0c2015ff5a02, rgb(16, 16, 17))"
+       }
+      },
+      {
+       "type": "RichTextNode",
+       "id": "gyZeIHaDtpn36E0JsP",
+       "$replicaId": "gyZeIHaDt",
+       "$originalId": "pn36E0JsP",
+       "attributes": {
+        "inlineCodeStylePreset": "Inline Code",
+        "linkStylePreset": "Link",
+        "position": "relative",
+        "width": "1fr",
+        "height": "auto",
+        "text": "var(--variable-plYB5UR0M)",
+        "fontName": "Inter",
+        "fontStyle": "normal",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "1.4em",
+        "textAlignment": "left",
+        "textDecorationStyle": "solid",
+        "textColor": "var(--token-67d981e7-2754-44dc-bd50-7adae26c5928)"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+/* Base styles shared by every page. Mirrors the Framer runtime defaults so converted
+ * layouts render the same: border-box sizing, no default margins, flex children
+ * that do not shrink, images that fill their frame. */
+@import "./fonts.css";
+@import "./tokens.css";
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote { margin: 0; padding: 0; font-weight: inherit; font-size: inherit; }
+strong { font-weight: 700; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+img, video, svg { display: block; max-width: none; }
+
+/* Image fills: Framer draws image backgrounds as an absolutely positioned <img>. */
+.fill-img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center; border-radius: inherit; pointer-events: none;
+}
+/* "Fit image" frames bound to CMS images: the image sets the height. */
+.fill-img.fit { position: relative; inset: auto; height: auto; }
+.video-fill { width: 100%; height: 100%; display: block; }
+
+/* Framer-style borders: drawn inside the box on a pseudo-element, so they never change layout. */
+.fb::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; box-sizing: border-box;
+  border-width: var(--bw, 0); border-style: var(--bs, solid); border-color: var(--bc, transparent);
+  border-radius: inherit;
+}
+
+/* Rich text with several blocks: paragraph spacing comes from --para-gap. */
+.rt > * + * { margin-top: var(--para-gap, 0); }
+.text-bg {
+  background: var(--text-bg); border-radius: var(--text-bg-radius); padding: var(--text-bg-pad);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.text-link { text-decoration: underline; text-underline-offset: 2px; }
+
+/* Icons inherit colour/stroke from custom properties set per instance. */
+svg.icon { overflow: visible; }
+
+/* Dropdown overlays (Framer "show overlay on hover"). */
+.has-overlay > .overlay { display: none; }
+.has-overlay:hover > .overlay,
+.has-overlay:focus-within > .overlay { display: flex; }
+.overlay::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+
+/* Masonry grids (Framer "masonry"): Base.astro's script sets row spans where CSS masonry is unsupported. */
+.masonry.masonry-on { grid-auto-rows: 8px !important; grid-template-rows: none !important; }
+
+/* Framer loop effect (continuous rotation) */
+.loop-spin { animation: loop-spin 1s linear infinite; }
+@keyframes loop-spin { to { transform: rotate(360deg); } }
+
+/* Tap-to-switch variants (mobile menu, accordions, tabs); see Base.astro script. */
+[data-set-variant] { cursor: pointer; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* ---- Rebuilt Framer code components (scripts/framer/registry.mjs) ---- */
+.benefit { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; justify-content: center; }
+.benefit-icon {
+  display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 10px; background: var(--white);
+  box-shadow: rgb(234, 234, 234) 0px 0px 0px 1px, rgba(143, 143, 143, 0.2) 0px 1px 3px 0px, rgba(61, 61, 61, 0.04) 0px -2.4px 0px 0px inset;
+}
+.benefit-icon svg { width: 15px; height: 15px; }
+.benefit-texts { display: flex; flex-direction: column; gap: 5px; overflow: hidden; }
+.benefit-title { font-size: 16px; line-height: 24px; color: rgb(39, 39, 39); }
+.benefit-desc { font-size: 14px; line-height: 1.59; color: rgb(92, 92, 92); }
+
+.industry-table { display: flex; flex-direction: column; background: var(--white); border: 1px solid rgb(238, 238, 238); border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px; overflow: hidden; }
+.industry-table table { width: 100%; border-collapse: collapse; }
+.industry-table th { padding: 14px; background: var(--white); text-align: left; font-size: 17px; font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: #000; }
+.industry-table td { padding: 12px; font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: -0.01em; color: rgb(34, 34, 34); vertical-align: top; }
+.industry-table td:first-child { font-weight: 600; }
+.industry-table tbody tr:nth-child(odd) td { background: rgb(245, 245, 245); }
+.industry-table tbody tr:nth-child(even) td { background: var(--white); }
+
+.btn-red {
+  display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 18px; border-radius: 28px; overflow: hidden;
+  background: var(--color-vocom); color: var(--white); font-family: "DM Sans", "DM Sans Placeholder", sans-serif;
+  font-size: 16px; font-weight: 500; line-height: 26px; letter-spacing: -0.5px; white-space: nowrap;
+}
+
+/* Logo component: Framer's "Small" logo variant uses a contained (never cropped) image. */
+.elements-logo .fill-img { object-fit: contain; }

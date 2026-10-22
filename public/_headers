@@ -1,0 +1,13 @@
+# Keep Cloudflare preview deployments out of search engines. Production (www.vocom.ai) is unaffected.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Long cache for fingerprinted/static assets
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*
+  Cache-Control: public, max-age=2592000

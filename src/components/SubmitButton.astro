@@ -1,0 +1,87 @@
+---
+// Quote form submit button + submit handler (replaces Framer's form + "Button 5").
+// States match the live button: Disabled until required fields are filled, Loading
+// spinner, "Thank you" on success, "Something went wrong" on error.
+// Submissions POST to the Google Apps Script in src/config.ts (QUOTE_FORM_URL).
+import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
+---
+<button type="submit" class="submit-btn" data-state="disabled" data-endpoint={QUOTE_FORM_URL} data-fallback={QUOTE_FORM_FALLBACK_EMAIL}>
+  <p class="label default">Submit</p>
+  <p class="label success">Thank you</p>
+  <p class="label error">Something went wrong</p>
+  <span class="spinner" aria-hidden="true"></span>
+  <span class="sr-only" aria-live="polite"></span>
+</button>
+
+<style>
+  .submit-btn {
+    display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+    border: 0; border-radius: 10px; cursor: pointer; padding: 0;
+    background: var(--color-vocom); transition: background-color 0.2s cubic-bezier(0.44, 0, 0.56, 1), opacity 0.2s;
+    font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--white);
+  }
+  .submit-btn:hover { background: var(--color-vocom-cta-1); }
+  .submit-btn:active { background: var(--color-vocom-light); }
+  .submit-btn .label, .submit-btn .spinner { display: none; }
+  .submit-btn[data-state="default"] .default, .submit-btn[data-state="disabled"] .default { display: inline; }
+  .submit-btn[data-state="disabled"] { background: var(--color-shadow); opacity: 0.5; cursor: unset; }
+  .submit-btn[data-state="loading"] { cursor: unset; }
+  .submit-btn[data-state="loading"] .spinner { display: block; }
+  .submit-btn[data-state="success"] { background: rgb(8, 61, 27); cursor: unset; }
+  .submit-btn[data-state="success"] .success { display: inline; }
+  .submit-btn[data-state="error"] { background: rgba(255, 34, 68, 0.15); color: rgb(255, 34, 68); cursor: unset; }
+  .submit-btn[data-state="error"] .error { display: inline; }
+  .spinner {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: conic-gradient(from 180deg, rgba(255, 255, 255, 0) 0deg, #fff 342deg);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>(".submit-btn").forEach((btn) => {
+    const form = btn.closest("form");
+    if (!form) return;
+    const live = btn.querySelector(".sr-only")!;
+    // honeypot: bots fill it, people never see it
+    const hp = document.createElement("input");
+    Object.assign(hp, { type: "text", name: "website", tabIndex: -1, autocomplete: "off" });
+    hp.setAttribute("aria-hidden", "true");
+    hp.style.cssText = "position:absolute;left:-9999px;width:1px;height:1px;opacity:0";
+    form.appendChild(hp);
+    const update = () => { if (btn.dataset.state === "default" || btn.dataset.state === "disabled") btn.dataset.state = form.checkValidity() ? "default" : "disabled"; };
+    form.addEventListener("input", update);
+    form.addEventListener("change", update);
+    update();
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity() || btn.dataset.state === "loading") return;
+      if (hp.value) { btn.dataset.state = "success"; return; }
+      const endpoint = btn.dataset.endpoint;
+      if (!endpoint) {
+        btn.dataset.state = "error";
+        live.textContent = btn.dataset.fallback ? `The form is not connected yet. Please email ${btn.dataset.fallback}.` : "The form is not connected yet.";
+        return;
+      }
+      btn.dataset.state = "loading";
+      const data = new URLSearchParams();
+      new FormData(form).forEach((v, k) => { if (k !== "website") data.append(k.trim(), String(v)); });
+      data.append("page", location.pathname);
+      try {
+        // Apps Script web apps do not send CORS headers; no-cors posts still deliver.
+        await fetch(endpoint, { method: "POST", mode: "no-cors", body: data });
+        btn.dataset.state = "success";
+        live.textContent = "Thank you";
+        window.dispatchEvent(new CustomEvent("quote-form-submitted"));
+        (window as any).dataLayer?.push({ event: "form-submission" });
+      } catch {
+        btn.dataset.state = "error";
+        live.textContent = "Something went wrong";
+        setTimeout(() => { btn.dataset.state = "default"; }, 4000);
+      }
+    });
+  });
+</script>

@@ -1,0 +1,35 @@
+/* Converted from Framer. Breakpoints: desktop >=1200, tablet 810-1199, phone <810. */
+.xypufxb{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;background:var(--white);overflow:hidden;min-height:100vh}
+.x44tstn{display:block;position:sticky;top:0px;flex:none;width:1000px;height:min-content;z-index:10}
+.x0tixp8{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:20px;position:relative;flex:none;width:100%;height:min-content;padding:80px 24px 50px 24px;background:linear-gradient(180deg, var(--white) 0%, var(--color-vocom-white) 100%)}
+.xpwzj0w{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;line-height:1.15em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x7efv2t{position:relative;flex:none;width:100%;height:auto;max-width:600px;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:1.5em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xtrn6v4{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:10px;position:relative;flex:none;width:100%;height:min-content;max-width:560px;padding:4px 4px 4px 18px;border-radius:999px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.2)}
+.xbfkgtr{position:relative;flex:none;width:18px;height:18px;display:block}
+.xvdjwxf{display:block;position:relative;flex:1 0 0px;width:1px;height:44px;padding:10px 6px 10px 6px;border-radius:10px;background:rgba(187, 187, 187, 0.15);--bw:1px;--bs:solid;--bc:rgba(136, 136, 136, 0.1)}
+.xxbxseq{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:20px;position:relative;flex:none;width:100%;height:min-content;padding:0px 24px 90px 24px}
+.xjycrqz{display:grid;grid-template-columns:repeat(3, minmax(1px, 1fr));grid-auto-rows:minmax(0, 1fr);gap:18px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content;max-width:1160px}
+.xlwu3zi{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:10px;position:relative;flex:none;width:100%;height:min-content;padding:20px;border-radius:16px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14);cursor:pointer}
+.xe4ujgo{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:11px;letter-spacing:0.06em;line-height:1.2em;color:var(--brand-red);text-align:left;text-transform:uppercase;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xiaf8te{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.01em;line-height:1.3em;color:var(--ink-900);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xwtxand{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:13.5px;letter-spacing:0;line-height:1.4em;color:var(--ink-600);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.x8hviis{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;position:relative;flex:none;width:100%;height:100px;max-width:1160px;min-width:100%;min-height:100%;padding:40px;border-radius:20px;background:#FFF9FB;--bw:1px;--bs:dashed;--bc:rgba(136, 18, 67, 0.2)}
+.x8dn5lj{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:600;font-size:16px;letter-spacing:0;line-height:1.4em;color:var(--ink-600);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xh6i4ui{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:400;font-size:16px;letter-spacing:0;line-height:1.2em;color:var(--black);text-align:left;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xhqr2mt{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:24px;position:relative;flex:none;width:100%;height:min-content;padding:60px 24px 90px 24px;background:var(--white)}
+.xajxpqh{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter", "Inter Placeholder", sans-serif;font-weight:700;font-size:13px;letter-spacing:0.08em;line-height:1.3em;color:var(--brand-red);text-align:center;text-transform:uppercase;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xuguhcc{position:relative;flex:none;width:100%;height:auto;display:block;font-family:"Inter Display", "Inter Display Placeholder", sans-serif;font-weight:700;font-size:32px;letter-spacing:-0.02em;line-height:1.2em;color:var(--ink-900);text-align:center;white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word}
+.xdbsy78{display:grid;grid-template-columns:repeat(3, minmax(1px, 1fr));grid-auto-rows:minmax(0, 1fr);grid-template-rows:repeat(1, minmax(0, 1fr));gap:18px;justify-items:center;align-items:start;position:relative;flex:none;width:100%;height:min-content;max-width:1160px}
+.xldkpc9{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:6px;position:relative;flex:none;width:100%;height:min-content;padding:20px;border-radius:16px;background:var(--white);--bw:1px;--bs:solid;--bc:rgba(136, 18, 67, 0.14);cursor:pointer}
+.xzxrxrs{display:block;position:relative;flex:none;width:100%;height:min-content}
+@media (min-width: 810px) and (max-width: 1199.98px){
+.xypufxb{min-height:0}
+.xjycrqz{grid-template-columns:repeat(2, minmax(1px, 1fr))}
+.xdbsy78{grid-template-columns:repeat(2, minmax(1px, 1fr))}
+}
+@media (max-width: 809.98px){
+.xypufxb{min-height:0}
+.x44tstn{width:100%}
+.xjycrqz{grid-template-columns:repeat(1, minmax(1px, 1fr))}
+.xdbsy78{grid-template-columns:repeat(1, minmax(1px, 1fr))}
+}

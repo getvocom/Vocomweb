@@ -1,0 +1,26 @@
+---
+// /search: the page lists every product and post (as on the live site); typing in the
+// search box filters the cards using the Pagefind index built after `astro build`.
+---
+<script>
+  const input = document.querySelector<HTMLInputElement>("main input, input[type='text'], input[type='search']");
+  const cards = [...document.querySelectorAll<HTMLAnchorElement>("a[href^='/blog/'], a[href^='/products/']")].filter((a) => !a.closest("header, footer, .header-slot, .footer-slot"));
+  const norm = (u: string) => decodeURI(u.replace(/\.html$/, "").replace(/\/$/, ""));
+  let pagefind: any = null;
+  async function run(q: string) {
+    if (!q.trim()) { cards.forEach((c) => (c.style.display = "")); return; }
+    const pf = "/pagefind/pagefind.js";
+    pagefind ||= await import(/* @vite-ignore */ pf);
+    const res = await pagefind.search(q);
+    const urls = new Set((await Promise.all(res.results.map((r: any) => r.data()))).map((d: any) => norm(d.url)));
+    cards.forEach((c) => (c.style.display = urls.has(norm(new URL(c.href).pathname)) ? "" : "none"));
+  }
+  if (input) {
+    input.setAttribute("type", "search");
+    input.setAttribute("aria-label", "Search products, blog, and more");
+    let t: number | undefined;
+    input.addEventListener("input", () => { clearTimeout(t); t = window.setTimeout(() => run(input.value), 150); });
+    const q = new URLSearchParams(location.search).get("q");
+    if (q) { input.value = q; run(q); }
+  }
+</script>

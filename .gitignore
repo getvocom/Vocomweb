@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+*.log
+# Large local QA artefacts (regenerate with scripts/capture.mjs and scripts/visual-diff.mjs)
+capture/screens/
+capture/visual/
+capture/probe/
+capture/html/rendered/
+capture/parity-partial.json
+.claude/

@@ -1,0 +1,205 @@
+{
+ "type": "ComponentNode",
+ "id": "jwAYcLW72",
+ "name": "Logo",
+ "variables": [
+  {
+   "key": "$control__symbol",
+   "id": "HhlDYSYKo",
+   "name": "Symbol",
+   "node": "Variable",
+   "type": "image",
+   "initialValue": "data:framer/asset-reference,ZUAX4YeDciWgMTw0111wz8ujaxE.png?originalFilename=logo-symbol.png&preferredSize=auto"
+  },
+  {
+   "key": "$control__logotype",
+   "id": "bav42PlGv",
+   "name": "Logotype",
+   "node": "Variable",
+   "type": "image",
+   "initialValue": "data:framer/asset-reference,sLRRSW7cZ1zKSFVv1ygYVroanBQ.png?originalFilename=logo-type.png&preferredSize=auto"
+  },
+  {
+   "key": "onClick",
+   "id": "tK1wvbbK9",
+   "name": "Click",
+   "node": "EventHandlerVariable",
+   "type": "eventhandler"
+  },
+  {
+   "key": "$control__logo",
+   "id": "PIwNgm_lj",
+   "name": "logo",
+   "node": "Variable",
+   "type": "image",
+   "initialValue": "data:framer/asset-reference,TTIbUaJpCfUwzR62SUUmiGgRfM.png?originalFilename=Vocom+Logo.png&width=226&height=243"
+  },
+  {
+   "key": "$control__logoLink",
+   "id": "QlqEwedw7",
+   "name": "Logo Link",
+   "node": "LinkVariable",
+   "type": "link"
+  }
+ ],
+ "$parentId": "sn7IXw6X9",
+ "$variants": [
+  {
+   "id": "wcftKr8vc",
+   "name": "Default"
+  },
+  {
+   "id": "pGE9eQA2g",
+   "name": "Medium"
+  },
+  {
+   "id": "C3AXmRO7O",
+   "name": "Small"
+  }
+ ],
+ "children": [
+  {
+   "type": "FrameNode",
+   "name": "Default",
+   "id": "wcftKr8vc",
+   "$isPrimary": true,
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "horizontal",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "link": {
+     "href": "var(--variable-QlqEwedw7)",
+     "smoothScroll": true
+    },
+    "overflow": "hidden",
+    "left": "0px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "41.67%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "85px",
+    "transition": "spring-physics 500 60 1 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Logo",
+     "id": "eDl1IHbi7",
+     "attributes": {
+      "fill": "var(--variable-PIwNgm_lj)",
+      "altText": "Vocom logo",
+      "htmlTag": "div",
+      "layout": "null",
+      "position": "relative",
+      "width": "79px",
+      "height": "fit-image"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Medium",
+   "id": "pGE9eQA2g",
+   "$isReplica": true,
+   "$originalId": "wcftKr8vc",
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "horizontal",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "link": {
+     "href": "var(--variable-QlqEwedw7)",
+     "smoothScroll": true
+    },
+    "overflow": "hidden",
+    "left": "239px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "41.67%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "width": "auto",
+    "height": "auto",
+    "transition": "spring-physics 500 60 1 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Logo",
+     "id": "pGE9eQA2geDl1IHbi7",
+     "$replicaId": "pGE9eQA2g",
+     "$originalId": "eDl1IHbi7",
+     "attributes": {
+      "fill": "var(--variable-PIwNgm_lj)",
+      "fillImagePositionX": "left",
+      "fillImagePositionY": "center",
+      "altText": "Vocom logo",
+      "htmlTag": "div",
+      "layout": "null",
+      "position": "relative",
+      "width": "33px",
+      "height": "fit-image"
+     }
+    }
+   ]
+  },
+  {
+   "type": "FrameNode",
+   "name": "Small",
+   "id": "C3AXmRO7O",
+   "$isReplica": true,
+   "$originalId": "wcftKr8vc",
+   "attributes": {
+    "layout": "stack",
+    "stackDirection": "horizontal",
+    "stackDistribution": "center",
+    "stackAlignment": "center",
+    "stackWrapEnabled": false,
+    "gap": "10px",
+    "link": {
+     "href": "var(--variable-QlqEwedw7)",
+     "smoothScroll": true
+    },
+    "overflow": "hidden",
+    "left": "485px",
+    "right": "null",
+    "top": "0px",
+    "bottom": "null",
+    "centerAnchorX": "41.67%",
+    "centerAnchorY": "50%",
+    "constraintsLocked": false,
+    "width": "110px",
+    "height": "31px",
+    "transition": "spring-physics 500 60 1 0s"
+   },
+   "children": [
+    {
+     "type": "FrameNode",
+     "name": "Logo",
+     "id": "C3AXmRO7OeDl1IHbi7",
+     "$replicaId": "C3AXmRO7O",
+     "$originalId": "eDl1IHbi7",
+     "attributes": {
+      "fill": "var(--variable-PIwNgm_lj)",
+      "altText": "Vocom logo",
+      "htmlTag": "div",
+      "layout": "null",
+      "position": "relative",
+      "width": "1fr",
+      "height": "1fr"
+     }
+    }
+   ]
+  }
+ ]
+}

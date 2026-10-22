@@ -15,7 +15,8 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
 
 ## Decision needed before launch
 
-1. **Two videos are over Cloudflare Pages' 25 MB file limit.** Pages refuses to deploy them:
+1. **Done (2026-10-22):** both videos were re-encoded to about 9.5 MB each, at the same resolution with no audio (they always play muted).
+   Original note: **Two videos are over Cloudflare Pages' 25 MB file limit.** Pages refuses to deploy them:
    - `public/assets/video/fiber-optic-cables-b335b5.mp4` (48 MB, /fiber-optic-cables)
    - `public/assets/video/vocomai-supply-chain-bcbafd.mp4` (33 MB, /vocomai-supply-chain)
 

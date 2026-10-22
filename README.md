@@ -31,7 +31,7 @@ QA helpers:
    - Framework preset: Astro
    - Build command: `npm run build`
    - Build output: `dist`
-   - Environment variable: `NODE_VERSION=20`
+   - Environment variable: `NODE_VERSION=22`
 4. Every push to `main` deploys to production. Other branches get preview URLs on `*.pages.dev`, which `public/_headers` marks `noindex`.
 5. Custom domains:
    - Add `www.vocom.ai` as the production domain.
@@ -39,7 +39,7 @@ QA helpers:
 
    The full cut-over plan is in `notes/launch.md`.
 
-**File size limit:** Cloudflare Pages rejects files over 25 MiB. Two videos are larger (see `notes/flags.md`) and must be hosted elsewhere or re-encoded before the first deploy.
+**File size limit:** Cloudflare Pages rejects files over 25 MiB. Keep videos under that: re-encode with `node_modules/ffmpeg-static/ffmpeg -i in.mp4 -an -c:v libx264 -preset slow -crf 23 -movflags +faststart out.mp4`.
 
 ## Forms (quote form + newsletter popup)
 

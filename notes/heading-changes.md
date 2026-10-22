@@ -29,3 +29,11 @@ Small card labels became paragraphs. The words, class and look are unchanged, an
 | /blog | Product label on each card (e.g. "MPO and MTP Trunks") | h4 | p |
 
 Homepage: 40 → 25 headings. /blog: 84 → 43. Done in `scripts/framer/compile.mjs` (`DEMOTE`) and `capture/cms-field-tags.json`, so a re-run keeps it.
+
+## /search H1 (2026-10-22)
+
+| Page | Text | Live tag | New tag |
+|---|---|---|---|
+| /search | Search Vocom | p (the page had no H1) | h1 |
+
+Tom asked for an H1 on /search. It uses the page's existing title text, so no copy changed.

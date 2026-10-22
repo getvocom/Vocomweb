@@ -99,3 +99,25 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
 - New FAQs added to the FAQPage schema on every page.
 - Founder bio keeps "1993" and "three decades": Tom's decision.
 - Still open: the blog posts "fiber-optic-cable-lead-times-in-2026" and "high-count-fiber-is-where-data-centers-are-headed" say "roughly 6 to 10 weeks" in their visible text. Not changed (copy).
+
+- /pricing-vocomai intro shortened at Tom's request (2026-10-22, "too long and out of place"). Removed text: "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
+
+## Draft pages awaiting Tom's copy approval (built 2026-10-22)
+
+| URL | Layout | Status |
+|---|---|---|
+| /fiber-optic-connectors-and-hardware | ribbon page layout, product grid filtered to "Connectors, Terminal Boxes and Hardware" | draft |
+| /iepl-iplc-private-leased-circuits | /vocom-international layout | draft |
+| /wholesale-voice-termination | /vocom-international layout | draft |
+
+All copy uses facts already on the site (product data, /vocom-services, the PLC vs IEPL post). The drafts are noindex, not in the sitemap or llms.txt, and not linked from the nav. To publish one:
+1. In `src/data/head/<page>.json` set the robots meta back to `max-image-preview:large`.
+2. Add the path to `STATIC` in `src/pages/sitemap.xml.ts` and to a section in `src/pages/llms.txt.ts`.
+3. Link it from the nav or hub pages, if Tom wants.
+Page text lives in `scripts/framer/extra-pages.json`, except the carrier pages' FAQs, which are in the `.astro` files. MTP/MPO is only described as listed products until sales confirms supply vs resale.
+
+## Quote form: conditional fiber questions (2026-10-22)
+
+When Use Case is "Fiber Optic", the form asks for Fiber count, Fiber type, Rating, Footage and Needed by. `apps-script/Code.gs` stores them in new columns after "Page" and adds them to the alert email. **Tom: paste the updated Code.gs into Apps Script and redeploy (Manage deployments → edit → New version) so the new answers are saved.** Until then they are sent but ignored.
+
+- Company Size options jump from "1-50" to "250-500" (no 51-249), as on live. Add a "51-249" option?

@@ -18,7 +18,7 @@ const WIDTHS = opt("--widths", "1440,768,390").split(",").map(Number);
 
 const csv = fs.readFileSync("data/url-inventory.csv", "utf8").trim().split("\n").slice(1);
 let paths = csv.map((l) => decodeURIComponent(new URL(l.split(",")[0]).pathname));
-for (const extra of ["/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners"]) if (!paths.includes(extra)) paths.push(extra);
+for (const x of JSON.parse(fs.readFileSync("scripts/framer/extra-pages.json", "utf8")).pages) if (!paths.includes(x.path)) paths.push(x.path);
 if (ONLY) paths = paths.filter((p) => ONLY.split(",").includes(p));
 
 function inspect() {

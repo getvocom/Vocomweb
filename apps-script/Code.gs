@@ -15,6 +15,8 @@ var NOTIFY_EMAIL = 'kevin@getvocom.com';
 var NOTIFY_ON_NEWSLETTER = false; // set true to get an email for every newsletter sign-up
 
 var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I Am A', 'Message'];
+// Only asked when Use Case is "Fiber Optic". Stored after the Page column so existing columns don't move.
+var FIBER_FIELDS = ['Fiber Count', 'Fiber Type', 'Rating', 'Footage', 'Needed By'];
 var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function doPost(e) {
@@ -39,16 +41,18 @@ function quote(p) {
   if (!name || !company || !EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
   if (p.page !== '/contact-vocomai') return json({ result: 'error', error: 'bad origin' });
 
-  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']));
+  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS));
   var row = [new Date()];
   QUOTE_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   row.push(p.page || '');
+  FIBER_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   sheet.appendRow(row);
+  var fiber = FIBER_FIELDS.filter(function (f) { return p[f]; });
 
   MailApp.sendEmail({
     to: NOTIFY_EMAIL,
     subject: 'New quote request: ' + name + ' (' + company + ')',
-    body: QUOTE_FIELDS.map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') + '\n\nPage: https://www.vocom.ai' + (p.page || ''),
+    body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') + '\n\nPage: https://www.vocom.ai' + (p.page || ''),
     replyTo: email,
     name: 'vocom.ai Website',
   });
@@ -75,16 +79,19 @@ function newsletter(p) {
   return json({ result: 'success' });
 }
 
-// Returns the named tab, creating it with bold frozen headers on first use.
+// Returns the named tab, creating it with bold frozen headers on first use, and adding any
+// new header columns to an existing tab (e.g. the fiber fields added later).
 function tab(name, headers) {
   var ss = SpreadsheetApp.openById(SHEET_ID);
   var sheet = ss.getSheetByName(name);
   if (!sheet) {
     sheet = ss.insertSheet(name);
     sheet.appendRow(headers);
-    sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
     sheet.setFrozenRows(1);
+  } else if (sheet.getLastColumn() < headers.length) {
+    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
   }
+  sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
   return sheet;
 }
 

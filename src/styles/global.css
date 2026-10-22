@@ -192,3 +192,7 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 /* Blog card images are square, as in the Framer card design, so rows line up even when a post's
    image is landscape. */
 .xwqa03j .fill-img.fit { aspect-ratio: 1; object-fit: cover; }
+/* Quote form: conditional fiber questions sit in the form's column like the other fields. */
+.fiber-fields:not([hidden]) { display: contents; }
+/* /pricing-vocomai: space between "Pricing", the subtitle and the intro line. */
+.xwfdbdf { gap: 14px; }

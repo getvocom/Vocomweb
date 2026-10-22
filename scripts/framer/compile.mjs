@@ -20,6 +20,13 @@ const PAGES_DIR = "capture/framer/pages";
 const pageFiles = fs.readdirSync(PAGES_DIR).filter((f) => f.endsWith(".json"));
 const pages = pageFiles.map((f) => JSON.parse(fs.readFileSync(path.join(PAGES_DIR, f), "utf8")));
 
+// Small card labels that Framer marked as headings become paragraphs (same class, same look),
+// so the page outline is section titles only. Tom approved 2026-10-22; see notes/heading-changes.md.
+const DEMOTE = {
+  "/": ["Outdoor Fiber Cable", "Ribbon Fiber Cable", "Stranded &amp; Central Tube", "Single Mode &amp; Multimode", "Patch Cords &amp; Connectors", "Custom Specifications",
+    "Send requirements", "Quote &amp; lead time", "Production &amp; QC", "Global delivery", "Quote-to-shipment route",
+    "IEPL / IPLC", "IP Transit", "Local Loop &amp; Voice Termination", "IDC / Data Center Services"],
+};
 // Extra pages (scripts/framer/extra-pages.json): copies of an existing page layout with its
 // text layers replaced in order. Used for pages Framer's plan limit blocked.
 const EXTRA = fs.existsSync("scripts/framer/extra-pages.json") ? JSON.parse(fs.readFileSync("scripts/framer/extra-pages.json", "utf8")).pages : [];
@@ -180,13 +187,6 @@ function unifySpecPanels(markup, imports, rel) {
 
 // Links to the distributor, indoor and referral pages, as added in the Framer session on
 // 2026-10-21 (removed there only because of the page limit). Same wording.
-// Small card labels that Framer marked as headings become paragraphs (same class, same look),
-// so the page outline is section titles only. Tom approved 2026-10-22; see notes/heading-changes.md.
-const DEMOTE = {
-  "/": ["Outdoor Fiber Cable", "Ribbon Fiber Cable", "Stranded &amp; Central Tube", "Single Mode &amp; Multimode", "Patch Cords &amp; Connectors", "Custom Specifications",
-    "Send requirements", "Quote &amp; lead time", "Production &amp; QC", "Global delivery", "Quote-to-shipment route",
-    "IEPL / IPLC", "IP Transit", "Local Loop &amp; Voice Termination", "IDC / Data Center Services"],
-};
 function demoteHeadings(route, markup) {
   for (const t of DEMOTE[route] || []) {
     const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

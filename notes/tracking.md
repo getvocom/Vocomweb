@@ -30,8 +30,8 @@ These are the scripts found on all 114 live pages. They're carried over with the
 | Metricool | All | `Base.astro` end of `<body>` |
 | Linkedin / Linkedin Tag | All | Insight Tag once in `<head>` (the two Framer copies were identical) |
 | LinkedAD 02 (conversion pixel) | All | `Base.astro` end of `<body>` |
-| Google Key Events | /contact-vocomai | **Not on the published site, and Framer's API doesn't expose per-page code.** Tom to paste its contents |
+| Google Key Events | /contact-vocomai | Tom pasted it (2026-10-22): the same gtag G-YYWN6PCL75 / GTM-MWPWLP7Z snippets `Base.astro` already loads on every page. Not added again (it would double-count) |
 | Vocom Schema Graph, BlogPosting schema | All | Site-wide graph in `src/data/head/*.json`; BlogPosting rendered statically on posts |
-| Product+FAQ, Service, FAQPage, CollectionPage, Catalog schemas | Per page | `src/data/head/<page>.json` |
+| Product+FAQ, Service, FAQPage, CollectionPage, Catalog schemas | Per page | `src/data/head/<page>.json`. FAQPage is rebuilt from the visible FAQs by `scripts/faq-schema.mjs` |
 
-JSON-LD was compared against the live site on all 114 pages: identical. The quote form also pushes `form-submission` to the dataLayer on success, then redirects to /resources.
+JSON-LD was compared against the live site on all 114 pages: identical. Changed since, with Tom's approval (2026-10-22): "27 years in telecommunications" became "founded in 1998"; "6 to 10 weeks" became "6 to 8 weeks, up to 10 weeks for custom builds"; every FAQPage now lists exactly the FAQs shown on the page (7 pages gained one); the 3 restored fiber pages no longer carry the ribbon page's Product entry. The quote form also pushes `form-submission` to the dataLayer on success, then redirects to /resources.

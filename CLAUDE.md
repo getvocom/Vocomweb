@@ -67,7 +67,8 @@ These match Framer: desktop ≥ 1200px, tablet 810–1199.98px, phone ≤ 809.98
 
 1. Find the text in `src/pages/<page>.astro`.
 2. Change only what Tom approved.
-3. If the text is also in the page's `src/data/head/<key>.json` (title, description) or its JSON-LD (FAQ answers), update those too so they agree.
+3. If the text is also in the page's `src/data/head/<key>.json` (title, description), update it too so they agree.
+4. If you changed, added or removed a FAQ: `npm run build && node scripts/faq-schema.mjs --write && npm run build`. That rebuilds the page's FAQPage JSON-LD from the visible FAQs.
 
 ## Add a static page
 

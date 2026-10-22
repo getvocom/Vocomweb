@@ -92,3 +92,10 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
     The content is identical; see `notes/interactions.md`.
 22. **Fonts are open-licensed** (Inter, Inter Display, Manrope, Lexend and DM Sans, all OFL) and self-hosted from the exact files the live site used. Framer's text presets also reference Garet and Proxima Nova (commercial), but no live page uses them.
 23. **The mobile menu uses `95vh` max height** as in Framer. Framer's viewport handling makes the live menu slightly shorter on some phones.
+
+## Resolved 2026-10-22
+
+- Schema wording updated to the current facts (founded 1998; 6 to 8 weeks standard, up to 10 weeks custom). See notes/tracking.md.
+- New FAQs added to the FAQPage schema on every page.
+- Founder bio keeps "1993" and "three decades": Tom's decision.
+- Still open: the blog posts "fiber-optic-cable-lead-times-in-2026" and "high-count-fiber-is-where-data-centers-are-headed" say "roughly 6 to 10 weeks" in their visible text. Not changed (copy).

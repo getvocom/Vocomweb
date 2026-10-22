@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://www.vocom.ai",
   trailingSlash: "never",
-  build: { format: "file", inlineStylesheets: "auto" },
+  build: { format: "file", inlineStylesheets: "always" }, // CSS in the page: faster first paint, as on Framer
   compressHTML: true,
   // Preload a page when its link is hovered/tapped, so navigation feels instant (as on Framer).
   prefetch: { prefetchAll: true, defaultStrategy: "hover" },

@@ -22,10 +22,6 @@ const { page: pageLd, site: siteLd } = splitJsonLd(head.jsonld);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{head.title}</title>
-    <!-- Preload the core Latin font files used above the fold -->
-    <link rel="preload" href="/fonts/inter-400-776ea07d.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/inter-600-a113a1cb.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/inter-display-800-0af4310e.woff2" as="font" type="font/woff2" crossorigin />
     {head.links.filter((l) => l.rel === "canonical").map((l) => <link rel="canonical" href={l.href} />)}
     {head.meta.map((m) => ("name" in m ? <meta name={m.name} content={m.content} /> : <meta property={m.property} content={m.content} />))}
     {head.links.filter((l) => l.rel !== "canonical").map((l) => <link rel={l.rel} href={l.href} media={l.media} />)}

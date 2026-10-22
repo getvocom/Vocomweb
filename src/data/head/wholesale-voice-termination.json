@@ -44,7 +44,7 @@
   },
   {
    "name": "robots",
-   "content": "noindex"
+   "content": "max-image-preview:large"
   }
  ],
  "links": [

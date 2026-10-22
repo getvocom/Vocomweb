@@ -228,7 +228,6 @@
   },
   {
    "path": "/fiber-optic-connectors-and-hardware",
-   "draft": true,
    "title": "Fiber Optic Connectors, Patch Cords and Hardware | Vocom",
    "description": "LC, SC, FC, ST and MTRJ patch cords, MTP/MPO assemblies, adapters, terminal boxes and hardened connectors, built to order in 6 to 8 weeks.",
    "from": "/ribbon-fiber-optic-cable",
@@ -304,7 +303,6 @@
   },
   {
    "path": "/iepl-iplc-private-leased-circuits",
-   "draft": true,
    "title": "IEPL and IPLC Private Leased Circuits, Asia-Pacific | Vocom",
    "description": "IEPL and IPLC private leased circuits on cross-Pacific and Asia-Pacific routes, from sub-1 Gbps to 10 Gbps and above, from a carrier founded in 1998.",
    "from": "/vocom-international",
@@ -396,7 +394,6 @@
   },
   {
    "path": "/wholesale-voice-termination",
-   "draft": true,
    "title": "Wholesale Voice Termination and SMS Routing | Vocom",
    "description": "Wholesale IDD voice termination and carrier-grade SMS routing on direct NNI relationships, with real ASR, ACD and latency. FCC 214 licensed since 1998.",
    "from": "/vocom-international",

@@ -197,7 +197,7 @@ function demoteHeadings(route, markup) {
 
 function addCategoryLinks(route, markup) {
   const a = (href, t) => `<a href="${href}" class="text-link">${t}</a>`;
-  const all = `For distributors, see ${a("/fiber-optic-cable-for-distributors", "second-source supply")}. For in-building runs, see ${a("/indoor-fiber-optic-cable", "indoor OFNP and OFNR cable")}. Duct makers and consultants can ${a("/fiber-optic-cable-referral-partners", "refer an inquiry")}.`;
+  const all = `For distributors, see ${a("/fiber-optic-cable-for-distributors", "second-source supply")}. For in-building runs, see ${a("/indoor-fiber-optic-cable", "indoor OFNP and OFNR cable")}. Duct makers and consultants can ${a("/fiber-optic-cable-referral-partners", "refer an inquiry")}. Patch cords, connectors and terminal boxes are on the ${a("/fiber-optic-connectors-and-hardware", "connectors and hardware")} page.`;
   const indoor = `For in-building runs beyond the data hall, see ${a("/indoor-fiber-optic-cable", "indoor OFNP and OFNR cable")}.`;
   const jobs = { "/fiber-optic-cables": [/expedited air freight available\.<\/p>/, all], "/fiber-optic-cable-catalog": [/expedited air freight available\.<\/p>/, all], "/data-center-fiber-cabling": [/(<p class="[^"]*">Factory-terminated MPO and MTP trunks[^<]*)<\/p>/, indoor] };
   const j = jobs[route];

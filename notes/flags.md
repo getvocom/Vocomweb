@@ -102,13 +102,13 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
 
 - /pricing-vocomai intro shortened at Tom's request (2026-10-22, "too long and out of place"). Removed text: "Most engagements start with the free demo: a no-cost session to see Vocom AI tools against your own workflows before committing to anything. The AI audit suits teams that already know they want to move and need a concrete plan, mapping current systems, flagging practical automation opportunities, and pricing out implementation before any contract is signed. Enterprise engagements are quoted individually once scope, data residency, and integration requirements are clear, which is also where multi-tool packages get negotiated."
 
-## Draft pages awaiting Tom's copy approval (built 2026-10-22)
+## New pages (built 2026-10-22, published at Tom's request the same day)
 
 | URL | Layout | Status |
 |---|---|---|
-| /fiber-optic-connectors-and-hardware | ribbon page layout, product grid filtered to "Connectors, Terminal Boxes and Hardware" | draft |
-| /iepl-iplc-private-leased-circuits | /vocom-international layout | draft |
-| /wholesale-voice-termination | /vocom-international layout | draft |
+| /fiber-optic-connectors-and-hardware | ribbon page layout, product grid filtered to "Connectors, Terminal Boxes and Hardware" | live |
+| /iepl-iplc-private-leased-circuits | /vocom-international layout | live |
+| /wholesale-voice-termination | /vocom-international layout | live |
 
 All copy uses facts already on the site (product data, /vocom-services, the PLC vs IEPL post). The drafts are noindex, not in the sitemap or llms.txt, and not linked from the nav. To publish one:
 1. In `src/data/head/<page>.json` set the robots meta back to `max-image-preview:large`.

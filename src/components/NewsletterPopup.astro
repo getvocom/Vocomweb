@@ -6,7 +6,7 @@
 // Desktop: small card bottom-left. Phone: bottom sheet (not a full-screen interstitial).
 import { FORMS_URL, NEWSLETTER as N } from "../config";
 ---
-{N.enabled && (
+{N.enabled && FORMS_URL && (
   <div class="nl" role="dialog" aria-modal="false" aria-labelledby="nl-heading" hidden
     data-endpoint={FORMS_URL} data-delay={N.delaySeconds} data-scroll={N.scrollPercent}
     data-snooze={N.snoozeDays} data-exclude={N.excludePaths.join("|")}>

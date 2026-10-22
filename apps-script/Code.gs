@@ -10,8 +10,8 @@
  * After editing this file, redeploy via Manage deployments -> edit the existing
  * deployment -> Version: New version, so the URL stays the same.
  */
-var SHEET_ID = 'PASTE_SPREADSHEET_ID';
-var NOTIFY_EMAIL = 'PASTE_NOTIFICATION_EMAIL';
+var SHEET_ID = '1olKIsOA0bS68Kl6CgIIn-fnKz25YPPmac1u_R1ursQ4';
+var NOTIFY_EMAIL = 'kevin@getvocom.com';
 var NOTIFY_ON_NEWSLETTER = false; // set true to get an email for every newsletter sign-up
 
 var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I Am A', 'Message'];

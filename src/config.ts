@@ -7,9 +7,9 @@ export const FORMS_URL = "";
 export const QUOTE_FORM_URL = FORMS_URL;
 export const QUOTE_FORM_FALLBACK_EMAIL = "";
 
-// Newsletter popup. Copy below is a DRAFT awaiting Tom's approval (see notes/flags.md).
+// Newsletter popup. Copy approved by Tom, 2026-10-22.
 export const NEWSLETTER = {
-  enabled: false, // switch on once FORMS_URL is set and the copy is approved
+  enabled: true, // the popup only renders once FORMS_URL is set
   heading: "Get Vocom Insights in Your Inbox",
   body: "Fiber optic cable lead times, specification guides and AI infrastructure news for network builders.",
   placeholder: "name@company.com",

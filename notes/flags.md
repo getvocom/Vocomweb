@@ -27,7 +27,8 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
    I recommend (a).
 2. **Quote form endpoint.** I need the Google Sheet and notification email to deploy `apps-script/Code.gs`. Until then the form shows an error state.
    - The live Framer form currently sends submissions wherever Framer is set to deliver them; check that this isn't also wired into a CRM you rely on.
-3. **Blog body text is marked up as H3 on the live site.** Every paragraph of every blog post (intro and section bodies) is an `<h3>`. That gives each post 6–12 H3s made of whole paragraphs, which is poor SEO.
+3. **Done (Tom, 2026-10-22):** blog body paragraphs are now `<p>` instead of `<h3>`, so the parity report will show fewer H3s on blog posts. That's expected.
+   Original note: **Blog body text is marked up as H3 on the live site.** Every paragraph of every blog post (intro and section bodies) is an `<h3>`. That gives each post 6–12 H3s made of whole paragraphs, which is poor SEO.
    - It's kept for parity, so H2/H3 lists match.
    - Recommendation: change the bodies to `<p>`. It's a one-line change in `src/pages/blog/[slug].astro`. OK to change?
 4. **Tracking questions** (see `notes/tracking.md`):
@@ -38,12 +39,11 @@ This lists everything odd found while rebuilding vocom.ai. **No copy was changed
    Original note: (`framer.com/legal/policy`), not a Vocom policy. Keep it, or point it to `/vocom-privacy-policy`?
 6. **Desktop nav on tablet/phone.** On `/marketing-alliance` and `/vocom-privacy-policy` the live site keeps the full desktop navigation at tablet and phone widths, where it overflows off-screen. The rebuild shows the normal responsive (hamburger) header there instead. Say if you want the live behaviour kept.
 
-7a. **Newsletter popup (new, not on the live site).** It's built but switched off.
-   - Copy is a draft for your approval, in `src/config.ts` → `NEWSLETTER`:
+7a. **Newsletter popup (new, not on the live site).** Copy **approved by Tom (2026-10-22)**. It switches on automatically once `FORMS_URL` is set.
+   - Approved copy, in `src/config.ts` → `NEWSLETTER`:
      - heading "Get Vocom Insights in Your Inbox";
      - body "Fiber optic cable lead times, specification guides and AI infrastructure news for network builders.";
      - consent "I agree to receive emails from Vocom. I can unsubscribe at any time."
-   - To switch it on: approve or edit the copy, set `FORMS_URL`, then set `enabled: true`.
    - Your privacy policy should mention newsletter emails and how people unsubscribe.
 
 ## Content oddities (copied exactly; not changed)

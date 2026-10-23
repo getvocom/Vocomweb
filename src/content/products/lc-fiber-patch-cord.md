@@ -9,6 +9,6 @@ construction: "900um pigtail or 2.0mm/3.0mm jacket, OFNR or OFNP rated, UL liste
 typicalUse: "High-density data center, LAN and rack patching"
 description: "LC Fiber Patch Cord. Supplied under codes LC-UPC, LC-APC. Available in Simplex or duplex, 1F to 2F. Construction: 900um pigtail or 2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, 1.25mm ferrule. Typical use: High-density data center, LAN and rack patching."
 image:
-  src: "/assets/img/products/vc-021-lc-duplex-patch-cord.jpg"
-  alt: "LC Fiber Patch Cord fiber optic cable"
+  src: "/assets/img/products/lc-duplex-patch-cord-1200.jpg"
+  alt: "LC duplex fiber optic patch cord (illustrative render)"
 ---

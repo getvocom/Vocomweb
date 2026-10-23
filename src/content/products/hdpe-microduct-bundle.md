@@ -9,6 +9,6 @@ construction: "Outer sheathed bundle, color coded ways"
 typicalUse: "Multi-route in one bore"
 description: "HDPE microduct bundle. Supplied under codes 24 way, 25 way. Construction: Outer sheathed bundle, color coded ways. Typical use: Multi-route in one bore."
 image:
-  src: "/assets/img/products/vc-068-hdpe-microduct-tube-bundles.jpg"
-  alt: "HDPE microduct bundle fiber optic cable"
+  src: "/assets/img/products/hdpe-microduct-tube-bundles-1200.jpg"
+  alt: "HDPE microduct tube bundle for air blown fiber (illustrative render)"
 ---

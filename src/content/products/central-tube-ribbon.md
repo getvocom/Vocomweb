@@ -9,6 +9,6 @@ construction: "Single central tube, ribbon stack"
 typicalUse: "Compact high count"
 description: "Central tube ribbon. Supplied under codes Central tube ribbon. Available in 12F to 432F. Construction: Single central tube, ribbon stack. Typical use: Compact high count."
 image:
-  src: "/assets/img/products/vc-008-central-tube-ribbon-cable.jpg"
-  alt: "Central tube ribbon fiber optic cable"
+  src: "/assets/img/products/central-tube-ribbon-cable-1200.jpg"
+  alt: "Central tube ribbon fiber optic cable (illustrative render)"
 ---

@@ -9,6 +9,6 @@ construction: "Meets or exceeds industry standards"
 typicalUse: "Panel and cassette build"
 description: "Cassette adapters. Supplied under codes LC, SC adapter. Construction: Meets or exceeds industry standards. Typical use: Panel and cassette build."
 image:
-  src: "/assets/img/products/vc-038-lc-adapters-duplex-quad-6-port.jpg"
-  alt: "Cassette adapters fiber optic cable"
+  src: "/assets/img/products/lc-adapters-duplex-quad-6-port-1200.jpg"
+  alt: "LC and SC fiber optic adapters for patch panel cassettes (illustrative render)"
 ---

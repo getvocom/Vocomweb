@@ -1,7 +1,10 @@
 // sitemap.xml with the same URL set (and order) as the live Framer sitemap.
 // Static pages are listed explicitly; blog posts and products come from the content
 // collections, so new entries are added automatically. /search and /404 are excluded.
+// Product pages and the pages with category renders also list their main image
+// (Google image sitemap extension), so the renders can be found in image search.
 import { getPosts, getProducts } from "../lib/cms";
+import renders from "../../data/render-images.json";
 
 const SITE = "https://www.vocom.ai";
 const STATIC = [
@@ -14,12 +17,29 @@ const STATIC = [
   "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners", "/fiber-optic-connectors-and-hardware", "/iepl-iplc-private-leased-circuits", "/wholesale-voice-termination",
 ];
 
+// Category pages that show a hero render (see src/pages/<page>.astro)
+const hero = (id: keyof typeof renders.hero) => `/assets/img/hero/${renders.hero[id]}-1920.jpg`;
+const PAGE_IMAGES: Record<string, string[]> = {
+  "/data-center-fiber-cabling": [hero("VC-104")],
+  "/air-blown-micro-fiber-cable": [hero("VC-109")],
+  "/ftth-drop-cable": [hero("VC-108")],
+  "/fiber-optic-cables": [hero("VC-105")],
+};
+
+const esc = (s: string) => s.replace(/&/g, "&amp;");
+
 export async function GET() {
+  const products = await getProducts();
+  for (const p of products) if (p.data.image?.src) PAGE_IMAGES["/products/" + p.id] = [p.data.image.src];
   const paths = [
     ...STATIC,
     ...(await getPosts()).map((p) => "/blog/" + p.id),
-    ...(await getProducts()).map((p) => "/products/" + p.id),
+    ...products.map((p) => "/products/" + p.id),
   ];
-  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths.map((p) => `<url><loc>${SITE}${encodeURI(p).replace(/&/g, "&amp;")}</loc></url>`).join("\n")}\n</urlset>`;
+  const url = (p: string) => {
+    const images = (PAGE_IMAGES[p] ?? []).map((i) => `<image:image><image:loc>${esc(SITE + i)}</image:loc></image:image>`).join("");
+    return `<url><loc>${esc(SITE + encodeURI(p))}</loc>${images}</url>`;
+  };
+  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map(url).join("\n")}\n</urlset>`;
   return new Response(body, { headers: { "Content-Type": "application/xml" } });
 }

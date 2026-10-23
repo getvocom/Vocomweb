@@ -9,6 +9,6 @@ construction: "144 ribbons of 12F, 28.4mm OD, 482 kg/km, G.652D"
 typicalUse: "Hyperscale and metro backbone"
 description: "High-count dielectric ribbon. Supplied under codes GYFDXPH. Available in 1728F. Construction: 144 ribbons of 12F, 28.4mm OD, 482 kg/km, G.652D. Typical use: Hyperscale and metro backbone."
 image:
-  src: "/assets/img/products/vc-007-high-fiber-count-ribbon-cable.jpg"
-  alt: "High-count dielectric ribbon fiber optic cable"
+  src: "/assets/img/products/high-fiber-count-ribbon-cable-1200.jpg"
+  alt: "High-count dielectric ribbon fiber optic cable (illustrative render)"
 ---

@@ -21,7 +21,7 @@ const SITE = "https://www.vocom.ai";
 
 // `override` replaces the captured title/description (and their OG/Twitter copies) when a
 // content entry sets metaTitle/metaDescription, e.g. a product page needing its own title.
-type Seo = Partial<HeadData> & { description?: string; image?: string; canonical?: string; blogPosting?: boolean; override?: { title?: string; description?: string } };
+type Seo = Partial<HeadData> & { description?: string; image?: string; canonical?: string; blogPosting?: boolean; override?: { title?: string; description?: string; image?: string; imageAlt?: string; imageWidth?: number; imageHeight?: number } };
 
 export function headFor(path: string, seo?: Seo): HeadData {
   const base = byKey[headKey(path)];
@@ -31,14 +31,22 @@ export function headFor(path: string, seo?: Seo): HeadData {
   return head;
 }
 
-function applyOverride(h: HeadData, o?: { title?: string; description?: string }): HeadData {
-  if (!o?.title && !o?.description) return h;
+function applyOverride(h: HeadData, o?: { title?: string; description?: string; image?: string; imageAlt?: string; imageWidth?: number; imageHeight?: number }): HeadData {
+  if (!o?.title && !o?.description && !o?.image) return h;
   const meta = h.meta.map((m) => {
     const k = "name" in m ? m.name : m.property;
     if (o.title && (k === "og:title" || k === "twitter:title")) return { ...m, content: o.title };
     if (o.description && (k === "description" || k === "og:description" || k === "twitter:description")) return { ...m, content: o.description };
+    if (o.image && (k === "og:image" || k === "twitter:image")) return { ...m, content: o.image };
     return m;
   });
+  // image details for link previews (added once, next to the image tags)
+  if (o.image) {
+    const extra: MetaTag[] = [];
+    if (o.imageWidth && o.imageHeight) extra.push({ property: "og:image:width", content: String(o.imageWidth) }, { property: "og:image:height", content: String(o.imageHeight) });
+    if (o.imageAlt) extra.push({ property: "og:image:alt", content: o.imageAlt }, { name: "twitter:image:alt", content: o.imageAlt });
+    for (const e of extra) if (!meta.some((m) => ("name" in m ? m.name : m.property) === ("name" in e ? e.name : e.property))) meta.push(e);
+  }
   return { ...h, title: o.title ?? h.title, meta };
 }
 

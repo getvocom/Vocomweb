@@ -204,7 +204,8 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 .xsux5dz > *, .xbywjww > * { align-self: stretch !important; height: auto !important; min-height: 100%; }
 /* Product pages: the renders are square (406px), so show them in a square frame at up to their
    real size instead of a 820x320 crop that cut the product off and blew it up 2x. */
-.product-image.x2af2jo { height: auto !important; max-width: 406px; }
+.product-image.x2af2jo { height: auto !important; max-width: 560px; }
+.product-image.x2af2jo picture { display: block; }
 /* the render sets the frame's shape (most are square, a few 4:3), so nothing is scaled up */
 .product-image.x2af2jo .fill-img { position: relative; inset: auto; height: auto; }
 /* Category page banner (data center, air blown, FTTH, ADSS...): Framer fixed it at 1155px wide on every
@@ -221,3 +222,5 @@ a.product-table-row { cursor: pointer; transition: background-color 0.15s ease; 
 a.product-table-row:hover, a.product-table-row:focus-visible { background-color: var(--brand-pink-50); }
 a.product-table-row > p:first-child { color: var(--brand-crimson); text-decoration: underline; text-underline-offset: 3px; }
 a.product-table-row > p:first-child::after { content: " \2192"; text-decoration: none; display: inline-block; margin-left: 4px; }
+/* <picture> wrapper around a fill image: let the image keep filling its frame */
+.fill-pic { position: absolute; inset: 0; display: block; border-radius: inherit; }

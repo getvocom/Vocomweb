@@ -9,6 +9,6 @@ construction: "Integrated messenger"
 typicalUse: "Short and mid spans"
 description: "Figure 8. Supplied under codes Figure 8. Available in 12F to 144F. Construction: Integrated messenger. Typical use: Short and mid spans."
 image:
-  src: "/assets/img/products/vc-011-figure-8-aerial-drop-cable.jpg"
-  alt: "Figure 8 fiber optic cable"
+  src: "/assets/img/products/figure-8-aerial-drop-cable-1200.jpg"
+  alt: "Figure 8 aerial fiber optic drop cable with integrated messenger (illustrative render)"
 ---

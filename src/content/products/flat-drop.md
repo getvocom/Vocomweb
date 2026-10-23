@@ -9,6 +9,6 @@ construction: "G.657A1, UV stable"
 typicalUse: "Aerial and duct drops"
 description: "Flat drop fiber optic cable for FTTH, 1F to 12F. Supplied under codes Flat drop: G.657A1 bend-insensitive fiber, UV stable jacket for aerial and duct drops. Compatible with OptiTap and OptiTip hardened field connectors."
 image:
-  src: "/assets/img/products/vc-012-flat-drop-cable-ftth.jpg"
-  alt: "Flat drop fiber optic cable"
+  src: "/assets/img/products/flat-drop-cable-ftth-1200.jpg"
+  alt: "Flat FTTH fiber optic drop cable (illustrative render)"
 ---

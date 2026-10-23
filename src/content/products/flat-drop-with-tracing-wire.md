@@ -9,6 +9,6 @@ construction: "Locatable tracing element"
 typicalUse: "Buried drops"
 description: "Flat drop with tracing wire. Supplied under codes Flat drop TW. Available in 1F to 12F. Construction: Locatable tracing element. Typical use: Buried drops."
 image:
-  src: "/assets/img/products/vc-012-flat-drop-cable-ftth.jpg"
-  alt: "Flat drop with tracing wire fiber optic cable"
+  src: "/assets/img/products/flat-drop-cable-ftth-1200.jpg"
+  alt: "Flat FTTH fiber optic drop cable (illustrative render)"
 ---

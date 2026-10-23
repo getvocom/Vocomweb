@@ -1,0 +1,188 @@
+{
+ "products": {
+  "VC-002": {
+   "name": "simplex-and-duplex-indoor-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-004": {
+   "name": "multi-fiber-trunk-cable-up-to-144c",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-005": {
+   "name": "loose-tube-outdoor-cable-armored-and-non-armored",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-006": {
+   "name": "adss-cable-all-dielectric-self-supporting",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-007": {
+   "name": "high-fiber-count-ribbon-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-008": {
+   "name": "central-tube-ribbon-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-009": {
+   "name": "e-ribbon-spider-ribbon-osp-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-010": {
+   "name": "air-blown-micro-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-011": {
+   "name": "figure-8-aerial-drop-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-012": {
+   "name": "flat-drop-cable-ftth",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-013": {
+   "name": "indoor-armored-drop-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-014": {
+   "name": "hybrid-fiber-and-copper-cable-ftta",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-015": {
+   "name": "low-visibility-optical-fiber-cable-fttr",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-017": {
+   "name": "sc-fiber-patch-cord-upc-and-apc",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-018": {
+   "name": "fc-fiber-patch-cord",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-019": {
+   "name": "st-fiber-patch-cord",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-020": {
+   "name": "mtrj-fiber-patch-cord",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-021": {
+   "name": "lc-duplex-patch-cord",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-022": {
+   "name": "lc-uniboot-polarity-change-patch-cord",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-024": {
+   "name": "armored-fiber-patch-cord",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-031": {
+   "name": "mpo-array-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-032": {
+   "name": "mpo-trunk-cable-on-reel-with-pulling-eye",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-034": {
+   "name": "mpo-to-lc-harness-breakout-cable",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-038": {
+   "name": "lc-adapters-duplex-quad-6-port",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-039": {
+   "name": "sc-adapters-simplex-and-duplex",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-040": {
+   "name": "fc-st-and-mtrj-adapters",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-044": {
+   "name": "u-optic-hardened-outdoor-connector-ip68",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-045": {
+   "name": "mpo-to-lc-cassette",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-055": {
+   "name": "in-house-fiber-terminal-box",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-066": {
+   "name": "ctc-composite-vault-detachable-single-lid",
+   "w": 1200,
+   "h": 896
+  },
+  "VC-067": {
+   "name": "ctc430-light-duty-surface-box-round-lid",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-068": {
+   "name": "hdpe-microduct-tube-bundles",
+   "w": 1200,
+   "h": 1200
+  },
+  "VC-069": {
+   "name": "microduct-coils",
+   "w": 1200,
+   "h": 1200
+  },
+  "NEW-1": {
+   "name": "rollable-ribbon-cable-indoor",
+   "w": 1200,
+   "h": 1200
+  },
+  "NEW-2": {
+   "name": "waterproof-outdoor-terminal-box",
+   "w": 1200,
+   "h": 1200
+  }
+ },
+ "hero": {
+  "VC-104": "data-center-fiber-connectivity",
+  "VC-105": "outdoor-fiber-cable-portfolio",
+  "VC-106": "optical-transceivers-range",
+  "VC-107": "copper-structured-cabling",
+  "VC-108": "ftth-fttr-last-mile",
+  "VC-109": "osp-infrastructure",
+  "VC-110": "fiber-strand-macro-brand-abstract"
+ }
+}

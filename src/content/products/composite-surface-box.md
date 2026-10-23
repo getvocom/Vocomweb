@@ -9,6 +9,6 @@ construction: "14 inch, light duty, round lid"
 typicalUse: "Surface access points"
 description: "Composite surface box. Supplied under codes CTC430. Construction: 14 inch, light duty, round lid. Typical use: Surface access points."
 image:
-  src: "/assets/img/products/vc-067-ctc430-light-duty-surface-box-round-lid.jpg"
-  alt: "Composite surface box fiber optic cable"
+  src: "/assets/img/products/ctc430-light-duty-surface-box-round-lid-1200.jpg"
+  alt: "CTC430 composite light-duty surface box with round lid (illustrative render)"
 ---

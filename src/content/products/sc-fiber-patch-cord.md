@@ -9,6 +9,6 @@ construction: "2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, zirconia ferru
 typicalUse: "Cross-connects and interconnects in backbone, horizontal and work area applications"
 description: "SC Fiber Patch Cord. Supplied under codes SC-UPC, SC-APC. Available in Simplex, 1F. Construction: 2.0mm/3.0mm jacket, OFNR or OFNP rated, UL listed, zirconia ferrule. Typical use: Cross-connects and interconnects in backbone, horizontal and work area applications."
 image:
-  src: "/assets/img/products/vc-017-sc-fiber-patch-cord-upc-and-apc.jpg"
-  alt: "SC Fiber Patch Cord fiber optic cable"
+  src: "/assets/img/products/sc-fiber-patch-cord-upc-and-apc-1200.jpg"
+  alt: "SC fiber optic patch cord, UPC and APC (illustrative render)"
 ---

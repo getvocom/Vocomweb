@@ -20,10 +20,16 @@ async function worker() {
       const rows = await p.evaluate(() => [...document.images].filter((i) => i.getClientRects().length && i.naturalWidth).map((i) => {
         const r = i.getBoundingClientRect(); const cs = getComputedStyle(i);
         // object-fit: cover scales the image to cover the box; work out the scale actually applied
-        let scale = r.width / i.naturalWidth;
-        if (cs.objectFit === "cover") scale = Math.max(r.width / i.naturalWidth, r.height / i.naturalHeight);
-        if (cs.objectFit === "contain") scale = Math.min(r.width / i.naturalWidth, r.height / i.naturalHeight);
-        return { src: (i.currentSrc || i.src).replace(location.origin, ""), shown: Math.round(r.width) + "x" + Math.round(r.height), file: i.naturalWidth + "x" + i.naturalHeight, scale: +(scale * 2).toFixed(2) };
+        // with srcset, naturalWidth is density-corrected; use the chosen file's real width (its "w" descriptor)
+        const cur = i.currentSrc || i.src;
+        const set = (i.closest("picture")?.querySelector("source")?.srcset || "") + "," + (i.srcset || "");
+        const hit = set.split(",").map((c) => c.trim().split(/\s+/)).find(([u]) => u && cur.endsWith(u));
+        const fileW = hit && /w$/.test(hit[1] || "") ? parseInt(hit[1]) : i.naturalWidth;
+        const fileH = Math.round(fileW * i.naturalHeight / i.naturalWidth);
+        let scale = r.width / fileW;
+        if (cs.objectFit === "cover") scale = Math.max(r.width / fileW, r.height / fileH);
+        if (cs.objectFit === "contain") scale = Math.min(r.width / fileW, r.height / fileH);
+        return { src: (i.currentSrc || i.src).replace(location.origin, ""), shown: Math.round(r.width) + "x" + Math.round(r.height), file: fileW + "x" + fileH, scale: +(scale * 2).toFixed(2) };
       }).filter((x) => x.scale > 1.25 && !/\.svg/.test(x.src)));
       for (const r of rows) { const k = r.src; if (!found.has(k) || found.get(k).scale < r.scale) found.set(k, { ...r, page: u }); }
     } catch (e) {}

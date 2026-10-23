@@ -9,6 +9,6 @@ construction: "SC or shutter equipped"
 typicalUse: "Room and premises entry"
 description: "In-house terminal box. Supplied under codes Terminal box. Available in 1F to 4F. Construction: SC or shutter equipped. Typical use: Room and premises entry."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-055-in-house-fiber-terminal-box.jpg"
   alt: "In-house terminal box fiber optic cable"
 ---

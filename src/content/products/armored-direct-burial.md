@@ -9,6 +9,6 @@ construction: "Round armor, rodent resistant, crush rated"
 typicalUse: "Trenched routes"
 description: "Armored direct burial. Supplied under codes Armored OSP. Available in 12F to 288F. Construction: Round armor, rodent resistant, crush rated. Typical use: Trenched routes."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-005-loose-tube-outdoor-cable-armored-and-non-armored.jpg"
   alt: "Armored direct burial fiber optic cable"
 ---

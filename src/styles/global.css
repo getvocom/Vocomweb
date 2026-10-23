@@ -202,3 +202,6 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 /* Service card grids on /vocom-international, /vocom-services and the carrier pages: on live each card
    fills its grid cell (300px, or two rows for the tall ones); here they shrank to their text. */
 .xsux5dz > *, .xbywjww > * { align-self: stretch !important; height: auto !important; min-height: 100%; }
+/* Product pages: the renders are square (406px), so show them in a square frame at up to their
+   real size instead of a 820x320 crop that cut the product off and blew it up 2x. */
+.product-image.x2af2jo { height: auto !important; aspect-ratio: 1; max-width: 406px; }

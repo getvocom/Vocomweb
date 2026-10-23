@@ -9,6 +9,6 @@ construction: "Single-mode and multimode duplex, push tab"
 typicalUse: "Panel population"
 description: "Modular cassette. Supplied under codes LC cassette. Available in 12F to 24F. Construction: Single-mode and multimode duplex, push tab. Typical use: Panel population."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-045-mpo-to-lc-cassette.jpg"
   alt: "Modular cassette fiber optic cable"
 ---

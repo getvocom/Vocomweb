@@ -9,6 +9,6 @@ construction: "2.0mm/3.0mm jacket, OFNR rated, UL listed, 1.25mm dual-fiber ferr
 typicalUse: "Small form factor LAN and fiber-to-the-desk applications"
 description: "MTRJ Fiber Patch Cord. Supplied under codes MTRJ. Available in Duplex, 2F. Construction: 2.0mm/3.0mm jacket, OFNR rated, UL listed, 1.25mm dual-fiber ferrule. Typical use: Small form factor LAN and fiber-to-the-desk applications."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-020-mtrj-fiber-patch-cord.jpg"
   alt: "MTRJ Fiber Patch Cord fiber optic cable"
 ---

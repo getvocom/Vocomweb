@@ -9,6 +9,6 @@ construction: "Stranded ribbon on Fujikura glass"
 typicalUse: "Long-haul and hyperscale"
 description: "Highest counts. Supplied under codes Quoted per route. Available in to 3456F. Construction: Stranded ribbon on Fujikura glass. Typical use: Long-haul and hyperscale."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-016-fiber-cable-on-shipping-drum.jpg"
   alt: "Highest counts fiber optic cable"
 ---

@@ -9,6 +9,6 @@ construction: "Factory terminated, Type A, B or C polarity"
 typicalUse: "MDA and HDA backbone"
 description: "MPO and MTP trunk cable, 12F to 864F, supplied under code MPO trunk. Factory terminated fiber trunk in Type A, B or C polarity for MDA and HDA backbone runs. Standard lead time 6 to 8 weeks, up to 10 weeks for custom builds."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-032-mpo-trunk-cable-on-reel-with-pulling-eye.jpg"
   alt: "MPO and MTP trunk fiber optic cable"
 ---

@@ -9,6 +9,6 @@ construction: "Gel filled, all-dielectric, G.652D, HDPE"
 typicalUse: "Duct and direct burial backbone"
 description: "Loose tube stranded, dielectric. Supplied under codes GCYFTY, GYFS. Available in 12F to 864F. Construction: Gel filled, all-dielectric, G.652D, HDPE. Typical use: Duct and direct burial backbone."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-005-loose-tube-outdoor-cable-armored-and-non-armored.jpg"
   alt: "Loose tube stranded, dielectric fiber optic cable"
 ---

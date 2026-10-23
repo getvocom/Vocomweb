@@ -9,6 +9,6 @@ construction: "Zirconia ceramic alignment sleeve, less than 0.2dB insertion loss
 typicalUse: "Ferrule-to-ferrule coupling between two patch cords"
 description: "Fiber Adapters. Supplied under codes ADPT-SC, ADPT-LC, ADPT-FC, ADPT-ST, ADPT-MTRJ. Available in N/A. Construction: Zirconia ceramic alignment sleeve, less than 0.2dB insertion loss, UL listed housing. Typical use: Ferrule-to-ferrule coupling between two patch cords."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-040-fc-st-and-mtrj-adapters.jpg"
   alt: "Fiber Adapters fiber optic cable"
 ---

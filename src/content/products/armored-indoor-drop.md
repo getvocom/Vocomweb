@@ -9,6 +9,6 @@ construction: "Spiral armor, rodent and crush protection"
 typicalUse: "Riser and in-building"
 description: "Armored indoor drop. Supplied under codes NSS, SS series. Available in 1F to 12F. Construction: Spiral armor, rodent and crush protection. Typical use: Riser and in-building."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-013-indoor-armored-drop-cable.jpg"
   alt: "Armored indoor drop fiber optic cable"
 ---

@@ -9,6 +9,6 @@ construction: "Self-supporting, no metallic element, UV stable"
 typicalUse: "Long pole spans, near power"
 description: "ADSS all-dielectric. Supplied under codes ADSS. Available in 12F to 432F. Construction: Self-supporting, no metallic element, UV stable. Typical use: Long pole spans, near power."
 image:
-  src: "/assets/img/fiber-optic-cable-reel-9731cb.png"
+  src: "/assets/img/products/vc-006-adss-cable-all-dielectric-self-supporting.jpg"
   alt: "ADSS all-dielectric fiber optic cable"
 ---

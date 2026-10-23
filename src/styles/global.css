@@ -224,3 +224,7 @@ a.product-table-row > p:first-child { color: var(--brand-crimson); text-decorati
 a.product-table-row > p:first-child::after { content: " \2192"; text-decoration: none; display: inline-block; margin-left: 4px; }
 /* <picture> wrapper around a fill image: let the image keep filling its frame */
 .fill-pic { position: absolute; inset: 0; display: block; border-radius: inherit; }
+/* Homepage product-line cards: a render at the top of each card (4:3, product centred). */
+.card-render { position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; background: #e9e8e6; }
+.card-render img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; display: block; }
+.card-render picture { display: block; width: 100%; height: 100%; }

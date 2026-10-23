@@ -196,3 +196,9 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 .fiber-fields:not([hidden]) { display: contents; }
 /* /pricing-vocomai: space between "Pricing", the subtitle and the intro line. */
 .xwfdbdf { gap: 14px; }
+/* "By the numbers" stats on /vocom-international, /vocom-services and the carrier pages: Framer gives
+   three of the stats a 2-column span that its masonry layout ignores; live shows one column each. */
+.xkgm4hh > * { grid-column: auto !important; }
+/* Service card grids on /vocom-international, /vocom-services and the carrier pages: on live each card
+   fills its grid cell (300px, or two rows for the tall ones); here they shrank to their text. */
+.xsux5dz > *, .xbywjww > * { align-self: stretch !important; height: auto !important; min-height: 100%; }

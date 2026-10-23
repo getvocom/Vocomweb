@@ -204,7 +204,9 @@ select.field:has(option:checked:not([disabled])) { color: rgb(23, 16, 23); }
 .xsux5dz > *, .xbywjww > * { align-self: stretch !important; height: auto !important; min-height: 100%; }
 /* Product pages: the renders are square (406px), so show them in a square frame at up to their
    real size instead of a 820x320 crop that cut the product off and blew it up 2x. */
-.product-image.x2af2jo { height: auto !important; aspect-ratio: 1; max-width: 406px; }
+.product-image.x2af2jo { height: auto !important; max-width: 406px; }
+/* the render sets the frame's shape (most are square, a few 4:3), so nothing is scaled up */
+.product-image.x2af2jo .fill-img { position: relative; inset: auto; height: auto; }
 /* Category page banner (data center, air blown, FTTH, ADSS...): Framer fixed it at 1155px wide on every
    breakpoint; scale it with the screen instead. */
 .xafu7qg { display: block; position: relative; flex: none; border-radius: 34px; width: 100% !important; max-width: 1155px; height: auto !important; aspect-ratio: 1155 / 410; overflow: hidden; }

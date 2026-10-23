@@ -1,6 +1,6 @@
 // Builds the web versions of the Vocom product and hero renders from the 4K originals.
 // Usage: node scripts/render-images.mjs "<folder with index.csv from Vocom-Renders-4K.zip>"
-//   Product renders (the ones listed in data/product-renders.csv) -> public/assets/img/products/
+//   Product renders (listed in data/product-renders.csv or data/page-renders.csv) -> public/assets/img/products/
 //     <name>-480|800|1200.webp and .jpg   (shown up to 560px wide, so 1200px covers 2x screens)
 //   Hero renders (VC-104 to VC-110) -> public/assets/img/hero/<name>-1280|1920|2560.webp and .jpg
 // <name> is the render's descriptive file name without its VC code, e.g. figure-8-aerial-drop-cable.
@@ -12,7 +12,7 @@ const SRC = process.argv[2];
 if (!SRC || !fs.existsSync(path.join(SRC, "index.csv"))) throw new Error("pass the folder that holds index.csv");
 const parseCsv = (t) => t.trim().split("\n").map((l) => [...l.matchAll(/("([^"]*)"|[^,]*)(,|$)/g)].map((m) => m[2] ?? m[1]).slice(0, -1));
 const index = parseCsv(fs.readFileSync(path.join(SRC, "index.csv"), "utf8")).slice(1).map(([id, product, category, file]) => ({ id, product, file }));
-const used = new Set(parseCsv(fs.readFileSync("data/product-renders.csv", "utf8")).slice(1).map((r) => r[1]));
+const used = new Set(["data/product-renders.csv", "data/page-renders.csv"].flatMap((f) => parseCsv(fs.readFileSync(f, "utf8")).slice(1).map((r) => r[1])).filter((id) => !/^VC-1(0[4-9]|10)$/.test(id)));
 const nameOf = (file) => path.basename(file, path.extname(file)).replace(/^(VC|NEW)-\d+_/, "").replace(/^hero-/, "");
 
 async function variants(src, outDir, name, widths) {

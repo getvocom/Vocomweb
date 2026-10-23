@@ -65,6 +65,11 @@
    "w": 1200,
    "h": 1200
   },
+  "VC-016": {
+   "name": "fiber-cable-on-shipping-drum",
+   "w": 1200,
+   "h": 896
+  },
   "VC-017": {
    "name": "sc-fiber-patch-cord-upc-and-apc",
    "w": 1200,

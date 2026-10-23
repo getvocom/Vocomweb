@@ -1,0 +1,36 @@
+---
+// A product in the "Browse individual products" lists on the fiber pages and "More from this
+// category" on product pages: its render, name and codes, linking to the product page.
+import { renderForSrc, srcset } from "../lib/renders";
+interface Props { item: { id: string; data: { name: string; codes?: string; image?: { src: string; alt?: string } } } }
+const { item } = Astro.props;
+const r = renderForSrc(item.data.image?.src);
+const sizes = "(max-width: 809.98px) 46vw, 240px";
+---
+<a class="product-card" href={"/products/" + item.id}>
+  {r && (
+    <span class="pc-img">
+      <picture>
+        <source type="image/webp" srcset={srcset({ ...r, widths: [480, 800] }, "webp")} sizes={sizes} />
+        <img src={`${r.base}-480.jpg`} srcset={srcset({ ...r, widths: [480, 800] }, "jpg")} sizes={sizes} width={r.width} height={r.height} alt={item.data.image?.alt ?? ""} loading="lazy" decoding="async" />
+      </picture>
+    </span>
+  )}
+  <span class="pc-name">{item.data.name}</span>
+  {item.data.codes && <span class="pc-codes">{item.data.codes}</span>}
+  <span class="pc-cta">View product &rarr;</span>
+</a>
+
+<style>
+  .product-card {
+    position: relative; display: flex; flex-direction: column; gap: 6px; padding: 10px 10px 14px;
+    border-radius: 18px; background: var(--white); color: var(--ink-900); text-decoration: none;
+    box-shadow: inset 0 0 0 1px rgba(136, 18, 67, 0.14); transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .product-card:hover, .product-card:focus-visible { box-shadow: inset 0 0 0 1px var(--brand-crimson), 0 6px 18px rgba(23, 16, 23, 0.08); transform: translateY(-2px); }
+  .pc-img { display: block; aspect-ratio: 1; border-radius: 12px; overflow: hidden; background: #e9e8e6; margin-bottom: 4px; }
+  .pc-img picture, .pc-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .pc-name { padding: 0 4px; font-weight: 700; font-size: 15px; line-height: 1.3; }
+  .pc-codes { padding: 0 4px; font-size: 13px; line-height: 1.35; color: #5a5a5a; }
+  .pc-cta { padding: 0 4px; margin-top: auto; font-weight: 700; font-size: 13px; color: var(--brand-crimson); }
+</style>

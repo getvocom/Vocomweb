@@ -4,9 +4,9 @@ air-blown-micro-cable,VC-010,Air-Blown Micro Cable,exact
 armored-direct-burial,VC-005,Loose Tube Outdoor Cable (Armored and Non-Armored),close
 armored-fiber-patch-cord,VC-024,Armored Fiber Patch Cord,exact
 armored-indoor-drop,VC-013,Indoor Armored Drop Cable,exact
-cassette-adapters,VC-038,"LC Adapters (Duplex, Quad, 6-port)",check
+cassette-adapters,VC-038,"LC Adapters (Duplex, Quad, 6-port)",close
 central-tube-ribbon,VC-008,Central Tube Ribbon Cable,exact
-central-tube,VC-008,Central Tube Ribbon Cable,check
+central-tube,VC-008,Central Tube Ribbon Cable,close
 composite-surface-box,VC-067,CTC430 Light-Duty Surface Box (Round Lid),exact
 composite-vault-heavy-2,VC-066,"CTC Composite Vault (Detachable, Single Lid)",close
 composite-vault-heavy,VC-066,"CTC Composite Vault (Detachable, Single Lid)",close
@@ -21,7 +21,7 @@ harness-breakout,VC-034,MPO to LC Harness / Breakout Cable,exact
 hdpe-microduct-bundle,VC-068,HDPE MicroDuct Tube Bundles,exact
 hdpe-microduct-single-way,VC-069,MicroDuct Coils,close
 high-count-dielectric-ribbon,VC-007,High Fiber Count Ribbon Cable,exact
-highest-counts,VC-016,Fiber Cable on Shipping Drum,check
+highest-counts,VC-007,High Fiber Count Ribbon Cable,close
 hybrid-fiber-and-copper,VC-014,Hybrid Fiber and Copper Cable (FTTA),exact
 in-house-terminal-box,VC-055,In-House Fiber Terminal Box,exact
 lc-and-sc-patch,VC-021,LC Duplex Patch Cord,close
@@ -38,9 +38,9 @@ mtp-mpo-array-cable,VC-031,MPO Array Cable,exact
 mtp-mpo-trunk-cable,VC-004,Multi-fiber Trunk Cable (up to 144C),exact
 mtrj-fiber-patch-cord,VC-020,MTRJ Fiber Patch Cord,exact
 optitap-compatible-connector,VC-044,U-Optic Hardened Outdoor Connector (IP68),exact
-rollable-ribbon-indoor,VC-009,e-ribbon Spider Ribbon OSP Cable,check
+rollable-ribbon-indoor,VC-009,e-ribbon Spider Ribbon OSP Cable,new render wanted (indoor jacket)
 rollable-ribbon-outside-plant,VC-009,e-ribbon Spider Ribbon OSP Cable,close
 sc-fiber-patch-cord,VC-017,SC Fiber Patch Cord (UPC and APC),exact
-sc-shutter-connector,VC-039,SC Adapters (Simplex and Duplex),check
+sc-shutter-connector,VC-039,SC Adapters (Simplex and Duplex),close
 st-fiber-patch-cord,VC-019,ST Fiber Patch Cord,exact
-waterproof-terminal-box,VC-054,Wall-Mounted Fiber Box,check
+waterproof-terminal-box,VC-054,Wall-Mounted Fiber Box,new render wanted (sealed outdoor box)

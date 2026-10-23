@@ -125,3 +125,7 @@ When Use Case is "Fiber Optic", the form asks for Fiber count, Fiber type, Ratin
 ## Contact details (2026-10-23)
 
 Tom: website leads go only to kevin@getvocom.com (the one inbox he manages). The schema on every page (LocalBusiness email) and the /vocom-international FAQ were changed from sales@vocom.com / kevin@vocom.com to kevin@getvocom.com. The footer now shows both offices (El Monte and Taipei, with phone numbers) and kevin@getvocom.com, matching the LocalBusiness schema. Keep these identical to the Google Business Profile.
+
+## Product renders (2026-10-23)
+
+Product and category images are Vocom renders, not photos of supplied stock. Each carries a visible "Illustrative render" label and "(illustrative render)" in its alt text (Tom asked for this). Product renders are 406px, cut from the Canva board export; for sharper images on high-resolution screens, swap in the 1264px Canva originals (same file names, `public/assets/img/products/`). Hero renders (1680px) are on /data-center-fiber-cabling (VC-104), /air-blown-micro-fiber-cable (VC-109), /ftth-drop-cable (VC-108, new frame) and the /fiber-optic-cables card (VC-105). VC-110 is saved but unused.

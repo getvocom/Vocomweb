@@ -239,3 +239,6 @@ a.product-table-row > p:first-child::after { content: " \2192"; text-decoration:
 .js-nav .has-overlay.open > .overlay, .js-nav .has-overlay:focus-within > .overlay { display: flex; }
 /* hover bridge over the gap under the header, while a menu is open */
 .js-nav .has-overlay.open::before { content: ""; position: absolute; left: -40px; right: -40px; top: 100%; height: 24px; z-index: 1; }
+/* Network map section on the carrier pages (NetworkMap.astro) */
+.netmap-wrap { width: 100%; padding: 0 20px; margin: 24px 0; }
+@media (max-width: 809.98px) { .netmap-wrap { padding: 0 12px; } }

@@ -1,0 +1,106 @@
+---
+// Vocom's network as a Pacific-centred map of PoP and IDC cities (the city list shown on
+// vocom.com) with the protected routes from the /vocom-services latency table. Cities are placed
+// by longitude and latitude; no coastlines, so it reads as a network diagram, not a geography
+// claim. Pure SVG: no images, scales to any width, routes animate unless reduced motion is set.
+interface Props { title?: string; subtitle?: string }
+const { title = "A Network Built Across the Pacific", subtitle = "Selected Vocom PoPs and IDCs, with protected routes linking Asia, the Americas and Europe." } = Astro.props;
+
+const CITIES: Record<string, { name: string; lat: number; lon: number; hq?: boolean; dx?: number; dy?: number }> = {
+  LON: { name: "London", lat: 51.5, lon: -0.1 },
+  FJR: { name: "Fujairah", lat: 25.1, lon: 56.3 },
+  BKK: { name: "Bangkok", lat: 13.8, lon: 100.5, dx: -40, dy: -6 },
+  PNH: { name: "Phnom Penh", lat: 11.6, lon: 104.9, dx: 9, dy: 14 },
+  KUL: { name: "Kuala Lumpur", lat: 3.1, lon: 101.7, dx: -40, dy: 0 },
+  SIN: { name: "Singapore", lat: 1.4, lon: 103.8, dx: 8, dy: 16 },
+  HKG: { name: "Hong Kong", lat: 22.3, lon: 114.2, dx: 9, dy: 14 },
+  SZX: { name: "Shenzhen", lat: 22.6, lon: 113.9, dx: -42, dy: -6 },
+  MNL: { name: "Manila", lat: 14.6, lon: 121.0, dx: 9, dy: 4 },
+  TPE: { name: "Taipei", lat: 25.0, lon: 121.5, dx: 9, dy: 4 },
+  SHA: { name: "Shanghai", lat: 31.2, lon: 121.5, dx: 9, dy: 4 },
+  SEL: { name: "Seoul", lat: 37.6, lon: 127.0, dx: -14, dy: -10 },
+  TKY: { name: "Tokyo", lat: 35.7, lon: 139.7, dx: 9, dy: 4 },
+  LAX: { name: "Los Angeles", lat: 34.1, lon: -118.2, hq: true, dx: 14, dy: 18 },
+  MEX: { name: "Mexico City", lat: 19.4, lon: -99.1 },
+  ASB: { name: "Ashburn", lat: 39.0, lon: -77.5 },
+  SAO: { name: "São Paulo", lat: -23.5, lon: -46.6 },
+};
+// protected routes from the latency table on /vocom-services
+const ROUTES: [string, string][] = [["HKG", "TPE"], ["HKG", "SIN"], ["HKG", "LAX"], ["HKG", "TKY"], ["HKG", "LON"], ["TKY", "LAX"], ["SIN", "KUL"], ["LAX", "ASB"]];
+
+const W = 1000, H = 500, PAD = 40;
+const lon = (l: number) => (l < -30 ? l + 360 : l); // Pacific-centred
+// piecewise longitude scale: most PoPs are in Asia, so that band gets the most width
+const BANDS: [number, number][] = [[-15, 0], [90, 0.2], [145, 0.66], [330, 1]];
+const x = (c: { lon: number }) => {
+  const l = lon(c.lon);
+  for (let i = 1; i < BANDS.length; i++) {
+    const [l0, f0] = BANDS[i - 1], [l1, f1] = BANDS[i];
+    if (l <= l1) return PAD + (f0 + ((l - l0) / (l1 - l0)) * (f1 - f0)) * (W - 2 * PAD);
+  }
+  return W - PAD;
+};
+const LAT0 = 58, LAT1 = -28;
+const y = (c: { lat: number }) => PAD + ((LAT0 - c.lat) / (LAT0 - LAT1)) * (H - 2 * PAD);
+const path = ([a, b]: [string, string]) => {
+  const A = CITIES[a], B = CITIES[b]; const x1 = x(A), y1 = y(A), x2 = x(B), y2 = y(B);
+  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2 - Math.min(120, Math.abs(x2 - x1) * 0.22);
+  return `M${x1.toFixed(1)} ${y1.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+};
+// faint dot grid behind the map
+const dots: [number, number][] = [];
+for (let gx = PAD; gx <= W - PAD; gx += 20) for (let gy = PAD; gy <= H - PAD; gy += 20) dots.push([gx, gy]);
+---
+<section class="netmap">
+  <div class="nm-head">
+    <p class="nm-eyebrow">Est. 1998 · FCC 214 licensed carrier</p>
+    <h2>{title}</h2>
+    <p class="nm-sub">{subtitle}</p>
+  </div>
+  <div class="nm-scroll"><svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="nm-desc">
+    <desc id="nm-desc">Network diagram of Vocom points of presence: {Object.values(CITIES).map((c) => c.name).join(", ")}, with headquarters in Los Angeles and protected routes between Hong Kong, Taipei, Singapore, Tokyo, London, Kuala Lumpur, Los Angeles and Ashburn.</desc>
+    <g class="nm-dots">{dots.map(([a, b]) => <circle cx={a} cy={b} r="1" />)}</g>
+    <g class="nm-routes">{ROUTES.map((r, i) => <path d={path(r)} style={`animation-delay:${(i * 0.35).toFixed(2)}s`} />)}</g>
+    {Object.entries(CITIES).map(([code, c]) => (
+      <g class={`nm-city${c.hq ? " hq" : ""}`} transform={`translate(${x(c).toFixed(1)} ${y(c).toFixed(1)})`}>
+        {c.hq && <circle class="nm-halo" r="14" />}
+        <circle r={c.hq ? 6 : 4.5} />
+        <text x={(c.dx ?? 9)} y={(c.dy ?? -8)}>{code}{c.hq ? " · HQ" : ""}</text>
+      </g>
+    ))}
+  </svg></div>
+  <ul class="nm-stats">
+    <li><strong>1998</strong><span>Founded, FCC 214 licensed</span></li>
+    <li><strong>20+</strong><span>Global PoPs and IDCs</span></li>
+    <li><strong>24/7</strong><span>NOC monitoring</span></li>
+  </ul>
+</section>
+
+<style>
+  .netmap {
+    width: 100%; max-width: 1160px; margin: 0 auto; padding: 40px 32px 32px; border-radius: 32px;
+    background: radial-gradient(120% 90% at 75% 55%, #13324a 0%, #0c1b2b 55%, #08121d 100%); color: #e8eef5;
+  }
+  .nm-head { display: flex; flex-direction: column; gap: 10px; max-width: 640px; }
+  .nm-eyebrow { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #e0466e; }
+  .netmap h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 4vw, 42px); line-height: 1.08; letter-spacing: -0.02em; color: #ffffff; }
+  .nm-sub { font-size: 16px; line-height: 1.55; color: #b5c3d1; }
+  .nm-scroll { margin-top: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .netmap svg { display: block; width: 100%; min-width: 640px; height: auto; }
+  .nm-dots circle { fill: rgba(150, 180, 210, 0.13); }
+  .nm-routes path { fill: none; stroke: #e0466e; stroke-width: 1.4; stroke-dasharray: 5 6; opacity: 0.75; animation: nm-flow 2.4s linear infinite; }
+  .nm-city circle { fill: #5b8fd6; stroke: #0c1b2b; stroke-width: 2; }
+  .nm-city.hq circle { fill: #e0466e; }
+  .nm-city .nm-halo { fill: rgba(224, 70, 110, 0.18); stroke: rgba(224, 70, 110, 0.6); stroke-width: 1; }
+  .nm-city text { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 12px; letter-spacing: 0.06em; fill: #c9d6e3; }
+  .nm-stats { list-style: none; margin: 18px 0 0; padding: 18px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; border-top: 1px solid rgba(201, 214, 227, 0.15); }
+  .nm-stats li { display: flex; flex-direction: column; gap: 4px; }
+  .nm-stats strong { font-size: 30px; font-weight: 700; color: #ffffff; }
+  .nm-stats span { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fa3b8; }
+  @keyframes nm-flow { to { stroke-dashoffset: -22; } }
+  @media (prefers-reduced-motion: reduce) { .nm-routes path { animation: none; } }
+  @media (max-width: 809.98px) {
+    .netmap { padding: 28px 16px 20px; border-radius: 22px; }
+    .nm-stats strong { font-size: 22px; }
+  }
+</style>

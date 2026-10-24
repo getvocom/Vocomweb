@@ -37,3 +37,7 @@ Homepage: 40 → 25 headings. /blog: 84 → 43. Done in `scripts/framer/compile.
 | /search | Search Vocom | p (the page had no H1) | h1 |
 
 Tom asked for an H1 on /search. It uses the page's existing title text, so no copy changed.
+
+## Homepage title (2026-10-24, Tom approved)
+
+"Fiber Optic Cable Supplier & Telecom Solutions | Vocom" became "Vocom | Fiber Optic Cable Supplier, Carrier Services & AI" (title, og:title, twitter:title). The brand goes first so searches for "Vocom" show vocom.ai labelled as Vocom across fiber, carrier services and AI.

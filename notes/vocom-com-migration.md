@@ -1,36 +1,25 @@
-# Moving vocom.com to vocom.ai (SEO)
+# vocom.ai vs vocom.com (SEO)
 
-**Goal:** Google, AI Overviews and AI assistants treat vocom.ai as Vocom's site, and the old pages' ranking passes to it.
+**Situation (2026-10-24):**
+- vocom.com (both `vocom.com` and `www.vocom.com`) belongs to another team, and we have no access to it.
+- No redirects are possible, so the plan is to make www.vocom.ai the site Google, AI Overviews and AI assistants pick for "Vocom".
+- All traffic goes to vocom.ai and the Vocom AI LinkedIn page (linkedin.com/company/vocomai).
 
-**Current state (checked 2026-10-24):**
-- `vocom.com` is a newer static site on its own host (208.90.122.86), with 7 pages.
-- `www.vocom.com` is the 2020 Google Sites site, with 17 pages.
-- DNS is at Network Solutions (worldnic).
-- Email (@vocom.com) runs on Microsoft 365. **The MX, autodiscover, SPF/DKIM/DMARC and other TXT records must be kept exactly.**
+**What the site does:**
+- **Schema:** the Organization schema names the company "Vocom" (legal name Vocom International) and lists the other names people search (VOCOM, Vocom International, VOCOM International Telecommunications, the full legal name, Vocom AI).
+- **sameAs:** only the Vocom AI LinkedIn page. There is deliberately **no** sameAs to vocom.com or the Vocom International LinkedIn page, because linking them would tell Google the two sites are one entity and could lead it to treat vocom.ai as the duplicate.
+- **Links:** no page links to vocom.com.
 
-## Already done on vocom.ai
-- Every page's Organization schema has:
-  - `alternateName`: VOCOM, Vocom International, VOCOM International Telecommunications, Vocom International Telecommunication, Inc., Vocom AI;
-  - `sameAs`: both LinkedIn pages and vocom.com.
-
-## Steps (after the vocom.ai launch in notes/launch.md)
-1. **Search Console:** add and verify a Domain property for vocom.com (DNS TXT record), if it isn't there already.
-2. **Cloudflare:** add vocom.com as a second zone in the same account.
-   - Check that every imported record matches Network Solutions, **especially MX and all TXT**.
-   - Switch the nameservers at Network Solutions.
-   - The web records for `@` and `www` must be proxied (orange) for redirects to work.
-   - **Leave the mail records grey.**
-3. **Redirects:** in Cloudflare (account) → Bulk Redirects, create a list from `data/vocom-com-redirects.csv` (26 URLs, all 301), then a Bulk Redirect rule that uses it. Add a catch-all Single Redirect for anything else: host is vocom.com or www.vocom.com → `https://www.vocom.ai/` (301).
-4. **Change of Address:** in Search Console, open the vocom.com property → Settings → Change of address → choose www.vocom.ai. This needs the homepage 301 to be live.
-5. **Elsewhere online, update the website to https://www.vocom.ai:**
-   - both LinkedIn pages;
-   - Google Business Profile;
-   - email signatures;
+**Plan:**
+1. **Launch** www.vocom.ai (notes/launch.md), then submit the sitemap in Google Search Console.
+2. **Bing Webmaster Tools:** add www.vocom.ai and submit the sitemap. Bing's index feeds ChatGPT search and Microsoft Copilot. After each deploy, run `node scripts/indexnow.mjs`.
+3. **Google Business Profile:** set the website to https://www.vocom.ai. It's the strongest signal for brand searches and the knowledge panel. If a knowledge panel shows for "Vocom", use "Suggest an edit" to set the website.
+4. **Vocom AI LinkedIn page:** set its website field to https://www.vocom.ai, and link to vocom.ai pages from posts (product and blog URLs, not just the homepage).
+5. **Links from elsewhere, each one pointing to vocom.ai:**
+   - NWF and other partner sites;
+   - trade show exhibitor listings (ISE EXPO);
    - PeeringDB;
    - Crunchbase;
-   - FCC filings and directory listings.
-6. **Keep the redirects for at least a year,** and ideally permanently.
-
-**What to expect:**
-- Google usually swaps the search results to vocom.ai within 2 to 8 weeks.
-- AI Overviews follow once the old pages redirect and drop out of the index.
+   - industry directories;
+   - press releases.
+6. **Content cadence:** the weekly blog posts (with internal links to product pages) and the product catalog keep vocom.ai fresher and deeper than the old sites. That's what search and AI tools reward.

@@ -23,6 +23,7 @@ QA helpers:
 - `node scripts/faq-schema.mjs [--write]`: rebuilds each page's FAQPage JSON-LD from the FAQs on the built page (run after `npm run build`, then build again).
 - `node scripts/nav-check.mjs [base URL]`: hovers every header dropdown on every page at 1280/1440/1920 and moves down onto a link, as a person would. Should print "all dropdowns OK".
 - Build also runs `scripts/img-dims.mjs`, which writes each local image's width/height into the HTML so pages don't jump while images load.
+- `node scripts/indexnow.mjs`: after a deploy, sends every sitemap URL to Bing and other IndexNow search engines (see notes/vocom-com-migration.md).
 - `node scripts/layout-audit.mjs [--base URL] [--only /path] [--widths 390]`: flags sideways scrolling, text cut off at the screen edge, cards overlapping and broken images on every page. Should report 0 issues.
 - `node scripts/check-links.mjs`: broken-link check on `dist/`.
 - `node scripts/check-redirects.mjs <base-url>`: verifies every rule in `public/_redirects` returns a 301 to the right target.

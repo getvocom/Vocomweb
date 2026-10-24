@@ -1,5 +1,165 @@
 ---
-// Converted from the Framer "Navigation Bar 2" component by scripts/framer/compile-chrome.mjs.
-import "../styles/components/header.css";
+// Site header. Replaces the converted Framer "Navigation Bar 2" (which had one menu per breakpoint
+// and no route to several pages). Links come from src/lib/nav.ts, so every page is reachable.
+// Desktop (>= 1024px): mega menus open on hover or keyboard focus (.has-overlay/.overlay, see
+// global.css). Smaller screens: a <details> menu with one expandable section per area, which
+// works without JavaScript.
+import { NAV } from "../lib/nav";
 ---
-<header class="navigation-bar-2 xad9whw" data-variants data-variant="Desktop"><div class="nav-wrapper xhcsrbx"><div class="logo-and-menu-button xqdms4w"><a class="elements-logo xln5drd" href="/"><div class="logo xoyyoj3"><img class="fill-img" src="/assets/img/og-about-7b6127.png" width="227" height="244" alt="Vocom logo" loading="lazy" decoding="async" style="object-position:left center"/></div></a><div class="xx4jfkq" data-set-variant="Phone Open" role="button" tabindex="0"><p class="xzrna2p">☰</p></div><div class="x3y3pap" data-set-variant="Phone" role="button" tabindex="0"><p class="xcwhyly">✕</p></div></div><nav class="menu xefoo3j"><div class="dropdown xb3kmym"><div class="dropdown-base xjy97na has-overlay"><p class="xp6lt8u"><a href="/fiber-optic-cables">Fiber Optic</a></p><div class="phosphor xtgecoe"><svg fill="var(--color-vocom)" width="100%" height="100%" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" ><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"/></svg></div><div class="xgntgfz overlay"><div class="overlay-links xlao3et"><a class="menu-item-tuto xxdwg0x" href="/fiber-optic-cables"><p class="xwj6nt2">Fiber Optic Cable</p></a><a class="menu-item-tuto xxdwg0x" href="/loose-tube-fiber-optic-cable"><p class="xwj6nt2">Loose Tube</p></a><a class="menu-item-tuto xxdwg0x" href="/ribbon-fiber-optic-cable"><p class="xwj6nt2">Ribbon</p></a><a class="menu-item-tuto xxdwg0x" href="/data-center-fiber-cabling"><p class="xwj6nt2">Data Center</p></a><a class="menu-item-tuto xxdwg0x" href="/air-blown-micro-fiber-cable"><p class="xwj6nt2">Air Blow Micro</p></a><a class="menu-item-tuto xxdwg0x" href="/adss-aerial-fiber-cable"><p class="xwj6nt2">ADSS Aerial</p></a><a class="menu-item-tuto xxdwg0x" href="/fiber-optic-cable-catalog"><p class="xwj6nt2">Full Catalog</p></a></div></div></div><div class="overlay-links xmws9de"><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Fiber Optic Cable</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Loose Tube</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Ribbon</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Data Center</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Air Blow Micro</p></div><a class="menu-item-tuto xxdwg0x" href="/adss-aerial-fiber-cable"><p class="xwj6nt2">ADSS Aerial</p></a><a class="menu-item-tuto xxdwg0x" href="/fiber-optic-cable-catalog"><p class="xwj6nt2">Full Catalog</p></a></div></div><div class="dropdown xhyfnjg"><div class="dropdown-base xjy97na has-overlay"><p class="xp6lt8u"><a href="/vocom-ai">Vocom AI </a></p><div class="phosphor xtgecoe"><svg fill="var(--color-vocom)" width="100%" height="100%" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" ><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"/></svg></div><div class="xgntgfz overlay"><div class="overlay-links xlao3et"><a class="menu-item-tuto xxdwg0x" href="/vocomai-coach-hub"><p class="xwj6nt2">AI Coach</p></a><a class="menu-item-tuto xxdwg0x" href="/vocomai-supply-chain"><p class="xwj6nt2">Supply Chain</p></a><a class="menu-item-tuto xxdwg0x" href="/vocomai-vocam"><p class="xwj6nt2">Vocam AI</p></a><a class="menu-item-tuto xxdwg0x" href="/vocom-ai-servers"><p class="xwj6nt2">AI Servers</p></a><a class="menu-item-tuto xxdwg0x" href="/vocomai-gpu-solutions"><p class="xwj6nt2">GPU Solutions</p></a><a class="menu-item-tuto xxdwg0x" href="/vocomai-manufacturing"><p class="xwj6nt2">Manufacturing</p></a><a class="menu-item-tuto xxdwg0x" href="/vocom-ai-agents"><p class="xwj6nt2">RenOS</p></a></div></div></div><div class="overlay-links xmws9de"><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">AI Coach</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Supply Chain</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Vocam AI</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">AI Servers</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">GPU Solutions</p></div><a class="menu-item-tuto xxdwg0x" href="/vocomai-manufacturing"><p class="xwj6nt2">Manufacturing</p></a><a class="menu-item-tuto xxdwg0x" href="/vocom-ai-agents"><p class="xwj6nt2">RenOS</p></a></div></div><div class="dropdown xrrbd4w"><div class="dropdown-base xougswc has-overlay"><p class="xigpd5i"><a href="/vocom-international">Vocom International </a></p><div class="phosphor xqv1oan"><svg fill="var(--color-vocom)" width="100%" height="100%" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" ><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"/></svg></div><div class="xgntgfz overlay"><div class="overlay-links xlao3et"><a class="menu-item-tuto xxdwg0x" href="/vocom-services"><p class="xwj6nt2">Telecom</p></a></div></div></div><div class="overlay-links xmws9de"><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Telecom</p></div></div></div><div class="xq72ocq"><a class="xsctd9e" href="/fiber-optic-cables"><p class="xasdh3e">Fiber Optic</p></a><a class="xsctd9e" href="/fiber-optic-cables"><p class="x33l6zz">Fiber Optic Cable</p></a><a class="xsctd9e" href="/loose-tube-fiber-optic-cable"><p class="x33l6zz">Loose Tube</p></a><a class="xsctd9e" href="/ribbon-fiber-optic-cable"><p class="x33l6zz">Ribbon</p></a><a class="xsctd9e" href="/data-center-fiber-cabling"><p class="x33l6zz">Data Center</p></a><a class="xsctd9e" href="/air-blown-micro-fiber-cable"><p class="x33l6zz">Air Blown Micro</p></a><a class="xsctd9e" href="/adss-aerial-fiber-cable"><p class="x33l6zz">ADSS Aerial</p></a><a class="xsctd9e" href="/fiber-optic-cable-catalog"><p class="x33l6zz">Full Catalog</p></a></div><div class="xzkdse8"><a class="xsctd9e" href="/vocom-international"><p class="xasdh3e">Vocom International</p></a><a class="xsctd9e" href="/vocom-services"><p class="x33l6zz">Telecom</p></a></div><div class="x2nzofj"><a class="xsctd9e" href="/vocom-ai"><p class="xasdh3e">Vocom AI</p></a><a class="xsctd9e" href="/vocomai-supply-chain"><p class="x33l6zz">Supply Chain</p></a><a class="xsctd9e" href="/vocomai-vocam"><p class="x33l6zz">Network Security</p></a><a class="xsctd9e" href="/vocom-ai-servers"><p class="x33l6zz">AI Servers</p></a><a class="xsctd9e" href="/vocomai-gpu-solutions"><p class="x33l6zz">GPU Solutions</p></a><a class="xsctd9e" href="/vocomai-manufacturing"><p class="x33l6zz">Manufacturing</p></a><a class="xsctd9e" href="/vocom-ai-agents"><p class="x33l6zz">RenOS</p></a></div><div class="xsby35y"><a class="xsctd9e" href="/about"><p class="xasdh3e">About</p></a><a class="xsctd9e" href="/about"><p class="x33l6zz">About Us</p></a><a class="xsctd9e" href="/contact-vocomai"><p class="x33l6zz">Contact Us</p></a><a class="xsctd9e" href="/blog"><p class="x33l6zz">Blog</p></a><a class="xsctd9e" href="/marketing-alliance"><p class="x33l6zz">Marketing Alliance</p></a><a class="xsctd9e" href="/vocomai-consultancy"><p class="x33l6zz">Consulting</p></a><a class="xsctd9e" href="/pricing-vocomai"><p class="x33l6zz">Pricing</p></a></div><div class="dropdown xdme36z"><div class="dropdown-base xjy97na has-overlay"><p class="xp6lt8u"><a href="/about">About</a></p><div class="phosphor xtgecoe"><svg fill="var(--color-vocom)" width="100%" height="100%" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" ><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"/></svg></div><div class="xgntgfz overlay"><div class="overlay-links xlao3et"><a class="menu-item-tuto xxdwg0x" href="/about"><p class="xwj6nt2">About Us</p></a><a class="menu-item-tuto xxdwg0x" href="/contact-vocomai"><p class="xwj6nt2">Contact Us</p></a><a class="menu-item-tuto xxdwg0x" href="/blog"><p class="xwj6nt2">Blog</p></a><a class="menu-item-tuto xxdwg0x" href="/marketing-alliance"><p class="xwj6nt2">Marketing Alliance</p></a><a class="menu-item-tuto xxdwg0x" href="/vocomai-consultancy"><p class="xwj6nt2">Consulting</p></a><a class="menu-item-tuto xxdwg0x" href="/pricing-vocomai"><p class="xwj6nt2">Pricing</p></a></div></div></div><div class="overlay-links xmws9de"><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">About Us</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Contact Us</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Blog</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Marketing Alliance</p></div><div class="menu-item-tuto xxdwg0x"><p class="xwj6nt2">Consulting</p></div><a class="menu-item-tuto xxdwg0x" href="/pricing-vocomai"><p class="xwj6nt2">Pricing</p></a></div></div></nav><div class="call-to-actions xgfvl5g"><a class="search-button xpjuqja fb" href="/search"><p class="xlniwca">🔍</p></a><a class="cta-nav-button-2 x0xw1pi" href="/contact-vocomai"><div class="icon-text x99yggq"><p class="button xbfdqgk">Request a Quote</p></div></a></div></div></header>
+<header class="site-nav" data-nav>
+  <a class="sn-logo" href="/" aria-label="Vocom home">
+    <img src="/assets/img/og-about-7b6127.png" width="227" height="244" alt="Vocom logo" decoding="async" />
+  </a>
+
+  <nav class="sn-menu" aria-label="Main">
+    {NAV.map((s) => (
+      <div class={`sn-item has-overlay${s.wide ? " sn-wide" : ""}`}>
+        <a class="sn-top" href={s.href}>
+          {s.label}
+          <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z" /></svg>
+        </a>
+        <div class="overlay sn-panel">
+          {s.groups.map((g) => (
+            <div class="sn-group">
+              <p class="sn-group-title">{g.title}</p>
+              <ul>
+                {g.links.map((l) => (
+                  <li><a href={l.href}><span class="sn-label">{l.label}</span>{l.desc && <span class="sn-desc">{l.desc}</span>}</a></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </nav>
+
+  <div class="sn-actions">
+    <a class="sn-search" href="/search" aria-label="Search products and blog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="M15.5 15.5 21 21" /></svg>
+    </a>
+    <a class="sn-cta" href="/contact-vocomai">Request a Quote</a>
+  </div>
+
+  <details class="sn-mobile">
+    <summary aria-label="Menu"><span class="sn-burger" aria-hidden="true"></span></summary>
+    <div class="sn-mpanel">
+      {NAV.map((s) => (
+        <details class="sn-msection">
+          <summary>{s.label}</summary>
+          {s.groups.map((g) => (
+            <div class="sn-mgroup">
+              <p class="sn-group-title">{g.title}</p>
+              {g.links.map((l) => <a href={l.href}>{l.label}</a>)}
+            </div>
+          ))}
+        </details>
+      ))}
+      <a class="sn-cta sn-mcta" href="/contact-vocomai">Request a Quote</a>
+    </div>
+  </details>
+</header>
+
+<script is:inline>
+  // Hover intent for the desktop menus: an open menu waits before closing, and a neighbouring
+  // menu only opens if the pointer stays on it, so moving diagonally to a wide panel works.
+  (function () {
+    var nav = document.querySelector("[data-nav]");
+    if (!nav || !window.matchMedia("(hover: hover)").matches) return;
+    nav.classList.add("js-nav");
+    var items = nav.querySelectorAll(".sn-item"), openItem = null, closeT, openT;
+    function open(it) { if (openItem && openItem !== it) openItem.classList.remove("open"); it.classList.add("open"); openItem = it; }
+    // leaving the header (bar and open panel) closes menus straight away
+    nav.addEventListener("pointerleave", function () { clearTimeout(closeT); clearTimeout(openT); if (openItem) openItem.classList.remove("open"); openItem = null; });
+    items.forEach(function (it) {
+      it.addEventListener("pointerenter", function () {
+        clearTimeout(closeT); clearTimeout(openT);
+        if (!openItem || openItem === it) open(it); else openT = setTimeout(function () { open(it); }, 160);
+      });
+      it.addEventListener("pointerleave", function () {
+        clearTimeout(openT);
+        closeT = setTimeout(function () { if (openItem === it) { it.classList.remove("open"); openItem = null; } }, 320);
+      });
+    });
+  })();
+</script>
+
+<style>
+  .site-nav {
+    position: relative; display: flex; align-items: center; gap: 16px; width: 100%;
+    padding: 10px 14px 10px 24px; border-radius: 30px; background: var(--white);
+    box-shadow: 0 10px 17px -5px rgba(76, 80, 133, 0.2); font-family: var(--font-sans);
+  }
+  .sn-logo { display: block; flex: none; }
+  .sn-logo img { display: block; width: auto; height: 38px; }
+
+  /* desktop menu */
+  .sn-menu { display: flex; align-items: center; gap: 2px; margin: 0 auto; }
+  .sn-item { position: relative; }
+  .sn-item.sn-wide { position: static; }
+  .sn-top {
+    display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px;
+    font-weight: 600; font-size: 15px; line-height: 1.4; color: rgb(14, 28, 41); white-space: nowrap;
+  }
+  .sn-top svg { width: 14px; height: 14px; fill: var(--brand-crimson); transition: transform 0.15s ease; }
+  .sn-item:hover .sn-top, .sn-item:focus-within .sn-top { background: var(--brand-pink-50); }
+  .sn-item:hover .sn-top svg, .sn-item:focus-within .sn-top svg { transform: rotate(180deg); }
+
+  .sn-panel {
+    position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-50%); z-index: 30;
+    gap: 28px; padding: 24px 26px; width: max-content; max-width: min(92vw, 1000px);
+    border-radius: 22px; background: var(--white); box-shadow: 0 18px 40px rgba(23, 16, 23, 0.14), 0 0 0 1px rgba(136, 18, 67, 0.08);
+    align-items: flex-start;
+  }
+  .sn-wide .sn-panel { left: 0; right: 0; transform: none; width: auto; max-width: none; }
+  .sn-group { min-width: 190px; flex: 1 1 0; }
+  .sn-group-title { margin: 0 0 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #8a8a8a; }
+  .sn-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .sn-group a { display: flex; flex-direction: column; gap: 1px; padding: 7px 10px; margin: 0 -10px; border-radius: 10px; }
+  .sn-group a:hover, .sn-group a:focus-visible { background: var(--brand-pink-50); }
+  .sn-label { font-weight: 600; font-size: 14px; line-height: 1.35; color: rgb(14, 28, 41); }
+  .sn-group a:hover .sn-label { color: var(--brand-crimson); }
+  .sn-desc { font-size: 12.5px; line-height: 1.35; color: #737373; }
+
+  .sn-actions { display: flex; align-items: center; gap: 10px; flex: none; }
+  .sn-search { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(14, 28, 41, 0.12); }
+  .sn-search svg { width: 18px; height: 18px; fill: none; stroke: rgb(14, 28, 41); stroke-width: 2; stroke-linecap: round; }
+  .sn-cta {
+    display: inline-flex; align-items: center; padding: 10px 18px; border-radius: 999px;
+    background: var(--brand-crimson); color: var(--white); font-weight: 600; font-size: 14px; white-space: nowrap;
+  }
+
+  /* phone and tablet menu */
+  .sn-mobile { display: none; }
+  .sn-mobile > summary { list-style: none; cursor: pointer; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; }
+  .sn-mobile > summary::-webkit-details-marker { display: none; }
+  .sn-burger, .sn-burger::before, .sn-burger::after { display: block; width: 20px; height: 2px; border-radius: 2px; background: var(--brand-crimson); transition: transform 0.2s ease, opacity 0.2s ease; }
+  .sn-burger { position: relative; }
+  .sn-burger::before, .sn-burger::after { content: ""; position: absolute; left: 0; }
+  .sn-burger::before { top: -6px; }
+  .sn-burger::after { top: 6px; }
+  .sn-mobile[open] .sn-burger { background: transparent; }
+  .sn-mobile[open] .sn-burger::before { transform: translateY(6px) rotate(45deg); }
+  .sn-mobile[open] .sn-burger::after { transform: translateY(-6px) rotate(-45deg); }
+  .sn-mpanel {
+    position: absolute; left: 0; right: 0; top: calc(100% + 8px); z-index: 30; max-height: calc(100vh - 110px); overflow-y: auto;
+    padding: 12px 18px 18px; border-radius: 22px; background: var(--white); box-shadow: 0 18px 40px rgba(23, 16, 23, 0.16);
+  }
+  .sn-msection { border-bottom: 1px solid rgba(14, 28, 41, 0.08); }
+  .sn-msection > summary { list-style: none; cursor: pointer; padding: 14px 4px; font-weight: 700; font-size: 16px; color: rgb(14, 28, 41); display: flex; justify-content: space-between; }
+  .sn-msection > summary::-webkit-details-marker { display: none; }
+  .sn-msection > summary::after { content: "+"; color: var(--brand-crimson); font-weight: 600; }
+  .sn-msection[open] > summary::after { content: "\2212"; }
+  .sn-mgroup { display: flex; flex-direction: column; padding: 0 4px 12px; }
+  .sn-mgroup .sn-group-title { margin: 6px 0 4px; }
+  .sn-mgroup a { padding: 8px 0; font-size: 15px; color: rgb(14, 28, 41); }
+  .sn-mcta { margin-top: 16px; justify-content: center; width: 100%; }
+
+  @media (max-width: 1023.98px) {
+    .sn-menu, .sn-actions .sn-cta { display: none; }
+    .sn-actions { margin-left: auto; }
+    .sn-mobile { display: block; }
+    .site-nav { padding: 8px 10px 8px 20px; }
+    .sn-logo img { height: 34px; }
+  }
+</style>

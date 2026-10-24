@@ -1,0 +1,30 @@
+---
+// Breadcrumb trail plus BreadcrumbList JSON-LD (Google can show it in results).
+// items: [label, path] pairs from Home to the current page. visible={false} adds only the schema,
+// for pages whose hero design has no room for a visible trail.
+interface Props { items: [string, string][]; visible?: boolean }
+const { items, visible = true } = Astro.props;
+const SITE = "https://www.vocom.ai";
+const ld = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + encodeURI(path) })),
+});
+---
+<script type="application/ld+json" set:html={ld} />
+{visible && (
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      {items.map(([name, path], i) => (
+        <li>{i < items.length - 1 ? <a href={path}>{name}</a> : <span aria-current="page">{name}</span>}</li>
+      ))}
+    </ol>
+  </nav>
+)}
+
+<style>
+  .crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 0; font-size: 13px; line-height: 1.4; color: #6b6b6b; }
+  .crumbs li + li::before { content: "/"; margin: 0 8px; color: #b3b3b3; }
+  .crumbs a { color: var(--brand-crimson); text-decoration: underline; text-underline-offset: 2px; }
+  .crumbs span { color: #4a4a4a; }
+</style>

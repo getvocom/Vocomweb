@@ -1,7 +1,73 @@
 ---
-// Converted from the Framer "Simple Footer 2" component by scripts/framer/compile-chrome.mjs.
-import "../styles/components/footer.css";
-interface Props { footerTagline?: string; title?: string; menu1?: string; menu2?: string; menu3?: string; link1?: string; link2?: string; link3?: string; }
-const { footerTagline = "Your partner for telecommunications and fiber optic supply.", title = "Quick Links", menu1 = "VOCOM AI", menu2 = "Services", menu3 = "RenOS AI Agents", link1 = "", link2 = "/vocom-services", link3 = "/vocom-ai-agents" } = Astro.props;
+// Site footer: brand and contact details (must match the LocalBusiness schema and the Google
+// Business Profile), plus links to every category, popular product and service from
+// src/lib/nav.ts, so each page is reachable from every other page.
+// footerTagline varies per page (copied from Framer). The old quick-link props are still accepted
+// so existing pages need no edits, but the link columns now come from the nav.
+import { NAV } from "../lib/nav";
+interface Props { footerTagline?: string; title?: string; menu1?: string; menu2?: string; menu3?: string; link1?: string; link2?: string; link3?: string }
+const { footerTagline = "Your partner for telecommunications and fiber optic supply." } = Astro.props;
+const section = (label: string) => NAV.find((s) => s.label === label)!;
+const fiber = section("Fiber Optic");
+const group = (s: typeof fiber, title: string) => s.groups.find((g) => g.title === title)?.links ?? [];
+const columns = [
+  { title: "Fiber Optic Cable", links: [...group(fiber, "By cable type"), ...group(fiber, "By application")] },
+  { title: "Popular Products", links: [...group(fiber, "Popular products"), ...group(fiber, "Buy with Vocom").slice(0, 2)] },
+  { title: "Vocom International", links: section("Vocom International").groups.flatMap((g) => g.links) },
+  { title: "Vocom AI", links: section("Vocom AI").groups.flatMap((g) => g.links) },
+  { title: "Company", links: [...section("About").groups.flatMap((g) => g.links), { label: "Privacy Policy", href: "/vocom-privacy-policy" }, { label: "Search", href: "/search" }] },
+];
 ---
-<footer class="simple-footer-2 xywi2g7"><div class="horizontal xaodsfd"><div class="xzhtlbv"><div class="logo-container xfkcje7"><div class="elements-logo xjulnji"><div class="logo x7mjtr4"><img class="fill-img" src="/assets/img/live-image-4b6320.png" width="226" height="243" alt="Vocom logo" loading="lazy" decoding="async" style="object-position:left center"/></div></div></div><p class="xvrvnhi">{footerTagline}</p><address class="footer-contact"><div class="fc-office"><p class="xvrvnhi fc-name">Vocom International Telecommunication, Inc.</p><p class="xvrvnhi">9550 Flair Dr. #512, El Monte, CA 91731, USA</p><p class="xvrvnhi"><a href="tel:+12136278999">+1-213-627-8999</a></p></div><div class="fc-office"><p class="xvrvnhi fc-name">Vocom Taiwan</p><p class="xvrvnhi">11F-2 No.245, Sec.1, Fuxing S. Rd., Taipei City 106, Taiwan</p><p class="xvrvnhi"><a href="tel:+886227095559">+886-2-2709-5559</a></p></div><p class="xvrvnhi"><a href="mailto:kevin@getvocom.com">kevin@getvocom.com</a></p></address><a class="xjulnji" href="https://www.linkedin.com/company/vocomai" target="_blank" rel="noreferrer"><svg class="xyx4cte icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M 0.75 18 C 0.336 18 0 17.664 0 17.25 L 0 0.75 C 0 0.336 0.336 0 0.75 0 L 17.25 0 C 17.664 0 18 0.336 18 0.75 L 18 17.25 C 18 17.664 17.664 18 17.25 18 Z" fill-opacity="var(--icon-alpha, 0)" fill="var(--icon-color, rgb(0, 0, 0))" transform="translate(3 3)"></path><path d="M 0.75 18 C 0.336 18 0 17.664 0 17.25 L 0 0.75 C 0 0.336 0.336 0 0.75 0 L 17.25 0 C 17.664 0 18 0.336 18 0.75 L 18 17.25 C 18 17.664 17.664 18 17.25 18 Z" fill="transparent" stroke-dasharray="" stroke-linecap="round" stroke-linejoin="round" stroke-width="var(--icon-stroke, 1.5)" stroke="var(--icon-color, rgb(0, 0, 0))" transform="translate(3 3)"></path><path d="M 0 0 L 0 6" fill="transparent" stroke-dasharray="" stroke-linecap="round" stroke-linejoin="round" stroke-width="var(--icon-stroke, 1.5)" stroke="var(--icon-color, rgb(0, 0, 0))" transform="translate(11.25 10.5)"></path><path d="M 0 0 L 0 6" fill="transparent" stroke-dasharray="" stroke-linecap="round" stroke-linejoin="round" stroke-width="var(--icon-stroke, 1.5)" stroke="var(--icon-color, rgb(0, 0, 0))" transform="translate(8.25 10.5)"></path><path d="M 0 2.625 C 0 1.175 1.175 0 2.625 0 C 4.075 0 5.25 1.175 5.25 2.625 L 5.25 6" fill="transparent" stroke-dasharray="" stroke-linecap="round" stroke-linejoin="round" stroke-width="var(--icon-stroke, 1.5)" stroke="var(--icon-color, rgb(0, 0, 0))" transform="translate(11.25 10.5)"></path><path d="M 0 1.125 C 0 0.504 0.504 0 1.125 0 C 1.746 0 2.25 0.504 2.25 1.125 C 2.25 1.746 1.746 2.25 1.125 2.25 C 0.504 2.25 0 1.746 0 1.125 Z" fill="var(--icon-color, rgb(0, 0, 0))" transform="translate(7.125 6.75)"></path></svg></a></div><div class="xhco7u1"><div class="vertical xdmmxvz"><p class="xfrqxpz">{title}</p><div class="xpw3qzb"><p class="xt7m8qx"><a href={link1}>{menu1}</a></p><p class="xt7m8qx"><a href={link2}>{menu2}</a></p><p class="xt7m8qx"><a href={link3}>{menu3}</a></p></div></div><div class="vertical xdmmxvz"><p class="xfrqxpz">Company</p><div class="xpw3qzb"><p class="xt7m8qx"><a href="/about">About Us</a></p><p class="xt7m8qx"><a href="/contact-vocomai">Contact Us</a></p><p class="privacy-policy xt7m8qx"><a href="/vocom-privacy-policy">Privacy Policy</a></p></div></div><div class="vertical xdmmxvz"><p class="xfrqxpz">Resources</p><div class="xpw3qzb"><p class="resource-center xt7m8qx"><a href="/resources">Resource Center</a></p><p class="xt7m8qx"><a href="/blog">Blog</a></p></div></div></div></div><div class="copyright x3v7dqy fb"><p class="xdiywzb">© 2026. All rights reserved</p></div></footer>
+<footer class="site-footer">
+  <div class="sf-top">
+    <div class="sf-brand">
+      <a class="sf-logo" href="/" aria-label="Vocom home"><img src="/assets/img/live-image-4b6320.png" width="226" height="243" alt="Vocom logo" loading="lazy" decoding="async" /></a>
+      <p class="sf-tagline">{footerTagline}</p>
+      <address class="sf-contact">
+        <div><p class="sf-name">Vocom International Telecommunication, Inc.</p><p>9550 Flair Dr. #512, El Monte, CA 91731, USA</p><p><a href="tel:+12136278999">+1-213-627-8999</a></p></div>
+        <div><p class="sf-name">Vocom Taiwan</p><p>11F-2 No.245, Sec.1, Fuxing S. Rd., Taipei City 106, Taiwan</p><p><a href="tel:+886227095559">+886-2-2709-5559</a></p></div>
+        <p><a href="mailto:kevin@getvocom.com">kevin@getvocom.com</a></p>
+      </address>
+      <a class="sf-social" href="https://www.linkedin.com/company/vocomai" target="_blank" rel="noreferrer" aria-label="Vocom on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1" /><path d="M8.25 10.5v6M11.25 10.5v6M11.25 13.125a2.625 2.625 0 0 1 5.25 0V16.5" /><circle cx="8.25" cy="7.875" r="0.6" /></svg>
+      </a>
+    </div>
+    <nav class="sf-cols" aria-label="Footer">
+      {columns.map((c) => (
+        <div class="sf-col">
+          <p class="sf-col-title">{c.title}</p>
+          <ul>{c.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+        </div>
+      ))}
+    </nav>
+  </div>
+  <div class="sf-bottom"><p>© 2026. All rights reserved</p></div>
+</footer>
+
+<style>
+  .site-footer { width: 100%; max-width: 1200px; margin: 0 auto; padding: 48px 24px 24px; font-family: var(--font-sans); color: rgb(14, 28, 41); }
+  .sf-top { display: grid; grid-template-columns: minmax(240px, 300px) 1fr; gap: 48px; }
+  .sf-brand { display: flex; flex-direction: column; gap: 14px; }
+  .sf-logo img { display: block; width: auto; height: 40px; }
+  .sf-tagline { font-size: 14px; line-height: 1.5; color: #4a4a4a; }
+  .sf-contact { font-style: normal; display: flex; flex-direction: column; gap: 12px; font-size: 13px; line-height: 1.5; color: #4a4a4a; }
+  .sf-name { font-weight: 600; color: rgb(14, 28, 41); }
+  .sf-contact a, .sf-col a { text-underline-offset: 2px; }
+  .sf-contact a { text-decoration: underline; }
+  .sf-social { display: inline-grid; place-items: center; width: 34px; height: 34px; }
+  .sf-social svg { width: 22px; height: 22px; fill: none; stroke: rgb(14, 28, 41); stroke-width: 1.5; stroke-linecap: round; }
+  .sf-cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 28px; }
+  .sf-col-title { margin-bottom: 12px; font-weight: 700; font-size: 13px; letter-spacing: 0.02em; }
+  .sf-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+  .sf-col a { font-size: 13px; line-height: 1.35; color: #4a4a4a; }
+  .sf-col a:hover { color: var(--brand-crimson); text-decoration: underline; }
+  .sf-bottom { margin-top: 36px; padding-top: 18px; border-top: 1px solid rgba(14, 28, 41, 0.1); text-align: center; font-size: 13px; color: #6b6b6b; }
+  @media (max-width: 1199.98px) {
+    .sf-top { grid-template-columns: 1fr; gap: 36px; }
+    .sf-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 809.98px) {
+    .site-footer { padding: 40px 20px 20px; }
+    .sf-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+  }
+</style>

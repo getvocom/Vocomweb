@@ -15,6 +15,8 @@ const STATIC = [
   "/ftth-drop-cable", "/adss-aerial-fiber-cable", "/fiber-optic-cable-catalog",
   // added 2026-10-22 (blocked on Framer by the plan's page limit)
   "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners", "/fiber-optic-connectors-and-hardware", "/iepl-iplc-private-leased-circuits", "/wholesale-voice-termination",
+  // added 2026-10-24
+  "/case-studies",
 ];
 
 // Category pages that show a hero render (see src/pages/<page>.astro)

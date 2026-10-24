@@ -6,6 +6,8 @@ import "../styles/global.css";
 import CookieBanner from "../components/CookieBanner.astro";
 import NewsletterPopup from "../components/NewsletterPopup.astro";
 import { headFor, splitJsonLd, type HeadData } from "../lib/head";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { NAV } from "../lib/nav";
 
 interface Props {
   path: string;
@@ -15,6 +17,16 @@ interface Props {
 const { path, seo, noindex = false } = Astro.props;
 const head = headFor(path, seo);
 const { page: pageLd, site: siteLd } = splitJsonLd(head.jsonld);
+// BreadcrumbList schema for pages that don't render their own trail (product pages and
+// /case-studies do): Home > nav section > page, or Home > Blog > post.
+const pageName = head.title.replace(/\s*[|].*$/, "").trim();
+let crumbs: [string, string][] | undefined;
+if (path.startsWith("/blog/")) crumbs = [["Home", "/"], ["Blog", "/blog"], [pageName, path]];
+else if (path !== "/" && !path.startsWith("/products/") && path !== "/case-studies" && !head.jsonld.some((j) => j.includes("BreadcrumbList"))) {
+  const section = NAV.find((s) => s.href === path || s.groups.some((g) => g.links.some((l) => l.href === path)));
+  const link = NAV.flatMap((s) => s.groups.flatMap((g) => g.links)).find((l) => l.href === path);
+  if (section) crumbs = section.href === path ? [["Home", "/"], [section.label, path]] : [["Home", "/"], [section.label, section.href], [link?.label ?? pageName, path]];
+}
 ---
 <!doctype html>
 <html lang={head.lang}>
@@ -28,6 +40,7 @@ const { page: pageLd, site: siteLd } = splitJsonLd(head.jsonld);
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     {noindex && <meta name="robots" content="noindex" />}
     {pageLd.map((j) => <script type="application/ld+json" set:html={j} />)}
+    {crumbs && <Breadcrumbs items={crumbs} visible={false} />}
 
     <!-- Google Analytics 4 (G-YYWN6PCL75) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYWN6PCL75"></script>

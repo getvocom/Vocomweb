@@ -1,0 +1,31 @@
+---
+// Real event photo (not a render): Kevin Huang at the Nanjing Wasin Fujikura stand, ISE EXPO 2026.
+// From Kevin's LinkedIn post (Aug 2026); the people pictured agreed to its use.
+// `heading` adds a section title; `compact` is the smaller version used beside calls to action.
+interface Props { heading?: string; compact?: boolean; eager?: boolean }
+const { heading, compact = false, eager = false } = Astro.props;
+const b = "/assets/img/photos/kevin-huang-ise-expo-2026-wasin-fujikura-stand";
+const set = (e: string) => [640, 1024, 1600].map((w) => `${b}-${w}.${e} ${w}w`).join(", ");
+const sizes = compact ? "(max-width: 809.98px) 92vw, 520px" : "(max-width: 999.98px) 92vw, 900px";
+---
+<section class={`tsp${compact ? " compact" : ""}`}>
+  {heading && <h2 class="tsp-h">{heading}</h2>}
+  <figure>
+    <picture>
+      <source type="image/webp" srcset={set("webp")} sizes={sizes} />
+      <img src={`${b}-1024.jpg`} srcset={set("jpg")} sizes={sizes} width="2048" height="1535" alt="Vocom CEO Kevin Huang with Gil Hunter at the Nanjing Wasin Fujikura fiber optic cable stand, ISE EXPO 2026, Nashville" loading={eager ? "eager" : "lazy"} decoding="async" />
+    </picture>
+    <figcaption>Kevin Huang, Vocom's CEO (right), with Gil Hunter at the Nanjing Wasin Fujikura (NWF) stand at ISE EXPO 2026 in Nashville. NWF is one of the tier 1 manufacturers behind the cable we supply.</figcaption>
+  </figure>
+</section>
+
+<style>
+  .tsp { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 18px; }
+  .tsp.compact { max-width: 520px; padding: 0; }
+  .tsp-h { font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.02em; color: var(--ink-900); text-align: center; }
+  figure { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  picture, img { display: block; width: 100%; height: auto; border-radius: 24px; }
+  .compact img { border-radius: 18px; }
+  figcaption { font-size: 14px; line-height: 1.5; color: #5a5a5a; text-align: center; }
+  .compact figcaption { font-size: 13px; text-align: left; }
+</style>

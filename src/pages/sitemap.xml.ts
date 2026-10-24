@@ -26,6 +26,8 @@ const PAGE_IMAGES: Record<string, string[]> = {
   "/air-blown-micro-fiber-cable": [hero("VC-109")],
   "/ftth-drop-cable": [hero("VC-108")],
   "/fiber-optic-cables": [hero("VC-105")],
+  "/about": ["/assets/img/photos/kevin-huang-ise-expo-2026-wasin-fujikura-stand-1600.jpg"],
+  "/case-studies": ["/assets/img/photos/kevin-huang-ise-expo-2026-wasin-fujikura-stand-1600.jpg"],
 };
 
 const esc = (s: string) => s.replace(/&/g, "&amp;");

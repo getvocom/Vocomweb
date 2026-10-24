@@ -242,3 +242,5 @@ a.product-table-row > p:first-child::after { content: " \2192"; text-decoration:
 /* Network map section on the carrier pages (NetworkMap.astro) */
 .netmap-wrap { width: 100%; padding: 0 20px; margin: 24px 0; }
 @media (max-width: 809.98px) { .netmap-wrap { padding: 0 12px; } }
+/* Trade show photo sections (TradeShowPhoto.astro) */
+.tsp-wrap { width: 100%; display: flex; justify-content: center; margin: 32px 0; }

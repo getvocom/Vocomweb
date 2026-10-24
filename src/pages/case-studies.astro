@@ -4,6 +4,7 @@
 // used"), each linked to the products and pages behind it. Client names are not disclosed.
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
+import TradeShowPhoto from "../components/TradeShowPhoto.astro";
 import Footer from "../components/Footer.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import ProductCard from "../components/ProductCard.astro";
@@ -84,7 +85,7 @@ const sizes = "(max-width: 809.98px) 92vw, 420px";
         );
       })}
 
-      <section class="cs-cta">
+      <TradeShowPhoto heading="Meet the Team Behind the Supply" /><section class="cs-cta">
         <h2>Need Cable for a Similar Build?</h2>
         <p>Send your route, fiber count and needed-by date and we will size it.</p>
         <a class="cs-btn" href="/contact-vocomai">Request a Quote</a>

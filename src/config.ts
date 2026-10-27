@@ -7,6 +7,15 @@ export const FORMS_URL = "https://script.google.com/macros/s/AKfycbyfh7K69zH0bQ_
 export const QUOTE_FORM_URL = FORMS_URL;
 export const QUOTE_FORM_FALLBACK_EMAIL = "";
 
+// Cloudflare Turnstile (spam protection on the quote form). Create a widget in Cloudflare:
+// Turnstile -> Add widget, hostnames www.vocom.ai and vocomweb.kevin-9ff.workers.dev, mode
+// "Invisible" or "Managed". Paste its Site Key here and its Secret Key into TURNSTILE_SECRET in
+// apps-script/Code.gs. Empty = not shown (the honeypot and timing checks still run).
+export const TURNSTILE_SITE_KEY = "";
+
+// Requirements file on the quote form: accepted types and maximum size.
+export const QUOTE_FILE = { accept: ".xlsx,.xls,.csv,.pdf", maxMB: 10 };
+
 // Newsletter popup. Copy approved by Tom, 2026-10-22.
 export const NEWSLETTER = {
   enabled: true, // the popup only renders once FORMS_URL is set

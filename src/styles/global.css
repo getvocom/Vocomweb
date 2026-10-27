@@ -244,3 +244,13 @@ a.product-table-row > p:first-child::after { content: " \2192"; text-decoration:
 @media (max-width: 809.98px) { .netmap-wrap { padding: 0 12px; } }
 /* Trade show photo sections (TradeShowPhoto.astro) */
 .tsp-wrap { width: 100%; display: flex; justify-content: center; margin: 32px 0; }
+/* Partner logo strip: Optech (added 2026-10-27), sized and faded like the other logos */
+.logo-optech { display: block; position: relative; flex: none; width: 116px; height: 40px; overflow: hidden; opacity: 0.7; }
+.logo-optech .fill-img { object-fit: contain; }
+@media (max-width: 809.98px) { .logo-optech { width: 93px; height: 32px; } }
+/* Quote form: requirements file, help text, next steps, and room for the Turnstile check */
+.button-5.x7ebm6z { height: auto !important; display: flex; flex-direction: column; }
+.file-field { height: auto !important; padding: 10px 12px !important; color: var(--ink-900) !important; cursor: pointer; }
+.file-field::file-selector-button { margin-right: 10px; padding: 6px 12px; border: 0; border-radius: 8px; background: var(--brand-pink-50); color: var(--brand-crimson); font-weight: 600; cursor: pointer; }
+.field-help { display: block; margin-top: 6px; font-size: 12px; line-height: 1.4; color: #6b6b6b; }
+.form-next { margin-top: 10px; font-size: 13px; line-height: 1.45; color: #5a5a5a; }

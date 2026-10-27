@@ -18,13 +18,24 @@ var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I A
 // Only asked when Use Case is "Fiber Optic". Stored after the Page column so existing columns don't move.
 var FIBER_FIELDS = ['Fiber Count', 'Fiber Type', 'Rating', 'Footage', 'Needed By'];
 var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Cloudflare Turnstile secret key (Cloudflare dashboard -> Turnstile -> the vocom.ai widget).
+// Leave empty until the matching site key is in src/config.ts (TURNSTILE_SITE_KEY).
+var TURNSTILE_SECRET = '';
+// Drive folder for requirements spreadsheets attached to quote requests (created on first use).
+var ATTACH_FOLDER = 'vocom.ai quote attachments';
+var ATTACH_TYPES = /\.(xlsx|xls|csv|pdf)$/i;
+var ATTACH_MAX_BYTES = 10 * 1024 * 1024;
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
   lock.waitLock(10000);
   try {
     var p = (e && e.parameter) || {};
-    if (p.website) return json({ result: 'success' }); // honeypot: bots fill it, people never see it
+    // Spam traps (bots get a normal-looking success, nothing is saved or sent):
+    // the hidden "website", "Website" and "Fax" fields are never visible to people,
+    // and a real person takes more than 3 seconds to fill in a form.
+    if (p.website || p['Website'] || p['Fax']) return json({ result: 'success' });
+    if (p.elapsed && Number(p.elapsed) < 3000) return json({ result: 'success' });
     if (p.form === 'newsletter') return newsletter(p);
     return quote(p);
   } catch (err) {
@@ -40,23 +51,54 @@ function quote(p) {
   var company = (p['Company'] || '').trim();
   if (!name || !company || !EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
   if (p.page !== '/contact-vocomai') return json({ result: 'error', error: 'bad origin' });
+  if (TURNSTILE_SECRET && !turnstileOk(p['cf-turnstile-response'])) return json({ result: 'error', error: 'verification failed' });
 
-  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS));
+  var file = attachment(p, name, company);
+
+  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']));
   var row = [new Date()];
   QUOTE_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   row.push(p.page || '');
   FIBER_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
+  row.push(file ? file.getUrl() : '');
   sheet.appendRow(row);
   var fiber = FIBER_FIELDS.filter(function (f) { return p[f]; });
 
-  MailApp.sendEmail({
+  var mail = {
     to: NOTIFY_EMAIL,
     subject: 'New quote request: ' + name + ' (' + company + ')',
-    body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') + '\n\nPage: https://www.vocom.ai' + (p.page || ''),
+    body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
+      (file ? '\nRequirements file: ' + file.getName() + ' (' + file.getUrl() + ')' : '') +
+      '\n\nPage: https://www.vocom.ai' + (p.page || ''),
     replyTo: email,
     name: 'vocom.ai Website',
-  });
+  };
+  if (file) mail.attachments = [file.getBlob()];
+  MailApp.sendEmail(mail);
   return json({ result: 'success' });
+}
+
+// Checks the Turnstile token with Cloudflare.
+function turnstileOk(token) {
+  if (!token) return false;
+  var res = UrlFetchApp.fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'post',
+    payload: { secret: TURNSTILE_SECRET, response: token },
+    muteHttpExceptions: true,
+  });
+  try { return JSON.parse(res.getContentText()).success === true; } catch (err) { return false; }
+}
+
+// Saves an uploaded requirements file (sent as base64) to the Drive folder. Returns the file or null.
+function attachment(p, name, company) {
+  if (!p.fileData || !p.fileName || !ATTACH_TYPES.test(p.fileName)) return null;
+  var bytes = Utilities.base64Decode(p.fileData);
+  if (bytes.length > ATTACH_MAX_BYTES) return null;
+  var folders = DriveApp.getFoldersByName(ATTACH_FOLDER);
+  var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(ATTACH_FOLDER);
+  var stamp = Utilities.formatDate(new Date(), 'UTC', 'yyyy-MM-dd');
+  var clean = (stamp + ' ' + company + ' ' + name + ' - ' + p.fileName).replace(/[\\/:*?"<>|]/g, '-');
+  return folder.createFile(Utilities.newBlob(bytes, p.fileType || 'application/octet-stream', clean));
 }
 
 function newsletter(p) {

@@ -3,9 +3,19 @@
 // States match the live button: Disabled until required fields are filled, Loading
 // spinner, "Thank you" on success (then redirect to /resources), "Something went wrong" on error.
 // Submissions POST to the Google Apps Script in src/config.ts (QUOTE_FORM_URL).
-import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
+// Spam protection: a hidden honeypot field, Framer's hidden decoy fields, a minimum fill time,
+// and Cloudflare Turnstile when TURNSTILE_SITE_KEY is set (checked again in apps-script/Code.gs).
+// An optional requirements file (input name "Requirements File") is sent base64-encoded.
+import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FILE } from "../config";
 ---
-<button type="submit" class="submit-btn" data-state="disabled" data-endpoint={QUOTE_FORM_URL} data-fallback={QUOTE_FORM_FALLBACK_EMAIL}>
+{TURNSTILE_SITE_KEY && (
+  <>
+    <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <div class="cf-turnstile turnstile-slot" data-sitekey={TURNSTILE_SITE_KEY} data-appearance="interaction-only" data-size="flexible"></div>
+  </>
+)}
+<p class="form-msg" role="alert" hidden></p>
+<button type="submit" class="submit-btn" data-state="disabled" data-endpoint={QUOTE_FORM_URL} data-fallback={QUOTE_FORM_FALLBACK_EMAIL} data-turnstile={TURNSTILE_SITE_KEY ? "1" : ""} data-max-mb={QUOTE_FILE.maxMB} data-accept={QUOTE_FILE.accept}>
   <p class="label default">Submit</p>
   <p class="label success">Thank you</p>
   <p class="label error">Something went wrong</p>
@@ -15,7 +25,7 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
 
 <style>
   .submit-btn {
-    display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center; width: 100%; height: 40px; flex: none;
     border: 0; border-radius: 10px; cursor: pointer; padding: 0;
     background: var(--color-vocom); transition: background-color 0.2s cubic-bezier(0.44, 0, 0.56, 1), opacity 0.2s;
     font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--white);
@@ -39,6 +49,8 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
     animation: spin 1s linear infinite;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
+  .turnstile-slot { width: 100%; }
+  .form-msg { width: 100%; margin: 0 0 8px; font-size: 13px; line-height: 1.4; color: rgb(185, 28, 28); }
 </style>
 
 <script>
@@ -52,6 +64,16 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
     hp.setAttribute("aria-hidden", "true");
     hp.style.cssText = "position:absolute;left:-9999px;width:1px;height:1px;opacity:0";
     form.appendChild(hp);
+    // Framer's hidden decoy inputs: out of the tab order; "Website" and "Fax" are bot traps
+    // (browsers never autofill those, unlike Phone Number / Address)
+    form.querySelectorAll<HTMLInputElement>('input[name="Website"], input[name="Fax"], input[name="Phone Number"], input[name="Address"]').forEach((i) => { i.tabIndex = -1; i.autocomplete = "off"; i.setAttribute("aria-hidden", "true"); });
+    const traps = () => ["Website", "Fax"].some((n) => (form.querySelector<HTMLInputElement>(`input[name="${n}"]`)?.value ?? "").trim());
+    const started = Date.now();
+    const msg = form.querySelector<HTMLElement>(".form-msg");
+    const say = (t: string) => { if (msg) { msg.textContent = t; msg.hidden = !t; } };
+    const maxBytes = Number(btn.dataset.maxMb || 10) * 1024 * 1024;
+    const accept = (btn.dataset.accept || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
+    const readFile = (f: File) => new Promise<string>((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1] || ""); r.onerror = () => rej(r.error); r.readAsDataURL(f); });
     const update = () => { if (btn.dataset.state === "default" || btn.dataset.state === "disabled") btn.dataset.state = form.checkValidity() ? "default" : "disabled"; };
     form.addEventListener("input", update);
     form.addEventListener("change", update);
@@ -59,7 +81,17 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!form.reportValidity() || btn.dataset.state === "loading") return;
-      if (hp.value) { btn.dataset.state = "success"; return; }
+      say("");
+      // bots: fake success, send nothing
+      if (hp.value || traps() || Date.now() - started < 3000) { btn.dataset.state = "success"; return; }
+      const fileInput = form.querySelector<HTMLInputElement>('input[type="file"]');
+      const file = fileInput?.files?.[0];
+      if (file) {
+        const ext = "." + (file.name.split(".").pop() || "").toLowerCase();
+        if (accept.length && !accept.includes(ext)) { say(`Please attach an ${accept.join(", ")} file.`); return; }
+        if (file.size > maxBytes) { say(`That file is over ${btn.dataset.maxMb} MB. Please attach a smaller file or email it to us.`); return; }
+      }
+      if (btn.dataset.turnstile && !String(new FormData(form).get("cf-turnstile-response") || "")) { say("Please wait a moment for the security check, then submit again."); return; }
       const endpoint = btn.dataset.endpoint;
       if (!endpoint) {
         btn.dataset.state = "error";
@@ -68,8 +100,13 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL } from "../config";
       }
       btn.dataset.state = "loading";
       const data = new URLSearchParams();
-      new FormData(form).forEach((v, k) => { if (k !== "website") data.append(k.trim(), String(v)); });
+      new FormData(form).forEach((v, k) => { if (k !== "website" && !(v instanceof File)) data.append(k.trim(), String(v)); });
       data.append("page", location.pathname);
+      data.append("elapsed", String(Date.now() - started));
+      if (file) {
+        try { data.append("fileData", await readFile(file)); data.append("fileName", file.name); data.append("fileType", file.type || "application/octet-stream"); }
+        catch { say("We couldn't read that file. Please try again or email it to us."); btn.dataset.state = "default"; return; }
+      }
       try {
         // Apps Script web apps do not send CORS headers; no-cors posts still deliver.
         await fetch(endpoint, { method: "POST", mode: "no-cors", body: data });

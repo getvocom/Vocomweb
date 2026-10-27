@@ -18,9 +18,9 @@ var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I A
 // Only asked when Use Case is "Fiber Optic". Stored after the Page column so existing columns don't move.
 var FIBER_FIELDS = ['Fiber Count', 'Fiber Type', 'Rating', 'Footage', 'Needed By'];
 var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-// Cloudflare Turnstile secret key (Cloudflare dashboard -> Turnstile -> the vocom.ai widget).
-// Leave empty until the matching site key is in src/config.ts (TURNSTILE_SITE_KEY).
-var TURNSTILE_SECRET = '';
+// Cloudflare Turnstile secret key. Kept out of the code (this file is in the repo): set it in
+// Apps Script -> Project Settings -> Script Properties as TURNSTILE_SECRET. Empty = check skipped.
+var TURNSTILE_SECRET = PropertiesService.getScriptProperties().getProperty('TURNSTILE_SECRET') || '';
 // Drive folder for requirements spreadsheets attached to quote requests (created on first use).
 var ATTACH_FOLDER = 'vocom.ai quote attachments';
 var ATTACH_TYPES = /\.(xlsx|xls|csv|pdf)$/i;
@@ -51,7 +51,14 @@ function quote(p) {
   var company = (p['Company'] || '').trim();
   if (!name || !company || !EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
   if (p.page !== '/contact-vocomai') return json({ result: 'error', error: 'bad origin' });
-  if (TURNSTILE_SECRET && !turnstileOk(p['cf-turnstile-response'])) return json({ result: 'error', error: 'verification failed' });
+  // Turnstile: a token that fails is rejected. With no token at all (the widget could not load for
+  // that visitor) the request is kept but flagged, so a real lead is never lost.
+  var unverified = false;
+  if (TURNSTILE_SECRET) {
+    var token = p['cf-turnstile-response'];
+    if (token && !turnstileOk(token)) return json({ result: 'error', error: 'verification failed' });
+    unverified = !token;
+  }
 
   var file = attachment(p, name, company);
 
@@ -66,7 +73,7 @@ function quote(p) {
 
   var mail = {
     to: NOTIFY_EMAIL,
-    subject: 'New quote request: ' + name + ' (' + company + ')',
+    subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + name + ' (' + company + ')',
     body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
       (file ? '\nRequirements file: ' + file.getName() + ' (' + file.getUrl() + ')' : '') +
       '\n\nPage: https://www.vocom.ai' + (p.page || ''),

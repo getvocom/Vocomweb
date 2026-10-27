@@ -11,7 +11,7 @@ export const QUOTE_FORM_FALLBACK_EMAIL = "";
 // Turnstile -> Add widget, hostnames www.vocom.ai and vocomweb.kevin-9ff.workers.dev, mode
 // "Invisible" or "Managed". Paste its Site Key here and its Secret Key into TURNSTILE_SECRET in
 // apps-script/Code.gs. Empty = not shown (the honeypot and timing checks still run).
-export const TURNSTILE_SITE_KEY = "";
+export const TURNSTILE_SITE_KEY = "0x4AAAAAAFn2h6vnUEZMTnD3";
 
 // Requirements file on the quote form: accepted types and maximum size.
 export const QUOTE_FILE = { accept: ".xlsx,.xls,.csv,.pdf", maxMB: 10 };

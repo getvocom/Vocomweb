@@ -10,8 +10,9 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
 ---
 {TURNSTILE_SITE_KEY && (
   <>
-    <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    <div class="cf-turnstile turnstile-slot" data-sitekey={TURNSTILE_SITE_KEY} data-appearance="interaction-only" data-size="flexible"></div>
+    <script is:inline>window.vocomTurnstileFailed = function () { window.__turnstileFailed = true; };</script>
+    <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer onerror="window.__turnstileFailed=true"></script>
+    <div class="cf-turnstile turnstile-slot" data-sitekey={TURNSTILE_SITE_KEY} data-appearance="interaction-only" data-size="flexible" data-error-callback="vocomTurnstileFailed"></div>
   </>
 )}
 <p class="form-msg" role="alert" hidden></p>
@@ -91,7 +92,10 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
         if (accept.length && !accept.includes(ext)) { say(`Please attach an ${accept.join(", ")} file.`); return; }
         if (file.size > maxBytes) { say(`That file is over ${btn.dataset.maxMb} MB. Please attach a smaller file or email it to us.`); return; }
       }
-      if (btn.dataset.turnstile && !String(new FormData(form).get("cf-turnstile-response") || "")) { say("Please wait a moment for the security check, then submit again."); return; }
+      // If Turnstile itself fails (blocked script, network, Cloudflare outage) the request still goes
+      // through, flagged "unavailable", so a real lead is never lost; Code.gs marks it unverified.
+      const tsFailed = !!(window as any).__turnstileFailed;
+      if (btn.dataset.turnstile && !tsFailed && !String(new FormData(form).get("cf-turnstile-response") || "")) { say("Please wait a moment for the security check, then submit again."); return; }
       const endpoint = btn.dataset.endpoint;
       if (!endpoint) {
         btn.dataset.state = "error";
@@ -103,6 +107,7 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
       new FormData(form).forEach((v, k) => { if (k !== "website" && !(v instanceof File)) data.append(k.trim(), String(v)); });
       data.append("page", location.pathname);
       data.append("elapsed", String(Date.now() - started));
+      if (tsFailed) data.append("turnstile", "unavailable");
       if (file) {
         try { data.append("fileData", await readFile(file)); data.append("fileName", file.name); data.append("fileType", file.type || "application/octet-stream"); }
         catch { say("We couldn't read that file. Please try again or email it to us."); btn.dataset.state = "default"; return; }

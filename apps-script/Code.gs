@@ -21,6 +21,9 @@ var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Cloudflare Turnstile secret key. Kept out of the code (this file is in the repo): set it in
 // Apps Script -> Project Settings -> Script Properties as TURNSTILE_SECRET. Empty = check skipped.
 var TURNSTILE_SECRET = PropertiesService.getScriptProperties().getProperty('TURNSTILE_SECRET') || '';
+// Server-side Turnstile check needs the "external requests" permission. Until it has been granted
+// (run authorize() once), keep this false: the check still runs in the visitor's browser.
+var VERIFY_TURNSTILE_ON_SERVER = false;
 // Drive folder for requirements spreadsheets attached to quote requests (created on first use).
 var ATTACH_FOLDER = 'vocom.ai quote attachments';
 var ATTACH_TYPES = /\.(xlsx|xls|csv|pdf)$/i;
@@ -56,20 +59,22 @@ function quote(p) {
   var unverified = false;
   if (TURNSTILE_SECRET) {
     var token = p['cf-turnstile-response'];
-    var check = token ? turnstileOk(token) : null; // true, false, or null if Cloudflare couldn't be reached
+    var check = !token ? null : VERIFY_TURNSTILE_ON_SERVER ? turnstileOk(token) : true; // true, false, or null if unchecked
     if (check === false) return json({ result: 'error', error: 'verification failed' });
     unverified = check !== true;
   }
 
+  // Requirements file: always attached to the email; also saved to Drive when Drive access is granted.
+  var blob = attachmentBlob(p, name, company);
   var file = null;
-  try { file = attachment(p, name, company); } catch (err) { console.error('Attachment failed: ' + err); }
+  if (blob) { try { file = saveToDrive(blob); } catch (err) { console.error('Drive save failed: ' + err); } }
 
   var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']));
   var row = [new Date()];
   QUOTE_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   row.push(p.page || '');
   FIBER_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
-  row.push(file ? file.getUrl() : '');
+  row.push(file ? file.getUrl() : blob ? 'Emailed: ' + blob.getName() : '');
   sheet.appendRow(row);
   var fiber = FIBER_FIELDS.filter(function (f) { return p[f]; });
 
@@ -77,12 +82,12 @@ function quote(p) {
     to: NOTIFY_EMAIL,
     subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + name + ' (' + company + ')',
     body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
-      (file ? '\nRequirements file: ' + file.getName() + ' (' + file.getUrl() + ')' : '') +
+      (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : '') +
       '\n\nPage: https://www.vocom.ai' + (p.page || ''),
     replyTo: email,
     name: 'vocom.ai Website',
   };
-  if (file) mail.attachments = [file.getBlob()];
+  if (blob) mail.attachments = [blob];
   MailApp.sendEmail(mail);
   return json({ result: 'success' });
 }
@@ -111,16 +116,21 @@ function authorize() {
   console.log('All permissions granted.');
 }
 
-// Saves an uploaded requirements file (sent as base64) to the Drive folder. Returns the file or null.
-function attachment(p, name, company) {
+// Turns an uploaded requirements file (sent as base64) into a named blob. Returns null if none or invalid.
+function attachmentBlob(p, name, company) {
   if (!p.fileData || !p.fileName || !ATTACH_TYPES.test(p.fileName)) return null;
   var bytes = Utilities.base64Decode(p.fileData);
   if (bytes.length > ATTACH_MAX_BYTES) return null;
-  var folders = DriveApp.getFoldersByName(ATTACH_FOLDER);
-  var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(ATTACH_FOLDER);
   var stamp = Utilities.formatDate(new Date(), 'UTC', 'yyyy-MM-dd');
   var clean = (stamp + ' ' + company + ' ' + name + ' - ' + p.fileName).replace(/[\\/:*?"<>|]/g, '-');
-  return folder.createFile(Utilities.newBlob(bytes, p.fileType || 'application/octet-stream', clean));
+  return Utilities.newBlob(bytes, p.fileType || 'application/octet-stream', clean);
+}
+
+// Saves the blob to the Drive folder (needs Drive access; see authorize()).
+function saveToDrive(blob) {
+  var folders = DriveApp.getFoldersByName(ATTACH_FOLDER);
+  var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(ATTACH_FOLDER);
+  return folder.createFile(blob);
 }
 
 function newsletter(p) {

@@ -56,11 +56,13 @@ function quote(p) {
   var unverified = false;
   if (TURNSTILE_SECRET) {
     var token = p['cf-turnstile-response'];
-    if (token && !turnstileOk(token)) return json({ result: 'error', error: 'verification failed' });
-    unverified = !token;
+    var check = token ? turnstileOk(token) : null; // true, false, or null if Cloudflare couldn't be reached
+    if (check === false) return json({ result: 'error', error: 'verification failed' });
+    unverified = check !== true;
   }
 
-  var file = attachment(p, name, company);
+  var file = null;
+  try { file = attachment(p, name, company); } catch (err) { console.error('Attachment failed: ' + err); }
 
   var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']));
   var row = [new Date()];
@@ -85,15 +87,28 @@ function quote(p) {
   return json({ result: 'success' });
 }
 
-// Checks the Turnstile token with Cloudflare.
+// Checks the Turnstile token with Cloudflare: true (human), false (rejected), or null when
+// Cloudflare can't be reached or the script lacks permission, so the lead is kept as unverified.
 function turnstileOk(token) {
-  if (!token) return false;
-  var res = UrlFetchApp.fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-    method: 'post',
-    payload: { secret: TURNSTILE_SECRET, response: token },
-    muteHttpExceptions: true,
-  });
-  try { return JSON.parse(res.getContentText()).success === true; } catch (err) { return false; }
+  try {
+    var res = UrlFetchApp.fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'post',
+      payload: { secret: TURNSTILE_SECRET, response: token },
+      muteHttpExceptions: true,
+    });
+    if (res.getResponseCode() !== 200) return null;
+    return JSON.parse(res.getContentText()).success === true;
+  } catch (err) {
+    console.error('Turnstile check failed: ' + err);
+    return null;
+  }
+}
+
+// Run this once from the editor (select "authorize", then Run) to grant every permission the
+// script needs: Sheets, Gmail, Drive (attachments) and external requests (Turnstile).
+function authorize() {
+  ScriptApp.requireAllScopes(ScriptApp.AuthMode.FULL);
+  console.log('All permissions granted.');
 }
 
 // Saves an uploaded requirements file (sent as base64) to the Drive folder. Returns the file or null.

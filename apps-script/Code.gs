@@ -17,6 +17,10 @@ var NOTIFY_ON_NEWSLETTER = false; // set true to get an email for every newslett
 var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I Am A', 'Message'];
 // Only asked when Use Case is "Fiber Optic". Stored after the Page column so existing columns don't move.
 var FIBER_FIELDS = ['Fiber Count', 'Fiber Type', 'Rating', 'Footage', 'Needed By'];
+// Added 2026-10-27 at the end of the Quotes tab so earlier columns don't move.
+var EXTRA_FIELDS = ['Delivery Location'];
+// Personal mailbox domains: such leads are kept, just flagged "Free Email: Yes" in the sheet and email.
+var FREE_EMAIL_RE = /@(gmail\.com|googlemail\.com|yahoo\.(com|ca|co\.uk|com\.\w+)|ymail\.com|hotmail\.(com|ca|co\.uk|fr|de)|outlook\.(com|ca|co\.uk)|live\.(com|ca|co\.uk)|msn\.com|aol\.com|icloud\.com|me\.com|mac\.com|proton\.me|protonmail\.com|gmx\.(com|net|de)|mail\.com|yandex\.(com|ru)|zoho\.com|qq\.com|163\.com|126\.com)$/i;
 var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Cloudflare Turnstile secret key. Kept out of the code (this file is in the repo): set it in
 // Apps Script -> Project Settings -> Script Properties as TURNSTILE_SECRET. Empty = check skipped.
@@ -37,6 +41,7 @@ function doPost(e) {
     // Spam traps (bots get a normal-looking success, nothing is saved or sent):
     // the hidden "website", "Website" and "Fax" fields are never visible to people,
     // and a real person takes more than 3 seconds to fill in a form.
+    // Only a real save replies saved: true, which triggers the Google Ads conversion on the website.
     if (p.website || p['Website'] || p['Fax']) return json({ result: 'success' });
     if (p.elapsed && Number(p.elapsed) < 3000) return json({ result: 'success' });
     if (p.form === 'newsletter') return newsletter(p);
@@ -69,19 +74,23 @@ function quote(p) {
   var file = null;
   if (blob) { try { file = saveToDrive(blob); } catch (err) { console.error('Drive save failed: ' + err); } }
 
-  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']));
+  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']).concat(EXTRA_FIELDS).concat(['Free Email']));
   var row = [new Date()];
   QUOTE_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   row.push(p.page || '');
   FIBER_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   row.push(file ? file.getUrl() : blob ? 'Emailed: ' + blob.getName() : '');
+  EXTRA_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
+  var free = FREE_EMAIL_RE.test(email);
+  row.push(free ? 'Yes' : '');
   sheet.appendRow(row);
-  var fiber = FIBER_FIELDS.filter(function (f) { return p[f]; });
+  var fiber = FIBER_FIELDS.concat(EXTRA_FIELDS).filter(function (f) { return p[f]; });
 
   var mail = {
     to: NOTIFY_EMAIL,
     subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + name + ' (' + company + ')',
     body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
+      (free ? '\nFree Email: Yes (personal mailbox, not a company domain)' : '') +
       (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : '') +
       '\n\nPage: https://www.vocom.ai' + (p.page || ''),
     replyTo: email,
@@ -89,7 +98,7 @@ function quote(p) {
   };
   if (blob) mail.attachments = [blob];
   MailApp.sendEmail(mail);
-  return json({ result: 'success' });
+  return json({ result: 'success', saved: true });
 }
 
 // Checks the Turnstile token with Cloudflare: true (human), false (rejected), or null when

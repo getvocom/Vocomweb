@@ -8,6 +8,7 @@ import NewsletterPopup from "../components/NewsletterPopup.astro";
 import { headFor, splitJsonLd, type HeadData } from "../lib/head";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { NAV } from "../lib/nav";
+import { GOOGLE_ADS_ID } from "../config";
 
 interface Props {
   path: string;
@@ -42,7 +43,7 @@ else if (path !== "/" && !path.startsWith("/products/") && path !== "/case-studi
     {pageLd.map((j) => <script type="application/ld+json" set:html={j} />)}
     {crumbs && <Breadcrumbs items={crumbs} visible={false} />}
 
-    <!-- Google Analytics 4 (G-YYWN6PCL75) -->
+    <!-- Google Analytics 4 (G-YYWN6PCL75) + Google Ads (same gtag.js, loaded once) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYWN6PCL75"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -50,6 +51,7 @@ else if (path !== "/" && !path.startsWith("/products/") && path !== "/case-studi
       gtag('js', new Date());
       gtag('config', 'G-YYWN6PCL75');
     </script>
+    <script is:inline define:vars={{ adsId: GOOGLE_ADS_ID }}>gtag('config', adsId);</script>
     <!-- Google Tag Manager (GTM-MWPWLP7Z) -->
     <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

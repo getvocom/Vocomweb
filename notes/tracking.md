@@ -11,6 +11,7 @@ These are the scripts found on all 114 live pages. They're carried over with the
 | Metricool | hash a510ea6b2f7a6b3e8cf12a619c234f76 | `<img>` at end of `<body>` | Same (1×1, invisible) |
 | Framer Analytics | events.framer.com | Framer runtime | **Removed.** It only works on Framer hosting; Framer's analytics dashboard stops at cut-over |
 | Quote form event | dataLayer `form-submission` | Framer form tracking ID | Pushed on successful submit |
+| Google Ads (added 2026-10-27) | AW-18539470653, conversion AW-18539470653/RST8CJmhkasdEL2-p4hF | Not on Framer yet (snippets in `notes/google-ads.md`) | `config` on every page via the GA4 gtag.js; conversion only after a confirmed quote save. See `notes/google-ads.md` |
 
 ## Questions for Tom
 

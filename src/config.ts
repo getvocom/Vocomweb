@@ -13,6 +13,11 @@ export const QUOTE_FORM_FALLBACK_EMAIL = "";
 // apps-script/Code.gs. Empty = not shown (the honeypot and timing checks still run).
 export const TURNSTILE_SITE_KEY = "0x4AAAAAAFn2h6vnUEZMTnD3";
 
+// Google Ads (Tom, 2026-10-27). The Ads tag rides on the GA4 gtag.js in Base.astro (loaded once).
+// The lead conversion fires only after the Apps Script confirms a quote was saved (SubmitButton.astro).
+export const GOOGLE_ADS_ID = "AW-18539470653";
+export const GOOGLE_ADS_LEAD_CONVERSION = "AW-18539470653/RST8CJmhkasdEL2-p4hF";
+
 // Requirements file on the quote form: accepted types and maximum size.
 export const QUOTE_FILE = { accept: ".xlsx,.xls,.csv,.pdf", maxMB: 10 };
 

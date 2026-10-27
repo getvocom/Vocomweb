@@ -6,7 +6,10 @@
 // Spam protection: a hidden honeypot field, Framer's hidden decoy fields, a minimum fill time,
 // and Cloudflare Turnstile when TURNSTILE_SITE_KEY is set (checked again in apps-script/Code.gs).
 // An optional requirements file (input name "Requirements File") is sent base64-encoded.
-import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FILE } from "../config";
+// The Google Ads lead conversion (and GA4 generate_lead) fire only when the script replies
+// { result: "success", saved: true }: never for bots, rejected or failed submissions.
+// No form values are sent to Google.
+import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FILE, GOOGLE_ADS_LEAD_CONVERSION } from "../config";
 ---
 {TURNSTILE_SITE_KEY && (
   <>
@@ -16,7 +19,7 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
   </>
 )}
 <p class="form-msg" role="alert" hidden></p>
-<button type="submit" class="submit-btn" data-state="disabled" data-endpoint={QUOTE_FORM_URL} data-fallback={QUOTE_FORM_FALLBACK_EMAIL} data-turnstile={TURNSTILE_SITE_KEY ? "1" : ""} data-max-mb={QUOTE_FILE.maxMB} data-accept={QUOTE_FILE.accept}>
+<button type="submit" class="submit-btn" data-state="disabled" data-endpoint={QUOTE_FORM_URL} data-fallback={QUOTE_FORM_FALLBACK_EMAIL} data-turnstile={TURNSTILE_SITE_KEY ? "1" : ""} data-max-mb={QUOTE_FILE.maxMB} data-accept={QUOTE_FILE.accept} data-conversion={GOOGLE_ADS_LEAD_CONVERSION}>
   <p class="label default">Submit</p>
   <p class="label success">Thank you</p>
   <p class="label error">Something went wrong</p>
@@ -75,13 +78,25 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
     const maxBytes = Number(btn.dataset.maxMb || 10) * 1024 * 1024;
     const accept = (btn.dataset.accept || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
     const readFile = (f: File) => new Promise<string>((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1] || ""); r.onerror = () => rej(r.error); r.readAsDataURL(f); });
+    // Google Ads conversion + GA4 lead, once per saved quote. Resolves when Google confirms
+    // (event_callback) or after 1s, so a blocked tag never holds up the redirect.
+    const reportLead = () => new Promise<void>((done) => {
+      const gtag = (window as any).gtag;
+      if (typeof gtag !== "function" || !btn.dataset.conversion) return done();
+      const id = typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+      const timer = setTimeout(done, 1000);
+      try {
+        gtag("event", "generate_lead", { send_to: "G-YYWN6PCL75", form_id: "quote_request", page_path: location.pathname });
+        gtag("event", "conversion", { send_to: btn.dataset.conversion, transaction_id: id, event_callback: () => { clearTimeout(timer); done(); } });
+      } catch { clearTimeout(timer); done(); }
+    });
     const update = () => { if (btn.dataset.state === "default" || btn.dataset.state === "disabled") btn.dataset.state = form.checkValidity() ? "default" : "disabled"; };
     form.addEventListener("input", update);
     form.addEventListener("change", update);
     update();
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      if (!form.reportValidity() || btn.dataset.state === "loading") return;
+      if (!form.reportValidity() || btn.dataset.state === "loading" || btn.dataset.state === "success") return;
       say("");
       // bots: fake success, send nothing
       if (hp.value || traps() || Date.now() - started < 3000) { btn.dataset.state = "success"; return; }
@@ -113,14 +128,18 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
         catch { say("We couldn't read that file. Please try again or email it to us."); btn.dataset.state = "default"; return; }
       }
       try {
-        // Apps Script web apps do not send CORS headers; no-cors posts still deliver.
-        await fetch(endpoint, { method: "POST", mode: "no-cors", body: data });
+        // The Apps Script reply is readable (CORS), so success means the quote was saved.
+        const res = await fetch(endpoint, { method: "POST", body: data });
+        const reply = await res.json().catch(() => ({}));
+        if (reply.result !== "success") throw new Error(reply.error || `HTTP ${res.status}`);
         btn.dataset.state = "success";
         live.textContent = "Thank you";
         window.dispatchEvent(new CustomEvent("quote-form-submitted"));
         (window as any).dataLayer?.push({ event: "form-submission" });
-        // after a successful quote request, send the visitor to the resources page (Tom, 2026-10-22)
-        setTimeout(() => { location.href = "/resources"; }, 1200);
+        // after a successful quote request, send the visitor to the resources page (Tom, 2026-10-22),
+        // once the conversion has been sent (or after 1s)
+        const sent = reply.saved === true ? reportLead() : Promise.resolve();
+        Promise.all([sent, new Promise((r) => setTimeout(r, 1200))]).then(() => { location.href = "/resources"; });
       } catch {
         btn.dataset.state = "error";
         live.textContent = "Something went wrong";

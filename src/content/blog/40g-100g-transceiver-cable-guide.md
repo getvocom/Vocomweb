@@ -3,8 +3,8 @@ slug: "40g-100g-transceiver-cable-guide"
 order: 42
 cardTitle: "40G and 100G Optics: Which MPO or LC Cable Each One Needs"
 image:
-  src: "/assets/img/hero/data-center-fiber-connectivity-1920.jpg"
-  alt: "MPO trunks and LC patch cords at a data center rack (illustrative render)"
+  src: "/assets/img/blog-40g-100g-transceiver-cable-guide-5aae96.jpg"
+  alt: "A beam of light splitting into a spectrum, with the title 40G and 100G Optics: Which MPO or LC Cable Each One Needs"
 showOnHomepage: true
 industry: "Data Center"
 product: "Transceivers and MPO Cable"

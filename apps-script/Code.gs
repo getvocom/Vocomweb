@@ -25,9 +25,9 @@ var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Cloudflare Turnstile secret key. Kept out of the code (this file is in the repo): set it in
 // Apps Script -> Project Settings -> Script Properties as TURNSTILE_SECRET. Empty = check skipped.
 var TURNSTILE_SECRET = PropertiesService.getScriptProperties().getProperty('TURNSTILE_SECRET') || '';
-// Server-side Turnstile check needs the "external requests" permission. Until it has been granted
-// (run authorize() once), keep this false: the check still runs in the visitor's browser.
-var VERIFY_TURNSTILE_ON_SERVER = false;
+// Server-side Turnstile check needs the "external requests" permission (granted 2026-10-30 via
+// authorize()). Set false to fall back to the browser-only check.
+var VERIFY_TURNSTILE_ON_SERVER = true;
 // Drive folder for requirements spreadsheets attached to quote requests (created on first use).
 var ATTACH_FOLDER = 'vocom.ai quote attachments';
 var ATTACH_TYPES = /\.(xlsx|xls|csv|pdf)$/i;

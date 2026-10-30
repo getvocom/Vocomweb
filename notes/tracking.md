@@ -5,6 +5,7 @@ These are the scripts found on all 114 live pages. They're carried over with the
 | Tool | ID | Live placement | Rebuild |
 |---|---|---|---|
 | Google Analytics 4 | G-YYWN6PCL75 | `<head>` (gtag.js + config) | Same, in `<head>` |
+| Google Analytics 4, second property (added 2026-10-30) | G-RXM702SP0M | Not on Framer | Extra `config` on the same gtag.js (not loaded twice); also receives `generate_lead` |
 | Google Tag Manager | GTM-MWPWLP7Z | `<head>` custom code | Same, in `<head>` |
 | LinkedIn Insight Tag | partner 8874748 | `<head>`, **installed twice** | Installed **once** (the second copy only re-registered the same partner ID) |
 | LinkedIn conversion pixel | pid 8874748, conversionId 24546316 | `<img>` at end of `<body>` on every page | Same |

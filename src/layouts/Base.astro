@@ -43,13 +43,14 @@ else if (path !== "/" && !path.startsWith("/products/") && path !== "/case-studi
     {pageLd.map((j) => <script type="application/ld+json" set:html={j} />)}
     {crumbs && <Breadcrumbs items={crumbs} visible={false} />}
 
-    <!-- Google Analytics 4 (G-YYWN6PCL75) + Google Ads (same gtag.js, loaded once) -->
+    <!-- Google Analytics 4 (G-YYWN6PCL75, plus G-RXM702SP0M added 2026-10-30) + Google Ads (same gtag.js, loaded once) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYWN6PCL75"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){window.dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-YYWN6PCL75');
+      gtag('config', 'G-RXM702SP0M');
     </script>
     <script is:inline define:vars={{ adsId: GOOGLE_ADS_ID }}>gtag('config', adsId);</script>
     <!-- Google Tag Manager (GTM-MWPWLP7Z) -->

@@ -86,7 +86,7 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
       const id = typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
       const timer = setTimeout(done, 1000);
       try {
-        gtag("event", "generate_lead", { send_to: "G-YYWN6PCL75", form_id: "quote_request", page_path: location.pathname });
+        gtag("event", "generate_lead", { send_to: ["G-YYWN6PCL75", "G-RXM702SP0M"], form_id: "quote_request", page_path: location.pathname });
         gtag("event", "conversion", { send_to: btn.dataset.conversion, transaction_id: id, event_callback: () => { clearTimeout(timer); done(); } });
       } catch { clearTimeout(timer); done(); }
     });

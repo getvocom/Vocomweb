@@ -68,3 +68,15 @@
 .xbbzkyj{flex:1 0 0px;width:1px}
 .xsdjazi{width:390px;height:310px}
 }
+/* Two-step quote form (2026-11-01): step 2 (optional full spec) replaces step 1 once it is saved */
+.quote-step-1[hidden],.quote-step-2[hidden]{display:none}
+.quote-step-2{scroll-margin-top:96px}
+.quote-step-2 .step-head{display:flex;flex-direction:column;gap:6px;width:100%}
+.quote-step-2 .step-title{margin:0;font-family:var(--font-sans);font-size:18px;font-weight:600;line-height:1.3;color:var(--color-vocom)}
+.quote-step-2 .step-body{margin:0;font-family:var(--font-sans);font-size:14px;line-height:1.45;color:var(--color-text-muted)}
+.quote-step-2 .step-actions{display:flex;align-items:center;gap:16px;width:100%}
+.quote-step-2 .details-btn{flex:1;height:40px;border:0;border-radius:10px;padding:0 16px;cursor:pointer;background:var(--color-vocom);color:var(--white);font-family:var(--font-sans);font-size:14px;font-weight:600;transition:background-color .2s}
+.quote-step-2 .details-btn:hover{background:var(--color-vocom-cta-1)}
+.quote-step-2 .details-btn:disabled{cursor:unset;opacity:.7}
+.quote-step-2 .details-skip{font-family:var(--font-sans);font-size:14px;color:var(--color-vocom);text-decoration:underline}
+.quote-step-2 .form-msg{width:100%;margin:0;font-size:13px;line-height:1.4;color:var(--color-error)}

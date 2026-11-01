@@ -38,6 +38,8 @@
   --color-maroon: rgb(60, 2, 24);
   --color-vocom-dark: rgb(21, 2, 8);
   --color-neutral-medium: rgb(109, 109, 109);
+  --color-text-muted: #5a5a5a; /* helper and note text */
+  --color-error: rgb(185, 28, 28); /* form error messages */
   --color-vocom-white: rgb(252, 235, 243);
   --color-vocom-light: rgb(159, 37, 65);
   --color-white-7pct: rgba(255, 255, 255, 0.07);

@@ -130,3 +130,12 @@ Tom: website leads go only to kevin@getvocom.com (the one inbox he manages). The
 
 Product and category images are Vocom renders, not photos of supplied stock. Each carries a visible "Illustrative render" label and "(illustrative render)" in its alt text (Tom asked for this). Product renders are 406px, cut from the Canva board export; for sharper images on high-resolution screens, swap in the 1264px Canva originals (same file names, `public/assets/img/products/`). Hero renders (1680px) are on /data-center-fiber-cabling (VC-104), /air-blown-micro-fiber-cable (VC-109), /ftth-drop-cable (VC-108, new frame) and the /fiber-optic-cables card (VC-105). VC-110 is saved but unused.
 - 2026-10-23: 4K renders (Vocom-Renders-4K.zip) replaced the board crops. `node scripts/render-images.mjs <unzipped folder>` rebuilds every size from the 4K files (products: 480/800/1200 WebP+JPG; heroes: 1280/1920/2560). Product pages use a <picture> with srcset, explicit size, priority loading, a per-product alt, the render as og:image/twitter:image (with og:image:alt and size), and an image entry in sitemap.xml. NEW-1 (indoor rollable ribbon) and NEW-2 (waterproof terminal box) are in use.
+
+## Two-step quote form on /contact-vocomai (2026-11-01): copy approved by Tom 2026-11-01; Apps Script Version 9
+
+Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case, What do you need? Step 2 (optional, after step 1 is saved) holds I am a, Company Size, the fiber questions, delivery, needed-by and the spreadsheet upload, and adds them to the same Quotes row ("Lead ID" / "Details Added" columns) with a "Spec added" email to Kevin. New or changed wording:
+- Email placeholder: "Your work email" (was "Your Email")
+- "Message" label is now "What do you need?" (required), placeholder "e.g. 144F single-mode outdoor cable, about 24,000 ft, delivered to Texas"
+- Under the Submit button: "Have a full spec or bill of materials? You can add it on the next screen."
+- Step 2 heading: "Thanks, we have your request." Body: "Add your full spec now for a faster, more accurate quote. Everything here is optional."
+- Step 2 buttons: "Add details" and "Skip" (both end on /resources, as before); error: "Something went wrong. Please try again, or email your spec to us."

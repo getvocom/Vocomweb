@@ -137,9 +137,14 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
         window.dispatchEvent(new CustomEvent("quote-form-submitted"));
         (window as any).dataLayer?.push({ event: "form-submission" });
         // after a successful quote request, send the visitor to the resources page (Tom, 2026-10-22),
-        // once the conversion has been sent (or after 1s)
+        // once the conversion has been sent (or after 1s). A form with data-next shows its optional
+        // step 2 instead (the full spec on /contact-vocomai, Tom 2026-11-01), passing the lead id.
         const sent = reply.saved === true ? reportLead() : Promise.resolve();
-        Promise.all([sent, new Promise((r) => setTimeout(r, 1200))]).then(() => { location.href = "/resources"; });
+        const next = form.dataset.next && reply.id && document.getElementById(form.dataset.next);
+        Promise.all([sent, new Promise((r) => setTimeout(r, next ? 400 : 1200))]).then(() => {
+          if (next) window.dispatchEvent(new CustomEvent("quote-step-2", { detail: { id: reply.id } }));
+          else location.href = "/resources";
+        });
       } catch {
         btn.dataset.state = "error";
         live.textContent = "Something went wrong";

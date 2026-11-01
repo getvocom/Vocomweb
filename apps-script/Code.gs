@@ -2,7 +2,9 @@
  * vocom.ai forms backend (Google Apps Script web app).
  *
  * One script handles both website forms, each writing to its own tab of one Google Sheet:
- *   - Quote form (/contact-vocomai)  -> "Quotes" tab + notification email
+ *   - Quote form (/contact-vocomai)  -> "Quotes" tab + notification email. Two steps (2026-11-01):
+ *     step 1 is the short request (gets a Lead ID); the optional step 2 ("details") adds the full
+ *     spec to the same row and sends a follow-up email.
  *   - Newsletter popup (every page)  -> "Newsletter" tab (duplicates ignored), optional email
  *
  * Deploy: Deploy -> New deployment -> Web app, Execute as: Me, Who has access: Anyone.
@@ -19,6 +21,11 @@ var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I A
 var FIBER_FIELDS = ['Fiber Count', 'Fiber Type', 'Rating', 'Footage', 'Needed By'];
 // Added 2026-10-27 at the end of the Quotes tab so earlier columns don't move.
 var EXTRA_FIELDS = ['Delivery Location'];
+// Every column of the Quotes tab, in order. Lead ID and Details Added came with the two-step form.
+var QUOTE_HEADERS = ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']).concat(EXTRA_FIELDS).concat(['Free Email', 'Lead ID', 'Details Added']);
+// Step 2 may fill these (only cells still empty) for a lead saved in the last DETAILS_HOURS hours.
+var DETAIL_FIELDS = ['I Am A', 'Company Size'].concat(FIBER_FIELDS).concat(EXTRA_FIELDS);
+var DETAILS_HOURS = 24;
 // Personal mailbox domains: such leads are kept, just flagged "Free Email: Yes" in the sheet and email.
 var FREE_EMAIL_RE = /@(gmail\.com|googlemail\.com|yahoo\.(com|ca|co\.uk|com\.\w+)|ymail\.com|hotmail\.(com|ca|co\.uk|fr|de)|outlook\.(com|ca|co\.uk)|live\.(com|ca|co\.uk)|msn\.com|aol\.com|icloud\.com|me\.com|mac\.com|proton\.me|protonmail\.com|gmx\.(com|net|de)|mail\.com|yandex\.(com|ru)|zoho\.com|qq\.com|163\.com|126\.com)$/i;
 var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -45,6 +52,7 @@ function doPost(e) {
     if (p.website || p['Website'] || p['Fax']) return json({ result: 'success' });
     if (p.elapsed && Number(p.elapsed) < 3000) return json({ result: 'success' });
     if (p.form === 'newsletter') return newsletter(p);
+    if (p.form === 'details') return details(p);
     return quote(p);
   } catch (err) {
     return json({ result: 'error', error: String(err) });
@@ -74,7 +82,8 @@ function quote(p) {
   var file = null;
   if (blob) { try { file = saveToDrive(blob); } catch (err) { console.error('Drive save failed: ' + err); } }
 
-  var sheet = tab('Quotes', ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']).concat(EXTRA_FIELDS).concat(['Free Email']));
+  var sheet = tab('Quotes', QUOTE_HEADERS);
+  var id = Utilities.getUuid();
   var row = [new Date()];
   QUOTE_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   row.push(p.page || '');
@@ -83,22 +92,70 @@ function quote(p) {
   EXTRA_FIELDS.forEach(function (f) { row.push(p[f] || ''); });
   var free = FREE_EMAIL_RE.test(email);
   row.push(free ? 'Yes' : '');
+  row.push(id, '');
   sheet.appendRow(row);
   var fiber = FIBER_FIELDS.concat(EXTRA_FIELDS).filter(function (f) { return p[f]; });
 
   var mail = {
     to: NOTIFY_EMAIL,
     subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + name + ' (' + company + ')',
-    body: QUOTE_FIELDS.concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
+    // fields left out of the short step-1 form (I Am A, Company Size) are skipped when empty
+    body: QUOTE_FIELDS.filter(function (f) { return p[f] || ['I Am A', 'Company Size'].indexOf(f) < 0; }).concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
       (free ? '\nFree Email: Yes (personal mailbox, not a company domain)' : '') +
       (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : '') +
-      '\n\nPage: https://www.vocom.ai' + (p.page || ''),
+      '\n\nPage: https://www.vocom.ai' + (p.page || '') +
+      '\nIf they add their full spec on the next screen, a "Spec added" email follows.',
     replyTo: email,
     name: 'vocom.ai Website',
   };
   if (blob) mail.attachments = [blob];
   MailApp.sendEmail(mail);
-  return json({ result: 'success', saved: true });
+  return json({ result: 'success', saved: true, id: id });
+}
+
+// Step 2: the full spec for a lead saved by quote(). Finds the row by its Lead ID, fills only empty
+// cells, and emails the additions (with any requirements file). Never creates a new row.
+function details(p) {
+  var id = String(p.id || '');
+  if (!/^[0-9a-f-]{36}$/i.test(id) || p.page !== '/contact-vocomai') return json({ result: 'error', error: 'bad request' });
+  var sheet = tab('Quotes', QUOTE_HEADERS);
+  var col = function (h) { return QUOTE_HEADERS.indexOf(h) + 1; };
+  var last = sheet.getLastRow();
+  if (last < 2) return json({ result: 'error', error: 'not found' });
+  var ids = sheet.getRange(2, col('Lead ID'), last - 1, 1).getValues();
+  var r = 0;
+  for (var i = ids.length - 1; i >= 0; i--) if (ids[i][0] === id) { r = i + 2; break; }
+  if (!r) return json({ result: 'error', error: 'not found' });
+  var row = sheet.getRange(r, 1, 1, QUOTE_HEADERS.length).getValues()[0];
+  if (new Date() - new Date(row[0]) > DETAILS_HOURS * 3600 * 1000) return json({ result: 'error', error: 'expired' });
+
+  var name = row[col('Name') - 1], company = row[col('Company') - 1], email = row[col('Email') - 1];
+  var added = [];
+  DETAIL_FIELDS.forEach(function (f) {
+    var v = String(p[f] || '').trim().slice(0, 500);
+    if (v && !row[col(f) - 1]) { sheet.getRange(r, col(f)).setValue(v); added.push(f + ': ' + v); }
+  });
+  var blob = attachmentBlob(p, name, company);
+  var file = null;
+  if (blob) {
+    try { file = saveToDrive(blob); } catch (err) { console.error('Drive save failed: ' + err); }
+    var prev = row[col('Attachment') - 1];
+    sheet.getRange(r, col('Attachment')).setValue((prev ? prev + '\n' : '') + (file ? file.getUrl() : 'Emailed: ' + blob.getName()));
+  }
+  if (!added.length && !blob) return json({ result: 'success' });
+  sheet.getRange(r, col('Details Added')).setValue(new Date());
+
+  var mail = {
+    to: NOTIFY_EMAIL,
+    subject: 'Spec added: ' + name + ' (' + company + ')',
+    body: 'Full spec added to the quote request from ' + name + ' (' + company + ').\n\n' + added.join('\n') +
+      (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : ''),
+    name: 'vocom.ai Website',
+  };
+  if (EMAIL_RE.test(String(email))) mail.replyTo = String(email);
+  if (blob) mail.attachments = [blob];
+  MailApp.sendEmail(mail);
+  return json({ result: 'success' });
 }
 
 // Checks the Turnstile token with Cloudflare: true (human), false (rejected), or null when

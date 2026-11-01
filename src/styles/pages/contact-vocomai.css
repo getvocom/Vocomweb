@@ -80,3 +80,10 @@
 .quote-step-2 .details-btn:disabled{cursor:unset;opacity:.7}
 .quote-step-2 .details-skip{font-family:var(--font-sans);font-size:14px;color:var(--color-vocom);text-decoration:underline}
 .quote-step-2 .form-msg{width:100%;margin:0;font-size:13px;line-height:1.4;color:var(--color-error)}
+/* Step 2: catalog and booking links, same wording and links as /resources */
+.quote-step-2 .step-links{display:flex;flex-direction:column;gap:10px;width:100%}
+.quote-step-2 .step-link{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:10px;background:var(--color-field-bg);text-decoration:none;font-family:var(--font-sans)}
+.quote-step-2 .step-link:hover{background:rgba(187, 187, 187, 0.3)}
+.quote-step-2 .step-link-title{font-size:14px;font-weight:600;color:var(--color-vocom)}
+.quote-step-2 .step-link-body{font-size:13px;line-height:1.45;color:var(--color-text-muted)}
+.quote-step-2 .step-link-cta{font-size:13px;font-weight:600;color:var(--color-vocom);text-decoration:underline}

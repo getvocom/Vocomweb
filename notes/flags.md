@@ -139,3 +139,4 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Under the Submit button: "Have a full spec or bill of materials? You can add it on the next screen."
 - Step 2 heading: "Thanks, we have your request." Body: "Add your full spec now for a faster, more accurate quote. Everything here is optional."
 - Step 2 buttons: "Add details" and "Skip" (both end on /resources, as before); error: "Something went wrong. Please try again, or email your spec to us."
+- 2026-11-01: step 2 also shows the catalog and booking links, using the /resources wording and links (Tom). The only new words are the "Book a call" link label.

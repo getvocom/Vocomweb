@@ -52,3 +52,6 @@
 .x1z6ani{flex-direction:column;flex:none;width:100%}
 .xkydvn6{flex:none;width:100%}
 }
+
+/* Long card titles wrap inside their own card instead of running into the next one (2026-11-03) */
+.xjwpfji>.xqbkdlg{white-space:normal;flex:1 1 auto;min-width:0;overflow-wrap:break-word}

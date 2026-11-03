@@ -2,14 +2,19 @@
 // Real event photo (not a render): Kevin Huang at the Nanjing Wasin Fujikura stand, ISE EXPO 2026.
 // From Kevin's LinkedIn post (Aug 2026); the people pictured agreed to its use.
 // `heading` adds a section title; `compact` is the smaller version used beside calls to action.
-interface Props { heading?: string; compact?: boolean; eager?: boolean }
-const { heading, compact = false, eager = false } = Astro.props;
+// `withVictor` adds Victor Huang with Supermicro's CEO beside it (/about only; approved by Tom 2026-11-03).
+interface Props { heading?: string; compact?: boolean; eager?: boolean; withVictor?: boolean }
+const { heading, compact = false, eager = false, withVictor = false } = Astro.props;
+const v = "/assets/img/photos/victor-huang-with-supermicro-ceo-san-francisco";
+const vset = (e: string) => [640, 1024, 1200].map((w) => `${v}-${w}.${e} ${w}w`).join(", ");
+const vsizes = "(max-width: 809.98px) 92vw, 440px";
 const b = "/assets/img/photos/kevin-huang-ise-expo-2026-wasin-fujikura-stand";
 const set = (e: string) => [640, 1024, 1600].map((w) => `${b}-${w}.${e} ${w}w`).join(", ");
-const sizes = compact ? "(max-width: 809.98px) 92vw, 520px" : "(max-width: 999.98px) 92vw, 900px";
+const sizes = compact ? "(max-width: 809.98px) 92vw, 520px" : withVictor ? "(max-width: 809.98px) 92vw, 440px" : "(max-width: 999.98px) 92vw, 900px";
 ---
 <section class={`tsp${compact ? " compact" : ""}`}>
   {heading && <h2 class="tsp-h">{heading}</h2>}
+  <div class={withVictor ? "tsp-pair" : "tsp-one"}>
   <figure>
     <picture>
       <source type="image/webp" srcset={set("webp")} sizes={sizes} />
@@ -17,12 +22,24 @@ const sizes = compact ? "(max-width: 809.98px) 92vw, 520px" : "(max-width: 999.9
     </picture>
     <figcaption>Kevin Huang, CEO of Vocom AI (right), with Gil Hunter at the Nanjing Wasin Fujikura (NWF) stand at ISE EXPO 2026 in Nashville. NWF is one of the tier 1 manufacturers behind the cable we supply.</figcaption>
   </figure>
+  {withVictor && (
+    <figure>
+      <picture>
+        <source type="image/webp" srcset={vset("webp")} sizes={vsizes} />
+        <img src={`${v}-1024.jpg`} srcset={vset("jpg")} sizes={vsizes} width="1200" height="900" alt="Victor Huang (left), Founder and CEO of Vocom International, with Supermicro’s CEO in San Francisco" loading="lazy" decoding="async" />
+      </picture>
+      <figcaption>Victor Huang, Founder and CEO of Vocom International, with Supermicro’s CEO in San Francisco.</figcaption>
+    </figure>
+  )}
+  </div>
 </section>
 
 <style>
   .tsp { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 18px; }
   .tsp.compact { max-width: 520px; padding: 0; }
   .tsp-h { font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.02em; color: var(--ink-900); text-align: center; }
+  .tsp-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 809.98px) { .tsp-pair { grid-template-columns: 1fr; } }
   figure { margin: 0; display: flex; flex-direction: column; gap: 10px; }
   picture, img { display: block; width: 100%; height: auto; border-radius: 24px; }
   .compact img { border-radius: 18px; }

@@ -1,5 +1,5 @@
 /* Converted from Framer. Breakpoints: desktop >=1200, tablet 810-1199, phone <810. */
-.xypufxb{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;background:var(--white);overflow:hidden;min-height:100vh}
+.xypufxb{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width:100%;height:min-content;background:var(--white);overflow:clip;min-height:100vh}
 .xglkmo0{display:block;position:sticky;top:10px;flex:none;width:1000px;height:min-content;z-index:10}
 .x3mhyvo{display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;flex:none;width:100%;height:min-content;padding:0px 20px 0px 20px;background:linear-gradient(180deg, var(--color-white) 0%, var(--color-vocom-white) 15%, var(--color-vocom-white) 46.846846846846844%, var(--color-vocom-white) 76.57657657657657%, var(--color-white) 100%);overflow:hidden}
 .xe4wmfc{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;gap:10px;position:relative;flex:none;width:100%;height:min-content;padding:0px 165px 80px 165px;overflow:hidden;z-index:1}

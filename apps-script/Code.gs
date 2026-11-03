@@ -110,6 +110,9 @@ function quote(p) {
   };
   if (blob) mail.attachments = [blob];
   MailApp.sendEmail(mail);
+  // After the sheet row and the email, so a CRM outage never loses a lead.
+  try { sendToCrm(id, { Name: name, Email: email, Company: company, 'Use Case': p['Use Case'] || '', Message: p['Message'] || '', Page: p.page || '', 'Free Email': free ? 'Yes' : '', 'Lead ID': id, Unverified: unverified ? 'Yes' : '' }); }
+  catch (err) { console.error('CRM forward failed: ' + err); }
   return json({ result: 'success', saved: true, id: id });
 }
 
@@ -160,6 +163,23 @@ function details(p) {
 
 // Checks the Turnstile token with Cloudflare: true (human), false (rejected), or null when
 // Cloudflare can't be reached or the script lacks permission, so the lead is kept as unverified.
+// Vocom CRM (vocom-crm.vercel.app): posts the lead to its existing website-lead webhook, signed the
+// way that webhook expects (HMAC-SHA256 of body + submission id, hex, "sha256=" prefix). The secret is
+// the CRM's FRAMER_WEBHOOK_SECRET, kept in Script Properties as CRM_WEBHOOK_SECRET; without it nothing is sent.
+var CRM_WEBHOOK_URL = 'https://vocom-crm.vercel.app/api/webhooks/framer';
+function sendToCrm(id, lead) {
+  var secret = PropertiesService.getScriptProperties().getProperty('CRM_WEBHOOK_SECRET');
+  if (!secret) return;
+  var body = JSON.stringify(lead);
+  var sig = Utilities.computeHmacSha256Signature(body + id, secret, Utilities.Charset.UTF_8)
+    .map(function (b) { return ('0' + (b & 0xff).toString(16)).slice(-2); }).join('');
+  var res = UrlFetchApp.fetch(CRM_WEBHOOK_URL, {
+    method: 'post', contentType: 'application/json', payload: body, muteHttpExceptions: true,
+    headers: { 'framer-signature': 'sha256=' + sig, 'framer-webhook-submission-id': id },
+  });
+  if (res.getResponseCode() !== 200) console.error('CRM forward ' + res.getResponseCode() + ': ' + res.getContentText());
+}
+
 function turnstileOk(token) {
   try {
     var res = UrlFetchApp.fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {

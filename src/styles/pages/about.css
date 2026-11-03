@@ -154,7 +154,3 @@
 .xgb5x2y{font-size:32px}
 }
 
-/* Victor Huang with Supermicro's CEO (added 2026-11-03), same look as TradeShowPhoto */
-.founder-photo{margin:0;width:100%;max-width:900px;display:flex;flex-direction:column;gap:10px}
-.founder-photo picture,.founder-photo img{display:block;width:100%;height:auto;border-radius:24px}
-.founder-photo figcaption{font-size:14px;line-height:1.5;color:var(--color-text-muted);text-align:center}

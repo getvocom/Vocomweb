@@ -117,9 +117,11 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
             g.classList.add("masonry-on");
             var gap = parseFloat(getComputedStyle(g).rowGap) || 0;
             Array.prototype.forEach.call(g.children, function (c) {
-              c.style.gridRowEnd = "auto";
+              // Set the whole grid-row: items whose CSS has grid-row: span 1 would otherwise keep
+              // a span start, and a span end after a span start is ignored (item stuck at 8px).
+              c.style.gridRow = "auto";
               var h = c.getBoundingClientRect().height;
-              c.style.gridRowEnd = "span " + Math.max(1, Math.ceil((h + gap) / (8 + gap)));
+              c.style.gridRow = "auto / span " + Math.max(1, Math.ceil((h + gap) / (8 + gap)));
             });
           });
         }
@@ -127,6 +129,14 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         addEventListener("load", layout);
         addEventListener("resize", layout);
         document.querySelectorAll(".masonry img").forEach(function (i) { i.addEventListener("load", layout); });
+        // Re-pack when an item changes height after first layout (web fonts arriving, text wrapping),
+        // otherwise items overflow their rows and run into the next section.
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+        if ("ResizeObserver" in window) {
+          var queued = false;
+          var ro = new ResizeObserver(function () { if (queued) return; queued = true; requestAnimationFrame(function () { queued = false; layout(); }); });
+          document.querySelectorAll(".masonry > *").forEach(function (c) { ro.observe(c); });
+        }
       })();
     </script>
     <!-- Metricool -->

@@ -248,6 +248,10 @@ a.product-table-row > p:first-child::after { content: " \2192"; text-decoration:
 .logo-optech { display: block; position: relative; flex: none; width: 116px; height: 40px; overflow: hidden; opacity: 0.7; }
 .logo-optech .fill-img { object-fit: contain; }
 @media (max-width: 809.98px) { .logo-optech { width: 93px; height: 32px; } }
+/* DHD (added 2026-11-03), same treatment as Optech */
+.logo-dhd { display: block; position: relative; flex: none; width: 100px; height: 40px; overflow: hidden; opacity: 0.7; }
+.logo-dhd .fill-img { object-fit: contain; }
+@media (max-width: 809.98px) { .logo-dhd { width: 80px; height: 32px; } }
 /* Quote form: requirements file, help text, next steps, and room for the Turnstile check */
 .button-5.x7ebm6z { height: auto !important; display: flex; flex-direction: column; }
 .file-field { height: auto !important; padding: 10px 12px !important; color: var(--ink-900) !important; cursor: pointer; }

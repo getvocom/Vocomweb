@@ -9,28 +9,68 @@ import FaqItem from "../components/FaqItem.astro";
 
 const CHECKED = "November 6, 2026";
 const CTA = "Get a Customized Quote Within 24hrs";
-const NP = "Not published";
+const CS = "Contact sales";
+const NL = "Not listed";
+const cs = [CS, CS, CS, CS];
+const nl = [NL, NL, NL, NL];
 const columns = ["Corning", "Prysmian", "Sumitomo Electric", "YOFC"];
+const stats = [
+  { value: "1993", label: "Founded" },
+  { value: "25K+", label: "Clients" },
+  { value: "100+", label: "Regions" },
+  { value: "99.9%", label: "Uptime" },
+  { value: "24/7", label: "Support" },
+];
 const groups = [
   { title: "Lead Times", rows: [
-    { label: "Standard order", vocom: "6 to 8 weeks", others: [NP, NP, NP, NP] },
-    { label: "High-count or custom build", vocom: "Up to 10 weeks", others: [NP, NP, NP, NP] },
-    { label: "Expedited order", vocom: "2 to 3 weeks, air freight", others: [NP, NP, NP, NP] },
+    { label: "Standard order", vocom: "6 to 8 weeks", others: cs },
+    { label: "High-count or custom build", vocom: "Up to 10 weeks", others: cs },
+    { label: "Expedited order", vocom: "2 to 3 weeks, air freight", others: cs },
+    { label: "Quote response", vocom: "Within 24 hours", others: cs },
+  ] },
+  { title: "Fiber and Cable", rows: [
+    { label: "Fiber types", vocom: "G.652D, G.657A1, G.657A2, OS2, OM3, OM4 and OM5", others: cs },
+    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", CS] },
+    { label: "Outside plant", vocom: "Loose tube, ADSS, figure 8, armored direct burial, hybrid fiber and copper", others: cs },
+    { label: "Ribbon", vocom: "Rollable, flat and central tube", others: cs },
+    { label: "Air blown", vocom: "Micro cable, HDPE microduct and vaults", others: cs },
+    { label: "FTTH and drop", vocom: "Flat and armored drop, OptiTap compatible connectors", others: cs },
+    { label: "Indoor and data center", vocom: "OFNP plenum, OFNR riser, MPO and MTP trunks, cassettes, harnesses", others: cs },
+    { label: "Connectors and hardware", vocom: "Patch cords, adapters, terminal boxes", others: cs },
+    { label: "Glass", vocom: "Fujikura preform", others: cs },
+    { label: "Quality", vocom: "Quality-checked per order, test data on request", others: cs },
+  ] },
+  { title: "Buying", rows: [
+    { label: "Company type", vocom: "Supplier. Cable is built to order by tier 1 manufacturers", others: ["Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer"] },
+    { label: "Ownership", vocom: "Private and self-funded", others: ["Publicly listed", "Publicly listed", "Publicly listed", "Publicly listed"] },
+    { label: "How to buy", vocom: "Direct, from one quote request", others: ["Sales representative or authorized distributor", "Sales team", "Distributor or regional sales manager", "Sales network"] },
+    { label: "Stock model", vocom: "Built to order, no warehouse", others: cs },
+    { label: "Second source for your spec", vocom: "Yes", others: cs },
+    { label: "Minimum order", vocom: "Confirmed with your quote", others: cs },
+    { label: "Delivery split across ship dates", vocom: "Yes", others: cs },
+    { label: "Delivery terms", vocom: "FOB or DDP, quoted by destination", others: cs },
+    { label: "Import and export paperwork", vocom: "Documentation and customs coordinated", others: cs },
   ] },
   { title: "Geographies", rows: [
     { label: "Company base", vocom: "El Monte, California and Taipei", others: ["Corning, New York", "Milan, Italy", "Osaka, Japan", "Wuhan, China"] },
-    { label: "Regions served", vocom: "US and Canada, plus import and export worldwide", others: ["Americas, EMEA and Asia Pacific, through regional distributors", "Global, with a North America business", "The Americas, through Sumitomo Electric Lightwave", "Global, through a sales network"] },
-    { label: "US stock", vocom: "None. Every order is built to order", others: [NP, NP, NP, NP] },
+    { label: "Regions served", vocom: "US and Canada, plus import and export across 100+ regions", others: ["Americas, EMEA and Asia Pacific, through regional distributors", "Global, with a North America business", "The Americas, through Sumitomo Electric Lightwave", "Global, through a sales network"] },
   ] },
-  { title: "Buying", rows: [
-    { label: "Company type", vocom: "Supplier. Cable is built to order by tier 1 manufacturers on Fujikura preform glass", others: ["Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer"] },
-    { label: "How to buy", vocom: "Direct, from one quote request", others: ["Sales representative or authorized distributor", "Sales team", "Distributor or regional sales manager", "Sales network"] },
-    { label: "Quote response", vocom: "Within 24 hours", others: [NP, NP, NP, NP] },
-    { label: "Minimum order", vocom: "Confirmed with your quote", others: [NP, NP, NP, NP] },
-    { label: "Delivery split across ship dates", vocom: "Yes", others: [NP, NP, NP, NP] },
+  { title: "Customer Support", rows: [
+    { label: "Coverage", vocom: "24/7 support", others: ["Customer service line, 24x7 for in-building networks", "24/7 emergency order line", CS, CS] },
+    { label: "Who answers", vocom: "An engineer or account manager, not a ticket queue", others: cs },
   ] },
-  { title: "Product", rows: [
-    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", NP] },
+  { title: "Telecom Services", rows: [
+    { label: "Carrier license", vocom: "FCC 214 licensed since 1998", others: nl },
+    { label: "Private circuits", vocom: "IEPL and IPLC across the Pacific", others: nl },
+    { label: "Data services", vocom: "IP transit, MPLS-VPN and Anti-DDoS", others: nl },
+    { label: "Wholesale voice", vocom: "IDD and SMS on direct NNI routes", others: nl },
+    { label: "Network monitoring", vocom: "24/7 NOC", others: nl },
+  ] },
+  { title: "AI Solutions", rows: [
+    { label: "AI agents", vocom: "RenOS, governed agents across any model", others: nl },
+    { label: "AI tools by job", vocom: "Supply chain, manufacturing, coaching and network security", others: nl },
+    { label: "AI infrastructure", vocom: "AI servers and GPU solutions", others: nl },
+    { label: "AI consulting", vocom: "Yes", others: nl },
   ] },
 ];
 const sources = [
@@ -41,6 +81,8 @@ const sources = [
   { label: "Sumitomo Electric Lightwave: about and how to buy", href: "https://sumitomoelectriclightwave.com/about/" },
   { label: "Sumitomo Electric: high fiber count cables", href: "https://sumitomoelectric.com/products/optical-cables/highfibercount" },
   { label: "YOFC: company website", href: "https://en.yofc.com/" },
+  { label: "Corning: in-building networks support", href: "https://www.corning.com/in-building-networks/cala/en/home/support-center.html" },
+  { label: "Prysmian: emergency order line (2022)", href: "https://stocks.observer-reporter.com/observerreporter/article/accesswire-2022-6-14-prysmian-groups-emergency-order-line-offers-immediate-solutions-in-wake-of-natural-disasters" },
 ];
 ---
 <Base path="/fiber-optic-cable-supplier-comparison">
@@ -49,9 +91,13 @@ const sources = [
     <main class="cmp-main">
       <section class="cmp-hero">
         <h1>Fiber Optic Cable Suppliers Compared</h1>
-        <p>Lead times, geographies and how to buy, for Vocom, Corning, Prysmian, Sumitomo Electric and YOFC. There's no pricing here because bulk cable is quoted per order.</p>
+        <p>Lead times, fiber, buying, geographies, support and services, for Vocom, Corning, Prysmian, Sumitomo Electric and YOFC. Our answers are public. There's no pricing here because bulk cable is quoted per order.</p>
         <a class="cmp-btn" href="/contact-vocomai">{CTA}</a>
       </section>
+
+      <ul class="cmp-stats">
+        {stats.map((x) => <li><strong>{x.value}</strong><span>{x.label}</span></li>)}
+      </ul>
 
       <div class="cmp-picker" role="group" aria-label="Compare Vocom with" hidden>
         <span>Compare Vocom with</span>
@@ -64,7 +110,7 @@ const sources = [
           <thead>
             <tr>
               <td class="cmp-corner"></td>
-              <th scope="col" class="cmp-vocom"><span>Vocom</span><a class="cmp-btn cmp-btn-sm" href="/contact-vocomai">Get a Quote</a></th>
+              <th scope="col" class="cmp-vocom"><span>Vocom</span><small>Since 1993</small><a class="cmp-btn cmp-btn-sm" href="/contact-vocomai">Get a Quote</a></th>
               {columns.map((c) => <th scope="col"><span>{c}</span></th>)}
             </tr>
           </thead>
@@ -75,7 +121,7 @@ const sources = [
                 <tr>
                   <th scope="row">{r.label}</th>
                   <td class="cmp-vocom">{r.vocom}</td>
-                  {r.others.map((v) => <td class={v === NP ? "cmp-np" : undefined}>{v}</td>)}
+                  {r.others.map((v) => <td class={v === CS || v === NL ? "cmp-np" : undefined}>{v}</td>)}
                 </tr>
               ))}
             </tbody>
@@ -83,17 +129,17 @@ const sources = [
         </table>
       </div>
 
-      <p class="cmp-note">"Not published" means we couldn't find a public figure on that company's website when we checked on {CHECKED}. It doesn't mean they can't do it, so ask them for a current answer on your spec.</p>
+      <p class="cmp-note">"Contact sales" means we couldn't find a public answer on that company's website when we checked on {CHECKED}, so you'd ask their sales team or a distributor. It doesn't mean they can't do it, and these companies carry broad catalogs. "Not listed" means we didn't find that service in their public offering.</p>
 
       <section class="cmp-cta">
         <h2>{CTA}</h2>
-        <p>Send the cable type, fiber count, quantity and delivery location. We'll confirm price and lead time against your actual specification.</p>
+        <p>Send the cable type, fiber count, quantity and delivery location. We'll confirm price and lead time against your actual specification. Already holding a quote? Send it over and put ours next to it.</p>
         <a class="cmp-btn" href="/contact-vocomai">Request a Quote</a>
       </section>
 
       <section class="cmp-faq">
         <h2>Frequently Asked Questions</h2>
-        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric and YOFC?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other four, so ask each one for a current date on your specification.</FaqItem>
+        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric and YOFC?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other four, so you'd ask their sales teams or distributors for a current date on your specification.</FaqItem>
         <FaqItem question="Does Vocom manufacture fiber optic cable?">No. Cable is produced to specification by tier 1 manufacturing partners on Fujikura preform glass. Vocom handles specification, sourcing, build-to-order coordination and delivery.</FaqItem>
         <FaqItem question="Why is there no pricing in this comparison?">Price depends on the fiber count, fiber type, construction, order quantity and delivery location, so bulk cable is quoted per order. Send us your specification and we'll confirm price and lead time together.</FaqItem>
       </section>
@@ -136,12 +182,19 @@ const sources = [
   .cmp-btn:hover { background: var(--color-vocom); }
   .cmp-btn-sm { padding: 8px 14px; font-size: 13px; white-space: nowrap; }
 
+  .cmp-stats { list-style: none; margin: 0; padding: 24px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; text-align: center; border-radius: var(--radius-lg); background: var(--brand-pink-50); border: 1px solid var(--brand-pink-border); }
+  .cmp-stats strong { display: block; font-family: var(--font-display); font-size: 32px; line-height: 1.2; font-weight: 600; color: var(--color-vocom-cta-1); }
+  .cmp-stats span { font-size: 14px; color: var(--gray-600); }
+
   .cmp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .cmp-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: 14px; line-height: 1.45; }
   .cmp-table th, .cmp-table td { padding: 14px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-gray-4); overflow-wrap: break-word; background: var(--white); }
   .cmp-table thead th, .cmp-table .cmp-corner { position: sticky; top: 84px; z-index: 2; vertical-align: bottom; border-bottom: 2px solid var(--ink-heading); box-shadow: 0 -84px 0 var(--white); }
   .cmp-table thead th span { display: block; font-size: 16px; font-weight: 600; }
+  .cmp-table thead small { display: block; font-size: 12px; font-weight: 500; color: var(--gray-600); }
   .cmp-table thead .cmp-btn { margin-top: 8px; }
+  .cmp-table .cmp-corner { width: 18%; }
+  .cmp-table thead th.cmp-vocom { width: 26%; }
   .cmp-table tbody th[scope="row"] { font-weight: 500; color: var(--ink-heading); }
   .cmp-table .cmp-group th { padding: 32px 12px 10px; border-bottom: 1px solid var(--ink-heading); }
   .cmp-table .cmp-group h2 { font-family: var(--font-display); font-size: 22px; font-weight: 600; }
@@ -158,10 +211,13 @@ const sources = [
   .cmp-sources ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 20px; }
   .cmp-sources a { color: inherit; text-decoration: underline; }
 
+  /* Clears the 84px white backing on the sticky table head, which would otherwise cover the stats. */
+  @media (min-width: 1200px) { .cmp-wrap { margin-top: 40px; } }
+
   /* Below desktop the table scrolls inside its own box; the row labels stay in view. */
   @media (max-width: 1199.98px) {
     .cmp-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .cmp-table { min-width: 920px; }
+    .cmp-table { min-width: 1040px; }
     .cmp-table thead th, .cmp-table .cmp-corner { position: static; top: auto; box-shadow: none; }
     .cmp-table tbody th[scope="row"], .cmp-table .cmp-corner { position: sticky; left: 0; z-index: 1; }
     .cmp-table .cmp-group th { position: static; }
@@ -171,10 +227,12 @@ const sources = [
     .cmp-main { padding: 72px 16px 56px; gap: 36px; }
     .cmp-hero h1 { font-size: 36px; }
     .cmp-hero p, .cmp-cta p { font-size: 16px; }
+    .cmp-stats { grid-template-columns: repeat(3, 1fr); padding: 16px; }
+    .cmp-stats strong { font-size: 24px; }
     .cmp-cta h2, .cmp-faq h2 { font-size: 28px; }
     .cmp-table { min-width: 820px; font-size: 13px; }
     .cmp-table[data-col] { min-width: 0; table-layout: auto; }
-    .cmp-table[data-col] thead th, .cmp-table[data-col] .cmp-corner, .cmp-table[data-col] tbody tr:not(.cmp-group) > * { width: 33.33%; }
+    .cmp-table[data-col] thead th, .cmp-table[data-col] thead th.cmp-vocom, .cmp-table[data-col] .cmp-corner, .cmp-table[data-col] tbody tr:not(.cmp-group) > * { width: 33.33%; }
     .cmp-table[data-col] tr > :nth-child(n+3) { display: none; }
     .cmp-table[data-col="0"] tr > :nth-child(3),
     .cmp-table[data-col="1"] tr > :nth-child(4),

@@ -153,7 +153,7 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Competitor cells are a desk check on 2026-11-06. Corning's site blocked direct fetching, so its cells rest on search results. Re-check before pushing and whenever CHECKED changes.
 
 ## 2026-11-06: comparison page, bigger table (not pushed)
-- Tom: replace "Not published" with sales-gated wording, add fiber types, AI, telecom, support, years in business. Cells now say "Contact sales" or "Not listed".
+- Tom: replace "Not published" with sales-gated wording, add fiber types, AI, telecom, support, years in business. Cells first said "Contact sales" or "Not listed". Tom, same day: "Contact sales" sounded like we want them to contact the competitors, so every gap now says "Not listed".
 - Years in business sits in a stats band and the Vocom column head, not a row: Vocom (1993) is the youngest of the five (Corning 1851, Prysmian 1879, Sumitomo Electric 1897, YOFC 1988).
 - New line, Tom to approve: "Already holding a quote? Send it over and put ours next to it."
 - Mixes fiber, telecom and AI on one page at Tom's request; the content guide normally keeps them apart.

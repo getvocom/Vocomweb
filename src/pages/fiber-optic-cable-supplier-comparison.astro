@@ -9,9 +9,7 @@ import FaqItem from "../components/FaqItem.astro";
 
 const CHECKED = "November 6, 2026";
 const CTA = "Get a Customized Quote Within 24hrs";
-const CS = "Contact sales";
 const NL = "Not listed";
-const cs = [CS, CS, CS, CS];
 const nl = [NL, NL, NL, NL];
 const columns = ["Corning", "Prysmian", "Sumitomo Electric", "YOFC"];
 const stats = [
@@ -23,41 +21,41 @@ const stats = [
 ];
 const groups = [
   { title: "Lead Times", rows: [
-    { label: "Standard order", vocom: "6 to 8 weeks", others: cs },
-    { label: "High-count or custom build", vocom: "Up to 10 weeks", others: cs },
-    { label: "Expedited order", vocom: "2 to 3 weeks, air freight", others: cs },
-    { label: "Quote response", vocom: "Within 24 hours", others: cs },
+    { label: "Standard order", vocom: "6 to 8 weeks", others: nl },
+    { label: "High-count or custom build", vocom: "Up to 10 weeks", others: nl },
+    { label: "Expedited order", vocom: "2 to 3 weeks, air freight", others: nl },
+    { label: "Quote response", vocom: "Within 24 hours", others: nl },
   ] },
   { title: "Fiber and Cable", rows: [
-    { label: "Fiber types", vocom: "G.652D, G.657A1, G.657A2, OS2, OM3, OM4 and OM5", others: cs },
-    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", CS] },
-    { label: "Outside plant", vocom: "Loose tube, ADSS, figure 8, armored direct burial, hybrid fiber and copper", others: cs },
-    { label: "Ribbon", vocom: "Rollable, flat and central tube", others: cs },
-    { label: "Air blown", vocom: "Micro cable, HDPE microduct and vaults", others: cs },
-    { label: "FTTH and drop", vocom: "Flat and armored drop, OptiTap compatible connectors", others: cs },
-    { label: "Indoor and data center", vocom: "OFNP plenum, OFNR riser, MPO and MTP trunks, cassettes, harnesses", others: cs },
-    { label: "Connectors and hardware", vocom: "Patch cords, adapters, terminal boxes", others: cs },
-    { label: "Glass", vocom: "Fujikura preform", others: cs },
-    { label: "Quality", vocom: "Quality-checked per order, test data on request", others: cs },
+    { label: "Fiber types", vocom: "G.652D, G.657A1, G.657A2, OS2, OM3, OM4 and OM5", others: nl },
+    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", NL] },
+    { label: "Outside plant", vocom: "Loose tube, ADSS, figure 8, armored direct burial, hybrid fiber and copper", others: nl },
+    { label: "Ribbon", vocom: "Rollable, flat and central tube", others: nl },
+    { label: "Air blown", vocom: "Micro cable, HDPE microduct and vaults", others: nl },
+    { label: "FTTH and drop", vocom: "Flat and armored drop, OptiTap compatible connectors", others: nl },
+    { label: "Indoor and data center", vocom: "OFNP plenum, OFNR riser, MPO and MTP trunks, cassettes, harnesses", others: nl },
+    { label: "Connectors and hardware", vocom: "Patch cords, adapters, terminal boxes", others: nl },
+    { label: "Glass", vocom: "Fujikura preform", others: nl },
+    { label: "Quality", vocom: "Quality-checked per order, test data on request", others: nl },
   ] },
   { title: "Buying", rows: [
     { label: "Company type", vocom: "Supplier. Cable is built to order by tier 1 manufacturers", others: ["Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer"] },
     { label: "Ownership", vocom: "Private and self-funded", others: ["Publicly listed", "Publicly listed", "Publicly listed", "Publicly listed"] },
     { label: "How to buy", vocom: "Direct, from one quote request", others: ["Sales representative or authorized distributor", "Sales team", "Distributor or regional sales manager", "Sales network"] },
-    { label: "Stock model", vocom: "Built to order, no warehouse", others: cs },
-    { label: "Second source for your spec", vocom: "Yes", others: cs },
-    { label: "Minimum order", vocom: "Confirmed with your quote", others: cs },
-    { label: "Delivery split across ship dates", vocom: "Yes", others: cs },
-    { label: "Delivery terms", vocom: "FOB or DDP, quoted by destination", others: cs },
-    { label: "Import and export paperwork", vocom: "Documentation and customs coordinated", others: cs },
+    { label: "Stock model", vocom: "Built to order, no warehouse", others: nl },
+    { label: "Second source for your spec", vocom: "Yes", others: nl },
+    { label: "Minimum order", vocom: "Confirmed with your quote", others: nl },
+    { label: "Delivery split across ship dates", vocom: "Yes", others: nl },
+    { label: "Delivery terms", vocom: "FOB or DDP, quoted by destination", others: nl },
+    { label: "Import and export paperwork", vocom: "Documentation and customs coordinated", others: nl },
   ] },
   { title: "Geographies", rows: [
     { label: "Company base", vocom: "El Monte, California and Taipei", others: ["Corning, New York", "Milan, Italy", "Osaka, Japan", "Wuhan, China"] },
     { label: "Regions served", vocom: "US and Canada, plus import and export across 100+ regions", others: ["Americas, EMEA and Asia Pacific, through regional distributors", "Global, with a North America business", "The Americas, through Sumitomo Electric Lightwave", "Global, through a sales network"] },
   ] },
   { title: "Customer Support", rows: [
-    { label: "Coverage", vocom: "24/7 support", others: ["Customer service line, 24x7 for in-building networks", "24/7 emergency order line", CS, CS] },
-    { label: "Who answers", vocom: "An engineer or account manager, not a ticket queue", others: cs },
+    { label: "Coverage", vocom: "24/7 support", others: ["Customer service line, 24x7 for in-building networks", "24/7 emergency order line", NL, NL] },
+    { label: "Who answers", vocom: "An engineer or account manager, not a ticket queue", others: nl },
   ] },
   { title: "Telecom Services", rows: [
     { label: "Carrier license", vocom: "FCC 214 licensed since 1998", others: nl },
@@ -121,7 +119,7 @@ const sources = [
                 <tr>
                   <th scope="row">{r.label}</th>
                   <td class="cmp-vocom">{r.vocom}</td>
-                  {r.others.map((v) => <td class={v === CS || v === NL ? "cmp-np" : undefined}>{v}</td>)}
+                  {r.others.map((v) => <td class={v === NL ? "cmp-np" : undefined}>{v}</td>)}
                 </tr>
               ))}
             </tbody>
@@ -129,7 +127,7 @@ const sources = [
         </table>
       </div>
 
-      <p class="cmp-note">"Contact sales" means we couldn't find a public answer on that company's website when we checked on {CHECKED}, so you'd ask their sales team or a distributor. It doesn't mean they can't do it, and these companies carry broad catalogs. "Not listed" means we didn't find that service in their public offering.</p>
+      <p class="cmp-note">"Not listed" means we couldn't find it on that company's public website when we checked on {CHECKED}. It doesn't mean they can't do it, and these companies carry broad catalogs.</p>
 
       <section class="cmp-cta">
         <h2>{CTA}</h2>
@@ -139,7 +137,7 @@ const sources = [
 
       <section class="cmp-faq">
         <h2>Frequently Asked Questions</h2>
-        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric and YOFC?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other four, so you'd ask their sales teams or distributors for a current date on your specification.</FaqItem>
+        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric and YOFC?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other four.</FaqItem>
         <FaqItem question="Does Vocom manufacture fiber optic cable?">No. Cable is produced to specification by tier 1 manufacturing partners on Fujikura preform glass. Vocom handles specification, sourcing, build-to-order coordination and delivery.</FaqItem>
         <FaqItem question="Why is there no pricing in this comparison?">Price depends on the fiber count, fiber type, construction, order quantity and delivery location, so bulk cable is quoted per order. Send us your specification and we'll confirm price and lead time together.</FaqItem>
       </section>

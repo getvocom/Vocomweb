@@ -1,6 +1,7 @@
 ---
 slug: "why-enterprise-ai-logistics-platforms-are-replacing-manual-planning"
 order: 39
+updated: 2026-10-22
 cardTitle: "AI Logistics are Replacing Manual Planning"
 image:
   src: "/assets/img/blog-why-enterprise-ai-logistics-platforms-are-replacing-191066.jpg"

@@ -12,6 +12,10 @@ const blog = defineCollection({
     slug: z.string(),
     order: z.number(),
     draft: z.boolean().optional(),
+    // Dates as YYYY-MM-DD. `published` only where the real publish date is known (posts written
+    // since the rebuild); `updated` is the last real change to the post's content.
+    published: z.coerce.date().optional(),
+    updated: z.coerce.date().optional(),
     cardTitle: z.string(),
     title: z.string(),
     metaTitle: z.string().optional(),

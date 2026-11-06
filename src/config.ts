@@ -39,3 +39,6 @@ export const NEWSLETTER = {
   // pages where it never shows
   excludePaths: ["/contact-vocomai", "/search", "/vocom-privacy-policy", "/404"],
 };
+
+// Blog byline (Tom, 2026-11-04). Shown under each post's H1 and used as the BlogPosting author.
+export const BLOG_AUTHOR = { name: "Kevin Huang", jobTitle: "CEO, Vocom AI", url: "https://www.vocom.ai/about" };

@@ -1,6 +1,7 @@
 ---
 slug: "data-center-mpo-cable-40g-100g-trunks"
 order: 4
+updated: 2026-10-28
 cardTitle: "Data Center MPO Cable: 40G and 100G Trunks"
 image:
   src: "/assets/img/blog-data-center-mpo-cable-40g-100g-trunks-ad7988.png"

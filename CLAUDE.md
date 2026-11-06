@@ -16,7 +16,7 @@ This is the code-based rebuild of www.vocom.ai, which used to be on Framer. It's
    - It also keeps any JSON-LD it already has.
    - Exactly one `<h1>` per page.
 4. **No invented stats, logos, images or claims.**
-   - Stats are static HTML with their final values (1998, 100+, 99.9%, 25K+, 24/7). Never count up from 0.
+   - Stats are static HTML with their final values (1993, 100+, 99.9%, 25K+, 24/7). Never count up from 0.
 5. **Tokens only.**
    - Colours, fonts, radii and shadows come from `src/styles/tokens.css`.
    - If a new value repeats, add a token rather than another raw value.
@@ -84,7 +84,7 @@ These match Framer: desktop ≥ 1200px, tablet 810–1199.98px, phone ≤ 809.98
 ## Add a blog post
 
 1. Copy an existing file in `src/content/blog/` to `src/content/blog/<slug>.md`.
-2. Set `slug`, the next `order` number, and the fields.
+2. Set `slug`, the next `order` number, `published` and `updated` (today, YYYY-MM-DD), and the fields.
 3. Put the main image in `public/assets/img/` and set `image: { src, alt }`. Alt text is required.
 4. The page, the sitemap entry, the /blog card and BlogPosting JSON-LD are generated automatically. The `<title>` is `metaTitle` and the description is `description`.
 
@@ -102,6 +102,7 @@ These match Framer: desktop ≥ 1200px, tablet 810–1199.98px, phone ≤ 809.98
 | `gallery1`…`gallery4`, `gallerySide1`/`gallerySide2` | Optional images |
 | `bottomHeading`/`bottomBody`, `finalHeading`/`finalBody` | Optional closing sections |
 | `showOnHomepage` | Homepage listing |
+| `published`, `updated` | Dates (YYYY-MM-DD) for the byline and BlogPosting schema. Bump `updated` whenever a post's content changes. The author (Kevin Huang) is `BLOG_AUTHOR` in `src/config.ts` |
 
 Bodies are plain text; a blank line starts a new paragraph.
 

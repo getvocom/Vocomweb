@@ -32,6 +32,7 @@ export const NAV: NavSection[] = [
           { label: "Connectors and Hardware", href: "/fiber-optic-connectors-and-hardware", desc: "Patch cords, adapters, terminal boxes" },
           { label: "Full Product Catalog", href: "/fiber-optic-cable-catalog", desc: "Every product with codes and fiber counts" },
           { label: "Case Studies", href: "/case-studies", desc: "Builds we have supplied in the US and Canada" },
+          { label: "Supplier Comparison", href: "/fiber-optic-cable-supplier-comparison", desc: "Lead times and geographies side by side" },
         ],
       },
       {
@@ -106,7 +107,7 @@ export const NAV: NavSection[] = [
       {
         title: "Company",
         links: [
-          { label: "About Us", href: "/about", desc: "Founded in 1998, El Monte and Taipei" },
+          { label: "About Us", href: "/about", desc: "Founded in 1993, El Monte and Taipei" },
           { label: "Case Studies", href: "/case-studies", desc: "Builds we have supplied" },
           { label: "Blog", href: "/blog", desc: "Fiber specs, lead times and guides" },
           { label: "Resources", href: "/resources", desc: "Catalogs and downloads" },

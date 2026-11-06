@@ -1,6 +1,7 @@
 ---
 slug: "how-enterprise-ai-logistics-software-cuts-costs-and-speeds-decisions"
 order: 38
+updated: 2026-10-22
 cardTitle: "How Enterprise AI Logistics Software Cuts..."
 image:
   src: "/assets/img/blog-how-enterprise-ai-logistics-software-cuts-costs-e68a3d.png"

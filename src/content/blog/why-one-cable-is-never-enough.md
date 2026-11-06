@@ -1,6 +1,7 @@
 ---
 slug: "why-one-cable-is-never-enough"
 order: 12
+updated: 2026-10-22
 cardTitle: "Why one cable is never enough"
 image:
   src: "/assets/img/blog-why-one-cable-is-never-enough-8e6961.png"

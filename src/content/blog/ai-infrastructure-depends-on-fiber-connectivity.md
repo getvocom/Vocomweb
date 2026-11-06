@@ -1,6 +1,7 @@
 ---
 slug: "ai-infrastructure-depends-on-fiber-connectivity"
 order: 19
+updated: 2026-10-22
 cardTitle: "AI Infrastructure Depends on Fiber Connectivity"
 image:
   src: "/assets/img/blog-ai-infrastructure-depends-on-fiber-connectivity-b00984.png"

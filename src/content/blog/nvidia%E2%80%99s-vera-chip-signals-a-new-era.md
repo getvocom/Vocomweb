@@ -1,6 +1,7 @@
 ---
 slug: "nvidia’s-vera-chip-signals-a-new-era"
 order: 23
+updated: 2026-10-22
 cardTitle: "Nvidia’s Vera Chip Signals a New Era "
 image:
   src: "/assets/img/blog-nvidia-s-vera-chip-signals-a-new-ca96b5.png"

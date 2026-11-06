@@ -1,6 +1,7 @@
 ---
 slug: "aerial-vs-buried-outside-plant-fiber"
 order: 7
+updated: 2026-10-22
 cardTitle: "Aerial or Buried: Outside Plant Fiber"
 image:
   src: "/assets/img/blog-aerial-vs-buried-outside-plant-fiber-ccf7e9.png"

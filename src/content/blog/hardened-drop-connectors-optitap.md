@@ -1,6 +1,7 @@
 ---
 slug: "hardened-drop-connectors-optitap"
 order: 2
+updated: 2026-10-22
 cardTitle: "Hardened Drop Connectors: How OptiTap Works"
 image:
   src: "/assets/img/blog-hardened-drop-connectors-optitap-c26940.png"

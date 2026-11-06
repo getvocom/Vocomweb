@@ -17,6 +17,8 @@ const STATIC = [
   "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners", "/fiber-optic-connectors-and-hardware", "/iepl-iplc-private-leased-circuits", "/wholesale-voice-termination",
   // added 2026-10-24
   "/case-studies",
+  // added 2026-11-06
+  "/fiber-optic-cable-supplier-comparison",
 ];
 
 // Category pages that show a hero render (see src/pages/<page>.astro)

@@ -1,6 +1,7 @@
 ---
 slug: "physical-ai-is-moving-into-supply-chains"
 order: 26
+updated: 2026-10-22
 cardTitle: "Physical AI Is Moving Into Supply Chains"
 image:
   src: "/assets/img/blog-physical-ai-is-moving-into-supply-chains-6e28c5.png"

@@ -1,6 +1,7 @@
 ---
 slug: "why-ai-document-scanning-is-becoming-core-infrastructure-not-a-nice-to-have"
 order: 36
+updated: 2026-10-22
 cardTitle: "Why AI Document Scanning Is Becoming Core.."
 image:
   src: "/assets/img/blog-why-ai-document-scanning-is-becoming-core-440350.png"

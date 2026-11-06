@@ -1,6 +1,8 @@
 ---
 slug: "40g-100g-transceiver-cable-guide"
 order: 42
+published: 2026-10-28
+updated: 2026-10-28
 cardTitle: "40G and 100G Optics: Which MPO or LC Cable Each One Needs"
 image:
   src: "/assets/img/blog-40g-100g-transceiver-cable-guide-5aae96.jpg"

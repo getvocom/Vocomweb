@@ -1,6 +1,7 @@
 ---
 slug: "ai-is-driving-a-new-era-of-fiber-demand"
 order: 18
+updated: 2026-10-22
 cardTitle: "AI is driving a new era of fiber demand"
 image:
   src: "/assets/img/blog-ai-is-driving-a-new-era-of-32beec.png"

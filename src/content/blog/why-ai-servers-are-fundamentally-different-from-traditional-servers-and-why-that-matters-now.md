@@ -1,6 +1,7 @@
 ---
 slug: "why-ai-servers-are-fundamentally-different-from-traditional-servers-and-why-that-matters-now"
 order: 37
+updated: 2026-10-22
 cardTitle: "Why AI Servers Are Fundamentally Different from "
 image:
   src: "/assets/img/blog-why-ai-servers-are-fundamentally-different-from-70ff29.png"

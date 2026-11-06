@@ -1,6 +1,7 @@
 ---
 slug: "why-the-passive-fibre-layer-decides-your-data-centre-build"
 order: 13
+updated: 2026-10-22
 cardTitle: "Fibre layer decides your data centre build"
 image:
   src: "/assets/img/blog-why-the-passive-fibre-layer-decides-your-2984d1.png"

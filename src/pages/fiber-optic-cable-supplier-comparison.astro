@@ -1,0 +1,192 @@
+---
+// Supplier comparison table (Tom, 2026-11-06), laid out like a plan comparison: grouped rows,
+// text cells, the call to action in the Vocom column head. No pricing, by design.
+// Competitor cells only state what a public source shows (see `sources`). Update CHECKED when they are re-checked.
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FaqItem from "../components/FaqItem.astro";
+
+const CHECKED = "November 6, 2026";
+const CTA = "Get a Customized Quote Within 24hrs";
+const NP = "Not published";
+const columns = ["Corning", "Prysmian", "Sumitomo Electric", "YOFC"];
+const groups = [
+  { title: "Lead Times", rows: [
+    { label: "Standard order", vocom: "6 to 8 weeks", others: [NP, NP, NP, NP] },
+    { label: "High-count or custom build", vocom: "Up to 10 weeks", others: [NP, NP, NP, NP] },
+    { label: "Expedited order", vocom: "2 to 3 weeks, air freight", others: [NP, NP, NP, NP] },
+  ] },
+  { title: "Geographies", rows: [
+    { label: "Company base", vocom: "El Monte, California and Taipei", others: ["Corning, New York", "Milan, Italy", "Osaka, Japan", "Wuhan, China"] },
+    { label: "Regions served", vocom: "US and Canada, plus import and export worldwide", others: ["Americas, EMEA and Asia Pacific, through regional distributors", "Global, with a North America business", "The Americas, through Sumitomo Electric Lightwave", "Global, through a sales network"] },
+    { label: "US stock", vocom: "None. Every order is built to order", others: [NP, NP, NP, NP] },
+  ] },
+  { title: "Buying", rows: [
+    { label: "Company type", vocom: "Supplier. Cable is built to order by tier 1 manufacturers on Fujikura preform glass", others: ["Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer"] },
+    { label: "How to buy", vocom: "Direct, from one quote request", others: ["Sales representative or authorized distributor", "Sales team", "Distributor or regional sales manager", "Sales network"] },
+    { label: "Quote response", vocom: "Within 24 hours", others: [NP, NP, NP, NP] },
+    { label: "Minimum order", vocom: "Confirmed with your quote", others: [NP, NP, NP, NP] },
+    { label: "Delivery split across ship dates", vocom: "Yes", others: [NP, NP, NP, NP] },
+  ] },
+  { title: "Product", rows: [
+    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", NP] },
+  ] },
+];
+const sources = [
+  { label: "Corning: how to buy", href: "https://www.corning.com/cala/en/products/communication-networks/how-to-buy.html" },
+  { label: "Corning: RocketRibbon cable", href: "https://www.corning.com/optical-communications/worldwide/en/home/products/fiber-optic-cable/outdoor-cables/rocket-ribbon.html" },
+  { label: "Prysmian North America: optical fiber made in the USA", href: "https://na.prysmian.com/markets/digital-solutions/optical-fiber/made-right-here" },
+  { label: "Prysmian North America: 6912F MassLink with FlexRibbon", href: "https://na.prysmian.com/576-6912f-masslink-flexribbon-multi-tube-na-200um" },
+  { label: "Sumitomo Electric Lightwave: about and how to buy", href: "https://sumitomoelectriclightwave.com/about/" },
+  { label: "Sumitomo Electric: high fiber count cables", href: "https://sumitomoelectric.com/products/optical-cables/highfibercount" },
+  { label: "YOFC: company website", href: "https://en.yofc.com/" },
+];
+---
+<Base path="/fiber-optic-cable-supplier-comparison">
+  <div class="cmp-page">
+    <div class="site-header-slot"><Header /></div>
+    <main class="cmp-main">
+      <section class="cmp-hero">
+        <h1>Fiber Optic Cable Suppliers Compared</h1>
+        <p>Lead times, geographies and how to buy, for Vocom, Corning, Prysmian, Sumitomo Electric and YOFC. There's no pricing here because bulk cable is quoted per order.</p>
+        <a class="cmp-btn" href="/contact-vocomai">{CTA}</a>
+      </section>
+
+      <div class="cmp-picker" role="group" aria-label="Compare Vocom with" hidden>
+        <span>Compare Vocom with</span>
+        {columns.map((c, i) => <button type="button" data-col={i} aria-pressed={i === 0 ? "true" : "false"}>{c}</button>)}
+      </div>
+
+      <div class="cmp-wrap">
+        <table class="cmp-table">
+          <caption class="cmp-sr">Fiber optic cable supplier comparison, checked {CHECKED}</caption>
+          <thead>
+            <tr>
+              <td class="cmp-corner"></td>
+              <th scope="col" class="cmp-vocom"><span>Vocom</span><a class="cmp-btn cmp-btn-sm" href="/contact-vocomai">Get a Quote</a></th>
+              {columns.map((c) => <th scope="col"><span>{c}</span></th>)}
+            </tr>
+          </thead>
+          {groups.map((g) => (
+            <tbody>
+              <tr class="cmp-group"><th scope="colgroup" colspan={columns.length + 2}><h2>{g.title}</h2></th></tr>
+              {g.rows.map((r) => (
+                <tr>
+                  <th scope="row">{r.label}</th>
+                  <td class="cmp-vocom">{r.vocom}</td>
+                  {r.others.map((v) => <td class={v === NP ? "cmp-np" : undefined}>{v}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          ))}
+        </table>
+      </div>
+
+      <p class="cmp-note">"Not published" means we couldn't find a public figure on that company's website when we checked on {CHECKED}. It doesn't mean they can't do it, so ask them for a current answer on your spec.</p>
+
+      <section class="cmp-cta">
+        <h2>{CTA}</h2>
+        <p>Send the cable type, fiber count, quantity and delivery location. We'll confirm price and lead time against your actual specification.</p>
+        <a class="cmp-btn" href="/contact-vocomai">Request a Quote</a>
+      </section>
+
+      <section class="cmp-faq">
+        <h2>Frequently Asked Questions</h2>
+        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric and YOFC?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other four, so ask each one for a current date on your specification.</FaqItem>
+        <FaqItem question="Does Vocom manufacture fiber optic cable?">No. Cable is produced to specification by tier 1 manufacturing partners on Fujikura preform glass. Vocom handles specification, sourcing, build-to-order coordination and delivery.</FaqItem>
+        <FaqItem question="Why is there no pricing in this comparison?">Price depends on the fiber count, fiber type, construction, order quantity and delivery location, so bulk cable is quoted per order. Send us your specification and we'll confirm price and lead time together.</FaqItem>
+      </section>
+
+      <section class="cmp-sources">
+        <h2>Sources</h2>
+        <ul>
+          {sources.map((s) => <li><a href={s.href} rel="nofollow noopener" target="_blank">{s.label}</a></li>)}
+        </ul>
+        <p>Compiled from public sources, checked {CHECKED}. Company details change, so confirm them with each company before you buy. Corning, Prysmian, Sumitomo Electric and YOFC are trademarks of their respective owners. Vocom isn't affiliated with or endorsed by them. If something here is out of date, tell us at <a href="mailto:kevin@getvocom.com">kevin@getvocom.com</a> and we'll correct it.</p>
+      </section>
+    </main>
+    <div class="cmp-footer"><Footer /></div>
+  </div>
+</Base>
+
+<script>
+  // Phone view: Vocom against one company at a time. Without JavaScript the full table scrolls instead.
+  const table = document.querySelector<HTMLElement>(".cmp-table");
+  const picker = document.querySelector<HTMLElement>(".cmp-picker");
+  if (table && picker) {
+    const buttons = picker.querySelectorAll<HTMLButtonElement>("button");
+    table.dataset.col = "0";
+    picker.hidden = false;
+    buttons.forEach((b) => b.addEventListener("click", () => {
+      table.dataset.col = b.dataset.col;
+      buttons.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    }));
+  }
+</script>
+
+<style>
+  .cmp-page { display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: var(--white); }
+  .cmp-main { width: 100%; max-width: 1200px; padding: 96px 24px 80px; display: flex; flex-direction: column; gap: 48px; font-family: var(--font-sans); color: var(--ink-heading); }
+  .cmp-footer { width: 100%; }
+  .cmp-hero { display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; max-width: 820px; margin: 0 auto; }
+  .cmp-hero h1 { font-family: var(--font-display); font-weight: 600; font-size: 56px; line-height: 1.1; letter-spacing: -0.03em; }
+  .cmp-hero p, .cmp-cta p { font-size: 18px; line-height: 1.55; color: var(--gray-600); }
+  .cmp-btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 24px; border-radius: var(--radius-pill); background: var(--color-vocom-cta-1); color: var(--white); font-weight: 600; font-size: 16px; text-decoration: none; text-align: center; }
+  .cmp-btn:hover { background: var(--color-vocom); }
+  .cmp-btn-sm { padding: 8px 14px; font-size: 13px; white-space: nowrap; }
+
+  .cmp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .cmp-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: 14px; line-height: 1.45; }
+  .cmp-table th, .cmp-table td { padding: 14px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-gray-4); overflow-wrap: break-word; background: var(--white); }
+  .cmp-table thead th, .cmp-table .cmp-corner { position: sticky; top: 84px; z-index: 2; vertical-align: bottom; border-bottom: 2px solid var(--ink-heading); box-shadow: 0 -84px 0 var(--white); }
+  .cmp-table thead th span { display: block; font-size: 16px; font-weight: 600; }
+  .cmp-table thead .cmp-btn { margin-top: 8px; }
+  .cmp-table tbody th[scope="row"] { font-weight: 500; color: var(--ink-heading); }
+  .cmp-table .cmp-group th { padding: 32px 12px 10px; border-bottom: 1px solid var(--ink-heading); }
+  .cmp-table .cmp-group h2 { font-family: var(--font-display); font-size: 22px; font-weight: 600; }
+  .cmp-table .cmp-vocom { background: var(--brand-pink-50); font-weight: 500; }
+  .cmp-table .cmp-np { color: var(--gray-500); }
+  .cmp-note { font-size: 14px; line-height: 1.55; color: var(--gray-600); max-width: 820px; }
+
+  .cmp-cta { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; padding: 48px 24px; border-radius: var(--radius-lg); background: var(--brand-pink-50); border: 1px solid var(--brand-pink-border); }
+  .cmp-cta h2, .cmp-faq h2 { font-family: var(--font-display); font-size: 36px; line-height: 1.15; font-weight: 600; }
+  .cmp-faq { display: flex; flex-direction: column; gap: 12px; max-width: 820px; width: 100%; margin: 0 auto; }
+  .cmp-faq h2 { margin-bottom: 12px; text-align: center; }
+  .cmp-sources { display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.55; color: var(--gray-600); border-top: 1px solid var(--color-gray-4); padding-top: 24px; }
+  .cmp-sources h2 { font-size: 16px; font-weight: 600; color: var(--ink-heading); }
+  .cmp-sources ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 20px; }
+  .cmp-sources a { color: inherit; text-decoration: underline; }
+
+  /* Below desktop the table scrolls inside its own box; the row labels stay in view. */
+  @media (max-width: 1199.98px) {
+    .cmp-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .cmp-table { min-width: 920px; }
+    .cmp-table thead th, .cmp-table .cmp-corner { position: static; top: auto; box-shadow: none; }
+    .cmp-table tbody th[scope="row"], .cmp-table .cmp-corner { position: sticky; left: 0; z-index: 1; }
+    .cmp-table .cmp-group th { position: static; }
+    .cmp-table .cmp-group h2 { position: sticky; left: 12px; display: inline-block; }
+  }
+  @media (max-width: 809.98px) {
+    .cmp-main { padding: 72px 16px 56px; gap: 36px; }
+    .cmp-hero h1 { font-size: 36px; }
+    .cmp-hero p, .cmp-cta p { font-size: 16px; }
+    .cmp-cta h2, .cmp-faq h2 { font-size: 28px; }
+    .cmp-table { min-width: 820px; font-size: 13px; }
+    .cmp-table[data-col] { min-width: 0; table-layout: auto; }
+    .cmp-table[data-col] thead th, .cmp-table[data-col] .cmp-corner, .cmp-table[data-col] tbody tr:not(.cmp-group) > * { width: 33.33%; }
+    .cmp-table[data-col] tr > :nth-child(n+3) { display: none; }
+    .cmp-table[data-col="0"] tr > :nth-child(3),
+    .cmp-table[data-col="1"] tr > :nth-child(4),
+    .cmp-table[data-col="2"] tr > :nth-child(5),
+    .cmp-table[data-col="3"] tr > :nth-child(6) { display: table-cell; }
+    .cmp-table[data-col] tbody th[scope="row"], .cmp-table[data-col] .cmp-corner { position: static; }
+    .cmp-table[data-col] th, .cmp-table[data-col] td { padding: 12px 8px; }
+    .cmp-table[data-col] .cmp-group h2 { position: static; }
+    .cmp-picker:not([hidden]) { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: -20px; }
+    .cmp-picker span { width: 100%; font-size: 14px; font-weight: 500; }
+    .cmp-picker button { padding: 8px 14px; border-radius: var(--radius-pill); border: 1px solid var(--color-gray-4); background: var(--white); color: var(--ink-heading); font: inherit; font-size: 13px; cursor: pointer; }
+    .cmp-picker button[aria-pressed="true"] { background: var(--color-vocom-cta-1); border-color: var(--color-vocom-cta-1); color: var(--white); }
+  }
+  @media (min-width: 810px) { .cmp-picker { display: none; } }
+</style>

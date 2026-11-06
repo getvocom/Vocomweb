@@ -1,6 +1,7 @@
 ---
 slug: "what-openai’s-governance-framework-means-for-ai-powered-supply-chains"
 order: 22
+updated: 2026-10-22
 cardTitle: "Enterprise AI Governance Is No Longer Optional"
 image:
   src: "/assets/img/blog-what-openai-s-governance-framework-means-for-c4af42.png"

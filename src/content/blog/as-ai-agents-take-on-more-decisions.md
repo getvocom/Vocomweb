@@ -1,6 +1,7 @@
 ---
 slug: "as-ai-agents-take-on-more-decisions"
 order: 29
+updated: 2026-10-22
 cardTitle: "As AI Agents Take on More Decisions"
 image:
   src: "/assets/img/blog-as-ai-agents-take-on-more-decisions-ae32b8.png"

@@ -1,6 +1,7 @@
 ---
 slug: "high-count-fiber-is-where-data-centers-are-headed"
 order: 10
+updated: 2026-10-22
 cardTitle: "Where Data Centers Are Headed"
 image:
   src: "/assets/img/blog-high-count-fiber-is-where-data-centers-8ecab4.png"

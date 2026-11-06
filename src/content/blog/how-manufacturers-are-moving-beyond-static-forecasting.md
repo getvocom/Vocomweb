@@ -1,6 +1,7 @@
 ---
 slug: "how-manufacturers-are-moving-beyond-static-forecasting"
 order: 24
+updated: 2026-10-22
 cardTitle: "How Manufacturers Are Moving"
 image:
   src: "/assets/img/blog-how-manufacturers-are-moving-beyond-static-forecasting-1c27f0.png"

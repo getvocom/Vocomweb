@@ -61,3 +61,7 @@
 .xrgsblc{font-size:32px}
 }
 .xu7ifhs a{color:var(--brand-crimson);text-decoration:underline;text-underline-offset:2px}
+
+/* Title + byline (author, dates) */
+.post-title{display:flex;flex-direction:column;gap:16px;width:100%}
+.post-byline{margin:0;font-family:"Manrope", sans-serif;font-weight:500;font-size:16px;line-height:1.4em;color:var(--color-dark-70)}

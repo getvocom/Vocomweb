@@ -2,13 +2,14 @@
 // (src/data/head); these values are the fallback for new posts/products and follow
 // the Framer templates: blog title = Meta Title, product title = "<Name> | Fiber Optic Cable | Vocom".
 import renders from "../../data/render-images.json";
+import { BLOG_AUTHOR } from "../config";
 
 const SITE = "https://www.vocom.ai";
 const abs = (src?: string) => (src ? (src.startsWith("http") ? src : SITE + src) : undefined);
 
 export function blogSeo(path: string, entry: { data: any }) {
   const d = entry.data;
-  return { title: d.metaTitle ?? d.title, description: d.description ?? "", image: abs(d.image?.src), canonical: SITE + encodeURI(path), blogPosting: true };
+  return { title: d.metaTitle ?? d.title, description: d.description ?? "", image: abs(d.image?.src), canonical: SITE + encodeURI(path), blogPosting: { author: BLOG_AUTHOR, published: d.published, updated: d.updated } };
 }
 
 export function productSeo(path: string, entry: { data: any }) {

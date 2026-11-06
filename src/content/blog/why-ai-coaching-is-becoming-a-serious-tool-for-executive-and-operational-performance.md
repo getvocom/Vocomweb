@@ -1,6 +1,7 @@
 ---
 slug: "why-ai-coaching-is-becoming-a-serious-tool-for-executive-and-operational-performance"
 order: 35
+updated: 2026-10-22
 cardTitle: "VOCOM AI Coaching Potential"
 image:
   src: "/assets/img/blog-why-ai-coaching-is-becoming-a-serious-12f689.jpg"

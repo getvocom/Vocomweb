@@ -1,6 +1,7 @@
 ---
 slug: "microduct-sizing-for-fiber-builds"
 order: 5
+updated: 2026-10-22
 cardTitle: "Microduct Sizing for Fiber Builds"
 image:
   src: "/assets/img/blog-microduct-sizing-for-fiber-builds-ec13b4.png"

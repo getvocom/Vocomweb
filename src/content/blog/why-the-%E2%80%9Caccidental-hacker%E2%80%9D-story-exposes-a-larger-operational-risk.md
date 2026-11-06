@@ -1,6 +1,7 @@
 ---
 slug: "why-the-“accidental-hacker”-story-exposes-a-larger-operational-risk"
 order: 34
+updated: 2026-10-22
 cardTitle: "Larger Operational Risk"
 image:
   src: "/assets/img/blog-why-the-accidental-hacker-story-exposes-a-cd69c9.png"

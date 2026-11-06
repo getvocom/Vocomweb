@@ -1,6 +1,7 @@
 ---
 slug: "building-fibre-where-it-is-hardest"
 order: 11
+updated: 2026-10-22
 cardTitle: "Building fibre where it is hardest"
 image:
   src: "/assets/img/blog-building-fibre-where-it-is-hardest-e1bae9.png"

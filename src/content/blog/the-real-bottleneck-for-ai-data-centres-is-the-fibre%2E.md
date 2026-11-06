@@ -1,6 +1,7 @@
 ---
 slug: "the-real-bottleneck-for-ai-data-centres-is-the-fibre."
 order: 14
+updated: 2026-10-22
 cardTitle: "The real bottleneck for AI data centres "
 image:
   src: "/assets/img/blog-the-real-bottleneck-for-ai-data-centres-9227f2.png"

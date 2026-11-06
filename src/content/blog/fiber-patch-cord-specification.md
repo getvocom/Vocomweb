@@ -1,6 +1,7 @@
 ---
 slug: "fiber-patch-cord-specification"
 order: 3
+updated: 2026-10-22
 cardTitle: "Fiber Patch Cords: Connector, Polish, Armor"
 image:
   src: "/assets/img/blog-fiber-patch-cord-specification-e68d70.png"

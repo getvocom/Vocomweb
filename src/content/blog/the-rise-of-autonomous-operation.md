@@ -1,6 +1,7 @@
 ---
 slug: "the-rise-of-autonomous-operation"
 order: 31
+updated: 2026-10-22
 cardTitle: "The Rise of Autonomous Operation"
 image:
   src: "/assets/img/blog-the-rise-of-autonomous-operation-7888c6.png"

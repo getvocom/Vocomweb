@@ -1,6 +1,7 @@
 ---
 slug: "the-middle-east-is-building-data-centers"
 order: 9
+updated: 2026-10-22
 cardTitle: "The Middle East Is Building Data Centers"
 image:
   src: "/assets/img/blog-the-middle-east-is-building-data-centers-c1326f.png"

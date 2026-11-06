@@ -1,6 +1,7 @@
 ---
 slug: "rollable-ribbon-vs-flat-ribbon-fiber"
 order: 6
+updated: 2026-10-22
 cardTitle: "Rollable Ribbon vs Flat Ribbon Fiber"
 image:
   src: "/assets/img/blog-rollable-ribbon-vs-flat-ribbon-fiber-3489a4.png"

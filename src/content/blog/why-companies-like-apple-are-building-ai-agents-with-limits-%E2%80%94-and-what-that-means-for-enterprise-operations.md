@@ -1,6 +1,7 @@
 ---
 slug: "why-companies-like-apple-are-building-ai-agents-with-limits-—-and-what-that-means-for-enterprise-operations"
 order: 28
+updated: 2026-10-22
 cardTitle: "Why Companies Like Apple Are Building..."
 image:
   src: "/assets/img/blog-why-companies-like-apple-are-building-ai-5f42b9.png"

@@ -1,6 +1,7 @@
 ---
 slug: "why-simulation-driven-ai-is-becoming-critical"
 order: 27
+updated: 2026-10-22
 cardTitle: "Why Simulation-Driven AI Is Becoming Critical "
 image:
   src: "/assets/img/blog-why-simulation-driven-ai-is-becoming-critical-cfa713.png"

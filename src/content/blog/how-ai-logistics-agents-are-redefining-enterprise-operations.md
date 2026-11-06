@@ -1,6 +1,7 @@
 ---
 slug: "how-ai-logistics-agents-are-redefining-enterprise-operations"
 order: 40
+updated: 2026-10-22
 cardTitle: "AI Logistics Redefining Operations"
 image:
   src: "/assets/img/blog-why-enterprise-ai-logistics-platforms-are-replacing-191066.jpg"

@@ -140,3 +140,14 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Step 2 heading: "Thanks, we have your request." Body: "Add your full spec now for a faster, more accurate quote. Everything here is optional."
 - Step 2 buttons: "Add details" and "Skip" (both end on /resources, as before); error: "Something went wrong. Please try again, or email your spec to us."
 - 2026-11-01: step 2 also shows the catalog and booking links, using the /resources wording and links (Tom). The only new words are the "Book a call" link label.
+
+## 2026-11-04: founding year 1993
+- Tom: founded 1993 (two entities, Taiwan and USA); use 1993. All "founded in", foundingDate (schema) and "since" claims now say 1993, and the "1998 / Founded, FCC 214 Licensed" stats now read "1993 / Founded".
+- Left at 1998 because they are licence or US-incorporation facts, not the founding date: "FCC 214 licensed (carrier) since 1998", "run its own equipment and interconnects since 1998", "earliest business line, run since 1998 on an FCC 214 licensed network", "from wholesale IDD termination in 1998", "In 1998, Victor incorporated Vocom in the U.S.", and the /vocom-services "1998 / FCC 214 Licensed" stat.
+
+## 2026-11-06: /fiber-optic-cable-supplier-comparison (draft, not pushed)
+- Tom asked for a Slack-style comparison table against Corning, Prysmian, Sumitomo and YOFC, no pricing, CTA "Get a customized quote within 24hrs".
+- "Within 24 hours" is a new Vocom promise, not previously on the site. Kevin to confirm the team can meet it.
+- No competitor publishes a lead time we could find, so those cells say "Not published". We don't quote the 52-week Corning figure: it's one ISP's story relayed on a rival vendor's blog.
+- No "where it's made" or BABA row: Vocom's own origin and BABA position aren't public copy (see notes/drafts-2026-11-04.md item 5).
+- Competitor cells are a desk check on 2026-11-06. Corning's site blocked direct fetching, so its cells rest on search results. Re-check before pushing and whenever CHECKED changes.

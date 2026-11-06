@@ -1,6 +1,7 @@
 ---
 slug: "the-real-roi-of-enterprise-ai-logistics-software"
 order: 41
+updated: 2026-10-22
 cardTitle: "ROI of Enterprise AI Logistics"
 image:
   src: "/assets/img/blog-why-enterprise-ai-logistics-platforms-are-replacing-191066.jpg"

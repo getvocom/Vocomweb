@@ -1,6 +1,7 @@
 ---
 slug: "vocom-supply-chain-risk"
 order: 25
+updated: 2026-10-22
 cardTitle: "Vocom Supply Chain Risk "
 image:
   src: "/assets/img/blog-vocom-supply-chain-risk-9b0e93.png"

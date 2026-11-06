@@ -1,6 +1,7 @@
 ---
 slug: "ai’s-real-impact-on-work"
 order: 32
+updated: 2026-10-22
 cardTitle: "AI’s Real Impact on Work"
 image:
   src: "/assets/img/blog-ai-s-real-impact-on-work-5235e0.png"

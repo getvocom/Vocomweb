@@ -12,7 +12,7 @@ interface Props { title?: string; subtitle?: string; eyebrow?: string }
 const {
   title = "A Network Built Across the Pacific",
   subtitle = "Vocom PoPs and IDCs across Asia, the Americas and Europe, with protected routes between the main hubs.",
-  eyebrow = "Est. 1998 · FCC 214 licensed carrier",
+  eyebrow = "Est. 1993 · FCC 214 licensed carrier",
 } = Astro.props;
 
 type City = { code: string; name: string; lon: number; lat: number; region: "Asia-Pacific" | "Americas" | "Europe and Middle East"; hub?: boolean; hq?: boolean; label?: [number, number] };
@@ -98,7 +98,7 @@ const regions = ["Asia-Pacific", "Americas", "Europe and Middle East"] as const;
   </div>
 
   <ul class="vm-stats">
-    <li><strong>1998</strong><span>Founded, FCC 214 licensed</span></li>
+    <li><strong>1993</strong><span>Founded</span></li>
     <li><strong>20+</strong><span>Global PoPs and IDCs</span></li>
     <li><strong>24/7</strong><span>NOC monitoring</span></li>
   </ul>

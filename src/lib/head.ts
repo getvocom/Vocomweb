@@ -19,15 +19,17 @@ export const headKey = (path: string) => (path === "/" ? "index" : decodeURIComp
 
 const SITE = "https://www.vocom.ai";
 
+export interface BlogMeta { author: { name: string; jobTitle: string; url: string }; published?: Date; updated?: Date }
+
 // `override` replaces the captured title/description (and their OG/Twitter copies) when a
 // content entry sets metaTitle/metaDescription, e.g. a product page needing its own title.
-type Seo = Partial<HeadData> & { description?: string; image?: string; canonical?: string; blogPosting?: boolean; override?: { title?: string; description?: string; image?: string; imageAlt?: string; imageWidth?: number; imageHeight?: number } };
+type Seo = Partial<HeadData> & { description?: string; image?: string; canonical?: string; blogPosting?: BlogMeta; override?: { title?: string; description?: string; image?: string; imageAlt?: string; imageWidth?: number; imageHeight?: number } };
 
 export function headFor(path: string, seo?: Seo): HeadData {
   const base = byKey[headKey(path)];
   if (base && !seo) return base;
   const head = applyOverride(build(path, base, seo), seo?.override);
-  if (seo?.blogPosting) head.jsonld = [...head.jsonld, blogPosting(head)];
+  if (seo?.blogPosting) head.jsonld = [...head.jsonld, blogPosting(head, seo.blogPosting)];
   return head;
 }
 
@@ -51,7 +53,8 @@ function applyOverride(h: HeadData, o?: { title?: string; description?: string; 
 }
 
 // Same object the live site injects with JavaScript on /blog/* pages, rendered statically.
-function blogPosting(h: HeadData) {
+function blogPosting(h: HeadData, b: BlogMeta) {
+  const day = (d?: Date) => d?.toISOString().slice(0, 10);
   const meta = (k: string) => h.meta.find((m) => m.name === k || m.property === k)?.content ?? "";
   const canonical = h.links.find((l) => l.rel === "canonical")?.href ?? "";
   return JSON.stringify({
@@ -62,6 +65,9 @@ function blogPosting(h: HeadData) {
     image: meta("og:image"),
     url: canonical,
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+    author: { "@type": "Person", name: b.author.name, jobTitle: b.author.jobTitle, url: b.author.url, worksFor: { "@id": "https://www.vocom.ai/#vocom-ai" } },
+    ...(b.published && { datePublished: day(b.published) }),
+    ...(b.updated && { dateModified: day(b.updated) }),
     publisher: { "@id": "https://www.vocom.ai/#organization" },
     isPartOf: { "@id": "https://www.vocom.ai/#website" },
   });

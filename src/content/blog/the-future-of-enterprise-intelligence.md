@@ -1,6 +1,7 @@
 ---
 slug: "the-future-of-enterprise-intelligence"
 order: 33
+updated: 2026-10-22
 cardTitle: "The Future of Enterprise Intelligence"
 image:
   src: "/assets/img/blog-the-future-of-enterprise-intelligence-0cb2a0.png"

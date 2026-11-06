@@ -1,6 +1,7 @@
 ---
 slug: "fiber-optic-cable-lead-times-in-2026"
 order: 8
+updated: 2026-10-22
 cardTitle: "Fiber Optic Cable Lead Times in 2026"
 image:
   src: "/assets/img/blog-fiber-optic-cable-lead-times-in-2026-44c995.png"

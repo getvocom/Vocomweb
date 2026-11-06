@@ -1,6 +1,7 @@
 ---
 slug: "from-predicting-problems-to-solving-them"
 order: 21
+updated: 2026-10-22
 cardTitle: "From Predicting Problems to Solving Them"
 image:
   src: "/assets/img/blog-from-predicting-problems-to-solving-them-31fecd.png"

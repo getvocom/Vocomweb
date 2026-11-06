@@ -1,6 +1,7 @@
 ---
 slug: "enterprise-decision-making"
 order: 30
+updated: 2026-10-22
 cardTitle: "Enterprise Decision-Making"
 image:
   src: "/assets/img/blog-enterprise-decision-making-0976ba.png"

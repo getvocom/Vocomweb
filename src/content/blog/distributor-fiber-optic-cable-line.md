@@ -1,6 +1,7 @@
 ---
 slug: "distributor-fiber-optic-cable-line"
 order: 1
+updated: 2026-11-03
 cardTitle: "Adding a Fiber Cable Line as a Distributor"
 image:
   src: "/assets/img/fiber-optic-cable-reel-9731cb.png"

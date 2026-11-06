@@ -1,6 +1,8 @@
 ---
 slug: "fiber-optic-cable-distributor-second-source"
 order: 0
+published: 2026-11-03
+updated: 2026-11-03
 cardTitle: "Fiber Optic Cable Distributors: Adding a Second Source Without Holding Stock"
 image:
   src: "/assets/img/blog-fiber-optic-cable-distributor-second-source.webp"

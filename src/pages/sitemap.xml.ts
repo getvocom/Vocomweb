@@ -19,12 +19,15 @@ const STATIC = [
   "/case-studies",
   // added 2026-11-06
   "/fiber-optic-cable-supplier-comparison",
+  // added 2026-11-09
+  "/optical-transceivers",
 ];
 
 // Category pages that show a hero render (see src/pages/<page>.astro)
 const hero = (id: keyof typeof renders.hero) => `/assets/img/hero/${renders.hero[id]}-1920.jpg`;
 const PAGE_IMAGES: Record<string, string[]> = {
   "/data-center-fiber-cabling": [hero("VC-104")],
+  "/optical-transceivers": [hero("VC-106"), "/assets/img/ai-cluster-reference-topology-2400.jpg"],
   "/air-blown-micro-fiber-cable": [hero("VC-109")],
   "/ftth-drop-cable": [hero("VC-108")],
   "/fiber-optic-cables": [hero("VC-105")],

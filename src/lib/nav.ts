@@ -29,6 +29,7 @@ export const NAV: NavSection[] = [
         title: "By application",
         links: [
           { label: "Data Center Fiber Cabling", href: "/data-center-fiber-cabling", desc: "MPO and MTP trunks, cassettes, harnesses" },
+          { label: "Optical Transceivers", href: "/optical-transceivers", desc: "400G, 800G and 1.6T for AI clusters" },
           { label: "Connectors and Hardware", href: "/fiber-optic-connectors-and-hardware", desc: "Patch cords, adapters, terminal boxes" },
           { label: "Full Product Catalog", href: "/fiber-optic-cable-catalog", desc: "Every product with codes and fiber counts" },
           { label: "Case Studies", href: "/case-studies", desc: "Builds we have supplied in the US and Canada" },

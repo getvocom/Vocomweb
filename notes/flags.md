@@ -157,3 +157,6 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Years in business sits in a stats band and the Vocom column head, not a row: Vocom (1993) is the youngest of the five (Corning 1851, Prysmian 1879, Sumitomo Electric 1897, YOFC 1988).
 - New line, Tom to approve: "Already holding a quote? Send it over and put ours next to it."
 - Mixes fiber, telecom and AI on one page at Tom's request; the content guide normally keeps them apart.
+
+## 2026-11-09 Optical transceivers
+- Tom: add a transceivers page (higher margin than fiber) and factor it into the homepage. Built /optical-transceivers from Kevin's AI Factory deck and topology PDF. Homepage: product card, "AI Cluster Optics" band, one FAQ. Open questions in notes/transceivers-2026-11-09.md.

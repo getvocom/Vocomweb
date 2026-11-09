@@ -5,7 +5,7 @@ updated: 2026-11-04
 cardTitle: "Customized Fiber Specification"
 image:
   src: "/assets/img/blog-customized-fiber-specification-02b083.png"
-  alt: "Coloured optical fibres against a black background, with the headline How to Order Fiber Optic Cable That Matches Your Installation"
+  alt: "Coloured optical fibers against a black background, with the headline How to Order Fiber Optic Cable That Matches Your Installation"
 showOnHomepage: true
 industry: "Fiber Optic Cable"
 product: "Customized Fiber Specification"

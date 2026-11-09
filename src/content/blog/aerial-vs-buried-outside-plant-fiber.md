@@ -5,7 +5,7 @@ updated: 2026-10-22
 cardTitle: "Aerial or Buried: Outside Plant Fiber"
 image:
   src: "/assets/img/blog-aerial-vs-buried-outside-plant-fiber-ccf7e9.png"
-  alt: "Bundle of coloured optical fibres emerging from a cable, with the headline Aerial or Buried: Choosing Outside Plant Fiber Cable for a Rural FTTH Build"
+  alt: "Bundle of coloured optical fibers emerging from a cable, with the headline Aerial or Buried: Choosing Outside Plant Fiber Cable for a Rural FTTH Build"
 showOnHomepage: true
 industry: "Rural Broadband"
 product: "Outside Plant Fiber"

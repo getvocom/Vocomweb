@@ -5,7 +5,7 @@ updated: 2026-10-22
 cardTitle: "VOCOM AI Coaching Potential"
 image:
   src: "/assets/img/blog-why-ai-coaching-is-becoming-a-serious-12f689.jpg"
-  alt: "Vocom logo on a red background with blurred light fibres"
+  alt: "Vocom logo on a red background with blurred light fibers"
 showOnHomepage: true
 industry: "Business"
 product: "VOCOM AI Coach"

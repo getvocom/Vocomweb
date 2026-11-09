@@ -179,6 +179,16 @@
    "name": "waterproof-outdoor-terminal-box",
    "w": 1200,
    "h": 1200
+  },
+  "TRX-LINEUP": {
+   "name": "optical-transceivers-lineup",
+   "w": 1200,
+   "h": 750
+  },
+  "TRX-OSFP": {
+   "name": "osfp-optical-transceiver",
+   "w": 1200,
+   "h": 1200
   }
  },
  "hero": {

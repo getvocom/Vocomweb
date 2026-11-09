@@ -5,7 +5,7 @@ updated: 2026-11-04
 cardTitle: "New Fiber Network"
 image:
   src: "/assets/img/blog-new-fiber-network-55c49d.png"
-  alt: "Bright blue optical fibres with glowing tips, with the headline What China's New Optical Fiber Breakthrough Means for the Future of AI Infrastructure"
+  alt: "Bright blue optical fibers with glowing tips, with the headline What China's New Optical Fiber Breakthrough Means for the Future of AI Infrastructure"
 showOnHomepage: true
 industry: "AI Infrastructure"
 product: "Fiber Optics"

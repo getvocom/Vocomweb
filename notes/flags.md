@@ -160,3 +160,10 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 
 ## 2026-11-09 Optical transceivers
 - Tom: add a transceivers page (higher margin than fiber) and factor it into the homepage. Built /optical-transceivers from Kevin's AI Factory deck and topology PDF. Homepage: product card, "AI Cluster Optics" band, one FAQ. Open questions in notes/transceivers-2026-11-09.md.
+- Tom's graphics (same day): switch faceplate shot in "What it is", new range lineup in the hero spec box and share image, single OSFP module on the homepage card. Six product pages under the new "Optical Transceivers" category (1.6T, 800G, 400G, 100G, 25G, 10G and 1G), a catalog table, and 1.6T and 800G at the top of the nav's "Popular products". Product template wording switches to module labels for this category only; cable product pages are unchanged.
+- Kevin to confirm: the form factors named for the lower speeds (QSFP28 at 100G, SFP28 at 25G, SFP+ and SFP at 10G and 1G) are the industry standard ones, not taken from the deck. No lead time is stated on any transceiver page.
+
+## 2026-11-09: fiber spelling, videos, comparison rows
+- Tom: "always fiber not fibre". Every visible "fibre/fibres" (blog bodies, titles, SEO heads, alt text) is now "fiber/fibers". URLs, slugs and image file names keep "fibre" because URLs never change. "centre" (data centre) is still British in 18 places: ask Tom.
+- Videos: every video now has a poster frame (public/assets/video/*-poster.jpg). Muted background loops show the poster only on phones (<= 809.98px) and with reduced motion, so nothing downloads and nothing is blank when autoplay is blocked. Narrated videos (fiber-optic-cables, supply chain) keep their source and play on tap.
+- Comparison page: the seven product range rows now say "Broad catalog" for all four competitors, and Glass says "Makes its own fiber", instead of "Not listed". Checked date moved to November 9, 2026.

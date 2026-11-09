@@ -5,7 +5,7 @@ updated: 2026-10-22
 cardTitle: "AI Logistics are Replacing Manual Planning"
 image:
   src: "/assets/img/blog-why-enterprise-ai-logistics-platforms-are-replacing-191066.jpg"
-  alt: "Vocom logo on a red background with blurred light fibres"
+  alt: "Vocom logo on a red background with blurred light fibers"
 showOnHomepage: true
 industry: "Logistics"
 product: "VOCOM AI Logistics"

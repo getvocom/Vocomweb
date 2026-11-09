@@ -3,7 +3,7 @@
 // content collections and page titles/descriptions, so it never says anything the site doesn't.
 import { headFor } from "../lib/head";
 import { getPosts, getProducts } from "../lib/cms";
-import { CATEGORY_PAGES } from "../lib/categories";
+import { CATEGORY_PAGES, productLabels } from "../lib/categories";
 
 const SITE = "https://www.vocom.ai";
 const desc = (path: string) => headFor(path).meta.find((m) => m.name === "description")?.content ?? "";
@@ -28,9 +28,10 @@ export async function GET() {
     for (const p of list) {
       const d = p.data;
       out.push(`#### ${d.name}`, `URL: ${SITE}/products/${p.id}`);
-      if (d.codes) out.push(`- Codes: ${d.codes}`);
-      if (d.fiberCounts) out.push(`- Fiber counts: ${d.fiberCounts}`);
-      if (d.construction) out.push(`- Construction and rating: ${d.construction}`);
+      const L = productLabels(d.category);
+      if (d.codes) out.push(`- ${L.trx ? "Form factor" : "Codes"}: ${d.codes}`);
+      if (d.fiberCounts) out.push(`- ${L.trx ? "Data rate" : "Fiber counts"}: ${d.fiberCounts}`);
+      if (d.construction) out.push(`- ${L.trx ? "Build and compatibility" : "Construction and rating"}: ${d.construction}`);
       if (d.typicalUse) out.push(`- Typical use: ${d.typicalUse}`);
       if (d.description) out.push("", d.description);
       out.push("");

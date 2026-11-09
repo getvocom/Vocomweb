@@ -33,7 +33,8 @@ for (const r of index) {
   if (used.has(r.id)) { total += await variants(src, "public/assets/img/products", nameOf(r.file), [480, 800, 1200]); out.products[r.id] = nameOf(r.file); }
   else if (/^VC-1(0[4-9]|10)$/.test(r.id)) { total += await variants(src, "public/assets/img/hero", nameOf(r.file), [1280, 1920, 2560]); out.hero[r.id] = nameOf(r.file); }
 }
-const meta = {};
+// TRX-* renders are Tom's transceiver images (2026-11-09), added by hand rather than from the 4K zip: keep them.
+const meta = Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync("data/render-images.json", "utf8")).products).filter(([id]) => id.startsWith("TRX-")));
 for (const [id, name] of Object.entries(out.products)) { const m = await sharp(`public/assets/img/products/${name}-1200.jpg`).metadata(); meta[id] = { name, w: m.width, h: m.height }; }
 fs.writeFileSync("data/render-images.json", JSON.stringify({ products: meta, hero: out.hero }, null, 1));
 console.log(`${Object.keys(out.products).length} product renders, ${Object.keys(out.hero).length} hero renders, ${Math.round(total / 1024 / 1024 * 10) / 10} MB written`);

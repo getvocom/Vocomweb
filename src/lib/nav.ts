@@ -39,6 +39,8 @@ export const NAV: NavSection[] = [
       {
         title: "Popular products",
         links: [
+          { label: "1.6T OSFP Transceiver", href: "/products/1-6t-osfp-transceiver" },
+          { label: "800G Transceiver", href: "/products/800g-optical-transceiver" },
           { label: "MTP/MPO Trunk Cable", href: "/products/mtp-mpo-trunk-cable" },
           { label: "LC Fiber Patch Cord", href: "/products/lc-fiber-patch-cord" },
           { label: "Armored Fiber Patch Cord", href: "/products/armored-fiber-patch-cord" },

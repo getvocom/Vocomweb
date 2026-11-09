@@ -5,7 +5,7 @@ updated: 2026-10-22
 cardTitle: "AI is driving a new era of fiber demand"
 image:
   src: "/assets/img/blog-ai-is-driving-a-new-era-of-32beec.png"
-  alt: "Dark close-up of fibre strands, with the headline AI is driving a new era of fiber demand"
+  alt: "Dark close-up of fiber strands, with the headline AI is driving a new era of fiber demand"
 showOnHomepage: true
 industry: "AI Data Centers"
 product: "Fiber Optic"

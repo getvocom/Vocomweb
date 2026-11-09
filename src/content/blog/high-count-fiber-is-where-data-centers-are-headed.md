@@ -5,7 +5,7 @@ updated: 2026-10-22
 cardTitle: "Where Data Centers Are Headed"
 image:
   src: "/assets/img/blog-high-count-fiber-is-where-data-centers-8ecab4.png"
-  alt: "Bundle of coloured optical fibres emerging from a cable, with the headline High-Count Fiber Is Where Data Centers Are Headed"
+  alt: "Bundle of coloured optical fibers emerging from a cable, with the headline High-Count Fiber Is Where Data Centers Are Headed"
 showOnHomepage: true
 industry: "Data Centers"
 product: "High-Count Fiber"

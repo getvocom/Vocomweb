@@ -27,7 +27,7 @@ const STATIC = [
 const hero = (id: keyof typeof renders.hero) => `/assets/img/hero/${renders.hero[id]}-1920.jpg`;
 const PAGE_IMAGES: Record<string, string[]> = {
   "/data-center-fiber-cabling": [hero("VC-104")],
-  "/optical-transceivers": [hero("VC-106"), "/assets/img/ai-cluster-reference-topology-2400.jpg"],
+  "/optical-transceivers": ["/assets/img/products/optical-transceivers-lineup-1200.jpg", "/assets/img/optical-transceivers-in-switch-1680.jpg", "/assets/img/ai-cluster-reference-topology-2400.jpg"],
   "/air-blown-micro-fiber-cable": [hero("VC-109")],
   "/ftth-drop-cable": [hero("VC-108")],
   "/fiber-optic-cables": [hero("VC-105")],

@@ -7,10 +7,13 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FaqItem from "../components/FaqItem.astro";
 
-const CHECKED = "November 6, 2026";
+const CHECKED = "November 9, 2026";
 const CTA = "Get a Customized Quote Within 24hrs";
 const NL = "Not listed";
 const nl = [NL, NL, NL, NL];
+// Product range rows: all four publish broad cable catalogs, so these cells say so rather than "Not listed".
+const BC = "Broad catalog";
+const bc = [BC, BC, BC, BC];
 const columns = ["Corning", "Prysmian", "Sumitomo Electric", "YOFC"];
 const stats = [
   { value: "1993", label: "Founded" },
@@ -27,15 +30,15 @@ const groups = [
     { label: "Quote response", vocom: "Within 24 hours", others: nl },
   ] },
   { title: "Fiber and Cable", rows: [
-    { label: "Fiber types", vocom: "G.652D, G.657A1, G.657A2, OS2, OM3, OM4 and OM5", others: nl },
+    { label: "Fiber types", vocom: "G.652D, G.657A1, G.657A2, OS2, OM3, OM4 and OM5", others: bc },
     { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", NL] },
-    { label: "Outside plant", vocom: "Loose tube, ADSS, figure 8, armored direct burial, hybrid fiber and copper", others: nl },
-    { label: "Ribbon", vocom: "Rollable, flat and central tube", others: nl },
-    { label: "Air blown", vocom: "Micro cable, HDPE microduct and vaults", others: nl },
-    { label: "FTTH and drop", vocom: "Flat and armored drop, OptiTap compatible connectors", others: nl },
-    { label: "Indoor and data center", vocom: "OFNP plenum, OFNR riser, MPO and MTP trunks, cassettes, harnesses", others: nl },
-    { label: "Connectors and hardware", vocom: "Patch cords, adapters, terminal boxes", others: nl },
-    { label: "Glass", vocom: "Fujikura preform", others: nl },
+    { label: "Outside plant", vocom: "Loose tube, ADSS, figure 8, armored direct burial, hybrid fiber and copper", others: bc },
+    { label: "Ribbon", vocom: "Rollable, flat and central tube", others: bc },
+    { label: "Air blown", vocom: "Micro cable, HDPE microduct and vaults", others: bc },
+    { label: "FTTH and drop", vocom: "Flat and armored drop, OptiTap compatible connectors", others: bc },
+    { label: "Indoor and data center", vocom: "OFNP plenum, OFNR riser, MPO and MTP trunks, cassettes, harnesses", others: bc },
+    { label: "Connectors and hardware", vocom: "Patch cords, adapters, terminal boxes", others: bc },
+    { label: "Glass", vocom: "Fujikura preform", others: ["Makes its own fiber", "Makes its own fiber", "Makes its own fiber", "Makes its own fiber"] },
     { label: "Quality", vocom: "Quality-checked per order, test data on request", others: nl },
   ] },
   { title: "Buying", rows: [
@@ -72,6 +75,8 @@ const groups = [
   ] },
 ];
 const sources = [
+  { label: "Corning: fiber optic cable catalog", href: "https://www.corning.com/optical-communications/worldwide/en/home/products/fiber-optic-cable.html" },
+  { label: "Prysmian: FlexRibbon cables", href: "https://www.prysmian.com/en/markets/digital-solutions/telecom-networks/focus-on/flexribbontm" },
   { label: "Corning: how to buy", href: "https://www.corning.com/cala/en/products/communication-networks/how-to-buy.html" },
   { label: "Corning: RocketRibbon cable", href: "https://www.corning.com/optical-communications/worldwide/en/home/products/fiber-optic-cable/outdoor-cables/rocket-ribbon.html" },
   { label: "Prysmian North America: optical fiber made in the USA", href: "https://na.prysmian.com/markets/digital-solutions/optical-fiber/made-right-here" },

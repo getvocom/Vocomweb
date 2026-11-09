@@ -96,7 +96,13 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       })();
       // Videos: attach the source and play only while on screen (saves megabytes per page).
       (function () {
-        var vids = document.querySelectorAll("video[data-src]");
+        // Muted background loops stay on their poster (a still frame) on phones and with reduced motion:
+        // no download, and nothing blank when the phone blocks autoplay (Low Power Mode, data saver).
+        // Narrated videos (with controls) always keep their source and play when tapped.
+        var still = window.matchMedia && matchMedia("(max-width: 809.98px), (prefers-reduced-motion: reduce)").matches;
+        var vids = Array.prototype.filter.call(document.querySelectorAll("video[data-src]"), function (v) {
+          return !(still && v.hasAttribute("muted") && !v.hasAttribute("controls") && v.hasAttribute("poster"));
+        });
         if (!vids.length) return;
         function load(v) { if (!v.src) { v.src = v.getAttribute("data-src"); v.preload = "auto"; } }
         if (!("IntersectionObserver" in window)) { vids.forEach(function (v) { load(v); if (v.hasAttribute("data-autoplay")) v.play().catch(function () {}); }); return; }

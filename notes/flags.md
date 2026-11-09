@@ -167,3 +167,10 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Tom: "always fiber not fibre". Every visible "fibre/fibres" (blog bodies, titles, SEO heads, alt text) is now "fiber/fibers". URLs, slugs and image file names keep "fibre" because URLs never change. "centre" (data centre) is still British in 18 places: ask Tom.
 - Videos: every video now has a poster frame (public/assets/video/*-poster.jpg). Muted background loops show the poster only on phones (<= 809.98px) and with reduced motion, so nothing downloads and nothing is blank when autoplay is blocked. Narrated videos (fiber-optic-cables, supply chain) keep their source and play on tap.
 - Comparison page: the seven product range rows now say "Broad catalog" for all four competitors, and Glass says "Makes its own fiber", instead of "Not listed". Checked date moved to November 9, 2026.
+
+## 2026-11-09: Tom's answers
+- US spelling always: "center/centers/centered" now in all visible text, as with "fiber". Slugs and URLs keep "centre" and "fibre" (URLs never change).
+- Approved and live: the UL wording (fiber-optic-cables bullet "UL-Listed Cable Available"; homepage badge alt "UL-listed cable available on request") and the two Ads FAQs (cost per foot on /fiber-optic-cables, direct burial on /loose-tube-fiber-optic-cable). FAQ schema regenerated.
+- Transceiver form factors (QSFP28, SFP28, SFP+, SFP) confirmed. The origin question is not an issue; nothing to add on the site.
+- Lead emails: quote requests, "spec added" and newsletter sign-ups now email kevin@getvocom.com and kevin@vocom.com (apps-script/Code.gs). Live only after the Apps Script is redeployed.
+- FAQs: every page now uses the same dropdown (<FaqItem>) in a single-column .faq-list. The 12 pages that had static question boxes (homepage, fiber category and partner pages, /optical-transceivers) were converted; questions and answers unchanged.

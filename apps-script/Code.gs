@@ -13,8 +13,9 @@
  * deployment -> Version: New version, so the URL stays the same.
  */
 var SHEET_ID = '1olKIsOA0bS68Kl6CgIIn-fnKz25YPPmac1u_R1ursQ4';
-var NOTIFY_EMAIL = 'kevin@getvocom.com';
-var NOTIFY_ON_NEWSLETTER = false; // set true to get an email for every newsletter sign-up
+// Every lead email (quote request, spec added, newsletter sign-up) goes to Kevin at both addresses (Tom, 2026-11-09).
+var NOTIFY_EMAIL = 'kevin@getvocom.com,kevin@vocom.com';
+var NOTIFY_ON_NEWSLETTER = true; // false = no email for newsletter sign-ups (they still go to the sheet)
 
 var QUOTE_FIELDS = ['Name', 'Email', 'Company', 'Company Size', 'Use Case', 'I Am A', 'Message'];
 // Only asked when Use Case is "Fiber Optic". Stored after the Page column so existing columns don't move.

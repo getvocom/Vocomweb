@@ -36,3 +36,5 @@ Send the files and I'll run them through the render pipeline (WebP + JPG sizes, 
 5. **Origin:** transceivers are active devices, the category US security policy looks at. Nothing on the page says where modules are made. Kevin should be ready for the question on calls.
 6. Deck contact is kevin@vocom.com and (650) 619-5048; the site uses kevin@getvocom.com and +1-213-627-8999. Page uses the site details only.
 7. Lower-speed form factors (QSFP28 100G, SFP28 25G, SFP+ 10G, SFP 1G) are the industry-standard ones; Kevin to confirm these are what we supply.
+
+**Answered 2026-11-09 (Tom):** form factors in item 7 confirmed; item 5 (origin question) is not an issue. Still open: items 1, 2, 4, 6.

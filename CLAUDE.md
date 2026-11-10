@@ -84,7 +84,7 @@ These match Framer: desktop ≥ 1200px, tablet 810–1199.98px, phone ≤ 809.98
 ## Add a blog post
 
 1. Copy an existing file in `src/content/blog/` to `src/content/blog/<slug>.md`.
-2. Set `slug`, the next `order` number, `published` and `updated` (today, YYYY-MM-DD), and the fields.
+2. Set `slug`, the next `order` number, `published` and `updated` (today, YYYY-MM-DD), and the fields. The /blog page lists posts by `published` date, newest first, so a new post must have `published` to appear at the top.
 3. Put the main image in `public/assets/img/` and set `image: { src, alt }`. Alt text is required.
 4. The page, the sitemap entry, the /blog card and BlogPosting JSON-LD are generated automatically. The `<title>` is `metaTitle` and the description is `description`.
 

@@ -5,8 +5,8 @@ published: 2026-11-10
 updated: 2026-11-10
 cardTitle: "800G and 1.6T Optics: What Changes When You Go Above 400G"
 image:
-  src: "/assets/img/blog-800g-1-6t-optics-above-400g.jpg"
-  alt: "A row of optical transceivers plugged into a switch faceplate, with yellow single-mode patch cords running into a cable manager"
+  src: "/assets/img/blog-800g-1-6t-optics-above-400g-58a73b.jpg"
+  alt: "A beam of light splitting into a spectrum, with the title 800G and 1.6T Optics: What Changes When You Go Above 400G"
 showOnHomepage: true
 industry: "AI Data Center"
 product: "Optical Transceivers"

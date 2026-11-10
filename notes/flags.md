@@ -180,3 +180,9 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Comparison page competitor cells: confirmed by Tom.
 - /6912-fiber-optic-cable: built from the specs already on the site (38.0mm OD, 1064 kg/km LSZH, 432 x 16F ribbons, G.657A1/A2, Fujikura preform, up to 10 weeks; 1728F alternative). Outdoor jacket, duct size, bend radius, pulling tension and reel are "confirmed with your quote" until Kevin supplies them. Linked in the nav under Fiber Optic > By cable type.
 - Search titles changed on six pages and the phone header now shows "Request a Quote": see notes/data-review-2026-11-10.md.
+
+## 2026-11-10: CommScope added to the supplier comparison
+- Tom asked to add CommScope. Its cable business (CCS) has been part of Amphenol since January 9, 2026; commscope.com says "Now part of the Amphenol family of brands", so Ownership reads "Part of Amphenol, publicly listed".
+- From commscope.com: buy through CommScope Sales or a partner; contact address Claremont, North Carolina; partners worldwide. No lead time, minimum order, stock, delivery terms or 24/7 support published, so those cells say "Not listed".
+- Highest ribbon count and Glass are "Not listed": CommScope publishes rollable ribbon, but I found no 6912F part and no statement that it draws its own fiber.
+- The check date is now November 10, 2026 (Tom confirmed the other four columns the same day).

@@ -7,14 +7,15 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FaqItem from "../components/FaqItem.astro";
 
-const CHECKED = "November 9, 2026";
+const CHECKED = "November 10, 2026";
 const CTA = "Get a Customized Quote Within 24hrs";
 const NL = "Not listed";
-const nl = [NL, NL, NL, NL];
-// Product range rows: all four publish broad cable catalogs, so these cells say so rather than "Not listed".
+const nl = [NL, NL, NL, NL, NL];
+// Product range rows: all five publish broad cable catalogs, so these cells say so rather than "Not listed".
 const BC = "Broad catalog";
-const bc = [BC, BC, BC, BC];
-const columns = ["Corning", "Prysmian", "Sumitomo Electric", "YOFC"];
+const bc = [BC, BC, BC, BC, BC];
+// CommScope added 2026-11-10 (Tom). Its cable business has been part of Amphenol since January 2026.
+const columns = ["Corning", "Prysmian", "Sumitomo Electric", "YOFC", "CommScope"];
 const stats = [
   { value: "1993", label: "Founded" },
   { value: "25K+", label: "Clients" },
@@ -31,20 +32,20 @@ const groups = [
   ] },
   { title: "Fiber and Cable", rows: [
     { label: "Fiber types", vocom: "G.652D, G.657A1, G.657A2, OS2, OM3, OM4 and OM5", others: bc },
-    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", NL] },
+    { label: "Highest ribbon fiber count", vocom: "6912F", others: ["6912F", "6912F", "6912F", NL, NL] },
     { label: "Outside plant", vocom: "Loose tube, ADSS, figure 8, armored direct burial, hybrid fiber and copper", others: bc },
     { label: "Ribbon", vocom: "Rollable, flat and central tube", others: bc },
     { label: "Air blown", vocom: "Micro cable, HDPE microduct and vaults", others: bc },
     { label: "FTTH and drop", vocom: "Flat and armored drop, OptiTap compatible connectors", others: bc },
     { label: "Indoor and data center", vocom: "OFNP plenum, OFNR riser, MPO and MTP trunks, cassettes, harnesses", others: bc },
     { label: "Connectors and hardware", vocom: "Patch cords, adapters, terminal boxes", others: bc },
-    { label: "Glass", vocom: "Fujikura preform", others: ["Makes its own fiber", "Makes its own fiber", "Makes its own fiber", "Makes its own fiber"] },
+    { label: "Glass", vocom: "Fujikura preform", others: ["Makes its own fiber", "Makes its own fiber", "Makes its own fiber", "Makes its own fiber", NL] },
     { label: "Quality", vocom: "Quality-checked per order, test data on request", others: nl },
   ] },
   { title: "Buying", rows: [
-    { label: "Company type", vocom: "Supplier. Cable is built to order by tier 1 manufacturers", others: ["Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer"] },
-    { label: "Ownership", vocom: "Private and self-funded", others: ["Publicly listed", "Publicly listed", "Publicly listed", "Publicly listed"] },
-    { label: "How to buy", vocom: "Direct, from one quote request", others: ["Sales representative or authorized distributor", "Sales team", "Distributor or regional sales manager", "Sales network"] },
+    { label: "Company type", vocom: "Supplier. Cable is built to order by tier 1 manufacturers", others: ["Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer", "Manufacturer"] },
+    { label: "Ownership", vocom: "Private and self-funded", others: ["Publicly listed", "Publicly listed", "Publicly listed", "Publicly listed", "Part of Amphenol, publicly listed"] },
+    { label: "How to buy", vocom: "Direct, from one quote request", others: ["Sales representative or authorized distributor", "Sales team", "Distributor or regional sales manager", "Sales network", "CommScope Sales or a CommScope partner"] },
     { label: "Stock model", vocom: "Built to order, no warehouse", others: nl },
     { label: "Second source for your spec", vocom: "Yes", others: nl },
     { label: "Minimum order", vocom: "Confirmed with your quote", others: nl },
@@ -53,11 +54,11 @@ const groups = [
     { label: "Import and export paperwork", vocom: "Documentation and customs coordinated", others: nl },
   ] },
   { title: "Geographies", rows: [
-    { label: "Company base", vocom: "El Monte, California and Taipei", others: ["Corning, New York", "Milan, Italy", "Osaka, Japan", "Wuhan, China"] },
-    { label: "Regions served", vocom: "US and Canada, plus import and export across 100+ regions", others: ["Americas, EMEA and Asia Pacific, through regional distributors", "Global, with a North America business", "The Americas, through Sumitomo Electric Lightwave", "Global, through a sales network"] },
+    { label: "Company base", vocom: "El Monte, California and Taipei", others: ["Corning, New York", "Milan, Italy", "Osaka, Japan", "Wuhan, China", "Claremont, North Carolina"] },
+    { label: "Regions served", vocom: "US and Canada, plus import and export across 100+ regions", others: ["Americas, EMEA and Asia Pacific, through regional distributors", "Global, with a North America business", "The Americas, through Sumitomo Electric Lightwave", "Global, through a sales network", "Worldwide, through CommScope partners"] },
   ] },
   { title: "Customer Support", rows: [
-    { label: "Coverage", vocom: "24/7 support", others: ["Customer service line, 24x7 for in-building networks", "24/7 emergency order line", NL, NL] },
+    { label: "Coverage", vocom: "24/7 support", others: ["Customer service line, 24x7 for in-building networks", "24/7 emergency order line", NL, NL, NL] },
     { label: "Who answers", vocom: "An engineer or account manager, not a ticket queue", others: nl },
   ] },
   { title: "Telecom Services", rows: [
@@ -84,6 +85,10 @@ const sources = [
   { label: "Sumitomo Electric Lightwave: about and how to buy", href: "https://sumitomoelectriclightwave.com/about/" },
   { label: "Sumitomo Electric: high fiber count cables", href: "https://sumitomoelectric.com/products/optical-cables/highfibercount" },
   { label: "YOFC: company website", href: "https://en.yofc.com/" },
+  { label: "CommScope: how to buy", href: "https://www.commscope.com/resources/how-to-buy/" },
+  { label: "CommScope: fiber optic cables", href: "https://www.commscope.com/product-type/cables/fiber-cables/" },
+  { label: "CommScope: contact (Claremont, North Carolina)", href: "https://www.commscope.com/contact-us/" },
+  { label: "Amphenol completes acquisition of CCS business from CommScope (January 2026)", href: "https://businesswire.com/news/home/20260112617512/en/Amphenol-Completes-Acquisition-of-CCS-Business-From-CommScope" },
   { label: "Corning: in-building networks support", href: "https://www.corning.com/in-building-networks/cala/en/home/support-center.html" },
   { label: "Prysmian: emergency order line (2022)", href: "https://stocks.observer-reporter.com/observerreporter/article/accesswire-2022-6-14-prysmian-groups-emergency-order-line-offers-immediate-solutions-in-wake-of-natural-disasters" },
 ];
@@ -94,7 +99,7 @@ const sources = [
     <main class="cmp-main">
       <section class="cmp-hero">
         <h1>Fiber Optic Cable Suppliers Compared</h1>
-        <p>Lead times, fiber, buying, geographies, support and services, for Vocom, Corning, Prysmian, Sumitomo Electric and YOFC. Our answers are public. There's no pricing here because bulk cable is quoted per order.</p>
+        <p>Lead times, fiber, buying, geographies, support and services, for Vocom, Corning, Prysmian, Sumitomo Electric, YOFC and CommScope. Our answers are public. There's no pricing here because bulk cable is quoted per order.</p>
         <a class="cmp-btn" href="/contact-vocomai">{CTA}</a>
       </section>
 
@@ -142,7 +147,7 @@ const sources = [
 
       <section class="cmp-faq">
         <h2>Frequently Asked Questions</h2>
-        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric and YOFC?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other four.</FaqItem>
+        <FaqItem question="How do Vocom's lead times compare with Corning, Prysmian, Sumitomo Electric, YOFC and CommScope?">Vocom's standard build-to-order lead time is 6 to 8 weeks, up to 10 weeks for high-count or custom builds, and 2 to 3 weeks for expedited orders by air freight. We couldn't find a public lead time from the other five.</FaqItem>
         <FaqItem question="Does Vocom manufacture fiber optic cable?">No. Cable is produced to specification by tier 1 manufacturing partners on Fujikura preform glass. Vocom handles specification, sourcing, build-to-order coordination and delivery.</FaqItem>
         <FaqItem question="Why is there no pricing in this comparison?">Price depends on the fiber count, fiber type, construction, order quantity and delivery location, so bulk cable is quoted per order. Send us your specification and we'll confirm price and lead time together.</FaqItem>
       </section>
@@ -152,7 +157,7 @@ const sources = [
         <ul>
           {sources.map((s) => <li><a href={s.href} rel="nofollow noopener" target="_blank">{s.label}</a></li>)}
         </ul>
-        <p>Compiled from public sources, checked {CHECKED}. Company details change, so confirm them with each company before you buy. Corning, Prysmian, Sumitomo Electric and YOFC are trademarks of their respective owners. Vocom isn't affiliated with or endorsed by them. If something here is out of date, tell us at <a href="mailto:kevin@getvocom.com">kevin@getvocom.com</a> and we'll correct it.</p>
+        <p>Compiled from public sources, checked {CHECKED}. Company details change, so confirm them with each company before you buy. Corning, Prysmian, Sumitomo Electric, YOFC and CommScope are trademarks of their respective owners. Vocom isn't affiliated with or endorsed by them. If something here is out of date, tell us at <a href="mailto:kevin@getvocom.com">kevin@getvocom.com</a> and we'll correct it.</p>
       </section>
     </main>
     <div class="cmp-footer"><Footer /></div>
@@ -240,7 +245,8 @@ const sources = [
     .cmp-table[data-col="0"] tr > :nth-child(3),
     .cmp-table[data-col="1"] tr > :nth-child(4),
     .cmp-table[data-col="2"] tr > :nth-child(5),
-    .cmp-table[data-col="3"] tr > :nth-child(6) { display: table-cell; }
+    .cmp-table[data-col="3"] tr > :nth-child(6),
+    .cmp-table[data-col="4"] tr > :nth-child(7) { display: table-cell; }
     .cmp-table[data-col] tbody th[scope="row"], .cmp-table[data-col] .cmp-corner { position: static; }
     .cmp-table[data-col] th, .cmp-table[data-col] td { padding: 12px 8px; }
     .cmp-table[data-col] .cmp-group h2 { position: static; }

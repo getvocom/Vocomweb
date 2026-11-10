@@ -8,6 +8,8 @@ fiberCounts: "8F to 144F"
 construction: "Double-jacketed backbone cable, OFNP available, pulling eye option, factory terminated and tested"
 typicalUse: "Main, horizontal and zone distribution backbone runs"
 description: "MTP and MPO trunk cable, 8F to 144F, supplied under codes MTP-TRUNK-8 to MTP-TRUNK-144. Double-jacketed fiber optic trunk, factory terminated and tested, with OFNP and pulling eye options, for main, horizontal and zone distribution backbone runs. Standard lead time 6 to 8 weeks."
+metaTitle: "MTP Trunk Cable, Fiber Optic Trunk 8F to 144F | Vocom"
+metaDescription: "MTP/MPO fiber optic trunk cable, 8F to 144F: factory terminated and tested, double-jacketed, OFNP and pulling eye options. Built to order in 6 to 8 weeks."
 image:
   src: "/assets/img/products/multi-fiber-trunk-cable-up-to-144c-1200.jpg"
   alt: "MTP/MPO multi-fiber trunk cable (illustrative render)"

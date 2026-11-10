@@ -156,10 +156,15 @@ import { NAV } from "../lib/nav";
   .sn-mcta { margin-top: 16px; justify-content: center; width: 100%; }
 
   @media (max-width: 1023.98px) {
-    .sn-menu, .sn-actions .sn-cta { display: none; }
-    .sn-actions { margin-left: auto; }
+    .sn-menu { display: none; }
+    /* Phones and tablets keep a compact quote button in the bar (84% of ad clicks are mobile, Nov 2026). */
+    .sn-actions .sn-cta { padding: 8px 12px; font-size: 13px; white-space: nowrap; }
+    .sn-actions { margin-left: auto; gap: 8px; }
     .sn-mobile { display: block; }
     .site-nav { padding: 8px 10px 8px 20px; }
     .sn-logo img { height: 34px; }
+  }
+  @media (max-width: 359.98px) {
+    .sn-actions .sn-cta { display: none; }
   }
 </style>

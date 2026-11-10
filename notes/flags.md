@@ -174,3 +174,9 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Transceiver form factors (QSFP28, SFP28, SFP+, SFP) confirmed. The origin question is not an issue; nothing to add on the site.
 - Lead emails: quote requests, "spec added" and newsletter sign-ups now email kevin@getvocom.com and kevin@vocom.com (apps-script/Code.gs). Live only after the Apps Script is redeployed.
 - FAQs: every page now uses the same dropdown (<FaqItem>) in a single-column .faq-list. The 12 pages that had static question boxes (homepage, fiber category and partner pages, /optical-transceivers) were converted; questions and answers unchanged.
+
+## 2026-11-10: Tom's answers, 6912F page, data-driven changes
+- Transceivers: the five deployments can stay public with city and year. Lead time and warranty: "contact sales, should be the same as fiber". New FAQ on /optical-transceivers says both are confirmed with the quote and lead times are typically in line with fiber orders.
+- Comparison page competitor cells: confirmed by Tom.
+- /6912-fiber-optic-cable: built from the specs already on the site (38.0mm OD, 1064 kg/km LSZH, 432 x 16F ribbons, G.657A1/A2, Fujikura preform, up to 10 weeks; 1728F alternative). Outdoor jacket, duct size, bend radius, pulling tension and reel are "confirmed with your quote" until Kevin supplies them. Linked in the nav under Fiber Optic > By cable type.
+- Search titles changed on six pages and the phone header now shows "Request a Quote": see notes/data-review-2026-11-10.md.

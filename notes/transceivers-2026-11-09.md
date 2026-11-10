@@ -38,3 +38,5 @@ Send the files and I'll run them through the render pipeline (WebP + JPG sizes, 
 7. Lower-speed form factors (QSFP28 100G, SFP28 25G, SFP+ 10G, SFP 1G) are the industry-standard ones; Kevin to confirm these are what we supply.
 
 **Answered 2026-11-09 (Tom):** form factors in item 7 confirmed; item 5 (origin question) is not an issue. Still open: items 1, 2, 4, 6.
+
+**Answered 2026-11-10 (Tom):** item 1 yes, deployments stay public with city and year. Items 2 and 4: lead time and warranty are confirmed with the quote, in line with fiber (FAQ added). All open questions are now closed except item 6 (deck contact details).

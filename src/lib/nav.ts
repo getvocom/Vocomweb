@@ -19,6 +19,7 @@ export const NAV: NavSection[] = [
           { label: "All Fiber Optic Cable", href: "/fiber-optic-cables", desc: "Every cable we supply, build-to-order" },
           { label: "Loose Tube Cable", href: "/loose-tube-fiber-optic-cable", desc: "GCYFTY and GYFS, 12F to 864F" },
           { label: "Ribbon and High Fiber Count", href: "/ribbon-fiber-optic-cable", desc: "Rollable and flat ribbon to 6912F" },
+          { label: "6912F Fiber Cable", href: "/6912-fiber-optic-cable", desc: "Rollable ribbon, 38.0mm OD, hyperscale" },
           { label: "Air Blown Micro Cable", href: "/air-blown-micro-fiber-cable", desc: "Micro cable, microduct and vaults" },
           { label: "ADSS and Aerial Cable", href: "/adss-aerial-fiber-cable", desc: "ADSS, figure 8 and direct burial" },
           { label: "FTTH Drop Cable", href: "/ftth-drop-cable", desc: "Flat and armored drop, OptiTap compatible" },

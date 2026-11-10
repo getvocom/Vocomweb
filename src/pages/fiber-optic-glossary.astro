@@ -1,0 +1,153 @@
+---
+// Fiber optic glossary (Tom, 2026-11-10). Plain definitions of the terms buyers search for, each linked to
+// the page or product that covers it. Definitions are standard industry facts (ITU-T, IEEE, NEC); nothing
+// here is a claim about Vocom's own stock or performance. Styled with tokens only.
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+type Term = { id: string; term: string; def: string; link?: [string, string] };
+const GROUPS: { title: string; terms: Term[] }[] = [
+  {
+    title: "Fiber types",
+    terms: [
+      { id: "single-mode", term: "Single-mode fiber (OS1, OS2)", def: "Fiber with a 9 micron core that carries one path of light, so it runs for kilometers with low loss. OS2 is the low water peak grade used for outside plant and long links. OS1 is the older indoor grade.", link: ["/loose-tube-fiber-optic-cable", "Loose tube single-mode cable"] },
+      { id: "multimode", term: "Multimode fiber (OM3, OM4, OM5)", def: "Fiber with a 50 micron core for short links inside buildings and data centers. OM4 carries 100G SR4 links up to 100 meters, against 70 meters on OM3. OM5 adds support for several wavelengths on one fiber.", link: ["/data-center-fiber-cabling", "Data center fiber cabling"] },
+      { id: "g652d", term: "G.652D", def: "The ITU-T standard for ordinary single-mode fiber with low water peak. It is the default glass in most outside plant cable." },
+      { id: "g657", term: "G.657A1, G.657A2 and G.657B3", def: "Bend-insensitive single-mode fiber. G.657A1 is rated to a 10mm bend radius, A2 to 7.5mm and B3 to 5mm. The A grades splice to G.652D without issue, which is why A1 and A2 are common in drop, indoor and high count ribbon cable.", link: ["/indoor-fiber-optic-cable", "Indoor fiber optic cable"] },
+    ],
+  },
+  {
+    title: "Cable constructions",
+    terms: [
+      { id: "loose-tube", term: "Loose tube cable", def: "Fibers sit loose inside buffer tubes, which are gel-filled or dry-blocked, so the cable can stretch and change temperature without stressing the glass. The standard build for outdoor duct, burial and aerial routes.", link: ["/loose-tube-fiber-optic-cable", "Loose tube cable, 12F to 864F"] },
+      { id: "ribbon", term: "Ribbon cable", def: "Fibers are bonded side by side in ribbons of 12 or 16, so a mass fusion splicer joins a whole ribbon at once instead of one fiber at a time.", link: ["/ribbon-fiber-optic-cable", "Ribbon fiber optic cable"] },
+      { id: "rollable-ribbon", term: "Rollable ribbon", def: "Ribbon bonded only at intervals, so it can roll up into a bundle. It packs more fibers into a smaller cable and still mass fusion splices. At 20mm OD, flat ribbon carries 432F and rollable carries 864F.", link: ["/6912-fiber-optic-cable", "6912F rollable ribbon"] },
+      { id: "high-fiber-count", term: "High fiber count cable", def: "Usually 864 fibers and above in one cable. Cloud and colocation routes run 864F to 1728F, and hyperscale campuses run 3,456F to 6912F.", link: ["/1728-fiber-optic-cable", "1728F ribbon cable"] },
+      { id: "adss", term: "ADSS cable", def: "All-dielectric self-supporting aerial cable. It carries its own weight between poles with no messenger wire and no metal, so it can hang near power lines.", link: ["/adss-aerial-fiber-cable", "ADSS and aerial cable"] },
+      { id: "figure-8", term: "Figure 8 cable", def: "Aerial cable with a steel messenger wire built into the jacket, so in cross section it looks like the number 8.", link: ["/adss-aerial-fiber-cable", "ADSS and aerial cable"] },
+      { id: "micro-cable", term: "Micro cable and air blown fiber", def: "Small diameter cable that is blown into microduct with compressed air instead of being pulled. More fiber can be added later by blowing new cable into spare ducts.", link: ["/air-blown-micro-fiber-cable", "Air blown micro cable and microduct"] },
+      { id: "drop-cable", term: "Drop cable", def: "The last link from the street to a home or business in an FTTH network, often a flat cable with 1 to 12 fibers.", link: ["/ftth-drop-cable", "FTTH drop cable"] },
+      { id: "dielectric-armored", term: "All-dielectric and armored", def: "All-dielectric cable has no metal, so it needs no grounding and is safe near power. Armored cable adds a steel or dielectric layer against rodents and crushing." },
+    ],
+  },
+  {
+    title: "Fire ratings",
+    terms: [
+      { id: "ofnp", term: "OFNP (plenum)", def: "Optical fiber nonconductive plenum. The highest indoor fire rating under the NEC, required in air-handling spaces such as ceiling voids. OFNP can be used wherever OFNR is allowed, but not the other way round.", link: ["/indoor-fiber-optic-cable", "Indoor plenum and riser cable"] },
+      { id: "ofnr", term: "OFNR (riser)", def: "Optical fiber nonconductive riser. Rated for vertical runs between floors, but not for plenum spaces." },
+      { id: "lszh", term: "LSZH", def: "Low smoke zero halogen jacket. It gives off little smoke and no corrosive halogen gas in a fire, and is the common indoor standard outside North America." },
+    ],
+  },
+  {
+    title: "Connectors and assemblies",
+    terms: [
+      { id: "lc-sc", term: "LC and SC connectors", def: "The two most common single-fiber connectors. LC uses a 1.25mm ferrule and is the standard in switches and patch panels. SC uses a 2.5mm ferrule with a push-pull body.", link: ["/products/lc-fiber-patch-cord", "LC fiber patch cord"] },
+      { id: "upc-apc", term: "UPC and APC", def: "The polish on a connector end face. APC is angled at 8 degrees and is usually green, which cuts back reflection and is why it is used in FTTH and PON. UPC is flat and usually blue. The two do not mate with each other." },
+      { id: "mpo-mtp", term: "MPO and MTP", def: "Multi-fiber connectors that terminate 8, 12, 16 or 24 fibers in one plug, used for data center trunks and 400G and 800G links. MTP is a branded, higher-spec version of MPO, and the two intermate.", link: ["/products/mtp-mpo-trunk-cable", "MTP/MPO trunk cable"] },
+      { id: "polarity", term: "Polarity (Type A, B and C)", def: "How fiber positions are mapped from one end of an MPO trunk to the other, so each transmitter reaches a receiver. The type must match the cassettes and patch cords on the link." },
+      { id: "trunk-harness", term: "Trunk, harness and cassette", def: "A trunk is a factory-terminated multi-fiber cable between panels. A harness breaks an MPO out to single-fiber connectors such as LC. A cassette does the same inside a panel." },
+      { id: "hardened", term: "Hardened connector (OptiTap compatible)", def: "A sealed, weatherproof connector for outdoor FTTH terminals, so drops can be plugged in without splicing in the field.", link: ["/products/optitap-compatible-connector", "OptiTap compatible connector"] },
+      { id: "fusion-splice", term: "Fusion splicing", def: "Joining two fibers by melting them together with an electric arc. Mass fusion splicing joins a whole ribbon of 12 or 16 fibers in one pass." },
+    ],
+  },
+  {
+    title: "Transceivers",
+    terms: [
+      { id: "transceiver", term: "Optical transceiver", def: "The module that turns electrical signals in a switch or network card into light on the fiber and back again. It is the active part of the optical path, at the very end of each link.", link: ["/optical-transceivers", "Optical transceivers"] },
+      { id: "form-factors", term: "SFP, QSFP28, QSFP-DD and OSFP", def: "Transceiver form factors, roughly in order of speed. SFP and SFP28 carry 1G to 25G, QSFP28 carries 100G, QSFP-DD and OSFP carry 400G and 800G, and OSFP carries 1.6T.", link: ["/products/100g-qsfp28-transceiver", "100G QSFP28 transceiver"] },
+      { id: "aoc-dac", term: "AOC and DAC", def: "Cables with the modules built on. An active optical cable (AOC) uses fiber for runs of up to around 100 meters. A direct attach copper cable (DAC) is cheaper but only reaches a few meters." },
+    ],
+  },
+  {
+    title: "Networks and planning",
+    terms: [
+      { id: "osp", term: "Outside plant (OSP)", def: "Any cable that runs outdoors: in duct, direct buried or aerial on poles. OSP cable is built for water, temperature swings and pulling loads." },
+      { id: "ftth-pon", term: "FTTH and PON", def: "Fiber to the home, usually built as a passive optical network (PON), where one fiber from the central office is split to serve many homes.", link: ["/ftth-drop-cable", "FTTH drop cable"] },
+      { id: "dark-fiber", term: "Dark fiber", def: "Fiber that is installed but not lit by any equipment. Buyers lease or buy it and light it with their own transceivers." },
+      { id: "build-to-order", term: "Build-to-order", def: "Cable made to your count, fiber type and jacket after the order is placed, rather than pulled from fixed stock. It is how most high count and specialty cable is supplied.", link: ["/fiber-optic-cables", "All fiber optic cable"] },
+    ],
+  },
+];
+const ld = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://www.vocom.ai/fiber-optic-glossary#terms",
+  name: "Fiber Optic Glossary",
+  url: "https://www.vocom.ai/fiber-optic-glossary",
+  hasDefinedTerm: GROUPS.flatMap((g) => g.terms).map((t) => ({ "@type": "DefinedTerm", name: t.term, description: t.def, url: `https://www.vocom.ai/fiber-optic-glossary#${t.id}` })),
+});
+---
+<Base path="/fiber-optic-glossary">
+  <script type="application/ld+json" set:html={ld} />
+  <div class="gl-page">
+    <div class="site-header-slot"><Header /></div>
+    <main class="gl-main">
+      <header class="gl-hero">
+        <p class="gl-eyebrow">Fiber optic glossary</p>
+        <h1>Fiber Optic Terms Explained: Cable, Connectors and Transceivers</h1>
+        <p class="gl-lede">Plain definitions of the terms on a fiber spec sheet, from OS2 and G.657A2 to OFNP, MPO polarity and OSFP. Each one links to the cable or product it applies to.</p>
+        <nav class="gl-jump" aria-label="Glossary sections">
+          {GROUPS.map((g) => <a href={`#${g.title.toLowerCase().replace(/[^a-z]+/g, "-")}`}>{g.title}</a>)}
+        </nav>
+      </header>
+      {GROUPS.map((g) => (
+        <section class="gl-group" id={g.title.toLowerCase().replace(/[^a-z]+/g, "-")}>
+          <h2>{g.title}</h2>
+          <dl>
+            {g.terms.map((t) => (
+              <div class="gl-term" id={t.id}>
+                <dt>{t.term}</dt>
+                <dd>
+                  <p>{t.def}</p>
+                  {t.link && <a class="gl-link" href={t.link[0]}>{t.link[1]} <span aria-hidden="true">&rarr;</span></a>}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ))}
+      <section class="gl-cta">
+        <h2>Not sure which spec your route needs?</h2>
+        <p>Send the route, fiber count and install method. We will match the cable and come back with a spec, price and lead time.</p>
+        <a class="gl-btn" href="/contact-vocomai">Request a Quote</a>
+      </section>
+      <p class="gl-tm">MTP is a registered trademark of US Conec. OptiTap is a trademark of Corning. Vocom is not affiliated with or endorsed by either company.</p>
+    </main>
+    <div class="gl-footer"><Footer /></div>
+  </div>
+</Base>
+
+<style>
+  .gl-page { display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: linear-gradient(180deg, var(--white) 0%, var(--color-vocom-white) 100%); font-family: var(--font-sans); }
+  .gl-main { width: 100%; max-width: 960px; padding: 120px 24px 80px; display: flex; flex-direction: column; gap: 56px; }
+  .gl-hero { display: flex; flex-direction: column; gap: 16px; }
+  .gl-eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand-crimson); }
+  .gl-hero h1 { font-family: var(--font-display); font-weight: 800; font-size: 52px; line-height: 1.08; letter-spacing: -0.04em; color: var(--ink-heading); }
+  .gl-lede { font-size: 18px; line-height: 1.6; color: var(--gray-600); max-width: 720px; }
+  .gl-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .gl-jump a { padding: 8px 14px; border-radius: var(--radius-pill); background: var(--white); box-shadow: inset 0 0 0 1px var(--brand-pink-border); font-size: 14px; font-weight: 600; color: var(--ink-900); }
+  .gl-jump a:hover { background: var(--brand-pink-50); color: var(--brand-crimson); }
+  .gl-group { scroll-margin-top: 100px; display: flex; flex-direction: column; gap: 18px; }
+  .gl-group h2, .gl-cta h2 { font-family: var(--font-display); font-weight: 800; font-size: 32px; line-height: 1.15; letter-spacing: -0.03em; color: var(--ink-900); }
+  .gl-group dl { display: flex; flex-direction: column; gap: 12px; margin: 0; }
+  .gl-term { scroll-margin-top: 100px; padding: 20px 24px; border-radius: var(--radius-lg); background: var(--white); box-shadow: var(--shadow-card); }
+  .gl-term:target { box-shadow: inset 0 0 0 2px var(--brand-crimson), var(--shadow-card); }
+  .gl-term dt { font-weight: 700; font-size: 18px; line-height: 1.35; color: var(--ink-heading); }
+  .gl-term dd { margin: 8px 0 0; display: flex; flex-direction: column; gap: 10px; }
+  .gl-term dd p { font-size: 16px; line-height: 1.6; color: var(--ink-600); }
+  .gl-link { align-self: flex-start; font-size: 14px; font-weight: 600; color: var(--brand-crimson); text-decoration: underline; text-underline-offset: 3px; }
+  .gl-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 36px; border-radius: var(--radius-xl); background: var(--white); box-shadow: var(--shadow-card); }
+  .gl-cta p { font-size: 17px; line-height: 1.6; color: var(--gray-600); }
+  .gl-btn { display: inline-flex; align-items: center; padding: 14px 24px; border-radius: var(--radius-pill); background: var(--color-vocom-cta-1); color: var(--white); font-weight: 600; font-size: 15px; }
+  .gl-btn:hover { background: var(--color-vocom); }
+  .gl-tm { font-size: 13px; line-height: 1.5; color: var(--color-text-muted); }
+  .gl-footer { width: 100%; }
+  @media (max-width: 809.98px) {
+    .gl-main { padding: 104px 16px 56px; gap: 40px; }
+    .gl-hero h1 { font-size: 34px; }
+    .gl-group h2, .gl-cta h2 { font-size: 26px; }
+    .gl-term { padding: 18px; }
+    .gl-cta { padding: 24px; }
+  }
+</style>

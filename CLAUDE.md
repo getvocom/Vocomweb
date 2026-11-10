@@ -133,3 +133,4 @@ Bodies are plain text; a blank line starts a new paragraph.
 1. `npm run build` must pass.
 2. `npm run parity` must show no new issues against `notes/parity-report.md`.
 3. Spot-check with `node scripts/visual-diff.mjs --only /changed-page`.
+4. After the push is live, run `node scripts/indexnow.mjs` so Bing (and ChatGPT search and Copilot) recrawl new and changed pages within hours.

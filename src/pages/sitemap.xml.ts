@@ -23,6 +23,8 @@ const STATIC = [
   "/optical-transceivers",
   // added 2026-11-10
   "/6912-fiber-optic-cable",
+  "/1728-fiber-optic-cable",
+  "/fiber-optic-glossary",
 ];
 
 // Category pages that show a hero render (see src/pages/<page>.astro)
@@ -30,6 +32,7 @@ const hero = (id: keyof typeof renders.hero) => `/assets/img/hero/${renders.hero
 const PAGE_IMAGES: Record<string, string[]> = {
   "/data-center-fiber-cabling": [hero("VC-104")],
   "/6912-fiber-optic-cable": ["/assets/img/products/high-fiber-count-ribbon-cable-1200.jpg", "/assets/img/rollable-ribbon-fiber-optic-cable-beb7db.png"],
+  "/1728-fiber-optic-cable": ["/assets/img/products/high-fiber-count-ribbon-cable-1200.jpg", "/assets/img/rollable-ribbon-fiber-optic-cable-beb7db.png"],
   "/optical-transceivers": ["/assets/img/products/optical-transceivers-lineup-1200.jpg", "/assets/img/optical-transceivers-in-switch-1680.jpg", "/assets/img/ai-cluster-reference-topology-2400.jpg"],
   "/air-blown-micro-fiber-cable": [hero("VC-109")],
   "/ftth-drop-cable": [hero("VC-108")],

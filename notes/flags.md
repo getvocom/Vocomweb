@@ -186,3 +186,9 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - From commscope.com: buy through CommScope Sales or a partner; contact address Claremont, North Carolina; partners worldwide. No lead time, minimum order, stock, delivery terms or 24/7 support published, so those cells say "Not listed".
 - Highest ribbon count and Glass are "Not listed": CommScope publishes rollable ribbon, but I found no 6912F part and no statement that it draws its own fiber.
 - The check date is now November 10, 2026 (Tom confirmed the other four columns the same day).
+
+## 2026-11-10: 1728F page, glossary, catalog ribbon count
+- New /1728-fiber-optic-cable (Search Console count searches: "1728 fiber cable"). Built only from the published 1728F spec (GYFDXPH, 144 x 12F, 28.4mm OD, 482 kg/km, G.652D or G.657A1) and the ribbon page lead times (6 to 8 weeks, up to 10 custom, 2 to 3 week air). Jacket, duct, bend radius, tension and reel are "confirmed with your quote".
+- New /fiber-optic-glossary: 30 standard industry definitions (ITU-T, IEEE, NEC), each linked to the matching page. No Vocom claims. MTP and OptiTap trademark line at the bottom.
+- Possible typo, not changed (needs Tom): the 1728F row on /fiber-optic-cable-catalog and /fiber-optic-cables says "12 ribbons of 12F". The product page says "144 ribbons of 12F", and 144 x 12 = 1728. Suggest changing the two tables to "144 ribbons of 12F".
+- Product schema on product pages: not added. Without prices or reviews Google flags Product markup as invalid in Search Console and shows no rich result.

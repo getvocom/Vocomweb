@@ -27,8 +27,9 @@ var QUOTE_HEADERS = ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(F
 // Step 2 may fill these (only cells still empty) for a lead saved in the last DETAILS_HOURS hours.
 // Use Case and Message moved to step 2 on 2026-11-12 (step 1 is now name, email and company).
 var DETAIL_FIELDS = ['Use Case', 'Message', 'I Am A', 'Company Size'].concat(FIBER_FIELDS).concat(EXTRA_FIELDS);
-// Pages that may send a quote: the quote page, plus the short quote form on the fiber cable pages (2026-11-12).
-var QUOTE_PAGES = ['/contact-vocomai', '/fiber-optic-cables', '/loose-tube-fiber-optic-cable', '/ribbon-fiber-optic-cable', '/6912-fiber-optic-cable', '/1728-fiber-optic-cable', '/adss-aerial-fiber-cable', '/air-blown-micro-fiber-cable', '/ftth-drop-cable', '/indoor-fiber-optic-cable', '/data-center-fiber-cabling'];
+// Pages that may send a quote: the quote page, plus the short quote form on the fiber cable pages (2026-11-12)
+// and the supplier comparison page (2026-11-12, Version 12).
+var QUOTE_PAGES = ['/contact-vocomai', '/fiber-optic-cables', '/loose-tube-fiber-optic-cable', '/ribbon-fiber-optic-cable', '/6912-fiber-optic-cable', '/1728-fiber-optic-cable', '/adss-aerial-fiber-cable', '/air-blown-micro-fiber-cable', '/ftth-drop-cable', '/indoor-fiber-optic-cable', '/data-center-fiber-cabling', '/fiber-optic-cable-supplier-comparison'];
 var DETAILS_HOURS = 24;
 // Personal mailbox domains: such leads are kept, just flagged "Free Email: Yes" in the sheet and email.
 var FREE_EMAIL_RE = /@(gmail\.com|googlemail\.com|yahoo\.(com|ca|co\.uk|com\.\w+)|ymail\.com|hotmail\.(com|ca|co\.uk|fr|de)|outlook\.(com|ca|co\.uk)|live\.(com|ca|co\.uk)|msn\.com|aol\.com|icloud\.com|me\.com|mac\.com|proton\.me|protonmail\.com|gmx\.(com|net|de)|mail\.com|yandex\.(com|ru)|zoho\.com|qq\.com|163\.com|126\.com)$/i;
@@ -69,8 +70,9 @@ function quote(p) {
   var name = (p['Name'] || '').trim();
   var email = (p['Email'] || '').trim();
   var company = (p['Company'] || '').trim();
-  // Name is optional: the short form on the cable pages asks only for email, company and the cable needed.
-  if (!company || !EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
+  // Name and company are optional: the short form on the cable pages asks for email and the cable needed,
+  // with company optional (Tom, 2026-11-12). The quote page still requires both in the browser.
+  if (!EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
   if (QUOTE_PAGES.indexOf(p.page) < 0) return json({ result: 'error', error: 'bad origin' });
   var who = name || email;
   // Turnstile: a token that fails is rejected. With no token at all (the widget could not load for
@@ -104,7 +106,7 @@ function quote(p) {
 
   var mail = {
     to: NOTIFY_EMAIL,
-    subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + who + ' (' + company + ')',
+    subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + who + (company ? ' (' + company + ')' : ''),
     // fields left out of the short step-1 form (Name on the cable pages, Use Case, Message, I Am A, Company Size) are skipped when empty
     body: QUOTE_FIELDS.filter(function (f) { return p[f] || ['Name', 'Use Case', 'Message', 'I Am A', 'Company Size'].indexOf(f) < 0; }).concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
       (free ? '\nFree Email: Yes (personal mailbox, not a company domain)' : '') +

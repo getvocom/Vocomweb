@@ -3,6 +3,7 @@
 // text cells, the call to action in the Vocom column head. No pricing, by design.
 // Competitor cells only state what a public source shows (see `sources`). Update CHECKED when they are re-checked.
 import Base from "../layouts/Base.astro";
+import QuoteStrip from "../components/QuoteStrip.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FaqItem from "../components/FaqItem.astro";
@@ -102,6 +103,7 @@ const sources = [
         <p>Lead times, fiber, buying, geographies, support and services, for Vocom, Corning, Prysmian, Sumitomo Electric, YOFC and CommScope. Our answers are public. There's no pricing here because bulk cable is quoted per order.</p>
         <a class="cmp-btn" href="/contact-vocomai">{CTA}</a>
       </section>
+      <QuoteStrip moveUp={false} />
 
       <ul class="cmp-stats">
         {stats.map((x) => <li><strong>{x.value}</strong><span>{x.label}</span></li>)}

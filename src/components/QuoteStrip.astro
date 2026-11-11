@@ -6,6 +6,10 @@
 // Use Case "Fiber Optic", and fires the Google Ads conversion only after the script confirms the save
 // (SubmitButton.astro). After a successful request the visitor goes to /resources, as on the quote page.
 import SubmitButton from "./SubmitButton.astro";
+// moveUp: on phones (< 768px) the form moves to just after the H1 and intro paragraph, so it is near
+// the top of the page (Tom, 2026-11-12). Desktop keeps it under the hero. Off on pages where the form
+// is already placed directly under the intro (the supplier comparison).
+const { moveUp = true } = Astro.props as { moveUp?: boolean };
 ---
 <section class="quote-strip" aria-labelledby="quote-strip-title" data-pagefind-ignore>
   <div class="qs-copy">
@@ -22,13 +26,39 @@ import SubmitButton from "./SubmitButton.astro";
       <input type="text" name="Message" placeholder="e.g. 144F loose tube, 24,000 ft" required />
     </label>
     <label class="qs-field">
-      <span>Company</span>
-      <input type="text" name="Company" placeholder="Your company" autocomplete="organization" required />
+      <span>Company (optional)</span>
+      <input type="text" name="Company" placeholder="Your company" autocomplete="organization" />
     </label>
     <input type="hidden" name="Use Case" value="Fiber Optic" />
-    <div class="qs-submit"><SubmitButton /></div>
+    <div class="qs-submit"><SubmitButton label="Get a Quote in 24 Hours" /></div>
   </form>
 </section>
+{moveUp && (
+  <script is:inline>
+    (function () {
+      var strip = document.currentScript.previousElementSibling;
+      if (!strip || !strip.classList.contains("quote-strip")) return;
+      var home = document.createComment("quote-strip");
+      strip.parentNode.insertBefore(home, strip);
+      var mq = window.matchMedia("(max-width: 767.98px)");
+      function place() {
+        var h1 = document.querySelector("h1");
+        if (mq.matches && h1) {
+          // after the H1 and its intro paragraph(s), before the buttons, links, images or specs
+          var at = h1;
+          while (at.nextElementSibling && at.nextElementSibling !== strip && at.nextElementSibling.tagName === "P" && !at.nextElementSibling.classList.contains("hero-links")) at = at.nextElementSibling;
+          at.after(strip);
+          strip.classList.add("qs-top");
+        } else {
+          home.parentNode.insertBefore(strip, home);
+          strip.classList.remove("qs-top");
+        }
+      }
+      place();
+      if (mq.addEventListener) mq.addEventListener("change", place);
+    })();
+  </script>
+)}
 
 <style>
   .quote-strip {
@@ -55,9 +85,12 @@ import SubmitButton from "./SubmitButton.astro";
     .quote-strip { grid-template-columns: 1fr; gap: 18px; }
     .qs-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); }
   }
+  /* moved under the intro on phones: fill the hero column instead of the page */
+  .quote-strip.qs-top { width: 100%; max-width: none; margin: 4px 0 8px; text-align: left; }
   @media (max-width: 809.98px) {
-    .quote-strip { width: calc(100% - 32px); padding: 22px 18px; margin: 4px auto 20px; }
+    .quote-strip:not(.qs-top) { width: calc(100% - 32px); padding: 22px 18px; margin: 4px auto 20px; }
     .qs-form { grid-template-columns: 1fr; }
     .qs-copy h2 { font-size: 24px; }
+    .quote-strip.qs-top { padding: 20px 16px; }
   }
 </style>

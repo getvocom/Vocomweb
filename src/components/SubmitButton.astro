@@ -10,6 +10,8 @@
 // { result: "success", saved: true }: never for bots, rejected or failed submissions.
 // No form values are sent to Google.
 import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FILE, GOOGLE_ADS_LEAD_CONVERSION } from "../config";
+// label: the button text (default "Submit"; the short form on the cable pages uses its own).
+const { label = "Submit" } = Astro.props as { label?: string };
 ---
 {TURNSTILE_SITE_KEY && (
   <>
@@ -20,7 +22,7 @@ import { QUOTE_FORM_URL, QUOTE_FORM_FALLBACK_EMAIL, TURNSTILE_SITE_KEY, QUOTE_FI
 )}
 <p class="form-msg" role="alert" hidden></p>
 <button type="submit" class="submit-btn" data-state="disabled" data-endpoint={QUOTE_FORM_URL} data-fallback={QUOTE_FORM_FALLBACK_EMAIL} data-turnstile={TURNSTILE_SITE_KEY ? "1" : ""} data-max-mb={QUOTE_FILE.maxMB} data-accept={QUOTE_FILE.accept} data-conversion={GOOGLE_ADS_LEAD_CONVERSION}>
-  <p class="label default">Submit</p>
+  <p class="label default">{label}</p>
   <p class="label success">Thank you</p>
   <p class="label error">Something went wrong</p>
   <span class="spinner" aria-hidden="true"></span>

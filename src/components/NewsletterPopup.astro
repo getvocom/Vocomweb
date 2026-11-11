@@ -134,6 +134,7 @@ import { FORMS_URL, NEWSLETTER as N } from "../config";
         box.querySelector(".nl-consent")!.remove();
         write({ subscribed: true });
         (window as any).dataLayer?.push({ event: "newsletter_signup" });
+        window.dispatchEvent(new CustomEvent("vocom:newsletter-signup")); // GA4 sign_up, sent from Base.astro
         setTimeout(() => (box.hidden = true), 3500);
       } catch { fail(); }
     });

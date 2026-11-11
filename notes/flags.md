@@ -192,3 +192,9 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - New /fiber-optic-glossary: 30 standard industry definitions (ITU-T, IEEE, NEC), each linked to the matching page. No Vocom claims. MTP and OptiTap trademark line at the bottom.
 - Fixed 2026-11-11 (Tom approved): the 1728F row on /fiber-optic-cable-catalog and /fiber-optic-cables says "12 ribbons of 12F". The product page says "144 ribbons of 12F", and 144 x 12 = 1728. Suggest changing the two tables to "144 ribbons of 12F".
 - Product schema on product pages: not added. Without prices or reviews Google flags Product markup as invalid in Search Console and shows no rich result.
+
+## 2026-11-12: Quote forms after the Google Ads audit (Tom)
+- Tom's instructions: 3-field quote form near the top of /fiber-optic-cables and the other cable pages; quote page heading "Request a Fiber Cable Quote"; step 1 cut to name, email and company, Fax and Address removed; dropdown set to "Fiber Optic" when people arrive from a fiber page; track newsletter sign-ups and phone and email taps.
+- Short form copy (heading is Tom's; the rest is mine, check it): "Send the fiber count, type and footage. We reply with a spec, price and lead time." Fields: Work email, Fiber count, type and footage, Company.
+- Apps Script Version 11 (2026-11-12): accepts quotes from the ten cable pages (QUOTE_PAGES), name optional, step 2 now saves Use Case and Message. Same deployment URL.
+- On phones the short form sits under the hero (about two screens down) because the hero includes the spec box. The header "Request a Quote" button stays visible above it.

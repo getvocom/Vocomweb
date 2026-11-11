@@ -25,7 +25,10 @@ var EXTRA_FIELDS = ['Delivery Location'];
 // Every column of the Quotes tab, in order. Lead ID and Details Added came with the two-step form.
 var QUOTE_HEADERS = ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(FIBER_FIELDS).concat(['Attachment']).concat(EXTRA_FIELDS).concat(['Free Email', 'Lead ID', 'Details Added']);
 // Step 2 may fill these (only cells still empty) for a lead saved in the last DETAILS_HOURS hours.
-var DETAIL_FIELDS = ['I Am A', 'Company Size'].concat(FIBER_FIELDS).concat(EXTRA_FIELDS);
+// Use Case and Message moved to step 2 on 2026-11-12 (step 1 is now name, email and company).
+var DETAIL_FIELDS = ['Use Case', 'Message', 'I Am A', 'Company Size'].concat(FIBER_FIELDS).concat(EXTRA_FIELDS);
+// Pages that may send a quote: the quote page, plus the short quote form on the fiber cable pages (2026-11-12).
+var QUOTE_PAGES = ['/contact-vocomai', '/fiber-optic-cables', '/loose-tube-fiber-optic-cable', '/ribbon-fiber-optic-cable', '/6912-fiber-optic-cable', '/1728-fiber-optic-cable', '/adss-aerial-fiber-cable', '/air-blown-micro-fiber-cable', '/ftth-drop-cable', '/indoor-fiber-optic-cable', '/data-center-fiber-cabling'];
 var DETAILS_HOURS = 24;
 // Personal mailbox domains: such leads are kept, just flagged "Free Email: Yes" in the sheet and email.
 var FREE_EMAIL_RE = /@(gmail\.com|googlemail\.com|yahoo\.(com|ca|co\.uk|com\.\w+)|ymail\.com|hotmail\.(com|ca|co\.uk|fr|de)|outlook\.(com|ca|co\.uk)|live\.(com|ca|co\.uk)|msn\.com|aol\.com|icloud\.com|me\.com|mac\.com|proton\.me|protonmail\.com|gmx\.(com|net|de)|mail\.com|yandex\.(com|ru)|zoho\.com|qq\.com|163\.com|126\.com)$/i;
@@ -66,8 +69,10 @@ function quote(p) {
   var name = (p['Name'] || '').trim();
   var email = (p['Email'] || '').trim();
   var company = (p['Company'] || '').trim();
-  if (!name || !company || !EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
-  if (p.page !== '/contact-vocomai') return json({ result: 'error', error: 'bad origin' });
+  // Name is optional: the short form on the cable pages asks only for email, company and the cable needed.
+  if (!company || !EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
+  if (QUOTE_PAGES.indexOf(p.page) < 0) return json({ result: 'error', error: 'bad origin' });
+  var who = name || email;
   // Turnstile: a token that fails is rejected. With no token at all (the widget could not load for
   // that visitor) the request is kept but flagged, so a real lead is never lost.
   var unverified = false;
@@ -99,9 +104,9 @@ function quote(p) {
 
   var mail = {
     to: NOTIFY_EMAIL,
-    subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + name + ' (' + company + ')',
-    // fields left out of the short step-1 form (I Am A, Company Size) are skipped when empty
-    body: QUOTE_FIELDS.filter(function (f) { return p[f] || ['I Am A', 'Company Size'].indexOf(f) < 0; }).concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
+    subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + who + ' (' + company + ')',
+    // fields left out of the short step-1 form (Name on the cable pages, Use Case, Message, I Am A, Company Size) are skipped when empty
+    body: QUOTE_FIELDS.filter(function (f) { return p[f] || ['Name', 'Use Case', 'Message', 'I Am A', 'Company Size'].indexOf(f) < 0; }).concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
       (free ? '\nFree Email: Yes (personal mailbox, not a company domain)' : '') +
       (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : '') +
       '\n\nPage: https://www.vocom.ai' + (p.page || '') +
@@ -112,7 +117,7 @@ function quote(p) {
   if (blob) mail.attachments = [blob];
   MailApp.sendEmail(mail);
   // After the sheet row and the email, so a CRM outage never loses a lead.
-  try { sendToCrm(id, { Name: name, Email: email, Company: company, 'Use Case': p['Use Case'] || '', Message: p['Message'] || '', Page: p.page || '', 'Free Email': free ? 'Yes' : '', 'Lead ID': id, Unverified: unverified ? 'Yes' : '' }); }
+  try { sendToCrm(id, { Name: who, Email: email, Company: company, 'Use Case': p['Use Case'] || '', Message: p['Message'] || '', Page: p.page || '', 'Free Email': free ? 'Yes' : '', 'Lead ID': id, Unverified: unverified ? 'Yes' : '' }); }
   catch (err) { console.error('CRM forward failed: ' + err); }
   return json({ result: 'success', saved: true, id: id });
 }
@@ -151,8 +156,8 @@ function details(p) {
 
   var mail = {
     to: NOTIFY_EMAIL,
-    subject: 'Spec added: ' + name + ' (' + company + ')',
-    body: 'Full spec added to the quote request from ' + name + ' (' + company + ').\n\n' + added.join('\n') +
+    subject: 'Spec added: ' + (name || email) + ' (' + company + ')',
+    body: 'Full spec added to the quote request from ' + (name || email) + ' (' + company + ').\n\n' + added.join('\n') +
       (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : ''),
     name: 'vocom.ai Website',
   };

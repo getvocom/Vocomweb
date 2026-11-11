@@ -125,8 +125,10 @@ Bodies are plain text; a blank line starts a new paragraph.
 ## Forms, search, tracking
 
 - **Quote form** (`/contact-vocomai`) and **newsletter popup**: both post to the Apps Script URL (`FORMS_URL`) in `src/config.ts`; rows go to the Quotes / Newsletter tabs and quote alerts to kevin@getvocom.com. After a successful quote the visitor is sent to `/resources`. Setup is in the README.
+- **Short quote form** (`src/components/QuoteStrip.astro`, 2026-11-12): email, cable needed and company, under the hero of the ten fiber cable pages. Same Apps Script and Ads conversion as the quote page. A page can only send quotes if its path is in `QUOTE_PAGES` in `apps-script/Code.gs`; adding the strip to a new page means adding the path there and redeploying the script (new version, same URL).
+- **Quote page steps** (2026-11-12): step 1 is name, email and company; Use Case (preset from the referring page) and Message are in the optional step 2.
 - **Search** (`/search`): Pagefind. The index is built by `npm run build`. Only blog and product pages are indexed (`data-pagefind-body`).
-- **Tracking** (GA4, GTM, LinkedIn Insight + conversion pixel, Metricool): lives only in `src/layouts/Base.astro`. Don't add tags elsewhere. See `notes/tracking.md`.
+- **Tracking** (GA4, GTM, LinkedIn Insight + conversion pixel, Metricool): lives only in `src/layouts/Base.astro`. Don't add tags elsewhere. See `notes/tracking.md`. GA4 events `phone_click`, `email_click` and `sign_up` (newsletter) are sent from Base.astro; they are never Google Ads conversions.
 
 ## Before every deploy
 

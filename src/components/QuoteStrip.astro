@@ -1,0 +1,63 @@
+---
+// Short quote form near the top of the fiber cable pages (Tom, 2026-11-12, from the Google Ads audit:
+// most ad clicks land on these pages from phones, and the only form there was the newsletter).
+// Three fields: email, the cable needed, company. It posts to the same Apps Script as the quote page
+// (each page must be listed in QUOTE_PAGES in apps-script/Code.gs), lands in the Quotes tab with
+// Use Case "Fiber Optic", and fires the Google Ads conversion only after the script confirms the save
+// (SubmitButton.astro). After a successful request the visitor goes to /resources, as on the quote page.
+import SubmitButton from "./SubmitButton.astro";
+---
+<section class="quote-strip" aria-labelledby="quote-strip-title" data-pagefind-ignore>
+  <div class="qs-copy">
+    <h2 id="quote-strip-title">Request a Fiber Cable Quote</h2>
+    <p>Send the fiber count, type and footage. We reply with a spec, price and lead time.</p>
+  </div>
+  <form class="qs-form" novalidate>
+    <label class="qs-field">
+      <span>Work email</span>
+      <input type="email" name="Email" placeholder="name@company.com" autocomplete="email" required />
+    </label>
+    <label class="qs-field">
+      <span>Fiber count, type and footage</span>
+      <input type="text" name="Message" placeholder="e.g. 144F loose tube, 24,000 ft" required />
+    </label>
+    <label class="qs-field">
+      <span>Company</span>
+      <input type="text" name="Company" placeholder="Your company" autocomplete="organization" required />
+    </label>
+    <input type="hidden" name="Use Case" value="Fiber Optic" />
+    <div class="qs-submit"><SubmitButton /></div>
+  </form>
+</section>
+
+<style>
+  .quote-strip {
+    box-sizing: border-box; width: calc(100% - 32px); max-width: 1160px; margin: 8px auto 24px;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr); gap: 32px; align-items: center;
+    padding: 28px 32px; border-radius: var(--radius-xl); background: var(--white);
+    box-shadow: var(--shadow-card), inset 0 0 0 1px var(--brand-pink-border); font-family: var(--font-sans);
+    position: relative; z-index: 2;
+  }
+  .qs-copy h2 { margin: 0 0 8px; font-family: var(--font-display); font-weight: 800; font-size: 28px; line-height: 1.15; letter-spacing: -0.03em; color: var(--ink-heading); }
+  .qs-copy p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--gray-600); }
+  .qs-form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); gap: 12px 14px; align-items: end; }
+  .qs-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .qs-field span { font-size: 12px; font-weight: 600; color: var(--color-vocom); }
+  .qs-field input {
+    box-sizing: border-box; width: 100%; height: 44px; padding: 0 12px; border: 1px solid var(--brand-pink-border); border-radius: var(--radius-sm);
+    background: var(--color-field-bg); font: inherit; font-size: 16px; color: var(--ink-900);
+  }
+  .qs-field input::placeholder { color: var(--color-text-muted); }
+  .qs-field input:focus { outline: 2px solid var(--brand-crimson); outline-offset: 1px; }
+  .qs-submit { grid-column: 1 / -1; display: flex; flex-direction: column; }
+  .qs-submit :global(.submit-btn) { height: 46px; font-size: 15px; }
+  @media (max-width: 1199.98px) {
+    .quote-strip { grid-template-columns: 1fr; gap: 18px; }
+    .qs-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); }
+  }
+  @media (max-width: 809.98px) {
+    .quote-strip { width: calc(100% - 32px); padding: 22px 18px; margin: 4px auto 20px; }
+    .qs-form { grid-template-columns: 1fr; }
+    .qs-copy h2 { font-size: 24px; }
+  }
+</style>

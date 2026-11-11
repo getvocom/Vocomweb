@@ -13,6 +13,7 @@ These are the scripts found on all 114 live pages. They're carried over with the
 | Framer Analytics | events.framer.com | Framer runtime | **Removed.** It only works on Framer hosting; Framer's analytics dashboard stops at cut-over |
 | Quote form event | dataLayer `form-submission` | Framer form tracking ID | Pushed on successful submit |
 | Google Ads (added 2026-10-27) | AW-18539470653, conversion AW-18539470653/RST8CJmhkasdEL2-p4hF | Not on Framer yet (snippets in `notes/google-ads.md`) | `config` on every page via the GA4 gtag.js; conversion only after a confirmed quote save. See `notes/google-ads.md` |
+| GA4 events (added 2026-11-12) | `phone_click`, `email_click` (tel:/mailto: taps, with `link_location` footer or page), `sign_up` with method newsletter | None | Sent from `Base.astro` to both GA4 IDs only. Not Google Ads conversions. No form values or addresses are sent. Mark them as key events in GA4 if wanted |
 
 ## Questions for Tom
 

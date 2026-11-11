@@ -115,6 +115,18 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         }, { rootMargin: "200px 0px" });
         vids.forEach(function (v) { io.observe(v); });
       })();
+      // Analytics events (Tom, 2026-11-12): newsletter sign-ups and taps on phone numbers and email
+      // addresses. GA4 only, never a Google Ads conversion. No form values or addresses are sent.
+      (function () {
+        var GA = ["G-YYWN6PCL75", "G-RXM702SP0M"];
+        function send(name, params) { try { if (typeof gtag === "function") gtag("event", name, Object.assign({ send_to: GA, page_path: location.pathname }, params || {})); } catch (e) {} }
+        document.addEventListener("click", function (e) {
+          var a = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+          if (!a) return;
+          send(a.getAttribute("href").indexOf("tel:") === 0 ? "phone_click" : "email_click", { link_location: a.closest("footer") ? "footer" : "page" });
+        });
+        window.addEventListener("vocom:newsletter-signup", function () { send("sign_up", { method: "newsletter" }); });
+      })();
       // Masonry grids: pack items into the shortest column like Framer does.
       (function () {
         if (window.CSS && CSS.supports("grid-template-rows", "masonry")) return;

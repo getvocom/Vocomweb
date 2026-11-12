@@ -87,3 +87,14 @@
 .quote-step-2 .step-link-title{font-size:14px;font-weight:600;color:var(--color-vocom)}
 .quote-step-2 .step-link-body{font-size:13px;line-height:1.45;color:var(--color-text-muted)}
 .quote-step-2 .step-link-cta{font-size:13px;font-weight:600;color:var(--color-vocom);text-decoration:underline}
+
+/* Phones and tablets (Tom, 2026-11-12): the form comes straight after the heading, so "Request a Quote"
+   lands on it without scrolling. The bullets and partner logos follow the form. Desktop is unchanged. */
+@media (max-width: 1199.98px){
+.xgpjwle, .xp2ypgf{display:contents}
+.xgkm6et{order:1;width:100%}
+.xbjwhim{order:2;width:100%;margin-top:-20px}
+.xoopqlt{order:3;width:100%}
+.xs8icy6{order:4}
+.x3514vv{order:5}
+}

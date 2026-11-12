@@ -204,3 +204,4 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 ## 2026-11-12: US phone number is now Kevin's (Tom)
 - Footer and the LocalBusiness schema on every page (and llms-full.txt): +1 (650) 619-5048 replaces +1-213-627-8999. Fax and the Taiwan number unchanged.
 - Google Business Profile should show the same number so the listing and the site match.
+- 2026-11-12 (Tom): on phones and tablets the quote page shows the heading, then the form, then the bullets and partner logos (CSS order only, desktop unchanged). Form top 220px at 390x844, Submit visible without scrolling.

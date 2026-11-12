@@ -14,7 +14,7 @@ export async function GET() {
     "",
     `> ${desc("/")}`,
     "",
-    "Vocom International (founded 1993, El Monte, California, and Taipei) supplies build-to-order fiber optic cable, connectivity and carrier services. Contact: kevin@getvocom.com, +1-213-627-8999, " + SITE + "/contact-vocomai",
+    "Vocom International (founded 1993, El Monte, California, and Taipei) supplies build-to-order fiber optic cable, connectivity and carrier services. Contact: kevin@getvocom.com, +1 (650) 619-5048, " + SITE + "/contact-vocomai",
     "",
     "## Products",
     "",

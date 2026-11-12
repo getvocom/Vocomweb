@@ -200,3 +200,7 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - On phones the short form sits under the hero (about two screens down) because the hero includes the spec box. The header "Request a Quote" button stays visible above it.
 - Follow-up (Tom, 2026-11-12): button "Get a Quote in 24 Hours"; Company optional ("Company (optional)"); on phones the form moves under the H1 and intro (form top at 390x844: fiber-optic-cables 688px, loose tube 699, ADSS 595, ribbon 684, air blown 644; the other five cable pages 595 to 659); form added under the intro on /fiber-optic-cable-supplier-comparison (633px on a phone). Apps Script Version 12: company optional, comparison page allowed.
 - 2026-11-12 (Tom): quote page H1 back to "Contact our sales team". The page takes all enquiries, not only fiber. The fiber heading stays on the short form on the cable pages only.
+
+## 2026-11-12: US phone number is now Kevin's (Tom)
+- Footer and the LocalBusiness schema on every page (and llms-full.txt): +1 (650) 619-5048 replaces +1-213-627-8999. Fax and the Taiwan number unchanged.
+- Google Business Profile should show the same number so the listing and the site match.

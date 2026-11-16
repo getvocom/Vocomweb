@@ -206,11 +206,11 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Google Business Profile should show the same number so the listing and the site match.
 - 2026-11-12 (Tom): on phones and tablets the quote page shows the heading, then the form, then the bullets and partner logos (CSS order only, desktop unchanged). Form top 220px at 390x844, Submit visible without scrolling.
 
-## 2026-11-16: Fiber product catalog upgrade (Tom's build brief), on branch fiber-products-catalog, not live
+## 2026-11-16: Fiber product catalog upgrade (Tom's build brief), pushed 2026-11-16
 - Audit: the catalog already had 51 product pages, 8 category pages and /fiber-optic-cable-catalog. No URL changed and no /fiber-products/ URLs were created (the existing pages hold the rankings).
 - Nav: "Fiber Optic" is now "Fiber Products", eight product families (src/lib/nav.ts). On phones each family is its own dropdown. Footer "Popular Products" reads POPULAR in nav.ts.
 - Product pages: specification table (only the fields each product has), "Applications and Related Products" links, "Why Source It Through Vocom" (the five lines already on the catalog page, cable products only) and the short quote form with the product name filled in. New wording to check: headings "<name>: Specifications", "Applications and Related Products", "Request a Quote: <name>", "Add the quantity or footage you need...", table rows "Supply: Build-to-order" and "Full Datasheet: Available on request with your quote".
-- The product quote form needs Apps Script Version 13 (apps-script/Code.gs now accepts /products/<slug>). Deploy the script before this branch goes live, or the form answers "bad origin".
+- Apps Script Version 13 (deployed 2026-11-16, same URL) accepts quotes from /products/<slug>.
 - Catalog page: filter box above the product tables (product, code or fiber count).
 - Semrush audit 2026-11-16: HSTS header added (public/_headers, this host only, no preload). /vocom-ai-agents schema: RenOS changed from SoftwareApplication (Google requires a price and rating) to Service. /search "blocked from crawling" is its intended noindex. "Disallowed external resources" on 95 pages is the LinkedIn conversion pixel, which LinkedIn's own robots.txt blocks; nothing on the site to fix.
 - Not done, needs Kevin's data: outer diameter, tensile, crush, temperature, jacket and standards per product, datasheet PDFs, real product photos. Product schema still not added (no price or reviews, Google reports it as invalid).

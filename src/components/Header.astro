@@ -13,7 +13,7 @@ import { NAV } from "../lib/nav";
 
   <nav class="sn-menu" aria-label="Main">
     {NAV.map((s) => (
-      <div class={`sn-item has-overlay${s.wide ? " sn-wide" : ""}`}>
+      <div class={`sn-item has-overlay${s.wide ? " sn-wide" : ""}${s.grid ? " sn-grid" : ""}`}>
         <a class="sn-top" href={s.href}>
           {s.label}
           <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z" /></svg>
@@ -21,10 +21,10 @@ import { NAV } from "../lib/nav";
         <div class="overlay sn-panel">
           {s.groups.map((g) => (
             <div class="sn-group">
-              <p class="sn-group-title">{g.title}</p>
+              <p class="sn-group-title">{g.href ? <a href={g.href}>{g.title}</a> : g.title}</p>
               <ul>
                 {g.links.map((l) => (
-                  <li><a href={l.href}><span class="sn-label">{l.label}</span>{l.desc && <span class="sn-desc">{l.desc}</span>}</a></li>
+                  <li><a href={l.href}><span class="sn-label">{l.label}</span>{l.desc && !s.grid && <span class="sn-desc">{l.desc}</span>}</a></li>
                 ))}
               </ul>
             </div>
@@ -47,7 +47,12 @@ import { NAV } from "../lib/nav";
       {NAV.map((s) => (
         <details class="sn-msection">
           <summary>{s.label}</summary>
-          {s.groups.map((g) => (
+          {s.groups.map((g) => s.grid ? (
+            <details class="sn-mfamily">
+              <summary>{g.title}</summary>
+              <div class="sn-mgroup">{g.links.map((l) => <a href={l.href}>{l.label}</a>)}</div>
+            </details>
+          ) : (
             <div class="sn-mgroup">
               <p class="sn-group-title">{g.title}</p>
               {g.links.map((l) => <a href={l.href}>{l.label}</a>)}
@@ -121,6 +126,16 @@ import { NAV } from "../lib/nav";
   .sn-group a:hover .sn-label { color: var(--brand-crimson); }
   .sn-desc { font-size: 12.5px; line-height: 1.35; color: #737373; }
 
+  /* Fiber Products: eight product families, four across, compact links */
+  .sn-grid .sn-panel { flex-wrap: wrap; gap: 22px 24px; padding: 22px 26px; max-height: calc(100vh - 110px); overflow-y: auto; }
+  .sn-grid .sn-group { min-width: 0; flex: 0 0 calc(25% - 18px); }
+  .sn-grid .sn-group-title { margin-bottom: 6px; }
+  .sn-group-title a { display: inline; padding: 0; margin: 0; color: var(--brand-crimson); }
+  .sn-group-title a:hover, .sn-group-title a:focus-visible { background: none; text-decoration: underline; }
+  .sn-grid .sn-group li a { padding: 4px 10px; }
+  .sn-grid .sn-label { font-weight: 500; font-size: 13.5px; }
+  .sn-grid .sn-group li:first-child .sn-label { font-weight: 700; }
+
   .sn-actions { display: flex; align-items: center; gap: 10px; flex: none; }
   .sn-search { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(14, 28, 41, 0.12); }
   .sn-search svg { width: 18px; height: 18px; fill: none; stroke: rgb(14, 28, 41); stroke-width: 2; stroke-linecap: round; }
@@ -153,6 +168,12 @@ import { NAV } from "../lib/nav";
   .sn-mgroup { display: flex; flex-direction: column; padding: 0 4px 12px; }
   .sn-mgroup .sn-group-title { margin: 6px 0 4px; }
   .sn-mgroup a { padding: 8px 0; font-size: 15px; color: rgb(14, 28, 41); }
+  .sn-mfamily { border-top: 1px solid rgba(14, 28, 41, 0.06); }
+  .sn-mfamily > summary { list-style: none; cursor: pointer; padding: 11px 4px 11px 12px; font-weight: 600; font-size: 15px; color: rgb(14, 28, 41); display: flex; justify-content: space-between; }
+  .sn-mfamily > summary::-webkit-details-marker { display: none; }
+  .sn-mfamily > summary::after { content: "+"; color: var(--brand-crimson); }
+  .sn-mfamily[open] > summary::after { content: "\2212"; }
+  .sn-mfamily .sn-mgroup { padding-left: 20px; }
   .sn-mcta { margin-top: 16px; justify-content: center; width: 100%; }
 
   @media (max-width: 1023.98px) {

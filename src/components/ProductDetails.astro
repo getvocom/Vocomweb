@@ -1,0 +1,90 @@
+---
+// Product page detail sections (Tom, 2026-11-16): specification table, applications with links to the
+// related category pages and guides, and why to source through Vocom. Everything shown comes from the
+// product's own fields in src/content/products; nothing is filled in when a field is empty. The
+// "why Vocom" lines are the ones already on /fiber-optic-cable-catalog (cable products only).
+import { CATEGORY_PAGES, productLabels } from "../lib/categories";
+interface Props { entry: { id: string; data: Record<string, any> } }
+const { entry } = Astro.props;
+const d = entry.data;
+const L = productLabels(d.category);
+const cat = CATEGORY_PAGES[d.category];
+const has = (v?: string) => !!v && v.toLowerCase() !== "n/a";
+const rows: [string, string][] = [
+  ["Product", d.name],
+  [L.codes, d.codes],
+  [L.counts, d.fiberCounts],
+  [L.construction, d.construction],
+  ["Typical Use", d.typicalUse],
+].filter(([, v]) => has(v)) as [string, string][];
+// Related pages by category: application pages and guides that already exist.
+const RELATED: Record<string, [string, string][]> = {
+  "Outside Plant Loose Tube Cable": [["ADSS and aerial fiber cable", "/adss-aerial-fiber-cable"], ["Air blown micro cable and microduct", "/air-blown-micro-fiber-cable"]],
+  "Ribbon and High Fiber Count Cable": [["6912 fiber optic cable", "/6912-fiber-optic-cable"], ["1728 fiber optic cable", "/1728-fiber-optic-cable"], ["Data center fiber cabling", "/data-center-fiber-cabling"]],
+  "Air Blown Micro Cable, Microduct and Vaults": [["Loose tube fiber optic cable", "/loose-tube-fiber-optic-cable"], ["FTTH drop cable", "/ftth-drop-cable"]],
+  "Aerial and Self-Supporting Cable": [["Loose tube fiber optic cable", "/loose-tube-fiber-optic-cable"], ["FTTH drop cable", "/ftth-drop-cable"]],
+  "Drop Cable and FTTH": [["Fiber optic connectors and hardware", "/fiber-optic-connectors-and-hardware"], ["Indoor fiber optic cable", "/indoor-fiber-optic-cable"]],
+  "Data Center and Indoor Connectivity": [["Indoor fiber optic cable", "/indoor-fiber-optic-cable"], ["Optical transceivers", "/optical-transceivers"], ["Ribbon and high fiber count cable", "/ribbon-fiber-optic-cable"]],
+  "Connectors, Terminal Boxes and Hardware": [["Data center fiber cabling", "/data-center-fiber-cabling"], ["FTTH drop cable", "/ftth-drop-cable"]],
+  "Optical Transceivers": [["Data center fiber cabling", "/data-center-fiber-cabling"]],
+};
+const related: [string, string][] = [
+  ...(cat ? [[cat[0], cat[1]] as [string, string]] : []),
+  ...(RELATED[d.category] ?? []),
+  ...(L.trx ? [] : [["Fiber optic cable supplier comparison", "/fiber-optic-cable-supplier-comparison"] as [string, string]]),
+  ["Fiber optic glossary", "/fiber-optic-glossary"],
+  ["Full product catalog", "/fiber-optic-cable-catalog"],
+];
+const WHY = [
+  "Build-to-order, specified to your route, count and jacket, not off a fixed shelf.",
+  "Fujikura preform glass, tier 1 manufacturing, consistent quality.",
+  "Lead times that move, supply when domestic loose-tube is quoted months out.",
+  "Import/export handled, documentation, customs and delivery coordinated.",
+  "Founded in 1993, a supplier that also runs networks.",
+];
+---
+<section class="pd" aria-label="Product details">
+  <div class="pd-block">
+    <h2>{d.name}: Specifications</h2>
+    <table class="pd-table">
+      <tbody>
+        {rows.map(([k, v]) => (<tr><th scope="row">{k}</th><td>{v}</td></tr>))}
+        <tr><th scope="row">Category</th><td>{cat ? <a href={cat[1]}>{d.category}</a> : d.category}</td></tr>
+        {!L.trx && <tr><th scope="row">Supply</th><td>Build-to-order</td></tr>}
+        <tr><th scope="row">Full Datasheet</th><td>Available on request with your quote</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pd-block">
+    <h2>Applications and Related Products</h2>
+    {has(d.typicalUse) && <p class="pd-use"><strong>Typical use:</strong> {d.typicalUse}.</p>}
+    <ul class="pd-links">
+      {related.map(([label, href]) => (<li><a href={href}>{label}</a></li>))}
+    </ul>
+  </div>
+  {!L.trx && (
+    <div class="pd-block">
+      <h2>Why Source It Through Vocom</h2>
+      <ul class="pd-why">{WHY.map((w) => <li>{w}</li>)}</ul>
+    </div>
+  )}
+</section>
+
+<style>
+  .pd { width: 820px; max-width: 100%; display: flex; flex-direction: column; gap: 36px; padding: 0 0 48px; font-family: var(--font-sans); }
+  .pd h2 { margin: 0 0 14px; font-family: var(--font-display); font-weight: 800; font-size: 26px; line-height: 1.15; letter-spacing: -0.03em; color: var(--ink-heading); }
+  .pd-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius-md); overflow: hidden; box-shadow: inset 0 0 0 1px var(--brand-pink-border); }
+  .pd-table th, .pd-table td { padding: 13px 18px; text-align: left; vertical-align: top; font-size: 15px; line-height: 1.5; border-bottom: 1px solid var(--brand-pink-border); }
+  .pd-table tr:last-child th, .pd-table tr:last-child td { border-bottom: 0; }
+  .pd-table th { width: 34%; font-weight: 600; color: var(--color-vocom); background: var(--brand-pink-50); }
+  .pd-table td { color: var(--ink-900); }
+  .pd-table a, .pd-links a { color: var(--brand-crimson); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .pd-use { margin: 0 0 12px; font-size: 16px; line-height: 1.55; color: var(--gray-600); }
+  .pd-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 15px; }
+  .pd-why { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.55; color: var(--gray-600); }
+  @media (max-width: 809.98px) {
+    .pd h2 { font-size: 22px; }
+    .pd-table th, .pd-table td { padding: 11px 12px; font-size: 14px; }
+    .pd-table th { width: 40%; }
+  }
+</style>

@@ -4,15 +4,17 @@
 // src/lib/nav.ts, so each page is reachable from every other page.
 // footerTagline varies per page (copied from Framer). The old quick-link props are still accepted
 // so existing pages need no edits, but the link columns now come from the nav.
-import { NAV } from "../lib/nav";
+import { NAV, POPULAR } from "../lib/nav";
 interface Props { footerTagline?: string; title?: string; menu1?: string; menu2?: string; menu3?: string; link1?: string; link2?: string; link3?: string }
 const { footerTagline = "Your partner for telecommunications and fiber optic supply." } = Astro.props;
 const section = (label: string) => NAV.find((s) => s.label === label)!;
-const fiber = section("Fiber Optic");
-const group = (s: typeof fiber, title: string) => s.groups.find((g) => g.title === title)?.links ?? [];
+const fiber = section("Fiber Products");
+// category and buying pages (the links that are not individual products)
+const fiberPages = fiber.groups.flatMap((g) => g.links).filter((l) => !l.href.startsWith("/products/"));
+const buy = ["/fiber-optic-cable-for-distributors", "/fiber-optic-cable-referral-partners"];
 const columns = [
-  { title: "Fiber Optic Cable", links: [...group(fiber, "By cable type"), ...group(fiber, "By application")] },
-  { title: "Popular Products", links: [...group(fiber, "Popular products"), ...group(fiber, "Buy with Vocom").slice(0, 2)] },
+  { title: "Fiber Optic Cable", links: fiberPages.filter((l) => !buy.includes(l.href) && l.href !== "/contact-vocomai") },
+  { title: "Popular Products", links: [...POPULAR, ...fiberPages.filter((l) => buy.includes(l.href))] },
   { title: "Vocom International", links: section("Vocom International").groups.flatMap((g) => g.links) },
   { title: "Vocom AI", links: section("Vocom AI").groups.flatMap((g) => g.links) },
   { title: "Company", links: [...section("About").groups.flatMap((g) => g.links), { label: "Privacy Policy", href: "/vocom-privacy-policy" }, { label: "Search", href: "/search" }] },

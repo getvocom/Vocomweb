@@ -73,7 +73,8 @@ function quote(p) {
   // Name and company are optional: the short form on the cable pages asks for email and the cable needed,
   // with company optional (Tom, 2026-11-12). The quote page still requires both in the browser.
   if (!EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
-  if (QUOTE_PAGES.indexOf(p.page) < 0) return json({ result: 'error', error: 'bad origin' });
+  // product pages (/products/<slug>) carry the short quote form too (2026-11-16)
+  if (QUOTE_PAGES.indexOf(p.page) < 0 && !/^\/products\/[a-z0-9-]+$/.test(String(p.page))) return json({ result: 'error', error: 'bad origin' });
   var who = name || email;
   // Turnstile: a token that fails is rejected. With no token at all (the widget could not load for
   // that visitor) the request is kept but flagged, so a real lead is never lost.

@@ -78,3 +78,9 @@
 .xa2c3ph{display:none}
 .xxyrqgi{display:block}
 }
+
+/* Catalog filter (2026-11-16) */
+.cat-filter{box-sizing:border-box;width:100%;max-width:560px;height:48px;padding:0 16px;border:1px solid var(--brand-pink-border);border-radius:var(--radius-pill);background:var(--white);font-family:var(--font-sans);font-size:16px;color:var(--ink-900)}
+.cat-filter:focus{outline:2px solid var(--brand-crimson);outline-offset:1px}
+.cat-filter-empty{margin:0;font-family:var(--font-sans);font-size:15px;color:var(--gray-600)}
+.cat-filter-empty a{color:var(--brand-crimson);font-weight:600;text-decoration:underline}

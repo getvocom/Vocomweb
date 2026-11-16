@@ -9,12 +9,15 @@ import SubmitButton from "./SubmitButton.astro";
 // moveUp: on phones (< 768px) the form moves to just after the H1 and intro paragraph, so it is near
 // the top of the page (Tom, 2026-11-12). Desktop keeps it under the hero. Off on pages where the form
 // is already placed directly under the intro (the supplier comparison).
-const { moveUp = true } = Astro.props as { moveUp?: boolean };
+// product: on product pages (Tom, 2026-11-16) the form names the product in its heading and starts the
+// request with the product name and codes, so the lead says which product it is about.
+const { moveUp = true, product, useCase = "Fiber Optic" } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string };
+const prefill = product ? `${product.name}${product.codes && !["n/a", product.name.toLowerCase()].includes(product.codes.toLowerCase()) ? ` (${product.codes})` : ""}: ` : undefined;
 ---
-<section class="quote-strip" aria-labelledby="quote-strip-title" data-pagefind-ignore>
+<section class="quote-strip" id="quote" aria-labelledby="quote-strip-title" data-pagefind-ignore>
   <div class="qs-copy">
-    <h2 id="quote-strip-title">Request a Fiber Cable Quote</h2>
-    <p>Send the fiber count, type and footage. We reply with a spec, price and lead time.</p>
+    <h2 id="quote-strip-title">{product ? `Request a Quote: ${product.name}` : "Request a Fiber Cable Quote"}</h2>
+    <p>{product ? "Add the quantity or footage you need. We reply with a spec, price and lead time." : "Send the fiber count, type and footage. We reply with a spec, price and lead time."}</p>
   </div>
   <form class="qs-form" novalidate>
     <label class="qs-field">
@@ -22,14 +25,14 @@ const { moveUp = true } = Astro.props as { moveUp?: boolean };
       <input type="email" name="Email" placeholder="name@company.com" autocomplete="email" required />
     </label>
     <label class="qs-field">
-      <span>Fiber count, type and footage</span>
-      <input type="text" name="Message" placeholder="e.g. 144F loose tube, 24,000 ft" required />
+      <span>{product ? "Product and quantity" : "Fiber count, type and footage"}</span>
+      <input type="text" name="Message" placeholder="e.g. 144F loose tube, 24,000 ft" value={prefill} required />
     </label>
     <label class="qs-field">
       <span>Company (optional)</span>
       <input type="text" name="Company" placeholder="Your company" autocomplete="organization" />
     </label>
-    <input type="hidden" name="Use Case" value="Fiber Optic" />
+    <input type="hidden" name="Use Case" value={useCase} />
     <div class="qs-submit"><SubmitButton label="Get a Quote in 24 Hours" /></div>
   </form>
 </section>
@@ -66,7 +69,7 @@ const { moveUp = true } = Astro.props as { moveUp?: boolean };
     display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr); gap: 32px; align-items: center;
     padding: 28px 32px; border-radius: var(--radius-xl); background: var(--white);
     box-shadow: var(--shadow-card), inset 0 0 0 1px var(--brand-pink-border); font-family: var(--font-sans);
-    position: relative; z-index: 2;
+    position: relative; z-index: 2; scroll-margin-top: 96px;
   }
   .qs-copy h2 { margin: 0 0 8px; font-family: var(--font-display); font-weight: 800; font-size: 28px; line-height: 1.15; letter-spacing: -0.03em; color: var(--ink-heading); }
   .qs-copy p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--gray-600); }

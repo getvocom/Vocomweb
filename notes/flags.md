@@ -214,3 +214,11 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Catalog page: filter box above the product tables (product, code or fiber count).
 - Semrush audit 2026-11-16: HSTS header added (public/_headers, this host only, no preload). /vocom-ai-agents schema: RenOS changed from SoftwareApplication (Google requires a price and rating) to Service. /search "blocked from crawling" is its intended noindex. "Disallowed external resources" on 95 pages is the LinkedIn conversion pixel, which LinkedIn's own robots.txt blocks; nothing on the site to fix.
 - Not done, needs Kevin's data: outer diameter, tensile, crush, temperature, jacket and standards per product, datasheet PDFs, real product photos. Product schema still not added (no price or reviews, Google reports it as invalid).
+
+## 2026-11-17: Brand refresh of the Vocom AI, Vocom International and About pages (Tom), branch brand-refresh
+- Tom reported overlapping step cards on /vocom-services and the other International pages, and asked for those pages and the AI pages to match the fiber pages.
+- One shared stylesheet, src/styles/brand-refresh.css (loaded from Base.astro). No copy, markup or URL changed.
+- Step cards (About, /vocom-international, /vocom-services, IEPL/IPLC, wholesale voice): no tilt, white cards, arrow in the gap.
+- Hero on seven pages (the four International pages, About, /vocom-ai, /vocomai-consultancy): heading and buttons left, picture right, stacked on tablet and phone.
+- Section and card headings use Inter Display 800 as on the fiber pages; grey panels (photo grids, pricing cards, Coach Hub comparison table) use the pink surface.
+- Left as is: /vocom-ai-agents keeps its purple RenOS look; stock photos and section layouts lower on the pages are unchanged.

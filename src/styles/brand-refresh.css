@@ -1,0 +1,68 @@
+/* Brand refresh (Tom, 2026-11-17): the Vocom AI, Vocom International and About pages were still on the
+   older Framer look (centered hero, lighter headings, tilted step cards, grey frames). These rules bring
+   them in line with the fiber pages without touching any copy. They override the converted per-page CSS,
+   so every selector starts with .desktop (the page wrapper) to win on specificity. */
+
+/* 1. Section headings: Inter Display 800, as on the fiber pages */
+.desktop h3.h3, .desktop h3.h3 span { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.035em; line-height: 1.08; }
+.desktop h3.h3 { font-size: 42px; }
+.desktop h3.h3:not(:has(span)) { color: var(--ink-900); }
+
+/* 2. Hero: heading and buttons on the left, picture on the right (stacked on tablet and phone) */
+.desktop .xe4wmfc h1, .desktop .xe4wmfc h1 span { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; text-align: left; }
+.desktop .xe4wmfc .xhvkom8 { align-items: flex-start; }
+.desktop .xe4wmfc .xhvkom8 > p { text-align: left; }
+.desktop .xe4wmfc .xhvkom8 > div { justify-content: flex-start; width: auto; max-width: 100%; }
+.desktop .xe4wmfc .xj1meuj > .video { border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-card); }
+.desktop .xe4wmfc .xj1meuj video { border-radius: 0 !important; }
+@media (min-width: 1200px) {
+  .desktop .xe4wmfc { padding: 0 20px 64px; }
+  .desktop .xe4wmfc .xi9ijje { max-width: 1160px; padding-top: 64px; }
+  .desktop .xe4wmfc .xbnoz9m { flex-direction: row; align-items: center; max-width: none; gap: 56px; }
+  .desktop .xe4wmfc .xhvkom8 { flex: 1 1 0; width: auto; gap: 20px; }
+  .desktop .xe4wmfc h1 { font-size: 56px; }
+  .desktop .xe4wmfc .xj1meuj { flex: 0 0 520px; width: 520px; }
+  .desktop .xe4wmfc .xj1meuj > .video { width: 520px; height: 420px; }
+}
+@media (max-width: 1199.98px) {
+  .desktop .xe4wmfc .xj1meuj, .desktop .xe4wmfc .xj1meuj > .video { width: 100%; }
+  .desktop .xe4wmfc .xj1meuj > .video { height: 320px; }
+  .desktop h3.h3 { font-size: 32px; }
+}
+@media (max-width: 809.98px) {
+  .desktop .xe4wmfc .xj1meuj > .video { height: 220px; }
+  .desktop .xe4wmfc .xhvkom8 > div { flex-direction: row; flex-wrap: wrap; }
+}
+
+/* 3. Step cards: upright, white with the pink hairline, arrow in the gap (they were tilted and the
+      arrow sat under the second card) */
+.desktop .xznektj { max-width: 880px; gap: 76px; align-items: stretch; }
+.desktop .xznektj > .x1ai5nw, .desktop .xznektj > .xxlpcrb { transform: none; background: none; padding: 0; overflow: visible; border-radius: 0; justify-content: flex-start; }
+.desktop .xznektj .xepe0jq { height: 100%; justify-content: flex-start; gap: 20px; border-radius: var(--radius-xl); box-shadow: var(--shadow-card), inset 0 0 0 1px var(--brand-pink-border); }
+.desktop .xznektj > .xjlmtdo { left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 2; padding: 12px; box-shadow: inset 0 0 0 1px var(--brand-pink-border); }
+.desktop .xznektj > .xjlmtdo:hover { transform: translate(-50%, -50%); }
+@media (max-width: 809.98px) {
+  .desktop .xznektj { gap: 68px; }
+  .desktop .xznektj > .xjlmtdo { transform: translate(-50%, -50%) rotate(90deg); }
+  .desktop .xznektj > .xjlmtdo:hover { transform: translate(-50%, -50%) rotate(90deg); }
+}
+
+/* 4. Photo grids: pink frame instead of grey */
+.desktop .xsux5dz { background: var(--brand-pink-50); box-shadow: inset 0 0 0 1px var(--brand-pink-border); }
+
+/* 5. Remaining headings on the Vocom AI pages: large section titles and small card titles */
+.desktop .xdyrcse, .desktop .xyzqfpq, .desktop .xl4ayqe, .desktop .xzktj54, .desktop .xldfn8v, .desktop .xooxhyn { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.035em; }
+.desktop .xdyrcse, .desktop .xyzqfpq { font-size: 42px; line-height: 1.08; color: var(--ink-900); }
+.desktop h3:not(.h3):not(.xyzqfpq) { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em; }
+.desktop .x19p4ct { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; line-height: 1.3; color: var(--ink-900); }
+@media (max-width: 1199.98px) { .desktop .xdyrcse, .desktop .xyzqfpq { font-size: 32px; } }
+
+/* 6. Grey panels (photo grids, pricing cards, comparison table) take the pink surface */
+.desktop .xbywjww, .desktop .xvwv2os, .desktop .xgaqeji, .desktop .xewxwws, .desktop .xxqyvrz, .desktop .x65nrf9 { background: var(--brand-pink-50); box-shadow: inset 0 0 0 1px var(--brand-pink-border); }
+
+/* 7. Hero details: button labels stay on one line; the same side margins on phones */
+.desktop .xe4wmfc .xhvkom8 > div a p { white-space: nowrap; }
+@media (max-width: 809.98px) {
+  .desktop .xe4wmfc { padding-left: 20px; padding-right: 20px; }
+  .desktop .xe4wmfc .xi9ijje { padding-left: 0; padding-right: 0; }
+}

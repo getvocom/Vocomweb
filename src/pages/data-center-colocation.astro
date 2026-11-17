@@ -8,7 +8,7 @@ import FaqItem from "../components/FaqItem.astro";
 <DcPage path="/data-center-colocation" eyebrow="Colocation and leasing"
   title="Data Center Colocation and Leasing for AI Workloads"
   lede="Lease space that already has power: wholesale colocation in Dubai, containerized data halls in Thailand taken in 5MW units, the last 25MW of a Sydney campus, or an operating colocation building in North Carolina."
-  photo="data-center-rack-patching" photoAlt="Patching inside a rack at an operating colocation facility"
+  photo="dc-rack-cabling" photoAlt="Server racks with structured fiber and copper cabling"
   panelTitle="Space you can lease" chips={["Dubai 40MW colocation", "Rayong 100MW available now", "Sydney 25MW remaining", "Hickory, NC colocation"]}
   stats={[["1 to 6 mo", "To go live in a ready suite"], ["$100 to $200", "Wholesale rent per kW per month, industry range"], ["2 to 4%", "Typical annual rent escalator"], ["5MW", "Smallest containerized unit in Rayong"]]}
   secondary={["/data-centers#sites", "See all sites"]}
@@ -53,8 +53,8 @@ import FaqItem from "../components/FaqItem.astro";
   </section>
 
   <section class="dc-section">
-    <h2>On Site</h2>
-    <DcGallery only={["data-center-rack-patching", "fiber-patch-panel-high-density", "fiber-cable-reels-warehouse"]} />
+    <h2>Inside an AI Data Center</h2>
+    <DcGallery only={["dc-rack-cabling", "dc-fiber-patch-panel", "dc-rack-patching"]} />
   </section>
 
   <section class="dc-section">

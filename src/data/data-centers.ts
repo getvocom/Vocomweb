@@ -2,7 +2,7 @@
 // deck (v4, Nov 2026). Kept off the public pages on purpose: asking prices, colocation and per-site power
 // rates, seller, developer and partner names, exact coordinates. Those go to qualified buyers under NDA.
 // Capacity and power figures are seller-represented and are said so on every page.
-import photos from "./site-visit-photos.json";
+import photos from "./dc-stock-photos.json";
 
 export type Site = { country: string; location: string; capacity: string; notes: string };
 export const SITES: { region: string; sites: Site[] }[] = [
@@ -61,14 +61,15 @@ export const LADDER = [
 ];
 
 export type Photo = { name: keyof typeof photos; alt: string; caption: string };
-export const PHOTO = (name: keyof typeof photos) => ({ base: `/assets/img/site-visit/${name}`, ...photos[name] });
+// Stock photos already licensed for the site (Tom, 2026-11-17: no site-visit photos).
+export const PHOTO = (name: keyof typeof photos) => ({ base: `/assets/img/dc-stock/${name}`, ...photos[name] });
 export const GALLERY: Photo[] = [
-  { name: "fiber-cable-reels-warehouse", alt: "Reels of outside plant fiber optic cable in a warehouse", caption: "Fiber on the reel, ready to ship" },
-  { name: "fiber-patch-panel-high-density", alt: "High-density fiber patch panel loaded with LC adapters", caption: "High-density patch panel" },
-  { name: "data-center-rack-patching", alt: "Fiber and copper patching in a data center rack", caption: "Patching in a live colocation rack" },
-  { name: "fiber-cable-reels-racking", alt: "Fiber cable reels stored on warehouse racking", caption: "Cable stock on racking" },
-  { name: "fiber-cable-warehouse-floor", alt: "Warehouse floor with stacked fiber cable reels and equipment", caption: "Warehouse floor" },
-  { name: "data-center-substation-power", alt: "Electrical substation next to a data center site", caption: "Power first: the substation on site" },
+  { name: "dc-server-aisle", alt: "Rows of server racks in a data center aisle", caption: "Server rows in a data hall" },
+  { name: "dc-fiber-patch-panel", alt: "Fiber patch cords at a high-density patch panel", caption: "High-density fiber patching" },
+  { name: "dc-rack-cabling", alt: "Server racks with structured fiber and copper cabling", caption: "Racks cabled and ready" },
+  { name: "dc-engineer-aisle", alt: "Engineer with a laptop walking a data center server aisle", caption: "Operations on the floor" },
+  { name: "dc-renewable-power", alt: "Wind turbines generating power for the grid", caption: "Power comes first" },
+  { name: "dc-rack-patching", alt: "Technician patching network cables in a rack", caption: "Patching and turn-up" },
 ];
 
 export const CAVEAT = "Capacity, power and timing figures are provided by the site owners and are verified in diligence. Documents, pricing and exact locations go to qualified buyers under NDA.";

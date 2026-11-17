@@ -5,7 +5,7 @@ import DcPage from "../components/DcPage.astro";
 import DcGallery from "../components/DcGallery.astro";
 import FaqItem from "../components/FaqItem.astro";
 import { PHOTO } from "../data/data-centers";
-const sub = PHOTO("data-center-substation-power");
+const sub = PHOTO("dc-fiber-patch-panel");
 const PHASES: [string, string, string, boolean][] = [
   ["01", "Strategy and business case", "2 to 4 mo", false], ["02", "Site selection and control", "3 to 9 mo", false],
   ["03", "Power strategy", "12 to 60 mo", true], ["04", "Permitting", "6 to 18 mo", true], ["05", "Financing", "3 to 9 mo", false],
@@ -16,7 +16,7 @@ const PHASES: [string, string, string, boolean][] = [
 <DcPage path="/build-ai-data-center" eyebrow="Build an AI data center"
   title="Build an AI Data Center in 15 Months With a Prefab Design"
   lede="A site-ready design for a liquid-cooled AI hall, built from prefab modules made off-site while the ground is prepared, so the schedule runs in parallel. Pair it with land and power from our site portfolio, or with land you already control."
-  photo="fiber-cable-warehouse-floor" photoAlt="Warehouse floor with fiber cable reels and electrical equipment"
+  photo="dc-engineer-aisle" photoAlt="Engineer with a laptop walking a data center server aisle"
   panelTitle="Prefab AI data center, Phase I" chips={["26MW power, 20MW IT", "120kW liquid-cooled racks", "About 1.3 design PUE, Tier III", "15 months to commission"]}
   stats={[["15 mo", "Design to commissioning"], ["24 to 48 mo", "Typical conventional build"], ["288", "Racks in Phase I"], ["~10,000", "B200-class GPUs in Phase I"]]}
   secondary={["#design", "See the design"]}
@@ -27,7 +27,7 @@ const PHASES: [string, string, string, boolean][] = [
     <div class="dc-split">
       <picture>
         <source type="image/webp" srcset={`${sub.base}-640.webp 640w, ${sub.base}-1024.webp 1024w`} sizes="(max-width: 809.98px) 92vw, 580px" />
-        <img src={`${sub.base}-1024.jpg`} width={sub.w} height={sub.h} alt="Substation and transformers serving a data center site" loading="lazy" decoding="async" />
+        <img src={`${sub.base}-1024.jpg`} width={sub.w} height={sub.h} alt="Fiber patch cords at a high-density patch panel" loading="lazy" decoding="async" />
       </picture>
       <div class="dc-card">
         <dl>
@@ -80,8 +80,8 @@ const PHASES: [string, string, string, boolean][] = [
   </section>
 
   <section class="dc-section">
-    <h2>On Site</h2>
-    <DcGallery only={["fiber-cable-reels-warehouse", "fiber-cable-reels-racking", "fiber-cable-warehouse-floor"]} />
+    <h2>Inside an AI Data Center</h2>
+    <DcGallery only={["dc-engineer-aisle", "dc-renewable-power", "dc-server-aisle"]} />
   </section>
 
   <section class="dc-section">

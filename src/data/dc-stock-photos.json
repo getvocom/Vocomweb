@@ -1,0 +1,26 @@
+{
+ "dc-server-aisle": {
+  "w": 1024,
+  "h": 681
+ },
+ "dc-fiber-patch-panel": {
+  "w": 1024,
+  "h": 683
+ },
+ "dc-rack-cabling": {
+  "w": 1024,
+  "h": 574
+ },
+ "dc-engineer-aisle": {
+  "w": 1024,
+  "h": 684
+ },
+ "dc-renewable-power": {
+  "w": 1024,
+  "h": 592
+ },
+ "dc-rack-patching": {
+  "w": 1024,
+  "h": 683
+ }
+}

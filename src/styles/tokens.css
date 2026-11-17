@@ -76,4 +76,16 @@
   /* Layout */
   --container: 1180px;
   --header-height: 66px;
+
+  /* RenOS page (/vocom-ai-agents): the look of rengroup.ai (Tom, 2026-11-17) */
+  --renos-bg: #0a0c11;
+  --renos-surface: #11141c;
+  --renos-card: rgba(255, 255, 255, 0.05);
+  --renos-line: rgba(255, 255, 255, 0.08);
+  --renos-text: #e9ebf1;
+  --renos-muted: #8a90a2;
+  --renos-accent: #5ee0ff;
+  --renos-violet: #8f80f7;
+  --font-renos: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-renos-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }

@@ -222,3 +222,6 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Hero on seven pages (the four International pages, About, /vocom-ai, /vocomai-consultancy): heading and buttons left, picture right, stacked on tablet and phone.
 - Section and card headings use Inter Display 800 as on the fiber pages; grey panels (photo grids, pricing cards, Coach Hub comparison table) use the pink surface.
 - Left as is: /vocom-ai-agents keeps its purple RenOS look; stock photos and section layouts lower on the pages are unchanged.
+
+## 2026-11-17: RenOS page restyled to match rengroup.ai (Tom)
+- /vocom-ai-agents only: dark background, cyan accent, Space Grotesk headings and body, JetBrains Mono labels (both OFL, self-hosted in public/fonts, @font-face in src/styles/fonts.css), tokens --renos-* in tokens.css. Header and footer stay Vocom's. No copy changed.

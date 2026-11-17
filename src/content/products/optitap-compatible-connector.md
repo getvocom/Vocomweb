@@ -11,4 +11,6 @@ description: "OptiTap compatible connector. Supplied under codes U-Optic. Availa
 image:
   src: "/assets/img/products/u-optic-hardened-outdoor-connector-ip68-1200.jpg"
   alt: "OptiTap compatible hardened outdoor fiber connector, IP68 (illustrative render)"
+metaTitle: "OptiTap Compatible Hardened Connector, IP68 | Vocom"
+metaDescription: "Hardened fiber optic connector, OptiTap compatible: IP68 sealed, GR-3120 and GR-326 tested, for outdoor FTTH terminals and drop cable field termination."
 ---

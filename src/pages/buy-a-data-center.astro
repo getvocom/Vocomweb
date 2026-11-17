@@ -1,0 +1,81 @@
+---
+// Buy a data center (Tom, 2026-11-17). Sites for sale from Kevin's deck. Asking prices, seller names and
+// exact coordinates are not published (see src/data/data-centers.ts).
+import DcPage from "../components/DcPage.astro";
+import DcGallery from "../components/DcGallery.astro";
+import FaqItem from "../components/FaqItem.astro";
+---
+<DcPage path="/buy-a-data-center" eyebrow="Data centers for sale"
+  title="Buy a Data Center: Powered AI Sites and Campuses for Sale"
+  lede="Buying a powered site is the fastest way to own capacity. Vocom introduces qualified buyers to data center owners, from an operating 15MW building in North Carolina to a 230MW campus in North Dakota with 100MW energized today."
+  photo="data-center-substation-power" photoAlt="Electrical substation serving a data center site"
+  panelTitle="Sites for sale now" chips={["230MW North Dakota campus", "15MW Hickory, NC building", "4 to 9 months to close", "Site packs under NDA"]}
+  stats={[["230MW", "Largest campus for sale"], ["100MW", "Energized today in North Dakota"], ["4 to 9 mo", "Typical time to close"], ["$9M to $15M", "Typical build cost per MW, before IT"]]}
+  secondary={["/data-centers#sites", "See all sites"]}
+  quoteTitle="Ask for a Site Pack" quoteIntro="Tell us the size, region and timing you need. Qualified buyers get the site pack under NDA.">
+  <section class="dc-section">
+    <h2>Data Center Sites for Sale</h2>
+    <p class="dc-sub">Two US sites are on the market now. Both come with power already live, which is what takes longest to get on a new build.</p>
+    <div class="dc-grid dc-2">
+      <article class="dc-card">
+        <span class="dc-tag">North Dakota</span>
+        <h3>230MW Data Center Campus</h3>
+        <p>A 100-acre campus on the MISO grid in eastern North Dakota, offered as a sale of the entity that holds it. 100MW is energized today, so a buyer gets speed to market with a defined timeline for the rest.</p>
+        <dl>
+          <dt>Energized</dt><dd>100MW, substation live and in use</dd>
+          <dt>Pathway</dt><dd>A further 100MW under an approved 200MW transmission study</dd>
+          <dt>Co-located</dt><dd>30MW more on nearby energized sites</dd>
+          <dt>Water</dt><dd>About 1 MGD continuous and 3 MGD peak, plus up to about 3.3 MGD of reuse water for cooling</dd>
+          <dt>Fiber</dt><dd>Two carriers live at the site, a third ready to build to it</dd>
+        </dl>
+      </article>
+      <article class="dc-card">
+        <span class="dc-tag">North Carolina</span>
+        <h3>15MW Building in Hickory, NC</h3>
+        <p>An existing building of about 50,000 sq ft on 10 acres, served by Duke Energy and already running as a colocation facility hosting GPU servers.</p>
+        <dl>
+          <dt>Power</dt><dd>3MW live, 15MW with a 44kV transformer build-out</dd>
+          <dt>Upside</dt><dd>Up to 50MW via a new 100kV line</dd>
+          <dt>Structure</dt><dd>Sale, or long-term lease or colocation</dd>
+          <dt>Nearby</dt><dd>Three more sites in the area: 25MW, 7MW and one at an early stage</dd>
+        </dl>
+      </article>
+    </div>
+    <p class="dc-note">Looking further afield? The <a class="text-link" href="/data-centers#sites">full site list</a> covers Japan, Taiwan, Southeast Asia, Australia and Dubai.</p>
+  </section>
+
+  <section class="dc-section">
+    <h2>How a Purchase Works</h2>
+    <p class="dc-sub">Buying shifts the work from construction to diligence and structuring. Most deals close in 4 to 9 months.</p>
+    <div class="dc-grid">
+      <div class="dc-card"><span class="dc-tag">Step 1</span><h3>Letter of Intent</h3><p>Price, structure and 30 to 90 days of exclusivity while you run diligence.</p></div>
+      <div class="dc-card"><span class="dc-tag">Step 2</span><h3>Asset or Share Deal</h3><p>An asset deal avoids unknown liabilities. A share deal keeps licenses, permits and contracts in place.</p></div>
+      <div class="dc-card"><span class="dc-tag">Step 3</span><h3>Diligence</h3><ul><li>Grid capacity transfers to the buyer</li><li>Ground lease term</li><li>Equipment age and condition</li><li>Customer change-of-control terms</li><li>Certifications</li></ul></div>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>Fill the Building</h2>
+    <p class="dc-sub">The day you own the site, it needs servers, optics and fiber. Vocom supplies all three on one order, and brings in construction and cooling partners when a retrofit is part of the plan.</p>
+    <div class="dc-grid">
+      <a class="dc-card" href="/vocom-ai-servers"><h3>AI Servers</h3><p>Supermicro AI and GPU servers.</p><span class="dc-more">Buy AI servers &rarr;</span></a>
+      <a class="dc-card" href="/optical-transceivers"><h3>Transceivers</h3><p>400G, 800G and 1.6T optics.</p><span class="dc-more">Transceivers &rarr;</span></a>
+      <a class="dc-card" href="/data-center-fiber-cabling"><h3>Fiber Cabling</h3><p>MPO and MTP trunks and high count ribbon.</p><span class="dc-more">Fiber cabling &rarr;</span></a>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>On Site</h2>
+    <DcGallery only={["data-center-substation-power", "data-center-rack-patching", "fiber-patch-panel-high-density"]} />
+  </section>
+
+  <section class="dc-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="dc-faq">
+      <FaqItem question="What documents can I see before making an offer?">Qualified buyers get the site pack under NDA. For the North Dakota campus that includes the interconnection agreement, queue position and energization certificate. For Hickory it includes the utility service documents and the transformer build-out scope.</FaqItem>
+      <FaqItem question="Are the power figures confirmed?">They are provided by the sellers and checked in diligence before you commit. We share the source documents rather than ask you to take the numbers on trust.</FaqItem>
+      <FaqItem question="Can I lease instead of buying?">Yes. The Hickory building can also be leased or used as colocation, and we have space to lease in Dubai, Thailand and Sydney. See <a class="text-link" href="/data-center-colocation">data center colocation and leasing</a>.</FaqItem>
+      <FaqItem question="Does Vocom take a stake in the site?">No. Vocom introduces the buyer and the seller and supplies the equipment that goes inside. The sale is between you and the owner.</FaqItem>
+    </div>
+  </section>
+</DcPage>

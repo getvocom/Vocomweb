@@ -1,0 +1,18 @@
+---
+// Photos from Kevin's November 2026 site visit (fiber stock, patching, power). No brand labels or people.
+import { GALLERY, PHOTO } from "../data/data-centers";
+interface Props { only?: string[] }
+const { only } = Astro.props;
+const list = only ? GALLERY.filter((g) => only.includes(g.name)) : GALLERY;
+---
+<div class="dc-gallery">
+  {list.map((g) => { const p = PHOTO(g.name); return (
+    <figure>
+      <picture>
+        <source type="image/webp" srcset={`${p.base}-640.webp 640w, ${p.base}-1024.webp ${p.w}w`} sizes="(max-width: 809.98px) 92vw, 380px" />
+        <img src={`${p.base}-640.jpg`} srcset={`${p.base}-640.jpg 640w, ${p.base}-1024.jpg ${p.w}w`} sizes="(max-width: 809.98px) 92vw, 380px" width={p.w} height={p.h} alt={g.alt} loading="lazy" decoding="async" />
+      </picture>
+      <figcaption>{g.caption}</figcaption>
+    </figure>
+  ); })}
+</div>

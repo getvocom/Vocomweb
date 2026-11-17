@@ -29,7 +29,7 @@ var QUOTE_HEADERS = ['Timestamp'].concat(QUOTE_FIELDS).concat(['Page']).concat(F
 var DETAIL_FIELDS = ['Use Case', 'Message', 'I Am A', 'Company Size'].concat(FIBER_FIELDS).concat(EXTRA_FIELDS);
 // Pages that may send a quote: the quote page, plus the short quote form on the fiber cable pages (2026-11-12)
 // and the supplier comparison page (2026-11-12, Version 12).
-var QUOTE_PAGES = ['/contact-vocomai', '/fiber-optic-cables', '/loose-tube-fiber-optic-cable', '/ribbon-fiber-optic-cable', '/6912-fiber-optic-cable', '/1728-fiber-optic-cable', '/adss-aerial-fiber-cable', '/air-blown-micro-fiber-cable', '/ftth-drop-cable', '/indoor-fiber-optic-cable', '/data-center-fiber-cabling', '/fiber-optic-cable-supplier-comparison'];
+var QUOTE_PAGES = ['/contact-vocomai', '/fiber-optic-cables', '/loose-tube-fiber-optic-cable', '/ribbon-fiber-optic-cable', '/6912-fiber-optic-cable', '/1728-fiber-optic-cable', '/adss-aerial-fiber-cable', '/air-blown-micro-fiber-cable', '/ftth-drop-cable', '/indoor-fiber-optic-cable', '/data-center-fiber-cabling', '/fiber-optic-cable-supplier-comparison', '/data-centers', '/buy-a-data-center', '/data-center-colocation', '/build-ai-data-center'];
 var DETAILS_HOURS = 24;
 // Personal mailbox domains: such leads are kept, just flagged "Free Email: Yes" in the sheet and email.
 var FREE_EMAIL_RE = /@(gmail\.com|googlemail\.com|yahoo\.(com|ca|co\.uk|com\.\w+)|ymail\.com|hotmail\.(com|ca|co\.uk|fr|de)|outlook\.(com|ca|co\.uk)|live\.(com|ca|co\.uk)|msn\.com|aol\.com|icloud\.com|me\.com|mac\.com|proton\.me|protonmail\.com|gmx\.(com|net|de)|mail\.com|yandex\.(com|ru)|zoho\.com|qq\.com|163\.com|126\.com)$/i;

@@ -11,4 +11,6 @@ description: "Hybrid fiber and copper. Supplied under codes Hybrid FTTA. Availab
 image:
   src: "/assets/img/products/hybrid-fiber-and-copper-cable-ftta-1200.jpg"
   alt: "Hybrid fiber and copper cable for FTTA (illustrative render)"
+metaTitle: "Hybrid Fiber Copper Composite Cable for Towers | Vocom"
+metaDescription: "Hybrid fiber and copper composite cable, 2 fibers plus 2 copper conductors, outdoor rated with IP68 terminations for tower and antenna (FTTA) sites."
 ---

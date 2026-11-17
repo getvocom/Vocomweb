@@ -120,6 +120,30 @@ export const NAV: NavSection[] = [
     ],
   },
   {
+    label: "Data Centers",
+    href: "/data-centers",
+    groups: [
+      {
+        title: "Sites and space",
+        links: [
+          { label: "Data Center Sites", href: "/data-centers", desc: "Powered sites in 8 countries" },
+          { label: "Buy a Data Center", href: "/buy-a-data-center", desc: "Campuses and buildings for sale" },
+          { label: "Lease and Colocation", href: "/data-center-colocation", desc: "Colocation, powered shell, containerized" },
+          { label: "Build an AI Data Center", href: "/build-ai-data-center", desc: "Prefab design, about 15 months" },
+        ],
+      },
+      {
+        title: "Servers and compute",
+        links: [
+          { label: "AI Servers", href: "/vocom-ai-servers", desc: "Buy Supermicro AI and GPU servers" },
+          { label: "GPU Solutions", href: "/vocomai-gpu-solutions", desc: "GPU compute for AI teams" },
+          { label: "Optical Transceivers", href: "/optical-transceivers", desc: "400G, 800G and 1.6T" },
+          { label: "Data Center Fiber Cabling", href: "/data-center-fiber-cabling", desc: "MPO and MTP trunks, cassettes" },
+        ],
+      },
+    ],
+  },
+  {
     label: "Vocom AI",
     href: "/vocom-ai",
     wide: true,
@@ -139,8 +163,6 @@ export const NAV: NavSection[] = [
           { label: "AI Coach", href: "/vocomai-coach-hub" },
           { label: "Network Security", href: "/vocomai-vocam" },
           { label: "Manufacturing", href: "/vocomai-manufacturing" },
-          { label: "AI Servers", href: "/vocom-ai-servers" },
-          { label: "GPU Solutions", href: "/vocomai-gpu-solutions" },
           { label: "Consulting", href: "/vocomai-consultancy" },
         ],
       },

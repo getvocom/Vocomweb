@@ -1,0 +1,69 @@
+---
+// Data center colocation and leasing (Tom, 2026-11-17). Space to lease from Kevin's deck. Colocation
+// rates and owner names are not published (see src/data/data-centers.ts).
+import DcPage from "../components/DcPage.astro";
+import DcGallery from "../components/DcGallery.astro";
+import FaqItem from "../components/FaqItem.astro";
+---
+<DcPage path="/data-center-colocation" eyebrow="Colocation and leasing"
+  title="Data Center Colocation and Leasing for AI Workloads"
+  lede="Lease space that already has power: wholesale colocation in Dubai, containerized data halls in Thailand taken in 5MW units, the last 25MW of a Sydney campus, or an operating colocation building in North Carolina."
+  photo="data-center-rack-patching" photoAlt="Patching inside a rack at an operating colocation facility"
+  panelTitle="Space you can lease" chips={["Dubai 40MW colocation", "Rayong 100MW available now", "Sydney 25MW remaining", "Hickory, NC colocation"]}
+  stats={[["1 to 6 mo", "To go live in a ready suite"], ["$100 to $200", "Wholesale rent per kW per month, industry range"], ["2 to 4%", "Typical annual rent escalator"], ["5MW", "Smallest containerized unit in Rayong"]]}
+  secondary={["/data-centers#sites", "See all sites"]}
+  quoteTitle="Find Space for Your Cluster" quoteIntro="Send the MW, region and go-live date. We reply with the sites that can meet it.">
+  <section class="dc-section">
+    <h2>Space Available to Lease</h2>
+    <p class="dc-sub">Four sites with space you can take now or on a set date. Rates come with the site pack.</p>
+    <div class="dc-grid dc-2">
+      <article class="dc-card"><span class="dc-tag">Dubai, UAE</span><h3>40MW Colocation</h3><p>A colocation site with 30MW of IT load delivered in 10MW blocks in April, June and July 2027.</p></article>
+      <article class="dc-card"><span class="dc-tag">Rayong, Thailand</span><h3>Containerized Data Halls</h3><p>An 800MW campus with 100MW available now as containerized IDC, taken in 5MW units for phased procurement. A separate 20MW site in the same corridor suits edge and regional deployments.</p></article>
+      <article class="dc-card"><span class="dc-tag">Sydney, Australia</span><h3>25MW Remaining</h3><p>The last 25MW of a 100MW campus, with 75MW already in use. Demand in Australia is high, so early commitment is recommended.</p></article>
+      <article class="dc-card"><span class="dc-tag">Hickory, North Carolina</span><h3>Operating Colocation</h3><p>A building already hosting GPU servers, with 3MW live and a path to 15MW. Also <a class="text-link" href="/buy-a-data-center">for sale</a>.</p></article>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>Choose the Lease Model</h2>
+    <p class="dc-sub">The model depends on how much of the building you want to run yourself.</p>
+    <div class="dc-table-wrap">
+      <table class="dc-table">
+        <thead><tr><th scope="col">Model</th><th scope="col">Typical term</th><th scope="col">Who runs it</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Retail colocation</th><td>1 to 5 years</td><td>Provider</td></tr>
+          <tr><th scope="row">Wholesale colocation</th><td>5 to 15 years</td><td>Provider</td></tr>
+          <tr><th scope="row">Powered shell</th><td>10 to 20 years</td><td>Tenant</td></tr>
+          <tr><th scope="row">Whole facility</th><td>10 to 25 years</td><td>Tenant</td></tr>
+          <tr><th scope="row">Sale-leaseback</th><td>10 to 20 years</td><td>Seller</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>What Shapes the Cost of a Lease</h2>
+    <p class="dc-sub">Approximate industry figures, not quotes. Power is the line that moves most between sites.</p>
+    <div class="dc-big">
+      <span><b>$100 to $200</b>Wholesale rent per kW per month</span>
+      <span><b>2 to 4%</b>Typical annual rent escalator</span>
+      <span><b>30 to 50%</b>Power share of an operator's running costs</span>
+      <span><b>$0.02 to $0.19</b>Indicative power cost per kWh across our sites</span>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>On Site</h2>
+    <DcGallery only={["data-center-rack-patching", "fiber-patch-panel-high-density", "fiber-cable-reels-warehouse"]} />
+  </section>
+
+  <section class="dc-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="dc-faq">
+      <FaqItem question="What is the difference between retail and wholesale colocation?">Retail colocation rents racks or cages, usually for 1 to 5 years. Wholesale colocation leases whole suites or halls, usually for 5 to 15 years. In both, the provider runs the building.</FaqItem>
+      <FaqItem question="What is a powered shell?">A building with power and fiber delivered, where you fit out and run the data hall yourself, usually on a 10 to 20 year lease.</FaqItem>
+      <FaqItem question="Can I lease with an option to buy?">Yes. A lease with a purchase option, or a sale-leaseback, lets you control the space now and settle ownership later. It is often the fastest way to close.</FaqItem>
+      <FaqItem question="Can you supply the servers and cabling for the space?">Yes. Vocom supplies Supermicro AI servers, optical transceivers and fiber cabling, so the hall can be filled on one order.</FaqItem>
+    </div>
+  </section>
+</DcPage>

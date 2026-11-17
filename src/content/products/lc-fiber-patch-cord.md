@@ -11,4 +11,6 @@ description: "LC Fiber Patch Cord. Supplied under codes LC-UPC, LC-APC. Availabl
 image:
   src: "/assets/img/products/lc-duplex-patch-cord-1200.jpg"
   alt: "LC duplex fiber optic patch cord (illustrative render)"
+metaTitle: "LC Fiber Patch Cords, UPC and APC, OFNR or OFNP | Vocom"
+metaDescription: "LC fiber optic patch cords, simplex or duplex, UPC or APC, 900um, 2.0mm or 3.0mm jacket, OFNR or OFNP rated and UL listed, for data center and rack patching."
 ---

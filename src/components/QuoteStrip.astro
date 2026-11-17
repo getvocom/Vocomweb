@@ -11,13 +11,15 @@ import SubmitButton from "./SubmitButton.astro";
 // is already placed directly under the intro (the supplier comparison).
 // product: on product pages (Tom, 2026-11-16) the form names the product in its heading and starts the
 // request with the product name and codes, so the lead says which product it is about.
-const { moveUp = true, product, useCase = "Fiber Optic" } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string };
+// title / intro / label / placeholder: other sections reuse the form with their own wording (the data
+// center pages, 2026-11-17). The fields, submit logic and tracking stay the same.
+const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string };
 const prefill = product ? `${product.name}${product.codes && !["n/a", product.name.toLowerCase()].includes(product.codes.toLowerCase()) ? ` (${product.codes})` : ""}: ` : undefined;
 ---
 <section class="quote-strip" id="quote" aria-labelledby="quote-strip-title" data-pagefind-ignore>
   <div class="qs-copy">
-    <h2 id="quote-strip-title">{product ? `Request a Quote: ${product.name}` : "Request a Fiber Cable Quote"}</h2>
-    <p>{product ? "Add the quantity or footage you need. We reply with a spec, price and lead time." : "Send the fiber count, type and footage. We reply with a spec, price and lead time."}</p>
+    <h2 id="quote-strip-title">{title ?? (product ? `Request a Quote: ${product.name}` : "Request a Fiber Cable Quote")}</h2>
+    <p>{intro ?? (product ? "Add the quantity or footage you need. We reply with a spec, price and lead time." : "Send the fiber count, type and footage. We reply with a spec, price and lead time.")}</p>
   </div>
   <form class="qs-form" novalidate>
     <label class="qs-field">
@@ -25,8 +27,8 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
       <input type="email" name="Email" placeholder="name@company.com" autocomplete="email" required />
     </label>
     <label class="qs-field">
-      <span>{product ? "Product and quantity" : "Fiber count, type and footage"}</span>
-      <input type="text" name="Message" placeholder="e.g. 144F loose tube, 24,000 ft" value={prefill} required />
+      <span>{label ?? (product ? "Product and quantity" : "Fiber count, type and footage")}</span>
+      <input type="text" name="Message" placeholder={placeholder ?? "e.g. 144F loose tube, 24,000 ft"} value={prefill} required />
     </label>
     <label class="qs-field">
       <span>Company (optional)</span>

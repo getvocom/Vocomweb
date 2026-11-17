@@ -1,0 +1,96 @@
+---
+// Data center hub (Tom, 2026-11-17): the site portfolio from Kevin's deck, the three paths (buy, lease,
+// build), the "from fiber to rack" ecosystem and photos from Kevin's site visit. See src/data/data-centers.ts
+// for what is deliberately left off (prices, seller names, coordinates).
+import DcPage from "../components/DcPage.astro";
+import DcGallery from "../components/DcGallery.astro";
+import FaqItem from "../components/FaqItem.astro";
+import { SITES, STATS, PATHS, LADDER } from "../data/data-centers";
+---
+<DcPage path="/data-centers" eyebrow="Data center sites, servers and space"
+  title="AI Data Center Sites: Buy, Lease or Build With Vocom"
+  lede="Powered sites in eight countries, from 3MW in Hsinchu to 1.2GW in Hokkaido. We introduce buyers and tenants to the owners, supply the servers, fiber and optics that go inside, and bring in the partners for a prefab build."
+  photo="fiber-cable-reels-warehouse" photoAlt="Reels of outside plant fiber optic cable in a warehouse"
+  panelTitle="Data center sites and supply" chips={["8 countries", "3MW to 1.2GW", "Buy, lease or build", "Fiber, optics and servers"]}
+  stats={STATS} secondary={["#sites", "See all sites"]}>
+  <section class="dc-section">
+    <h2>Three Ways to Secure Capacity</h2>
+    <p class="dc-sub">Power, not property, is the scarce asset. Each route is a way to lock in reliable megawatts, a compliant building and a date.</p>
+    <div class="dc-grid">
+      {PATHS.map((p) => (
+        <a class="dc-card" href={p.href}><span class="dc-tag">{p.time}</span><h3>{p.title}</h3><p>{p.body}</p><span class="dc-more">{p.title === "Lease" ? "Lease and colocation" : `${p.title} a data center`} &rarr;</span></a>
+      ))}
+    </div>
+  </section>
+
+  <section class="dc-section" id="sites">
+    <h2>Data Center Sites by Region</h2>
+    <p class="dc-sub">Available capacity across the Americas, Asia-Pacific and the Middle East. Some sites are for sale, some lease space and some are land with power for a new build. Ask which fits your timeline.</p>
+    <div class="dc-table-wrap">
+      <table class="dc-table">
+        <thead><tr><th scope="col">Location</th><th scope="col">Capacity</th><th scope="col">Notes</th></tr></thead>
+        <tbody>
+          {SITES.map((r) => (
+            <Fragment>
+              <tr class="dc-region"><th colspan="3" scope="colgroup">{r.region}</th></tr>
+              {r.sites.map((s) => (<tr><th scope="row">{s.location}</th><td class="dc-num">{s.capacity}</td><td>{s.notes}</td></tr>))}
+            </Fragment>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="dc-note">More sites in Taiwan, Japan, Thailand and Indonesia come online from 2028. Site packs with power, fiber and pricing are shared under NDA.</p>
+  </section>
+
+  <section class="dc-section">
+    <h2>Build, Buy or Lease at a Glance</h2>
+    <p class="dc-sub">Approximate industry ranges, not quotes. Hybrids are common: a lease with a purchase option, or a sale-leaseback, lets you control the asset now and settle ownership later.</p>
+    <div class="dc-table-wrap">
+      <table class="dc-table">
+        <thead><tr><th scope="col"></th><th scope="col">Build</th><th scope="col">Buy</th><th scope="col">Lease</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Time to capacity</th><td>24 to 48 months; grid power is often the bottleneck</td><td>4 to 9 months to close, then integration</td><td>1 to 6 months for ready suites, up to 18 months build-to-suit</td></tr>
+          <tr><th scope="row">Upfront capital</th><td>Highest: about $9M to $15M per MW before IT</td><td>Purchase price plus upgrade capex</td><td>Lowest: deposit, fit-out and first rent</td></tr>
+          <tr><th scope="row">Control</th><td>Total</td><td>Total, but inherits legacy contracts</td><td>Limited to what the lease grants</td></tr>
+          <tr><th scope="row">Main risk</th><td>Power delivery, permits, cost overrun</td><td>Hidden defects and legacy liabilities</td><td>Landlord dependency, rent escalation</td></tr>
+          <tr><th scope="row">Best for</th><td>Hyperscalers with a secured power pipeline</td><td>Funds and operators wanting instant scale</td><td>AI and cloud tenants, market entry</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>From Fiber to Rack</h2>
+    <p class="dc-sub">One accountable supplier for the physical layer of an AI build. Most customers start with fiber and optics, then add what the build needs next.</p>
+    <ol class="dc-ladder">
+      {LADDER.map((l) => (<li><span class="dc-step">{l.step}</span><h3>{l.title}</h3><p>{l.body}</p><a href={l.href}>{l.link} &rarr;</a></li>))}
+    </ol>
+  </section>
+
+  <section class="dc-section">
+    <h2>Servers, Optics and Fiber for the Hall</h2>
+    <p class="dc-sub">Vocom is an authorized Supermicro dealer. The same team that finds the space supplies what goes in it, on one order delivered to site.</p>
+    <div class="dc-grid">
+      <a class="dc-card" href="/vocom-ai-servers"><h3>Buy AI Servers</h3><p>Supermicro AI and GPU servers for training and inference clusters.</p><span class="dc-more">AI servers &rarr;</span></a>
+      <a class="dc-card" href="/optical-transceivers"><h3>Optical Transceivers</h3><p>400G, 800G and 1.6T modules for the leaf, spine and server links.</p><span class="dc-more">Transceivers &rarr;</span></a>
+      <a class="dc-card" href="/data-center-fiber-cabling"><h3>Data Center Fiber Cabling</h3><p>MPO and MTP trunks, cassettes and high count ribbon between halls.</p><span class="dc-more">Fiber cabling &rarr;</span></a>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>On Site</h2>
+    <p class="dc-sub">From Kevin Huang's November 2026 site visit: fiber in stock, at the patch panel and in a live rack.</p>
+    <DcGallery />
+  </section>
+
+  <section class="dc-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="dc-faq">
+      <FaqItem question="Does Vocom own these data centers?">No. The sites belong to their owners and developers. Vocom introduces qualified buyers and tenants, coordinates diligence, and supplies the fiber, optics and servers that go inside.</FaqItem>
+      <FaqItem question="Can I buy, lease or build on every site?">It depends on the owner. Some sites are for sale, some offer colocation or long-term leases, and some are land with power for a new build. Tell us what you need and we will say which sites fit.</FaqItem>
+      <FaqItem question="How fast can I get capacity?">Ready colocation space can be live in 1 to 6 months. Buying a powered site usually takes 4 to 9 months to close. A prefab build runs about 15 months from design to commissioning, against 24 to 48 months for a conventional build.</FaqItem>
+      <FaqItem question="What does power cost at these sites?">Indicative rates across the portfolio run from $0.02 to $0.19 per kWh, depending on the country and power source. Site-by-site rates come with the site pack.</FaqItem>
+      <FaqItem question="Can you supply the servers and fiber as well?">Yes. Vocom supplies Supermicro AI servers, optical transceivers and fiber cabling, so the space and what goes inside it can come from one team.</FaqItem>
+    </div>
+  </section>
+</DcPage>

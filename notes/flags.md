@@ -225,3 +225,12 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 
 ## 2026-11-17: RenOS page restyled to match rengroup.ai (Tom)
 - /vocom-ai-agents only: dark background, cyan accent, Space Grotesk headings and body, JetBrains Mono labels (both OFL, self-hosted in public/fonts, @font-face in src/styles/fonts.css), tokens --renos-* in tokens.css. Header and footer stay Vocom's. No copy changed.
+
+## 2026-11-17: Data Centers section, Kevin's site photos, search titles (Tom)
+- New menu item "Data Centers" and four pages: /data-centers (sites by region, buy/lease/build, "From fiber to rack"), /buy-a-data-center, /data-center-colocation, /build-ai-data-center. "Purchase servers" goes to /vocom-ai-servers (moved with GPU Solutions from the Vocom AI menu to Data Centers). Footer has a Data Centers column.
+- Source: Kevin's "Global Data Center Site Overview" deck (v4). Deliberately NOT published, please confirm: asking prices (Hickory $18M / $21.5M), colocation rate (Dubai $240/kW/month), per-site power rates (only the $0.02 to $0.19 range), seller, developer and partner names (IntellaPlex / Dynamic Infrastructure, Hetone, Brightray, Applied Digital, CoreWeave, the ND carriers), coordinates, the 2028 partner pipeline details. Utility named: Duke Energy (Hickory).
+- Check: deck cover says 5MW to 1.2GW, but Hsinchu is 3MW, so the site says 3MW to 1.2GW. Dubai read as "40MW colo, 30MW IT load in 10MW blocks April, June, July 2027"; confirm. Batam: the deck notes the plant is coal-fired; kept on the page for honesty.
+- Wording to confirm: Vocom "introduces buyers and tenants to the owners" (brokering, not ownership), "authorized Supermicro dealer" (already on /vocom-services).
+- Photos: Kevin's Nov 2026 site visit (public/assets/img/site-visit, EXIF stripped). Left out: Corning labels on reels and cable jacket, the customer's storage-array labels, the building exterior, and people. Location not stated.
+- Short quote form on the four pages (Use Case "Data Center"). Needs Apps Script Version 14 (QUOTE_PAGES now lists them) before going live.
+- Search titles from last week's Search Console queries: OptiTap hardened connector, hybrid fiber copper composite, rollable ribbon, LC and SC patch cords, HDPE microduct, high count MPO trunk (so /products/mtp-mpo-trunk-cable owns "MTP trunk cable"; the two pages compete), Buy AI Servers, international wholesale voice termination.

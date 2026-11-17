@@ -11,4 +11,6 @@ description: "HDPE microduct, single way. Supplied under codes Microduct. Constr
 image:
   src: "/assets/img/products/microduct-coils-1200.jpg"
   alt: "Coils of single-way HDPE microduct (illustrative render)"
+metaTitle: "HDPE Microduct for Fiber Optic Cable, 5mm to 27mm | Vocom"
+metaDescription: "Single-way HDPE microduct for fiber optic cable, 5mm to 27mm OD, placed on its own route so air blown micro cable can be blown in now or later."
 ---

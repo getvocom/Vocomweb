@@ -25,6 +25,7 @@ const STATIC = [
   "/6912-fiber-optic-cable",
   "/1728-fiber-optic-cable",
   "/fiber-optic-glossary",
+  "/data-centers", "/buy-a-data-center", "/data-center-colocation", "/build-ai-data-center",
 ];
 
 // Category pages that show a hero render (see src/pages/<page>.astro)

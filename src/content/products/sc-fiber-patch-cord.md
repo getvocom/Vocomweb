@@ -11,4 +11,6 @@ description: "SC Fiber Patch Cord. Supplied under codes SC-UPC, SC-APC. Availabl
 image:
   src: "/assets/img/products/sc-fiber-patch-cord-upc-and-apc-1200.jpg"
   alt: "SC fiber optic patch cord, UPC and APC (illustrative render)"
+metaTitle: "SC Fiber Patch Cords, UPC and APC, UL Listed | Vocom"
+metaDescription: "SC fiber optic patch cords, simplex, UPC or APC, 2.0mm or 3.0mm jacket, OFNR or OFNP rated and UL listed, for cross-connects and interconnects."
 ---

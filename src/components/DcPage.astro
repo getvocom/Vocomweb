@@ -1,0 +1,52 @@
+---
+// Shared frame for the data center pages (Tom, 2026-11-17): header, a fiber-page style hero (copy left,
+// photo and spec chips right), the stat row, the page's own sections (slot), the short quote form,
+// the seller-figures caveat, and the footer. Styles: src/styles/pages/data-centers.css (tokens only).
+import Base from "../layouts/Base.astro";
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import QuoteStrip from "./QuoteStrip.astro";
+import { CAVEAT, PHOTO } from "../data/data-centers";
+import "../styles/pages/data-centers.css";
+interface Props {
+  path: string; eyebrow: string; title: string; lede: string;
+  photo: Parameters<typeof PHOTO>[0]; photoAlt: string; panelTitle: string; chips: string[];
+  stats: [string, string][]; secondary?: [string, string];
+  quoteTitle?: string; quoteIntro?: string;
+}
+const { path, eyebrow, title, lede, photo, photoAlt, panelTitle, chips, stats, secondary, quoteTitle, quoteIntro } = Astro.props;
+const p = PHOTO(photo);
+---
+<Base path={path}>
+  <div class="dc-page">
+    <div class="site-header-slot header-slot" data-pagefind-ignore><Header /></div>
+    <section class="dc-hero">
+      <div class="dc-hero-copy">
+        <p class="dc-eyebrow">{eyebrow}</p>
+        <h1>{title}</h1>
+        <p class="dc-lede">{lede}</p>
+        <div class="dc-actions">
+          <a class="dc-btn" href="#quote">Request a Quote</a>
+          {secondary && <a class="dc-btn dc-btn-2" href={secondary[0]}>{secondary[1]}</a>}
+        </div>
+      </div>
+      <div class="dc-panel">
+        <picture class="dc-panel-img">
+          <source type="image/webp" srcset={`${p.base}-640.webp 640w, ${p.base}-1024.webp ${p.w}w`} sizes="(max-width: 809.98px) 92vw, 520px" />
+          <img src={`${p.base}-1024.jpg`} srcset={`${p.base}-640.jpg 640w, ${p.base}-1024.jpg ${p.w}w`} sizes="(max-width: 809.98px) 92vw, 520px" width={p.w} height={p.h} alt={photoAlt} loading="eager" fetchpriority="high" decoding="async" />
+        </picture>
+        <p class="dc-panel-title">{panelTitle}</p>
+        <ul class="dc-chips">{chips.map((c) => <li>{c}</li>)}</ul>
+      </div>
+    </section>
+    <ul class="dc-stats">
+      {stats.map(([n, l]) => <li><span class="dc-stat-n">{n}</span><span class="dc-stat-l">{l}</span></li>)}
+    </ul>
+    <QuoteStrip moveUp={false} useCase="Data Center" title={quoteTitle ?? "Tell Us What You Are Building"} intro={quoteIntro ?? "Send the location, megawatts and timing. We reply with matching sites and next steps."} label="Location, MW and timing" placeholder="e.g. 20MW in Texas, live by Q3 2027" />
+    <main class="dc-main">
+      <slot />
+      <p class="dc-caveat">{CAVEAT}</p>
+    </main>
+    <div class="dc-footer footer-slot" data-pagefind-ignore><Footer footerTagline="From fiber to rack: optics, servers and data center space from one team." /></div>
+  </div>
+</Base>

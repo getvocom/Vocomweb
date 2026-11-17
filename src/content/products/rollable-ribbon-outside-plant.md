@@ -11,4 +11,6 @@ description: "Rollable ribbon fiber optic cable for outside plant, 12F to 864F. 
 image:
   src: "/assets/img/products/e-ribbon-spider-ribbon-osp-cable-1200.jpg"
   alt: "Outside plant rollable ribbon fiber optic cable (illustrative render)"
+metaTitle: "Rollable Ribbon Fiber Optic Cable, 12F to 864F | Vocom"
+metaDescription: "Rollable ribbon fiber optic cable for outside plant, 12F to 864F: flexible ribbon array, dielectric or armored, G.652D, for duct-limited high count routes."
 ---

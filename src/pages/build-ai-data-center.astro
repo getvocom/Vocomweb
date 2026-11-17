@@ -1,0 +1,96 @@
+---
+// Build an AI data center (Tom, 2026-11-17). The prefab design and delivery plan from Kevin's deck. The
+// prefab partner is not named (see src/data/data-centers.ts).
+import DcPage from "../components/DcPage.astro";
+import DcGallery from "../components/DcGallery.astro";
+import FaqItem from "../components/FaqItem.astro";
+import { PHOTO } from "../data/data-centers";
+const sub = PHOTO("data-center-substation-power");
+const PHASES: [string, string, string, boolean][] = [
+  ["01", "Strategy and business case", "2 to 4 mo", false], ["02", "Site selection and control", "3 to 9 mo", false],
+  ["03", "Power strategy", "12 to 60 mo", true], ["04", "Permitting", "6 to 18 mo", true], ["05", "Financing", "3 to 9 mo", false],
+  ["06", "Design", "4 to 9 mo", false], ["07", "Procurement", "12 to 24 mo lead", true], ["08", "Construction", "12 to 24 mo", true],
+  ["09", "Commissioning", "2 to 4 mo", false], ["10", "Go-live and operations", "Ongoing", false],
+];
+---
+<DcPage path="/build-ai-data-center" eyebrow="Build an AI data center"
+  title="Build an AI Data Center in 15 Months With a Prefab Design"
+  lede="A site-ready design for a liquid-cooled AI hall, built from prefab modules made off-site while the ground is prepared, so the schedule runs in parallel. Pair it with land and power from our site portfolio, or with land you already control."
+  photo="fiber-cable-warehouse-floor" photoAlt="Warehouse floor with fiber cable reels and electrical equipment"
+  panelTitle="Prefab AI data center, Phase I" chips={["26MW power, 20MW IT", "120kW liquid-cooled racks", "About 1.3 design PUE, Tier III", "15 months to commission"]}
+  stats={[["15 mo", "Design to commissioning"], ["24 to 48 mo", "Typical conventional build"], ["288", "Racks in Phase I"], ["~10,000", "B200-class GPUs in Phase I"]]}
+  secondary={["#design", "See the design"]}
+  quoteTitle="Plan Your Build" quoteIntro="Send the site or region, MW and target date. We reply with a design fit, partners and a schedule.">
+  <section class="dc-section" id="design">
+    <h2>The Design</h2>
+    <p class="dc-sub">A concept design for an AI campus for neoclouds on industrial land in Texas, built as a prefab modular steel structure. Phase II adds a second building on the same plot.</p>
+    <div class="dc-split">
+      <picture>
+        <source type="image/webp" srcset={`${sub.base}-640.webp 640w, ${sub.base}-1024.webp 1024w`} sizes="(max-width: 809.98px) 92vw, 580px" />
+        <img src={`${sub.base}-1024.jpg`} width={sub.w} height={sub.h} alt="Substation and transformers serving a data center site" loading="lazy" decoding="async" />
+      </picture>
+      <div class="dc-card">
+        <dl>
+          <dt>Phase I power</dt><dd>26MW capacity, 20MW IT load</dd>
+          <dt>Racks</dt><dd>288 in 4 data halls: 168 AI racks at 120kW, 48 network and storage racks at 17kW, 72 spare</dd>
+          <dt>Cooling</dt><dd>Liquid cooling through CDUs plus air-cooled chilled water, under 20 gpm of water</dd>
+          <dt>Power</dt><dd>Dual 24.9kV incoming lines stepped down to 415V, 2N backup generation and 2N UPS at rack level</dd>
+          <dt>Fabric</dt><dd>Racks within 100m of each other for the NVIDIA InfiniBand fabric</dd>
+          <dt>Floor area</dt><dd>29,550 m² in Phase I, 12,434 m² in Phase II</dd>
+          <dt>Rating</dt><dd>About 1.3 design PUE, Uptime Tier III</dd>
+        </dl>
+      </div>
+    </div>
+    <p class="dc-note">This is a design package, not a powered site. Land, the utility contract and the power price are set for each client.</p>
+  </section>
+
+  <section class="dc-section">
+    <h2>How 15 Months Works</h2>
+    <p class="dc-sub">Modules are designed and built off-site while US contractors prepare the ground, so the two run at the same time instead of one after the other.</p>
+    <div class="dc-grid">
+      <div class="dc-card"><h3>General Contractor</h3><p>Coordination, cost control, quality and handover across the whole program.</p></div>
+      <div class="dc-card"><h3>Design and Consultancy</h3><p>Diligence, design and permits.</p></div>
+      <div class="dc-card"><h3>Prefab Modules</h3><p>Modules, mechanical and electrical systems, integration and shipping.</p></div>
+      <div class="dc-card"><h3>On-Site Construction</h3><p>Groundworks by local US subcontractors, then module assembly.</p></div>
+      <div class="dc-card"><h3>Commissioning</h3><p>Verification and testing before go-live.</p></div>
+      <a class="dc-card" href="/data-center-fiber-cabling"><h3>Fiber and Optics</h3><p>Trunks, cabling and transceivers from Vocom on one order, delivered to site.</p><span class="dc-more">Data center fiber &rarr;</span></a>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>The Build Path in Ten Phases</h2>
+    <p class="dc-sub">A conventional build takes 2 to 4 years. Phases 2 to 4 usually run in parallel, because power and permits set the critical path. The highlighted phases carry the longest lead times.</p>
+    <ol class="dc-timeline">
+      {PHASES.map(([n, t, d, long]) => (<li class={long ? "dc-long" : undefined}><b>{n}</b><span>{t}</span><em>{d}</em></li>))}
+    </ol>
+    <p class="dc-note">Secure power before spending on land or design. Sites without a credible grid date are the most common cause of failed projects.</p>
+  </section>
+
+  <section class="dc-section">
+    <h2>Power-First Sites to Build On</h2>
+    <p class="dc-sub">Land with power, or a firm date for it. The <a class="text-link" href="/data-centers#sites">full site list</a> has the rest.</p>
+    <div class="dc-grid">
+      <article class="dc-card"><span class="dc-tag">Texas</span><h3>50MW</h3><p>Pairs with the prefab design above.</p></article>
+      <article class="dc-card"><span class="dc-tag">New Mexico</span><h3>25MW, Solar</h3><p>The lowest power cost in the portfolio, suited to cost-sensitive, large-scale compute.</p></article>
+      <article class="dc-card"><span class="dc-tag">Kyushu, Japan</span><h3>1GW, Phased</h3><p>Nuclear and thermal power, built in three phases of 100MW, 250MW and 650MW, so capital goes in stages.</p></article>
+      <article class="dc-card"><span class="dc-tag">Batam, Indonesia</span><h3>500MW</h3><p>A digital park a short ferry ride from Singapore, with a dedicated power plant under construction and grid interconnection planned for 2027. The plant is coal-fired, with solar planned later. Subsea fiber reaches Singapore in under 11ms.</p></article>
+      <article class="dc-card"><span class="dc-tag">Johor Bahru, Malaysia</span><h3>300MW</h3><p>Full 300MW available, across the causeway from Singapore.</p></article>
+      <article class="dc-card"><span class="dc-tag">Hokkaido, Japan</span><h3>1.2GW</h3><p>The largest single site in the portfolio.</p></article>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>On Site</h2>
+    <DcGallery only={["fiber-cable-reels-warehouse", "fiber-cable-reels-racking", "fiber-cable-warehouse-floor"]} />
+  </section>
+
+  <section class="dc-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="dc-faq">
+      <FaqItem question="Why build with prefab modules?">The modules are made off-site while the ground is prepared, so the two run in parallel. The plan runs about 15 months from design to commissioning, against 24 to 48 months for a typical conventional build.</FaqItem>
+      <FaqItem question="What does it cost to build an AI data center?">Industry figures put a build at roughly $9M to $15M per MW before IT equipment. The design package and partners are priced per project.</FaqItem>
+      <FaqItem question="Do I have to use one of your sites?">No. The design pairs with any site in our portfolio or land you already control, as long as the power date is credible.</FaqItem>
+      <FaqItem question="Can Vocom supply what goes inside?">Yes. Vocom supplies the fiber cabling, optical transceivers and Supermicro AI servers for the halls, on one order delivered to site.</FaqItem>
+    </div>
+  </section>
+</DcPage>

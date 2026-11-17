@@ -262,3 +262,7 @@ a.product-table-row > p:first-child::after { content: " \2192"; text-decoration:
 /* FAQ lists: every page shows its FAQs as the same single column of <FaqItem> dropdowns (Tom, 2026-11-09). */
 .faq-list { display: flex; flex-direction: column; align-items: stretch; gap: 12px; width: 100%; }
 .faq-list > .faq-item, .faq-list > * { width: 100%; }
+
+/* Case study map slot inside converted page sections (CaseMap.astro, 2026-11-17) */
+.cm-slot { width: 100%; max-width: 1160px; margin: 24px auto 0; align-self: center; }
+.cs-map { width: 100%; margin: 8px 0 32px; }

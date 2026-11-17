@@ -6,6 +6,7 @@ import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import TradeShowPhoto from "../components/TradeShowPhoto.astro";
 import Footer from "../components/Footer.astro";
+import CaseMap from "../components/CaseMap.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import ProductCard from "../components/ProductCard.astro";
 import { getProducts } from "../lib/cms";
@@ -61,6 +62,8 @@ const sizes = "(max-width: 809.98px) 92vw, 420px";
         <p class="cs-lead">From open-access FTTH to municipal broadband, operators across the US and Canada source their outdoor and drop cable through Vocom: specified, build-to-order, and delivered to site.</p>
         <p class="cs-note">We don't disclose client names, but here are a few examples of the work we've delivered.</p>
       </header>
+
+      <div class="cs-map"><CaseMap kind="all" head={false} /></div>
 
       {STUDIES.map((s, i) => {
         const r = getRender(s.render)!;

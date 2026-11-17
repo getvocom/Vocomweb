@@ -234,3 +234,9 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Photos: 2026-11-17 Tom: the site-visit photos were from a competitor's site day and cannot be used. Removed (public/assets/img/site-visit deleted). The pages now use stock photos already on the site (public/assets/img/dc-stock, copied from existing assets).
 - Short quote form on the four pages (Use Case "Data Center"). Needs Apps Script Version 14 (QUOTE_PAGES now lists them) before going live.
 - Search titles from last week's Search Console queries: OptiTap hardened connector, hybrid fiber copper composite, rollable ribbon, LC and SC patch cords, HDPE microduct, high count MPO trunk (so /products/mtp-mpo-trunk-cable owns "MTP trunk cable"; the two pages compete), Buy AI Servers, international wholesale voice termination.
+
+## 2026-11-17: Case study map (Tom)
+- src/components/CaseMap.astro, data in src/data/case-studies.ts (wording copied from /case-studies and /optical-transceivers; no client names). Two zoomed panels: United States, and Southeast Asia with Taiwan. Supplied countries shaded, fiber builds as filled pins, AI cluster deployments as rings.
+- On /case-studies (with the full list, so the five AI cluster deployments now appear there too), the homepage "Trusted by North American Network Builders" section, /loose-tube-fiber-optic-cable "Where it's used" (US only) and /optical-transceivers "Clusters we have supplied".
+- Not mapped: the three Vocom AI Coach case studies (finance, healthcare, retail) have no location. The "23+ US states" study has no pin (states not named).
+- A new case study goes in src/data/case-studies.ts with its pin(s); the maps update everywhere.

@@ -1,0 +1,159 @@
+---
+// Case study map (Tom, 2026-11-17), in the style of NetworkMap. Every case study location on inline SVG
+// built at compile time (world-atlas 1:50m country outlines, public domain, projected with d3-geo).
+// Two zoomed panels instead of one Pacific map, so the pins never crowd: the United States, and Southeast
+// Asia with Taiwan. Countries we have supplied are shaded; fiber builds are filled pins, AI cluster
+// deployments are rings. Data: src/data/case-studies.ts.
+// kind: "all", "fiber" (US panel only) or "optics". list: the study list under the map (hover or focus
+// highlights its pins). head: false when the page section already has its own heading. link: "See all".
+import { geoConicEqualArea, geoMercator, geoPath } from "d3-geo";
+import { feature } from "topojson-client";
+import countries50 from "world-atlas/countries-50m.json";
+import countries110 from "world-atlas/countries-110m.json";
+import { STUDIES, type Pin } from "../data/case-studies";
+
+interface Props { kind?: "all" | "fiber" | "optics"; list?: boolean; head?: boolean; title?: string; subtitle?: string; eyebrow?: string; link?: boolean }
+const { kind = "all", list = true, head = true, link = false,
+  eyebrow = "Case studies",
+  title = kind === "fiber" ? "Where Our Fiber Is in the Ground" : kind === "optics" ? "AI Clusters We Have Supplied" : "Where We Have Supplied",
+  subtitle = kind === "fiber" ? "Outdoor and drop cable for open-access, regional and municipal networks across the US." : kind === "optics" ? "Optics, patch cords and switches for AI data halls in the US, Thailand and Taiwan, from H100 to GB300." : "Fiber builds across the US and AI cluster optics in the US, Thailand and Taiwan. We don't disclose client names." } = Astro.props;
+
+const studies = STUDIES.filter((s) => kind === "all" || s.kind === kind);
+const outlines = (t: any) => (feature(t, t.objects.countries) as any).features as any[];
+const c50 = outlines(countries50), c110 = outlines(countries110);
+// whole pixels are enough at this size, and clipping to the frame drops everything off-screen
+const r0 = (d: string | null) => (d ?? "").replace(/(-?\d+)\.\d+/g, "$1");
+type Panel = { name: string; W: number; H: number; projection: any; supplied: string[]; inPanel: (p: Pin) => boolean; countries: any[] };
+const PANELS: Panel[] = [
+  { name: "United States", W: 1000, H: 600, supplied: ["840"], inPanel: (p) => p.lon < -60, countries: c50,
+    projection: geoConicEqualArea().parallels([29.5, 45.5]).rotate([98, 0]).center([0, 38]).clipExtent([[0, 0], [1000, 600]])
+      .fitExtent([[24, 24], [976, 576]], { type: "MultiPoint", coordinates: [[-124, 48.5], [-69, 47], [-117, 31], [-81, 25.5]] } as any) },
+  // the Asia panel uses the 1:110m outlines: Indonesia and the Philippines at 1:50m triple the page weight
+  { name: "Southeast Asia and Taiwan", W: 640, H: 600, supplied: ["764", "158"], inPanel: (p) => p.lon > 60, countries: c110,
+    projection: geoMercator().clipExtent([[0, 0], [640, 600]])
+      .fitExtent([[24, 24], [616, 576]], { type: "MultiPoint", coordinates: [[96, 25], [126, 27], [97, 6], [112, 5]] } as any) },
+];
+const pinsOf = (panel: Panel) => {
+  const places = new Map<string, { pin: Pin; ids: string[]; kind: string }>();
+  for (const s of studies) for (const p of s.pins) if (panel.inPanel(p)) {
+    const m = places.get(p.name) ?? { pin: p, ids: [], kind: s.kind };
+    m.ids.push(s.id); places.set(p.name, m);
+  }
+  return [...places.values()];
+};
+const panels = PANELS.map((pn) => {
+  const path = geoPath(pn.projection);
+  const draw = (fs: any[]) => r0(path({ type: "FeatureCollection", features: fs } as any));
+  return { ...pn, land: draw(pn.countries.filter((f) => !pn.supplied.includes(f.id))), shade: draw(pn.countries.filter((f) => pn.supplied.includes(f.id))),
+    pins: pinsOf(pn).map((m) => ({ ...m, xy: pn.projection([m.pin.lon, m.pin.lat]).map((v: number) => Math.round(v)) })) };
+}).filter((p) => p.pins.length);
+const groups = [["fiber", "Fiber supply"], ["optics", "AI cluster optics"]].filter(([k]) => studies.some((s) => s.kind === k));
+---
+<section class={`cmap${head ? "" : " cm-bare"}`} data-cmap>
+  {head && (
+    <div class="cm-head">
+      <p class="cm-eyebrow">{eyebrow}</p>
+      <h2>{title}</h2>
+      <p class="cm-sub">{subtitle}</p>
+    </div>
+  )}
+  <div class={`cm-panels cm-n${panels.length}`}>
+    {panels.map((pn) => (
+      <figure class="cm-panel" style={`flex:${pn.W} 1 0`}>
+        <svg viewBox={`0 0 ${pn.W} ${pn.H}`} role="img" aria-label={`${pn.name}: ${pn.pins.map((m) => m.pin.name).join(", ")}`}>
+          <path class="cm-land" d={pn.land} />
+          <path class="cm-supplied" d={pn.shade} />
+          {pn.pins.map(({ pin, ids, kind: k, xy }) => (
+            <g class={`cm-pin cm-${k}`} data-ids={ids.join(" ")} transform={`translate(${xy[0]} ${xy[1]})`}>
+              <title>{pin.name}</title>
+              <circle class="cm-halo" r="22" />
+              <circle class="cm-dot" r="8" />
+              <text x={pin.label?.[0] ?? 14} y={pin.label?.[1] ?? 7} text-anchor={pin.label?.[2] ?? "start"}>{pin.name}</text>
+            </g>
+          ))}
+        </svg>
+        <figcaption>{pn.name}</figcaption>
+      </figure>
+    ))}
+  </div>
+  <div class="cm-legend" aria-hidden="true">
+    <span><i class="lg-country"></i>Countries supplied</span>
+    {studies.some((s) => s.kind === "fiber") && <span><i class="lg-fiber"></i>Fiber build</span>}
+    {studies.some((s) => s.kind === "optics") && <span><i class="lg-optics"></i>AI cluster optics</span>}
+  </div>
+  {list && (
+    <div class="cm-list">
+      {groups.map(([k, label]) => (
+        <div class="cm-group">
+          <p class="cm-gt">{label}</p>
+          <ul>
+            {studies.filter((s) => s.kind === k).map((s) => (
+              <li data-id={s.id} tabindex="0"><span class="cm-place">{s.place}</span><span class="cm-title">{s.title}</span><span class="cm-body">{s.body}</span></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  )}
+  {link && <a class="cm-link" href="/case-studies">See all case studies &rarr;</a>}
+</section>
+
+<script is:inline>
+  (function () {
+    document.querySelectorAll("[data-cmap]").forEach(function (m) {
+      var pins = m.querySelectorAll(".cm-pin");
+      function lit(id) { pins.forEach(function (p) { p.classList.toggle("on", !!id && (" " + p.dataset.ids + " ").indexOf(" " + id + " ") >= 0); }); m.classList.toggle("cm-focus", !!id); }
+      m.querySelectorAll(".cm-list li").forEach(function (li) {
+        ["mouseenter", "focus"].forEach(function (e) { li.addEventListener(e, function () { lit(li.dataset.id); }); });
+        ["mouseleave", "blur"].forEach(function (e) { li.addEventListener(e, function () { lit(null); }); });
+      });
+    });
+  })();
+</script>
+
+<style>
+  .cmap { box-sizing: border-box; width: 100%; max-width: 1160px; margin: 0 auto; padding: 40px 36px 32px; border-radius: 32px; background: linear-gradient(160deg, var(--brand-pink-50) 0%, var(--white) 45%, var(--brand-pink-50) 100%); box-shadow: inset 0 0 0 1px var(--brand-pink-border); font-family: var(--font-sans); text-align: left; }
+  .cm-bare { padding-top: 24px; }
+  .cm-head { display: flex; flex-direction: column; gap: 10px; max-width: 680px; margin-bottom: 18px; }
+  .cm-eyebrow { margin: 0; font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-crimson); }
+  .cmap h2 { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 4vw, 42px); line-height: 1.08; letter-spacing: -0.03em; color: var(--ink-900); }
+  .cm-sub { margin: 0; font-size: 16px; line-height: 1.55; color: var(--gray-600); }
+  .cm-panels { display: flex; gap: 16px; align-items: stretch; }
+  .cm-n1 { max-width: 780px; margin: 0 auto; }
+  .cm-panel { margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 6px; padding: 10px; border-radius: var(--radius-lg); background: var(--white); box-shadow: inset 0 0 0 1px var(--brand-pink-border); }
+  .cm-panel svg { display: block; width: 100%; height: auto; }
+  .cm-panel figcaption { padding: 0 6px 2px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); }
+  .cm-land { fill: var(--brand-pink-border); stroke: var(--white); stroke-width: 1; }
+  .cm-supplied { fill: color-mix(in srgb, var(--brand-crimson) 24%, var(--brand-pink-border)); stroke: var(--white); stroke-width: 1; }
+  .cm-halo { fill: var(--brand-crimson); opacity: 0; transition: opacity 0.2s ease; }
+  .cm-dot { fill: var(--brand-crimson); stroke: var(--white); stroke-width: 3; }
+  .cm-optics .cm-dot { fill: var(--white); stroke: var(--brand-crimson); stroke-width: 4; }
+  .cm-pin text { font-size: 26px; font-weight: 700; fill: var(--color-vocom); paint-order: stroke; stroke: var(--white); stroke-width: 6px; stroke-linejoin: round; }
+  .cm-pin { transition: opacity 0.2s ease; }
+  .cmap.cm-focus .cm-pin:not(.on) { opacity: 0.25; }
+  .cm-pin.on .cm-halo { opacity: 0.18; }
+  .cm-legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; font-size: 13px; color: var(--gray-600); }
+  .cm-legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .cm-legend i { display: inline-block; }
+  .lg-country { width: 16px; height: 10px; border-radius: 3px; background: color-mix(in srgb, var(--brand-crimson) 24%, var(--brand-pink-border)); }
+  .lg-fiber { width: 11px; height: 11px; border-radius: 50%; background: var(--brand-crimson); }
+  .lg-optics { width: 11px; height: 11px; border-radius: 50%; background: var(--white); box-shadow: inset 0 0 0 2.5px var(--brand-crimson); }
+  .cm-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px 28px; margin-top: 24px; padding-top: 22px; border-top: 1px solid var(--brand-pink-border); }
+  .cm-gt { margin: 0 0 10px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-crimson); }
+  .cm-list ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .cm-list li { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; border-radius: var(--radius-md); background: var(--white); box-shadow: inset 0 0 0 1px var(--brand-pink-border); outline: none; transition: box-shadow 0.15s ease; }
+  .cm-list li:hover, .cm-list li:focus-visible { box-shadow: inset 0 0 0 1.5px var(--brand-crimson); }
+  .cm-place { font-size: 12px; font-weight: 700; color: var(--brand-crimson); }
+  .cm-title { font-weight: 700; font-size: 15px; color: var(--ink-heading); }
+  .cm-body { font-size: 14px; line-height: 1.5; color: var(--gray-600); }
+  .cm-link { display: inline-block; margin-top: 18px; font-weight: 700; font-size: 15px; color: var(--brand-crimson); }
+  @media (prefers-reduced-motion: reduce) { .cm-pin, .cm-halo { transition: none; } }
+  @media (max-width: 809.98px) {
+    .cmap { padding: 22px 12px 20px; border-radius: 22px; }
+    .cm-panels { flex-direction: column; }
+    .cm-panel { flex: none !important; }
+    .cm-pin text { font-size: 32px; stroke-width: 8px; }
+    .cm-dot { r: 12; }
+    .cm-list { grid-template-columns: 1fr; }
+  }
+</style>

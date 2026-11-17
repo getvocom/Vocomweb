@@ -1,0 +1,74 @@
+---
+// Homepage "Data Centers" section (Tom, 2026-11-17). Copy, stats and paths come from
+// src/data/data-centers.ts so the homepage always agrees with /data-centers.
+import { STATS, PATHS, PHOTO } from "../data/data-centers";
+const p = PHOTO("dc-server-aisle");
+const stats = STATS.filter(([, label]) => !label.startsWith("Indicative"));
+---
+<section class="hdc" id="data-centers">
+  <div class="section-header xylqsva">
+    <div class="kicker-row x99yggq">
+      <div class="icon-badge x1hy9u4">
+        <svg class="xf8pgai icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--icon-color, #fff)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="7" rx="1.5"/><rect x="4" y="13.5" width="16" height="7" rx="1.5"/><path d="M8 7h.01M8 17h.01M12 7h4M12 17h4"/></svg>
+      </div>
+      <p class="xbkygo9">Data centers</p>
+    </div>
+    <h2 class="xmwxbx9">AI Data Centers: Buy, Lease or Build</h2>
+    <p class="xkyw51u">Powered sites and capacity across the US, Japan, Taiwan, Southeast Asia, Australia and the Middle East, with the fiber, optics and servers that go inside them.</p>
+  </div>
+
+  <div class="hdc-body">
+    <div class="hdc-photo">
+      <picture>
+        <source type="image/webp" srcset={`${p.base}-640.webp 640w, ${p.base}-1024.webp ${p.w}w`} sizes="(max-width: 809.98px) 92vw, 460px" />
+        <img src={`${p.base}-640.jpg`} srcset={`${p.base}-640.jpg 640w, ${p.base}-1024.jpg ${p.w}w`} sizes="(max-width: 809.98px) 92vw, 460px" width={p.w} height={p.h} alt="Rows of server racks in a data center aisle" loading="lazy" decoding="async" />
+      </picture>
+      <dl class="hdc-stats">
+        {stats.map(([v, l]) => <div><dt>{v}</dt><dd>{l}</dd></div>)}
+      </dl>
+    </div>
+
+    <div class="hdc-paths">
+      {PATHS.map((x) => (
+        <a class="hdc-path" href={x.href}>
+          <span class="hdc-path-top"><strong>{x.title}</strong><em>{x.time}</em></span>
+          <span class="hdc-path-body">{x.body}</span>
+          <span class="hdc-path-link">See how {x.title.toLowerCase()} works <span aria-hidden="true">→</span></span>
+        </a>
+      ))}
+      <a class="primary-cta x5igtjf hdc-cta" href="/data-centers"><p class="label x7zirrk">Explore Data Center Sites</p></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hdc { display: flex; flex-direction: column; gap: 40px; width: 100%; max-width: var(--container); padding: 88px 32px; background: var(--white); }
+  .hdc-body { display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .hdc-photo { display: flex; flex-direction: column; gap: 16px; }
+  .hdc-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-xl); }
+  .hdc-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0; }
+  .hdc-stats div { padding: 14px 12px; border-radius: var(--radius-md); background: var(--brand-pink-50); border: 1px solid var(--brand-pink-border); }
+  .hdc-stats dt { font-family: var(--font-display); font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: var(--brand-crimson); }
+  .hdc-stats dd { margin: 4px 0 0; font-family: var(--font-sans); font-size: 13px; line-height: 1.35; color: var(--gray-600); }
+  .hdc-paths { display: flex; flex-direction: column; gap: 14px; }
+  .hdc-path { display: flex; flex-direction: column; gap: 8px; padding: 22px 24px; border-radius: var(--radius-xl); background: var(--white); border: 1px solid var(--brand-pink-border); box-shadow: var(--shadow-card); text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .hdc-path:hover { transform: translateY(-2px); box-shadow: var(--shadow-button-hover); }
+  .hdc-path-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .hdc-path-top strong { font-family: var(--font-display); font-weight: 800; font-size: 24px; letter-spacing: -0.02em; color: var(--ink-heading); }
+  .hdc-path-top em { font-style: normal; font-family: var(--font-sans); font-weight: 600; font-size: 13px; color: var(--brand-crimson); padding: 4px 10px; border-radius: var(--radius-pill); background: var(--brand-pink-50); }
+  .hdc-path-body { font-family: var(--font-sans); font-size: 15px; line-height: 1.5; color: var(--gray-600); }
+  .hdc-path-link { font-family: var(--font-sans); font-weight: 600; font-size: 14px; color: var(--brand-red); }
+  .hdc-cta { align-self: flex-start; margin-top: 6px; }
+  @media (max-width: 1199.98px) {
+    .hdc { max-width: 810px; padding: 72px 28px; gap: 36px; }
+    .hdc-body { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 809.98px) {
+    .hdc { max-width: 390px; padding: 52px 20px; gap: 28px; }
+    .hdc-stats { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .hdc-stats dt { font-size: 16px; }
+    .hdc-stats dd { font-size: 12px; }
+    .hdc-path { padding: 18px; }
+    .hdc-path-top strong { font-size: 21px; }
+  }
+</style>

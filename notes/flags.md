@@ -240,3 +240,8 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - On /case-studies (with the full list, so the five AI cluster deployments now appear there too), the homepage "Trusted by North American Network Builders" section, /loose-tube-fiber-optic-cable "Where it's used" (US only) and /optical-transceivers "Clusters we have supplied".
 - Not mapped: the three Vocom AI Coach case studies (finance, healthcare, retail) have no location. The "23+ US states" study has no pin (states not named).
 - A new case study goes in src/data/case-studies.ts with its pin(s); the maps update everywhere.
+
+## 2026-11-17: Data centers on the homepage (Tom)
+- Hero: "Data Centers" added to the eyebrow (links /data-centers), and a "New" pill under the CTAs: "Data center sites to buy, lease or build, from 3MW to 1.2GW". H1 and subhead unchanged.
+- New section after "AI Cluster Optics" (src/components/HomeDataCenters.astro, #data-centers): heading "AI Data Centers: Buy, Lease or Build", one new intro line, three stats and the Buy / Lease / Build cards read from src/data/data-centers.ts (same words as /data-centers). The power-cost stat is left off the homepage. Stock photo dc-server-aisle.
+- To confirm: the new heading and intro line, and "3MW to 1.2GW" (still open from the Data Centers flag above).

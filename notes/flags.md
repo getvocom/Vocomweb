@@ -245,3 +245,11 @@ Step 1 (the Ads conversion) is five fields: Name, Email, Company Name, Use case,
 - Hero: "Data Centers" added to the eyebrow (links /data-centers), and a pill link under the CTAs (Tom 2026-11-17: no "New" tag): "Data center sites to buy, lease or build, from 3MW to 1.2GW". H1 and subhead unchanged.
 - New section after "AI Cluster Optics" (src/components/HomeDataCenters.astro, #data-centers): heading "AI Data Centers: Buy, Lease or Build", one new intro line, three stats and the Buy / Lease / Build cards read from src/data/data-centers.ts (same words as /data-centers). The power-cost stat is left off the homepage. Stock photo dc-server-aisle.
 - To confirm: the new heading and intro line, and "3MW to 1.2GW" (still open from the Data Centers flag above).
+
+## 2026-11-18: /vocom-ai-agents rebuilt from the RenOS homepage (Tom)
+- Copy, branding (RenOS mark, Space Grotesk, cyan/violet) and the globe visual come from https://rengroup.ai/ (Tom's request). rengroup.ai has no photos, so the "pictures" are its globe and session-card visuals, rebuilt in the page. Styles: src/styles/pages/renos.css (.ren-*).
+- Positioning (new wording, please confirm): "RenOS from Vocom AI" lockup; closing panel "Get RenOS Through Vocom: RenOS is one of the Vocom AI products. Talk to our team directly for pricing, a 60-day pilot or a live demo on your own workflow, or visit the RenOS website for the full product tour." Buttons go to /contact-vocomai or out to rengroup.ai (capability cards and industry tags link to the matching rengroup.ai pages).
+- H1 is now RenOS's own: "Use Every AI Model. Prove What Each One Did." Title tag and meta description unchanged. Kept: the AI Coaching Agents section. FAQ replaced with the RenOS FAQ plus the coaching question; FAQPage schema regenerated.
+- Removed from this page: cost dashboard, governance, modes, why RenOS, teams, industries and pilot sections (old Vocom copy).
+- Note: the same copy now sits on vocom.ai and rengroup.ai. Google usually picks one to rank; if rengroup.ai should own these words, we can rewrite the vocom.ai version later.
+- FAQ text on this page was dark grey on near-black (unreadable); fixed.

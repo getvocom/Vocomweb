@@ -86,6 +86,17 @@
   --renos-muted: #8a90a2;
   --renos-accent: #5ee0ff;
   --renos-violet: #8f80f7;
+  --renos-surface-strong: rgba(255, 255, 255, 0.09);
+  --renos-faint: #5b6073;
+  --renos-accent-deep: #0e2d39;
+  --renos-green: #5fd0a0;
+  --renos-amber: #f2b45a;
+  --renos-pink: #f08bb8;
+  --renos-blue: #6aa8ff;
+  --renos-node: #12151d;
+  --renos-hub: #181c26;
+  --renos-glow: rgba(94, 225, 255, 0.45);
+  --renos-glow-soft: rgba(94, 225, 255, 0.22);
   --font-renos: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-renos-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }

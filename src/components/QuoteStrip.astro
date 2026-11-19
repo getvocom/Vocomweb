@@ -6,6 +6,7 @@
 // Use Case "Fiber Optic", and fires the Google Ads conversion only after the script confirms the save
 // (SubmitButton.astro). After a successful request the visitor goes to /resources, as on the quote page.
 import SubmitButton from "./SubmitButton.astro";
+import CatalogGate from "./CatalogGate.astro";
 // moveUp: on phones (< 768px) the form moves to just after the H1 and intro paragraph, so it is near
 // the top of the page (Tom, 2026-11-12). Desktop keeps it under the hero. Off on pages where the form
 // is already placed directly under the intro (the supplier comparison).
@@ -13,7 +14,9 @@ import SubmitButton from "./SubmitButton.astro";
 // request with the product name and codes, so the lead says which product it is about.
 // title / intro / label / placeholder: other sections reuse the form with their own wording (the data
 // center pages, 2026-11-17). The fields, submit logic and tracking stay the same.
-const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string };
+// catalog: a "Not ready for a quote?" line under the form that expands the catalog email gate inline
+// (Tom, 2026-11-19). On by default for fiber forms, off for the data center pages.
+const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder, catalog = useCase === "Fiber Optic" } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string; catalog?: boolean };
 const prefill = product ? `${product.name}${product.codes && !["n/a", product.name.toLowerCase()].includes(product.codes.toLowerCase()) ? ` (${product.codes})` : ""}: ` : undefined;
 ---
 <section class="quote-strip" id="quote" aria-labelledby="quote-strip-title" data-pagefind-ignore>
@@ -37,6 +40,12 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
     <input type="hidden" name="Use Case" value={useCase} />
     <div class="qs-submit"><SubmitButton label="Get a Quote in 24 Hours" /></div>
   </form>
+  {catalog && (
+    <div class="qs-catalog">
+      <button type="button" class="qs-catalog-toggle" aria-expanded="false" aria-controls="qs-catalog-gate">Not ready for a quote? Get the fiber catalog</button>
+      <CatalogGate collapsed id="qs-catalog-gate" />
+    </div>
+  )}
 </section>
 {moveUp && (
   <script is:inline>
@@ -64,6 +73,22 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
     })();
   </script>
 )}
+{catalog && (
+  <script is:inline>
+    (function () {
+      document.querySelectorAll(".qs-catalog-toggle").forEach(function (t) {
+        var gate = document.getElementById(t.getAttribute("aria-controls"));
+        if (!gate) return;
+        t.addEventListener("click", function () {
+          var open = gate.hidden;
+          gate.hidden = !open;
+          t.setAttribute("aria-expanded", String(open));
+          if (open) { gate.dispatchEvent(new CustomEvent("catalog-gate-open")); var i = gate.querySelector("input[type=email]"); if (i) i.focus({ preventScroll: true }); }
+        });
+      });
+    })();
+  </script>
+)}
 
 <style>
   .quote-strip {
@@ -86,6 +111,9 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
   .qs-field input:focus { outline: 2px solid var(--brand-crimson); outline-offset: 1px; }
   .qs-submit { grid-column: 1 / -1; display: flex; flex-direction: column; }
   .qs-submit :global(.submit-btn) { height: 46px; font-size: 15px; }
+  .qs-catalog { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 14px; }
+  .qs-catalog-toggle { align-self: flex-start; padding: 0; border: 0; background: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--brand-red); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .qs-catalog :global(.catalog-gate) { padding-top: 14px; border-top: 1px solid var(--brand-pink-border); }
   @media (max-width: 1199.98px) {
     .quote-strip { grid-template-columns: 1fr; gap: 18px; }
     .qs-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); }

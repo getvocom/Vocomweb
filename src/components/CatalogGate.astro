@@ -1,0 +1,175 @@
+---
+// Fiber catalog email gate (Tom, 2026-11-19). Work email (required) and company (optional) in
+// exchange for the catalog link. Posts to the same Apps Script as the quote forms (Use Case
+// "Catalog Download"), with the same honeypot, timing and Turnstile checks as SubmitButton.astro.
+// On a saved submission: GA4 catalog_download, the Ads conversion in data-conversion (skipped while
+// the label contains "TBD"), localStorage vocom_catalog_unlocked = 1, the catalog opens in a new tab
+// and the form is replaced by a success message with a fallback link.
+// collapsed: start hidden; a "Not ready for a quote?" toggle (in QuoteStrip) expands it inline.
+import { QUOTE_FORM_URL, TURNSTILE_SITE_KEY, CATALOG_URL, CATALOG_CONVERSION } from "../config";
+const { collapsed = false, id = "catalog-gate" } = Astro.props as { collapsed?: boolean; id?: string };
+---
+<div class="catalog-gate" id={id} hidden={collapsed} data-pagefind-ignore>
+  <form class="cg-form" novalidate data-endpoint={QUOTE_FORM_URL} data-sitekey={TURNSTILE_SITE_KEY} data-url={CATALOG_URL} data-conversion={CATALOG_CONVERSION}>
+    <p class="cg-title">Get the Fiber Cable Catalog</p>
+    <p class="cg-sub">Specs, fiber counts and ordering details for loose tube, ribbon, ADSS, drop and micro cable.</p>
+    <div class="cg-fields">
+      <label class="cg-field"><span>Work email</span><input type="email" name="Email" placeholder="name@company.com" autocomplete="email" required /></label>
+      <label class="cg-field"><span>Company (optional)</span><input type="text" name="Company" placeholder="Your company" autocomplete="organization" /></label>
+    </div>
+    <input type="hidden" name="Use Case" value="Catalog Download" />
+    <input class="cg-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <div class="cg-ts"></div>
+    <p class="cg-msg" role="alert" hidden></p>
+    <button type="submit" class="cg-btn" data-state="default">
+      <span class="l-default">Send Me the Catalog</span>
+      <span class="l-loading">Sending</span>
+      <span class="l-success">Opening the catalog</span>
+      <span class="l-error">Something went wrong</span>
+    </button>
+  </form>
+  <div class="cg-done" hidden>
+    <p class="cg-title">The catalog is on its way</p>
+    <p class="cg-sub">It should have opened in a new tab. If not, <a class="cg-link" href={CATALOG_URL} target="_blank" rel="noreferrer">open the catalog</a>.</p>
+  </div>
+</div>
+
+<script>
+  const KEY = "vocom_catalog_unlocked";
+  let tsLoading: Promise<void> | null = null;
+  const loadTurnstile = () => {
+    const w = window as any;
+    if (w.turnstile) return Promise.resolve();
+    if (tsLoading) return tsLoading;
+    tsLoading = new Promise<void>((res) => {
+      const done = () => (w.turnstile ? res() : setTimeout(done, 100));
+      if (!document.querySelector('script[src*="challenges.cloudflare.com/turnstile"]')) {
+        const s = document.createElement("script");
+        s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+        s.async = true;
+        s.onerror = () => { w.__turnstileFailed = true; res(); };
+        document.head.appendChild(s);
+      }
+      done();
+      setTimeout(res, 8000);
+    });
+    return tsLoading;
+  };
+
+  document.querySelectorAll<HTMLElement>(".catalog-gate").forEach((gate) => {
+    const form = gate.querySelector<HTMLFormElement>(".cg-form")!;
+    const btn = form.querySelector<HTMLButtonElement>(".cg-btn")!;
+    const msg = form.querySelector<HTMLElement>(".cg-msg")!;
+    const hp = form.querySelector<HTMLInputElement>(".cg-hp")!;
+    const say = (t: string) => { msg.textContent = t; msg.hidden = !t; };
+    let started = Date.now();
+    let rendered = false;
+    // Turnstile renders when the gate is first shown (a hidden widget cannot run its check)
+    const prepare = () => {
+      if (rendered || gate.hidden) return;
+      rendered = true;
+      started = Date.now();
+      const key = form.dataset.sitekey;
+      if (!key) return;
+      loadTurnstile().then(() => {
+        const ts = (window as any).turnstile;
+        if (!ts) return;
+        try { ts.render(form.querySelector(".cg-ts"), { sitekey: key, appearance: "interaction-only", size: "flexible", "error-callback": () => { (window as any).__turnstileFailed = true; } }); }
+        catch { (window as any).__turnstileFailed = true; }
+      });
+    };
+    gate.addEventListener("catalog-gate-open", prepare);
+    prepare();
+
+    const track = (saved: boolean) => new Promise<void>((done) => {
+      const gtag = (window as any).gtag;
+      if (!saved || typeof gtag !== "function") return done();
+      const timer = setTimeout(done, 1000);
+      try {
+        gtag("event", "catalog_download", { send_to: ["G-YYWN6PCL75", "G-RXM702SP0M"], form_id: "catalog_gate", page_path: location.pathname });
+        const conv = form.dataset.conversion || "";
+        if (conv && !conv.includes("TBD")) gtag("event", "conversion", { send_to: conv, event_callback: () => { clearTimeout(timer); done(); } });
+        else { clearTimeout(timer); done(); }
+      } catch { clearTimeout(timer); done(); }
+    });
+
+    const unlock = (url: string) => {
+      try { localStorage.setItem(KEY, "1"); } catch {}
+      // a tab opened now is still tied to the click in most browsers; the link below covers the rest
+      const tab = window.open(url, "_blank", "noreferrer");
+      form.hidden = true;
+      const done = gate.querySelector<HTMLElement>(".cg-done")!;
+      done.querySelector<HTMLAnchorElement>(".cg-link")!.href = url;
+      done.hidden = false;
+      window.dispatchEvent(new CustomEvent("catalog-unlocked"));
+      return tab;
+    };
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (btn.dataset.state === "loading" || btn.dataset.state === "success") return;
+      if (!form.reportValidity()) return;
+      say("");
+      const fallback = form.dataset.url || "";
+      // bots: look like success, send nothing
+      if (hp.value || Date.now() - started < 3000) { btn.dataset.state = "success"; return; }
+      const tsFailed = !!(window as any).__turnstileFailed;
+      const fd = new FormData(form);
+      if (form.dataset.sitekey && !tsFailed && !String(fd.get("cf-turnstile-response") || "")) { say("Please wait a moment for the security check, then try again."); return; }
+      if (!form.dataset.endpoint) { unlock(fallback); return; }
+      btn.dataset.state = "loading";
+      const data = new URLSearchParams();
+      fd.forEach((v, k) => { if (k !== "website") data.append(k.trim(), String(v)); });
+      data.append("page", location.pathname);
+      data.append("elapsed", String(Date.now() - started));
+      if (tsFailed) data.append("turnstile", "unavailable");
+      try {
+        const res = await fetch(form.dataset.endpoint, { method: "POST", body: data });
+        const reply = await res.json().catch(() => ({}));
+        // the script before the 2026-11-19 update does not accept /resources yet: let the visitor in
+        if (reply.error === "bad origin") { btn.dataset.state = "success"; unlock(fallback); return; }
+        if (reply.result !== "success") throw new Error(reply.error || `HTTP ${res.status}`);
+        btn.dataset.state = "success";
+        const url = typeof reply.url === "string" && /^https:\/\//.test(reply.url) ? reply.url : fallback;
+        await track(reply.saved === true);
+        unlock(url);
+      } catch {
+        btn.dataset.state = "error";
+        setTimeout(() => { btn.dataset.state = "default"; }, 4000);
+      }
+    });
+  });
+</script>
+
+<style>
+  .catalog-gate { box-sizing: border-box; width: 100%; font-family: var(--font-sans); text-align: left; }
+  .catalog-gate[hidden] { display: none; }
+  .cg-form { display: flex; flex-direction: column; gap: 12px; }
+  .cg-form[hidden], .cg-done[hidden] { display: none; }
+  .cg-title { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 20px; line-height: 1.2; letter-spacing: -0.02em; color: var(--ink-heading); }
+  .cg-sub { margin: 0; font-size: 14px; line-height: 1.5; color: var(--gray-600); }
+  .cg-fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+  .cg-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .cg-field span { font-size: 12px; font-weight: 600; color: var(--color-vocom); }
+  .cg-field input {
+    box-sizing: border-box; width: 100%; height: 44px; padding: 0 12px; border: 1px solid var(--brand-pink-border); border-radius: var(--radius-sm);
+    background: var(--color-field-bg); font: inherit; font-size: 16px; color: var(--ink-900);
+  }
+  .cg-field input::placeholder { color: var(--color-text-muted); }
+  .cg-field input:focus { outline: 2px solid var(--brand-crimson); outline-offset: 1px; }
+  .cg-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .cg-ts:empty { display: none; }
+  .cg-msg { margin: 0; font-size: 13px; line-height: 1.4; color: var(--brand-red); }
+  .cg-btn {
+    display: flex; align-items: center; justify-content: center; width: 100%; height: 46px; border: 0; border-radius: var(--radius-sm);
+    background: var(--color-vocom); color: var(--white); font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  .cg-btn:hover { background: var(--color-vocom-cta-1); }
+  .cg-btn span { display: none; }
+  .cg-btn[data-state="default"] .l-default, .cg-btn[data-state="loading"] .l-loading, .cg-btn[data-state="success"] .l-success, .cg-btn[data-state="error"] .l-error { display: inline; }
+  .cg-btn[data-state="loading"] { opacity: 0.7; cursor: unset; }
+  .cg-btn[data-state="error"] { background: var(--brand-pink-50); color: var(--brand-red); }
+  .cg-done { display: flex; flex-direction: column; gap: 6px; }
+  .cg-link { color: var(--brand-red); font-weight: 600; }
+  @media (max-width: 809.98px) { .cg-fields { grid-template-columns: 1fr; } }
+</style>

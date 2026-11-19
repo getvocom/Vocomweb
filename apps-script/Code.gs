@@ -42,6 +42,10 @@ var TURNSTILE_SECRET = PropertiesService.getScriptProperties().getProperty('TURN
 var VERIFY_TURNSTILE_ON_SERVER = true;
 // Drive folder for requirements spreadsheets attached to quote requests (created on first use).
 var ATTACH_FOLDER = 'vocom.ai quote attachments';
+// Fiber catalog email gate (2026-11-19): rows with Use Case "Catalog Download" may also come from
+// /resources, and the reply carries the catalog link so the site does not need to publish it.
+var CATALOG_URL = 'https://drive.google.com/drive/folders/1Z-fUh05kchJa-yp29QmTjHUIbLH5mSau?usp=sharing';
+var CATALOG_PAGES = ['/resources'];
 var ATTACH_TYPES = /\.(xlsx|xls|csv|pdf)$/i;
 var ATTACH_MAX_BYTES = 10 * 1024 * 1024;
 
@@ -74,7 +78,8 @@ function quote(p) {
   // with company optional (Tom, 2026-11-12). The quote page still requires both in the browser.
   if (!EMAIL_RE.test(email)) return json({ result: 'error', error: 'missing or invalid fields' });
   // product pages (/products/<slug>) carry the short quote form too (2026-11-16)
-  if (QUOTE_PAGES.indexOf(p.page) < 0 && !/^\/products\/[a-z0-9-]+$/.test(String(p.page))) return json({ result: 'error', error: 'bad origin' });
+  var catalog = p['Use Case'] === 'Catalog Download';
+  if (QUOTE_PAGES.indexOf(p.page) < 0 && !(catalog && CATALOG_PAGES.indexOf(p.page) >= 0) && !/^\/products\/[a-z0-9-]+$/.test(String(p.page))) return json({ result: 'error', error: 'bad origin' });
   var who = name || email;
   // Turnstile: a token that fails is rejected. With no token at all (the widget could not load for
   // that visitor) the request is kept but flagged, so a real lead is never lost.
@@ -107,13 +112,13 @@ function quote(p) {
 
   var mail = {
     to: NOTIFY_EMAIL,
-    subject: (unverified ? '[Unverified] ' : '') + 'New quote request: ' + who + (company ? ' (' + company + ')' : ''),
+    subject: (unverified ? '[Unverified] ' : '') + (catalog ? 'Catalog download: ' : 'New quote request: ') + who + (company ? ' (' + company + ')' : ''),
     // fields left out of the short step-1 form (Name on the cable pages, Use Case, Message, I Am A, Company Size) are skipped when empty
     body: QUOTE_FIELDS.filter(function (f) { return p[f] || ['Name', 'Use Case', 'Message', 'I Am A', 'Company Size'].indexOf(f) < 0; }).concat(fiber).map(function (f) { return f + ': ' + (p[f] || ''); }).join('\n') +
       (free ? '\nFree Email: Yes (personal mailbox, not a company domain)' : '') +
       (blob ? '\nRequirements file: ' + blob.getName() + ' (attached' + (file ? ', Drive: ' + file.getUrl() : '') + ')' : '') +
       '\n\nPage: https://www.vocom.ai' + (p.page || '') +
-      '\nIf they add their full spec on the next screen, a "Spec added" email follows.',
+      (catalog ? '\nThey asked for the fiber catalog, not a quote yet.' : '\nIf they add their full spec on the next screen, a "Spec added" email follows.'),
     replyTo: email,
     name: 'vocom.ai Website',
   };
@@ -122,7 +127,7 @@ function quote(p) {
   // After the sheet row and the email, so a CRM outage never loses a lead.
   try { sendToCrm(id, { Name: who, Email: email, Company: company, 'Use Case': p['Use Case'] || '', Message: p['Message'] || '', Page: p.page || '', 'Free Email': free ? 'Yes' : '', 'Lead ID': id, Unverified: unverified ? 'Yes' : '' }); }
   catch (err) { console.error('CRM forward failed: ' + err); }
-  return json({ result: 'success', saved: true, id: id });
+  return json(catalog ? { result: 'success', saved: true, id: id, url: CATALOG_URL } : { result: 'success', saved: true, id: id });
 }
 
 // Step 2: the full spec for a lead saved by quote(). Finds the row by its Lead ID, fills only empty

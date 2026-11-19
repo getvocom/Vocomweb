@@ -136,6 +136,8 @@ const { label = "Submit" } = Astro.props as { label?: string };
         if (reply.result !== "success") throw new Error(reply.error || `HTTP ${res.status}`);
         btn.dataset.state = "success";
         live.textContent = "Thank you";
+        // quote leads get the catalog with no email gate; /resources?quote=sent shows a thank-you line (Tom, 2026-11-19)
+        try { localStorage.setItem("vocom_catalog_unlocked", "1"); } catch {}
         window.dispatchEvent(new CustomEvent("quote-form-submitted"));
         (window as any).dataLayer?.push({ event: "form-submission" });
         // after a successful quote request, send the visitor to the resources page (Tom, 2026-10-22),
@@ -145,7 +147,7 @@ const { label = "Submit" } = Astro.props as { label?: string };
         const next = form.dataset.next && reply.id && document.getElementById(form.dataset.next);
         Promise.all([sent, new Promise((r) => setTimeout(r, next ? 400 : 1200))]).then(() => {
           if (next) window.dispatchEvent(new CustomEvent("quote-step-2", { detail: { id: reply.id } }));
-          else location.href = "/resources";
+          else location.href = "/resources?quote=sent";
         });
       } catch {
         btn.dataset.state = "error";

@@ -45,7 +45,7 @@ export const BLOG_AUTHOR = { name: "Kevin Huang", jobTitle: "CEO, Vocom AI", url
 
 // Fiber catalog email gate (Tom, 2026-11-19). CatalogGate.astro on /resources and under the quick
 // quote form on the fiber pages. Rows land in the Quotes tab with Use Case "Catalog Download".
-// The Ads conversion fires only once the label no longer contains "TBD" (send Tom's new label).
+// Ads conversion "Catalog download" (Sign-up goal, created 2026-11-19; not an account default goal).
 // CATALOG_URL is the fallback: the updated Apps Script replies with the URL itself.
 export const CATALOG_URL = "https://drive.google.com/drive/folders/1Z-fUh05kchJa-yp29QmTjHUIbLH5mSau?usp=sharing";
-export const CATALOG_CONVERSION = "AW-18539470653/CATALOG_LABEL_TBD";
+export const CATALOG_CONVERSION = "AW-18539470653/gJwvCIrdprsdEL2-p4hF";

@@ -126,8 +126,6 @@ const { collapsed = false, id = "catalog-gate" } = Astro.props as { collapsed?: 
       try {
         const res = await fetch(form.dataset.endpoint, { method: "POST", body: data });
         const reply = await res.json().catch(() => ({}));
-        // the script before the 2026-11-19 update does not accept /resources yet: let the visitor in
-        if (reply.error === "bad origin") { btn.dataset.state = "success"; unlock(fallback); return; }
         if (reply.result !== "success") throw new Error(reply.error || `HTTP ${res.status}`);
         btn.dataset.state = "success";
         const url = typeof reply.url === "string" && /^https:\/\//.test(reply.url) ? reply.url : fallback;

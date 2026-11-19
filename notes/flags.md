@@ -268,3 +268,9 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 - Older test rows still in Quotes (rows 5 to 8: test@vocom.ai, "TEST - Claude ...", Nov 3 to Nov 19): left for Tom to confirm.
 - The Drive link still sits in the page source as the fallback; once the script is redeployed it also comes back in the reply, and the fallback can go.
 - Fiber pages: the keyword intro on /fiber-optic-cables was shortened so the quote form stays at 664px on a 390px phone, same as live.
+
+## 2026-11-19: FAQs from exact Search Console questions (Tom)
+- /optical-transceivers: "Which 1.6T transceiver suppliers serve next-generation data centers?" (answer uses only what the page already states: B300/GB300, QM3400, top-tier module maker, MSA specs, warranty, Thailand and Taiwan halls, 24-hour quote).
+- /data-center-fiber-cabling: "What are fiber optic solutions for data centers?"
+- Not added: "which distributors/suppliers stock probeam lens contact fiber optic cable/connector in scandinavia or europe". Vocom lists no expanded beam (lens) connectors; needs Tom to confirm whether we can source them before any copy.
+- Quotes sheet: old Claude test rows (5 to 8) deleted at Tom's request; rows 2 to 4 (Tom's own tests) kept.

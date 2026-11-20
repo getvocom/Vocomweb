@@ -46,14 +46,14 @@ import { SITES, STATS, PATHS, LADDER } from "../data/data-centers";
     <h2>Build, Buy or Lease at a Glance</h2>
     <p class="dc-sub">Approximate industry ranges, not quotes. Hybrids are common: a lease with a purchase option, or a sale-leaseback, lets you control the asset now and settle ownership later.</p>
     <div class="dc-table-wrap">
-      <table class="dc-table">
+      <table class="dc-table dc-compare">
         <thead><tr><th scope="col"></th><th scope="col">Build</th><th scope="col">Buy</th><th scope="col">Lease</th></tr></thead>
         <tbody>
-          <tr><th scope="row">Time to capacity</th><td>24 to 48 months; grid power is often the bottleneck</td><td>4 to 9 months to close, then integration</td><td>1 to 6 months for ready suites, up to 18 months build-to-suit</td></tr>
-          <tr><th scope="row">Upfront capital</th><td>Highest: about $9M to $15M per MW before IT</td><td>Purchase price plus upgrade capex</td><td>Lowest: deposit, fit-out and first rent</td></tr>
-          <tr><th scope="row">Control</th><td>Total</td><td>Total, but inherits legacy contracts</td><td>Limited to what the lease grants</td></tr>
-          <tr><th scope="row">Main risk</th><td>Power delivery, permits, cost overrun</td><td>Hidden defects and legacy liabilities</td><td>Landlord dependency, rent escalation</td></tr>
-          <tr><th scope="row">Best for</th><td>Hyperscalers with a secured power pipeline</td><td>Funds and operators wanting instant scale</td><td>AI and cloud tenants, market entry</td></tr>
+          <tr><th scope="row">Time to capacity</th><td data-label="Build">24 to 48 months; grid power is often the bottleneck</td><td data-label="Buy">4 to 9 months to close, then integration</td><td data-label="Lease">1 to 6 months for ready suites, up to 18 months build-to-suit</td></tr>
+          <tr><th scope="row">Upfront capital</th><td data-label="Build">Highest: about $9M to $15M per MW before IT</td><td data-label="Buy">Purchase price plus upgrade capex</td><td data-label="Lease">Lowest: deposit, fit-out and first rent</td></tr>
+          <tr><th scope="row">Control</th><td data-label="Build">Total</td><td data-label="Buy">Total, but inherits legacy contracts</td><td data-label="Lease">Limited to what the lease grants</td></tr>
+          <tr><th scope="row">Main risk</th><td data-label="Build">Power delivery, permits, cost overrun</td><td data-label="Buy">Hidden defects and legacy liabilities</td><td data-label="Lease">Landlord dependency, rent escalation</td></tr>
+          <tr><th scope="row">Best for</th><td data-label="Build">Hyperscalers with a secured power pipeline</td><td data-label="Buy">Funds and operators wanting instant scale</td><td data-label="Lease">AI and cloud tenants, market entry</td></tr>
         </tbody>
       </table>
     </div>

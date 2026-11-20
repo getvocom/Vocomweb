@@ -93,4 +93,15 @@ a.dc-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card), i
   .dc-gallery img, .dc-split img { height: 240px; }
   .dc-table { font-size: 14px; }
   .dc-table th, .dc-table td { padding: 10px 12px; }
+  /* phones: each row stacks (name and capacity on one line, notes below) so nothing is cut off at the right */
+  .dc-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .dc-table tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; border-bottom: 1px solid var(--brand-pink-border); }
+  .dc-table tr:last-child { border-bottom: 0; }
+  .dc-table th, .dc-table td { display: block; border-bottom: 0; }
+  .dc-table td:not(.dc-num), .dc-table tr.dc-region th { grid-column: 1 / -1; }
+  .dc-table td:not(.dc-num) { padding-top: 0; }
+  .dc-table td:empty { display: none; }
+  .dc-compare tbody th { grid-column: 1 / -1; }
+  .dc-compare td { padding-top: 0; }
+  .dc-compare td::before { content: attr(data-label) ": "; font-weight: 700; color: var(--ink-900); }
 }

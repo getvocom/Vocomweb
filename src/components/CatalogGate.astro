@@ -74,7 +74,7 @@ const { collapsed = false, id = "catalog-gate" } = Astro.props as { collapsed?: 
       loadTurnstile().then(() => {
         const ts = (window as any).turnstile;
         if (!ts) return;
-        try { ts.render(form.querySelector(".cg-ts"), { sitekey: key, appearance: "interaction-only", size: "flexible", "error-callback": () => { (window as any).__turnstileFailed = true; } }); }
+        try { ts.render(form.querySelector(".cg-ts"), { sitekey: key, appearance: "interaction-only", size: (form.querySelector<HTMLElement>(".cg-ts")!.clientWidth || 300) < 300 ? "compact" : "flexible", "error-callback": () => { (window as any).__turnstileFailed = true; } }); }
         catch { (window as any).__turnstileFailed = true; }
       });
     };
@@ -156,6 +156,7 @@ const { collapsed = false, id = "catalog-gate" } = Astro.props as { collapsed?: 
   .cg-field input::placeholder { color: var(--color-text-muted); }
   .cg-field input:focus { outline: 2px solid var(--brand-crimson); outline-offset: 1px; }
   .cg-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .cg-ts { max-width: 100%; overflow: hidden; }
   .cg-ts:empty { display: none; }
   .cg-msg { margin: 0; font-size: 13px; line-height: 1.4; color: var(--brand-red); }
   .cg-btn {
@@ -169,5 +170,5 @@ const { collapsed = false, id = "catalog-gate" } = Astro.props as { collapsed?: 
   .cg-btn[data-state="error"] { background: var(--brand-pink-50); color: var(--brand-red); }
   .cg-done { display: flex; flex-direction: column; gap: 6px; }
   .cg-link { color: var(--brand-red); font-weight: 600; }
-  @media (max-width: 809.98px) { .cg-fields { grid-template-columns: 1fr; } }
+  @media (max-width: 809.98px) { .cg-fields { grid-template-columns: minmax(0, 1fr); } }
 </style>

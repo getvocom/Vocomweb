@@ -141,4 +141,5 @@ Bodies are plain text; a blank line starts a new paragraph.
 1. `npm run build` must pass.
 2. `npm run parity` must show no new issues against `notes/parity-report.md`.
 3. Spot-check with `node scripts/visual-diff.mjs --only /changed-page`.
+   - For layout changes, also run `node scripts/mobile-audit.mjs . 360,375,390,430 /changed-page` (Safari engine, needs `npx playwright install webkit` and the preview server). It flags anything past its card or the screen and images covering text. iPhone Safari is where layout bugs show up, so don't trust Chrome alone.
 4. After the push is live, run `node scripts/indexnow.mjs` so Bing (and ChatGPT search and Copilot) recrawl new and changed pages within hours.

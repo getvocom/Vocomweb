@@ -18,6 +18,8 @@ const { label = "Submit" } = Astro.props as { label?: string };
     <script is:inline>window.vocomTurnstileFailed = function () { window.__turnstileFailed = true; };</script>
     <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer onerror="window.__turnstileFailed=true"></script>
     <div class="cf-turnstile turnstile-slot" data-sitekey={TURNSTILE_SITE_KEY} data-appearance="interaction-only" data-size="flexible" data-error-callback="vocomTurnstileFailed"></div>
+    <!-- the flexible widget is at least 300px wide; in a narrower form (small phones) use the compact one so it stays inside the card -->
+    <script is:inline>(function () { var s = document.currentScript.previousElementSibling; var w = s && s.clientWidth; if (w && w < 300) s.setAttribute("data-size", "compact"); })();</script>
   </>
 )}
 <p class="form-msg" role="alert" hidden></p>
@@ -55,7 +57,7 @@ const { label = "Submit" } = Astro.props as { label?: string };
     animation: spin 1s linear infinite;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
-  .turnstile-slot { width: 100%; }
+  .turnstile-slot { width: 100%; max-width: 100%; overflow: hidden; }
   .form-msg { width: 100%; margin: 0 0 8px; font-size: 13px; line-height: 1.4; color: rgb(185, 28, 28); }
 </style>
 

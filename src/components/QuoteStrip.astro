@@ -121,8 +121,9 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
   /* moved under the intro on phones: fill the hero column instead of the page */
   .quote-strip.qs-top { width: 100%; max-width: none; margin: 4px 0 8px; text-align: left; }
   @media (max-width: 809.98px) {
-    .quote-strip:not(.qs-top) { width: calc(100% - 32px); padding: 22px 18px; margin: 4px auto 20px; }
-    .qs-form { grid-template-columns: 1fr; }
+    /* full column width on phones so the fields and the 300px security check fit inside the card */
+    .quote-strip:not(.qs-top) { width: 100%; padding: 20px 16px; margin: 4px auto 20px; }
+    .qs-form { grid-template-columns: minmax(0, 1fr); }
     .qs-copy h2 { font-size: 24px; }
     .quote-strip.qs-top { padding: 20px 16px; }
   }

@@ -107,8 +107,10 @@ const sizes = "(max-width: 809.98px) 92vw, 420px";
   .cs-lead { font-size: 18px; line-height: 1.55; color: #3c3c3c; }
   .cs-note { font-size: 14px; color: #6b6b6b; }
   .cs-study { display: grid; grid-template-columns: 420px 1fr; gap: 32px; padding: 24px; border-radius: 28px; background: var(--white); box-shadow: inset 0 0 0 1px rgba(136, 18, 67, 0.14); }
-  .cs-img { position: relative; aspect-ratio: 1; border-radius: 20px; overflow: hidden; background: #e9e8e6; align-self: start; }
-  .cs-img picture, .cs-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  /* the image sets its own height (Safari can size a grid row shorter than an aspect-ratio box and let the text slide under it) */
+  .cs-img { position: relative; border-radius: 20px; overflow: hidden; background: #e9e8e6; align-self: start; }
+  .cs-img picture { display: block; }
+  .cs-img img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
   .cs-body { display: flex; flex-direction: column; gap: 10px; }
   .cs-region { font-weight: 600; font-size: 13px; color: var(--brand-crimson); }
   .cs-body h2 { font-family: var(--font-display); font-weight: 800; font-size: 28px; letter-spacing: -0.02em; color: var(--ink-900); }
@@ -120,6 +122,6 @@ const sizes = "(max-width: 809.98px) 92vw, 420px";
   .cs-cta { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 40px 24px; border-radius: 28px; text-align: center; background: var(--brand-pink-50); }
   .cs-cta h2 { font-family: var(--font-display); font-weight: 800; font-size: 30px; color: var(--ink-900); }
   .cs-btn { margin-top: 6px; padding: 12px 22px; border-radius: 999px; background: var(--brand-crimson); color: var(--white); font-weight: 600; }
-  @media (max-width: 1023.98px) { .cs-study { grid-template-columns: 1fr; } .cs-img { aspect-ratio: 16 / 10; } }
+  @media (max-width: 1023.98px) { .cs-study { grid-template-columns: 1fr; } .cs-img img { aspect-ratio: 16 / 10; } }
   @media (max-width: 809.98px) { .cs-main { padding: 0 16px; } .cs-study { padding: 16px; } .cs-products { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>

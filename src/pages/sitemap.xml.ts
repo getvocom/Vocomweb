@@ -26,12 +26,16 @@ const STATIC = [
   "/1728-fiber-optic-cable",
   "/fiber-optic-glossary",
   "/data-centers", "/buy-a-data-center", "/data-center-colocation", "/build-ai-data-center",
+  // added 2026-11-23
+  "/mtp-trunk-cable", "/enterprise-fiber-optic-cable",
 ];
 
 // Category pages that show a hero render (see src/pages/<page>.astro)
 const hero = (id: keyof typeof renders.hero) => `/assets/img/hero/${renders.hero[id]}-1920.jpg`;
 const PAGE_IMAGES: Record<string, string[]> = {
   "/data-center-fiber-cabling": [hero("VC-104")],
+  "/mtp-trunk-cable": [hero("VC-104")],
+  "/enterprise-fiber-optic-cable": ["/assets/img/rollable-ribbon-fiber-optic-cable-beb7db.png"],
   "/6912-fiber-optic-cable": ["/assets/img/products/high-fiber-count-ribbon-cable-1200.jpg", "/assets/img/rollable-ribbon-fiber-optic-cable-beb7db.png"],
   "/1728-fiber-optic-cable": ["/assets/img/products/high-fiber-count-ribbon-cable-1200.jpg", "/assets/img/rollable-ribbon-fiber-optic-cable-beb7db.png"],
   "/optical-transceivers": ["/assets/img/products/optical-transceivers-lineup-1200.jpg", "/assets/img/optical-transceivers-in-switch-1680.jpg", "/assets/img/ai-cluster-reference-topology-2400.jpg"],

@@ -80,6 +80,8 @@ export const NAV: NavSection[] = [
         links: [
           { label: "Data Center Fiber Cabling", href: "/data-center-fiber-cabling", desc: "MPO and MTP trunks, cassettes, harnesses" },
           { label: "Indoor Fiber Cable", href: "/indoor-fiber-optic-cable", desc: "OFNP plenum and OFNR riser" },
+          { label: "Enterprise Fiber Cable", href: "/enterprise-fiber-optic-cable", desc: "Buildings, campus and server room" },
+          { label: "MTP Trunk Cable Guide", href: "/mtp-trunk-cable", desc: "8F to 864F, polarity A, B or C" },
           { label: "MTP/MPO Trunk Cable", href: "/products/mtp-mpo-trunk-cable" },
           { label: "MPO Patch Cord", href: "/products/mpo-patch-cord" },
           { label: "LC Fiber Patch Cord", href: "/products/lc-fiber-patch-cord" },

@@ -306,3 +306,11 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 **Queries for products the site doesn't cover (need Tom/Kevin):**
 - Fiber optic delay lines: "low loss fiber optic delay wholesale" 15, "...wholesaler" 10, "custom fiber delay line wholesale" 10, "fiber optic delay wholesale" 8, "150us optical fiber delay wholesaler" 7, plus more (about 80 impressions a week, positions 40 to 70). If Vocom can supply them, a page would likely rank fast; nobody else seems to target "wholesale".
 - MTP trunk queries (mtp trunk cable 45, mtp trunk 31, fiber trunk cable 24, fiber optic trunk 20, fiber trunk 19, mpo trunk cable 15) sit at positions 40 to 80 across two thin product pages; worth a fuller trunk cable guide later.
+
+## 2026-11-23 (evening): homepage H1, enterprise and MTP trunk pages
+
+- Homepage H1 (Tom approved): "Vocom: Wholesale Fiber Optic Cable Supplier for Telecom, Enterprise and Data Centers" (was "Vocom Wholesale Fiber Optic Cable for Telecom & Data Centers"). Title tag unchanged.
+- New page /enterprise-fiber-optic-cable: "enterprise fiber optic cable" had 98 impressions a week at position 5.7 with Google showing /blog. Built from facts on the indoor, data center cabling, connectors and loose tube pages. Says Vocom supplies and the customer's contractor installs.
+- New page /mtp-trunk-cable: MTP trunk searches (about 170 impressions a week) sat at positions 40 to 80 across two product pages. Built from the trunk, array, harness, cassette and patch cord products and /data-center-fiber-cabling.
+- Both are in the nav (Fiber Products > Data Center and Indoor), sitemap, llms.txt, and QUOTE_PAGES (Apps Script version 17). Linked from the /fiber-optic-cables enterprise FAQ and the /data-center-fiber-cabling trunk FAQ.
+- Still waiting on Kevin: per-site data center pages, carrier services hub (onboarding/KYC, DIDs, route pages), fiber delay line page.

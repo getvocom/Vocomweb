@@ -293,3 +293,16 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 - Voice: CPS and channel limits; whether press-1, dialer and AI voice agent traffic is accepted (and on what terms); CLI routes by destination; local DIDs (which countries); KYC documents; rate deck format; Singapore coverage (not claimed on the site today).
 - Data centers: whether introducers and brokers are paid or registered; uncommitted MW at closing; whether 75MW by 2028 is possible; power agreement transfer conditions; timing and cost of the next 100MW; the NDA form itself.
 - With those answers, candidate new pages: "Voice Interconnect Onboarding and KYC" and "Local DID Numbers"; a dedicated North Dakota campus page if the seller allows more detail.
+
+## 2026-11-23 (later): Search Console pass and leaning into ChatGPT
+
+**AI crawler access checked:** OAI-SearchBot, ChatGPT-User, GPTBot, bingbot, ClaudeBot and PerplexityBot all get HTTP 200 from Cloudflare, and robots.txt allows all. ChatGPT search reads Bing's index, so IndexNow after every push matters.
+
+**Changed:**
+- Service JSON-LD (name, serviceType, description, areaServed, provider) on /wholesale-voice-termination, /iepl-iplc-private-leased-circuits, /data-centers, /buy-a-data-center, /data-center-colocation, /build-ai-data-center (/vocom-services already had one).
+- Voice page: title "Wholesale Voice Carrier: International Voice Termination | Vocom" (was "International Wholesale Voice Termination and SMS | Vocom"), meta description and intro now say "wholesale voice carrier". GSC last 7 days: "voice termination market" 22 impr (pos 71), "international wholesale voice carrier market" 21 (70), "wholesale termination rates" 11 (86), "wholesale voice carrier" 5 (68), "wholesale voice for call centers" 4 (94).
+- /fiber-optic-cables FAQ "Do you supply fiber optic cable for enterprise networks?": "enterprise fiber optic cable" had 98 impressions at position 5.7 with no clicks, and Google was showing /blog for it.
+
+**Queries for products the site doesn't cover (need Tom/Kevin):**
+- Fiber optic delay lines: "low loss fiber optic delay wholesale" 15, "...wholesaler" 10, "custom fiber delay line wholesale" 10, "fiber optic delay wholesale" 8, "150us optical fiber delay wholesaler" 7, plus more (about 80 impressions a week, positions 40 to 70). If Vocom can supply them, a page would likely rank fast; nobody else seems to target "wholesale".
+- MTP trunk queries (mtp trunk cable 45, mtp trunk 31, fiber trunk cable 24, fiber optic trunk 20, fiber trunk 19, mpo trunk cable 15) sit at positions 40 to 80 across two thin product pages; worth a fuller trunk cable guide later.

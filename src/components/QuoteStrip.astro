@@ -16,7 +16,9 @@ import CatalogGate from "./CatalogGate.astro";
 // center pages, 2026-11-17). The fields, submit logic and tracking stay the same.
 // catalog: a "Not ready for a quote?" line under the form that expands the catalog email gate inline
 // (Tom, 2026-11-19). On by default for fiber forms, off for the data center pages.
-const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder, catalog = useCase === "Fiber Optic" } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string; catalog?: boolean };
+// emailLine: a "Prefer email?" line with Kevin's address under the form (Tom, 2026-11-23). Both leads that
+// week came from ChatGPT to the voice and data center pages and wrote by email instead of using a form.
+const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder, catalog = useCase === "Fiber Optic", emailLine = false } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string; catalog?: boolean; emailLine?: boolean };
 const prefill = product ? `${product.name}${product.codes && !["n/a", product.name.toLowerCase()].includes(product.codes.toLowerCase()) ? ` (${product.codes})` : ""}: ` : undefined;
 ---
 <section class="quote-strip" id="quote" aria-labelledby="quote-strip-title" data-pagefind-ignore>
@@ -40,6 +42,7 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
     <input type="hidden" name="Use Case" value={useCase} />
     <div class="qs-submit"><SubmitButton label="Get a Quote in 24 Hours" /></div>
   </form>
+  {emailLine && <p class="qs-email">Prefer email? Write to <a href="mailto:kevin@vocom.com">kevin@vocom.com</a> and the same team replies.</p>}
   {catalog && (
     <div class="qs-catalog">
       <button type="button" class="qs-catalog-toggle" aria-expanded="false" aria-controls="qs-catalog-gate">Not ready for a quote? Get the fiber catalog</button>
@@ -111,6 +114,8 @@ const prefill = product ? `${product.name}${product.codes && !["n/a", product.na
   .qs-field input:focus { outline: 2px solid var(--brand-crimson); outline-offset: 1px; }
   .qs-submit { grid-column: 1 / -1; display: flex; flex-direction: column; }
   .qs-submit :global(.submit-btn) { height: 46px; font-size: 15px; }
+  .qs-email { grid-column: 1 / -1; margin: 0; font-size: 14px; line-height: 1.5; color: var(--gray-600); }
+  .qs-email a { color: var(--brand-red); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
   .qs-catalog { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 14px; }
   .qs-catalog-toggle { align-self: flex-start; padding: 0; border: 0; background: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--brand-red); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
   .qs-catalog :global(.catalog-gate) { padding-top: 14px; border-top: 1px solid var(--brand-pink-border); }

@@ -274,3 +274,22 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 - /data-center-fiber-cabling: "What are fiber optic solutions for data centers?"
 - Not added: "which distributors/suppliers stock probeam lens contact fiber optic cable/connector in scandinavia or europe". Vocom lists no expanded beam (lens) connectors; needs Tom to confirm whether we can source them before any copy.
 - Quotes sheet: old Claude test rows (5 to 8) deleted at Tom's request; rows 2 to 4 (Tom's own tests) kept.
+
+## 2026-11-23: two email leads (voice, data center), where they came from, what changed
+
+**Sources (GA4 landing page by session source, Oct 26 to Nov 22):**
+- /wholesale-voice-termination: 2 sessions from chatgpt.com (1m 24s engaged), 1 from Google organic (1m 17s), 3 direct (6s). The Sydney voice reseller (Smart Building Technology) said they found "your wholesale termination page and your APAC PoPs".
+- /buy-a-data-center: 5 sessions from chatgpt.com (2 users, 37s), 2 direct. The Dallas introducer quoted that page's wording (100-acre, eastern North Dakota, 100MW energized, sale of the entity).
+- Google Ads had no part: every campaign is fiber (Nov 9 to 22: 432 search terms, 34 clicks, $80.29, 0 conversions, no voice or data center terms).
+- Both wrote to the footer email: the voice page had no form, and the introducer preferred email.
+
+**Changed:**
+- Voice page: short quote form "Request Routes and a Test" (Use Case "Wholesale Voice"), allowed in the Apps Script (QUOTE_PAGES, version 16, Nov 23); 4 FAQs (how rates are quoted, Hong Kong and Australia, what to send to get set up, email option). Answers only use facts already on the site.
+- Data center pages: "Prefer email? kevin@vocom.com" under the form (QuoteStrip `emailLine`). /buy-a-data-center: 4 FAQs (what the North Dakota sale includes, how much power is available, price under NDA, how to request the NDA).
+- Contact page: Use Case options "Carrier Services" and "Data Center", preset when the visitor comes from those pages.
+- /llms-full.txt: new section with the carrier and data center pages (description, FAQs, site list), since ChatGPT sent both leads.
+
+**Needs Kevin before it can go on the site (not published, nothing invented):**
+- Voice: CPS and channel limits; whether press-1, dialer and AI voice agent traffic is accepted (and on what terms); CLI routes by destination; local DIDs (which countries); KYC documents; rate deck format; Singapore coverage (not claimed on the site today).
+- Data centers: whether introducers and brokers are paid or registered; uncommitted MW at closing; whether 75MW by 2028 is possible; power agreement transfer conditions; timing and cost of the next 100MW; the NDA form itself.
+- With those answers, candidate new pages: "Voice Interconnect Onboarding and KYC" and "Local DID Numbers"; a dedicated North Dakota campus page if the seller allows more detail.

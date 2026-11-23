@@ -4,6 +4,21 @@
 import { headFor } from "../lib/head";
 import { getPosts, getProducts } from "../lib/cms";
 import { CATEGORY_PAGES, productLabels } from "../lib/categories";
+import { SITES, CAVEAT } from "../data/data-centers";
+
+// Carrier and data center pages (Tom, 2026-11-23): both leads that week came from ChatGPT to these
+// pages, so their own description and FAQ answers are listed here too, read from each page's head data.
+const SERVICES = ["/wholesale-voice-termination", "/iepl-iplc-private-leased-circuits", "/vocom-services", "/data-centers", "/buy-a-data-center", "/data-center-colocation", "/build-ai-data-center"];
+const faqs = (path: string): [string, string][] => {
+  const out: [string, string][] = [];
+  for (const j of headFor(path).jsonld ?? []) {
+    try {
+      const g = typeof j === "string" ? JSON.parse(j) : j;
+      for (const n of g["@graph"] ?? [g]) if (n["@type"] === "FAQPage") for (const q of n.mainEntity ?? []) out.push([q.name, q.acceptedAnswer?.text ?? ""]);
+    } catch {}
+  }
+  return out;
+};
 
 const SITE = "https://www.vocom.ai";
 const desc = (path: string) => headFor(path).meta.find((m) => m.name === "description")?.content ?? "";
@@ -16,9 +31,18 @@ export async function GET() {
     "",
     "Vocom International (founded 1993, El Monte, California, and Taipei) supplies build-to-order fiber optic cable, connectivity and carrier services. Contact: kevin@vocom.com (also kevin@getvocom.com), +1 (650) 619-5048, " + SITE + "/contact-vocomai",
     "",
-    "## Products",
+    "## Carrier services and data centers",
     "",
   ];
+  for (const path of SERVICES) {
+    out.push(`### ${headFor(path).title.replace(/ \| Vocom.*$/, "")}`, `URL: ${SITE}${path}`, "", desc(path), "");
+    if (path === "/data-centers") {
+      for (const r of SITES) { out.push(`#### ${r.region}`); for (const x of r.sites) out.push(`- ${x.location}: ${x.capacity}${x.notes ? `. ${x.notes}` : ""}`); out.push(""); }
+      out.push(CAVEAT, "");
+    }
+    for (const [q, ans] of faqs(path)) out.push(`#### ${q}`, ans, "");
+  }
+  out.push("## Products", "");
   const products = await getProducts();
   const byCat = new Map<string, typeof products>();
   for (const p of products) byCat.set(p.data.category, [...(byCat.get(p.data.category) ?? []), p]);

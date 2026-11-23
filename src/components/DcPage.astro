@@ -42,7 +42,7 @@ const p = PHOTO(photo);
     <ul class="dc-stats">
       {stats.map(([n, l]) => <li><span class="dc-stat-n">{n}</span><span class="dc-stat-l">{l}</span></li>)}
     </ul>
-    <QuoteStrip moveUp={false} useCase="Data Center" title={quoteTitle ?? "Tell Us What You Are Building"} intro={quoteIntro ?? "Send the location, megawatts and timing. We reply with matching sites and next steps."} label="Location, MW and timing" placeholder="e.g. 20MW in Texas, live by Q3 2027" />
+    <QuoteStrip moveUp={false} useCase="Data Center" title={quoteTitle ?? "Tell Us What You Are Building"} intro={quoteIntro ?? "Send the location, megawatts and timing. We reply with matching sites and next steps."} label="Location, MW and timing" placeholder="e.g. 20MW in Texas, live by Q3 2027" emailLine />
     <main class="dc-main">
       <slot />
       <p class="dc-caveat">{CAVEAT}</p>

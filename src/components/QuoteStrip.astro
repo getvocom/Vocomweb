@@ -16,9 +16,9 @@ import CatalogGate from "./CatalogGate.astro";
 // center pages, 2026-11-17). The fields, submit logic and tracking stay the same.
 // catalog: a "Not ready for a quote?" line under the form that expands the catalog email gate inline
 // (Tom, 2026-11-19). On by default for fiber forms, off for the data center pages.
-// emailLine: a "Prefer email?" line with Kevin's address under the form (Tom, 2026-11-23). Both leads that
-// week came from ChatGPT to the voice and data center pages and wrote by email instead of using a form.
-const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder, catalog = useCase === "Fiber Optic", emailLine = false } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string; catalog?: boolean; emailLine?: boolean };
+// emailLine: a "Prefer email?" line with Kevin's address under the form (Tom, 2026-11-23), on every form by
+// default. Both leads that week came from ChatGPT and wrote by email instead of using a form.
+const { moveUp = true, product, useCase = "Fiber Optic", title, intro, label, placeholder, catalog = useCase === "Fiber Optic", emailLine = true } = Astro.props as { moveUp?: boolean; product?: { name: string; codes?: string }; useCase?: string; title?: string; intro?: string; label?: string; placeholder?: string; catalog?: boolean; emailLine?: boolean };
 const prefill = product ? `${product.name}${product.codes && !["n/a", product.name.toLowerCase()].includes(product.codes.toLowerCase()) ? ` (${product.codes})` : ""}: ` : undefined;
 ---
 <section class="quote-strip" id="quote" aria-labelledby="quote-strip-title" data-pagefind-ignore>

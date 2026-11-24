@@ -328,3 +328,9 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 **Wholesale voice:** nothing on file (capacity, CPS, CLI destinations, DIDs, rate deck, Singapore), so the carrier services hub stays on hold. Press-1, auto-dialer and AI-agent traffic: highest-risk traffic for an FCC-licensed carrier (robocall rules, caller-ID authentication, FCC rulings on AI voices). Nothing on the site invites it; if Vocom accepts it, it needs strict KYC, a signed acceptable-use policy and the right to cut off.
 
 **Fiber delay lines and ProBeam/lens connectors:** both fit the fiber line, but no pricing, lead times or specs until a supplier quote (Wesco, DHD or optics contacts). Pages wait for that.
+
+## 2026-11-24: NWF feedback on expanded beam connectors and delay lines
+
+NWF asked us to clarify: TE Connectivity ProBeam or another lens-based expanded beam connector such as 3M EBO; the application (civil, military or data center); technical requirements; a photo of a similar product. Turned into FAQs that say we quote on request through our manufacturing partner and list what to send. No stock, specs, prices or lead times claimed.
+- /fiber-optic-connectors-and-hardware: "Do you supply expanded beam (lens) connectors such as TE ProBeam or 3M EBO?" and "Can you ship expanded beam connectors to Europe, and what is the lead time?" (the second answers the Search Console question about ProBeam in Scandinavia/Europe).
+- /fiber-optic-cables: "Do you supply fiber optic delay lines?" NWF's reply didn't cover delay lines specifically; the list of what to send (delay time or length, fiber type, wavelength, insertion loss, connectors, packaging) is the standard delay line spec, not from NWF. Tom to confirm NWF can quote them.

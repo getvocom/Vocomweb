@@ -7,7 +7,7 @@ import photos from "./dc-stock-photos.json";
 export type Site = { country: string; location: string; capacity: string; notes: string };
 export const SITES: { region: string; sites: Site[] }[] = [
   { region: "United States", sites: [
-    { country: "US", location: "North Dakota campus", capacity: "230MW", notes: "100MW energized today, 100MW on a defined power pathway, 30MW co-located. MISO grid. For sale" },
+    { country: "US", location: "North Dakota campus", capacity: "Up to 230MW", notes: "100MW feed line ready, power expected 2027 subject to a signed utility contract; a further 100MW in study for 2030. MISO grid. For sale" },
     { country: "US", location: "Hickory, North Carolina", capacity: "15MW", notes: "Existing ~50,000 sq ft building on 10 acres, 3MW live, upside to 50MW. Sale, lease or colocation" },
     { country: "US", location: "North Carolina", capacity: "12MW to 300MW", notes: "Fund-backed development" },
     { country: "US", location: "Boston, Massachusetts", capacity: "30MW", notes: "" },

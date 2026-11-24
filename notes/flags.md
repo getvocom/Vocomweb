@@ -314,3 +314,17 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 - New page /mtp-trunk-cable: MTP trunk searches (about 170 impressions a week) sat at positions 40 to 80 across two product pages. Built from the trunk, array, harness, cassette and patch cord products and /data-center-fiber-cabling.
 - Both are in the nav (Fiber Products > Data Center and Indoor), sitemap, llms.txt, and QUOTE_PAGES (Apps Script version 17). Linked from the /fiber-optic-cables enterprise FAQ and the /data-center-fiber-cabling trunk FAQ.
 - Still waiting on Kevin: per-site data center pages, carrier services hub (onboarding/KYC, DIDs, route pages), fiber delay line page.
+
+## 2026-11-24: Kevin's answers; North Dakota corrected
+
+**Corrected (the site said "100MW energized today", which was wrong):** the North Dakota campus now reads "planned for up to 230MW, a 100MW feed line ready, power expected in 2027 subject to a signed utility contract, a further 100MW in study targeting 2030, about 30MW of load previously operated across four sites". Changed on /buy-a-data-center (hero, chips, stats, card, three FAQs, meta and Service schema), the site table in src/data/data-centers.ts (/data-centers, homepage section, llms-full.txt) and llms.txt. The "energization certificate", "queue position", "approved 200MW transmission study" and "substation live" claims are gone. The water row was removed while the liquid-cooling water question is open.
+
+**What may and may not be published for data center sites (Kevin, 2026-11-24):**
+- Publish: region and headline specs only.
+- Not on the site: asking price (North Dakota is $30M, internal only), exact location, photos (after NDA only), seller names, unconfirmed availability (e.g. "75MW by 2028" until Victor confirms the utility contract), transfer terms and what the entity owns (nothing on file).
+- Reason: a public location lets buyers go straight to the seller, and Vocom loses its broker position. So no per-site pages with location detail; a per-site page could only repeat the headline specs.
+- Still open: one or two grid inputs (no generator on site), liquid-cooling water, NDA form (Kevin can draft a buyer-agnostic one), introducer fee splits (if allowed, introducers register each buyer in writing first).
+
+**Wholesale voice:** nothing on file (capacity, CPS, CLI destinations, DIDs, rate deck, Singapore), so the carrier services hub stays on hold. Press-1, auto-dialer and AI-agent traffic: highest-risk traffic for an FCC-licensed carrier (robocall rules, caller-ID authentication, FCC rulings on AI voices). Nothing on the site invites it; if Vocom accepts it, it needs strict KYC, a signed acceptable-use policy and the right to cut off.
+
+**Fiber delay lines and ProBeam/lens connectors:** both fit the fiber line, but no pricing, lead times or specs until a supplier quote (Wesco, DHD or optics contacts). Pages wait for that.

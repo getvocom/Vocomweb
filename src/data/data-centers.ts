@@ -4,37 +4,44 @@
 // Capacity and power figures are seller-represented and are said so on every page.
 import photos from "./dc-stock-photos.json";
 
-export type Site = { country: string; location: string; capacity: string; notes: string };
-export const SITES: { region: string; sites: Site[] }[] = [
-  { region: "United States", sites: [
-    { country: "US", location: "North Dakota campus", capacity: "Up to 230MW", notes: "100MW feed line ready, power expected 2027 subject to a signed utility contract; a further 100MW in study for 2030. MISO grid. For sale" },
-    { country: "US", location: "Hickory, North Carolina", capacity: "15MW", notes: "Existing ~50,000 sq ft building on 10 acres, 3MW live, upside to 50MW. Sale, lease or colocation" },
-    { country: "US", location: "North Carolina", capacity: "12MW to 300MW", notes: "Fund-backed development" },
-    { country: "US", location: "Boston, Massachusetts", capacity: "30MW", notes: "" },
-    { country: "US", location: "Texas", capacity: "50MW", notes: "Pairs with the prefab AI data center design" },
-    { country: "US", location: "Las Vegas, Nevada", capacity: "50MW", notes: "Solar power" },
-    { country: "US", location: "New Mexico", capacity: "25MW", notes: "Solar power, the lowest power cost in the portfolio" },
+// slug: the site's page, /data-centers/<slug> (frozen once published). detail: extra rows already published
+// on /buy-a-data-center, shown on that site's page. Nothing beyond region and headline specs (Kevin, 2026-11-24).
+export type Site = { country: string; location: string; capacity: string; notes: string; slug: string; detail?: [string, string][]; summary?: string };
+// Each region also has a page, /data-centers/<slug>.
+export const SITES: { region: string; slug: string; sites: Site[] }[] = [
+  { region: "United States", slug: "united-states", sites: [
+    { country: "US", location: "North Dakota campus", capacity: "Up to 230MW", notes: "100MW feed line ready, power expected 2027 subject to a signed utility contract; a further 100MW in study for 2030. MISO grid. For sale", slug: "north-dakota-data-center-campus",
+      summary: "A 100-acre campus on the MISO grid in eastern North Dakota, offered as a sale of the entity that holds it. A 100MW feed line is ready, with power expected in 2027 once the utility contract is signed.",
+      detail: [["Power", "100MW feed line ready; power expected in 2027, subject to a signed utility contract"], ["Next phase", "A further 100MW in study, targeting 2030"], ["History", "About 30MW of load previously operated across four sites"], ["Fiber", "Two carriers live at the site, a third ready to build to it"]] },
+    { country: "US", location: "Hickory, North Carolina", capacity: "15MW", notes: "Existing ~50,000 sq ft building on 10 acres, 3MW live, upside to 50MW. Sale, lease or colocation", slug: "hickory-north-carolina-data-center",
+      summary: "An existing building of about 50,000 sq ft on 10 acres, served by Duke Energy and already running as a colocation facility hosting GPU servers.",
+      detail: [["Power", "3MW live, 15MW with a 44kV transformer build-out"], ["Upside", "Up to 50MW via a new 100kV line"], ["Structure", "Sale, or long-term lease or colocation"], ["Nearby", "Three more sites in the area: 25MW, 7MW and one at an early stage"]] },
+    { country: "US", location: "North Carolina", capacity: "12MW to 300MW", notes: "Fund-backed development", slug: "north-carolina-data-center-development" },
+    { country: "US", location: "Boston, Massachusetts", capacity: "30MW", notes: "", slug: "boston-data-center" },
+    { country: "US", location: "Texas", capacity: "50MW", notes: "Pairs with the prefab AI data center design", slug: "texas-data-center" },
+    { country: "US", location: "Las Vegas, Nevada", capacity: "50MW", notes: "Solar power", slug: "las-vegas-data-center" },
+    { country: "US", location: "New Mexico", capacity: "25MW", notes: "Solar power, the lowest power cost in the portfolio", slug: "new-mexico-data-center" },
   ] },
-  { region: "Japan", sites: [
-    { country: "JP", location: "Hokkaido", capacity: "1.2GW", notes: "" },
-    { country: "JP", location: "Kyushu", capacity: "1GW", notes: "Nuclear and thermal power, phased 100MW, 250MW, 650MW" },
-    { country: "JP", location: "Kanto", capacity: "500MW", notes: "" },
-    { country: "JP", location: "Kansai", capacity: "200MW", notes: "" },
+  { region: "Japan", slug: "japan", sites: [
+    { country: "JP", location: "Hokkaido", capacity: "1.2GW", notes: "", slug: "hokkaido-data-center" },
+    { country: "JP", location: "Kyushu", capacity: "1GW", notes: "Nuclear and thermal power, phased 100MW, 250MW, 650MW", slug: "kyushu-data-center" },
+    { country: "JP", location: "Kanto", capacity: "500MW", notes: "", slug: "kanto-data-center" },
+    { country: "JP", location: "Kansai", capacity: "200MW", notes: "", slug: "kansai-data-center" },
   ] },
-  { region: "Taiwan", sites: [
-    { country: "TW", location: "Nangang, Taipei", capacity: "10MW", notes: "5MW grid plus 5MW solar" },
-    { country: "TW", location: "Keelung", capacity: "5MW", notes: "" },
-    { country: "TW", location: "Hsinchu", capacity: "3MW", notes: "" },
+  { region: "Taiwan", slug: "taiwan", sites: [
+    { country: "TW", location: "Nangang, Taipei", capacity: "10MW", notes: "5MW grid plus 5MW solar", slug: "taipei-nangang-data-center" },
+    { country: "TW", location: "Keelung", capacity: "5MW", notes: "", slug: "keelung-data-center" },
+    { country: "TW", location: "Hsinchu", capacity: "3MW", notes: "", slug: "hsinchu-data-center" },
   ] },
-  { region: "Southeast Asia and Australia", sites: [
-    { country: "TH", location: "Rayong, Thailand", capacity: "800MW", notes: "100MW available now, containerized IDC in 5MW units" },
-    { country: "TH", location: "Rayong, Thailand", capacity: "20MW", notes: "Standalone site for edge or regional deployments" },
-    { country: "ID", location: "Batam, Indonesia", capacity: "500MW", notes: "Full 500MW available, near Singapore, subsea fiber to Singapore and Jakarta" },
-    { country: "MY", location: "Johor Bahru, Malaysia", capacity: "300MW", notes: "Full 300MW available" },
-    { country: "AU", location: "Sydney, Australia", capacity: "25MW", notes: "25MW remaining of a 100MW campus" },
+  { region: "Southeast Asia and Australia", slug: "southeast-asia-australia", sites: [
+    { country: "TH", location: "Rayong, Thailand", capacity: "800MW", notes: "100MW available now, containerized IDC in 5MW units", slug: "rayong-thailand-data-center-campus" },
+    { country: "TH", location: "Rayong, Thailand", capacity: "20MW", notes: "Standalone site for edge or regional deployments", slug: "rayong-thailand-edge-data-center" },
+    { country: "ID", location: "Batam, Indonesia", capacity: "500MW", notes: "Full 500MW available, near Singapore, subsea fiber to Singapore and Jakarta", slug: "batam-indonesia-data-center" },
+    { country: "MY", location: "Johor Bahru, Malaysia", capacity: "300MW", notes: "Full 300MW available", slug: "johor-bahru-data-center" },
+    { country: "AU", location: "Sydney, Australia", capacity: "25MW", notes: "25MW remaining of a 100MW campus", slug: "sydney-data-center" },
   ] },
-  { region: "Middle East", sites: [
-    { country: "AE", location: "Dubai, UAE", capacity: "40MW", notes: "Colocation. 30MW IT load operational, further 10MW blocks in April, June and July 2027" },
+  { region: "Middle East", slug: "middle-east", sites: [
+    { country: "AE", location: "Dubai, UAE", capacity: "40MW", notes: "Colocation. 30MW IT load operational, further 10MW blocks in April, June and July 2027", slug: "dubai-data-center" },
   ] },
 ];
 

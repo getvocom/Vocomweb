@@ -132,6 +132,7 @@ export const NAV: NavSection[] = [
           { label: "Buy a Data Center", href: "/buy-a-data-center", desc: "Campuses and buildings for sale" },
           { label: "Lease and Colocation", href: "/data-center-colocation", desc: "Colocation, powered shell, containerized" },
           { label: "Build an AI Data Center", href: "/build-ai-data-center", desc: "Prefab design, about 15 months" },
+          { label: "Owners and Introducers", href: "/data-center-partners", desc: "List a site or introduce a buyer" },
         ],
       },
       {

@@ -12,12 +12,13 @@ interface Props {
   path: string; eyebrow: string; title: string; lede: string;
   photo: Parameters<typeof PHOTO>[0]; photoAlt: string; panelTitle: string; chips: string[];
   stats: [string, string][]; secondary?: [string, string];
-  quoteTitle?: string; quoteIntro?: string;
+  quoteTitle?: string; quoteIntro?: string; quoteLabel?: string; quotePlaceholder?: string;
+  seo?: Record<string, unknown>; // pages without a captured head (the per-region and per-site pages)
 }
-const { path, eyebrow, title, lede, photo, photoAlt, panelTitle, chips, stats, secondary, quoteTitle, quoteIntro } = Astro.props;
+const { path, eyebrow, title, lede, photo, photoAlt, panelTitle, chips, stats, secondary, quoteTitle, quoteIntro, quoteLabel, quotePlaceholder, seo } = Astro.props;
 const p = PHOTO(photo);
 ---
-<Base path={path}>
+<Base path={path} seo={seo as any}>
   <div class="dc-page">
     <div class="site-header-slot header-slot" data-pagefind-ignore><Header /></div>
     <section class="dc-hero">
@@ -42,7 +43,7 @@ const p = PHOTO(photo);
     <ul class="dc-stats">
       {stats.map(([n, l]) => <li><span class="dc-stat-n">{n}</span><span class="dc-stat-l">{l}</span></li>)}
     </ul>
-    <QuoteStrip moveUp={false} useCase="Data Center" title={quoteTitle ?? "Tell Us What You Are Building"} intro={quoteIntro ?? "Send the location, megawatts and timing. We reply with matching sites and next steps."} label="Location, MW and timing" placeholder="e.g. 20MW in Texas, live by Q3 2027" emailLine />
+    <QuoteStrip moveUp={false} useCase="Data Center" title={quoteTitle ?? "Tell Us What You Are Building"} intro={quoteIntro ?? "Send the location, megawatts and timing. We reply with matching sites and next steps."} label={quoteLabel ?? "Location, MW and timing"} placeholder={quotePlaceholder ?? "e.g. 20MW in Texas, live by Q3 2027"} emailLine />
     <main class="dc-main">
       <slot />
       <p class="dc-caveat">{CAVEAT}</p>

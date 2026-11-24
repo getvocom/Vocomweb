@@ -5,6 +5,7 @@ import { headFor } from "../lib/head";
 import { blogSeo, productSeo } from "../lib/seo";
 import { getPosts, getProducts } from "../lib/cms";
 import { SECTIONS } from "../lib/static-pages";
+import { SITES } from "../data/data-centers";
 
 const SITE = "https://www.vocom.ai";
 const meta = (path: string, seo?: Parameters<typeof headFor>[1]) => {
@@ -20,6 +21,11 @@ export async function GET() {
   for (const [name, paths] of SECTIONS) {
     out.push(`## ${name}`, "", ...paths.map((p) => line(p, meta(p))), "");
   }
+  // one page per region and per site (src/pages/data-centers/[slug].astro): headline specs only
+  out.push("## Data center sites by region", "", ...SITES.flatMap((r) => [
+    `- [Data center sites: ${r.region}](${SITE}/data-centers/${r.slug}): ${r.sites.map((x) => `${x.location.replace(/ campus$/, "")} (${x.capacity})`).join(", ")}`,
+    ...r.sites.map((x) => `- [${x.location.replace(/ campus$/, "")} data center site, ${x.capacity}](${SITE}/data-centers/${x.slug})${x.notes ? `: ${x.notes}` : ""}`),
+  ]), "");
   out.push("## Blog", "", ...(await getPosts()).map((e) => { const p = "/blog/" + e.id; return line(p, meta(p, blogSeo(p, e))); }), "");
   out.push("## Products", "", ...(await getProducts()).map((e) => { const p = "/products/" + e.id; return line(p, meta(p, productSeo(p, e))); }), "");
   out.push("## Optional", "", `- [Full product specifications and articles](${SITE}/llms-full.txt): every product and blog post in full`, `- [Sitemap](${SITE}/sitemap.xml)`, "");

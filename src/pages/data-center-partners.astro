@@ -1,0 +1,56 @@
+---
+// Data center owners, operators and introducers (Tom, 2026-11-24, after the CGE/HostReady and Dallas
+// introducer leads). Referral pay is not promised: Kevin covers lead registration and referral terms per
+// deal under NDA (his reply to CGE, 2026-11-24); fee splits are still open in notes/flags.md.
+import DcPage from "../components/DcPage.astro";
+import FaqItem from "../components/FaqItem.astro";
+import { LADDER } from "../data/data-centers";
+---
+<DcPage path="/data-center-partners" eyebrow="Owners, operators and introducers"
+  title="Work With Vocom on Data Centers: List a Site or Introduce a Buyer"
+  lede="Own a data center or powered land, need help filling or fitting out a hall, or represent a buyer or tenant? Vocom lists sites by region and headline specs only, shares the detail under NDA, and supplies the servers, optics and fiber that go inside."
+  photo="dc-engineer-aisle" photoAlt="Engineer with a laptop walking a data center server aisle"
+  panelTitle="Who this is for" chips={["Site owners and developers", "Operators filling capacity", "Introducers and brokers", "NDA before details"]}
+  stats={[["8", "Countries with sites"], ["3MW to 1.2GW", "Range of site sizes"], ["NDA", "Before location and price"], ["1 team", "Space, servers, fiber and optics"]]}
+  secondary={["/data-centers#sites", "See listed sites"]}
+  quoteTitle="Tell Us About the Site or the Buyer" quoteIntro="Owners: the region, megawatts and how you want to sell or lease. Introducers: the requirement, without naming the client until the NDA is in place."
+  quoteLabel="Site or requirement" quotePlaceholder="e.g. 20MW site in Ohio to list, or a buyer needing 5MW">
+  <section class="dc-section">
+    <h2>For Site Owners and Operators</h2>
+    <p class="dc-sub">Your location stays private. Buyers and tenants see the region and headline specs, and only qualified requests get the site pack under NDA.</p>
+    <div class="dc-grid">
+      <div class="dc-card"><h3>List a Site</h3><p>Send the region, megawatts, power status and whether it is for sale, lease or colocation. We publish headline specs only and bring qualified buyers and tenants to you.</p></div>
+      <div class="dc-card"><h3>Fill Capacity</h3><p>Space live or coming online? We introduce AI and cloud tenants looking for powered space in your region, under NDA.</p></div>
+      <div class="dc-card"><h3>Fit Out the Hall</h3><p>Supermicro AI servers, 400G to 1.6T optics, MPO and MTP trunks and high count fiber, on one order delivered to site.</p></div>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>For Introducers and Brokers</h2>
+    <p class="dc-sub">Bring us a buyer or tenant for a listed site, or a site for our buyers. Register the lead in writing before any introduction.</p>
+    <div class="dc-grid">
+      <div class="dc-card"><span class="dc-tag">Step 1</span><h3>Send the Requirement</h3><p>Megawatts, region, timing, cooling and rack density, buy or lease. No client name needed yet.</p></div>
+      <div class="dc-card"><span class="dc-tag">Step 2</span><h3>NDA and Lead Registration</h3><p>We sign an NDA, register the lead in writing, and walk through the referral terms for that deal.</p></div>
+      <div class="dc-card"><span class="dc-tag">Step 3</span><h3>Site Pack and Introduction</h3><p>Matching sites with their documents, then an introduction to the owner and diligence.</p></div>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <h2>From Fiber to Rack</h2>
+    <ol class="dc-ladder">
+      {LADDER.map((l) => (<li><span class="dc-step">{l.step}</span><h3>{l.title}</h3><p>{l.body}</p><a href={l.href}>{l.link} &rarr;</a></li>))}
+    </ol>
+  </section>
+
+  <section class="dc-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="dc-faq">
+      <FaqItem question="Will you publish my site's location or price?">No. We publish the region and headline specs only. The exact location, pricing, photos and documents go to qualified buyers and tenants under NDA.</FaqItem>
+      <FaqItem question="What should I send to list a data center site?">The region, the megawatts live and planned, the power status and timing, and whether the site is for sale, lease or colocation. Documents can follow once an NDA is in place.</FaqItem>
+      <FaqItem question="Do you pay introducers a referral fee?">Referral terms are agreed in writing for each deal. Register the lead with us before any introduction, and we cover the lead registration and referral terms under NDA.</FaqItem>
+      <FaqItem question="Do I need to name my client before the NDA?">No. Send the requirement first: megawatts, region, timing, cooling and term. The client's identity can wait until the NDA is signed.</FaqItem>
+      <FaqItem question="Can you help fit out a data center we already operate?">Yes. Vocom supplies Supermicro AI servers, optical transceivers and fiber cabling, so the hall can be filled on one order from one team.</FaqItem>
+      <FaqItem question="How do I get in touch?">Use the form on this page, or email <a class="text-link" href="mailto:kevin@vocom.com">kevin@vocom.com</a> with the site or the requirement.</FaqItem>
+    </div>
+  </section>
+</DcPage>

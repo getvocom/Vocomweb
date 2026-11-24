@@ -32,8 +32,8 @@ import { SITES, STATS, PATHS, LADDER } from "../data/data-centers";
         <tbody>
           {SITES.map((r) => (
             <Fragment>
-              <tr class="dc-region"><th colspan="3" scope="colgroup">{r.region}</th></tr>
-              {r.sites.map((s) => (<tr><th scope="row">{s.location}</th><td class="dc-num">{s.capacity}</td><td>{s.notes}</td></tr>))}
+              <tr class="dc-region"><th colspan="3" scope="colgroup"><a href={`/data-centers/${r.slug}`}>{r.region}</a></th></tr>
+              {r.sites.map((s) => (<tr><th scope="row"><a class="text-link" href={`/data-centers/${s.slug}`}>{s.location}</a></th><td class="dc-num">{s.capacity}</td><td>{s.notes}</td></tr>))}
             </Fragment>
           ))}
         </tbody>

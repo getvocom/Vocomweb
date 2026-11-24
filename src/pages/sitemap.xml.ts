@@ -6,6 +6,7 @@
 import { getPosts, getProducts } from "../lib/cms";
 import renders from "../../data/render-images.json";
 import { STATIC } from "../lib/static-pages";
+import { SITES } from "../data/data-centers";
 
 const SITE = "https://www.vocom.ai";
 // Category pages that show a hero render (see src/pages/<page>.astro)
@@ -31,6 +32,7 @@ export async function GET() {
   for (const p of products) if (p.data.image?.src) PAGE_IMAGES["/products/" + p.id] = [p.data.image.src];
   const paths = [
     ...STATIC,
+    ...SITES.flatMap((r) => [r.slug, ...r.sites.map((x) => x.slug)]).map((slug) => "/data-centers/" + slug),
     ...(await getPosts()).map((p) => "/blog/" + p.id),
     ...products.map((p) => "/products/" + p.id),
   ];

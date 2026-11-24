@@ -341,3 +341,12 @@ Tom chose the Apps Script route (not the Cloudflare Pages Function in the CRM te
 - Apps Script version 18: `sendToCrm` now posts to https://vocom-crm.vercel.app/api/webhooks/website-form (was the old /api/webhooks/framer endpoint, signed differently, with property CRM_WEBHOOK_SECRET). Every quote, catalog download and new newsletter sign-up is forwarded, tagged by `lead_type` and at the start of `message`.
 - Inactive until WEBSITE_FORM_SECRET is set in Script Properties. The CRM endpoint itself returned 404 on 2026-11-24: commit 4bae0d2 in the CRM repo (no git remote) is not deployed to Vercel yet.
 - Signature checked against the CRM's own verify code with a test secret (match). The built site and live HTML contain no CRM URL or secret.
+
+## 2026-11-24: data center region, site and partner pages
+
+Tom asked for a page per region and a page per site after a third data center lead (Jesse Wagner, CGE/HostReady, an independent introducer who found the Hickory listing and asked about uncommitted load, direct-to-chip cooling, the transformer timeline and referral pay; Kevin replied with the NDA).
+- 5 region pages and 20 site pages at /data-centers/<slug>, plus /data-center-partners for owners, operators and introducers. Region and headline specs only, per Kevin's rule. North Dakota and Hickory show the extra rows already published on /buy-a-data-center; "Offered as" appears only where an existing page already says how the site is offered.
+- The partner page does not promise referral fees: "referral terms are agreed in writing for each deal ... under NDA", matching Kevin's reply. Fee splits are still open.
+- Photos are the licensed stock set, not the sites.
+- Apps Script version 19: '/data-center-partners' added to QUOTE_PAGES and /data-centers/<slug> allowed by pattern (origin test passed).
+- To check: Dubai reads "30MW IT load operational, further 10MW blocks in April, June and July 2027" in the site data (used on its page), but /data-center-colocation says "30MW of IT load delivered in 10MW blocks in April, June and July 2027". Which is right?

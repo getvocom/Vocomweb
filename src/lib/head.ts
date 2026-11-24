@@ -95,7 +95,7 @@ function build(path: string, base: HeadData | undefined, seo?: Seo): HeadData {
     lang: "en",
     meta,
     links: base?.links ?? [{ rel: "canonical", href: canonical }, ...fallback.links.filter((l) => l.rel !== "canonical")],
-    jsonld: [...(base?.jsonld ?? fallback.jsonld.filter(isSiteWide))],
+    jsonld: [...(base?.jsonld ?? fallback.jsonld.filter(isSiteWide)), ...(base ? [] : seo?.jsonld ?? [])],
   };
 }
 

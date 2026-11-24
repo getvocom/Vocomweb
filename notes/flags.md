@@ -334,3 +334,10 @@ Tom asked for H1 and body text to carry the search terms people actually use. Ex
 NWF asked us to clarify: TE Connectivity ProBeam or another lens-based expanded beam connector such as 3M EBO; the application (civil, military or data center); technical requirements; a photo of a similar product. Turned into FAQs that say we quote on request through our manufacturing partner and list what to send. No stock, specs, prices or lead times claimed.
 - /fiber-optic-connectors-and-hardware: "Do you supply expanded beam (lens) connectors such as TE ProBeam or 3M EBO?" and "Can you ship expanded beam connectors to Europe, and what is the lead time?" (the second answers the Search Console question about ProBeam in Scandinavia/Europe).
 - /fiber-optic-cables: "Do you supply fiber optic delay lines?" NWF's reply didn't cover delay lines specifically; the list of what to send (delay time or length, fiber type, wavelength, insertion loss, connectors, packaging) is the standard delay line spec, not from NWF. Tom to confirm NWF can quote them.
+
+## 2026-11-24: website forms to the Vocom CRM
+
+Tom chose the Apps Script route (not the Cloudflare Pages Function in the CRM team's prompt), so the sheet, Kevin's emails, the catalog link and the confirmed Ads/LinkedIn conversions keep working, and each form still has one destination.
+- Apps Script version 18: `sendToCrm` now posts to https://vocom-crm.vercel.app/api/webhooks/website-form (was the old /api/webhooks/framer endpoint, signed differently, with property CRM_WEBHOOK_SECRET). Every quote, catalog download and new newsletter sign-up is forwarded, tagged by `lead_type` and at the start of `message`.
+- Inactive until WEBSITE_FORM_SECRET is set in Script Properties. The CRM endpoint itself returned 404 on 2026-11-24: commit 4bae0d2 in the CRM repo (no git remote) is not deployed to Vercel yet.
+- Signature checked against the CRM's own verify code with a test secret (match). The built site and live HTML contain no CRM URL or secret.

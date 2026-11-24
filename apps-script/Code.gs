@@ -125,8 +125,13 @@ function quote(p) {
   if (blob) mail.attachments = [blob];
   MailApp.sendEmail(mail);
   // After the sheet row and the email, so a CRM outage never loses a lead.
-  try { sendToCrm(id, { Name: who, Email: email, Company: company, 'Use Case': p['Use Case'] || '', Message: p['Message'] || '', Page: p.page || '', 'Free Email': free ? 'Yes' : '', 'Lead ID': id, Unverified: unverified ? 'Yes' : '' }); }
-  catch (err) { console.error('CRM forward failed: ' + err); }
+  try {
+    sendToCrm(catalog ? 'Catalog download' : 'Quote request', {
+      name: name, email: email, company: company, company_size: p['Company Size'] || '', i_am_a: p['I Am A'] || '',
+      use_case: p['Use Case'] || '', detail: p['Message'] || '', page: p.page || '', lead_id: id,
+      free_email: free ? 'Yes' : '', unverified: unverified ? 'Yes' : '',
+    });
+  } catch (err) { console.error('CRM forward failed: ' + err); }
   return json(catalog ? { result: 'success', saved: true, id: id, url: CATALOG_URL } : { result: 'success', saved: true, id: id });
 }
 
@@ -175,25 +180,39 @@ function details(p) {
   return json({ result: 'success' });
 }
 
-// Checks the Turnstile token with Cloudflare: true (human), false (rejected), or null when
-// Cloudflare can't be reached or the script lacks permission, so the lead is kept as unverified.
-// Vocom CRM (vocom-crm.vercel.app): posts the lead to its existing website-lead webhook, signed the
-// way that webhook expects (HMAC-SHA256 of body + submission id, hex, "sha256=" prefix). The secret is
-// the CRM's FRAMER_WEBHOOK_SECRET, kept in Script Properties as CRM_WEBHOOK_SECRET; without it nothing is sent.
-var CRM_WEBHOOK_URL = 'https://vocom-crm.vercel.app/api/webhooks/framer';
-function sendToCrm(id, lead) {
-  var secret = PropertiesService.getScriptProperties().getProperty('CRM_WEBHOOK_SECRET');
+// Vocom CRM (Tom, 2026-11-24): every saved form also becomes a CRM lead, tagged by form type
+// ("Quote request", "Catalog download", "Newsletter sign-up"). Posts to the CRM's website-form webhook,
+// signed the way it expects: x-vocom-timestamp = Unix seconds, x-vocom-signature = "sha256=" + hex
+// HMAC-SHA256 of `${timestamp}.${body}`. The secret is WEBSITE_FORM_SECRET in Script Properties (the same
+// value as WEBSITE_FORM_SECRET in the CRM's Vercel project); without it nothing is sent. It never goes in
+// this file, the repo or the browser. Runs after the sheet row and the email, so a CRM outage never loses a
+// lead. The CRM ignores a second lead from the same email within 10 minutes.
+var CRM_WEBHOOK_URL = 'https://vocom-crm.vercel.app/api/webhooks/website-form';
+function sendToCrm(tag, lead) {
+  var props = PropertiesService.getScriptProperties();
+  var secret = props.getProperty('WEBSITE_FORM_SECRET');
   if (!secret) return;
-  var body = JSON.stringify(lead);
-  var sig = Utilities.computeHmacSha256Signature(body + id, secret, Utilities.Charset.UTF_8)
+  // The CRM shows `message` as the enquiry, so it leads with the tag: "Quote request | Fiber Optic: 144F loose tube"
+  var head = tag + (lead.use_case ? ' | ' + lead.use_case : '') + (lead.unverified ? ' [unverified]' : '');
+  lead.message = head + (lead.detail ? ': ' + lead.detail : '');
+  lead.lead_type = tag;
+  lead.source_site = 'vocom.ai';
+  if (lead.page) lead.page = 'https://www.vocom.ai' + lead.page;
+  var out = {};
+  for (var k in lead) if (lead[k]) out[k] = String(lead[k]);
+  var body = JSON.stringify(out);
+  var ts = String(Math.floor(Date.now() / 1000));
+  var sig = Utilities.computeHmacSha256Signature(ts + '.' + body, secret, Utilities.Charset.UTF_8)
     .map(function (b) { return ('0' + (b & 0xff).toString(16)).slice(-2); }).join('');
-  var res = UrlFetchApp.fetch(CRM_WEBHOOK_URL, {
-    method: 'post', contentType: 'application/json', payload: body, muteHttpExceptions: true,
-    headers: { 'framer-signature': 'sha256=' + sig, 'framer-webhook-submission-id': id },
+  var res = UrlFetchApp.fetch(props.getProperty('CRM_WEBHOOK_URL') || CRM_WEBHOOK_URL, {
+    method: 'post', contentType: 'application/json; charset=utf-8', payload: body, muteHttpExceptions: true,
+    headers: { 'x-vocom-timestamp': ts, 'x-vocom-signature': 'sha256=' + sig },
   });
   if (res.getResponseCode() !== 200) console.error('CRM forward ' + res.getResponseCode() + ': ' + res.getContentText());
 }
 
+// Checks the Turnstile token with Cloudflare: true (human), false (rejected), or null when
+// Cloudflare can't be reached or the script lacks permission, so the lead is kept as unverified.
 function turnstileOk(token) {
   try {
     var res = UrlFetchApp.fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
@@ -246,6 +265,8 @@ function newsletter(p) {
     for (var i = 0; i < existing.length; i++) if (String(existing[i][0]).toLowerCase() === email) return json({ result: 'success', duplicate: true });
   }
   sheet.appendRow([new Date(), email, p.page || '', 'Yes: ' + (p.consentText || ''), 'Subscribed']);
+  try { sendToCrm('Newsletter sign-up', { email: email, page: p.page || '' }); }
+  catch (err) { console.error('CRM forward failed: ' + err); }
 
   if (NOTIFY_ON_NEWSLETTER) {
     MailApp.sendEmail({ to: NOTIFY_EMAIL, subject: 'New newsletter sign-up: ' + email, body: 'Page: https://www.vocom.ai' + (p.page || ''), name: 'vocom.ai Website' });

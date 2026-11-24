@@ -18,7 +18,7 @@ const columns = [
   { title: "Data Centers", links: section("Data Centers").groups[0].links.concat(section("Data Centers").groups[1].links.slice(0, 2)) },
   { title: "Vocom International", links: section("Vocom International").groups.flatMap((g) => g.links) },
   { title: "Vocom AI", links: section("Vocom AI").groups.flatMap((g) => g.links) },
-  { title: "Company", links: [...section("About").groups.flatMap((g) => g.links), { label: "Privacy Policy", href: "/vocom-privacy-policy" }, { label: "Search", href: "/search" }] },
+  { title: "Company", links: [...section("About").groups.flatMap((g) => g.links), { label: "Privacy Policy", href: "/vocom-privacy-policy" }, { label: "Search", href: "/search" }, { label: "Sitemap", href: "/sitemap" }] },
 ];
 ---
 <footer class="site-footer">

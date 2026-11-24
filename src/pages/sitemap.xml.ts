@@ -1,35 +1,13 @@
 // sitemap.xml with the same URL set (and order) as the live Framer sitemap.
-// Static pages are listed explicitly; blog posts and products come from the content
+// Static pages are listed in src/lib/static-pages.ts; blog posts and products come from the content
 // collections, so new entries are added automatically. /search and /404 are excluded.
 // Product pages and the pages with category renders also list their main image
 // (Google image sitemap extension), so the renders can be found in image search.
 import { getPosts, getProducts } from "../lib/cms";
 import renders from "../../data/render-images.json";
+import { STATIC } from "../lib/static-pages";
 
 const SITE = "https://www.vocom.ai";
-const STATIC = [
-  "/", "/vocomai-supply-chain", "/vocomai-coach-hub", "/vocomai-vocam", "/contact-vocomai", "/resources", "/pricing-vocomai",
-  "/vocom-ai", "/vocom-ai-servers", "/vocomai-gpu-solutions", "/vocomai-manufacturing", "/vocom-international", "/vocom-ai-agents",
-  "/vocom-services", "/about", "/vocom-privacy-policy", "/blog", "/vocomai-consultancy", "/marketing-alliance", "/fiber-optic-cables",
-  "/loose-tube-fiber-optic-cable", "/ribbon-fiber-optic-cable", "/data-center-fiber-cabling", "/air-blown-micro-fiber-cable",
-  "/ftth-drop-cable", "/adss-aerial-fiber-cable", "/fiber-optic-cable-catalog",
-  // added 2026-10-22 (blocked on Framer by the plan's page limit)
-  "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners", "/fiber-optic-connectors-and-hardware", "/iepl-iplc-private-leased-circuits", "/wholesale-voice-termination",
-  // added 2026-10-24
-  "/case-studies",
-  // added 2026-11-06
-  "/fiber-optic-cable-supplier-comparison",
-  // added 2026-11-09
-  "/optical-transceivers",
-  // added 2026-11-10
-  "/6912-fiber-optic-cable",
-  "/1728-fiber-optic-cable",
-  "/fiber-optic-glossary",
-  "/data-centers", "/buy-a-data-center", "/data-center-colocation", "/build-ai-data-center",
-  // added 2026-11-23
-  "/mtp-trunk-cable", "/enterprise-fiber-optic-cable",
-];
-
 // Category pages that show a hero render (see src/pages/<page>.astro)
 const hero = (id: keyof typeof renders.hero) => `/assets/img/hero/${renders.hero[id]}-1920.jpg`;
 const PAGE_IMAGES: Record<string, string[]> = {

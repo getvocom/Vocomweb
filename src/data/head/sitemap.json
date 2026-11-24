@@ -1,0 +1,69 @@
+{
+ "title": "Sitemap: All Vocom Pages, Products and Guides | Vocom",
+ "lang": "en",
+ "meta": [
+  {
+   "property": "og:url",
+   "content": "https://www.vocom.ai/sitemap"
+  },
+  {
+   "name": "description",
+   "content": "Every page on vocom.ai in one place: fiber optic cable, data centers, carrier services, Vocom AI, all products and every blog post."
+  },
+  {
+   "property": "og:type",
+   "content": "website"
+  },
+  {
+   "property": "og:title",
+   "content": "Sitemap: All Vocom Pages, Products and Guides | Vocom"
+  },
+  {
+   "property": "og:description",
+   "content": "Every page on vocom.ai in one place: fiber optic cable, data centers, carrier services, Vocom AI, all products and every blog post."
+  },
+  {
+   "property": "og:image",
+   "content": "https://www.vocom.ai/assets/img/og-search-be28d4.png"
+  },
+  {
+   "name": "twitter:card",
+   "content": "summary_large_image"
+  },
+  {
+   "name": "twitter:title",
+   "content": "Sitemap: All Vocom Pages, Products and Guides | Vocom"
+  },
+  {
+   "name": "twitter:description",
+   "content": "Every page on vocom.ai in one place: fiber optic cable, data centers, carrier services, Vocom AI, all products and every blog post."
+  },
+  {
+   "name": "twitter:image",
+   "content": "https://www.vocom.ai/assets/img/og-search-be28d4.png"
+  },
+  {
+   "name": "robots",
+   "content": "max-image-preview:large"
+  }
+ ],
+ "links": [
+  {
+   "rel": "canonical",
+   "href": "https://www.vocom.ai/sitemap"
+  },
+  {
+   "href": "https://www.vocom.ai/assets/img/og-about-6ca24b.png",
+   "rel": "icon",
+   "media": "(prefers-color-scheme: light)"
+  },
+  {
+   "href": "https://www.vocom.ai/assets/img/og-about-96f99e.png",
+   "rel": "icon",
+   "media": "(prefers-color-scheme: dark)"
+  }
+ ],
+ "jsonld": [
+  "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Service\",\n      \"name\": \"1728 Fiber Optic Cable\",\n      \"serviceType\": \"Fiber optic cable supply (build-to-order)\",\n      \"description\": \"1728F dielectric ribbon fiber optic cable: 28.4mm OD, 482 kg per km, 144 ribbons of 12 fibers on G.652D or G.657A1. Build-to-order in 6 to 8 weeks.\",\n      \"image\": \"https://www.vocom.ai/assets/img/products/high-fiber-count-ribbon-cable-1200.jpg\",\n      \"url\": \"https://www.vocom.ai/1728-fiber-optic-cable\",\n      \"category\": \"Fiber Optic Cable\",\n      \"provider\": {\n        \"@id\": \"https://www.vocom.ai/#organization\"\n      },\n      \"areaServed\": \"Worldwide\"\n    }\n  ]\n}"
+ ]
+}

@@ -4,16 +4,9 @@
 import { headFor } from "../lib/head";
 import { blogSeo, productSeo } from "../lib/seo";
 import { getPosts, getProducts } from "../lib/cms";
+import { SECTIONS } from "../lib/static-pages";
 
 const SITE = "https://www.vocom.ai";
-const SECTIONS: [string, string[]][] = [
-  ["Data centers", ["/data-centers", "/buy-a-data-center", "/data-center-colocation", "/build-ai-data-center", "/vocom-ai-servers"]],
-  ["Fiber optic cable", ["/fiber-optic-cables", "/fiber-optic-cable-catalog", "/fiber-optic-cable-supplier-comparison", "/loose-tube-fiber-optic-cable", "/ribbon-fiber-optic-cable", "/6912-fiber-optic-cable", "/1728-fiber-optic-cable", "/data-center-fiber-cabling", "/mtp-trunk-cable", "/enterprise-fiber-optic-cable", "/optical-transceivers", "/air-blown-micro-fiber-cable", "/ftth-drop-cable", "/adss-aerial-fiber-cable", "/fiber-optic-cable-for-distributors", "/indoor-fiber-optic-cable", "/fiber-optic-cable-referral-partners", "/fiber-optic-connectors-and-hardware", "/fiber-optic-glossary"]],
-  ["Telecom services (Vocom International)", ["/vocom-international", "/vocom-services", "/iepl-iplc-private-leased-circuits", "/wholesale-voice-termination"]],
-  ["Vocom AI", ["/vocom-ai", "/vocom-ai-agents", "/vocom-ai-servers", "/vocomai-gpu-solutions", "/vocomai-supply-chain", "/vocomai-coach-hub", "/vocomai-vocam", "/vocomai-manufacturing", "/vocomai-consultancy", "/pricing-vocomai"]],
-  ["Company", ["/about", "/case-studies", "/contact-vocomai", "/marketing-alliance", "/resources", "/blog", "/vocom-privacy-policy"]],
-];
-
 const meta = (path: string, seo?: Parameters<typeof headFor>[1]) => {
   const h = headFor(path, seo);
   const desc = h.meta.find((m) => m.name === "description")?.content ?? "";
